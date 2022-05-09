@@ -49,3 +49,18 @@
   text-decoration: none;
   transition: all .4s ease;
 }
+.dc-header nav.middle-nav {
+  width: 50%;
+  height: 100%;
+  text-align: center;
+}
+.dc-header nav.middle-nav img {
+  width: 100%;
+  max-width: 170px;
+  height: 100%;
+  object-fit: contain;
+}
+.dc-header nav.right-nav {
+    width: 25%;
+    text-align: right;
+}
