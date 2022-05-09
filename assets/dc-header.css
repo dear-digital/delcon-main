@@ -78,30 +78,6 @@
   width: 40%;
   text-align: right;
 }
-.btn {
-  width: 100%;
-  max-width: 286px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: rgb(var(--color-base-background-1));
-  text-align: center;
-  text-decoration: none;
-  text-align: left;
-  font-family: Avenir,sans-serif;
-  font-size: 16px;
-  font-weight: 900;
-  line-height: 22px;
-  letter-spacing: 0px;
-  text-transform: uppercase;
-  position: relative;
-  transition: all .4s ease;
-  cursor: pointer;
-  text-transform: uppercase;
-  padding: 8px 24px;
-  color: rgb(var(--color-base-accent-1));
-  border: 1px solid rgb(var(--color-base-accent-1));
-}
 .header-btn {
   max-width: fit-content;
   max-width: -moz-fit-content;
