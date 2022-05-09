@@ -37,7 +37,7 @@
 .header-nav-list li:first-child {
   margin-left: 0;
 }
-.header-nav-list li:right-child {
+.header-nav-list li:last-child {
   margin-right: 0;
 }
 .header-nav-list a {
