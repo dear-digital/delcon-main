@@ -28,6 +28,7 @@
           <li class="no-t-m"><a href="{{ link.url }}">{{ link.title | escape }}</a></li>
         {% endfor %}
       </ul>
+      <a href="{{ section.settings.header_btn_url }}" class="btn header-btn">{{ section.settings.header_btn_text }}</a>
     </nav>
   </div>
 </header>
@@ -52,6 +53,17 @@
           "id": "header_right_menu",
           "default": "main-menu",
           "label": "Select right menu for header"
+        },
+		{
+          "type": "text",
+          "id": "header_btn_text",
+          "default": "PROEFPAKKET",
+          "label": "Header Button Text"
+        },
+		{
+          "type": "url",
+          "id": "header_btn_url",
+          "label": "Header Button Link"
         }
 	]
   }
