@@ -79,6 +79,7 @@
   text-align: right;
 }
 .header-btn {
+  padding: 8px 24px;
   max-width: fit-content;
   max-width: -moz-fit-content;
 }

@@ -110,6 +110,34 @@ body.no-scroll {
     overflow: hidden;
 }
 
+.btn {
+  width: 100%;
+  max-width: 286px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(var(--color-base-background-1));
+  text-align: center;
+  text-decoration: none;
+  text-align: left;
+  font-family: Avenir,sans-serif;
+  font-size: 16px;
+  font-weight: 900;
+  line-height: 22px;
+  letter-spacing: 0px;
+  text-transform: uppercase;
+  position: relative;
+  transition: all .4s ease;
+  cursor: pointer;
+  text-transform: uppercase;
+  padding: 12px 24px;
+  color: rgb(var(--color-base-accent-1));
+  border: 1px solid rgb(var(--color-base-accent-1));
+}
+.btn:hover {
+  background-color: #D0E0E8;
+}
+
 @media (min-width: 993px) {
   .no-d {
     display: none!important;
