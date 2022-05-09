@@ -218,7 +218,7 @@
     </a>
     {% endcomment %}
 
-    <div class="header-wrapper">
+    <div class="for-header header-wrapper">
       {% section 'dc-announcement-bar' %}
       {% section 'dc-header' %}
     </div>
@@ -260,6 +260,24 @@
       }
     </script>
 
+    <script>
+      var url = window.location.href;
+      $(window).scroll(function() {     
+        var scroll = $(window).scrollTop();
+        if (scroll > 0) {
+          $(".for-header").addClass("shadow");
+        } else {
+          if(!(url.includes("products") || url.includes("collections") || url.includes("blogs") || (url == "https://ohyaz.com/account") || (url == "https://ohyaz.com/account#") || url.includes("account/addresses") || url.includes("account/reset") || url.includes("pages/register-success") || url.includes("pages/privacy") || url.includes("pages/terms"))) {
+            $(".for-header").removeClass("shadow");
+          }
+        }
+      });
+
+      if ($(window).scrollTop() > 0) {
+        $(".for-header").addClass("shadow");
+      }
+    </script>
+    
     {%- if settings.predictive_search_enabled -%}
       <script src="{{ 'predictive-search.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
