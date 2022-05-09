@@ -9,15 +9,20 @@
   align-items: center;
   text-transform: uppercase;
   background-color: rgb(var(--color-base-text));
-  padding: 15px 0 14px;
+  padding: 15px 25px 14px;
   color: rgb(var(--color-base-accent-1));
 }
 .announcement-bar-list {
   list-style: none;
   padding: 0;
   margin: 0;
+  display: flex;
   position: fixed;
-  right: 0;
+  right: 25px;
+}
+.round {
+  border: 1px solid rgb(var(--color-base-accent-1));
+  border-radius: 50%;
 }
 .announcement-bar-list li {
   display: flex;
