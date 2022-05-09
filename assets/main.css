@@ -118,8 +118,6 @@ body.no-scroll {
   align-items: center;
   background-color: rgb(var(--color-base-background-1));
   text-align: center;
-  text-decoration: none;
-  text-align: left;
   font-family: Avenir,sans-serif;
   font-size: 16px;
   font-weight: 900;
@@ -130,7 +128,7 @@ body.no-scroll {
   transition: all .4s ease;
   cursor: pointer;
   text-transform: uppercase;
-  padding: 12px 24px;
+  padding: 12px 24px 11px;
   color: rgb(var(--color-base-accent-1));
   border: 1px solid rgb(var(--color-base-accent-1));
 }
