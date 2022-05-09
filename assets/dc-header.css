@@ -9,7 +9,7 @@
 .header {
   display: block;
   background-color: transparent;
-  transition: all .4s ease;
+  transition: all .2s ease;
   transition-timing-function: cubic-bezier(.1,.5,.25,1);
   height: 72px;
   position: relative;
@@ -53,7 +53,7 @@
   text-transform: uppercase;
   opacity: 1;
   text-decoration: none;
-  transition: all .4s ease;
+  transition: all .2s ease;
 }
 .header-nav-list a:hover {
   color: #B499BF;
