@@ -17,7 +17,7 @@
   transition-timing-function: cubic-bezier(.1,.5,.25,1);
 }
 .dc-header nav.left-nav {
-  width: 25%;
+  width: 40%;
   text-align: left;
 }
 .header-nav-list {
@@ -51,7 +51,7 @@
   transition: all .4s ease;
 }
 .dc-header nav.middle-nav {
-  width: 50%;
+  width: 20%;
   height: 100%;
   text-align: center;
 }
@@ -62,7 +62,7 @@
   object-fit: contain;
 }
 .dc-header nav.right-nav {
-  width: 25%;
+  width: 40%;
   text-align: right;
 }
 .btn {
