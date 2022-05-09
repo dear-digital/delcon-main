@@ -96,7 +96,8 @@ body {
     font-family: Avenir,sans-serif;
     font-weight: 400;
     margin: 0;
-	 scroll-behavior: smooth;
+  	color: rgb(var(--color-base-accent-1));
+  	scroll-behavior: smooth;
 }
 body span {
     user-select: none;

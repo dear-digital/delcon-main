@@ -1,15 +1,18 @@
 .announcement-bar {
-  font-size: 14px;
-  font-weight: 300;
-  line-height: 19px;
   width: 100%;
   text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: rgb(var(--color-base-text)); 
+}
+.header-announcement {
+  width: 100%;
+  display: flex;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 19px;
   text-transform: uppercase;
-  background-color: rgb(var(--color-base-text));
-  padding: 15px 25px 14px;
   color: rgb(var(--color-base-accent-1));
 }
 .announcement-bar-list {
