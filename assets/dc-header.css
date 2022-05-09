@@ -55,6 +55,9 @@
   text-decoration: none;
   transition: all .4s ease;
 }
+.header-nav-list a:hover {
+  color: #B499BF;
+}
 .dc-header nav.middle-nav {
   width: 20%;
   height: 100%;
