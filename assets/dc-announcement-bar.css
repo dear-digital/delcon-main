@@ -1,0 +1,13 @@
+.announcement-bar {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 19px;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(var(--color-base-text));
+  padding: 15px 0;
+  color: rgb(var(--color-base-accent-1));
+}
