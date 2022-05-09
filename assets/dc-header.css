@@ -55,10 +55,16 @@
   height: 100%;
   text-align: center;
 }
-.dc-header nav.middle-nav img {
+.dc-header nav.middle-nav a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.dc-header nav.middle-nav svg {
   width: 100%;
   max-width: 170px;
   height: 100%;
+  max-height: 40px;
   object-fit: contain;
 }
 .dc-header nav.right-nav {
