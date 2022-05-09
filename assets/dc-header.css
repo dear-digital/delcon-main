@@ -103,7 +103,7 @@
 }
 
 @media (min-width: 993px) {
-  .shadow .dc-header {
+  .shadow .header {
     background-color: #fff !important;
   }
 }
