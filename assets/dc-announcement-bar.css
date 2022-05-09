@@ -20,7 +20,7 @@
   right: 0;
 }
 .announcement-bar-list li {
-  display: inline-block;
+  display: flex;
   margin: 0 6px;
 }
 .announcement-bar-list li:first-child {
@@ -30,7 +30,8 @@
   margin-right: 0;
 }
 .announcement-bar-list a {
-  display: block;
+  display: flex;
+  align-items: center;
   color: rgb(var(--color-base-accent-1));
   text-align: left;
   font-family: Avenir,sans-serif;
