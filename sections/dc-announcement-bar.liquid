@@ -1,12 +1,14 @@
 {{ "dc-announcement-bar.css" | asset_url | stylesheet_tag }}
 
-<div class="announcement-bar container rel">
-  <span class="header-anouncement">Gratis verzending bij 2 of meer puzzels!</span>
-  <ul class="announcement-bar-list">
-    <li class="round no-t-m"></li>
-    <li class="round no-t-m"><a href="/account">{% include "account-icon" %}</a></li>
-    <li class="round no-t-m"><a href="#" aria-label="cart-link" class="icon-item cart-toggler rel" onClick="return false;">{{ cart.item_count }}</a></li>
-  </ul>
+<div class="announcement-bar">
+  <div class="container rel">
+    <span class="header-anouncement">Gratis verzending bij 2 of meer puzzels!</span>
+    <ul class="announcement-bar-list">
+      <li class="round no-t-m"></li>
+      <li class="round no-t-m"><a href="/account">{% include "account-icon" %}</a></li>
+      <li class="round no-t-m"><a href="#" aria-label="cart-link" class="icon-item cart-toggler rel" onClick="return false;">{{ cart.item_count }}</a></li>
+    </ul>
+  </div>
 </div>
 
 {% schema %}
