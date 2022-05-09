@@ -19,7 +19,7 @@
     </nav>
     
     <nav class="center-nav">
-      <a href="/"><img src="{{ section.settings.header_logo | asset_img_url: '200x' }}"></a>
+      <a href="/">{{ section.settings.header_logo }}</a>
     </nav>
     
     <nav class="right-nav">
@@ -37,9 +37,9 @@
     "name": "Delcon Header",
     "settings": [
 		{
-		  "type": "image_picker",
+		  "type": "html",
           "id": "header_logo",
-          "label": "Logo"
+          "label": "Logo Svg"
 		},
 		{
           "type": "link_list",
