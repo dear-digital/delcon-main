@@ -59,6 +59,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  height: 100%;
 }
 .dc-header nav.middle-nav svg {
   width: 100%;
