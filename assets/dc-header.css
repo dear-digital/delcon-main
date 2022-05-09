@@ -35,7 +35,7 @@
 .header-nav-list li:right-child {
   margin-right: 0;
 }
-.header-nav-list a, .header-nav-list button {
+.header-nav-list a {
   display: flex;
   align-items: center;
   color: rgb(var(--color-base-accent-1));
