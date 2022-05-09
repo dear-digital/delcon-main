@@ -34,8 +34,10 @@
   border-radius: 50%;
 }
 .round:hover {
-  color: #B499BF;
   border: 1px solid #B499BF;
+}
+.round:hover .announcement-bar-list a {
+  color: #B499BF;
 }
 .round svg {
   fill: #B499BF;
