@@ -109,3 +109,15 @@ body span {
 body.no-scroll {
     overflow: hidden;
 }
+
+@media (min-width: 993px) {
+  .no-d {
+    display: none!important;
+  }
+}
+
+@media (max-width: 992px) {
+  .no-t-m {
+    display: none!important;
+  }
+}
