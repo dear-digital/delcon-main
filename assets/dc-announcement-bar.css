@@ -36,7 +36,7 @@
 .round:hover {
   border: 1px solid #B499BF;
 }
-.round:hover .announcement-bar-list a {
+.round:hover + .announcement-bar-list a {
   color: #B499BF;
 }
 .round svg {
