@@ -27,7 +27,7 @@
         {% for link in section.settings.header_right_menu.links %}
           <li class="no-t-m"><a href="{{ link.url }}">{{ link.title | escape }}</a></li>
         {% endfor %}
-        <a href="{{ section.settings.header_btn_url }}" class="btn header-btn">{{ section.settings.header_btn_text }}</a>
+        <li class="no-t-m"><a href="{{ section.settings.header_btn_url }}" class="btn header-btn">{{ section.settings.header_btn_text }}</a></li>
       </ul>
     </nav>
   </div>
