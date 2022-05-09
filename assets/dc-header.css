@@ -85,8 +85,8 @@
   cursor: pointer;
   text-transform: uppercase;
   padding: 8px 24px;
-  color: rgb(var(--color-base-text));
-  border: 1px solid rgb(var(--color-base-text));
+  color: rgb(color-base-accent-1);
+  border: 1px solid rgb(color-base-accent-1);
 }
 .header-btn {
   max-width: fit-content;
