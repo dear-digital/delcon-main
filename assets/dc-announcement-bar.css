@@ -26,6 +26,9 @@
 }
 .announcement-bar-list li {
   display: flex;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
   margin: 0 6px;
 }
 .announcement-bar-list li:first-child {
