@@ -20,22 +20,22 @@
   width: 25%;
   text-align: left;
 }
-.dc-header .header-nav-list {
+.header-nav-list {
   list-style: none;
   padding: 0;
   margin: 0;
 }
-.dc-header .header-nav-list li {
+.header-nav-list li {
   display: inline-block;
   margin: 0 12px;
 }
-.dc-header .header-nav-list li:first-child {
+.header-nav-list li:first-child {
   margin-left: 0;
 }
-.dc-header .header-nav-list li:right-child {
+.header-nav-list li:right-child {
   margin-right: 0;
 }
-.dc-header .header-nav-list a, .dc-header .header-nav-list button {
+.header-nav-list a, .header-nav-list button {
   display: block;
   color: rgb(var(--color-base-text));
   text-align: left;
