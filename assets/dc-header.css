@@ -70,7 +70,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgb(var(--color-background));
+  background-color: rgb(var(--color-base-background-1));
   text-align: center;
   text-decoration: none;
   text-align: left;
