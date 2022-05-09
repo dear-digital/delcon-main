@@ -4,7 +4,7 @@
   <div class="dc-header container">
     <nav class="left-nav no-t-m">
       <ul class="header-nav-list header-nav-list-small">
-        {% for link in section.settings.header_left_menu %}
+        {% for link in section.settings.header_left_menu.links %}
           <li class="no-t-m"><a href="{{ link.url }}">{{ link.title | escape }}</a></li>
         {% endfor %}
       </ul>
@@ -24,7 +24,7 @@
     
     <nav class="right-nav">
       <ul class="header-nav-list header-nav-list-small">
-        {% for link in section.settings.header_right_menu %}
+        {% for link in section.settings.header_right_menu.links %}
           <li class="no-t-m"><a href="{{ link.url }}">{{ link.title | escape }}</a></li>
         {% endfor %}
       </ul>
