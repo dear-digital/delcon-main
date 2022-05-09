@@ -1,7 +1,54 @@
+{{ "dc-header.css" | asset_url | stylesheet_tag }}
+
+<header class="header">
+  <div class="header-wrapper container">
+    <nav class="header-hamburger-menu no-d left-nav">
+      <button type="button" class="navbar-toggler">
+        <span class="icon-bar bar1"></span>
+        <span class="icon-bar bar2"></span>
+        <span class="icon-bar bar3"></span>
+      </button>
+    </nav>
+    <nav class="left-nav no-t-m">
+      <ul class="header-nav-list header-nav-list-small">
+        {% for link in section.settings.header-left-menu %}
+          <li class="no-t-m"><a href="{{ link.url }}">{{ link.title | escape }}</a></li>
+        {% endfor %}
+      </ul>
+    </nav>
+    
+    <nav class="center-nav">
+      <a href="/" style="padding: 1px;"></a>
+    </nav>
+    
+    <nav class="right-nav">
+      
+    </nav>
+  </div>
+</header>
+
 {% schema %}
   {
-    "name": "Section name",
-    "settings": []
+    "name": "Delcon Header",
+    "settings": [
+		{
+		  "type": "image_picker",
+          "id": "header_logo",
+          "label": "Logo"
+		},
+		{
+          "type": "link_list",
+          "id": "header_left_menu",
+          "default": "main-menu",
+          "label": "Select left menu for header"
+        },
+		{
+          "type": "link_list",
+          "id": "header_right_menu",
+          "default": "main-menu",
+          "label": "Select right menu for header"
+        }
+	]
   }
 {% endschema %}
 
