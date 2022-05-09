@@ -1,0 +1,110 @@
+.container {
+  display: block;
+  width: 100%;
+  max-width: 1246px;
+  padding: 0 25px;
+  margin: 0 auto;
+}
+.no-disp {
+	display: none !important;
+}
+.rel {
+	position: relative;
+}
+.flex-box {
+	display: flex;
+  	height: 100%;
+}
+.flex-column {
+	flex-direction: column;
+}
+.align-start {
+	align-items: flex-start;
+}
+.align-center {
+	align-items: center;
+}
+.align-end {
+	align-items: flex-end;
+}
+.justify-around {
+    justify-content: space-around;
+}
+.justify-between {
+	justify-content: space-between;
+}
+.justify-center {
+    justify-content: center;
+}
+.justify-start {
+    justify-content: flex-start;
+}
+.justify-end {
+    justify-content: flex-end;
+}
+.text-left {
+	text-align: left !important;
+}
+.text-center {
+	text-align: center !important;
+}
+.text-right {
+	text-align: right;
+}
+.marg-bottom-xl {
+	margin-bottom: 120px !important;
+}
+.marg-top-xl {
+	margin-top: 120px !important;
+}
+.marg-top {
+	margin-top: 80px !important;
+}
+.marg-bottom {
+	margin-bottom: 80px !important;
+}
+.sub-marg-top-xs {
+	margin-top: 16px;
+}
+.sub-marg-bottom-xs {
+	margin-bottom: 16px;
+}
+.no-marg-left {
+	margin-left: 0 !important;
+}
+.no-marg-bottom {
+	margin-bottom: 0 !important;
+}
+.sub-marg-left {
+	margin-left: 24px !important;
+}
+.marg-left-auto {
+  	margin-right: 0 !important;
+	margin-left: auto !important;
+}
+.marg-right-auto {
+  	margin-left: 0 !important;
+	margin-right: auto !important;
+}
+.padd-top {
+	padding-top: 80px;
+}
+.padd-bottom {
+	padding-bottom: 80px;
+}
+body {
+    font-family: "Work Sans",sans-serif;
+    font-weight: 400;
+    margin: 0;
+	 scroll-behavior: smooth;
+}
+body span {
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -ms-user-select: none;
+}
+body.no-scroll {
+    overflow: hidden;
+}
