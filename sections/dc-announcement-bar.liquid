@@ -1,13 +1,25 @@
 {{ "dc-announcement-bar.css" | asset_url | stylesheet_tag }}
 
-<div class="announcement-bar container">
+<div class="announcement-bar container rel">
   <span class="header-anouncement">Gratis verzending bij 2 of meer puzzels!</span>
+  <ul class="header-nav-list announcement-bar-list">
+    <li class="round no-t-m"></li>
+    <li class="round no-t-m"><a href="/account">{% include "account-icon" %}</a></li>
+    <li class="round no-t-m"><a href="#" aria-label="cart-link" class="icon-item cart-toggler rel" onClick="return false;">{{ cart.item_count }}</a></li>
+  </ul>
 </div>
 
 {% schema %}
   {
-    "name": "Section name",
-    "settings": []
+    "name": "Delcon Announcement Bar",
+    "settings": [
+		{
+          "type": "text",
+          "id": "announcement_msg",
+          "default": "GRATIS LEVERING AAN HUIS VANAF €59,90",
+          "label": "Announcement Bar message"
+        }
+	]
   }
 {% endschema %}
 
