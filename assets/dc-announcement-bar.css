@@ -41,7 +41,7 @@
 .round:hover a {
   color: #B499BF;
 }
-.round svg {
+.round svg path {
   fill: #B499BF;
 }
 .announcement-bar-list li {
