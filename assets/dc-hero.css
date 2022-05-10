@@ -38,13 +38,11 @@
 }
 
 .hero-btn {
-  color: #fff;
-  border: 1px solid #fff;
+  margin-right: 16px;
 }
 
-.hero-btn:hover{
-  color: var(--dd-color-first);
-  background-color: #fff;
+.hero-btn:last-child{
+  margin-right: 0;
 }
 
 @media(max-width: 992px){
