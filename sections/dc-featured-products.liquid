@@ -8,7 +8,7 @@
       {% for product in section.settings.featured_collection.products %}
       	<div class="product-card rel">
           <a href="{{ product.url }}"  title="{{ product.title | escape  }}" class="product-card-hover">
-            <button class="btn">{{ section.settings.meerInfo }}</button>
+            <button class="btn product-btn">{{ section.settings.meerInfo }}</button>
           </a>
           <div class="product-card-image rel">
             <img class="" src="{{ product.featured_image | img_url: '540x' }}" alt="{{ product.title | escape }}" loading="lazy" />
