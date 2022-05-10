@@ -73,3 +73,9 @@
 .footer-store-address p, .partners-text {
   margin: 0;
 }
+.partners-logo {
+  width: 100%;
+  max-width: 287px;
+  max-height: 69px;
+  margin-top: 8px;
+}
