@@ -2,15 +2,35 @@
   "sections": {
     "165217987528287991": {
       "type": "dc-hero",
+      "blocks": {
+        "985cd9a3-e593-4230-9b6c-7102c0c1cca3": {
+          "type": "hero-cta",
+          "settings": {
+            "hero_cta_text": "Honden",
+            "hero_cta_link": "shopify:\/\/collections\/hondenvoer"
+          }
+        },
+        "acb9f6e3-0778-4839-bc89-062c2f2803a7": {
+          "type": "hero-cta",
+          "settings": {
+            "hero_cta_text": "Katten",
+            "hero_cta_link": "shopify:\/\/collections\/kattenvoer"
+          }
+        }
+      },
+      "block_order": [
+        "985cd9a3-e593-4230-9b6c-7102c0c1cca3",
+        "acb9f6e3-0778-4839-bc89-062c2f2803a7"
+      ],
       "settings": {
         "hero_img": "shopify:\/\/shop_images\/Hero_image_2x_c4b6d25f-59ea-45f1-a5a8-fb73e3262e9f.png",
-        "title": "",
-        "button_txt": "",
-        "button_url": ""
+        "hero_title": "Met zorg geformuleerde dierenvoeding",
+        "hero_subtitle": "Elke hond en elke kat heeft eigen specifieke behoeften. Daarom maken wij met veel zorg voeding die aangepast is aan jouw pluizige vriend."
       }
     },
     "featured_collection": {
       "type": "featured-collection",
+      "disabled": true,
       "settings": {
         "title": "Featured products",
         "heading_size": "h2",
