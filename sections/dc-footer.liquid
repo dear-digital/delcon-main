@@ -44,7 +44,8 @@
         
         <div class="footer-nav-right">
           <div class="footer-upper-part">
-			
+            <p class="partner-text">{{ section.settings.partners_text }}</p>
+            <img src="{{ section.settings.partner_img | img_url: '300x' }}">
           </div>
         </div>
       </div>
@@ -75,6 +76,17 @@
 			"type": "html",
 			"id": "footer_address",
 			"label": "Store Address"
+		},
+		{
+			"type": "text",
+			"id": "partners_text",
+			"label": "Partners Text",
+			"default": "Gerealiseerd met steun van"
+		},
+		{
+			"type": "image_picker",
+			"id": "partners_img",
+			"label": "Partners Logo"
 		},
 		{
 			"type": "text",
