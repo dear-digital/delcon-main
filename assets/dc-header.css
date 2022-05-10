@@ -94,4 +94,7 @@ color: rgb(var(--color-base-accent-1)) !important;
     background-color: #fff !important;
     box-shadow: 0px 8px 16px #A69E971A;
   }
+  .shadow .header #Delcon_logo_white path {
+  	fill: rgb(var(--color-base-accent-1));
+  }
 }
