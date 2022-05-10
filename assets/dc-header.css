@@ -81,12 +81,12 @@
   text-align: right;
 }
 .header-btn {
-  padding: 8px 24px 7px;
+  padding: 7px 24px 6px;
   max-width: fit-content;
   max-width: -moz-fit-content;
 }
 .header-btn:hover {
-color: rgb(var(--color-base-accent-1)) !important;
+  color: rgb(var(--color-base-accent-1)) !important;
 }
 
 @media (min-width: 993px) {

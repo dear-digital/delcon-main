@@ -69,6 +69,26 @@
   letter-spacing: 0;
   margin: 0;
 }
+.product-card-hover {
+  display: none;
+  text-decoration: none;
+}
+.product-card:hover .product-card-hover {
+  display: flex;
+  position: absolute;
+  border: 1px solid rgb(var(--color-base-text));
+  width: calc(100% + 8px);
+  height: 100%;
+  left: 8px;
+  align-self: center;
+  justify-content: center;
+  background: rgba(0,0,0,.4);
+}
+.product-btn {
+  padding: 7px 24px 6px;
+  max-width: fit-content;
+  max-width: -moz-fit-content;
+}
 .featured-btn {
   margin: 80px auto 0;
   background-color: rgb(var(--color-base-text)) !important;
