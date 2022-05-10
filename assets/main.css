@@ -3,7 +3,7 @@
   src: url('{{ "Avenir.woff2" | asset_url }}') format("woff2"),
 }
 @font-face {
-  font-family: "LeMonde Livre Classic Normal";
+  font-family: "LeMonde_Livre_Classic_Normal";
   src: url('{{ "LeMonde_Livre_Classic_Normal.woff2" | asset_url }}') format("woff2"),
 }
 
