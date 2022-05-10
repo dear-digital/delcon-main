@@ -243,9 +243,9 @@
           "a30fd938-ab67-4f0d-b802-5df869cf36df": {
             "type": "social-media",
             "settings": {
-              "social_media_title": "",
-              "social_media_icon": "",
-              "social_media_link": ""
+              "social_media_title": "Phone number",
+              "social_media_icon": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"21.961\" height=\"22.002\" viewbox=\"0 0 21.961 22.002\">   <g id=\"Telephone\" transform=\"translate(0.979 1)\">     <path id=\"_9b3e1219-f894-4c53-80fc-d2297e6c49a7\" data-name=\"9b3e1219-f894-4c53-80fc-d2297e6c49a7\" d=\"M22.079,16.981v3.011A2.007,2.007,0,0,1,19.891,22a19.873,19.873,0,0,1-8.661-3.081A19.57,19.57,0,0,1,5.209,12.9,19.856,19.856,0,0,1,2.128,4.2a2.006,2.006,0,0,1,2-2.188H7.136A2.008,2.008,0,0,1,9.143,3.733a12.932,12.932,0,0,0,.7,2.821,2.006,2.006,0,0,1-.451,2.117L8.119,9.946a16.055,16.055,0,0,0,6.022,6.021l1.274-1.274a2.008,2.008,0,0,1,2.118-.452,12.868,12.868,0,0,0,2.82.7A2.006,2.006,0,0,1,22.079,16.981Z\" transform=\"translate(-2.098 -2.007)\" fill=\"none\" stroke=\"#fff\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\"><\/path>   <\/g> <\/svg>",
+              "social_media_link": "#"
             }
           }
         },
