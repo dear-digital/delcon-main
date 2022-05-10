@@ -58,7 +58,7 @@
         "ea4de04b-d42f-4ccd-8553-0fe5f1d5b615": {
           "type": "features-logos",
           "settings": {
-            "logo_img": "",
+            "logo_img": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"55.02\" height=\"49.608\" viewbox=\"0 0 55.02 49.608\" xmlns:xlink=\"http:\/\/www.w3.org\/1999\/xlink\">   <defs>     <clippath id=\"clip-path\">       <rect id=\"Rectangle_1311\" data-name=\"Rectangle 1311\" width=\"55.02\" height=\"49.608\" fill=\"none\"><\/rect>     <\/clippath>   <\/defs>   <g id=\"Icon\" transform=\"translate(-40 -7.088)\">     <g id=\"Group_2906\" data-name=\"Group 2906\" transform=\"translate(40 7.088)\" clip-path=\"url(#clip-path)\">       <path id=\"Path_414\" data-name=\"Path 414\" d=\"M40.473,0A14.493,14.493,0,0,0,27.51,8.265,14.493,14.493,0,0,0,14.547,0C6.513,0,0,6.772,0,15.126A14.414,14.414,0,0,0,2.733,23.84a42.6,42.6,0,0,0,4.882,5.209c2.618,2.537,5.139,5.171,7.66,7.805q5.97,6.236,11.952,12.461l.282.293.282-.293c5.483-5.7,10.93-11.436,16.422-17.126,1.218-1.262,2.455-2.5,3.728-3.709a27.107,27.107,0,0,0,5.067-5.626,15.474,15.474,0,0,0,2.011-7.728C55.02,6.772,48.507,0,40.473,0\" transform=\"translate(0 0)\" fill=\"#181716\"><\/path>       <path id=\"Path_415\" data-name=\"Path 415\" d=\"M7.765,47.328H18.693l1.924-6.008L22.8,52.129l2.38-21.018,2.821,26.424L31.182,42.52l1.632,4.808H57.862\" transform=\"translate(-4.474 -17.927)\" fill=\"none\" stroke=\"#f2f1f0\" stroke-width=\"1\"><\/path>     <\/g>   <\/g> <\/svg>",
             "logo_title": "CUSTOMER SERVICE",
             "logo_desc": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et"
           }
