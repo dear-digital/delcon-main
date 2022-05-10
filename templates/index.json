@@ -27,9 +27,51 @@
         "hero_title": "Met zorg geformuleerde dierenvoeding",
         "hero_subtitle": "Elke hond en elke kat heeft eigen specifieke behoeften. Daarom maken wij met veel zorg voeding die aangepast is aan jouw pluizige vriend."
       }
+    },
+    "1652188517cd05b004": {
+      "type": "dc-features-section",
+      "blocks": {
+        "9b4ce3b7-ffa6-44fe-8f9c-1ba5ae797145": {
+          "type": "features-logos",
+          "settings": {
+            "logo_title": "BELGISCH",
+            "logo_desc": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et"
+          }
+        },
+        "2f785161-bfcd-4a19-b648-01a562a07548": {
+          "type": "features-logos",
+          "settings": {
+            "logo_title": "SNELLE VERZENDING",
+            "logo_desc": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et"
+          }
+        },
+        "90c20ed2-65c7-4d25-bf5c-5c90090e0b77": {
+          "type": "features-logos",
+          "settings": {
+            "logo_title": "KWALITEIT",
+            "logo_desc": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et"
+          }
+        },
+        "ea4de04b-d42f-4ccd-8553-0fe5f1d5b615": {
+          "type": "features-logos",
+          "settings": {
+            "logo_title": "CUSTOMER SERVICE",
+            "logo_desc": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et"
+          }
+        }
+      },
+      "block_order": [
+        "9b4ce3b7-ffa6-44fe-8f9c-1ba5ae797145",
+        "2f785161-bfcd-4a19-b648-01a562a07548",
+        "90c20ed2-65c7-4d25-bf5c-5c90090e0b77",
+        "ea4de04b-d42f-4ccd-8553-0fe5f1d5b615"
+      ],
+      "settings": {
+      }
     }
   },
   "order": [
-    "165217987528287991"
+    "165217987528287991",
+    "1652188517cd05b004"
   ]
 }
