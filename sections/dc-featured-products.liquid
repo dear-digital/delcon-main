@@ -1,11 +1,80 @@
 {{ 'dc-featured-products.css' | asset_url | stylesheet_tag }}
 
-
+<div class="marg-top marg-bottom" id="featured-collection">
+  <div class="container">
+    <h2 class="featured-title title text-center">{{ section.settings.featured_title }}</h2>
+    <div class="featured-carousel rel">
+      {% for product in section.settings.featured_collection.products %}
+      	<div class="product-card rel">
+          <a href="{{ product.url }}"  title="{{ product.title | escape  }}" class="product-card-hover">
+            <button class="btn">{{ section.settings.meerInfo }}</button>
+          </a>
+          <div class="product-card-image rel">
+            <img class="" src="{{ product.featured_image | img_url: '540x' }}" alt="{{ product.title | escape }}" loading="lazy" />
+          </div>
+          <div class="product-card-details flex-column">
+            <div class="flex-box justify-between align-center">
+              <div class="product-card-title">
+                <p href="{{ product.url }}" title="{{ product.title | escape  }}" class="sub-title">{{ product.title | strip_html | escape }}</p>
+              </div>
+              <div class="product-card-price">
+                <p class="product-price sub-title">{{ section.settings.vanaf_text }} {{ product.selected_or_first_available_variant.price | money }}</p>
+              </div>
+            </div>
+            <div class="card-extra-info flex-box justify-between align-center">
+              <div class="product-card-desc">
+                <p class="card-desc sub-title">{{ product.metafields.my_fields.extra_info | escape  }}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+    {% if section.settings.featured_btn_text != blank %}
+    <a class="btn featured-btn" href="{{ section.settings.featured_btn_url }}">{{ section.settings.featured_btn_text }}</a>
+  	{% endif %}
+  </div>
+</div>
 
 {% schema %}
   {
     "name": "Delcon Featured Products",
-    "settings": [],
+    "settings": [
+		{
+          "type": "text",
+          "id": "featured_title",
+          "label": "Featured Collection Heading",
+		  "default": "Van puppy tot senior"
+        },
+		{
+          "type": "collection",
+          "id": "featured_collection",
+          "label": "Featured Collection"
+        },
+		{
+          "type": "text",
+          "id": "vanaf_text",
+          "label": "Vanaf text",
+		  "default": "vanaf"
+        },
+		{
+          "type": "text",
+          "id": "meerInfo",
+          "label": "Quick View button text",
+		  "default": "QUICK VIEW"
+        },
+        {
+          "type": "text",
+          "id": "featured_btn_text",
+          "label": "Section Button Text",
+		  "default": "ALLE PRODUCTEN"
+        },
+        {
+          "type": "url",
+          "id": "featured_btn_url",
+          "label": "Section Button Link"
+        }
+	],
 	"presets":[
       {
          "name":"Delcon Featured Products"
