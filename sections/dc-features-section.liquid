@@ -1,7 +1,56 @@
+{{ 'dc-features-section.css' | asset_url | stylesheet_tag }}
+
+<div class="hero-lower">
+  <div class="container" style="height: 100%;">
+    <div class="hero-lower-content text-center flex-box align-center justify-around">
+      {% for block in section.blocks %}
+        {% if block.type == 'features-logos' %}
+        <div class="hero-logo-content-wrap">
+          <div class="hero-logo-wrap">
+            <img src="{{ block.settings.logo_img | img_url: "x64" }}" alt="{{ block.settings.logo_title }}">
+          </div>
+          <div class="hero-logo-title title">{{ block.settings.logo_title }}</div>
+          <div class="hero-logo-desc">{{ block.settings.logo_desc }}</div>
+        </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
 {% schema %}
   {
-    "name": "Section name",
-    "settings": []
+    "name": "Delcon Features Section",
+    "settings": [],
+	"blocks": [
+		{
+			"type": "features-logos",
+			"name": "Feature Logo",
+			"limit": 4,
+			"settings": [
+				{
+					"type": "image_picker",
+					"id": "logo_img",
+					"label": "Logo"
+				},
+				{
+					"type": "text",
+					"id": "logo_title",
+					"label": "Logo Title"
+				},
+				{
+					"type": "text",
+					"id": "logo_desc",
+					"label": "Logo Desc"
+				}
+			]
+		}
+	],
+	"presets":[
+      {
+         "name":"Toba Hero Lower"
+      }
+   ]
   }
 {% endschema %}
 
