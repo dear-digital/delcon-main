@@ -14,7 +14,7 @@
 .footer-logo-img img {
   width: 100%;
 }
-.footer-link {
+.footer-link, .policies-link {
   display: block;
   font-size: 16px;
   line-height: 24px;
@@ -22,6 +22,7 @@
   font-family: var(--font-body-family);
   font-weight: var(--font-body-weight);
   color: rgb(var(--color-base-accent-1));
+  text-decoration: none;
 }
 .footer-lower {
   padding: 24px 0 22px;
