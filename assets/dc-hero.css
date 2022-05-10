@@ -27,6 +27,8 @@
 .hero-subtitle {
   width: 100%;
   max-width: 588px;
+  color: #fff;
+  margin-bottom: 40px;
 }
 
 .hero-btn {
