@@ -3,7 +3,7 @@
 <div class="hero-sec marg-bottom no-t-m" style="background-image: linear-gradient(rgba(24, 23, 22, .25), rgba(24, 23, 22, .25)),url({{ section.settings.hero_img | img_url: '2000x' }})">
   <div class="hero-wrapper container flex-box">
     <p class="sub-title light hero-reviews"></p>
-    <h1 class="title bold hero-title">{{ section.settings.title }}</h1>
+    <h1 class="title bold hero-title">{{ section.settings.hero_title }}</h1>
     <div class="flex-box hero-ctas">
       {% for block in section.blocks %}
       	{% if block.settings.hero_cta_text != blank %}
@@ -34,7 +34,7 @@
 		},
 		{
 			"type": "text",
-			"id": "title",
+			"id": "hero_title",
 			"label": "Hero Title",
 			"default": "Met zorg geformuleerde dierenvoeding"
 		}
