@@ -518,7 +518,8 @@
 }
 
 .featured-carousel .slick-prev, .featured-carousel .slick-next {
-  top: 50%;
+  top: auto;
+  bottom: -50px;
   background-color: transparent;
   border: 0;
   width: auto;
@@ -534,14 +535,14 @@
   background-color: transparent;
 }
 .featured-carousel .slick-next:hover:before, .featured-carousel .slick-prev:hover:before {
-  content: url("https://cdn.shopify.com/s/files/1/0549/9564/8759/files/right_arrow_brown.svg?v=1635156221") !important;
+  content: url("https://cdn.shopify.com/s/files/1/0578/5976/8499/files/right-arrow-hover.svg?v=1652199980") !important;
 }
 .featured-carousel .slick-prev:before {
-  content: url("https://cdn.shopify.com/s/files/1/0549/9564/8759/files/right_arrow_brown.svg?v=1635156221");
+  content: url("https://cdn.shopify.com/s/files/1/0578/5976/8499/files/right-arrow.svg?v=1652199965");
   transform: rotate(180deg);
 }
 .featured-carousel .slick-next:before {
-  content: url("https://cdn.shopify.com/s/files/1/0549/9564/8759/files/right_arrow_brown.svg?v=1635156221");
+  content: url("https://cdn.shopify.com/s/files/1/0578/5976/8499/files/right-arrow.svg?v=1652199965");
 }
 
 @media (max-width: 992px) {
