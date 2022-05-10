@@ -1,7 +1,16 @@
+{{ 'dc-featured-products.css' | asset_url | stylesheet_tag }}
+
+
+
 {% schema %}
   {
-    "name": "Section name",
-    "settings": []
+    "name": "Delcon Featured Products",
+    "settings": [],
+	"presets":[
+      {
+         "name":"Delcon Featured Products"
+      }
+   ]
   }
 {% endschema %}
 
