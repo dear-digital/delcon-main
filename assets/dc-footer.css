@@ -24,6 +24,9 @@
   color: rgb(var(--color-base-accent-1));
   text-decoration: none;
 }
+.footer-link:last-child, .policies-link:last-child {
+  margin-bottom: 0;
+}
 .footer-lower {
   padding: 24px 0 22px;
 }
