@@ -41,6 +41,18 @@
 .footer-link:last-child, .policies-link:last-child {
   margin-bottom: 0;
 }
+.footer-nav-wrapper {
+  display: flex;
+  align-items: center;
+}
+.footer-nav-left {
+  width: 60%;
+}
+.footer-nav-right {
+  width: 30%;
+  max-width: 287px;
+  margin-left: auto;
+}
 .footer-lower {
   padding: 24px 0 22px;
 }
