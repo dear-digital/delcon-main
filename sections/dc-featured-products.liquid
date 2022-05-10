@@ -12,19 +12,13 @@
           <div class="product-card-image rel">
             <img class="" src="{{ product.featured_image | img_url: '540x' }}" alt="{{ product.title | escape }}" loading="lazy" />
           </div>
-          <div class="product-card-details flex-column">
-            <div class="flex-box justify-between align-center">
-              <div class="product-card-title">
-                <p href="{{ product.url }}" title="{{ product.title | escape  }}" class="sub-title">{{ product.title | strip_html | escape }}</p>
-              </div>
-              <div class="product-card-price">
-                <p class="product-price sub-title">{{ section.settings.vanaf_text }} {{ product.selected_or_first_available_variant.price | money }}</p>
-              </div>
+          <div class="product-card-details">
+            <div class="prooduct-title-desc">
+              <p class="product-card-title">{{ product.title | strip_html | escape }}</p>
+              <p class="product-card-desc">{{ product.metafields.my_fields.extra_info | escape  }}</p>
             </div>
-            <div class="card-extra-info flex-box justify-between align-center">
-              <div class="product-card-desc">
-                <p class="card-desc sub-title">{{ product.metafields.my_fields.extra_info | escape  }}</p>
-              </div>
+            <div class="product-card-price">
+              <p class="product-price">{{ section.settings.vanaf_text }} {{ product.selected_or_first_available_variant.price | money }}</p>
             </div>
           </div>
         </div>
