@@ -1,0 +1,38 @@
+.features-content-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 287px;
+  margin: 0;
+}
+.feature-logo-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 86px;
+  height: 86px;
+  border-radius: 50%;
+  background-color: rgb(var(--color-base-text));
+  margin-bottom: 16px;
+}
+.feature-logo-wrap img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain
+}
+.feature-title {
+  font-family: "Avenir",sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+.feature-desc {
+  font-family: "Avenir",sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
