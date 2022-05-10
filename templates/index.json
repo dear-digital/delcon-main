@@ -84,11 +84,24 @@
         "featured_btn_text": "ALLE PRODUCTEN",
         "featured_btn_url": "shopify:\/\/collections\/hondenvoer"
       }
+    },
+    "165220075608ac05ae": {
+      "type": "dc-featured-products",
+      "settings": {
+        "featured_title": "Van kitten tot senior",
+        "featured_subtitle": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.",
+        "featured_collection": "kattenvoer",
+        "vanaf_text": "vanaf",
+        "meerInfo": "QUICK VIEW",
+        "featured_btn_text": "ALLE PRODUCTEN",
+        "featured_btn_url": "shopify:\/\/collections\/kattenvoer"
+      }
     }
   },
   "order": [
     "165217987528287991",
     "1652188517cd05b004",
-    "165219334440eb74eb"
+    "165219334440eb74eb",
+    "165220075608ac05ae"
   ]
 }
