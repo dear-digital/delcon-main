@@ -11,8 +11,9 @@
 
 .hero-sec .container{
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
+  margin-bottom: 160px;
 }
 
 .hero-title {
