@@ -17,7 +17,38 @@
 {% schema %}
   {
     "name": "Delcon Hero",
-    "settings": []
+    "settings": [
+		{
+			"type": "image_picker",
+			"id": "hero_img",
+			"label": "Hero Image"
+		},
+		{
+			"type": "image_picker",
+			"id": "hero_mobile_img",
+			"label": "Hero Mobile Image"
+		},
+		{
+			"type": "text",
+			"id": "title",
+			"label": "Title"
+		},
+		{
+			"type": "text",
+			"id": "button_txt",
+			"label": "Button Text"
+		},
+		{
+			"type": "url",
+			"id": "button_url",
+			"label": "Button URL"
+		}
+	],
+	"presets":[
+      {
+         "name":"Delcon Hero"
+      }
+   ]
   }
 {% endschema %}
 
