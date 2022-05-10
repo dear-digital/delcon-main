@@ -72,10 +72,23 @@
       ],
       "settings": {
       }
+    },
+    "165219334440eb74eb": {
+      "type": "dc-featured-products",
+      "settings": {
+        "featured_title": "Van puppy tot senior",
+        "featured_subtitle": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.",
+        "featured_collection": "hondenvoer",
+        "vanaf_text": "vanaf",
+        "meerInfo": "QUICK VIEW",
+        "featured_btn_text": "ALLE PRODUCTEN",
+        "featured_btn_url": "shopify:\/\/collections\/hondenvoer"
+      }
     }
   },
   "order": [
     "165217987528287991",
-    "1652188517cd05b004"
+    "1652188517cd05b004",
+    "165219334440eb74eb"
   ]
 }
