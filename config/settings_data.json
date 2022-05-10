@@ -235,9 +235,9 @@
           "48c69618-ae19-4caa-9e2d-5d74543318fc": {
             "type": "social-media",
             "settings": {
-              "social_media_title": "",
-              "social_media_icon": "",
-              "social_media_link": ""
+              "social_media_title": "Email Icon",
+              "social_media_icon": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"22.785\" height=\"18\" viewbox=\"0 0 22.785 18\">   <g id=\"Envelope\" transform=\"translate(1.393 1)\">     <path id=\"_998ccdf9-12b4-4a9e-a913-0ce437c1cd27\" data-name=\"998ccdf9-12b4-4a9e-a913-0ce437c1cd27\" d=\"M4,4H20a2.006,2.006,0,0,1,2,2V18a2.006,2.006,0,0,1-2,2H4a2.006,2.006,0,0,1-2-2V6A2.006,2.006,0,0,1,4,4Z\" transform=\"translate(-2 -4)\" fill=\"none\" stroke=\"#fff\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\"><\/path>     <path id=\"_403193f3-ef60-4f11-9ce4-31862e744662\" data-name=\"403193f3-ef60-4f11-9ce4-31862e744662\" d=\"M22,6,12,13,2,6\" transform=\"translate(-2 -4)\" fill=\"none\" stroke=\"#fff\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\"><\/path>   <\/g> <\/svg>",
+              "social_media_link": "#"
             }
           },
           "a30fd938-ab67-4f0d-b802-5df869cf36df": {
