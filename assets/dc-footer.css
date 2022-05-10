@@ -24,7 +24,6 @@
   color: rgb(var(--color-base-accent-1));
   text-decoration: none;
   transition: all .3s ease-out;
-  transition-timing-function: cubic-bezier(.1,.5,.25,1);
 }
 .footer-link:last-child, .policies-link:last-child {
   margin-bottom: 0;
