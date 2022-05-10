@@ -56,10 +56,10 @@
   padding: 24px 0 22px;
 }
 .footer-lower-left {
-  width: 50%;
+  width: 45%;
 }
 .footer-lower-right {
-  width: 50%;
+  width: 55%;
   display: flex;
   justify-content: space-between;
 }
