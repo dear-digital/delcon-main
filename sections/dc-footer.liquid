@@ -1,9 +1,160 @@
 {{ "dc-footer.css" | asset_url | stylesheet_tag }}
 
+<footer class="dc-footer">
+  <div class="container">
+    <div class="footer-upper">
+      <div class="footer-upper-part no-d">
+        {% if section.settings.footer_logo_img != blank %}
+        <a href="/" class="footer-logo-img" aria-label="4gold"><img src="{{ section.settings.footer_logo_img | img_url: '200x' }}" alt="{{ section.settings.footer_logo_img.alt }}"></a>
+        {% else %}
+        <a href="/" class="footer-logo" aria-label="4gold">{{ section.settings.footer_logo }}</a>
+        {% endif %}
+      </div>
+      <div class="footer-upper-inner flex-box justify-between">
+      <div class="footer-upper-part no-t-m">
+        {% if section.settings.footer_logo_img != blank %}
+        <a href="/" class="footer-logo-img" aria-label="4gold"><img src="{{ section.settings.footer_logo_img | img_url: '200x' }}" alt="{{ section.settings.footer_logo_img.alt }}"></a>
+        {% else %}
+        <a href="/" class="footer-logo" aria-label="4gold">{{ section.settings.footer_logo }}</a>
+        {% endif %}
+        </div>
+      	{% for block in section.blocks %}
+      		{% if block.type == 'menu' %}
+      			<div class="footer-upper-part">
+                  <div class="footer-menu-title title bold">{{ block.settings.menu_title }}</div>
+      			{% for link in linklists[block.settings.menu].links %}
+                  <a href="{{ link.url }}" class="footer-link light">{{ link.title }}</a>
+      			{% endfor %}
+      			</div>
+      		{% endif %}
+      	{% endfor %}
+      <div class="footer-upper-part">
+        {% for block in section.blocks %}
+      		{% if block.type == 'social' %}
+              <div class="footer-menu-title title bold">{{ block.settings.social_title }}</div>
+              <div class="footer-social-wrap">
+                  {% if block.settings.sm_logo_img_1 != blank %}
+                	<a href="{{ block.settings.social_link_1 }}" class="social-icon social-icon-img" target="_blank" aria-label="facebook"><img src="{{ block.settings.sm_logo_img_1 | img_url: '24x' }}"></a>
+                  {% elsif block.settings.sm_logo_1 != blank %}
+                  <a href="{{ block.settings.social_link_1 }}" class="social-icon" target="_blank" aria-label="facebook">{{ block.settings.sm_logo_1 }}</a>
+                  {% endif %}
+                {% if block.settings.sm_logo_img_2 != blank %}
+                	<a href="{{ block.settings.social_link_2 }}" class="social-icon social-icon-img" target="_blank" aria-label="instagram"><img src="{{ block.settings.sm_logo_img_2 | img_url: '24x' }}"></a>
+                  {% elsif block.settings.sm_logo_2 != blank %}
+                  <a href="{{ block.settings.social_link_2 }}" class="social-icon" target="_blank" aria-label="instagram">{{ block.settings.sm_logo_2 }}</a>
+                  {% endif %}
+                {% if block.settings.sm_logo_img_3 != blank %}
+                	<a href="{{ block.settings.social_link_3 }}" class="social-icon social-icon-img" target="_blank" aria-label="tiktok"><img src="{{ block.settings.sm_logo_img_3 | img_url: '24x' }}"></a>
+                  {% elsif block.settings.sm_logo_3 != blank %}
+                  <a href="{{ block.settings.social_link_3 }}" class="social-icon" target="_blank" aria-label="tiktok">{{ block.settings.sm_logo_3 }}</a>
+                  {% endif %}
+                {% if block.settings.sm_logo_img_4 != blank %}
+                	<a href="{{ block.settings.social_link_4 }}" class="social-icon social-icon-img" target="_blank" aria-label="linkedin"><img src="{{ block.settings.sm_logo_img_4 | img_url: '24x' }}"></a>
+                  {% elsif block.settings.sm_logo_4 != blank %}
+                  <a href="{{ block.settings.social_link_4 }}" class="social-icon" target="_blank" aria-label="linkedin">{{ block.settings.sm_logo_4 }}</a>
+                  {% endif %}
+                {% if block.settings.sm_logo_img_5 != blank %}
+                	<a href="{{ block.settings.social_link_5 }}" class="social-icon social-icon-img" target="_blank"><img src="{{ block.settings.sm_logo_img_5 | img_url: '24x' }}"></a>
+                  {% elsif block.settings.sm_logo_5 != blank %}
+                  <a href="{{ block.settings.social_link_5 }}" class="social-icon" target="_blank">{{ block.settings.sm_logo_5 }}</a>
+                  {% endif %}
+                {% if block.settings.sm_logo_img_6 != blank %}
+                	<a href="{{ block.settings.social_link_6 }}" class="social-icon social-icon-img" target="_blank"><img src="{{ block.settings.sm_logo_img_6 | img_url: '24x' }}"></a>
+                  {% elsif block.settings.sm_logo_6 != blank %}
+                  <a href="{{ block.settings.social_link_6 }}" class="social-icon" target="_blank">{{ block.settings.sm_logo_6 }}</a>
+                  {% endif %}
+              </div>
+        	{% endif %}
+          {% endfor %}
+          {% for block in section.blocks %}
+      		{% if block.type == 'payment' %}
+              <div class="footer-menu-title title bold">{{ block.settings.payment_title }}</div>
+        	  <div class="footer-social-wrap">
+                <div class="payment-companies-svgs">     
+                  <div class="payment-logo">                
+                    {%- for type in shop.enabled_payment_types -%}
+                    {{ type | payment_type_svg_tag: class: 'pay-icon' }}{% assign mod = forloop.index | modulo: 5 %}{% if mod == 0 %}<br class="no-t-m">{% endif %}
+                    {%- endfor -%}
+                  </div>
+                </div>
+              </div>
+        	{% endif %}
+          {% endfor %}
+      </div>
+      </div>
+    </div>
+    <div class="footer-lower flex-box justify-between">
+      <div class="footer-lower-text light">{{ section.settings.footer_copyright_text }}</div>
+      <div class="footer-lower-text light">{{ section.settings.footer_made_by_text }}</div>
+    </div>
+  </div>
+</footer>
+
 {% schema %}
   {
     "name": "Delcon Footer",
-    "settings": []
+    "settings": [
+		{
+			"type": "image_picker",
+			"id": "footer_logo_img",
+			"label": "Footer Logo Image"
+		},
+		{
+			"type": "text",
+			"id": "footer_logo",
+			"label": "Footer Logo SVG"
+		},
+		{
+			"type": "text",
+			"id": "footer_copyright_text",
+			"label": "Footer Copyright Text",
+			"default": "© Copyright 2020. All Rights Reserved."
+		},
+		{
+			"type": "html",
+			"id": "footer_made_by_text",
+			"label": "Footer Made By Text"
+		},
+		{
+			"type": "text",
+			"id": "social_title",
+			"label": "Footer Social Title"
+		}
+	],
+	"blocks": [
+		{
+			"type": "menu",
+			"name": "Footer Menu",
+			"settings": [
+				{
+					"type": "text",
+					"id": "menu_title",
+					"label": "Menu Title"
+				},
+				{
+                  "type": "link_list",
+                  "id": "menu",
+                  "label": "Menu"
+                }
+			]
+		},
+		{
+			"type": "social-media",
+			"name": "Social Media",
+			"settings": [
+				{
+					"type": "text",
+					"id": "social_media_icon",
+					"label": "Social Media Svg Icon"
+				},
+				{
+                  "type": "url",
+                  "id": "social_media_link",
+                  "label": "Social Media Link"
+                }
+			]
+		}
+	]
   }
 {% endschema %}
 
