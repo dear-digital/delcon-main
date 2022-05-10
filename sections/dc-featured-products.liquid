@@ -3,6 +3,7 @@
 <div class="marg-top marg-bottom" id="featured-collection">
   <div class="container">
     <h2 class="featured-title title text-center">{{ section.settings.featured_title }}</h2>
+    <p class="featured-sub-title text-center">{{ section.settings.featured_subtitle }}</p>
     <div class="featured-carousel rel">
       {% for product in section.settings.featured_collection.products %}
       	<div class="product-card rel">
@@ -39,6 +40,12 @@
           "id": "featured_title",
           "label": "Featured Collection Heading",
 		  "default": "Van puppy tot senior"
+        },
+		{
+          "type": "text",
+          "id": "featured_subtitle",
+          "label": "Featured Collection SubTitle",
+		  "default": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."
         },
 		{
           "type": "collection",
