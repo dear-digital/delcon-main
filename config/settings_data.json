@@ -201,7 +201,69 @@
       },
       "dc-footer": {
         "type": "dc-footer",
+        "blocks": {
+          "3ba6d3c9-5e0f-484e-a46f-1c3939e1681a": {
+            "type": "menu",
+            "settings": {
+              "menu_title": "",
+              "menu": "footer-menu-1"
+            }
+          },
+          "ce74685c-ed45-454b-947d-85f3fece5480": {
+            "type": "menu",
+            "settings": {
+              "menu_title": "",
+              "menu": "footer-menu-2"
+            }
+          },
+          "ae76d541-49fd-466c-8bfe-91aa7fa28047": {
+            "type": "social-media",
+            "settings": {
+              "social_media_title": "",
+              "social_media_icon": "",
+              "social_media_link": ""
+            }
+          },
+          "4e543b54-1714-427b-91dd-312c35265d50": {
+            "type": "social-media",
+            "settings": {
+              "social_media_title": "",
+              "social_media_icon": "",
+              "social_media_link": ""
+            }
+          },
+          "48c69618-ae19-4caa-9e2d-5d74543318fc": {
+            "type": "social-media",
+            "settings": {
+              "social_media_title": "",
+              "social_media_icon": "",
+              "social_media_link": ""
+            }
+          },
+          "a30fd938-ab67-4f0d-b802-5df869cf36df": {
+            "type": "social-media",
+            "settings": {
+              "social_media_title": "",
+              "social_media_icon": "",
+              "social_media_link": ""
+            }
+          }
+        },
+        "block_order": [
+          "3ba6d3c9-5e0f-484e-a46f-1c3939e1681a",
+          "ce74685c-ed45-454b-947d-85f3fece5480",
+          "ae76d541-49fd-466c-8bfe-91aa7fa28047",
+          "4e543b54-1714-427b-91dd-312c35265d50",
+          "48c69618-ae19-4caa-9e2d-5d74543318fc",
+          "a30fd938-ab67-4f0d-b802-5df869cf36df"
+        ],
         "settings": {
+          "footer_logo_img": "shopify:\/\/shop_images\/Zwart_logo_2x_4e3b6a76-552a-47e9-bdfc-2e094fd70dd9.png",
+          "footer_logo": "",
+          "footer_address": "",
+          "footer_copyright_text": "© Copyright 2020. All Rights Reserved.",
+          "footer_made_by_text": "<a class=\"policies-link\">dear digital<\/a>",
+          "privacy_link": "<a href=\"\/policies\/privacy-policy\" class=\"policies-link\">Privacy &amp; Cookies<\/a>"
         }
       }
     },
