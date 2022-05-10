@@ -1,5 +1,14 @@
 {
   "sections": {
+    "165217987528287991": {
+      "type": "dc-hero",
+      "settings": {
+        "hero_img": "shopify:\/\/shop_images\/Hero_image_2x_c4b6d25f-59ea-45f1-a5a8-fb73e3262e9f.png",
+        "title": "",
+        "button_txt": "",
+        "button_url": ""
+      }
+    },
     "featured_collection": {
       "type": "featured-collection",
       "settings": {
@@ -29,6 +38,7 @@
     }
   },
   "order": [
+    "165217987528287991",
     "featured_collection"
   ]
 }
