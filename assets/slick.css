@@ -313,7 +313,7 @@
 
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-  background-color: #d3dbe2;  
+  background-color: #BDB4AC;  
   transition: all .4s ease;
   border-radius: 50%;
 }
@@ -494,7 +494,7 @@
 .featured-carousel .slick-dots li {
   width: 8px;
   height: 8px;
-  margin: 0 2px;
+  margin: 0 5px;
 }
 .featured-carousel .slick-dots li.slick-active {
   width: 8px !important;
