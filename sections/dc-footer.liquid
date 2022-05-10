@@ -11,12 +11,22 @@
         {% endif %}
       </div>
       <div class="footer-upper-inner flex-box justify-between">
-      <div class="footer-upper-part no-t-m">
-        {% if section.settings.footer_logo_img != blank %}
-        <a href="/" class="footer-logo-img" aria-label="4gold"><img src="{{ section.settings.footer_logo_img | img_url: '200x' }}" alt="{{ section.settings.footer_logo_img.alt }}"></a>
-        {% else %}
-        <a href="/" class="footer-logo" aria-label="4gold">{{ section.settings.footer_logo }}</a>
-        {% endif %}
+        <div class="footer-upper-part no-t-m">
+          {% if section.settings.footer_logo_img != blank %}
+          <a href="/" class="footer-logo-img" aria-label="4gold"><img src="{{ section.settings.footer_logo_img | img_url: '200x' }}" alt="{{ section.settings.footer_logo_img.alt }}"></a>
+          {% else %}
+          <a href="/" class="footer-logo" aria-label="4gold">{{ section.settings.footer_logo }}</a>
+          {% endif %}
+          
+          <div class="footer-store-address">{{ section.settings.footer_address }}</div>
+          
+          <div class="footer-social-wrap">
+            {% for block in section.blocks %}
+              {% if block.type == 'social' %}
+            	<a href="{{ block.settings.social_media_link }}" class="social-icon" target="_blank" aria-label="{{ section.settings.social_media_title }}">{{ block.settings.social_media_icon }}</a>
+              {% endif %}
+            {% endfor %}
+          </div>
         </div>
       	{% for block in section.blocks %}
       		{% if block.type == 'menu' %}
@@ -29,57 +39,7 @@
       		{% endif %}
       	{% endfor %}
       <div class="footer-upper-part">
-        {% for block in section.blocks %}
-      		{% if block.type == 'social' %}
-              <div class="footer-menu-title title bold">{{ block.settings.social_title }}</div>
-              <div class="footer-social-wrap">
-                  {% if block.settings.sm_logo_img_1 != blank %}
-                	<a href="{{ block.settings.social_link_1 }}" class="social-icon social-icon-img" target="_blank" aria-label="facebook"><img src="{{ block.settings.sm_logo_img_1 | img_url: '24x' }}"></a>
-                  {% elsif block.settings.sm_logo_1 != blank %}
-                  <a href="{{ block.settings.social_link_1 }}" class="social-icon" target="_blank" aria-label="facebook">{{ block.settings.sm_logo_1 }}</a>
-                  {% endif %}
-                {% if block.settings.sm_logo_img_2 != blank %}
-                	<a href="{{ block.settings.social_link_2 }}" class="social-icon social-icon-img" target="_blank" aria-label="instagram"><img src="{{ block.settings.sm_logo_img_2 | img_url: '24x' }}"></a>
-                  {% elsif block.settings.sm_logo_2 != blank %}
-                  <a href="{{ block.settings.social_link_2 }}" class="social-icon" target="_blank" aria-label="instagram">{{ block.settings.sm_logo_2 }}</a>
-                  {% endif %}
-                {% if block.settings.sm_logo_img_3 != blank %}
-                	<a href="{{ block.settings.social_link_3 }}" class="social-icon social-icon-img" target="_blank" aria-label="tiktok"><img src="{{ block.settings.sm_logo_img_3 | img_url: '24x' }}"></a>
-                  {% elsif block.settings.sm_logo_3 != blank %}
-                  <a href="{{ block.settings.social_link_3 }}" class="social-icon" target="_blank" aria-label="tiktok">{{ block.settings.sm_logo_3 }}</a>
-                  {% endif %}
-                {% if block.settings.sm_logo_img_4 != blank %}
-                	<a href="{{ block.settings.social_link_4 }}" class="social-icon social-icon-img" target="_blank" aria-label="linkedin"><img src="{{ block.settings.sm_logo_img_4 | img_url: '24x' }}"></a>
-                  {% elsif block.settings.sm_logo_4 != blank %}
-                  <a href="{{ block.settings.social_link_4 }}" class="social-icon" target="_blank" aria-label="linkedin">{{ block.settings.sm_logo_4 }}</a>
-                  {% endif %}
-                {% if block.settings.sm_logo_img_5 != blank %}
-                	<a href="{{ block.settings.social_link_5 }}" class="social-icon social-icon-img" target="_blank"><img src="{{ block.settings.sm_logo_img_5 | img_url: '24x' }}"></a>
-                  {% elsif block.settings.sm_logo_5 != blank %}
-                  <a href="{{ block.settings.social_link_5 }}" class="social-icon" target="_blank">{{ block.settings.sm_logo_5 }}</a>
-                  {% endif %}
-                {% if block.settings.sm_logo_img_6 != blank %}
-                	<a href="{{ block.settings.social_link_6 }}" class="social-icon social-icon-img" target="_blank"><img src="{{ block.settings.sm_logo_img_6 | img_url: '24x' }}"></a>
-                  {% elsif block.settings.sm_logo_6 != blank %}
-                  <a href="{{ block.settings.social_link_6 }}" class="social-icon" target="_blank">{{ block.settings.sm_logo_6 }}</a>
-                  {% endif %}
-              </div>
-        	{% endif %}
-          {% endfor %}
-          {% for block in section.blocks %}
-      		{% if block.type == 'payment' %}
-              <div class="footer-menu-title title bold">{{ block.settings.payment_title }}</div>
-        	  <div class="footer-social-wrap">
-                <div class="payment-companies-svgs">     
-                  <div class="payment-logo">                
-                    {%- for type in shop.enabled_payment_types -%}
-                    {{ type | payment_type_svg_tag: class: 'pay-icon' }}{% assign mod = forloop.index | modulo: 5 %}{% if mod == 0 %}<br class="no-t-m">{% endif %}
-                    {%- endfor -%}
-                  </div>
-                </div>
-              </div>
-        	{% endif %}
-          {% endfor %}
+        
       </div>
       </div>
     </div>
@@ -103,6 +63,11 @@
 			"type": "text",
 			"id": "footer_logo",
 			"label": "Footer Logo SVG"
+		},
+		{
+			"type": "html",
+			"id": "footer_address",
+			"label": "Store Address"
 		},
 		{
 			"type": "text",
@@ -142,6 +107,11 @@
 			"type": "social-media",
 			"name": "Social Media",
 			"settings": [
+				{
+					"type": "text",
+					"id": "social_media_title",
+					"label": "Social Media Title"
+				},
 				{
 					"type": "text",
 					"id": "social_media_icon",
