@@ -7,7 +7,7 @@
         {% if block.type == 'features-logos' %}
         <div class="features-content-wrap">
           <div class="feature-logo-wrap">
-            <img src="{{ block.settings.logo_img | img_url: "x64" }}" alt="{{ block.settings.logo_title }}">
+            {{ block.settings.logo_img }}
           </div>
           <div class="feature-title">{{ block.settings.logo_title }}</div>
           <div class="feature-desc">{{ block.settings.logo_desc }}</div>
