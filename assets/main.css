@@ -102,7 +102,7 @@
   padding-bottom: 80px;
 }
 body {
-  font-family: Avenir,sans-serif;
+  font-family: "Avenir",sans-serif;
   font-weight: 400;
   margin: 0;
   color: rgb(var(--color-base-accent-1));
@@ -131,7 +131,7 @@ main {
   align-items: center;
   background-color: rgb(var(--color-base-background-1));
   text-align: center;
-  font-family: Avenir,sans-serif;
+  font-family: "Avenir",sans-serif;
   font-size: 16px;
   font-weight: 900;
   line-height: 22px;
