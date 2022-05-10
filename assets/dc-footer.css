@@ -9,6 +9,7 @@
 .footer-logo-img {
   width: 170px;
   display: block;
+  margin-bottom: 24px;
 }
 .footer-logo-img img {
   width: 100%;
@@ -23,12 +24,15 @@
   color: rgb(var(--color-base-accent-1));
 }
 .footer-lower {
-  margin: 24px auto 22px;
+  padding: 24px 0 22px;
 }
-.footer-lower-text {
+.footer-lower-text, .footer-store-address p {
   font-size: 16px;
   line-height: 24px;
   font-family: var(--font-body-family);
   font-weight: var(--font-body-weight);
   color: rgb(var(--color-base-accent-1));
+}
+.footer-store-address p {
+  margin: 0;
 }
