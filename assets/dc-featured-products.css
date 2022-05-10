@@ -77,13 +77,17 @@
 .product-card:hover .product-card-hover {
   display: flex;
   position: absolute;
+  left: -8px;
   border: 2px solid rgb(var(--color-base-accent-1));
-  width: 100%;
-  height: 100%;
+  width: calc(100% + 16px);
+  height: calc(100% + 16px);
   align-items: center;
   justify-content: center;
   z-index: 2;
   background: rgba(0,0,0,.25);
+}
+.product-card:hover .product-card-image {
+  margin-top: 8px;
 }
 .product-btn {
   padding: 7px 24px 6px;
