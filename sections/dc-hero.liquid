@@ -1,6 +1,6 @@
 {{ 'dc-hero.css' | asset_url | stylesheet_tag }}
 
-<div class="hero-sec marg-bottom no-t-m" style="background-image: linear-gradient(#00000021, #00000021),url({{ section.settings.hero_img | img_url: '2000x' }})">
+<div class="hero-sec marg-bottom no-t-m" style="background-image: linear-gradient( rgb(24 23 22 / 25%), rgb(24 23 22 / 25%) ),,url({{ section.settings.hero_img | img_url: '2000x' }})">
   <div class="container flex-box">
       <h1 class="title bold hero-title">{{ section.settings.title }}</h1>
       <a href="{{ section.settings.button_url }}" class="hero-btn btn">{{ section.settings.button_txt }}</a>
