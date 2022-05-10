@@ -141,7 +141,8 @@ main {
   transition: all .3s ease-out;
   cursor: pointer;
   text-transform: uppercase;
-  padding: 12px 24px 11px;
+  text-decoration: none;
+  padding: 11px 24px 10px;
   color: rgb(var(--color-base-accent-1));
   border: 1px solid rgb(var(--color-base-accent-1));
 }
