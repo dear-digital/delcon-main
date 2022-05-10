@@ -4,7 +4,7 @@
   <div class="container">
     <div class="features-content text-center flex-box align-center justify-around">
       {% for block in section.blocks %}
-        {% if block.type == 'features-logos' %}
+        {% if block.type == 'features' %}
         <div class="features-content-wrap">
           <div class="feature-logo-wrap">
             <img src="{{ block.settings.logo_img | img_url: "86x" }}" alt="{{ block.settings.logo_title }}">
@@ -24,7 +24,7 @@
     "settings": [],
 	"blocks": [
 		{
-			"type": "features-logos",
+			"type": "features",
 			"name": "Feature Logo",
 			"limit": 4,
 			"settings": [
