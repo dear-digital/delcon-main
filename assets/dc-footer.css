@@ -24,6 +24,13 @@
   color: rgb(var(--color-base-accent-1));
   text-decoration: none;
 }
+.footer-link:last-child, .policies-link:last-child {
+  margin-bottom: 0;
+}
+.footer-link:hover, .policies-link:hover {
+  color: #b499bf;
+  text-decoration: underline;
+}
 .footer-social-wrap {
   display: flex;
   margin-top: 18px;
@@ -37,9 +44,6 @@
   background-color: #B499BF;
   border-radius: 50%;
   margin-right: 16px;
-}
-.footer-link:last-child, .policies-link:last-child {
-  margin-bottom: 0;
 }
 .footer-nav-wrapper {
   display: flex;
