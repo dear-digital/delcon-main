@@ -1,0 +1,34 @@
+.dc-footer {
+  border-top: 1px solid #746B63;
+  background-color: #F2F1F0;
+}
+.footer-upper {
+  border-bottom: 1px solid #746B63;
+  padding: 40px 0;
+}
+.footer-logo-img {
+  width: 170px;
+  display: block;
+}
+.footer-logo-img img {
+  width: 100%;
+}
+.footer-link {
+  display: block;
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 12px;
+  font-family: var(--font-body-family);
+  font-weight: var(--font-body-weight);
+  color: rgb(var(--color-base-accent-1));
+}
+.footer-lower {
+  margin: 24px auto 22px;
+}
+.footer-lower-text {
+  font-size: 16px;
+  line-height: 24px;
+  font-family: var(--font-body-family);
+  font-weight: var(--font-body-weight);
+  color: rgb(var(--color-base-accent-1));
+}
