@@ -30,14 +30,13 @@
           </div>
         </div>
       	{% for block in section.blocks %}
-      		{% if block.type == 'menu' %}
-      			<div class="footer-upper-part">
-                  <div class="footer-menu-title title bold">{{ block.settings.menu_title }}</div>
-      			{% for link in linklists[block.settings.menu].links %}
-                  <a href="{{ link.url }}" class="footer-link light">{{ link.title }}</a>
-      			{% endfor %}
-      			</div>
-      		{% endif %}
+          {% if block.type == 'menu' %}
+            <div class="footer-upper-part">
+              {% for link in linklists[block.settings.menu].links %}
+              	<a href="{{ link.url }}" class="footer-link light">{{ link.title }}</a>
+              {% endfor %}
+            </div>
+          {% endif %}
       	{% endfor %}
       <div class="footer-upper-part">
         
@@ -46,6 +45,7 @@
     </div>
     <div class="footer-lower flex-box justify-between">
       <div class="footer-lower-text light">{{ section.settings.footer_copyright_text }}</div>
+      <div class="footer-lower-text light">{{ section.settings.privacy_link }}</div>
       <div class="footer-lower-text light">{{ section.settings.footer_made_by_text }}</div>
     </div>
   </div>
