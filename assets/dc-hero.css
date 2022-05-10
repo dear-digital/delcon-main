@@ -1,13 +1,12 @@
 .hero-sec {
-  height: calc(66.6666667vw - 136.8px);
+  height: 66.6666667vw;
   width: 100%;
   position: relative;
   overflow: hidden;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  margin-bottom: 80px;
-  max-height: calc( 100vh - 136.8px );
+  max-height: 100vh;
 }
 
 .hero-sec .container{
