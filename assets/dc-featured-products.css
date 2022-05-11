@@ -37,6 +37,15 @@
   position: relative;
   object-fit: contain;
 }
+.product-card-image .default-img {
+  opacity: 1;
+}
+.product-card-image .hovered-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
 .product-card-details {
   display: flex;
   justify-content: space-between;
@@ -100,4 +109,13 @@
 }
 .featured-btn:hover {
   background-color: #E8E6E4 !important;
+}
+
+@media (min-width: 993px) {
+  .product-card:hover .product-card-image .default-img {
+    opacity: 0;
+  }
+  .product-card:hover .product-card-image .hovered-img {
+    opacity: 1;
+  }
 }
