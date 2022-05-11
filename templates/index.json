@@ -96,12 +96,31 @@
         "featured_btn_text": "ALLE PRODUCTEN",
         "featured_btn_url": "shopify:\/\/collections\/kattenvoer"
       }
+    },
+    "1652266546129bd5f6": {
+      "type": "dc-img-video-text",
+      "settings": {
+        "background_color": "#bdb4ac",
+        "media_alignment": "left",
+        "section_type": "img_txt",
+        "section_image": "shopify:\/\/shop_images\/Image_2x_7c6d9fee-f8e7-4d8f-9a84-02ed7613247c.png",
+        "product_video": "",
+        "video_link": "",
+        "section_subtitle": "OVER ONS",
+        "section_title": "We streven ernaar een icoon te zijn van ware kwaliteit.",
+        "section_text": "Onze voeding is met veel zorg geformuleerd. Ze is enkel opgebouwd uit de meest <strong>verfijnde ingrediënten<\/strong>. Zo bekomen wij de meest gezonde voeding waarop jij trots mag zijn dat je ze aan je geliefde viervoeter kan geven.",
+        "section_link": "MEER WETEN",
+        "section_url": "shopify:\/\/pages\/over-ons",
+        "section_btn_text": "",
+        "section_btn_url": ""
+      }
     }
   },
   "order": [
     "165217987528287991",
     "1652188517cd05b004",
     "165219334440eb74eb",
-    "165220075608ac05ae"
+    "165220075608ac05ae",
+    "1652266546129bd5f6"
   ]
 }
