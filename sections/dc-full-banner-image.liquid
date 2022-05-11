@@ -1,11 +1,53 @@
 {{ 'dc-full-banner-image.css' | asset_url | stylesheet_tag }}
 
-
+<div class="hero-sec full-banner-img marg-top-xl marg-bottom-xl" style="background-image: url({{ section.settings.section_image | img_url: '2000x' }});">
+  <div class="flex-box justify-center align-center">
+    <div class="container">
+      <h2 class="hero-title tk-le-monde-livre-classic-byol">{{ section.settings.section_title }}</h2>
+      <p class="banner-text">{{ section.settings.section_text }}</p>
+      {% if section.settings.section_btn_text != blank %}
+        <a href="{{ section.settings.section_btn_url }}" class="btn {% if section.settings.isProductFinder == true %}btn-productFinder grey-btn{% endif %}">{{ section.settings.section_btn_text }}</a>
+      {% endif %}
+    </div>
+  </div>
+</div>
 
 {% schema %}
   {
     "name": "Delcon Full Image Banner",
-    "settings": [],
+    "settings": [
+	  {
+        "label": "Section Image",
+        "id": "section_image",
+        "type": "image_picker"
+	  },
+	  {
+          "label": "Section title",
+          "id": "section_title",
+          "type": "text"
+      },
+      {
+          "label": "Section text",
+          "id": "section_text",
+          "type": "html"
+      },
+	  {
+          "label": "Is Button ProductFinder",
+          "id": "isProductFinder",
+          "type": "checkbox",
+		  "info": "Tick this field only on ProductFinder related button"
+      },
+	  {
+          "label": "Section Button text",
+          "id": "section_btn_text",
+          "type": "text"
+      },
+      {
+          "label": "Section Button url",
+          "id": "section_btn_url",
+          "type": "url"
+      }
+	],
 	"presets": [
     {
       "name": "Delcon Full Image Banner"
