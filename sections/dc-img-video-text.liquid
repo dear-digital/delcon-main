@@ -1,3 +1,5 @@
+{{ 'dc-img-video-text.css' | asset_url | stylesheet_tag }}
+
 <div class="image-video-text-block marg-top-xl marg-bottom-xl" style="background-color: {{ section.settings.background_color }}">
   <div class="container">
     <div class="flex-box justify-between align-center rel image-text-wrapper {% if section.settings.media_alignment == 'right' %}rev-cols{% endif %}">
