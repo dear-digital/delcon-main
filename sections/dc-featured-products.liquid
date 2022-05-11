@@ -11,8 +11,8 @@
             <button class="btn product-btn">{{ section.settings.meerInfo }}</button>
           </a>
           <div class="product-card-image rel">
-            <img class="default-img" src="{{ product.images[0].src | default: product.featured_image | img_url: '392x' }}" alt="{{ product.title | escape }}" loading="lazy" />
-            <img class="hovered-img no-t-m" src="{{ product.images[1].src | default: product.featured_image | img_url: '392x' }}" alt="{{ product.title | escape }}" loading="lazy" />
+            <img class="default-img" src="{{ product.images[0] | default: product.featured_image | img_url: '392x' }}" alt="{{ product.title | escape }}" loading="lazy" />
+            <img class="hovered-img no-t-m" src="{{ product.images[1] | default: product.featured_image | img_url: '392x' }}" alt="{{ product.title | escape }}" loading="lazy" />
           </div>
           <div class="product-card-details">
             <div class="prooduct-title-desc">
