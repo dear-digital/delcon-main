@@ -36,8 +36,8 @@
 }
 .text-block {
   width: 50%;
-  max-width: 470px;
-  margin: 0 auto;
+/*   max-width: 470px;
+  margin: 0 auto; */
   padding: 0 64px;
 }
 .heading-text {
