@@ -191,6 +191,14 @@
         "section_btn_text": "",
         "section_btn_url": ""
       }
+    },
+    "1652278273eeaa610d": {
+      "type": "dc-newsletter",
+      "settings": {
+        "title": "Krijg nu 20% korting",
+        "desc": "Schrijf je in op onze nieuwsbrief en blijf op de hoogte van acties en promoties. 20% korting die je kan gebruiken bij je volgende aankoop in onze shop",
+        "subscribe_btn": "Send"
+      }
     }
   },
   "order": [
@@ -202,6 +210,7 @@
     "1652266546129bd5f6",
     "1652269367f81499c7",
     "165227554315de52bc",
-    "1652272469832741b2"
+    "1652272469832741b2",
+    "1652278273eeaa610d"
   ]
 }
