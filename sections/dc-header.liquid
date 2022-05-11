@@ -27,7 +27,7 @@
         {% for link in section.settings.header_right_menu.links %}
           <li class="no-t-m"><a href="{{ link.url }}">{{ link.title | escape }}</a></li>
         {% endfor %}
-        <li class="no-t-m"><a href="{{ section.settings.header_btn_url }}" class="btn header-btn">{{ section.settings.header_btn_text }}</a></li>
+        <li class="no-t-m"><a href="{{ section.settings.header_btn_url }}" class="btn header-btn {% if section.settings.isProefpakketten == true %}btn-proefpakketten{% endif %}">{{ section.settings.header_btn_text }}</a></li>
       </ul>
     </nav>
   </div>
@@ -53,6 +53,12 @@
           "id": "header_right_menu",
           "default": "main-menu",
           "label": "Select right menu for header"
+        },
+		{
+          "label": "Is Button Proefpakket",
+          "id": "isProefpakket",
+          "type": "checkbox",
+	      "info": "Tick this field only on Proefpakket related button"
         },
 		{
           "type": "text",
