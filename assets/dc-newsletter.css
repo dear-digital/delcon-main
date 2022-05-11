@@ -30,6 +30,7 @@
   font-weight: 700;
   text-transform: uppercase;
   cursor: pointer;
+  transition: all .3s ease-out;
 }
 .nl-submit-btn:hover {
   background-color: #8A6899;
