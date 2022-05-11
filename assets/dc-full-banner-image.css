@@ -11,6 +11,7 @@
 .full-banner-wrapper {
   width: 100%;
   max-width: 476px;
+  margin: 0;
 }
 .full-banner-title {
   font-size: 56px;
