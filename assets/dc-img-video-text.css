@@ -66,3 +66,17 @@
   margin: 24px 0 0;
   transition: all .3s ease-out;
 }
+.about-link:after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -2px;
+  width: 0px;
+  height: 2px;
+  background: #fff;
+  transition: all 0.45s;
+}
+.about-link:hover:after {
+  width: 100%;
+  left: 0;
+}
