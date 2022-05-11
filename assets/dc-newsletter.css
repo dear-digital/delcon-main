@@ -28,7 +28,11 @@
   border: none;
   width: 185px;
   font-weight: 700;
+  text-transform: uppercase;
   cursor: pointer;
+}
+.nl-submit-btn:hover {
+  background-color: #8A6899;
 }
 
 .nl-input {
