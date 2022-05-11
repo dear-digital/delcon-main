@@ -80,6 +80,7 @@
         "media_alignment": "right",
         "section_type": "img_txt",
         "section_image": "shopify:\/\/shop_images\/Image_2x_08842411-8838-4190-9f06-a6f9ef370da4.png",
+        "product_video": "",
         "video_link": "",
         "custom_logo": "",
         "section_subtitle": "PROEFPAKKET",
@@ -158,6 +159,26 @@
         "section_btn_text": "",
         "section_btn_url": ""
       }
+    },
+    "1652272469832741b2": {
+      "type": "dc-img-video-text",
+      "settings": {
+        "background_color": "",
+        "media_alignment": "left",
+        "section_type": "img_txt",
+        "section_image": "shopify:\/\/shop_images\/Image_2x_39e61b2e-7305-4cd7-8686-8ddaa5d55b19.png",
+        "video_link": "",
+        "custom_logo": "",
+        "section_subtitle": "",
+        "section_title": "",
+        "section_text": "",
+        "section_link": "",
+        "section_url": "",
+        "isProefpakketten": false,
+        "proefpakketten_text": "",
+        "section_btn_text": "",
+        "section_btn_url": ""
+      }
     }
   },
   "order": [
@@ -167,6 +188,7 @@
     "165219334440eb74eb",
     "165220075608ac05ae",
     "1652266546129bd5f6",
-    "1652269367f81499c7"
+    "1652269367f81499c7",
+    "1652272469832741b2"
   ]
 }
