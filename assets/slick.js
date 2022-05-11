@@ -35,7 +35,7 @@ $(document).ready(function(){
   $('.featured-carousel').slick({
     infinite: false,
     slidesToShow: 4,
-    slidesToScroll: 1,
+    slidesToScroll: 4,
     arrows: true,
     dots: true,
     responsive: [
@@ -44,8 +44,8 @@ $(document).ready(function(){
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,
-          arrows: false,
-          dots: true
+          arrows: true,
+          dots: false
         }
       },
       {
@@ -53,8 +53,8 @@ $(document).ready(function(){
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
-          arrows: false,
-          dots: true
+          arrows: true,
+          dots: false
         }
       }
   ]
