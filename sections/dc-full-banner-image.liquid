@@ -1,7 +1,16 @@
+{{ 'dc-full-banner-image.css' | asset_url | stylesheet_tag }}
+
+
+
 {% schema %}
   {
     "name": "Delcon Full Image Banner",
-    "settings": []
+    "settings": [],
+	"presets": [
+    {
+      "name": "Delcon Full Image Banner"
+    }
+  ]
   }
 {% endschema %}
 
