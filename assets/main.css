@@ -165,6 +165,10 @@ main {
 }
 .checked-list li {
   list-style: none;
+  margin-bottom: 16px;
+}
+.checked-list li:last-child {
+  margin-bottom: 0;
 }
 .checked-list li:before {
   content: '';
