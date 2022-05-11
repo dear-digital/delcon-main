@@ -103,7 +103,7 @@
 }
 body {
   font-family: "Avenir",sans-serif;
-  font-weight: 400;
+  font-weight: 300;
   margin: 0;
   color: rgb(var(--color-base-accent-1));
     scroll-behavior: smooth;
