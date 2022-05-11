@@ -106,14 +106,17 @@ body {
   font-weight: 300;
   margin: 0;
   color: rgb(var(--color-base-accent-1));
-    scroll-behavior: smooth;
-    }
+  scroll-behavior: smooth;
+}
 body span {
   user-select: none;
   -webkit-user-select: none;
   -moz-user-select: none;
   -khtml-user-select: none;
   -ms-user-select: none;
+}
+body ul {
+  padding-inline-start: 15px;
 }
 body.no-scroll {
   overflow: hidden;
