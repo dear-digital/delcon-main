@@ -160,6 +160,21 @@ main {
   background-color: #e8e6e4!important
 }
 
+.checked-list li {
+  list-style: none;
+}
+.checked-list li:before {
+  content: '';
+  display: block;
+  flex-shrink: 0;
+  width: 22px;
+  height: 16px;
+  margin-right: 10px;
+  vertical-align: middle;
+  background: url('https://image.flaticon.com/icons/png/128/1168/1168671.png') no-repeat left center;
+  background-size: contain;
+}
+
 @media (min-width: 993px) {
   .no-d {
     display: none!important;
