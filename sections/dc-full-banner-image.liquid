@@ -1,9 +1,9 @@
 {{ 'dc-full-banner-image.css' | asset_url | stylesheet_tag }}
 
-<div class="hero-sec full-banner-img marg-top-xl marg-bottom-xl" style="background-image: url({{ section.settings.section_image | img_url: '2000x' }});">
+<div class="hero-sec marg-top-xl marg-bottom-xl" style="background-image: url({{ section.settings.section_image | img_url: '2000x' }});">
   <div class="flex-box justify-center align-center">
-    <div class="container">
-      <h2 class="hero-title tk-le-monde-livre-classic-byol">{{ section.settings.section_title }}</h2>
+    <div class="container full-banner-wrapper">
+      <h2 class="hero-title full-banner-title tk-le-monde-livre-classic-byol">{{ section.settings.section_title }}</h2>
       <p class="banner-text">{{ section.settings.section_text }}</p>
       {% if section.settings.section_btn_text != blank %}
         <a href="{{ section.settings.section_btn_url }}" class="btn {% if section.settings.isProductFinder == true %}btn-productFinder grey-btn{% endif %}">{{ section.settings.section_btn_text }}</a>
