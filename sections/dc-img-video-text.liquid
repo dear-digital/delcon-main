@@ -27,13 +27,13 @@
         <h2 class="heading-text tk-le-monde-livre-classic-byol">{{ section.settings.section_title }}</h2>
         <div class="about-text">{{ section.settings.section_text }}</div>
         {% if section.settings.section_btn_text != blank %}
-          <a href="{{ section.settings.section_btn_url }}" class="btn {% if section.settings.isProefpakketten == true %}btn-proefpakketten{% endif %}">{{ section.settings.section_btn_text }}</a>
+          <a href="{{ section.settings.section_btn_url }}" class="btn {% if section.settings.isProefpakketten == true %}btn-proefpakketten grey-btn{% endif %}">{{ section.settings.section_btn_text }}</a>
         {% endif %}
         {% if section.settings.isProefpakketten == true and section.settings.proefpakketten_text != blank %}
         	{{ section.settings.proefpakketten_text }}
         {% endif %}
         {% if section.settings.section_link != blank %}
-          <a href="{{ section.settings.section_url }}" rel="noreferrer" class="about-link grey-btn">{{ section.settings.section_link }}</a>
+          <a href="{{ section.settings.section_url }}" rel="noreferrer" class="about-link">{{ section.settings.section_link }}</a>
         {% endif %}
       </div>
     </div>
