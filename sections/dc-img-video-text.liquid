@@ -3,8 +3,8 @@
 <div class="image-video-text-block marg-top-xl marg-bottom-xl">
   <div class="container">
     <div class="flex-box justify-between align-center rel image-text-wrapper {% if section.settings.media_alignment == 'right' %}rev-cols{% endif %}" style="background-color: {{ section.settings.background_color }}">
+      <span class="custom-logo">{{ section.settings.custom_logo }}</span>
       <div class="image-video-block rel {% if section.settings.section_type == 'video' %}img-w-txt-video-wrap {% if section.settings.video_link != '' %}custom-video{% endif %}{% endif %}">
-        <span class="custom-logo no-d">{{ section.settings.custom_logo }}</span>
         {% if section.settings.section_type == 'video' %}
           <img  class="video-cover" src="{{ section.settings.cover_img | image_url: height: 600 }}" loading="lazy" alt="Video title">
           {% if section.settings.video_link != '' %}
@@ -23,7 +23,6 @@
         {% endif %}
       </div>
       <div class="text-block rel">
-        <span class="custom-logo no-t-m">{{ section.settings.custom_logo }}</span>
         <span class="subheading-text">{{ section.settings.section_subtitle }}</span>
         <h2 class="heading-text tk-le-monde-livre-classic-byol">{{ section.settings.section_title }}</h2>
         <div class="about-text">{{ section.settings.section_text }}</div>
