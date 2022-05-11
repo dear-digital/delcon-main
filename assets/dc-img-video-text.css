@@ -83,3 +83,10 @@
   width: 100%;
   left: 0;
 }
+.custom-logo {
+  display: block;
+  width: 91px;
+  position: absolute;
+  top: 0;
+  left: 64px;
+}
