@@ -29,7 +29,7 @@
         {% if section.settings.section_btn_text != blank %}
           <a href="{{ section.settings.section_btn_url }}" class="btn {% if section.settings.isProefpakketten == true %}btn-proefpakketten{% endif %}">{{ section.settings.section_btn_text }}</a>
         {% endif %}
-        {% if section.settings.isProefpakketten == true %}
+        {% if section.settings.isProefpakketten == true and section.settings.proefpakketten_text != blank %}
         	{{ section.settings.proefpakketten_text }}
         {% endif %}
         {% if section.settings.section_link != blank %}
