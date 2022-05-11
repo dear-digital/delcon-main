@@ -150,6 +150,13 @@ main {
   background-color: #D0E0E8;
 }
 
+.grey-btn {
+  background-color: rgb(var(--color-base-text))!important;
+}
+.grey-btn:hover {
+  background-color: #e8e6e4!important
+}
+
 @media (min-width: 993px) {
   .no-d {
     display: none!important;
