@@ -4,7 +4,7 @@
   <div class="flex-box justify-center align-center">
     <div class="container full-banner-wrapper">
       <h2 class="hero-title full-banner-title tk-le-monde-livre-classic-byol">{{ section.settings.section_title }}</h2>
-      <p class="banner-text">{{ section.settings.section_text }}</p>
+      <div class="banner-text">{{ section.settings.section_text }}</div>
       {% if section.settings.section_btn_text != blank %}
         <a href="{{ section.settings.section_btn_url }}" class="btn {% if section.settings.isProductFinder == true %}btn-productFinder grey-btn{% endif %}">{{ section.settings.section_btn_text }}</a>
       {% endif %}
