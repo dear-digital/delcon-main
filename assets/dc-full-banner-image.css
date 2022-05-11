@@ -1,8 +1,22 @@
+.full-banner-img {
+  height: 66.6666667vw;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  max-height: 100vh;
+}
 .full-banner-wrapper {
   width: 100%;
   max-width: 476px;
 }
 .full-banner-title {
+  font-size: 56px;
+  line-height: 109px;
+  font-weight: 700;
+  margin: 0 0 16px;
   color: rgb(var(--color-base-accent-1)) !important;
 }
 .banner-text {
