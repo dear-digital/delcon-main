@@ -75,6 +75,10 @@
   letter-spacing: 0;
   margin: 0;
 }
+.product-card-desc {
+  height: 16px;
+  overflow: hidden;
+}
 .product-card-price .product-price, .product-card-details .product-card-desc {
   font-size: 12px;
   line-height: 16px;
