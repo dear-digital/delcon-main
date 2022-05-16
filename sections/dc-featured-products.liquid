@@ -23,8 +23,8 @@
               <p class="product-price">{{ section.settings.vanaf_text }} {{ product.selected_or_first_available_variant.price | money }}</p>
             </div>
           </div>
+          {% include "product-card" %}
         </div>
-      	{% include "product-card" %}
       {% endfor %}
     </div>
     {% if section.settings.featured_btn_text != blank %}
