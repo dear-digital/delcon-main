@@ -1,3 +1,10 @@
+.card-product {
+  display: block;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
 .card-product-image {
   width: 50%;
   max-width: 598px;
