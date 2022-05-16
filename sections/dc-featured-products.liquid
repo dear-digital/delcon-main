@@ -16,7 +16,7 @@
           </div>
           <div class="product-card-details">
             <div class="prooduct-title-desc">
-              <p class="product-card-title">{{ product.title | strip_html | truncate: 15 | escape }}</p>
+              <p class="product-card-title">{{ product.title | strip_html | truncate: 20 | escape }}</p>
               <p class="product-card-desc">{{ product.metafields.my_fields.extra_info | escape  }}</p>
             </div>
             <div class="product-card-price">
