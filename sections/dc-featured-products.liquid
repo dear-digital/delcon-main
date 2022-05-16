@@ -37,6 +37,7 @@
   $('.product-card-hover, .product-btn').click(function() {
     $(this).closest(".product-card").find("#card-product").css("opacity", 1);
     $(this).closest(".product-card").find("#card-product").css("pointer-events", "auto");
+    $(this).closest(".product-card").find(".card-product").removeClass("no-disp");
   });
 </script>
 
