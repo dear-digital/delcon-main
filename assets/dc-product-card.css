@@ -1,0 +1,11 @@
+.card-product-image {
+  width: 50%;
+  max-width: 598px;
+  height: 590px;
+}
+.card-product-text {
+  width: 50%;
+/*   max-width: 470px;
+  margin: 0 auto; */
+  padding: 0 64px;
+}
