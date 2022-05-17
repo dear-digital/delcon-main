@@ -2,6 +2,7 @@
 
 <div class="product rel">
   <div class="container">
+    <a href="{{ section.settings.terug_link }}" class="terug-btn">{{ section.settings.terug_btn }}</a>
     <div class="flex-box justify-between align-center rel">
       <div class="card-product-image rel">
 
@@ -53,6 +54,17 @@
   {
     "name": "Delcon Main Product",
     "settings": [
+		{
+          "type": "text",
+          "id": "terug_btn",
+          "label": "Terug Button text",
+		  "default": "terug naar honden"
+        },
+		{
+          "type": "url",
+          "id": "terug_link",
+          "label": "Terug Button link"
+        },
 		{
           "type": "text",
           "id": "add_to_cart",
