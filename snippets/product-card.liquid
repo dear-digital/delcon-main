@@ -31,7 +31,12 @@
 
           </div>
           <div class="card-product-text rel">
-			{{ product.title }} - {{ product.price | money }}
+            <div class="flex-box justify-between align-end">
+              <h2 class="product-title">{{ product.title }}</h2>
+              <p class="product-price">{{ product.default_variant.price | money }}</p>
+            </div>
+            {% for variant in product.variants %}
+            {% endfor %}
           </div>
         </div>
       </div>
