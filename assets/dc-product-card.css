@@ -22,6 +22,9 @@
   height: 100%;
   justify-content: center;
 }
+.card-product-wrapper {
+  background-color: #fff;
+}
 .card-product-image {
   width: 50%;
   max-width: 598px;
