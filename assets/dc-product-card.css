@@ -62,9 +62,14 @@
   position: fixed;
   cursor: pointer;
 }
+.numverOfVariants {
+  display: block;
+  margin: 24px 0 8px;
+}
 .variants-wrapper {
   display: flex;
   align-items: center;
+  margin-bottom: 22px;
 }
 .variant-box {
   display: flex;
@@ -81,7 +86,7 @@
   color: rgb(var(--color-base-accent-1));
   border: 1px solid rgb(var(--color-base-accent-1));
 }
-.variant-selected..variant-box {
+.variant-selected.variant-box {
   background-color: rgb(var(--color-base-background-1));
   border: 2px solid rgb(var(--color-base-accent-1));
 }
@@ -91,11 +96,12 @@
   max-width: none;
   background-color: #0D553F;
   color: #fff;
+  margin-bottom: 14px;
 }
 .product-local-btn {
   display: block;
   width: 100%;
   max-width: none;
   background-color: rgb(var(--color-base-text));
-  color: rgb(var(--color-base-background-1));
+  color: rgb(var(--color-base-accent-1));
 }
