@@ -9,6 +9,7 @@
   text-align: left;
   font-size: 16px;
   line-height: 22px;
+  color: rgb(var(--color-base-accent-1));
   text-decoration: none;
   margin: 0;
   margin-bottom: 24px;
