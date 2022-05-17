@@ -98,6 +98,7 @@
   background-color: #0D553F;
   color: #fff;
   margin-bottom: 14px;
+  text-transform: uppercase;
   transition: all .3s ease-out;
 }
 .product-card-btn:hover {
@@ -107,6 +108,7 @@
   display: block;
   width: 100%;
   max-width: none;
+  text-transform: uppercase;
   background-color: rgb(var(--color-base-text));
   color: rgb(var(--color-base-accent-1));
   transition: all .3s ease-out;
