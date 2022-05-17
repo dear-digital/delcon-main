@@ -226,7 +226,7 @@
     </a>
     {% endcomment %}
 
-    <div class="for-header header-wrapper">
+    <div class="for-header header-wrapper {% if template == "product"or template == "collection" or template == "blog" or template == "article" or template == "page.privacy-policy" or template == "customers/account" or template == "customers/addresses" or template == "customers/reset_password" %}shadow{% endif %}">
       {% section 'dc-announcement-bar' %}
       {% section 'dc-header' %}
     </div>
@@ -275,7 +275,7 @@
         if (scroll > 0) {
           $(".for-header").addClass("shadow");
         } else {
-          if(!(url.includes("products") || url.includes("collections") || url.includes("blogs") || (url == "https://ohyaz.com/account") || (url == "https://ohyaz.com/account#") || url.includes("account/addresses") || url.includes("account/reset") || url.includes("pages/register-success") || url.includes("pages/privacy") || url.includes("pages/terms"))) {
+          if(!(url.includes("products") || url.includes("collections") || url.includes("blogs") || (url.includes("account")) || url.includes("account/addresses") || url.includes("account/reset") || url.includes("pages/register-success") || url.includes("pages/privacy") || url.includes("pages/terms"))) {
             $(".for-header").removeClass("shadow");
           }
         }
