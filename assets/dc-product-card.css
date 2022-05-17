@@ -83,9 +83,13 @@
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
+  margin-right: 16px;
   color: rgb(var(--color-base-accent-1));
   border: 1px solid rgb(var(--color-base-accent-1));
   cursor: pointer;
+}
+.variant-box:last-child {
+  margin-right: 0;
 }
 .variant-selected.variant-box {
   background-color: rgb(var(--color-base-background-1));
