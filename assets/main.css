@@ -194,6 +194,11 @@ main {
   font-weight: 400;
   margin: 0;
 }
+.arrow-left {
+  display: block;
+  width: 8px;
+  height: 8px;
+}
 .arrow-left svg {
   transform: rotate(180deg);
 }
