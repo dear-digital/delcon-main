@@ -41,7 +41,7 @@
             <span class="numverOfVariants">{{ total_variants }} <span class="total-variants">{{ product.variants.size }}</span> {{ maten }}</span>
             <div class="variants-wrapper">
               {% for variant in product.variants %}
-              	<div class="variant-box {% if forloop.index == 1 %}variant-selected{% endif %}">{{ variant.title }}</div>
+              	<div class="variant-box {% if forloop.index == 1 %}variant-selected{% endif %}" data-index="{{ forloop.index }}" data-price="{{ variant.price | money }}">{{ variant.title }}</div>
               {% endfor %}
             </div>
             <a href="{{ product.url }}" class="btn product-card-btn">{{ koop_online }}</a>
