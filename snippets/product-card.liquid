@@ -62,21 +62,4 @@
     $(this).parent().parent().css("pointer-events", "none");
   });
   
-  $(".variant-box").click(function() {
-  	var variantIndex = $(this).data('index');
-    var variantPrice = $(this).data('price');
-    
-    $(".variant-box").removeClass('variant-selected');
-    $(this).addClass('variant-selected');
-    $('.card-product-price').text(variantPrice);
-    
-    $('.variant-features').addClass('no-disp');
-    $('.variant-features').each(function() {
-      if($(this).data('index') == variantIndex) {
-      	$(this).removeClass('no-disp');
-      }
-    });
-    
-  });
-  
 </script>
