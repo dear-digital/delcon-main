@@ -9,7 +9,7 @@
             <img src="{{ product.featured_image | img_url: 'x590' }}" alt="{{ product.title }}" loading="lazy">
           </div>
           <div class="card-product-text rel">
-
+			{{ product.title }} - {{ product.price | money }}
           </div>
         </div>
       </div>
