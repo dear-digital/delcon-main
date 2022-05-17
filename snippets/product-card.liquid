@@ -40,7 +40,7 @@
                 {{ variant.metafields.my_fields.desc }}
               </div>
             {% endfor %}
-            <span class="numverOfVariants">Verkrijgbaar in <span class="total-variants"></span> maten:</span>
+            <span class="numverOfVariants">Verkrijgbaar in <span class="total-variants">{{ products.variants.size }}</span> maten:</span>
             <div class="variants-wrapper">
               {% for variant in product.variants %}
               	<div class="variant-box {% if forloop.index == 1 %}variant-selected{% endif %}">{{ variant.title }}</div>
