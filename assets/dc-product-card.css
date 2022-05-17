@@ -1,3 +1,9 @@
+.featured-carousel .slick-list {
+  overflow: auto;
+}
+.featured-carousel .product-card {
+  overflow: auto;
+}
 .modal, .wrap {
   display: flex;
   align-items: center;
