@@ -375,14 +375,15 @@
 }
 .slider-nav .slick-list {
   padding: 0 !important;
+  margin: 0 auto;
 }
 .slider-nav .slick-track {
   width: 100% !important;
   margin-left: 0;
 }
 .slider-nav img {
-  width: 92px !important;
-  height: 92px;
+  width: 40px !important;
+  height: 40px;
   display: block;
   margin-right: 16px;
 /*   margin-bottom: 8px; */
