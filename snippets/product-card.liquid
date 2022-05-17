@@ -3,7 +3,7 @@
 <div class="wrap" style="position: relative;z-index: 9;">
   <div class="modal" id="card-product-{{ product.id }}">
     <div class="card-product rel no-disp">
-      <div class="container">
+      <div class="container" style="z-index: 4;">
         <div class="card-product-wrapper flex-box justify-between align-center rel">
           <div class="card-product-image rel">
             <img src="{{ product.images[1] | default: product.featured_image | img_url: 'x590' }}" alt="{{ product.title }}" loading="lazy">
