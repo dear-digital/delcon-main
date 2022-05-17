@@ -194,6 +194,9 @@ main {
   font-weight: 400;
   margin: 0;
 }
+.arrow-left svg {
+  transform: rotate(180deg);
+}
 
 @media (min-width: 993px) {
   .no-d {
