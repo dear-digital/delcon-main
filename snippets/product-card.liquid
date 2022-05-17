@@ -33,10 +33,21 @@
           <div class="card-product-text rel">
             <div class="flex-box justify-between align-end">
               <h2 class="product-title">{{ product.title }}</h2>
-              <p class="product-price">{{ product.selected_or_first_available_variant.price | money }}</p>
+              <p class="card-product-price product-price">{{ product.selected_or_first_available_variant.price | money }}</p>
             </div>
             {% for variant in product.variants %}
+              <div class="variant-features {% if forloop.index != 1 %}no-disp{% endif %}" data-index="{{ forloop.index }}">
+                {{ variant.metafields.my_fields.desc }}
+              </div>
             {% endfor %}
+            <span class="numverOfVariants">Verkrijgbaar in <span class="total-variants"></span> maten:</span>
+            <div class="variants-wrapper">
+              {% for variant in product.variants %}
+              	<div class="variant-box {% if forloop.index == 1 %}variant-selected{% endif %}">{{ variant.title }}</div>
+              {% endfor %}
+            </div>
+            <a href="{{ product.url }}" class="btn product-local-btn">{{ section.settings.koop_online }}</a>
+            <a href="/pages/verdeelpunten-belgie" class="btn product-card-btn">{{ section.settings.koop_local }}</a>
           </div>
         </div>
       </div>
