@@ -40,14 +40,14 @@
                 {{ variant.metafields.my_fields.desc }}
               </div>
             {% endfor %}
-            <span class="numverOfVariants">Verkrijgbaar in <span class="total-variants">{{ product.variants.size }}</span> maten:</span>
+            <span class="numverOfVariants">{{ total_variants }} <span class="total-variants">{{ product.variants.size }}</span> {{ maten }}</span>
             <div class="variants-wrapper">
               {% for variant in product.variants %}
               	<div class="variant-box {% if forloop.index == 1 %}variant-selected{% endif %}">{{ variant.title }}</div>
               {% endfor %}
             </div>
-            <a href="{{ product.url }}" class="btn product-local-btn">{{ section.settings.koop_online }}</a>
-            <a href="/pages/verdeelpunten-belgie" class="btn product-card-btn">{{ section.settings.koop_local }}</a>
+            <a href="{{ product.url }}" class="btn product-local-btn">{{ koop_online }}</a>
+            <a href="/pages/verdeelpunten-belgie" class="btn product-card-btn">{{ koop_local }}</a>
           </div>
         </div>
       </div>
