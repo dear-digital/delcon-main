@@ -85,6 +85,7 @@
   font-weight: 400;
   color: rgb(var(--color-base-accent-1));
   border: 1px solid rgb(var(--color-base-accent-1));
+  cursor: pointer;
 }
 .variant-selected.variant-box {
   background-color: rgb(var(--color-base-background-1));
