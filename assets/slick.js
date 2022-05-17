@@ -60,7 +60,7 @@ $(document).ready(function(){
   ]
   });
   
-  $('.slider-for').slick({
+  $('.product-slider-for').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: false,
@@ -81,7 +81,7 @@ $(document).ready(function(){
   $('.slider-nav').slick({
     slidesToShow: 5,
     slidesToScroll: 1,
-    asNavFor: '.product-slider',
+    asNavFor: '.product-slider-for',
     focusOnSelect: true,
     centerMode: true,
     responsive: [
