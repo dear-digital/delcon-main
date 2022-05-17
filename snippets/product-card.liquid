@@ -28,7 +28,7 @@
               {% endif %}
               {% endfor %}
             </div>
-            <img src="{{ product.images[1] | default: product.featured_image | img_url: 'x590' }}" alt="{{ product.title }}" loading="lazy">
+
           </div>
           <div class="card-product-text rel">
 			{{ product.title }} - {{ product.price | money }}
