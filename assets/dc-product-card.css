@@ -62,3 +62,40 @@
   position: fixed;
   cursor: pointer;
 }
+.variants-wrapper {
+  display: flex;
+  align-items: center;
+}
+.variant-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  width: -moz-fit-content;
+  height: 46px;
+  padding: 12px 17px;
+  background-color: #FBFBFB;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: rgb(var(--color-base-accent-1));
+  border: 1px solid rgb(var(--color-base-accent-1));
+}
+.variant-selected..variant-box {
+  background-color: rgb(var(--color-base-background-1));
+  border: 2px solid rgb(var(--color-base-accent-1));
+}
+.product-card-btn {
+  display: block;
+  width: 100%;
+  max-width: none;
+  background-color: #0D553F;
+  color: #fff;
+}
+.product-local-btn {
+  display: block;
+  width: 100%;
+  max-width: none;
+  background-color: rgb(var(--color-base-text));
+  color: rgb(var(--color-base-background-1));
+}
