@@ -17,15 +17,32 @@
   pointer-events: none;
   background-color: #f0f8ff73;
   transition: all ease 1s;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  overflow: hidden;
 }
 .card-product-image {
   width: 50%;
   max-width: 598px;
   height: 590px;
 }
+.card-product-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 .card-product-text {
   width: 50%;
 /*   max-width: 470px;
   margin: 0 auto; */
   padding: 0 64px;
+}
+.modal-background {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background-color: #f0f8ff73;
 }
