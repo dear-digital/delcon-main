@@ -98,6 +98,10 @@
   background-color: #0D553F;
   color: #fff;
   margin-bottom: 14px;
+  transition: all .3s ease-out;
+}
+.product-card-btn:hover {
+  background-color: #063323;
 }
 .product-local-btn {
   display: block;
@@ -105,4 +109,8 @@
   max-width: none;
   background-color: rgb(var(--color-base-text));
   color: rgb(var(--color-base-accent-1));
+  transition: all .3s ease-out;
+}
+.product-local-btn:hover {
+  background-color: #E8E6E4;
 }
