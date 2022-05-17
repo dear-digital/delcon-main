@@ -35,7 +35,7 @@
             </div>
             {% for variant in product.variants %}
               <div class="variant-features {% if forloop.index != 1 %}no-disp{% endif %}" data-index="{{ forloop.index }}">
-                {{ variant.metafields.my_fields.desc }}
+                {{ variant.metafields.my_fields.variant_desc }}
               </div>
             {% endfor %}
             <span class="numverOfVariants">{{ total_variants }} <span class="total-variants">{{ product.variants.size }}</span> {{ maten }}</span>
