@@ -195,12 +195,15 @@ main {
   margin: 0;
 }
 .arrow-left {
-  display: block;
-  width: 8px;
-  height: 8px;
+  display: flex;
+  align-items: center;
+  margin-right: 8px;
 }
 .arrow-left svg {
+  display: block;
   transform: rotate(180deg);
+  width: 8px;
+  height: 8px;
 }
 
 @media (min-width: 993px) {
