@@ -62,7 +62,32 @@
           </div>
           <button class="btn addToCart">{{ section.settings.add_to_cart }}</button>
         </div>
+        
         <span class="shipping-details">{{ section.settings.shipping_details }}</span>
+        
+        <div class="other-details">
+          {% if product.metafields.my_fields.product_general %}
+          <div class="faq-wrapper product-faq">
+            <h3 class="product-accordion sub-title">Algemeen <span class="symbol">{% render "icon-chevron" %}</span></h3>
+            <div class="panel"><p>{{ product.metafields.my_fields.product_general }}</p></div>
+          </div>
+          {% endif %}
+
+          {% if product.metafields.my_fields.product_ingredients %}
+          <div class="faq-wrapper product-faq">
+            <h3 class="product-accordion sub-title">Ingredienten <span class="symbol">{% render "icon-chevron" %}</span></h3>
+            <div class="panel"><p>{{ product.metafields.my_fields.product_ingredients }}</p></div>
+          </div>
+          {% endif %}
+
+          {% if product.metafields.my_fields.product_required_qty %}
+          <div class="faq-wrapper product-faq">
+            <h3 class="product-accordion sub-title">Actieve bestandelen <span class="symbol">{% render "icon-chevron" %}</span></h3>
+            <div class="panel"><p>{{ product.metafields.my_fields.product_active_ingredients }}</p></div>
+          </div>
+          {% endif %}
+        </div>
+        
       </div>
     </div>
   </div>
