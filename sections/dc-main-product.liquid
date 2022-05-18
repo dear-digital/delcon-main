@@ -66,26 +66,12 @@
         <span class="shipping-details">{{ section.settings.shipping_details }}</span>
         
         <div class="other-details">
-          {% if product.metafields.my_fields.product_general %}
-          <div class="faq-wrapper product-faq">
-            <h3 class="product-accordion sub-title">{{ product.metafields.my_fields.product_general.description }} <span class="symbol">{% render "icon-chevron" %}</span></h3>
-            <div class="panel"><p>{{ product.metafields.my_fields.product_general }}</p></div>
-          </div>
-          {% endif %}
-
-          {% if product.metafields.my_fields.product_ingredients %}
-          <div class="faq-wrapper product-faq">
-            <h3 class="product-accordion sub-title">{{ product.metafields.my_fields.product_ingredients.description }} <span class="symbol">{% render "icon-chevron" %}</span></h3>
-            <div class="panel"><p>{{ product.metafields.my_fields.product_ingredients }}</p></div>
-          </div>
-          {% endif %}
-
-          {% if product.metafields.my_fields.product_required_qty %}
-          <div class="faq-wrapper product-faq">
-            <h3 class="product-accordion sub-title">{{ product.metafields.my_fields.product_required_qty.description }} <span class="symbol">{% render "icon-chevron" %}</span></h3>
-            <div class="panel"><p>{{ product.metafields.my_fields.product_required_qty }}</p></div>
-          </div>
-          {% endif %}
+          {% for block in section.settings.blocks %}
+            <div class="product-faq">
+              <h3 class="product-accordion sub-title">{{ block.settings.title }} <span class="symbol">{% render "accordion-plus" %}</span></h3>
+              <div class="panel"><p>{{ block.settings.description }}</p></div>
+            </div>
+          {% endfor %}
         </div>
         
       </div>
@@ -125,6 +111,25 @@
           "label": "Add to Cart text",
 		  "default": "AAN WINKELWAGEN TOEVOEGEN"
         }
+	],
+	"blocks": [
+		{
+			"type": "metafields",
+			"name": "Product Metafields",
+			"limit": 4,
+			"settings": [
+				{
+					"type": "text",
+					"id": "title",
+					"label": "Block Title"
+				},
+				{
+					"type": "text",
+					"id": "description",
+					"label": "Block description"
+				}
+			]
+		}
 	],
 	"presets":[
       {
