@@ -87,6 +87,7 @@
   color: rgb(var(--color-base-accent-1));
   border: 1px solid rgb(var(--color-base-accent-1));
   cursor: pointer;
+  transition: all .3s ease-out;
 }
 .variant-box:last-child {
   margin-right: 0;
