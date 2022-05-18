@@ -45,7 +45,7 @@
           <div class="variant-box {% if forloop.index == 1 %}variant-selected{% endif %}" data-index="{{ forloop.index }}" data-price="{{ variant.price | money }}">{{ variant.title }}</div>
           {% endfor %}
         </div>
-        <div class="flex-box">
+        <div class="flex-box justify-between">
           <div class="qty-wrapper" data-quantity="1">
             <span class="qty-btn symbol-minus minus">{% include "icon-minus" %}</span>
             <span class="qty-number sub-title">1</span>
