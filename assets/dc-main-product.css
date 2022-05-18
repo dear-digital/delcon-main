@@ -51,4 +51,8 @@
 }
 .addToCart {
   width: calc(100% - 101px);
+  max-width: none;
+  background-color: #0d553f;
+  color: #fff;
+  transition: all .3s ease-out;
 }
