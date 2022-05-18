@@ -2,18 +2,6 @@
   "sections": {
     "1652787202269c9bde": {
       "type": "dc-main-product",
-      "blocks": {
-        "9b8d7697-40cb-492c-bfce-d6be97952cef": {
-          "type": "metafields",
-          "settings": {
-            "title": "fgfgdf",
-            "description": "sagavreabrsedabr"
-          }
-        }
-      },
-      "block_order": [
-        "9b8d7697-40cb-492c-bfce-d6be97952cef"
-      ],
       "settings": {
         "terug_btn": "terug naar katten",
         "terug_link": "shopify:\/\/collections\/kattenvoer",
