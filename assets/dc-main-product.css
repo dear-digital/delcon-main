@@ -56,3 +56,6 @@
   color: #fff;
   transition: all .3s ease-out;
 }
+.addToCart:hover {
+  background-color: #063323;
+}
