@@ -114,3 +114,10 @@
   -webkit-transform: rotate(270deg);
   transform: rotate(270deg);
 }
+.panel {
+  padding: 0;
+  background-color: transparent;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height .4s ease-in-out;
+}
