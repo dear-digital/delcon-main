@@ -66,3 +66,45 @@
 .shipping-details ul {
   margin: 0px;
 }
+.product-faq {
+  border-bottom: 1px solid rgba(var(--color-base-accent-2),1) !important;
+}
+.product-faq:first-child {
+  border-top: 1px solid rgba(var(--color-base-accent-2),1) !important;
+}
+.product-accordion {
+  font-family: 'Nunito Sans',sans-serif;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: bold;
+  color: rgba(var(--color-base-accent-2),1) !important;
+  padding: 16px 24px 16px 0;
+  margin: 0;
+}
+.product-accordion .symbol {
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  right: 0;
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+  transition: all .4s ease;
+}
+.product-accordion .symbol svg {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  height: 16px;
+  width: 16px;
+}
+.product-accordion .symbol svg path {
+  stroke-width: 2;
+}
+.product-accordion.faq-active .symbol {
+  -webkit-transform: rotate(270deg);
+  transform: rotate(270deg);
+}
