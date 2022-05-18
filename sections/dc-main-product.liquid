@@ -39,6 +39,7 @@
           {{ variant.metafields.my_fields.variant_desc }}
         </div>
         {% endfor %}
+        <span class="variantType">{{ section.settings.variant_type }}</span>
         <div class="variants-wrapper">
           {% for variant in product.variants %}
           <div class="variant-box {% if forloop.index == 1 %}variant-selected{% endif %}" data-index="{{ forloop.index }}" data-price="{{ variant.price | money }}">{{ variant.title }}</div>
@@ -64,6 +65,12 @@
           "type": "url",
           "id": "terug_link",
           "label": "Terug Button link"
+        },
+		{
+          "type": "text",
+          "id": "variant_type",
+          "label": "Hoeveelheid text",
+		  "default": "Hoeveelheid:"
         },
 		{
           "type": "text",
