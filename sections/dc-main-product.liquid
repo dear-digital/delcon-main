@@ -93,6 +93,29 @@
   </div>
 </div>
 
+<script>
+  
+  $(".product-accordion").click(function() {
+    var acc1 = $(this).hasClass('faq-active')
+    $(".product-accordion").each(function() {
+      $(this).removeClass("faq-active");
+      var panel = $(this).next()[0];
+      panel.style.maxHeight = null;
+    });
+    if(acc1) {
+      $(this).removeClass("faq-active")
+      var panel = $(this).next()[0];
+      panel.style.maxHeight = null;
+    }
+    else {
+      $(this).addClass("faq-active")
+      var panel = $(this).next()[0];
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+  
+</script>
+
 {% schema %}
   {
     "name": "Delcon Main Product",
