@@ -3,7 +3,8 @@
   padding-top: 35px;
 }
 .terug-btn {
-  display: block;
+  display: flex;
+  align-items: center;
   width: fit-content;
   width: -moz-fit-content;
   text-align: left;
