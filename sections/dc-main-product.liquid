@@ -45,7 +45,6 @@
           <div class="variant-box {% if forloop.index == 1 %}variant-selected{% endif %}" data-index="{{ forloop.index }}" data-price="{{ variant.price | money }}">{{ variant.title }}</div>
           {% endfor %}
         </div>
-        <span class="shipping-details">{{ section.settings.shipping_details }}</span>
         <div class="flex-box justify-between">
           <div class="qty-wrapper" data-quantity="1">
             <span class="qty-btn symbol-minus minus">{% include "icon-minus" %}</span>
@@ -54,6 +53,7 @@
           </div>
           <button class="btn addToCart">{{ section.settings.add_to_cart }}</button>
         </div>
+        <span class="shipping-details">{{ section.settings.shipping_details }}</span>
       </div>
     </div>
   </div>
