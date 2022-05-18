@@ -29,22 +29,31 @@
         </div>
 
       </div>
-      <div class="card-product-text rel">
-        <div class="flex-box justify-between align-end">
+      <div class="card-product-text rel" data-type="{{ product.type }}" data-handle="{{ product.handle }}">
+        <
+        div class="flex-box justify-between align-end">
           <h2 class="product-title">{{ product.title }}</h2>
           <p class="card-product-price product-price">{{ product.selected_or_first_available_variant.price | money }}</p>
         </div>
+        
         {% for variant in product.variants %}
         <div class="variant-features {% if forloop.index != 1 %}no-disp{% endif %}" data-index="{{ forloop.index }}">
           {{ variant.metafields.my_fields.variant_desc }}
         </div>
         {% endfor %}
+        
         <span class="variantType">{{ section.settings.variant_type }}</span>
+        
         <div class="variants-wrapper">
           {% for variant in product.variants %}
           <div class="variant-box {% if forloop.index == 1 %}variant-selected{% endif %}" data-index="{{ forloop.index }}" data-price="{{ variant.price | money }}">{{ variant.title }}</div>
           {% endfor %}
         </div>
+        
+        <script id="product-json" type="application/json">
+        	{{ product.variants | json }}
+        </script>
+        
         <div class="flex-box justify-between">
           <div class="qty-wrapper" data-quantity="1">
             <span class="qty-btn symbol-minus minus">{% include "icon-minus" %}</span>
