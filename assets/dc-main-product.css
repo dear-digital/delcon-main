@@ -63,3 +63,6 @@
   display: block;
   margin: 24px 0 40px;
 }
+.shipping-details ul {
+  margin: 0px;
+}
