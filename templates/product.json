@@ -3,6 +3,9 @@
     "1652787202269c9bde": {
       "type": "dc-main-product",
       "settings": {
+        "terug_btn": "terug naar katten",
+        "terug_link": "shopify:\/\/collections\/kattenvoer",
+        "variant_type": "Hoeveelheid:",
         "add_to_cart": "AAN WINKELWAGEN TOEVOEGEN"
       }
     }
