@@ -37,8 +37,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 20px;
-  width: 20px;
+  width: 12px;
+  height: 12px;
   cursor: pointer;
 }
 .qty-number {
@@ -48,4 +48,7 @@
   align-items: center;
   font-size: 16px;
   line-height: 24px;
+}
+.addToCart {
+  width: calc(100% - 101px);
 }
