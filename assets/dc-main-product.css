@@ -2,6 +2,12 @@
   margin-top: 72px;
   padding-top: 35px;
 }
+.product-details {
+  position: relative;
+  width: 50%;
+  max-width: 534px;
+  margin: 0 0 0 auto;
+}
 .terug-btn {
   display: flex;
   align-items: center;
