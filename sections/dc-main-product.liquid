@@ -68,7 +68,7 @@
         <div class="other-details">
           {% if product.metafields.my_fields.product_general %}
           <div class="product-faq">
-            <h3 class="product-accordion sub-title">{{ product.metafields.my_fields.product_general.key }} <span class="symbol">{% render "accordion-plus" %}</span></h3>
+            <h3 class="product-accordion sub-title">{{ product.metafields.my_fields.product_general.type }} <span class="symbol">{% render "accordion-plus" %}</span></h3>
             <div class="panel"><p>{{ product.metafields.my_fields.product_general }}</p></div>
           </div>
           {% endif %}
