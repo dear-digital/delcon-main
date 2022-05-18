@@ -22,3 +22,30 @@
   font-weight: 700;
   margin-bottom: 8px;
 }
+.qty-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 85px;
+  height: 45px;
+  border: 1px solid rgb(var(--color-base-accent-1));
+}
+.qty-btn.symbol-minus {
+  opacity: .5;
+}
+.qty-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20px;
+  width: 20px;
+  cursor: pointer;
+}
+.qty-number {
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  line-height: 24px;
+}
