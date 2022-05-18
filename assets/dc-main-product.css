@@ -15,3 +15,9 @@
   margin: 0;
   margin-bottom: 24px;
 }
+.variantType {
+  display: block;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+}
