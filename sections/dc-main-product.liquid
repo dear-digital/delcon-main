@@ -69,7 +69,7 @@
         <div class="flex-box justify-between">
           <div class="qty-wrapper" data-quantity="1">
             <span class="qty-btn symbol-minus minus">{% include "icon-minus" %}</span>
-            <span class="qty-number" data-quantity="1">1</span>
+            <span class="qty-number">1</span>
             <span class="qty-btn symbol-plus plus">{% include "icon-plus" %}</span>
           </div>
           <button class="btn addToCart" id="AddtoCart">{{ section.settings.add_to_cart }}</button>
@@ -176,6 +176,49 @@
     checkAvailability();
   });
   
+  $('#AddtoCart').click(function() {
+    let renderedHtml;
+    var formData = {
+      'items': [{
+        'id': parseInt($(".variant-box.variant-selected").attr("value")),
+        'quantity': parseInt($(".qty-number").text())
+      }],
+      'sections': "delcon-cart-drawer"
+    };
+    $.ajax({
+      url: "/cart/add.js",
+      method: "POST",
+      dataType: "json",
+      data: formData,
+    })
+    .done(function( data ) {
+      console.log(data);
+//       renderedHtml = getSectionInnerHTML(
+//         data.sections["delcon-cart-drawer"],
+//         "#CartContainer"
+//       );
+//       $("#CartContainer").html(renderedHtml);
+//       $('.drawer-cart').addClass('drawn');
+//       $('.background-drawer-cart').addClass('drawn');
+//       $('body').addClass('no-scroll');
+//       if($('.drawer-cart-upsell').length > 0 && $('.upsell-product-wrap').length > 0) {
+//         $('.drawer-cart').addClass("with-upsell");
+//       }
+//       else {
+//         $('.drawer-cart').removeClass("with-upsell");
+//       }
+//       if(data.item_count < 1) {
+//         $(".cart-toggler").addClass('cart--empty');
+//       }
+//       else {
+//         $(".cart-toggler").removeClass('cart--empty');
+//       }
+    })
+    .fail(function(error) {
+      console.log(error);
+    });
+  });
+          
   $(".product-accordion").click(function() {
     var acc1 = $(this).hasClass('faq-active')
     $(".product-accordion").each(function() {
