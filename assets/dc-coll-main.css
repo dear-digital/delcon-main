@@ -4,6 +4,9 @@
 
 .sugg-collection {
     width: 32%;
+    background-color: #F2F1F0;
+    border: 1px solid #181716;
+    padding: 24px;
 }
 
 .sugg-coll-img {
