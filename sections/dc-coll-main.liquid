@@ -60,6 +60,11 @@
   $('.sort-types').click(function() {
   	$(this).toggleClass('open');
   });
+  $('.sort-option').click(function() {
+    var new_val = $(this).data('value');
+    $('.selected-sort-txt').text(new_val);
+  	$(this).parent().parent().removeClass('open');
+  });
 </script>
 
 {% schema %}
