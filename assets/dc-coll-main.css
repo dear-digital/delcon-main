@@ -86,4 +86,8 @@
 	border-bottom: none;
 }
 
-.sort-option
+.open.sort-options {
+    position: absolute;
+    width: 100%;
+    background-color: #fff;
+}
