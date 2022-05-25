@@ -1,7 +1,23 @@
+{{ 'dc-hero-small.css' | asset_url | stylesheet_tag }}
+
+<div class="hero-small">
+  <div class="hero-small-content flex-box justify-between">
+    <div class="hero-small-text">
+      <div class="container"></div>
+    </div>
+    <div class="hero-small-img"></div>
+  </div>
+</div>
+
 {% schema %}
   {
-    "name": "Section name",
-    "settings": []
+    "name": "DC Hero Small",
+    "settings": [],
+	"presets": [
+		{
+			"name": "DC Hero Small"
+		}
+	]
   }
 {% endschema %}
 
