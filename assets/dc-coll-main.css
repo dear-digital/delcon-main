@@ -188,3 +188,11 @@
 .coll-filters {
     width: 20%;
 }
+
+.coll-filter-type-name-wrap {
+    display: flex;
+    font-weight: 700;
+    align-items: center;
+    line-height: 24px;
+  cursor: pointer;
+}
