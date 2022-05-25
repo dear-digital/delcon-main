@@ -1,6 +1,6 @@
 {{ 'dc-hero-small.css' | asset_url | stylesheet_tag }}
 
-<div class="hero-small">
+<div class="hero-small" style="background-color: {{ section.settings.background_color }}">
   <div class="hero-small-content flex-box justify-between">
     <div class="hero-small-text">
       <div class="container"></div>
@@ -12,7 +12,13 @@
 {% schema %}
   {
     "name": "DC Hero Small",
-    "settings": [],
+    "settings": [
+		{
+			"type": "color",
+			"id": "background_color",
+			"label": "Background Color"
+		}
+	],
 	"presets": [
 		{
 			"name": "DC Hero Small"
