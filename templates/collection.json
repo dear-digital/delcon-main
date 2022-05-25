@@ -41,16 +41,24 @@
     "16534621355fa50163": {
       "type": "dc-coll-main",
       "blocks": {
-        "a98577ac-ea94-4c7b-be04-10df08b1ac7e": {
+        "38a835fa-a620-45b2-b919-a33412e6d378": {
           "type": "coll",
           "settings": {
-            "collection": "hondenvoer",
+            "collection": "jonge-honden",
             "age": "0 - 9 maanden"
+          }
+        },
+        "d6e89358-bd0b-43d5-b0bd-4a5cc6666239": {
+          "type": "coll",
+          "settings": {
+            "collection": "volwassen-honden",
+            "age": "9 maanden - 10 jaar"
           }
         }
       },
       "block_order": [
-        "a98577ac-ea94-4c7b-be04-10df08b1ac7e"
+        "38a835fa-a620-45b2-b919-a33412e6d378",
+        "d6e89358-bd0b-43d5-b0bd-4a5cc6666239"
       ],
       "settings": {
       }
