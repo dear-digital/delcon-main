@@ -47,3 +47,8 @@
     font-size: 16px;
     line-height: 24px;
 }
+
+.sort-wrap {
+    display: flex;
+    align-items: center;
+}
