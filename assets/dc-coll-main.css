@@ -170,3 +170,9 @@
     margin-bottom: 20px;
     font-weight: 700;
 }
+
+.product-finder-desc {
+    line-height: 24px;
+    margin-bottom: 24px;
+    text-align: center;
+}
