@@ -77,6 +77,11 @@
               </div>
             </div>
           </div>
+          {% if collection.products_count >= 5 %}
+        	{% if forloop.index == 4 %}
+        		new card
+        	{% endif %}
+          {% endif %}
         {% endfor %}
         
         {% for product in collection.products %}
