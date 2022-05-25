@@ -9,6 +9,11 @@
   width: 50%;
 }
 
+.rev-cols .hero-small-img {
+    right: unset;
+    left: 0;
+}
+
 .hero-small-img img{
 	display: block;
   height: 100%;
