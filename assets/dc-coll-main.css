@@ -205,6 +205,10 @@
 	margin-right: 8px;
 }
 
+.plus-sign svg #Line{
+	transition: .4s ease;
+}
+
 .active .plus-sign svg #Line{
 	transform: rotate(180deg);
 }
