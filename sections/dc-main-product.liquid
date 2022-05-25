@@ -1,5 +1,8 @@
 {{ 'dc-main-product.css' | asset_url | stylesheet_tag }}
 
+{% assign current_variant = product.selected_or_first_available_variant %}
+{% assign featured_image = current_variant.featured_image | default: product.featured_image %}
+
 <div class="product marg-bottom-xl rel">
   <div class="container">
     <a href="{{ section.settings.terug_link }}" class="terug-btn"><span class="arrow-left">{% include "icon-arrow-sm" %}</span> {{ section.settings.terug_btn }}</a>
@@ -42,11 +45,11 @@
         </div>
         {% endfor %}
         
-        <span class="variantType">{{ section.settings.variant_type }}</span>
-        
+        <span class="variantType {% if product.has_only_default_variant %}no-disp{% endif %}">{{ section.settings.variant_type }}</span>
+
         <div class="variants-wrapper">
           {% for variant in product.variants %}
-          <div class="variant-box {% if forloop.index == 1 %}variant-selected{% endif %}" data-index="{{ forloop.index }}" data-price="{{ variant.price | money }}">{{ variant.title }}</div>
+          <div class="variant-box {% if forloop.index == 1 %}variant-selected{% endif %} {% if product.has_only_default_variant %}no-disp{% endif %}" data-index="{{ forloop.index }}" data-price="{{ variant.price | money }}">{{ variant.title }}</div>
           {% endfor %}
         </div>
         
