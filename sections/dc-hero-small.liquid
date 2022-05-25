@@ -3,9 +3,9 @@
 <div class="hero-small" style="background-color: {{ section.settings.background_color }}">
   <div class="hero-small-content flex-box justify-between align-center{% if section.settings.media_alignment == 'left' %} rev-cols{% endif %}">
     <div class="hero-small-text">
-      <div class="container"></div>
+      <div class="container">{{ section.settings.title }}</div>
     </div>
-    <div class="hero-small-img"></div>
+    <div class="hero-small-img"><img src="{{ section.settings.image | img_url: 'x720' }}"></div>
   </div>
 </div>
 
