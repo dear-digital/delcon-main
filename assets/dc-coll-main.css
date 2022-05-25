@@ -75,11 +75,13 @@
     padding: 0 16px;
   border: 1px solid #746B63;
   border-top: none;
+  cursor: pointer;
 }
 
 .sort-option {
     padding: 12px 0;
     border-bottom: 1px solid #746B63;
+  cursor: pointer;
 }
 
 .sort-option:last-child{
