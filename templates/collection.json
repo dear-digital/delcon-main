@@ -61,14 +61,29 @@
             "collection": "oudere-honden",
             "age": "10+ jaar"
           }
+        },
+        "d278c7b6-43d1-47b8-b754-b65fc011a054": {
+          "type": "suggestion",
+          "settings": {
+            "bg_img": "shopify:\/\/shop_images\/Mask_Group_1_2x_c7fd7bfd-8968-4ef6-9ad3-0a843e305cb0.png",
+            "title": "Keuzestress?",
+            "desc": "Elke hond en elke kat heeft eigen specifieke behoeften. Daarom maken wij met veel zorg voeding die aangepast is aan jouw pluizige vriend.",
+            "isProductFinder": true,
+            "section_btn_text": "PRODUCTFINDER",
+            "section_btn_url": ""
+          }
         }
       },
       "block_order": [
         "38a835fa-a620-45b2-b919-a33412e6d378",
         "d6e89358-bd0b-43d5-b0bd-4a5cc6666239",
-        "c7d30890-f8c1-4128-af59-b1468d6d5cb5"
+        "c7d30890-f8c1-4128-af59-b1468d6d5cb5",
+        "d278c7b6-43d1-47b8-b754-b65fc011a054"
       ],
       "settings": {
+        "filter": "Filter",
+        "tot_products": "Products",
+        "sort": "Sort By"
       }
     }
   },
