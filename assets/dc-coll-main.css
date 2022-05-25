@@ -184,3 +184,7 @@
 .product-finder .blue-btn:hover{
 	background-color: #D0E0E8;
 }
+
+.coll-filters {
+    width: 20%;
+}
