@@ -1,5 +1,38 @@
 {{ 'dc-coll-main.css' | asset_url | stylesheet_tag }}
 
+<div class="dc-coll-main">
+  <div class="container">
+    {% assign sug_col = 0 %}
+    {% for block in section.blocks %}
+    {% if block.type == 'coll' %}
+    {% assign sug_col = sug_col | plus: 1 %}
+    {% endif %}
+  	{% endfor %}
+    {% if sug_col != 0 %}
+    <div class="sugg-collections flex-box{% if sug_col == 3 %} justify-between{% elsif sug_col == 2 %} justify-around{% else %} justify-center{% endif %}">
+    {% for block in section.blocks %}
+    {% if block.type == 'coll' %}
+      {% assign sugg_coll = block.settings.collection %}
+      <a class="sugg-collection flex-box justify-between">
+        <div class="sugg-coll-img">
+        	{% if sugg_coll.image != blank %}
+          		{{ collection.image | image_url: width: 146 | image_tag }}
+          	{% else %}
+          		<img src="{{ section.settings.image | img_url: 'x146' }}">
+          	{% endif %}
+        </div>
+        <div class="sugg-coll-txt">
+          <div class="coll-title">{{ sugg_coll.title }}</div>
+          <div class="coll-age">{{ block.settings.age }}</div>
+        </div>
+      </a>  
+    {% endif %}
+  	{% endfor %}
+    </div>
+    {% endif %}
+  </div>
+</div>
+
 {% schema %}
   {
     "name": "DC Collection Main",
@@ -21,11 +54,6 @@
 					"type": "image_picker",
 					"id": "image",
 					"label": "Image"
-				},
-				{
-					"type": "text",
-					"id": "title",
-					"label": "Title"
 				},
 				{
 					"type": "text",
