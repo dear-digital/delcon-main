@@ -1,7 +1,7 @@
 {{ 'dc-hero-small.css' | asset_url | stylesheet_tag }}
 
 <div class="hero-small" style="background-color: {{ section.settings.background_color }}">
-  <div class="hero-small-content flex-box justify-between">
+  <div class="hero-small-content flex-box justify-between align-center{% if section.settings.media_alignment == 'left' %} rev-cols{% endif %}">
     <div class="hero-small-text">
       <div class="container"></div>
     </div>
@@ -17,7 +17,23 @@
 			"type": "color",
 			"id": "background_color",
 			"label": "Background Color"
-		}
+		},
+	  {
+        "type": "radio",
+        "id": "media_alignment",
+        "label": "Media alignment",
+        "options": [
+          {
+            "value": "left",
+            "label": "Left"
+          },
+          {
+            "value": "right",
+            "label": "Right"
+          }
+        ],
+        "default": "right"
+      }
 	],
 	"presets": [
 		{
