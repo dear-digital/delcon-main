@@ -112,7 +112,7 @@
   stroke-width: 2;
 }
 .product-accordion.faq-active .symbol svg #Line-2 {
-  opacity: 0;
+  transform: translate(5.001px, -5px) rotate(90deg);
 /*   -webkit-transform: rotate(270deg);
   transform: rotate(270deg); */
 }
