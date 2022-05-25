@@ -69,12 +69,12 @@
 .tooltiptext::after {
   content: "";
   position: absolute;
-  top: 100%;
+  bottom: 100%;
   left: 50%;
   margin-left: -5px;
   border-width: 5px;
   border-style: solid;
-  border-color: #555 transparent transparent transparent;
+  border-color: transparent transparent #555 transparent;
 }
 .footer-nav-wrapper {
   display: flex;
