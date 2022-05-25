@@ -101,6 +101,9 @@
 .padd-bottom {
   padding-bottom: 80px;
 }
+.rev-cols{
+	flex-direction: column-reverse;
+}
 body {
   font-family: "Avenir",sans-serif;
   font-weight: 300;
