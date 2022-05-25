@@ -13,7 +13,7 @@
     {% for block in section.blocks %}
     {% if block.type == 'coll' %}
       {% assign sugg_coll = block.settings.collection %}
-      <a class="sugg-collection flex-box justify-between">
+      <a href="{{ sugg_coll.url }}" class="sugg-collection flex-box justify-between">
         <div class="sugg-coll-img">
         	{% if sugg_coll.image != blank %}
           		{{ sugg_coll.image | image_url: width: 146 | image_tag }}
