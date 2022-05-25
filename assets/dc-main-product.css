@@ -62,6 +62,10 @@
   color: #fff;
   transition: all .3s ease-out;
 }
+.addToCart:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
 .addToCart:hover {
   background-color: #063323;
 }
