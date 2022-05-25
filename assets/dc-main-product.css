@@ -106,10 +106,12 @@
   margin: auto;
   height: 16px;
   width: 16px;
-  transition: all .3s ease-out;
 }
 .product-accordion .symbol svg path {
   stroke-width: 2;
+}
+.product-accordion .symbol svg * {
+  transition: all .3s ease-out;
 }
 .product-accordion.faq-active .symbol svg #Line-2 {
   transform: translate(5.001px, -5px) rotate(90deg);
