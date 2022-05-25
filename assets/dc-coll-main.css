@@ -54,6 +54,8 @@
 
 .total-porducts-wrap {
     width: 33%;
+  display: flex;
+    justify-content: center;
 }
 
 .sort-wrap {
