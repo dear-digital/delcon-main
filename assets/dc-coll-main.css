@@ -143,3 +143,7 @@
     width: 74.66%;
   flex-wrap: wrap;
 }
+
+.coll-porducts .product-card{
+	width: 32%;
+}
