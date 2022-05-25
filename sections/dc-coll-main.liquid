@@ -83,7 +83,9 @@
         	{% endif %}
           {% endif %}
         {% endfor %}
-        
+        {% if collection.products_count <= 4 %}
+        		new card
+          {% endif %}
         {% for product in collection.products %}
     	{% include "product-card", total_variants: section.settings.total_variants, maten: section.settings.maten, koop_online: section.settings.koop_online, koop_local: section.settings.koop_local %}
     {% endfor %}
