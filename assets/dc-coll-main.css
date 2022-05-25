@@ -73,6 +73,7 @@
 
 .sort-options {
     padding: 0 16px;
+  border: 1px solid #746B63;
 }
 
 .sort-option {
@@ -83,3 +84,5 @@
 .sort-option:last-child{
 	border-bottom: none;
 }
+
+.sort-option
