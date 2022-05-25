@@ -36,3 +36,10 @@
     justify-content: center;
   flex-direction: column;
 }
+
+.coll-title {
+    margin: 0;
+    margin-bottom: 16px;
+    font-size: 32px;
+    line-height: 48px;
+}
