@@ -89,15 +89,15 @@
   function copyToClipBoard(elementId) {
     var copyElement = document.getElementById(elementId);
 	var copyText = copyElement.dataset.media;
-    var toolTipText = document.getElementById(elementId.substring(0,elementId.lastIndexOf("_"))+"_tooltip");
-    console.log("toolTipText: "+elementId.substring(0,elementId.lastIndexOf("_"))+"_tooltip");
+    var toolTipElementId = elementId.substring(0,elementId.lastIndexOf("_"))+"_tooltip";
+    var toolTipText = document.getElementById(toolTipElementId);
     
     navigator.clipboard.writeText(copyText);
     toolTipText.classList.add("clicked");
     
     setTimeout(function() {
       toolTipText.classList.remove("clicked");
-    }, 1000);
+    }, 2000);
   }
 </script>
 
