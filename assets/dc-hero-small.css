@@ -30,4 +30,7 @@
     padding-right: 0;
   padding-left: 110px;
   margin-left: 50%;
+  height: 100%;
+    display: flex;
+    align-items: center;
 }
