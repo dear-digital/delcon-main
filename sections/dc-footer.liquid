@@ -45,7 +45,10 @@
               
               {% for block in section.blocks %}
                 {% if block.type == 'social-media' %}
-              	  <a href="{{ block.settings.social_media_link }}" class="social-icon" target="_blank" aria-label="{{ section.settings.social_media_title }}">{{ block.settings.social_media_icon }}</a>
+              	  <span class="social-icon" onclick="copyToClipBoard()" onmouseout="outFunc()" data-media="{{ section.settings.media_text_to_copy }}" aria-label="{{ section.settings.social_media_title }}">
+                    <span class="tooltiptext" id="{{ section.settings.social_media_title | downcase | replace: " ","_" }}"></span>
+                    {{ block.settings.social_media_icon }}
+              	  </span>
                 {% endif %}
               {% endfor %}
             </div>
@@ -81,6 +84,23 @@
     </div>
   </div>
 </footer>
+
+<script>
+  function copyToClipBoard() {
+    var copyText = document.getElementById("myInput");
+    copyText.select();
+    copyText.setSelectionRange(0, 99999);
+    navigator.clipboard.writeText(copyText.dataset.media);
+
+    var tooltip = document.getElementById("myTooltip");
+    tooltip.innerHTML = "Copied: " + copyText.dataset.media;
+  }
+
+  function outFunc() {
+    var tooltip = document.getElementById("myTooltip");
+    tooltip.innerHTML = "Copy to clipboard";
+  }
+</script>
 
 {% schema %}
   {
@@ -161,9 +181,9 @@
 					"label": "Social Media Svg Icon"
 				},
 				{
-                  "type": "url",
-                  "id": "social_media_link",
-                  "label": "Social Media Link"
+                  "type": "text",
+                  "id": "media_text_to_copy",
+                  "label": "Media Text to Copy"
                 }
 			]
 		}
