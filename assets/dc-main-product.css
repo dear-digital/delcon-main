@@ -73,10 +73,10 @@
   margin: 0px;
 }
 .product-faq {
-  border-bottom: 1px solid rgba(var(--color-base-accent-2),1) !important;
+  border-bottom: 1px solid rgba(var(--color-base-accent-1),1) !important;
 }
 .product-faq:first-child {
-  border-top: 1px solid rgba(var(--color-base-accent-2),1) !important;
+  border-top: 1px solid rgba(var(--color-base-accent-1),1) !important;
 }
 .product-accordion {
   font-family: 'Nunito Sans',sans-serif;
@@ -84,7 +84,7 @@
   font-size: 16px;
   line-height: 24px;
   font-weight: bold;
-  color: rgba(var(--color-base-accent-2),1) !important;
+  color: rgba(var(--color-base-accent-1),1) !important;
   padding: 16px 24px 16px 0;
   margin: 0;
 }
