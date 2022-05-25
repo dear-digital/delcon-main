@@ -94,6 +94,10 @@
     
     navigator.clipboard.writeText(copyText);
     toolTipText.classList.add("clicked");
+    
+    setTimeout(function() {
+      toolTipText.classList.remove("clicked");
+    }, 1000);
   }
 </script>
 
