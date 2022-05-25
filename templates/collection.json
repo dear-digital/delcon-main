@@ -54,11 +54,19 @@
             "collection": "volwassen-honden",
             "age": "9 maanden - 10 jaar"
           }
+        },
+        "c7d30890-f8c1-4128-af59-b1468d6d5cb5": {
+          "type": "coll",
+          "settings": {
+            "collection": "oudere-honden",
+            "age": "10+ jaar"
+          }
         }
       },
       "block_order": [
         "38a835fa-a620-45b2-b919-a33412e6d378",
-        "d6e89358-bd0b-43d5-b0bd-4a5cc6666239"
+        "d6e89358-bd0b-43d5-b0bd-4a5cc6666239",
+        "c7d30890-f8c1-4128-af59-b1468d6d5cb5"
       ],
       "settings": {
       }
