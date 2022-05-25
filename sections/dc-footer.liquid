@@ -88,16 +88,16 @@
 <script>
   function copyToClipBoard() {
     var copyText = this;
-    console.log("copyText: "+copyText.dataset.media);
+    console.log("copyText: "+copyText.dataset);
     navigator.clipboard.writeText(copyText.dataset.media);
 
-    var tooltip = document.getElementById("myTooltip");
-    tooltip.innerHTML = "Copied: " + copyText.dataset.media;
+//     var tooltip = document.getElementById("myTooltip");
+//     tooltip.innerHTML = "Copied: " + copyText.dataset.media;
   }
 
   function outFunc() {
-    var tooltip = document.getElementById("myTooltip");
-    tooltip.innerHTML = "Copy to clipboard";
+//     var tooltip = document.getElementById("myTooltip");
+//     tooltip.innerHTML = "Copy to clipboard";
   }
 </script>
 
