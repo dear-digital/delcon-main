@@ -218,6 +218,12 @@
 }
 
 .active .plus-sign svg #Line {
-/* 	display: none; */
   transform: translate(12.001px, 1px) rotate(90deg);
+}
+
+.checkbox {
+    width: 16px;
+    height: 16px;
+    border: 1px solid #181716;
+    margin-right: 8px;
 }
