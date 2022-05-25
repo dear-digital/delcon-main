@@ -235,11 +235,11 @@
 	display: none;
 }
 
-.checkbox.checked{
+.checked .checkbox{
 	background-color: #F2F2F2;
 }
 
-.checkbox.checked .check-sign{
+.checked .checkbox .check-sign{
 	display: block;
 }
 
