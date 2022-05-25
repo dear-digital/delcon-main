@@ -37,11 +37,29 @@
         "desc": "Binnen het Delcon gamma kan je hondenvoer vinden die ontwikkeld werd voor de volledige levenscyclus van jouw hond. Deze uitgebalanceerde en complete variëteiten hondenvoeding zijn elk op zich rijk aan kwaliteitsvolle ingrediënten. Ze bevatten multi-vitamines en essentiële mineralen.",
         "image": "shopify:\/\/shop_images\/Image_2x_e91738de-bcc2-4a55-b173-43507937fd81.png"
       }
+    },
+    "16534621355fa50163": {
+      "type": "dc-coll-main",
+      "blocks": {
+        "a98577ac-ea94-4c7b-be04-10df08b1ac7e": {
+          "type": "coll",
+          "settings": {
+            "collection": "hondenvoer",
+            "age": "0 - 9 maanden"
+          }
+        }
+      },
+      "block_order": [
+        "a98577ac-ea94-4c7b-be04-10df08b1ac7e"
+      ],
+      "settings": {
+      }
     }
   },
   "order": [
     "banner",
     "product-grid",
-    "1653458668ff28767d"
+    "1653458668ff28767d",
+    "16534621355fa50163"
   ]
 }

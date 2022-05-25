@@ -16,7 +16,7 @@
       <a class="sugg-collection flex-box justify-between">
         <div class="sugg-coll-img">
         	{% if sugg_coll.image != blank %}
-          		{{ collection.image | image_url: width: 146 | image_tag }}
+          		{{ sugg_coll.image | image_url: width: 146 | image_tag }}
           	{% else %}
           		<img src="{{ section.settings.image | img_url: 'x146' }}">
           	{% endif %}
