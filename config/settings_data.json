@@ -84,7 +84,7 @@
     "sold_out_badge_color_scheme": "inverse",
     "accent_icons": "text",
     "social_twitter_link": "",
-    "social_facebook_link": "",
+    "social_facebook_link": "https:\/\/www.facebook.com\/Delconcorporate",
     "social_pinterest_link": "",
     "social_instagram_link": "",
     "social_tiktok_link": "",
@@ -222,7 +222,7 @@
             "settings": {
               "social_media_title": "Facebook Icon",
               "social_media_icon": "<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"12.854\" height=\"24\" viewbox=\"0 0 12.854 24\">   <path id=\"Icon_awesome-facebook-f\" data-name=\"Icon awesome-facebook-f\" d=\"M13.621,13.5l.667-4.343H10.12V6.338a2.172,2.172,0,0,1,2.449-2.347h1.895V.293A23.105,23.105,0,0,0,11.1,0C7.668,0,5.425,2.08,5.425,5.846v3.31H1.609V13.5H5.425V24h4.7V13.5Z\" transform=\"translate(-1.609)\" fill=\"#ffffff\"><\/path> <\/svg>",
-              "social_media_link": "#"
+              "social_media_link": "https:\/\/www.facebook.com\/Delconcorporate"
             }
           },
           "4e543b54-1714-427b-91dd-312c35265d50": {
