@@ -196,3 +196,7 @@
     line-height: 24px;
   cursor: pointer;
 }
+
+.coll-filter-type {
+    margin-bottom: 24px;
+}
