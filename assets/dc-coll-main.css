@@ -215,5 +215,5 @@
 
 .active .plus-sign svg #Line {
 /* 	display: none; */
-  transform: translate(12.001 1) rotate(90deg);
+  transform: translate(12.001px, 1px) rotate(90deg);
 }
