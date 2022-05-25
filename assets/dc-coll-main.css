@@ -48,9 +48,14 @@
     line-height: 24px;
 }
 
+.total-porducts-wrap {
+    width: 33%;
+}
+
 .sort-wrap {
     display: flex;
     align-items: center;
+  width: 33%;
 }
 
 .selected-sort {
