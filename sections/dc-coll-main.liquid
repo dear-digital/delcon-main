@@ -61,7 +61,7 @@
   	$(this).toggleClass('open');
   });
   $('.sort-option').click(function() {
-    var new_val = $(this).data('value');
+    var new_val = $(this).text();
     $('.selected-sort-txt').text(new_val);
   	$(this).parent().parent().removeClass('open');
   });
