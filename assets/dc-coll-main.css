@@ -213,6 +213,10 @@
 	display: block;
 }
 
+.plus-sign svg #Line{
+	transition: .4s ease;
+}
+
 .active .plus-sign svg #Line {
 /* 	display: none; */
   transform: translate(12.001px, 1px) rotate(90deg);
