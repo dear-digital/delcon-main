@@ -3,5 +3,8 @@
 }
 
 .hero-small-img{
-	
+	height: 100%;
+  position: absolute;
+  right: 0;
+  width: 50%;
 }
