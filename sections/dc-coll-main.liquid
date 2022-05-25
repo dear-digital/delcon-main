@@ -59,11 +59,13 @@
 <script>
   $('.selected-sort').click(function() {
   	$(this).toggleClass('open');
+    $('.sort-options').toggleClass('open');
   });
   $('.sort-option').click(function() {
     var new_val = $(this).text();
     $('.selected-sort-txt').text(new_val);
   	$('.selected-sort').removeClass('open');
+    $('.sort-options').removeClass('open');
   });
 </script>
 
