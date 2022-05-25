@@ -45,8 +45,8 @@
               
               {% for block in section.blocks %}
                 {% if block.type == 'social-media' %}
-              	  <span class="social-icon" onclick="copyToClipBoard()" onmouseout="outFunc()" data-media="{{ block.settings.media_text_to_copy }}" aria-label="{{ block.settings.social_media_title }}">
-                    <span class="tooltiptext" id="{{ block.settings.social_media_title | downcase | replace: " ","_" }}"></span>
+              	  <span class="social-icon" onclick="copyToClipBoard()" onmouseout="outFunc()" data-media="{{ block.settings.media_text_to_copy }}" aria-label="{{ block.settings.social_media_title }} icon">
+                    <span class="tooltiptext" id="social_{{ block.settings.social_media_title | downcase | replace: " ","_" }}_icon"></span>
                     {{ block.settings.social_media_icon }}
               	  </span>
                 {% endif %}
@@ -87,9 +87,8 @@
 
 <script>
   function copyToClipBoard() {
-    var copyText = document.getElementById("myInput");
-    copyText.select();
-    copyText.setSelectionRange(0, 99999);
+    var copyText = this;
+    console.log("copyText: "+copyText.dataset.media);
     navigator.clipboard.writeText(copyText.dataset.media);
 
     var tooltip = document.getElementById("myTooltip");
