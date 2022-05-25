@@ -71,6 +71,7 @@
 
 .down-chev svg{
 	width: 4px;
+  transition: .4s ease;
 }
 
 .sort-options {
@@ -93,7 +94,7 @@
 }
 
 .open .down-chev svg{
-	transform: rotate(270deg);
+	transform: rotate(180deg);
 }
 
 .open .sort-options {
