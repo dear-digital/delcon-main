@@ -132,7 +132,7 @@
 	transform: rotate(180deg);
 }
 
-.open .sort-options {
+.open.sort-options {
     width: 100%;
   visibility: visible;
   	height: auto;
