@@ -104,6 +104,10 @@
 .rev-cols{
 	flex-direction: column-reverse;
 }
+.panel {
+  display: none;
+  overflow: hidden;
+}
 body {
   font-family: "Avenir",sans-serif;
   font-weight: 300;
