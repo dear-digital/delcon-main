@@ -24,6 +24,12 @@
   display: block;
 }
 
+.sugg-coll-txt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 .sugg-coll-title {
     font-size: 32px;
     line-height: 48px;
