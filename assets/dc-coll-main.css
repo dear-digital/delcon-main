@@ -152,6 +152,11 @@
   margin-bottom: 24px;
 }
 
-.product-finder{
-	background-color: #F2F1F0;
+.product-finder {
+    background-color: #f2f1f0;
+    padding: 65px;
+    width: 64%;
+    margin-bottom: 24px;
+    background-repeat: no-repeat;
+    background-position: center;
 }
