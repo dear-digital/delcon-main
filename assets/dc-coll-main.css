@@ -48,6 +48,10 @@
     line-height: 24px;
 }
 
+.filter-title {
+    width: 33%;
+}
+
 .total-porducts-wrap {
     width: 33%;
 }
