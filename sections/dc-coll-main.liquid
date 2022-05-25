@@ -1,7 +1,44 @@
 {% schema %}
   {
-    "name": "Section name",
-    "settings": []
+    "name": "DC Collection Main",
+    "settings": [
+		
+	],
+	"blocks": [
+		{
+			"name": "Collection",
+			"type": "coll",
+			"limit": 3,
+			"settings": [
+				{
+					"type": "collection",
+					"id": "collection",
+					"label": "Collection"
+				},
+				{
+					"type": "image_picker",
+					"id": "image",
+					"label": "Image"
+				},
+				{
+					"type": "text",
+					"id": "title",
+					"label": "Title"
+				},
+				{
+					"type": "text",
+					"id": "age",
+					"label": "Age Range"
+				}
+			]
+			
+		}
+	],
+	"presets": [
+		{
+			"name": "DC Collection Main"
+		}
+	]
   }
 {% endschema %}
 
