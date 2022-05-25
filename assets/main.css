@@ -107,6 +107,7 @@ body {
   margin: 0;
   color: rgb(var(--color-base-accent-1));
   scroll-behavior: smooth;
+  background-color: #FBFBFB;
 }
 body span {
   user-select: none;
