@@ -141,4 +141,5 @@
 
 .coll-porducts {
     width: 74.66%;
+  flex-wrap: wrap;
 }
