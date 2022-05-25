@@ -69,7 +69,7 @@
         <div class="flex-box justify-between">
           <div class="qty-wrapper" data-quantity="1">
             <span class="qty-btn symbol-minus minus">{% include "icon-minus" %}</span>
-            <span class="qty-number sub-title">1</span>
+            <span class="qty-number" data-quantity="1">1</span>
             <span class="qty-btn symbol-plus plus">{% include "icon-plus" %}</span>
           </div>
           <button class="btn addToCart">{{ section.settings.add_to_cart }}</button>
@@ -125,6 +125,56 @@
     }
     
   }
+  
+  function checkAvailability() {
+
+    var selectedVariant = $(".variant-box.variant-selected").attr("variant-name");
+
+    //Hide Unavailable variants
+    $(".variant-box").each(function() {
+      if($(this).attr("data-inventory-management") != "undefined" && $(this).attr("data-inventory-management") != null) {
+      	if(($(this).attr("variant-name") == selectedVariant) && ($(this).attr("data-quantity") < parseInt($(".qty-number").text())) && ($(this).attr("data-sell-out-of-stock") == "deny")) {
+          $("#AddtoCart").attr("disabled",true);
+          $("#AddtoCart").text("{{ section.settings.out_of_stock }}");
+        }
+        else if(($(this).attr("variant-name") == selectedVariant) && ($(this).attr("data-quantity") >= parseInt($(".qty-number").text()))) {
+          $("#AddtoCart").attr("disabled",false);
+          $("#AddtoCart").html("{{ section.settings.add_to_cart }}");
+        }  
+	  }
+	  else {
+	  	  $("#AddtoCart").attr("disabled",false);
+          $("#AddtoCart").html("{{ section.settings.add_to_cart }}");
+	  }
+    });
+
+  }
+          
+  $(".minus").click(function() {
+    var currVal = parseInt($(".qty-number").text());
+    var newVal;
+    if((currVal-1) > 1) {
+      newVal = currVal - 1;
+      $(".minus").css("opacity", "1");
+    }
+    else {
+      newVal = 1;
+      $(".minus").css("opacity", "0.5");
+    }
+    $(".qty-number").text(newVal);
+    $(".qty-wrapper").attr("data-quantity",newVal);
+    checkAvailability();
+  });
+  
+  
+  $(".plus").click(function() {
+    var currVal = parseInt($(".qty-number").text());
+    var newVal = currVal + 1;
+    $(".qty-number").text(newVal);
+    $(".qty-wrapper").attr("data-quantity",newVal);
+    $(".minus").css("opacity", "1");
+    checkAvailability();
+  });
   
   $(".product-accordion").click(function() {
     var acc1 = $(this).hasClass('faq-active')
