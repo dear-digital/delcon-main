@@ -32,7 +32,7 @@
       "type": "dc-hero-small",
       "settings": {
         "background_color": "#f2f1f0",
-        "media_alignment": "right",
+        "media_alignment": "left",
         "title": "abc",
         "image": "shopify:\/\/shop_images\/Image_2x_e91738de-bcc2-4a55-b173-43507937fd81.png"
       }
