@@ -142,8 +142,10 @@
 .coll-porducts {
     width: 74.66%;
   flex-wrap: wrap;
+  margin: 0 -1%;
 }
 
 .coll-porducts .product-card{
-	width: 32%;
+	width: 31%;
+  margin: 0 1%;
 }
