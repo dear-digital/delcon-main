@@ -30,6 +30,10 @@
   	{% endfor %}
     </div>
     {% endif %}
+    
+    <div class="filters-titles-wrap flex-box justify-between">
+      <div class="filter-title">{{ section.settings.filter }}</div>
+    </div>
   </div>
 </div>
 
@@ -37,7 +41,24 @@
   {
     "name": "DC Collection Main",
     "settings": [
-		
+		{
+			"type": "text",
+			"id": "filter",
+			"label": "Filter Title",
+			"default": "Filter"
+		},
+		{
+			"type": "text",
+			"id": "tot_products",
+			"label": "Total Products",
+			"default": "Products"
+		},
+		{
+			"type": "text",
+			"id": "sort",
+			"label": "Sort Title",
+			"default": "Sort By"
+		}
 	],
 	"blocks": [
 		{
