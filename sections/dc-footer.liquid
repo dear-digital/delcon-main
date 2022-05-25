@@ -45,8 +45,8 @@
               
               {% for block in section.blocks %}
                 {% if block.type == 'social-media' %}
-              	  <span class="social-icon" onclick="copyToClipBoard()" onmouseout="outFunc()" data-media="{{ section.settings.media_text_to_copy }}" aria-label="{{ section.settings.social_media_title }}">
-                    <span class="tooltiptext" id="{{ section.settings.social_media_title | downcase | replace: " ","_" }}"></span>
+              	  <span class="social-icon" onclick="copyToClipBoard()" onmouseout="outFunc()" data-media="{{ block.settings.media_text_to_copy }}" aria-label="{{ block.settings.social_media_title }}">
+                    <span class="tooltiptext" id="{{ block.settings.social_media_title | downcase | replace: " ","_" }}"></span>
                     {{ block.settings.social_media_icon }}
               	  </span>
                 {% endif %}
