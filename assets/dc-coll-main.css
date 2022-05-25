@@ -23,3 +23,10 @@
   object-fit: cover;
   display: block;
 }
+
+.sugg-coll-title {
+    font-size: 32px;
+    line-height: 48px;
+    margin-bottom: 17px;
+    font-weight: 700;
+}
