@@ -227,3 +227,12 @@
     border: 1px solid #181716;
     margin-right: 8px;
 }
+
+.coll-filter-option-wrap {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    cursor: pointer;
+    width: fit-content;
+    width: -moz-fit-content;
+}
