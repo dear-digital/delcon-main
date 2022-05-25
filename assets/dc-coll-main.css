@@ -7,11 +7,13 @@
     background-color: #F2F1F0;
     border: 1px solid #181716;
     padding: 24px;
+  text-decoration: none;
 }
 
 .sugg-coll-img {
     width: 146px;
     height: 146px;
+  margin-right: 24px;
 }
 
 .sugg-coll-img img{
