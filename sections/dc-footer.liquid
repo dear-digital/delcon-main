@@ -89,12 +89,11 @@
   function copyToClipBoard(elementId) {
     var copyElement = document.getElementById(elementId);
 	var copyText = copyElement.dataset.media;
-    var toolTipText = document.getElementById(elementId.substring(0,elementId.lastIndexOf("_"))+"tooltip");
+    var toolTipText = document.getElementById(elementId.substring(0,elementId.lastIndexOf("_"))+"_tooltip");
+    console.log("toolTipText: "+elementId.substring(0,elementId.lastIndexOf("_"))+"_tooltip");
     
     navigator.clipboard.writeText(copyText);
-    
-    
-    console.log("toolTipText: "+elementId.substring(0,elementId.lastIndexOf("_"))+"tooltip");
+    toolTipText.classList.add("clicked");
   }
 </script>
 
