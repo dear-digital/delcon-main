@@ -78,6 +78,7 @@
   border-top: none;
   position: absolute;
   height: 0;
+  visibility: hidden;
 }
 
 .sort-option {
@@ -92,6 +93,7 @@
 
 .open .sort-options {
     width: 100%;
+  visibility: visible;
   	height: auto;
     background-color: #fff;
 }
