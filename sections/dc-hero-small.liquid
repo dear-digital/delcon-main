@@ -3,7 +3,7 @@
 <div class="hero-small rel" style="background-color: {{ section.settings.background_color }}">
   <div class="hero-small-content container flex-box justify-between align-center{% if section.settings.media_alignment == 'left' %} rev-cols{% endif %}">
     <div class="hero-small-text">
-      <h1 class="coll-title tk-le-monde-livre-classic-byol">{{ section.settings.title }}</h1>
+      <h1 class="coll-title tk-le-monde-livre-classic-byol">{% if collection.title != blank %}{{ collection.title }}{% else %}{{ section.settings.title }}{% endif %}</h1>
       <div class="coll-desc">{{ section.settings.desc }}</div>
     </div>
     <div class="hero-small-img"><img src="{{ section.settings.image | img_url: 'x720' }}"></div>
