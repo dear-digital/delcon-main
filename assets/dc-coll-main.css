@@ -213,7 +213,7 @@
 	display: block;
 }
 
-.active .plus-sign {
+.active .plus-sign svg #Line {
 /* 	display: none; */
   transform: translate(12.001 1) rotate(90deg);
 }
