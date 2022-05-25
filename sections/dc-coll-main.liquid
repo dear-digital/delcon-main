@@ -57,7 +57,7 @@
     
     <div class="coll-products-n-filter-wrap flex-box justify-between">
       <div class="coll-filters"></div>
-      <div class="coll-porducts">
+      <div class="coll-porducts flex-box justify-between">
       	{% for product in collection.products %}
           <div class="product-card rel" data-product-id="{{ product.id }}">
             <a title="{{ product.title | escape  }}" class="product-card-hover no-t-m">
