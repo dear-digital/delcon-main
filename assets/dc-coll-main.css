@@ -66,3 +66,7 @@
 .down-chev {
     transform: rotate(90deg);
 }
+
+.down-chev svg{
+	width: 4px;
+}
