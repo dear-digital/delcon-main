@@ -137,6 +137,7 @@
   visibility: visible;
   	height: auto;
     background-color: #fff;
+  z-index: 1;
 }
 
 .coll-porducts {
