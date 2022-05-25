@@ -214,5 +214,6 @@
 }
 
 .active .plus-sign {
-	display: none;
+/* 	display: none; */
+  transform: translate(12.001 1) rotate(90deg);
 }
