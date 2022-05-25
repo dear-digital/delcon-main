@@ -62,3 +62,7 @@
     font-size: 16px;
     line-height: 24px;
 }
+
+.down-chev {
+    transform: rotate(90deg);
+}
