@@ -180,3 +180,7 @@
 .product-finder .grey-btn{
 	background-color: #E4EDF2;
 }
+
+.product-finder .grey-btn:hover{
+	background-color: #D0E0E8;
+}
