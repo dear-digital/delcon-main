@@ -231,6 +231,18 @@
     align-items: center;
 }
 
+.checkbox .check-sign{
+	display: none;
+}
+
+.checkbox.checked{
+	background-color: #F2F2F2;
+}
+
+.checkbox.checked .check-sign{
+	display: block;
+}
+
 .coll-filter-option-wrap {
     display: flex;
     align-items: center;
