@@ -204,3 +204,7 @@
 .coll-filter-type-name{
 	margin-right: 8px;
 }
+
+.active .plus-sign svg #Line{
+	transform: rotate(180deg);
+}
