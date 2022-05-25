@@ -78,6 +78,10 @@
             </div>
           </div>
         {% endfor %}
+        
+        {% for product in section.settings.featured_collection.products %}
+    	{% include "product-card", total_variants: section.settings.total_variants, maten: section.settings.maten, koop_online: section.settings.koop_online, koop_local: section.settings.koop_local %}
+    {% endfor %}
       </div>
     </div>
   </div>
