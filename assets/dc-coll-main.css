@@ -205,10 +205,14 @@
 	margin-right: 8px;
 }
 
-.plus-sign svg #Line{
-	transition: .4s ease;
+.minus-sign{
+	display: none;
 }
 
-.active .plus-sign svg #Line{
-	transform: rotate(180deg);
+.active .minus-sign{
+	display: block;
+}
+
+.active .plus-sign {
+	display: none;
 }
