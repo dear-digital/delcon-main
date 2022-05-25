@@ -87,13 +87,14 @@
 
 <script>
   function copyToClipBoard(elementId) {
-    var copyText = document.getElementById(elementId);
-    console.log("elementId: "+elementId);
-    console.log("copyText: "+copyText);
-    navigator.clipboard.writeText(copyText.dataset.media);
+    var copyElement = document.getElementById(elementId);
+	var copyText = copyElement.dataset.media;
+    var toolTipText = document.getElementById(elementId.substring(0,elementId.lastIndexOf("_"))+"tooltip");
     
-    var copiedText = copyText.dataset.json;
-    console.log("copiedText: "+copiedText);
+    navigator.clipboard.writeText(copyText);
+    
+    
+    console.log("toolTipText: "+elementId.substring(0,elementId.lastIndexOf("_"))+"tooltip");
   }
 </script>
 
