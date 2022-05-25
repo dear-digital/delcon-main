@@ -49,7 +49,16 @@
 
         <div class="variants-wrapper">
           {% for variant in product.variants %}
-          <div class="variant-box {% if forloop.index == 1 %}variant-selected{% endif %} {% if product.has_only_default_variant %}no-disp{% endif %}" data-index="{{ forloop.index }}" data-price="{{ variant.price | money }}">{{ variant.title }}</div>
+          <div class="variant-box {% if forloop.index == 1 %}variant-selected{% endif %} {% if product.has_only_default_variant %}no-disp{% endif %}" 
+               data-index="{{ forloop.index }}" 
+               data-avaliable="{% if variant.available %}yes{% else %}no{% endif %}"
+               data-sell-out-of-stock="{{ variant.inventory_policy }}"
+               data-inventory-management="{{ variant.inventory_management }}"
+               data-quantity="{{ variant.inventory_quantity }}"
+               value="{{ variant.id }}"
+               variant-name="{{ variant.title }}"
+               data-compare="{{ variant.compare_at_price | money }}"
+               data-price="{{ variant.price | money }}">{{ variant.title }}</div>
           {% endfor %}
         </div>
         
@@ -97,6 +106,25 @@
 </div>
 
 <script>
+  
+  $(document).ready(function() {
+	checkAvailability();
+  });
+  
+  function scrollProductImage() {
+    
+    var variantTitle = $(".variant-box.variant-selected").attr("variant-name");
+    
+    var x = JSON.parse($('#product-json').html());
+    var w = x.find(item => {
+		return item.public_title === variantTitle;
+    });
+
+    if(w.featured_image != null) {
+      $('.product-slider').slick('slickGoTo', (parseInt(w.featured_image.position)-1), false);
+    }
+    
+  }
   
   $(".product-accordion").click(function() {
     var acc1 = $(this).hasClass('faq-active')
