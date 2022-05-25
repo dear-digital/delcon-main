@@ -23,6 +23,26 @@
             <div class="footer-store-address">{{ section.settings.footer_address }}</div>
 
             <div class="footer-social-wrap">
+              {% if settings.social_facebook_link != blank %}
+              <a href="{{ settings.social_facebook_link }}" class="social-icon" target="_blank" aria-label="Facebook logo" rel="noreferrer">{% render "icon-facebook" %}</a>
+              {% endif %}
+
+              {% if settings.social_instagram_link != blank %}
+              <a href="{{ settings.social_instagram_link }}" class="social-icon" target="_blank" aria-label="Instagram logo" rel="noreferrer">{% render "icon-instagram" %}</a>
+              {% endif %}
+
+              {% if settings.social_pinterest_link != blank %}
+              <a href="{{ settings.social_pinterest_link }}" class="social-icon" target="_blank" aria-label="Pinterest logo" rel="noreferrer">{% render "icon-pinterest" %}</a>
+              {% endif %}
+
+              {% if settings.social_twitter_link != blank %}
+              <a href="{{ settings.social_twitter_link }}" class="social-icon" target="_blank" aria-label="Twitter logo" rel="noreferrer">{% render "icon-twitter" %}</a>
+              {% endif %}
+
+              {% if settings.social_youtube_link != blank %}
+              <a href="{{ settings.social_youtube_link }}" class="social-icon" target="_blank" aria-label="Youtube logo" rel="noreferrer">{% render "icon-youtube" %}</a>
+              {% endif %}
+              
               {% for block in section.blocks %}
                 {% if block.type == 'social-media' %}
               	  <a href="{{ block.settings.social_media_link }}" class="social-icon" target="_blank" aria-label="{{ section.settings.social_media_title }}">{{ block.settings.social_media_icon }}</a>
