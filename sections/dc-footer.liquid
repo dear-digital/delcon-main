@@ -89,7 +89,7 @@
   function copyToClipBoard(elementId) {
     var copyElement = document.getElementById(elementId);
 	var copyText = copyElement.dataset.media;
-    var toolTipElementId = elementId.substring(0,elementId.lastIndexOf("_"))+"_tooltip";
+    var toolTipElementId = elementId.substring(0,elementId.lastIndexOf("_")+1)+"tooltip";
     var toolTipText = document.getElementById(toolTipElementId);
     
     navigator.clipboard.writeText(copyText);
