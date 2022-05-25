@@ -29,4 +29,6 @@
 .rev-cols .hero-small-text {
     padding-right: 0;
   padding-left: 110px;
+  margin-left: 50%;
+    height: 100%;
 }
