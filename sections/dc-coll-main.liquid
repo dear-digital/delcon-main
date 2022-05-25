@@ -56,7 +56,28 @@
     
     <div class="coll-products-n-filter-wrap flex-box justify-between">
       <div class="coll-filters"></div>
-      <div class="coll-porducts"></div>
+      <div class="coll-porducts">
+      	{% for product in collection.products %}
+          <div class="product-card rel" data-product-id="{{ product.id }}">
+            <a title="{{ product.title | escape  }}" class="product-card-hover no-t-m">
+              <button class="btn product-btn">{{ section.settings.meerInfo }}</button>
+            </a>
+            <div class="product-card-image rel">
+              <img class="default-img" src="{{ product.images[0] | default: product.featured_image | img_url: '392x' }}" alt="{{ product.title | escape }}" loading="lazy" />
+              <img class="hovered-img no-t-m" src="{{ product.images[1] | default: product.featured_image | img_url: '392x' }}" alt="{{ product.title | escape }}" loading="lazy" />
+            </div>
+            <div class="product-card-details">
+              <div class="prooduct-title-desc">
+                <p class="product-card-title">{{ product.title | strip_html | truncate: 17 | escape }}</p>
+                <p class="product-card-desc">{{ product.metafields.my_fields.extra_info | escape  }}</p>
+              </div>
+              <div class="product-card-price">
+                <p class="product-price">{{ section.settings.vanaf_text }} {{ product.selected_or_first_available_variant.price | money }}</p>
+              </div>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
     </div>
   </div>
 </div>
