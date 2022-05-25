@@ -92,7 +92,7 @@
 	border-bottom: none;
 }
 
-.open .down-chev{
+.open .down-chev svg{
 	transform: rotate(270deg);
 }
 
