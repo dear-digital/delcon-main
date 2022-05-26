@@ -87,15 +87,15 @@
 }
 
 @media (min-width: 993px) {
-  .header-nav-list a:hover {
-    color: #B499BF;
-  }
   .shadow .header {
     background-color: #fff !important;
     box-shadow: 0px 8px 16px #A69E971A;
   }
   .shadow .header .header-nav-list a {
     color: rgb(var(--color-base-accent-1));
+  }
+  .header-nav-list a:hover {
+    color: #B499BF;
   }
   .shadow .header .header-btn {
     background-color: rgb(var(--color-base-background-1)) !important;
