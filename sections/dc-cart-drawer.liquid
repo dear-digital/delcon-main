@@ -91,7 +91,7 @@
               </div>
             </div>
             <div class="upsell-product-desc">{{ upsellProd.metafields.my_fields.extra_info }}</div>
-            <div class="btn addUpsell" data-variant="{{ upsellProd.selected_or_first_available_variant.id }}" {% if upsellProd.selected_or_first_available_variant.inventory_quantity < 1 %}disabled="disabled"{% endif %}>{{ section.settings.upsell_addtoCart }}</div>
+            <button class="btn addUpsell" data-variant="{{ upsellProd.selected_or_first_available_variant.id }}" {% if upsellProd.selected_or_first_available_variant.inventory_quantity < 1 %}disabled="disabled"{% endif %}>{{ section.settings.upsell_addtoCart }}</button>
           </div>
         </div>
       </div>
