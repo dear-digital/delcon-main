@@ -160,19 +160,15 @@
 .cart-product-wrapper {
   display: flex;
   position: relative;
-  max-width: 416px;
+  max-width: 388px;
   margin: 0 auto;
-  padding: 16px 0;
-  border-bottom: 1px solid rgba(var(--color-base-accent-2),1);
-}
-.cart-product-wrapper:first-child {
-  padding-top: 24px;
+  padding: 24px 0;
 }
 
 .cart-product-image, .upsell-product-image{
   margin-right: 16px;
-  width: 92px;
-  height: 92px;
+  width: 101px;
+  height: 101px;
 }
 
 .cart-product-image img, .upsell-product-image img{
@@ -201,7 +197,7 @@
 .product-name {
   display: block;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 22px;
   font-weight: bold;
   letter-spacing: 0;
 }
@@ -227,8 +223,8 @@
 
 .product-color {
   display: block;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 12px;
+  line-height: 16px;
   letter-spacing: 0;
 }
 
@@ -236,21 +232,20 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 92px;
-  height: 44px;
-  border: 1px solid #000;
-  margin-bottom: 8px;
+  width: 85px;
+  height: 37px;
+  border: 1px solid rgba(var(--color-base-accent-1),1);
 }
 
 .qty-manipulation-symbol {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 20px;
-  width: 20px;
-  font-size: 18px;
-  font-weight: 600;
-  line-height: 23px;
+  height: 12px;
+  width: 12px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
   cursor: pointer;
 }
 
@@ -259,17 +254,17 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 18px;
-  line-height: 24px;
+  font-size: 16px;
+  line-height: 22px;
   font-weight: 400;
 }
 
 .delete-cart-product {
   display: flex;
   align-items: end;
-  font-size: 14px;
-  line-height: 24px;
-  color: #000;
+  font-size: 12px;
+  line-height: 16px;
+  color: #B499BF;
   cursor: pointer;
   text-align: right;
 }
@@ -446,6 +441,8 @@
   display: block;
   width: 100%;
   padding: 12px;
+  border-top: 1px solid rgba(var(--color-base-accent-1),1);
+  border-bottom: 1px solid rgba(var(--color-base-accent-1),1);
 }
 .free-shipping-text {
   font-size: 16px;
