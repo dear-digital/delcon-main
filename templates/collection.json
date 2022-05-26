@@ -93,8 +93,8 @@
           "type": "filter",
           "settings": {
             "main_filter": "Grootte hond",
-            "sub_filter_1": "",
-            "sub_filter_2": "",
+            "sub_filter_1": "Droge voeding",
+            "sub_filter_2": "Treats",
             "sub_filter_3": "",
             "sub_filter_4": "",
             "sub_filter_5": "",
@@ -109,8 +109,8 @@
           "type": "filter",
           "settings": {
             "main_filter": "Hoe energiek is je hond?",
-            "sub_filter_1": "",
-            "sub_filter_2": "",
+            "sub_filter_1": "Droge voeding",
+            "sub_filter_2": "Treats",
             "sub_filter_3": "",
             "sub_filter_4": "",
             "sub_filter_5": "",
@@ -125,8 +125,8 @@
           "type": "filter",
           "settings": {
             "main_filter": "Aandachtspunten",
-            "sub_filter_1": "",
-            "sub_filter_2": "",
+            "sub_filter_1": "Treats",
+            "sub_filter_2": "Droge voeding",
             "sub_filter_3": "",
             "sub_filter_4": "",
             "sub_filter_5": "",
