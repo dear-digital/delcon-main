@@ -72,18 +72,38 @@
             "section_btn_text": "PRODUCTFINDER",
             "section_btn_url": ""
           }
+        },
+        "ada44653-3814-49fc-89b9-ecc79778dd98": {
+          "type": "filter",
+          "settings": {
+            "main_filter": "Type voeding",
+            "sub_filter_1": "Droge voeding",
+            "sub_filter_2": "Treats",
+            "sub_filter_3": "Dental chews",
+            "sub_filter_4": "",
+            "sub_filter_5": "",
+            "sub_filter_6": "",
+            "sub_filter_7": "",
+            "sub_filter_8": "",
+            "sub_filter_9": "",
+            "sub_filter_10": ""
+          }
         }
       },
       "block_order": [
         "38a835fa-a620-45b2-b919-a33412e6d378",
         "d6e89358-bd0b-43d5-b0bd-4a5cc6666239",
         "c7d30890-f8c1-4128-af59-b1468d6d5cb5",
-        "d278c7b6-43d1-47b8-b754-b65fc011a054"
+        "d278c7b6-43d1-47b8-b754-b65fc011a054",
+        "ada44653-3814-49fc-89b9-ecc79778dd98"
       ],
       "settings": {
+        "meerInfo": "QUICK VIEW",
         "filter": "Filter",
         "tot_products": "Products",
-        "sort": "Sort By"
+        "sort": "Sort By",
+        "koop_online": "KOOP ONLINE",
+        "koop_local": "KOOP LOKAAL"
       }
     }
   },
