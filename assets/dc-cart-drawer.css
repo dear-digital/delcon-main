@@ -442,48 +442,15 @@
   margin-top: 4px;
 }
 
-.progress-bar-wrapper {
+.free-shipping-wrapper {
   display: block;
   width: 100%;
-  height: 82px;
-  background-color: #EBDADA;
-  padding: 16px;
+  padding: 12px;
 }
-.progress-text {
+.free-shipping-text {
   font-size: 16px;
   line-height: 24px;
-}
-.progress_track {
-  display: block;
-  position: relative;
-  background-color: #fff;
-  width: 100%;
-  height: 8px;
-  z-index: 0;
-  margin-top: 5px;
-}
-.progressBar__indicator {
-  top: 0;
-  height: 8px;
-  width: 0%;
-  left: 0;
-  z-index: 12;
-  background-color: rgba(var(--color-base-accent-2),1);
-  -webkit-transition: width 1s ease-in 1s;
-  -moz-transition: width 1s ease-in 1s;
-  -o-transition: width 1s ease-in 1s;
-  transition: width 1s ease-in 1s;
-}
-.progress-slider {
-  display: block;
-  width: 26px;
-  height: 26px;
-  border: 4px solid #fff;
-  background-color: #9B4746;
-  border-radius: 50%;
-  position: absolute;
-  top: -8px;
-  left: 0;
+  margin: 0;
 }
 
 @media (max-width: 992px) {
