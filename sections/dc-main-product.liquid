@@ -198,7 +198,19 @@
     })
     .done(function( data ) {
       console.log(data);
-      $('.cart-items-total').text(data.item_count);
+      
+      $.ajax({
+        url: "/cart/cart.js",
+        method: "POST",
+        dataType: "json"
+      })
+      .done(function( data ) {
+        $('.cart-items-total').text(data.item_count);
+      })
+      .fail(function(error) {
+        console.log( error );
+        $('.load-container').remove();
+      });
       renderedHtml = getSectionInnerHTML(
         data.sections["dc-cart-drawer"],
         "#CartContainer"
