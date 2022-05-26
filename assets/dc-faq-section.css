@@ -50,11 +50,9 @@
   height: 12px;
   width: 12px;
 }
-.accordion .symbol svg {
+.accordion .symbol svg * {
   stroke: rgba(var(--color-base-accent-1),1);
   stroke-width: 2;
-}
-.accordion .symbol svg * {
   transition: all .3s ease-out;
 }
 .faq-active .symbol svg #Line-2, .accordion-m-active .symbol svg #Line-2 {
