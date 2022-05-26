@@ -7,11 +7,20 @@
         "terug_link": "shopify:\/\/collections\/kattenvoer",
         "variant_type": "Hoeveelheid:",
         "shipping_details": "<ul class=\"checked-list\"><li>Gratis verzending vanaf €59,50<\/li><\/ul>",
+        "out_of_stock": "Uitverkocht",
         "add_to_cart": "AAN WINKELWAGEN TOEVOEGEN"
+      }
+    },
+    "1653555221b641428f": {
+      "type": "dc-product-faq",
+      "settings": {
+        "faq_background": "#f2f1f0",
+        "faq_title": "Veelgestelde vragen"
       }
     }
   },
   "order": [
-    "1652787202269c9bde"
+    "1652787202269c9bde",
+    "1653555221b641428f"
   ]
 }
