@@ -184,7 +184,7 @@
 
 .cart-product-infos {
   display: flex;
-  width: calc(100% - 92px);
+  width: calc(100% - 117px);
 }
 
 .cart-product-qty-wrapper {
@@ -200,20 +200,14 @@
   letter-spacing: 0;
 }
 
-.product-price {
-  display: block;
-  font-size: 16px;
-  line-height: 24px;
-  letter-spacing: 0;
-  margin: 0 !important;
-}
-
-.product-compare-price {
+.product-discount-price {
+  display: inline-block;
   color: #7A7A7A;
   text-decoration: line-through;
 }
 
 .product-selling-price {
+  display: inline-block;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
