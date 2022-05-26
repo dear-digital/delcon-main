@@ -70,9 +70,9 @@
             </div>
             <div class="cart-product-qty-del justify-between">
               <div class="cart-product-qty" data-quantity="1">
-                <div class="qty-manipulation-symbol minus-symbol cart-minus" data-variant="{{ item.variant.id }}" data-value="{{item.quantity}}">{% render "icon-minus-new" %}</div>
+                <div class="qty-manipulation-symbol minus-symbol cart-minus" data-variant="{{ item.variant.id }}" data-value="{{item.quantity}}">{% render "icon-minus" %}</div>
                 <div class="cart-qty" value="{{item.quantity}}">{{item.quantity}}</div>
-                <div class="qty-manipulation-symbol plus-symbol cart-plus" data-variant="{{ item.variant.id }}" data-value="{{item.quantity}}">{% render "icon-plus-new" %}</div>
+                <div class="qty-manipulation-symbol plus-symbol cart-plus" data-variant="{{ item.variant.id }}" data-value="{{item.quantity}}">{% render "icon-plus" %}</div>
               </div>
               <div class="delete-cart-product" data-variant="{{ item.variant.id }}">
                 <div class="delete-text">{{ section.settings.delete_text }}</div>
@@ -145,7 +145,7 @@
     var formData = {
       'id': parseInt($(this).data('variant')),
       'quantity': 0,
-      'sections': "toba-cart-drawer"
+      'sections': "delcon-cart-drawer"
     };
     $.ajax({
       url: "/cart/change.js",
@@ -155,7 +155,7 @@
     })
     .done(function( data ) {
       renderedHtml = getSectionInnerHTML(
-        data.sections["toba-cart-drawer"],
+        data.sections["delcon-cart-drawer"],
         "#CartContainer"
       );
       $("#CartContainer").html(renderedHtml);
@@ -188,7 +188,7 @@
     var formData = {
       'id': parseInt($(this).data('variant')),
       'quantity': $(this).data('value')-1,
-      'sections': "toba-cart-drawer"
+      'sections': "delcon-cart-drawer"
     };
     $.ajax({
       url: "/cart/change.js",
@@ -198,7 +198,7 @@
     })
     .done(function( data ) {
       renderedHtml = getSectionInnerHTML(
-        data.sections["toba-cart-drawer"],
+        data.sections["delcon-cart-drawer"],
         "#CartContainer"
       );
       $("#CartContainer").html(renderedHtml);
@@ -231,7 +231,7 @@
     var formData = {
       'id': parseInt($(this).data('variant')),
       'quantity': $(this).data('value')+1,
-      'sections': "toba-cart-drawer"
+      'sections': "delcon-cart-drawer"
     };
     $.ajax({
       url: "/cart/change.js",
@@ -241,7 +241,7 @@
     })
     .done(function( data ) {
       renderedHtml = getSectionInnerHTML(
-        data.sections["toba-cart-drawer"],
+        data.sections["delcon-cart-drawer"],
         "#CartContainer"
       );
       $("#CartContainer").html(renderedHtml);
@@ -276,7 +276,7 @@
         'id': parseInt($(this).data("variant")),
         'quantity': 1
       }],
-      'sections': "toba-cart-drawer"
+      'sections': "delcon-cart-drawer"
     };
     $.ajax({
       url: "/cart/add.js",
@@ -287,7 +287,7 @@
     .done(function( data ) {
       console.log(data);
       renderedHtml = getSectionInnerHTML(
-        data.sections["toba-cart-drawer"],
+        data.sections["delcon-cart-drawer"],
         "#CartContainer"
       );
       $("#CartContainer").html(renderedHtml);
