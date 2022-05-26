@@ -48,7 +48,7 @@
           <div class="cart-product-image">
             <a href="{{ item.url }}"><img src="{{ featured_image | product_img_url: '120x' }}" alt="{{ item.product.title }}"></a>
           </div>
-          <div class="cart-product-infos justify-between align-center">
+          <div class="cart-product-infos justify-between align-end">
             <div class="cart-product-info">
               <div class="product-name">{{ item.product.title | strip_html | truncatewords: 3 }}</div>
               <div class="product-color">{{ item.product.metafields.my_fields.extra_info }} - inhoud: {{ item.variant.title }}</div>
