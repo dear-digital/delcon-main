@@ -204,11 +204,11 @@
         method: "POST",
         dataType: "json"
       })
-      .done(function( data ) {
-        $('.cart-items-total').text(data.item_count);
+      .done(function( cartData ) {
+        $('.cart-items-total').text(cartData.item_count);
       })
-      .fail(function(error) {
-        console.log( error );
+      .fail(function(cartError) {
+        console.log( cartError );
         $('.load-container').remove();
       });
       renderedHtml = getSectionInnerHTML(
