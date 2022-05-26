@@ -413,7 +413,7 @@
 }
 .cart-empty a {
   text-decoration: none;
-  color: rgba(var(--color-base-accent-2),1);
+  color: #0D553F;
 }
 
 .with-upsell .cart-body {
