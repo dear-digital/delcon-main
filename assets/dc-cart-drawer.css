@@ -324,12 +324,12 @@
   color: #fff;
   font-weight: bold;
 }
-.addUpsell:hover {
-  background-color: #063323;
-}
 .addUpsell:disabled {
   opacity: 0.5;
   cursor: not-allowed;
+}
+.addUpsell:hover {
+  background-color: #063323;
 }
 .upsell-product-wrap .upsell-product-desc {
   max-width: calc( 100% - 117px );
