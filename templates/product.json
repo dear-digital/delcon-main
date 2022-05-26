@@ -64,12 +64,22 @@
         "koop_online": "KOOP ONLINE",
         "koop_local": "KOOP LOKAAL"
       }
+    },
+    "1653555651f941047b": {
+      "type": "dc-newsletter",
+      "settings": {
+        "title": "Krijg nu 20% korting",
+        "desc": "Schrijf je in op onze nieuwsbrief en blijf op de hoogte van acties en promoties. 20% korting die je kan gebruiken bij je volgende aankoop in onze shop",
+        "email_placeholder": "Email adres",
+        "subscribe_btn": "Send"
+      }
     }
   },
   "order": [
     "1652787202269c9bde",
     "16535555201d757e1f",
     "1653555221b641428f",
-    "165355552830ca05e0"
+    "165355552830ca05e0",
+    "1653555651f941047b"
   ]
 }
