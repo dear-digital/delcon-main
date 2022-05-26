@@ -103,7 +103,7 @@
         </div>
         <div class="checkout-shipping justify-between">
           <div class="shipping-title">{{ section.settings.shipping_text }}</div>
-          <div class="shipping-price">{% if cart.total_price < 5000 %}{{ section.settings.calc_text }}{% else %}{{ section.settings.free_shipping }}{% endif %}</div>
+          <div class="shipping-price">{% if cart.total_price < 6000 %}{{ section.settings.calc_text }}{% else %}{{ section.settings.free_shipping }}{% endif %}</div>
         </div>
         <a href="/checkout" class="checkout-btn">{{ section.settings.checkout_text }}</a>
       </div>
