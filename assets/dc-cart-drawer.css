@@ -327,6 +327,10 @@
 .addUpsell:hover {
   background-color: #063323;
 }
+.addUpsell:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
 .upsell-product-wrap .upsell-product-desc {
   max-width: calc( 100% - 117px );
 }
