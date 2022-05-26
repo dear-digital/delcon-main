@@ -132,7 +132,11 @@
   
   $('.drawer-cart').on("click", ".delete-cart-product", function() {
     let renderedHtml;
+    $('.drawer-cart').addClass('drawn');
+    $('.background-drawer-cart').addClass('drawn');
+    $('body').addClass('no-scroll');
     $('.cart-body').append(`<div class="load-container"><div class="load"></div></div>`);
+    
     var formData = {
       'id': parseInt($(this).data('variant')),
       'quantity': 0,
@@ -150,9 +154,6 @@
         "#CartContainer"
       );
       $("#CartContainer").html(renderedHtml);
-      $('.drawer-cart').addClass('drawn');
-      $('.background-drawer-cart').addClass('drawn');
-      $('body').addClass('no-scroll');
       if($('.drawer-cart-upsell').length > 0 && $('.upsell-product-wrap').length > 0) {
       	$('.drawer-cart').addClass("with-upsell");
       }
@@ -175,7 +176,11 @@
   
   $('.drawer-cart').on("click", ".cart-minus", function() {
     let renderedHtml;
+    $('.drawer-cart').addClass('drawn');
+    $('.background-drawer-cart').addClass('drawn');
+    $('body').addClass('no-scroll');
     $('.cart-body').append(`<div class="load-container"><div class="load"></div></div>`);
+    
     var formData = {
       'id': parseInt($(this).data('variant')),
       'quantity': $(this).data('value')-1,
@@ -193,9 +198,6 @@
         "#CartContainer"
       );
       $("#CartContainer").html(renderedHtml);
-      $('.drawer-cart').addClass('drawn');
-      $('.background-drawer-cart').addClass('drawn');
-      $('body').addClass('no-scroll');
       if($('.drawer-cart-upsell').length > 0 && $('.upsell-product-wrap').length > 0) {
       	$('.drawer-cart').addClass("with-upsell");
       }
@@ -218,7 +220,11 @@
   
   $('.drawer-cart').on("click", ".cart-plus", function() {
     let renderedHtml;
+    $('.drawer-cart').addClass('drawn');
+    $('.background-drawer-cart').addClass('drawn');
+    $('body').addClass('no-scroll');
     $('.cart-body').append(`<div class="load-container"><div class="load"></div></div>`);
+    
     var formData = {
       'id': parseInt($(this).data('variant')),
       'quantity': $(this).data('value')+1,
@@ -236,9 +242,6 @@
         "#CartContainer"
       );
       $("#CartContainer").html(renderedHtml);
-      $('.drawer-cart').addClass('drawn');
-      $('.background-drawer-cart').addClass('drawn');
-      $('body').addClass('no-scroll');
       if($('.drawer-cart-upsell').length > 0 && $('.upsell-product-wrap').length > 0) {
       	$('.drawer-cart').addClass("with-upsell");
       }
@@ -261,7 +264,11 @@
   
   $('.drawer-cart').on("click", ".addUpsell", function() {
     let renderedHtml;
+    $('.drawer-cart').addClass('drawn');
+    $('.background-drawer-cart').addClass('drawn');
+    $('body').addClass('no-scroll');
     $('.cart-body').append(`<div class="load-container"><div class="load"></div></div>`);
+    
     var formData = {
       'items': [{
         'id': parseInt($(this).data("variant")),
@@ -282,9 +289,6 @@
         "#CartContainer"
       );
       $("#CartContainer").html(renderedHtml);
-      $('.drawer-cart').addClass('drawn');
-      $('.background-drawer-cart').addClass('drawn');
-      $('body').addClass('no-scroll');
       if($('.drawer-cart-upsell').length > 0 && $('.upsell-product-wrap').length > 0) {
       	$('.drawer-cart').addClass("with-upsell");
       }

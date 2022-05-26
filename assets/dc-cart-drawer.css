@@ -200,6 +200,11 @@
   letter-spacing: 0;
 }
 
+.cart-product-price-wrapper {
+  display: block;
+  height: 87px;
+}
+
 .product-discount-price {
   display: inline-block;
   color: #7A7A7A;
