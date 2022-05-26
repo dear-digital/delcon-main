@@ -6,8 +6,9 @@
   padding: 120px 0;
 }
 .faq-heading {
-  font-size: 32px;
-  line-height: 48px;
+  font-size: 40px;
+  line-height: 66px;
+  margin: 0;
   margin-bottom: 40px;
 }
 .faqs {
@@ -35,6 +36,7 @@
   height: 12px;
   width: 12px;
   position: absolute;
+  top: 20px;
   right: 0;
   -webkit-transform: rotate(90deg);
   transform: rotate(90deg);
