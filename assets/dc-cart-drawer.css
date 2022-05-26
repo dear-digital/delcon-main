@@ -273,8 +273,8 @@
 }
 
 .drawer-cart-upsell {
-  background-color: #EBDADA;
-  height: 140px;
+  background-color: rgb(var(--color-base-text));
+  height: 149px;
   padding: 24px 16px;
 }
 
@@ -339,8 +339,6 @@
   position: -webkit-sticky;
   position: sticky;
   width: 100%;
-  max-width: 388px;
-  margin: 0 auto;
   height: 169px;
   bottom: 0;
   top: 100%;
@@ -354,6 +352,9 @@
 }
 
 .drawer-cart-checkout {
+  width: 100%;
+  max-width: 388px;
+  margin: 0 auto;
   padding: 24px 0;
 }
 
@@ -390,12 +391,12 @@
 
 .checkout-btn {
   display: flex;
-  padding: 16px 0;
+  padding: 11px 0;
   width: 100%;
   justify-content: center;
   background-color: #0D553F;
   color: #ffffff;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 24px;
   letter-spacing: 0;
   font-weight: bold;
@@ -417,7 +418,7 @@
 }
 
 .with-upsell .cart-body {
-  height: calc(100vh - 480px);
+  height: calc(100vh - 460px);
 }
 
 .addUpsell {
