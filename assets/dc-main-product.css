@@ -83,7 +83,6 @@
   border-top: 1px solid rgba(var(--color-base-accent-1),1) !important;
 }
 .product-accordion {
-  font-family: 'Nunito Sans',sans-serif;
   cursor: pointer;
   font-size: 16px;
   line-height: 24px;
@@ -93,8 +92,8 @@
   margin: 0;
 }
 .product-accordion .symbol {
-  height: 20px;
-  width: 20px;
+  height: 12px;
+  width: 12px;
   position: absolute;
   right: 0;
   -webkit-transform: rotate(90deg);
@@ -108,8 +107,8 @@
   left: 0;
   right: 0;
   margin: auto;
-  height: 16px;
-  width: 16px;
+  height: 12px;
+  width: 12px;
 }
 .product-accordion .symbol svg path {
   stroke-width: 2;
