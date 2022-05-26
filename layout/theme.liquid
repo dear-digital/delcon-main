@@ -269,6 +269,13 @@
     </script>
 
     <script>
+      
+      function getSectionInnerHTML(html, selector) {
+        return new DOMParser()
+        .parseFromString(html, "text/html")
+        .querySelector(selector).innerHTML;
+      }
+      
       var url = window.location.href;
       $(window).scroll(function() {     
         var scroll = $(window).scrollTop();
