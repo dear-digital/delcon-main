@@ -140,7 +140,7 @@
     var formData = {
       'id': parseInt($(this).data('variant')),
       'quantity': 0,
-      'sections': "delcon-cart-drawer"
+      'sections': "dc-cart-drawer"
     };
     $.ajax({
       url: "/cart/change.js",
@@ -150,7 +150,7 @@
     })
     .done(function( data ) {
       renderedHtml = getSectionInnerHTML(
-        data.sections["delcon-cart-drawer"],
+        data.sections["dc-cart-drawer"],
         "#CartContainer"
       );
       $("#CartContainer").html(renderedHtml);
@@ -184,7 +184,7 @@
     var formData = {
       'id': parseInt($(this).data('variant')),
       'quantity': $(this).data('value')-1,
-      'sections': "delcon-cart-drawer"
+      'sections': "dc-cart-drawer"
     };
     $.ajax({
       url: "/cart/change.js",
@@ -194,7 +194,7 @@
     })
     .done(function( data ) {
       renderedHtml = getSectionInnerHTML(
-        data.sections["delcon-cart-drawer"],
+        data.sections["dc-cart-drawer"],
         "#CartContainer"
       );
       $("#CartContainer").html(renderedHtml);
@@ -228,7 +228,7 @@
     var formData = {
       'id': parseInt($(this).data('variant')),
       'quantity': $(this).data('value')+1,
-      'sections': "delcon-cart-drawer"
+      'sections': "dc-cart-drawer"
     };
     $.ajax({
       url: "/cart/change.js",
@@ -238,7 +238,7 @@
     })
     .done(function( data ) {
       renderedHtml = getSectionInnerHTML(
-        data.sections["delcon-cart-drawer"],
+        data.sections["dc-cart-drawer"],
         "#CartContainer"
       );
       $("#CartContainer").html(renderedHtml);
@@ -274,7 +274,7 @@
         'id': parseInt($(this).data("variant")),
         'quantity': 1
       }],
-      'sections': "delcon-cart-drawer"
+      'sections': "dc-cart-drawer"
     };
     $.ajax({
       url: "/cart/add.js",
@@ -285,7 +285,7 @@
     .done(function( data ) {
       console.log(data);
       renderedHtml = getSectionInnerHTML(
-        data.sections["delcon-cart-drawer"],
+        data.sections["dc-cart-drawer"],
         "#CartContainer"
       );
       $("#CartContainer").html(renderedHtml);

@@ -188,7 +188,7 @@
         'id': parseInt($(".variant-box.variant-selected").attr("value")),
         'quantity': parseInt($(".qty-number").text())
       }],
-      'sections': "delcon-cart-drawer"
+      'sections': "dc-cart-drawer"
     };
     $.ajax({
       url: "/cart/add.js",
@@ -199,7 +199,7 @@
     .done(function( data ) {
       console.log(data);
       renderedHtml = getSectionInnerHTML(
-        data.sections["delcon-cart-drawer"],
+        data.sections["dc-cart-drawer"],
         "#CartContainer"
       );
       $("#CartContainer").html(renderedHtml);
