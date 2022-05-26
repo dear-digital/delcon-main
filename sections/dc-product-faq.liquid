@@ -7,7 +7,7 @@
       
       {% if product.metafields.my_fields.product_faq1_title and product.metafields.my_fields.product_faq1_desc %}
         <div class="faq-wrapper">
-          <h3 class="accordion">{{ product.metafields.my_fields.product_faq1_title }}<span class="symbol">{% render "icon-plus" %}</span></h3>
+          <h3 class="accordion">{{ product.metafields.my_fields.product_faq1_title }}<span class="symbol">{% render "accordion-plus" %}</span></h3>
           <div class="panel">
             <p>{{ product.metafields.my_fields.product_faq1_desc }}</p>
           </div>
@@ -16,7 +16,7 @@
       
       {% if product.metafields.my_fields.product_faq2_title and product.metafields.my_fields.product_faq2_desc %}
         <div class="faq-wrapper">
-          <h3 class="accordion">{{ product.metafields.my_fields.product_faq2_title }}<span class="symbol">{% render "icon-plus" %}</span></h3>
+          <h3 class="accordion">{{ product.metafields.my_fields.product_faq2_title }}<span class="symbol">{% render "accordion-plus" %}</span></h3>
           <div class="panel">
             <p>{{ product.metafields.my_fields.product_faq2_desc }}</p>
           </div>
@@ -25,7 +25,7 @@
       
       {% if product.metafields.my_fields.product_faq3_title and product.metafields.my_fields.product_faq3_desc %}
         <div class="faq-wrapper">
-          <h3 class="accordion">{{ product.metafields.my_fields.product_faq3_title }}<span class="symbol">{% render "icon-plus" %}</span></h3>
+          <h3 class="accordion">{{ product.metafields.my_fields.product_faq3_title }}<span class="symbol">{% render "accordion-plus" %}</span></h3>
           <div class="panel">
             <p>{{ product.metafields.my_fields.product_faq3_desc }}</p>
           </div>
@@ -34,7 +34,7 @@
       
       {% if product.metafields.my_fields.product_faq4_title and product.metafields.my_fields.product_faq4_desc %}
         <div class="faq-wrapper">
-          <h3 class="accordion">{{ product.metafields.my_fields.product_faq4_title }}<span class="symbol">{% render "icon-plus" %}</span></h3>
+          <h3 class="accordion">{{ product.metafields.my_fields.product_faq4_title }}<span class="symbol">{% render "accordion-plus" %}</span></h3>
           <div class="panel">
             <p>{{ product.metafields.my_fields.product_faq4_desc }}</p>
           </div>
@@ -43,7 +43,7 @@
       
       {% if product.metafields.my_fields.product_faq5_title and product.metafields.my_fields.product_faq5_desc %}
         <div class="faq-wrapper">
-          <h3 class="accordion">{{ product.metafields.my_fields.product_faq5_title }}<span class="symbol">{% render "icon-plus" %}</span></h3>
+          <h3 class="accordion">{{ product.metafields.my_fields.product_faq5_title }}<span class="symbol">{% render "accordion-plus" %}</span></h3>
           <div class="panel">
             <p>{{ product.metafields.my_fields.product_faq5_desc }}</p>
           </div>
@@ -53,7 +53,7 @@
       {% if product.metafields.my_fields.product_faq1_title == blank and product.metafields.my_fields.product_faq1_desc == blank and product.metafields.my_fields.product_faq2_title == blank and product.metafields.my_fields.product_faq2_desc == blank and product.metafields.my_fields.product_faq3_title == blank and product.metafields.my_fields.product_faq3_desc == blank and product.metafields.my_fields.product_faq4_title == blank and product.metafields.my_fields.product_faq4_desc == blank and product.metafields.my_fields.product_faq5_title == blank and product.metafields.my_fields.product_faq5_desc == blank %}
         {% for block in section.blocks %}
           <div class="faq-wrapper">
-            <h3 class="accordion">{{ block.settings.question }}<span class="symbol">{% render "icon-plus" %}</span></h3>
+            <h3 class="accordion">{{ block.settings.question }}<span class="symbol">{% render "accordion-plus" %}</span></h3>
             <div class="panel">
               <p>{{ block.settings.answer }}</p>
             </div>
