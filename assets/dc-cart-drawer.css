@@ -208,6 +208,8 @@
   display: inline-block;
   color: #7A7A7A;
   text-decoration: line-through;
+  letter-spacing: 0;
+  margin-right: 4px;
 }
 
 .product-selling-price {
@@ -391,15 +393,19 @@
   padding: 16px 0;
   width: 100%;
   justify-content: center;
-  background-color: rgba(var(--color-base-accent-2),1);
+  background-color: #0D553F;
   color: #ffffff;
   font-size: 18px;
   line-height: 24px;
   letter-spacing: 0;
   font-weight: bold;
   cursor: pointer;
-  transition: .4s ease;
+  transition: all .3s ease-out;
   text-decoration: none;
+}
+
+.checkout-btn:hover {
+  background-color: #063323;
 }
 
 .cart-empty {
@@ -408,18 +414,6 @@
 .cart-empty a {
   text-decoration: none;
   color: rgba(var(--color-base-accent-2),1);
-}
-.cart-empty > svg {
-  max-width: 60%;
-  display: block;
-  margin: 0 auto;
-  margin-top: 18px;
-}
-.product-discount-price {
-  color: #7A7A7A;
-  text-decoration: line-through;
-  letter-spacing: 0;
-  margin-right: 4px;
 }
 
 .with-upsell .cart-body {
