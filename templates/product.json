@@ -11,6 +11,17 @@
         "add_to_cart": "AAN WINKELWAGEN TOEVOEGEN"
       }
     },
+    "16535555201d757e1f": {
+      "type": "dc-full-banner-image",
+      "settings": {
+        "section_image": "shopify:\/\/shop_images\/Image_2x_08842411-8838-4190-9f06-a6f9ef370da4.png",
+        "section_title": "",
+        "section_text": "",
+        "isProductFinder": false,
+        "section_btn_text": "",
+        "section_btn_url": ""
+      }
+    },
     "1653555221b641428f": {
       "type": "dc-product-faq",
       "blocks": {
@@ -41,6 +52,7 @@
   },
   "order": [
     "1652787202269c9bde",
+    "16535555201d757e1f",
     "1653555221b641428f"
   ]
 }
