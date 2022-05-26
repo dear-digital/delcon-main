@@ -54,9 +54,6 @@
   text-decoration: none;
   transition: all .3s ease-out;
 }
-.header-nav-list a:hover {
-  color: #B499BF;
-}
 .dc-header nav.middle-nav {
   width: 20%;
   height: 100%;
@@ -88,13 +85,11 @@
   border: 1px solid #fff !important;
   color: #fff !important;
 }
-.header-btn:hover {
-  background-color: rgb(var(--color-base-background-1)) !important;
-  border: 1px solid rgb(var(--color-base-accent-1)) !important;
-  color: rgb(var(--color-base-accent-1)) !important;
-}
 
 @media (min-width: 993px) {
+  .header-nav-list a:hover {
+    color: #B499BF;
+  }
   .shadow .header {
     background-color: #fff !important;
     box-shadow: 0px 8px 16px #A69E971A;
@@ -103,7 +98,14 @@
     color: rgb(var(--color-base-accent-1));
   }
   .shadow .header .header-btn {
-  	
+    background-color: rgb(var(--color-base-background-1)) !important;
+    border: 1px solid rgb(var(--color-base-accent-1)) !important;
+    color: rgb(var(--color-base-accent-1)) !important;
+  }
+  .header-btn:hover {
+    background-color: rgb(var(--color-base-background-1)) !important;
+    border: 1px solid rgb(var(--color-base-accent-1)) !important;
+    color: rgb(var(--color-base-accent-1)) !important;
   }
   .shadow .header #Delcon_logo_white path {
   	fill: rgb(var(--color-base-accent-1));
