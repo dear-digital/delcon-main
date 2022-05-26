@@ -15,10 +15,10 @@
       "type": "dc-full-banner-image",
       "settings": {
         "section_image": "shopify:\/\/shop_images\/Image_2x_08842411-8838-4190-9f06-a6f9ef370da4.png",
-        "section_title": "",
-        "section_text": "",
-        "isProductFinder": false,
-        "section_btn_text": "",
+        "section_title": "Keuzestress?",
+        "section_text": "<p>Elke hond en elke kat heeft eigen specifieke behoeften. Daarom maken wij met veel zorg voeding die aangepast is aan jouw pluizige vriend.<\/p><ul class=\"checked-list\">\n<li>Met zorg geformuleerde dierenvoeding<\/li>\n<li>Opgebouwd uit de meest verfijnde natuurlijke ingrediënten<\/li>\n<li>Voor een optimale gezondheid van jouw viervoeter<\/li>\n<\/ul>",
+        "isProductFinder": true,
+        "section_btn_text": "PRODUCTFINDER",
         "section_btn_url": ""
       }
     },
