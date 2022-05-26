@@ -1,4 +1,6 @@
-<div class="faq-section background-light marg-top-xl marg-bottom-xl">
+{{ 'dc-faq-section.css' | asset_url | stylesheet_tag }}
+
+<div class="faq-section" style="background-color: {{ section.settings.faq_background }}">
   <div class="faq-container container">
     <h2 class="faq-heading title text-center">{{ section.settings.faq_title }}</h2>
     <div class="faqs">
@@ -100,8 +102,8 @@
 	],
 	"blocks": [
       {
-        "type": "select",
-        "name": "Add FAQ",
+        "type": "text",
+        "name": "FAQs",
 		"limit": 5,
         "settings": [
             {
