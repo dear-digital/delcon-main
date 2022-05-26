@@ -228,7 +228,7 @@
 
     <div class="for-header header-wrapper {% if template == "product"or template == "collection" or template == "blog" or template == "article" or template == "page.privacy-policy" or template == "customers/account" or template == "customers/addresses" or template == "customers/reset_password" %}shadow{% endif %}">
       {% section 'dc-announcement-bar' %}
-      {% section 'dc-header' %}
+      {% section 'dc-header' %}{% section 'dc-cart-drawer' %}
     </div>
     <main id="MainContent" class="content-for-layout focus-none" role="main" tabindex="-1">
       {{ content_for_layout }}
