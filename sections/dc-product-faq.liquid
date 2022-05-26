@@ -60,6 +60,8 @@
           </div>
         {% endfor %}
       {% endif %}
+      
+      <a href="{{ section.settings.faq_link }}" class="faq-link">{{ section.settings.faq_link_text }}</a>
     </div>
   </div>
 </div>
@@ -103,6 +105,17 @@
           "id": "faq_title",
           "type": "text",
 		  "default": "Veelgestelde vragen"
+    	},
+		{
+          "label": "FAQ Link Text",
+          "id": "faq_link_text",
+          "type": "text",
+		  "default": "MEER VRAGEN"
+    	},
+		{
+          "label": "FAQ Link",
+          "id": "faq_link",
+          "type": "url"
     	}
 	],
 	"blocks": [
