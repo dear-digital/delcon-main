@@ -88,6 +88,54 @@
             "sub_filter_9": "",
             "sub_filter_10": ""
           }
+        },
+        "a3358bd5-8767-4b49-9e30-db18aa4113b9": {
+          "type": "filter",
+          "settings": {
+            "main_filter": "Grootte hond",
+            "sub_filter_1": "",
+            "sub_filter_2": "",
+            "sub_filter_3": "",
+            "sub_filter_4": "",
+            "sub_filter_5": "",
+            "sub_filter_6": "",
+            "sub_filter_7": "",
+            "sub_filter_8": "",
+            "sub_filter_9": "",
+            "sub_filter_10": ""
+          }
+        },
+        "c941992e-4f70-435c-9b72-9d10f2c3a2cf": {
+          "type": "filter",
+          "settings": {
+            "main_filter": "Hoe energiek is je hond?",
+            "sub_filter_1": "",
+            "sub_filter_2": "",
+            "sub_filter_3": "",
+            "sub_filter_4": "",
+            "sub_filter_5": "",
+            "sub_filter_6": "",
+            "sub_filter_7": "",
+            "sub_filter_8": "",
+            "sub_filter_9": "",
+            "sub_filter_10": ""
+          }
+        },
+        "dd778cd0-bde8-4019-9578-afe70cb12188": {
+          "type": "filter",
+          "settings": {
+            "main_filter": "Aandachtspunten",
+            "sub_filter_1": "",
+            "sub_filter_2": "",
+            "sub_filter_3": "",
+            "sub_filter_4": "",
+            "sub_filter_5": "",
+            "sub_filter_6": "",
+            "sub_filter_7": "",
+            "sub_filter_8": "",
+            "sub_filter_9": "",
+            "sub_filter_10": ""
+          }
         }
       },
       "block_order": [
@@ -95,7 +143,10 @@
         "d6e89358-bd0b-43d5-b0bd-4a5cc6666239",
         "c7d30890-f8c1-4128-af59-b1468d6d5cb5",
         "d278c7b6-43d1-47b8-b754-b65fc011a054",
-        "ada44653-3814-49fc-89b9-ecc79778dd98"
+        "ada44653-3814-49fc-89b9-ecc79778dd98",
+        "a3358bd5-8767-4b49-9e30-db18aa4113b9",
+        "c941992e-4f70-435c-9b72-9d10f2c3a2cf",
+        "dd778cd0-bde8-4019-9578-afe70cb12188"
       ],
       "settings": {
         "meerInfo": "QUICK VIEW",
