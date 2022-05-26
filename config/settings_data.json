@@ -248,7 +248,25 @@
           "partners_img": "shopify:\/\/shop_images\/Image_12_2x_fefdf4bc-483f-4994-8535-2510711eb1da.png",
           "footer_copyright_text": "© Copyright 2020. All Rights Reserved.",
           "footer_made_by_text": "<a class=\"policies-link\">dear digital<\/a>",
-          "privacy_link": "<a href=\"\/policies\/privacy-policy\" class=\"policies-link\">Privacy &amp; Cookies<\/a>"
+          "privacy_link": "<a href=\"\/policies\/privacy-policy\" class=\"policies-link\">Privacy &amp; Cookies<\/a>",
+          "copy_to_clipboard": "Copied to Clipboard"
+        }
+      },
+      "dc-cart-drawer": {
+        "type": "dc-cart-drawer",
+        "settings": {
+          "cart_title": "Winkelmandje",
+          "free_shipping_text": "Gratis verzending vanaf €60",
+          "upsell_collection": "upsell-collection",
+          "fill_text": "Vul je",
+          "cart_text": "winkelwagen",
+          "delete_text": "Verwijder",
+          "upsell_addtoCart": "toevoegen",
+          "subtotal_text": "Subtotal",
+          "shipping_text": "Shipping",
+          "calc_text": "Berekend tijdens checkout",
+          "free_shipping": "Gratis",
+          "checkout_text": "VERDER NAAR CHECKOUT"
         }
       }
     },
