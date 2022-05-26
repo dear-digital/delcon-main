@@ -46,7 +46,7 @@
         {% assign featured_image = item.variant.image.src | default: item.product.featured_image %}
         <div class="cart-product-wrapper">
           <div class="cart-product-image">
-            <a href="{{ item.url }}"><img src="{{ featured_image | product_img_url: '100x' }}" alt="{{ item.product.title }}"></a>
+            <a href="{{ item.url }}"><img src="{{ featured_image | product_img_url: '120x' }}" alt="{{ item.product.title }}"></a>
           </div>
           <div class="cart-product-infos justify-between align-center">
             <div class="cart-product-info">
@@ -78,7 +78,6 @@
     <div class="drawer-cart-footer">
       {% if upsell == "no" %}
       <div class="drawer-cart-upsell">
-        {% comment %}<div class="upsell-title">{{ section.settings.people_text }}</div>{% endcomment %}
         <div class="upsell-product-wrap {{ upsellProd.id }}">
           <div class="upsell-product-image">
             <img src="{{ upsellProd.featured_image | product_img_url: '100x' }}" alt="{{ upsellProd.title }}">
