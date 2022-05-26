@@ -200,7 +200,7 @@
       console.log(data);
       
       $.ajax({
-        url: "/?sections=dc-cart-drawer",
+        url: "/cart.js",
         method: "GET",
         dataType: "json"
       })
@@ -211,6 +211,7 @@
         console.log( cartError );
         $('.load-container').remove();
       });
+      
       renderedHtml = getSectionInnerHTML(
         data.sections["dc-cart-drawer"],
         "#CartContainer"
