@@ -84,8 +84,13 @@
   padding: 7px 24px 6px;
   max-width: fit-content;
   max-width: -moz-fit-content;
+  background-color: transparent !important;
+  border: 1px solid #fff !important;
+  color: #fff !important;
 }
 .header-btn:hover {
+  background-color: rgb(var(--color-base-background-1)) !important;
+  border: 1px solid rgb(var(--color-base-accent-1)) !important;
   color: rgb(var(--color-base-accent-1)) !important;
 }
 
