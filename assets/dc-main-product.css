@@ -118,6 +118,7 @@
 }
 .product-accordion.faq-active .symbol svg #Line-2 {
   transform: translate(5.001px, -5px) rotate(90deg);
+  opacity: 0;
 }
 .panel {
   padding: 0;
