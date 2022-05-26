@@ -76,3 +76,20 @@
   margin-bottom: 16px;
   color: rgba(var(--color-base-accent-1),1);
 }
+.faq-link {
+  display: block;
+  width: fit-content;
+  width: -moz-fit-content;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 40px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 700;
+  color: rgba(var(--color-base-accent-1),1);
+}
+.faq-link:hover {
+  border-bottom: 1px solid rgba(var(--color-base-accent-1),1);
+}
