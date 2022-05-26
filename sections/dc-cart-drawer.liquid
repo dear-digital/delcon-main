@@ -1,7 +1,419 @@
+{{ 'dc-cart-drawer.css' | asset_url | stylesheet_tag }}
+
+<script>
+  var upsellProducts = [];
+  {% assign upsellProd = blank %}
+  
+  {% for product in section.settings.upsell_collection.products %}
+    {% assign found = "no" %}
+    {% for item in cart.items %}
+      {% if item.product.id == product.id %}
+          {% assign found = "yes" %}
+      {% endif %}
+    {% endfor %}
+    {% if found == "no" %}
+      {% assign upsell = "no" %}
+  	  upsellProducts.push("{{ product.id }}");
+	  {% assign upsellProd = product %}
+	  {% break %}
+    {% endif %}
+  {% endfor %}
+  
+//   console.log(upsellProducts);
+</script>
+
+<div class="drawer-cart {% if upsell == "no" %}with-upsell{% endif %}">
+  <div class="drawer-cart-header">
+    <span class="close-cart">{% include 'icon-close-new' %}</span>
+    <h2 class="cart-heading title">{{ section.settings.cart_title }}</h2>
+  </div>
+  <div id="CartContainer" class="rel">
+    {% if cart.item_count == 0 %}
+    <div class="drawer-cart-main-sec">
+      <div class="cart-body c-empty">
+        <div class="cart-empty">{{ section.settings.fill_text }} <a href="/collections/all">{{ section.settings.cart_text }}</a></div>
+      </div>
+    </div>
+    {% else %}
+    <div class="drawer-cart-main-sec">
+      <div class="progress-bar-wrapper rel">
+        {% if cart.total_price < 5000 %}
+        <p class="progress-text sub-title text-center">
+          Nog <span class="remaining-amt">{{ 5000 |minus: cart.total_price | money | replace: ".","," }}</span> {{ section.settings.remaining_text }}
+        </p>
+        <div class="progress_track">
+          <div class="progressBar__indicator" style="width: {{ cart.total_price | divided_by: 100.00 | times: 2 }}%;">
+            <span class="progress-slider" style="left: {{ cart.total_price | divided_by: 100.00 | times: 2 }}%;"></span>
+          </div>
+        </div>
+        {% else %}
+        <p class="progress-text sub-title text-center">{{ section.settings.remaining_free_text }}</p>
+        <div class="progress_track">
+          <div class="progressBar__indicator" style="width: 100%;">
+            <span class="progress-slider" style="left: 95%;"></span>
+          </div>
+        </div>
+        {% endif %}
+      </div>
+      <div class="cart-body">
+        {% for item in cart.items %}
+        {% assign featured_image = item.variant.image.src | default: item.product.featured_image %}
+        <div class="cart-product-wrapper">
+          <div class="cart-product-image">
+            <a href="{{ item.url }}"><img src="{{ featured_image | product_img_url: '100x' }}" alt="{{ item.product.title }}"></a>
+          </div>
+          <div class="cart-product-infos justify-between align-center">
+            <div class="cart-product-info">
+              <div class="product-name">{{ item.product.title | strip_html | truncatewords: 3 }}</div>
+              <div class="product-price"><span class="product-discount-price">{{- item.variant.compare_at_price | money_without_trailing_zeros | replace: " ","" -}}</span><span class="product-selling-price">{{ item.final_price | money_without_trailing_zeros }}</span></div>
+              <div class="product-color">{{ item.product.metafields.my_fields.default_variant_info }}</div>
+            </div>
+            <div class="cart-product-qty-del justify-between">
+              <div class="cart-product-qty" data-quantity="1">
+                <div class="qty-manipulation-symbol minus-symbol cart-minus" data-variant="{{ item.variant.id }}" data-value="{{item.quantity}}">{% render "icon-minus-new" %}</div>
+                <div class="cart-qty" value="{{item.quantity}}">{{item.quantity}}</div>
+                <div class="qty-manipulation-symbol plus-symbol cart-plus" data-variant="{{ item.variant.id }}" data-value="{{item.quantity}}">{% render "icon-plus-new" %}</div>
+              </div>
+              <div class="delete-cart-product" data-variant="{{ item.variant.id }}">
+                <div class="delete-text">{{ section.settings.delete_text }}</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+    <div class="drawer-cart-footer">
+      {% if upsell == "no" %}
+      <div class="drawer-cart-upsell">
+        {% comment %}<div class="upsell-title">{{ section.settings.people_text }}</div>{% endcomment %}
+        <div class="upsell-product-wrap {{ upsellProd.id }}">
+          <div class="upsell-product-image">
+            <img src="{{ upsellProd.featured_image | product_img_url: '100x' }}" alt="{{ upsellProd.title }}">
+          </div>
+          <div class="upsell-product-infos rel">
+            <div class="upsell-product-title-price">
+              <div class="product-name">{{ upsellProd.title }}</div>
+              <div class="product-price upsell-price"><span class="product-compare-price upsell-compare-price">{{ upsellProd.compare_at_price | money_without_trailing_zeros }}</span><span class="product-selling-price">{{ upsellProd.price | money_without_trailing_zeros }}</span></div>
+            </div>
+            <div class="upsell-product-desc">{{ upsellProd.metafields.my_fields.default_variant_info }}</div>
+            <div class="shop-btn addUpsell" data-variant="{{ upsellProd.selected_or_first_available_variant.id }}">{{ section.settings.upsell_addtoCart }}</div>
+          </div>
+        </div>
+      </div>
+      {% endif %}
+      <div class="drawer-cart-checkout">
+        <div class="checkout-subtotal justify-between">
+          <div class="checkout-title">{{ section.settings.subtotal_text }}</div>
+          <div class="subtotal">{{ cart.total_price | money_without_trailing_zeros }}</div>
+        </div>
+        <div class="checkout-shipping justify-between">
+          <div class="shipping-title">{{ section.settings.shipping_text }}</div>
+          <div class="shipping-price">{% if cart.total_price < 5000 %}{{ section.settings.calc_text }}{% else %}{{ section.settings.free_shipping_text }}{% endif %}</div>
+        </div>
+        <a href="/checkout" class="checkout-btn">{{ section.settings.checkout_text }}</a>
+      </div>
+    </div>
+    {% endif %}
+  </div>
+</div>
+<div class="background-drawer-cart"></div>
+
+<script>
+  
+  {% if cart.item_count == 0 %}
+  $('.cart-toggler').addClass('cart--empty');
+  {% else %}
+  $('.cart-toggler').removeClass('cart--empty');
+  {% endif %}
+  
+  $('.cart-toggler').click(function() {
+    $('.drawer-cart').addClass('drawn');
+    $('.background-drawer-cart').addClass('drawn');
+    $('body').addClass('no-scroll');
+  });
+
+  $('.close-cart, .background-drawer-cart').click(function() {
+    $('.drawer-cart').removeClass('drawn');
+    $('.background-drawer-cart').removeClass('drawn');
+    $('body').removeClass('no-scroll');
+  });
+  
+  $('.drawer-cart').on("click", ".delete-cart-product", function() {
+    let renderedHtml;
+    var formData = {
+      'id': parseInt($(this).data('variant')),
+      'quantity': 0,
+      'sections': "toba-cart-drawer"
+    };
+    $.ajax({
+      url: "/cart/change.js",
+      method: "POST",
+      dataType: "json",
+      data: formData,
+    })
+    .done(function( data ) {
+      renderedHtml = getSectionInnerHTML(
+        data.sections["toba-cart-drawer"],
+        "#CartContainer"
+      );
+      $("#CartContainer").html(renderedHtml);
+      $('.drawer-cart').addClass('drawn');
+      $('.background-drawer-cart').addClass('drawn');
+      $('body').addClass('no-scroll');
+      if($('.drawer-cart-upsell').length > 0 && $('.upsell-product-wrap').length > 0) {
+      	$('.drawer-cart').addClass("with-upsell");
+      }
+      else {
+      	$('.drawer-cart').removeClass("with-upsell");
+      }
+      if(data.item_count < 1) {
+        $(".cart-toggler").addClass('cart--empty');
+      }
+      else {
+        $(".cart-toggler").removeClass('cart--empty');
+      }
+    })
+    .fail(function(error) {
+      console.log( error );
+    });
+  });
+  
+  $('.drawer-cart').on("click", ".cart-minus", function() {
+    let renderedHtml;
+    var formData = {
+      'id': parseInt($(this).data('variant')),
+      'quantity': $(this).data('value')-1,
+      'sections': "toba-cart-drawer"
+    };
+    $.ajax({
+      url: "/cart/change.js",
+      method: "POST",
+      dataType: "json",
+      data: formData,
+    })
+    .done(function( data ) {
+      renderedHtml = getSectionInnerHTML(
+        data.sections["toba-cart-drawer"],
+        "#CartContainer"
+      );
+      $("#CartContainer").html(renderedHtml);
+      $('.drawer-cart').addClass('drawn');
+      $('.background-drawer-cart').addClass('drawn');
+      $('body').addClass('no-scroll');
+      if($('.drawer-cart-upsell').length > 0 && $('.upsell-product-wrap').length > 0) {
+      	$('.drawer-cart').addClass("with-upsell");
+      }
+      else {
+      	$('.drawer-cart').removeClass("with-upsell");
+      }
+      if(data.item_count < 1) {
+        $(".cart-toggler").addClass('cart--empty');
+      }
+      else {
+        $(".cart-toggler").removeClass('cart--empty');
+      }
+    })
+    .fail(function(error) {
+      console.log( error );
+    });
+  });
+  
+  $('.drawer-cart').on("click", ".cart-plus", function() {
+    let renderedHtml;
+    var formData = {
+      'id': parseInt($(this).data('variant')),
+      'quantity': $(this).data('value')+1,
+      'sections': "toba-cart-drawer"
+    };
+    $.ajax({
+      url: "/cart/change.js",
+      method: "POST",
+      dataType: "json",
+      data: formData,
+    })
+    .done(function( data ) {
+      renderedHtml = getSectionInnerHTML(
+        data.sections["toba-cart-drawer"],
+        "#CartContainer"
+      );
+      $("#CartContainer").html(renderedHtml);
+      $('.drawer-cart').addClass('drawn');
+      $('.background-drawer-cart').addClass('drawn');
+      $('body').addClass('no-scroll');
+      if($('.drawer-cart-upsell').length > 0 && $('.upsell-product-wrap').length > 0) {
+      	$('.drawer-cart').addClass("with-upsell");
+      }
+      else {
+      	$('.drawer-cart').removeClass("with-upsell");
+      }
+      if(data.item_count < 1) {
+        $(".cart-toggler").addClass('cart--empty');
+      }
+      else {
+        $(".cart-toggler").removeClass('cart--empty');
+      }
+    })
+    .fail(function(error) {
+      console.log( error );
+    });
+  });
+  
+  $('.drawer-cart').on("click", ".addUpsell", function() {
+    let renderedHtml;
+    var formData = {
+      'items': [{
+        'id': parseInt($(this).data("variant")),
+        'quantity': 1
+      }],
+      'sections': "toba-cart-drawer"
+    };
+    $.ajax({
+      url: "/cart/add.js",
+      method: "POST",
+      dataType: "json",
+      data: formData,
+    })
+    .done(function( data ) {
+      console.log(data);
+      renderedHtml = getSectionInnerHTML(
+        data.sections["toba-cart-drawer"],
+        "#CartContainer"
+      );
+      $("#CartContainer").html(renderedHtml);
+      $('.drawer-cart').addClass('drawn');
+      $('.background-drawer-cart').addClass('drawn');
+      $('body').addClass('no-scroll');
+      if($('.drawer-cart-upsell').length > 0 && $('.upsell-product-wrap').length > 0) {
+      	$('.drawer-cart').addClass("with-upsell");
+      }
+      else {
+      	$('.drawer-cart').removeClass("with-upsell");
+      }
+//       $('.upsell-product-wrap, .drawer-cart-upsell').remove();
+//       $('.drawer-cart').removeClass("with-upsell");
+      if(data.item_count < 1) {
+        $(".cart-toggler").addClass('cart--empty');
+      }
+      else {
+        $(".cart-toggler").removeClass('cart--empty');
+      }
+    })
+    .fail(function(error) {
+      console.log( error );
+    });
+  });
+  
+  $(document).ready(function() {
+
+    var getUrlParameter = function getUrlParameter(sParam) {
+    var sPageURL = window.location.search.substring(1),
+          sURLVariables = sPageURL.split('&'),
+          sParameterName,
+          i;
+
+      for (i = 0; i < sURLVariables.length; i++) {
+        sParameterName = sURLVariables[i].split('=');
+
+        if (sParameterName[0] === sParam) {
+          return sParameterName[1] === undefined ? true : decodeURIComponent(sParameterName[1]);
+        }
+      }
+    };
+
+    var opencart = getUrlParameter('cartopen');
+
+    if(opencart == 'true') {        
+      $(".drawer-cart").addClass("drawn");
+      $(".background-drawer-cart").addClass("drawn");
+    }
+
+  });
+</script>
+  
 {% schema %}
   {
-    "name": "Section name",
-    "settings": []
+    "name": "Delcon Ajax Cart",
+	"class": "cart-remover",
+    "settings": [
+		{
+          "type": "text",
+          "id": "cart_title",
+          "label": "Cart Title",
+          "default": "Winkelmandje"
+        },
+		{
+          "type": "text",
+          "id": "remaining_text",
+          "label": "Cart Remaining Amount Text",
+          "default": "euro te besteden tot gratis verzending"
+        },
+		{
+          "type": "text",
+          "id": "remaining_free_text",
+          "label": "Cart Free Amount Text",
+          "default": "Gratis verzending voor jou!"
+        },
+		{
+			"id": "upsell_collection",
+			"type": "collection",
+			"label": "Upsell Collection"
+		},
+		{
+          "type": "text",
+          "id": "fill_text",
+          "label": "Fill text",
+          "default": "Vul je"
+        },
+		{
+          "type": "text",
+          "id": "cart_text",
+          "label": "Cart text",
+          "default": "winkelwagen"
+        },
+		{
+          "type": "text",
+          "id": "delete_text",
+          "label": "Delete text",
+          "default": "Verwijder"
+        },
+		{
+          "label": "Upsell Add to Cart Text",
+          "id": "upsell_addtoCart",
+          "type": "text",
+		  "default": "Snel toevoegen"
+        },
+		{
+          "type": "text",
+          "id": "subtotal_text",
+          "label": "Subtotal text",
+          "default": "Subtotal"
+        },
+		{
+          "type": "text",
+          "id": "shipping_text",
+          "label": "Shipping text",
+          "default": "Shipping"
+        },
+		{
+          "type": "text",
+          "id": "calc_text",
+          "label": "Calc text",
+          "default": "Calculated at checkout"
+        },
+		{
+          "type": "text",
+          "id": "free_shipping_text",
+          "label": "Free Shipping text",
+          "default": "Gratis"
+        },
+		{
+          "type": "text",
+          "id": "checkout_text",
+          "label": "Checkout text",
+          "default": "Afrekenen"
+        }
+	]
   }
 {% endschema %}
 
