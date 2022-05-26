@@ -52,13 +52,16 @@
             <div class="cart-product-info">
               <div class="product-name">{{ item.product.title | strip_html | truncatewords: 3 }}</div>
               <div class="product-color">{{ item.product.metafields.my_fields.default_variant_info }} - inhoud: {{ item.variant.title }}</div>
-              <div class="cart-product-qty" data-quantity="1">
-                <div class="qty-manipulation-symbol minus-symbol cart-minus" data-variant="{{ item.variant.id }}" data-value="{{item.quantity}}">{% render "icon-minus" %}</div>
-                <div class="cart-qty" value="{{item.quantity}}">{{item.quantity}}</div>
-                <div class="qty-manipulation-symbol plus-symbol cart-plus" data-variant="{{ item.variant.id }}" data-value="{{item.quantity}}">{% render "icon-plus" %}</div>
-              </div>
-              <div class="delete-cart-product" data-variant="{{ item.variant.id }}">
-                <div class="delete-text">{{ section.settings.delete_text }}</div>
+              
+              <div class="cart-product-qty-wrapper">
+                <div class="cart-product-qty" data-quantity="{{item.quantity}}">
+                  <div class="qty-manipulation-symbol minus-symbol cart-minus" data-variant="{{ item.variant.id }}" data-value="{{item.quantity}}">{% render "icon-minus" %}</div>
+                  <div class="cart-qty" value="{{item.quantity}}">{{item.quantity}}</div>
+                  <div class="qty-manipulation-symbol plus-symbol cart-plus" data-variant="{{ item.variant.id }}" data-value="{{item.quantity}}">{% render "icon-plus" %}</div>
+                </div>
+                <div class="delete-cart-product" data-variant="{{ item.variant.id }}">
+                  <div class="delete-text">{{ section.settings.delete_text }}</div>
+                </div>
               </div>
             </div>
             <div class="cart-product-price-wrapper">
