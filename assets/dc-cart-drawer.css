@@ -197,6 +197,7 @@
   line-height: 24px;
   font-weight: bold;
   letter-spacing: 0;
+  margin-bottom: 4px;
 }
 
 .cart-product-price-wrapper {
@@ -314,17 +315,17 @@
 
 .addUpsell {
   font-size: 16px;
-  line-height: 24px;
+  line-height: 22px;
   letter-spacing: 0px;
   background-color: #0d553f;
   width: 100%;
-  padding: 8px 16px;
-  border-radius: 23px;
+  padding: 10px 16px
   cursor: pointer;
-  right: 0;
-  bottom: 0;
   color: #fff;
-  font-weight: 600;
+  font-weight: bold;
+}
+.addUpsell:hover {
+  background-color: #063323;
 }
 .upsell-product-wrap .upsell-product-desc {
   max-width: calc( 100% - 117px );
