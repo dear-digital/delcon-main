@@ -152,6 +152,7 @@
       data: formData,
     })
     .done(function( data ) {
+      $('.cart-items-total').text(data.item_count);
       renderedHtml = getSectionInnerHTML(
         data.sections["dc-cart-drawer"],
         "#CartContainer"
@@ -162,12 +163,6 @@
       }
       else {
       	$('.drawer-cart').removeClass("with-upsell");
-      }
-      if(data.item_count < 1) {
-        $(".cart-toggler").addClass('cart--empty');
-      }
-      else {
-        $(".cart-toggler").removeClass('cart--empty');
       }
       $('.load-container').remove();
     })
@@ -196,6 +191,7 @@
       data: formData,
     })
     .done(function( data ) {
+      $('.cart-items-total').text(data.item_count);
       renderedHtml = getSectionInnerHTML(
         data.sections["dc-cart-drawer"],
         "#CartContainer"
@@ -206,12 +202,6 @@
       }
       else {
       	$('.drawer-cart').removeClass("with-upsell");
-      }
-      if(data.item_count < 1) {
-        $(".cart-toggler").addClass('cart--empty');
-      }
-      else {
-        $(".cart-toggler").removeClass('cart--empty');
       }
       $('.load-container').remove();
     })
@@ -240,6 +230,7 @@
       data: formData,
     })
     .done(function( data ) {
+      $('.cart-items-total').text(data.item_count);
       renderedHtml = getSectionInnerHTML(
         data.sections["dc-cart-drawer"],
         "#CartContainer"
@@ -250,12 +241,6 @@
       }
       else {
       	$('.drawer-cart').removeClass("with-upsell");
-      }
-      if(data.item_count < 1) {
-        $(".cart-toggler").addClass('cart--empty');
-      }
-      else {
-        $(".cart-toggler").removeClass('cart--empty');
       }
       $('.load-container').remove();
     })
@@ -287,6 +272,7 @@
     })
     .done(function( data ) {
       console.log(data);
+      $('.cart-items-total').text(data.item_count);
       renderedHtml = getSectionInnerHTML(
         data.sections["dc-cart-drawer"],
         "#CartContainer"
@@ -300,12 +286,6 @@
       }
 //       $('.upsell-product-wrap, .drawer-cart-upsell').remove();
 //       $('.drawer-cart').removeClass("with-upsell");
-      if(data.item_count < 1) {
-        $(".cart-toggler").addClass('cart--empty');
-      }
-      else {
-        $(".cart-toggler").removeClass('cart--empty');
-      }
       $('.load-container').remove();
     })
     .fail(function(error) {
