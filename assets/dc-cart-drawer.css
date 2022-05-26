@@ -287,6 +287,9 @@
 
 .upsell-product-wrap {
   display: flex !important;
+  width: 100%;
+  max-width: 388px;
+  margin: 0 auto;
 }
 
 .upsell-product-title-price {
@@ -325,14 +328,14 @@
   color: #D3142B;
   font-weight: 600;
 }
-.upsell-product-wrap .product-color, .upsell-product-wrap .upsell-product-desc {
-  max-width: calc( 100% - 84px );
+.upsell-product-wrap .upsell-product-desc {
+  max-width: calc( 100% - 117px );
 }
 .upsell-product-infos {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: calc(100% - 96px);
+  width: calc(100% -117px);
 }
 
 .drawer-cart-footer {
@@ -418,7 +421,7 @@
 }
 
 .with-upsell .cart-body {
-  height: calc(100vh - 460px);
+  height: calc(100vh - 450px);
 }
 
 .addUpsell {

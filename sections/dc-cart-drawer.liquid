@@ -85,9 +85,12 @@
           <div class="upsell-product-infos rel">
             <div class="upsell-product-title-price">
               <div class="product-name">{{ upsellProd.title }}</div>
-              <div class="product-price upsell-price"><span class="product-compare-price upsell-compare-price">{{ upsellProd.compare_at_price | money_without_trailing_zeros }}</span><span class="product-selling-price">{{ upsellProd.price | money_without_trailing_zeros }}</span></div>
+              <div class="product-price upsell-price">
+                {% if upsellProd.compare_at_price %}<span class="product-compare-price upsell-compare-price">{{ upsellProd.compare_at_price | money }}</span>{% endif %}
+                <span class="product-selling-price">{{ upsellProd.price | money }}</span>
+              </div>
             </div>
-            <div class="upsell-product-desc">{{ upsellProd.metafields.my_fields.default_variant_info }}</div>
+            <div class="upsell-product-desc">{{ upsellProd.metafields.my_fields.extra_info }}</div>
             <div class="shop-btn addUpsell" data-variant="{{ upsellProd.selected_or_first_available_variant.id }}">{{ section.settings.upsell_addtoCart }}</div>
           </div>
         </div>
