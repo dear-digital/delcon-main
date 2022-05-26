@@ -51,10 +51,7 @@
           <div class="cart-product-infos justify-between align-center">
             <div class="cart-product-info">
               <div class="product-name">{{ item.product.title | strip_html | truncatewords: 3 }}</div>
-              <div class="product-price"><span class="product-discount-price">{{- item.variant.compare_at_price | money_without_trailing_zeros | replace: " ","" -}}</span><span class="product-selling-price">{{ item.final_price | money_without_trailing_zeros }}</span></div>
-              <div class="product-color">{{ item.product.metafields.my_fields.default_variant_info }}</div>
-            </div>
-            <div class="cart-product-qty-del justify-between">
+              <div class="product-color">{{ item.product.metafields.my_fields.default_variant_info }} - inhoud: {{ item.variant.title }}</div>
               <div class="cart-product-qty" data-quantity="1">
                 <div class="qty-manipulation-symbol minus-symbol cart-minus" data-variant="{{ item.variant.id }}" data-value="{{item.quantity}}">{% render "icon-minus" %}</div>
                 <div class="cart-qty" value="{{item.quantity}}">{{item.quantity}}</div>
@@ -62,6 +59,12 @@
               </div>
               <div class="delete-cart-product" data-variant="{{ item.variant.id }}">
                 <div class="delete-text">{{ section.settings.delete_text }}</div>
+              </div>
+            </div>
+            <div class="cart-product-price-wrapper">
+              <div class="product-price">
+                <span class="product-discount-price">{{ item.variant.compare_at_price | money }}</span>
+                <span class="product-selling-price">{{ item.final_price | money }}</span>
               </div>
             </div>
           </div>
