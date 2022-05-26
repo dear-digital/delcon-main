@@ -59,7 +59,9 @@
   margin-right: 0;
 }
 .announcement-bar-list a {
+  width: 100%;
   display: flex;
+  justify-content: center;
   align-items: center;
   color: rgb(var(--color-base-accent-1));
   text-align: left;
