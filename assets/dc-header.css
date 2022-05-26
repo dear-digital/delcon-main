@@ -42,7 +42,7 @@
 .header-nav-list a {
   display: flex;
   align-items: center;
-  color: rgb(var(--color-base-accent-1));
+  color: #fff;
   text-align: left;
   font-family: "Avenir",sans-serif;
   font-size: 16px;
@@ -98,6 +98,12 @@
   .shadow .header {
     background-color: #fff !important;
     box-shadow: 0px 8px 16px #A69E971A;
+  }
+  .shadow .header .header-nav-list a {
+    color: rgb(var(--color-base-accent-1));
+  }
+  .shadow .header .header-btn {
+  	
   }
   .shadow .header #Delcon_logo_white path {
   	fill: rgb(var(--color-base-accent-1));
