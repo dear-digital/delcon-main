@@ -1,7 +1,130 @@
+{{ 'dc-img-video-text.css' | asset_url | stylesheet_tag }}
+{{ 'dc-product-ingredients.css' | asset_url | stylesheet_tag }}
+
+<script>
+  function showIngredients() {
+    for(var i = 0; i < ingredientsArray.length; i++) {
+      $("."+ingredientsArray[i]).removeClass("no-disp");
+      $("."+ingredientsArray[i]+"-details").removeClass("no-disp");
+      if(i == 0) {
+        $("."+ingredientsArray[i]).addClass("selected");
+        $("."+ingredientsArray[i]).addClass("first");
+        $("#"+ingredientsArray[i]).prop("checked", true);
+        $("."+ingredientsArray[i]+"-details").addClass("selected");
+      }
+    }
+  }
+</script>
+
+<script>
+  $(document).ready(function() {
+    $(".ingredient-label").click(function() {
+      $(".ingredient-label").removeClass("selected");
+      $(this).addClass("selected");
+      
+      var selectedIngredient = $(this).find(".ingredients-radio").attr("id")+"-details";
+      $(".ingredient-details-wrapper").removeClass("selected");
+      $("."+selectedIngredient).addClass("selected");
+    });
+  });
+</script>
+
+<div class="image-video-text-block marg-top-xl marg-bottom-xl">
+  <div class="container">
+    <div class="flex-box justify-between align-center rel image-text-wrapper {% if section.settings.media_alignment == 'right' %}rev-cols{% endif %}" style="background-color: {{ section.settings.ingredient_title_background }}">
+      <div class="ingredient-details-block rel" style="background-color: {{ section.settings.ingredient_details_background }}">
+		{% for block in section.blocks %}
+        <div class="ingredient-details-wrapper {{ block.settings.ingredient_name }}-details">
+          <p class="ingredient-details-title">{{ block.settings.ingredient_name }}</p>
+          <div class="ingredient-details-text">{{ block.settings.ingredient_details }}</div>
+          <img class="ingredient-image" src="{{ block.settings.ingredient_image | img_url: '480x' }}" alt="{{ block.settings.ingredient_name }} image" loading="lazy">
+        </div>
+        {% endfor %}
+      </div>
+      <div class="ingredient-title-block rel">
+        <span class="subheading-text">{{ section.settings.section_subtitle }}</span>
+        <h2 class="heading-text tk-le-monde-livre-classic-byol" style="margin-bottom: 24px;">{{ section.settings.section_title }}</h2>
+        {% for block in section.blocks %}
+          <div class="ingredient-label {{ block.settings.ingredient_name }}">
+            <input type="radio" name="ingredients-name" class="ingredients-radio" id="{{ block.settings.ingredient_name }}">
+            <label class="" for="{{ block.settings.ingredient_name }}">{{ block.settings.ingredient_name }}</label>
+            <span class="arrow-right">{% include "arrow-right" %}</span>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
+
 {% schema %}
   {
-    "name": "Section name",
-    "settings": []
+    "name": "DC All Ingredients",
+    "settings": [
+      {
+        "label": "Ingredient Details Background Color",
+        "id": "ingredient_details_background",
+        "type": "color"
+      },
+	  {
+        "label": "Ingredient Title Background Color",
+        "id": "ingredient_title_background",
+        "type": "color"
+      },
+	  {
+        "type": "radio",
+        "id": "media_alignment",
+        "label": "Media alignment",
+        "options": [
+          {
+            "value": "left",
+            "label": "Left"
+          },
+          {
+            "value": "right",
+            "label": "Right"
+          }
+        ],
+        "default": "right"
+      },
+	  {
+          "label": "Section sub title",
+          "id": "section_subtitle",
+          "type": "text"
+      },
+	  {
+          "label": "Section title",
+          "id": "section_title",
+          "type": "text"
+      }
+	],
+	"blocks": [
+      {
+        "type": "select",
+        "name": "Ingredients",
+        "settings": [
+            {
+              "label": "Ingredient Name",
+              "id": "ingredient_name",
+              "type": "text"
+            },
+            {
+              "label": "Ingredient Details",
+              "id": "ingredient_details",
+              "type": "html"
+            },
+			{
+              "label": "Ingredient Image",
+              "id": "ingredient_image",
+              "type": "image_picker"
+            }
+        ]
+      }
+    ],
+	"presets": [
+    {
+      "name": "DC All Ingredients"
+    }
+  ]
   }
 {% endschema %}
 
