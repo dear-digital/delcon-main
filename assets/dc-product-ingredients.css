@@ -1,0 +1,6 @@
+.ingredient-title-block {
+  background-color: #BDB4AC;
+}
+.ingredient-details-block {
+  background-color: rgb(var(--color-base-text));
+}
