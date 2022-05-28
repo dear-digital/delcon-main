@@ -26,6 +26,11 @@
 .ingredients-radio {
   margin-right: 12px;
 }
+.arrow-right {
+  display: block;
+  width: 8px;
+  height: 16px;
+}
 .ingredient-details-wrapper {
   display: block;
   width: 100%;
@@ -88,19 +93,19 @@
     top: 15px;
     width: 18px;
     height: 18px;
-    border: 1px solid #181716;
+    border: 2px solid #181716;
     border-radius: 100%;
     background: #fff;
 }
 [type="radio"]:checked + label:after,
 [type="radio"]:not(:checked) + label:after {
     content: '';
-    width: 12px;
-    height: 12px;
+    width: 10px;
+    height: 10px;
     background: #181716;
     position: absolute;
-    top: 18px;
-    left: 3px;
+    top: 19px;
+    left: 4px;
     border-radius: 100%;
     -webkit-transition: all 0.2s ease;
     transition: all 0.2s ease;
