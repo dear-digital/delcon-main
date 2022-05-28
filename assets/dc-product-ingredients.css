@@ -1,0 +1,9 @@
+.ingredient-details-block {
+  width: 50%;
+  max-width: 598px;
+  height: 590px;
+}
+.ingredient-title-block {
+  width: 50%;
+  padding: 0 64px;
+}
