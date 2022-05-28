@@ -8,77 +8,71 @@
         "padding_bottom": 28
       }
     },
-    "1653750339a1cff02e": {
-      "type": "dc-product-ingredients",
+    "165375100706003da3": {
+      "type": "dc-all-ingredients",
       "blocks": {
-        "740608a3-d63e-4b93-8e92-447258219bec": {
+        "8a234d5d-df38-463e-8fc9-868adab126b4": {
           "type": "select",
           "settings": {
-            "ingredient_name": "Lamsvlees",
-            "ingredient_details": "<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam<\/p><ul>\n<li><strong>Hoog in eiwitten<\/strong><\/li>\n<li>Voorziet in alle nodige aminozuren<\/li>\n<li>Vitamines B6, B2, B12<\/li>\n<\/ul>",
-            "ingredient_image": "shopify:\/\/shop_images\/Image_2x_666f3257-609b-42ca-9017-3c089f2f3196.png"
+            "ingredient_name": "",
+            "ingredient_details": ""
           }
         },
-        "5cea45bb-8032-4125-a9db-46024b509fd5": {
+        "094b3c94-995b-4601-b63f-a331308445f7": {
           "type": "select",
           "settings": {
-            "ingredient_name": "Kippenvlees",
-            "ingredient_details": "<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam<\/p><ul>\n<li><strong>Hoog in eiwitten<\/strong><\/li>\n<li>Voorziet in alle nodige aminozuren<\/li>\n<li>Vitamines B6, B2, B12<\/li>\n<\/ul>",
-            "ingredient_image": "shopify:\/\/shop_images\/Image_2x_e91738de-bcc2-4a55-b173-43507937fd81.png"
+            "ingredient_name": "",
+            "ingredient_details": ""
           }
         },
-        "81f4cb27-e1a9-4d32-be7e-4279d56fc019": {
+        "ded2823c-274b-4fa9-94fc-69bbd51eb5d2": {
           "type": "select",
           "settings": {
-            "ingredient_name": "Rijst",
-            "ingredient_details": "<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam<\/p><ul>\n<li><strong>Hoog in eiwitten<\/strong><\/li>\n<li>Voorziet in alle nodige aminozuren<\/li>\n<li>Vitamines B6, B2, B12<\/li>\n<\/ul>",
-            "ingredient_image": "shopify:\/\/shop_images\/Image_2x_7c6d9fee-f8e7-4d8f-9a84-02ed7613247c.png"
+            "ingredient_name": "",
+            "ingredient_details": ""
           }
         },
-        "4aba0c22-44f1-4e3b-8285-ddb9af50da2f": {
+        "00752563-199a-4930-8eaa-f1b657c3cd82": {
           "type": "select",
           "settings": {
-            "ingredient_name": "Lijnzaad",
-            "ingredient_details": "<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam<\/p><ul>\n<li><strong>Hoog in eiwitten<\/strong><\/li>\n<li>Voorziet in alle nodige aminozuren<\/li>\n<li>Vitamines B6, B2, B12<\/li>\n<\/ul>",
-            "ingredient_image": "shopify:\/\/shop_images\/Image_2x_08842411-8838-4190-9f06-a6f9ef370da4.png"
+            "ingredient_name": "",
+            "ingredient_details": ""
           }
         },
-        "a6170d5f-5e68-40c8-ba1b-45f5643c6ef4": {
+        "d87c8afd-9eb6-404a-b646-1f7f9fa4198f": {
           "type": "select",
           "settings": {
-            "ingredient_name": "Bietenpulp",
-            "ingredient_details": "<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam<\/p><ul>\n<li><strong>Hoog in eiwitten<\/strong><\/li>\n<li>Voorziet in alle nodige aminozuren<\/li>\n<li>Vitamines B6, B2, B12<\/li>\n<\/ul>",
-            "ingredient_image": "shopify:\/\/shop_images\/Ontwerp_zonder_titel_31.png"
+            "ingredient_name": "",
+            "ingredient_details": ""
           }
         },
-        "8ef5252a-3ff5-4ed9-baf6-5cb8fddd88ce": {
+        "488b9acd-a59e-46bb-a840-41f17c015796": {
           "type": "select",
           "settings": {
-            "ingredient_name": "Zalm",
-            "ingredient_details": "<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam<\/p><ul>\n<li><strong>Hoog in eiwitten<\/strong><\/li>\n<li>Voorziet in alle nodige aminozuren<\/li>\n<li>Vitamines B6, B2, B12<\/li>\n<\/ul>",
-            "ingredient_image": "shopify:\/\/shop_images\/Schermafbeelding_2022-04-26_om_15.52.49.png"
+            "ingredient_name": "",
+            "ingredient_details": ""
           }
         }
       },
       "block_order": [
-        "740608a3-d63e-4b93-8e92-447258219bec",
-        "5cea45bb-8032-4125-a9db-46024b509fd5",
-        "81f4cb27-e1a9-4d32-be7e-4279d56fc019",
-        "4aba0c22-44f1-4e3b-8285-ddb9af50da2f",
-        "a6170d5f-5e68-40c8-ba1b-45f5643c6ef4",
-        "8ef5252a-3ff5-4ed9-baf6-5cb8fddd88ce"
+        "8a234d5d-df38-463e-8fc9-868adab126b4",
+        "094b3c94-995b-4601-b63f-a331308445f7",
+        "ded2823c-274b-4fa9-94fc-69bbd51eb5d2",
+        "00752563-199a-4930-8eaa-f1b657c3cd82",
+        "d87c8afd-9eb6-404a-b646-1f7f9fa4198f",
+        "488b9acd-a59e-46bb-a840-41f17c015796"
       ],
       "settings": {
-        "ingredient_details_background": "#f2f1f0",
-        "ingredient_title_background": "#bdb4ac",
+        "ingredient_details_background": "",
+        "ingredient_title_background": "",
         "media_alignment": "right",
-        "section_subtitle": "INGREDIENTEN",
-        "section_title": "Natuurlijke ingrediënten"
+        "section_subtitle": "",
+        "section_title": ""
       }
     }
   },
   "order": [
     "main",
-    "1653750339a1cff02e"
+    "165375100706003da3"
   ]
 }
