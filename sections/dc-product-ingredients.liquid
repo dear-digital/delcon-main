@@ -30,8 +30,11 @@
     $(".ingredient-label").click(function() {
       $(".ingredient-label").removeClass("selected");
       $(this).addClass("selected");
+      
+      var selectedIngredient = $(this).find("label").text()+"-details";
+      console.log(selectedIngredient);
       $(".ingredient-details-wrapper").removeClass("selected");
-      $("."+$(this).find("label").text()+"-details").addClass("selected");
+      $("."+selectedIngredient)).addClass("selected");
     });
   });
   
