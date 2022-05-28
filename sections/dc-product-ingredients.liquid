@@ -11,11 +11,15 @@
 
   function showIngredients() {
     for(var i = 0; i < ingredientsArray.length; i++) {
-      var ingredientName  = "."+ingredientsArray[i];
-      var ingredientDetails  = "."+ingredientsArray[i]+"-details";
-      console.log(ingredientName+" "+ingredientDetails);
-      $(ingredientName).removeClass("no-disp");
-      $(ingredientDetails).removeClass("no-disp");
+//       var ingredientName  = ;
+//       var ingredientDetails  = ;
+//       console.log(ingredientName+" "+ingredientDetails);
+      $("."+ingredientsArray[i]).removeClass("no-disp");
+      $("."+ingredientsArray[i]+"-details").removeClass("no-disp");
+      if(i == 1) {
+        $("."+ingredientsArray[i]).addClass("selected");
+        $("."+ingredientsArray[i]+"-details").addClass("selected");
+      }
     }
   }
   

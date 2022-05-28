@@ -35,6 +35,11 @@
   overflow: hidden;
   visibility: hidden;
 }
+.ingredient-details-wrapper.selected {
+  visibility: visible;
+  pointer-events: all;
+  z-index: 2;
+}
 .ingredient-details-title {
   font-size: 16px;
   line-height: 22px;
