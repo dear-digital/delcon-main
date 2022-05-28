@@ -31,7 +31,7 @@
       $(".ingredient-label").removeClass("selected");
       $(this).addClass("selected");
       $(".ingredient-details-wrapper").removeClass("selected");
-      $("."+$(this).find("label").text()).addClass("selected");
+      $("."+$(this).find("label").text()+"-details").addClass("selected");
     });
   });
   
