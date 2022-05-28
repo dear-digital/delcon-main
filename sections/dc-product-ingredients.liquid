@@ -4,16 +4,12 @@
 {% if template == "product" %}
 <script>
   var productIngredients = "{{ product.metafields.my_fields.all_ingredients | replace: " ", "" }}"
-  console.log("productIngredients : "+productIngredients);
+//   console.log("productIngredients : "+productIngredients);
   
   var ingredientsArray = productIngredients.split(",");
-  console.log("ingredientsArray : "+ingredientsArray);
 
   function showIngredients() {
     for(var i = 0; i < ingredientsArray.length; i++) {
-//       var ingredientName  = ;
-//       var ingredientDetails  = ;
-//       console.log(ingredientName+" "+ingredientDetails);
       $("."+ingredientsArray[i]).removeClass("no-disp");
       $("."+ingredientsArray[i]+"-details").removeClass("no-disp");
       if(i == 0) {
@@ -33,7 +29,6 @@
       $(this).addClass("selected");
       
       var selectedIngredient = $(this).find(".ingredients-radio").attr("id")+"-details";
-      console.log(selectedIngredient);
       $(".ingredient-details-wrapper").removeClass("selected");
       $("."+selectedIngredient).addClass("selected");
     });
@@ -61,6 +56,7 @@
           <div class="ingredient-label {{ block.settings.ingredient_name }} no-disp">
             <input type="radio" name="ingredients-name" class="ingredients-radio" id="{{ block.settings.ingredient_name }}">
             <label class="" for="{{ block.settings.ingredient_name }}">{{ block.settings.ingredient_name }}</label>
+            <span class="arrow-right">{% include "arrow-right" %}</span>
           </div>
         {% endfor %}
       </div>
