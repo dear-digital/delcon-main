@@ -8,13 +8,21 @@
   
   var ingredientsArray = productIngredients.split(",");
   console.log("ingredientsArray : "+ingredientsArray);
-  for(var i = 0; i < ingredientsArray.length; i++) {
-    var ingredientName  = "."+ingredientsArray[i];
-    var ingredientDetails  = "."+ingredientsArray[i]+"-details";
-    console.log(ingredientName+" "+ingredientDetails);
-  	$(ingredientName).removeClass("no-disp");
-    $(ingredientDetails").removeClass("no-disp");
+
+  function showIngredients() {
+    for(var i = 0; i < ingredientsArray.length; i++) {
+      var ingredientName  = "."+ingredientsArray[i];
+      var ingredientDetails  = "."+ingredientsArray[i]+"-details";
+      console.log(ingredientName+" "+ingredientDetails);
+      $(ingredientName).removeClass("no-disp");
+      $(ingredientDetails).removeClass("no-disp");
+    }
   }
+  
+  $(document).ready(function() {
+  	showIngredients();
+  });
+  
 </script>
 {% endif %}
 
