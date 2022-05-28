@@ -3,7 +3,7 @@
 
 {% if template == "product" %}
 <script>
-  var productIngredients = "{{ product.metafields.my_fileds.ingredients }}"
+  var productIngredients = "{{ product.metafields.my_fileds.all_ingredients }}"
   console.log("productIngredients : "+productIngredients);
 </script>
 {% endif %}
