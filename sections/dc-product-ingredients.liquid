@@ -24,7 +24,10 @@
         <span class="subheading-text">{{ section.settings.section_subtitle }}</span>
         <h2 class="heading-text tk-le-monde-livre-classic-byol" style="margin-bottom: 24px;">{{ section.settings.section_title }}</h2>
         {% for block in section.blocks %}
-          <label class="ingredient-label {{ block.settings.ingredient_name }}">{{ block.settings.ingredient_name }}</label>
+          <label class="ingredient-label {{ block.settings.ingredient_name }}">
+            <input type="radio" name="ingredients-name" class="ingredients-radio">
+            {{ block.settings.ingredient_name }}
+          </label>
         {% endfor %}
       </div>
     </div>
