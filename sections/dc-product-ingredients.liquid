@@ -9,7 +9,7 @@
   var ingredientsArray = productIngredients.split(",");
   console.log("ingredientsArray : "+ingredientsArray);
   for(var i = 0; i < ingredientsArray.length; i++) {
-    console.log(ingredientsArray[i]);
+    console.log("."+ingredientsArray[i]);
   	$("."+ingredientsArray[i]).removeClass("no-disp");
     $("."+ingredientsArray[i]+"-details").removeClass("no-disp");
   }
