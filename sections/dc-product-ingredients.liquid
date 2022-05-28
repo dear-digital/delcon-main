@@ -31,7 +31,7 @@
       $(".ingredient-label").removeClass("selected");
       $(this).addClass("selected");
       
-      var selectedIngredient = $(this).find("label").text()+"-details";
+      var selectedIngredient = $(this).find(".ingredients-radio").attr("id")+"-details";
       console.log(selectedIngredient);
       $(".ingredient-details-wrapper").removeClass("selected");
       $("."+selectedIngredient).addClass("selected");
@@ -59,9 +59,7 @@
         {% for block in section.blocks %}
           <div class="ingredient-label {{ block.settings.ingredient_name }} no-disp">
             <input type="radio" name="ingredients-name" class="ingredients-radio" id="{{ block.settings.ingredient_name }}">
-            <label class="" for="{{ block.settings.ingredient_name }}">
-              {{ block.settings.ingredient_name }}
-            </label>
+            <label class="" for="{{ block.settings.ingredient_name }}">{{ block.settings.ingredient_name }}</label>
           </div>
         {% endfor %}
       </div>
