@@ -10,8 +10,11 @@
 }
 .ingredient-details-wrapper {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
   width: 100%;
-  align-items: center;
+  height: 100%;
   position: absolute;
   overflow: hidden;
   visibility: hidden;
