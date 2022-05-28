@@ -10,8 +10,9 @@
   console.log("ingredientsArray : "+ingredientsArray);
   for(var i = 0; i < ingredientsArray.length; i++) {
     console.log("."+ingredientsArray[i]);
-  	$("."+ingredientsArray[i]).removeClass("no-disp");
-    $("."+ingredientsArray[i]+"-details").removeClass("no-disp");
+    var ingredientName  = ingredientsArray[i]
+  	$("."+ingredientName).removeClass("no-disp");
+    $("."+ingredientName+"-details").removeClass("no-disp");
   }
 </script>
 {% endif %}
