@@ -26,6 +26,13 @@
   
   $(document).ready(function() {
   	showIngredients();
+    
+    $(".ingredient-label").click(function() {
+      $(".ingredient-label").removeClass("selected");
+      $(this).addClass("selected");
+      $(".ingredient-details-wrapper").removeClass("selected");
+      $("."+$(this).find(".ingredients-radio").id()).addClass("selected");
+    });
   });
   
 </script>
