@@ -34,7 +34,7 @@
     <div class="flex-box justify-between align-center rel image-text-wrapper {% if section.settings.media_alignment == 'right' %}rev-cols{% endif %}" style="background-color: {{ section.settings.ingredient_title_background }}">
       <div class="ingredient-details-block rel" style="background-color: {{ section.settings.ingredient_details_background }}">
 		{% for block in section.blocks %}
-        <div class="ingredient-details-wrapper {{ block.settings.ingredient_name }}-details">
+        <div class="ingredient-details-wrapper {{ block.settings.ingredient_name }}-details {% if forloop.first %}selected{% endif %}">
           <p class="ingredient-details-title">{{ block.settings.ingredient_name }}</p>
           <div class="ingredient-details-text">{{ block.settings.ingredient_details }}</div>
           <img class="ingredient-image" src="{{ block.settings.ingredient_image | img_url: '480x' }}" alt="{{ block.settings.ingredient_name }} image" loading="lazy">
@@ -45,7 +45,7 @@
         <span class="subheading-text">{{ section.settings.section_subtitle }}</span>
         <h2 class="heading-text tk-le-monde-livre-classic-byol" style="margin-bottom: 24px;">{{ section.settings.section_title }}</h2>
         {% for block in section.blocks %}
-          <div class="ingredient-label {{ block.settings.ingredient_name }}">
+          <div class="ingredient-label {{ block.settings.ingredient_name }} {% if forloop.first %}first selected{% endif %}">
             <input type="radio" name="ingredients-name" class="ingredients-radio" id="{{ block.settings.ingredient_name }}">
             <label class="" for="{{ block.settings.ingredient_name }}">{{ block.settings.ingredient_name }}</label>
             <span class="arrow-right">{% include "arrow-right" %}</span>
