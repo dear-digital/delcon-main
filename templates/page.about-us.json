@@ -14,43 +14,49 @@
         "8a234d5d-df38-463e-8fc9-868adab126b4": {
           "type": "select",
           "settings": {
-            "ingredient_name": "",
-            "ingredient_details": ""
+            "ingredient_name": "Lamsvlees",
+            "ingredient_details": "<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam<\/p><ul>\n<li><strong>Hoog in eiwitten<\/strong><\/li>\n<li>Voorziet in alle nodige aminozuren<\/li>\n<li>Vitamines B6, B2, B12<\/li>\n<\/ul>",
+            "ingredient_image": "shopify:\/\/shop_images\/Image_2x_666f3257-609b-42ca-9017-3c089f2f3196.png"
           }
         },
         "094b3c94-995b-4601-b63f-a331308445f7": {
           "type": "select",
           "settings": {
-            "ingredient_name": "",
-            "ingredient_details": ""
+            "ingredient_name": "Kippenvlees",
+            "ingredient_details": "<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam<\/p><ul>\n<li><strong>Hoog in eiwitten<\/strong><\/li>\n<li>Voorziet in alle nodige aminozuren<\/li>\n<li>Vitamines B6, B2, B12<\/li>\n<\/ul>",
+            "ingredient_image": "shopify:\/\/shop_images\/Image_2x_e91738de-bcc2-4a55-b173-43507937fd81.png"
           }
         },
         "ded2823c-274b-4fa9-94fc-69bbd51eb5d2": {
           "type": "select",
           "settings": {
-            "ingredient_name": "",
-            "ingredient_details": ""
+            "ingredient_name": "Rijst",
+            "ingredient_details": "<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam<\/p><ul>\n<li><strong>Hoog in eiwitten<\/strong><\/li>\n<li>Voorziet in alle nodige aminozuren<\/li>\n<li>Vitamines B6, B2, B12<\/li>\n<\/ul>",
+            "ingredient_image": "shopify:\/\/shop_images\/Image_2x_7c6d9fee-f8e7-4d8f-9a84-02ed7613247c.png"
           }
         },
         "00752563-199a-4930-8eaa-f1b657c3cd82": {
           "type": "select",
           "settings": {
-            "ingredient_name": "",
-            "ingredient_details": ""
+            "ingredient_name": "Lijnzaad",
+            "ingredient_details": "<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam<\/p><ul>\n<li><strong>Hoog in eiwitten<\/strong><\/li>\n<li>Voorziet in alle nodige aminozuren<\/li>\n<li>Vitamines B6, B2, B12<\/li>\n<\/ul>",
+            "ingredient_image": "shopify:\/\/shop_images\/Image_2x_08842411-8838-4190-9f06-a6f9ef370da4.png"
           }
         },
         "d87c8afd-9eb6-404a-b646-1f7f9fa4198f": {
           "type": "select",
           "settings": {
-            "ingredient_name": "",
-            "ingredient_details": ""
+            "ingredient_name": "Bietenpulp",
+            "ingredient_details": "<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam<\/p><ul>\n<li><strong>Hoog in eiwitten<\/strong><\/li>\n<li>Voorziet in alle nodige aminozuren<\/li>\n<li>Vitamines B6, B2, B12<\/li>\n<\/ul>",
+            "ingredient_image": "shopify:\/\/shop_images\/Ontwerp_zonder_titel_31.png"
           }
         },
         "488b9acd-a59e-46bb-a840-41f17c015796": {
           "type": "select",
           "settings": {
-            "ingredient_name": "",
-            "ingredient_details": ""
+            "ingredient_name": "Zalm",
+            "ingredient_details": "<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam<\/p><ul>\n<li><strong>Hoog in eiwitten<\/strong><\/li>\n<li>Voorziet in alle nodige aminozuren<\/li>\n<li>Vitamines B6, B2, B12<\/li>\n<\/ul>",
+            "ingredient_image": "shopify:\/\/shop_images\/Schermafbeelding_2022-04-26_om_15.52.49.png"
           }
         }
       },
@@ -63,11 +69,11 @@
         "488b9acd-a59e-46bb-a840-41f17c015796"
       ],
       "settings": {
-        "ingredient_details_background": "",
-        "ingredient_title_background": "",
+        "ingredient_details_background": "#f2f1f0",
+        "ingredient_title_background": "#bdb4ac",
         "media_alignment": "right",
-        "section_subtitle": "",
-        "section_title": ""
+        "section_subtitle": "INGREDIENTEN",
+        "section_title": "Natuurlijke ingrediënten"
       }
     }
   },
