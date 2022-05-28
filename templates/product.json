@@ -11,6 +11,16 @@
         "add_to_cart": "AAN WINKELWAGEN TOEVOEGEN"
       }
     },
+    "1653741255c1c06018": {
+      "type": "dc-product-ingredients",
+      "settings": {
+        "ingredient_details_background": "#f2f1f0",
+        "ingredient_title_background": "#bdb4ac",
+        "media_alignment": "right",
+        "section_subtitle": "INGREDIENTEN",
+        "section_title": "Natuurlijke ingrediënten"
+      }
+    },
     "16535555201d757e1f": {
       "type": "dc-full-banner-image",
       "settings": {
@@ -46,7 +56,9 @@
       ],
       "settings": {
         "faq_background": "#f2f1f0",
-        "faq_title": "Veelgestelde vragen"
+        "faq_title": "Veelgestelde vragen",
+        "faq_link_text": "MEER VRAGEN",
+        "faq_link": ""
       }
     },
     "165355552830ca05e0": {
@@ -77,6 +89,7 @@
   },
   "order": [
     "1652787202269c9bde",
+    "1653741255c1c06018",
     "16535555201d757e1f",
     "1653555221b641428f",
     "165355552830ca05e0",
