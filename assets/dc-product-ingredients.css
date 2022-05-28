@@ -26,8 +26,15 @@
   margin: 0;
   margin-bottom: 8px;
 }
-.ingredient-details-text * {
+.ingredient-details-text p {
   font-size: 16px;
   line-height: 22px;
   margin: 0;
+}
+.ingredient-image {
+  display: block;
+  width: 100%;
+  height: 231px;
+  margin: 0;
+  margin-top: 80px;
 }
