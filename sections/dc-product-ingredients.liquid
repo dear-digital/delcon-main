@@ -23,21 +23,6 @@
 </script>
 {% endif %}
 
-<script>
-  $(document).ready(function() {
-  	showIngredients();
-    
-    $(".ingredient-label").click(function() {
-      $(".ingredient-label").removeClass("selected");
-      $(this).addClass("selected");
-      
-      var selectedIngredient = $(this).find(".ingredients-radio").attr("id")+"-details";
-      $(".ingredient-details-wrapper").removeClass("selected");
-      $("."+selectedIngredient).addClass("selected");
-    });
-  });
-</script>
-
 <div class="image-video-text-block marg-top-xl marg-bottom-xl">
   <div class="container">
     <div class="flex-box justify-between align-center rel image-text-wrapper {% if section.settings.media_alignment == 'right' %}rev-cols{% endif %}" style="background-color: {{ section.settings.ingredient_title_background }}">
@@ -64,6 +49,21 @@
     </div>
   </div>
 </div>
+
+<script>
+  $(document).ready(function() {
+  	showIngredients();
+    
+    $(".ingredient-label").click(function() {
+      $(".ingredient-label").removeClass("selected");
+      $(this).addClass("selected");
+      
+      var selectedIngredient = $(this).find(".ingredients-radio").attr("id")+"-details";
+      $(".ingredient-details-wrapper").removeClass("selected");
+      $("."+selectedIngredient).addClass("selected");
+    });
+  });
+</script>
 
 {% schema %}
   {
