@@ -13,6 +13,59 @@
     },
     "1653741255c1c06018": {
       "type": "dc-product-ingredients",
+      "blocks": {
+        "c2f8e62d-d461-46d2-b67b-fd9d335716ab": {
+          "type": "select",
+          "settings": {
+            "ingredient_name": "Lamsvlees",
+            "ingredient_details": "<p>&lt;p&gt;Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam&lt;\/p&gt;<\/p><p>&lt;ul&gt;&lt;li&gt;&lt;strong&gt;Hoog in eiwitten&lt;\/strong&gt;&lt;\/li&gt;&lt;li&gt;Voorziet in alle nodige aminozuren&lt;\/li&gt;&lt;li&gt;Vitamines B6, B2, B12&lt;\/li&gt;&lt;\/ul&gt;<\/p>",
+            "ingredient_image": "shopify:\/\/shop_images\/Image_2x_666f3257-609b-42ca-9017-3c089f2f3196.png"
+          }
+        },
+        "791dc80e-02fd-4a29-9958-a51051ce3e5e": {
+          "type": "select",
+          "settings": {
+            "ingredient_name": "",
+            "ingredient_details": ""
+          }
+        },
+        "04711b9d-7fd5-4c47-94a6-a11c8d3e76b7": {
+          "type": "select",
+          "settings": {
+            "ingredient_name": "",
+            "ingredient_details": ""
+          }
+        },
+        "66c7bf6e-42bc-4612-bafc-3682f4da4954": {
+          "type": "select",
+          "settings": {
+            "ingredient_name": "",
+            "ingredient_details": ""
+          }
+        },
+        "bfe3f1e9-7e03-4fbd-a8a4-53ff93dfa730": {
+          "type": "select",
+          "settings": {
+            "ingredient_name": "",
+            "ingredient_details": ""
+          }
+        },
+        "b95f1759-74bc-4c87-b9b7-737ce1c1ee7d": {
+          "type": "select",
+          "settings": {
+            "ingredient_name": "",
+            "ingredient_details": ""
+          }
+        }
+      },
+      "block_order": [
+        "c2f8e62d-d461-46d2-b67b-fd9d335716ab",
+        "791dc80e-02fd-4a29-9958-a51051ce3e5e",
+        "04711b9d-7fd5-4c47-94a6-a11c8d3e76b7",
+        "66c7bf6e-42bc-4612-bafc-3682f4da4954",
+        "bfe3f1e9-7e03-4fbd-a8a4-53ff93dfa730",
+        "b95f1759-74bc-4c87-b9b7-737ce1c1ee7d"
+      ],
       "settings": {
         "ingredient_details_background": "#f2f1f0",
         "ingredient_title_background": "#bdb4ac",
