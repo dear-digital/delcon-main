@@ -19,6 +19,7 @@
       if(i == 0) {
         $("."+ingredientsArray[i]).addClass("selected");
         $("."+ingredientsArray[i]).addClass("first");
+        $("#"+ingredientsArray[i]).prop("checked", true);
         $("."+ingredientsArray[i]+"-details").addClass("selected");
       }
     }
