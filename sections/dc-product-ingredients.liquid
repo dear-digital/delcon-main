@@ -16,7 +16,7 @@
         <div class="ingredient-details-wrapper {{ block.settings.ingredient_name }}-details">
           <p class="ingredient-details-title">{{ block.settings.ingredient_name }}</p>
           <p class="ingredient-details-text">{{ block.settings.ingredient_details }}</p>
-          <img src="{{ block.settings.ingredient_image | img_url: 'x480' }}" alt="{{ block.settings.ingredient_name }} image" loading="lazy">
+          <img src="{{ block.settings.ingredient_image | img_url: '480x' }}" alt="{{ block.settings.ingredient_name }} image" loading="lazy">
         </div>
         {% endfor %}
       </div>
