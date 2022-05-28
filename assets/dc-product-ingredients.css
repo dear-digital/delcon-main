@@ -17,7 +17,7 @@
   padding: 0 12px;
   border-bottom: 1px solid rgb(var(--color-base-accent-1));
 }
-.ingredient-label:not(no-disp):first-child {
+.ingredient-label:not(.no-disp):first-child {
   border-top: 1px solid rgb(var(--color-base-accent-1));
 }
 .ingredient-label.selected {
