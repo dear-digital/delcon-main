@@ -81,4 +81,13 @@
     font-size: 24px;
     line-height: 33px;
 }
+  
+  .blog-filter {
+    width: 100%;
+    margin-right: 0;
+    border: 1px solid;
+    text-align: center;
+    padding-top: 11.25px;
+    padding-bottom: 11.75px;
+}
 }
