@@ -21,7 +21,7 @@
             <span class="article-date">{{ article.created_at | date: "%d %B %Y" }}</span>
           </span>
           <span class="article-title">{{ article.title }}</span>
-          <span class="article-desc">{{ article.content }}</span>
+          <span class="article-desc">{{ article.content | strip_html }}</span>
         </span>
       </a>
       {% endfor %}
