@@ -21,6 +21,7 @@
             <div class="article-date">{{ article.created_at | date: "%d %B %Y" }}</div>
           </div>
           <div class="article-title">{{ article.title }}</div>
+          <div class="article-desc">{{ article.content }}</div>
         </div>
       </a>
       {% endfor %}
