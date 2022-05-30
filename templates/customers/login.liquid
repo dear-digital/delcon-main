@@ -59,11 +59,13 @@
           {%- form 'customer_login', novalidate: 'novalidate' -%}
             {%- if form.errors -%}
               <h1 class="form__message" tabindex="-1" autofocus>
-                {{ 'customer.login_page.title' | t }}
+                {{ 'customer.login_page.adjust_following' | t }}
               </h1>
               {{ form.errors | default_errors }}
             {%- endif -%}
 
+          	<h1 class="login-heading">{{ 'customer.login_page.title' | t }}</h1>
+          
             <div class="field">   
               <label for="CustomerEmail">
                 {{ 'customer.login_page.email' | t }}
@@ -280,3 +282,17 @@
     </div>
   {%- endif -%}
 </div>
+
+<script>
+
+  $('#show-pwd').click(function(){
+    if('password' == $('#CustomerPassword').attr('type')){
+      $('#CustomerPassword').prop('type', 'text');
+      $(this).text('hide');
+    }else{
+      $('#CustomerPassword').prop('type', 'password');
+      $(this).text('show');
+    }
+  });
+
+</script>
