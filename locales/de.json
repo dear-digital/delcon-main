@@ -351,12 +351,11 @@
       "title": "Login",
       "sign_in": "Anmelden",
       "submit": "Senden",
-      "login_success": "We will send you an email to reset your password",
-      "update_pwd_msg": "We've sent you an email with a link to update your password.",
-      "adjust_following": "Please adjust the following:",
+      "login_success": "Wir senden Ihnen eine E-Mail, um Ihr Passwort zurückzusetzen",
+      "update_pwd_msg": "Wir haben Ihnen eine E-Mail mit einem Link zum Aktualisieren Ihres Passworts gesendet.",
+      "adjust_following": "Bitte passen Sie Folgendes an:",
       "show": "show",
-      "lost_pwd": "Lost your password?",
-      "guest_login": "Guest Login"
+      "guest_login": "Gast-Login"
     },
     "orders": {
       "title": "Bestellhistorie",
