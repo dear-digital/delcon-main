@@ -104,19 +104,17 @@
                 </div>
               </div>
 
-              <div  class="marg-bottom-s">
-                <a href="#forgot-password" class="small-text underline">
-                  {{ 'customer.login_page.forgot_password' | t }}
-                </a>
-              </div>
-            
+              <a href="#forgot-password" class="forgot-password">
+                {{ 'customer.login_page.forgot_password' | t }}
+              </a>
+              
             {%- endif -%}
 
             <button class="btn login-btn">
               {{ 'customer.log_in' | t }}
             </button>
           
-          	<a href="" class="sub-marg-top-xs"></a>
+          	<a href="{{ routes.account_register_url }}" class="create_account sub-marg-top-xs">{{ 'customer.login_page.create_account' }}</a>
 
           {%- endform -%}
             {%- if shop.checkout.guest_login -%}
