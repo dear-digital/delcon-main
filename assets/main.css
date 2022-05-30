@@ -73,10 +73,10 @@
   margin-bottom: 80px !important;
 }
 .sub-marg-top-xs {
-  margin-top: 16px;
+  margin-top: 16px !important;
 }
 .sub-marg-bottom-xs {
-  margin-bottom: 16px;
+  margin-bottom: 16px !important;
 }
 .no-marg-left {
   margin-left: 0 !important;
@@ -95,8 +95,11 @@
   margin-left: 0 !important;
   margin-right: auto !important;
 }
+.marg-top-xxs {
+  margin-top: 8px !important;
+}
 .marg-bottom-xxs {
-  margin-bottom: 8px;
+  margin-bottom: 8px !important;
 }
 .padd-top {
   padding-top: 80px;
