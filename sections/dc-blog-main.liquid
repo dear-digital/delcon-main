@@ -20,6 +20,7 @@
             <div class="article-tag">{% for tag in article.tags %}{% if forloop.first %}{{ tag }}{% endif %}{% endfor %}</div>
             <div class="article-date">{{ article.created_at | date: "%D %B %Y" }}</div>
           </div>
+          <div class="article-title">{{ article.title }}</div>
         </div>
       </div>
       	<h2>{{ article.title }}</h2>
