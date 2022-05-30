@@ -32,10 +32,18 @@
             "filter_title": "ALLE ARTIKELS",
             "filter": "all"
           }
+        },
+        "b1f1ccdc-d58e-4073-8740-2a7a312be37a": {
+          "type": "filter",
+          "settings": {
+            "filter_title": "HONDEN",
+            "filter": "Hond"
+          }
         }
       },
       "block_order": [
-        "157c99e4-429c-41e4-8e2b-598cf46a5f6e"
+        "157c99e4-429c-41e4-8e2b-598cf46a5f6e",
+        "b1f1ccdc-d58e-4073-8740-2a7a312be37a"
       ],
       "settings": {
       }
