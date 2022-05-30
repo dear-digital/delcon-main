@@ -358,12 +358,11 @@
       "title": "Connexion",
       "sign_in": "Connexion",
       "submit": "Envoyer",
-      "login_success": "We will send you an email to reset your password",
-      "update_pwd_msg": "We've sent you an email with a link to update your password.",
-      "adjust_following": "Please adjust the following:",
-      "show": "show",
-      "lost_pwd": "Lost your password?",
-      "guest_login": "Guest Login"
+      "login_success": "Nous vous enverrons un e-mail pour réinitialiser votre mot de passe",
+      "update_pwd_msg": "Nous vous avons envoyé un e-mail avec un lien pour mettre à jour votre mot de passe.",
+      "adjust_following": "Veuillez ajuster les éléments suivants :",
+      "show": "Montrer",
+      "guest_login": "Connexion invité"
     },
     "orders": {
       "title": "Historique des commandes",
