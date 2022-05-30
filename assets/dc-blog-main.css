@@ -115,5 +115,6 @@ a{
   
   .article {
     width: 50%;
+    margin-bottom: 24px;
 }
 }
