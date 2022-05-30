@@ -73,3 +73,9 @@ a{
   margin-right: 8px;
   border-right: 1px solid;
 }
+
+.article-tag {
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
