@@ -73,9 +73,13 @@ input:focus-visible, select:focus-visible, textarea:focus-visible {
   text-decoration: none;
   margin-bottom: 24px;
   cursor: pointer;
+  transition: all .3s ease-out;
 }
 .login-link {
   margin: 0 auto;
+}
+.forgot-password:hover, .login-link:hover {
+  color: #B499BF;
 }
 .create-account {
   display: block;
@@ -88,6 +92,20 @@ input:focus-visible, select:focus-visible, textarea:focus-visible {
   color: rgb(var(--color-base-accent-1));
   text-decoration: none;
   margin: 0 auto;
+}
+.create-account:after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -2px;
+  width: 0px;
+  height: 2px;
+  background: rgb(var(--color-base-accent-1));
+  transition: all .3s ease-out;
+}
+.create-account:hover:after {
+  width: 100%;
+  left: 0;
 }
 .login-btn {
   max-width: none;
