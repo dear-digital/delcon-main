@@ -107,6 +107,32 @@ input:focus-visible, select:focus-visible, textarea:focus-visible {
   width: 40%;
   left: 30%;
 }
+.login-link {
+  display: block;
+  width: fit-content;
+  width: -moz-fit-content;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: rgb(var(--color-base-accent-1));
+  text-decoration: none;
+  margin: 0 auto;
+}
+.login-link:after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -2px;
+  width: 0px;
+  height: 2px;
+  background: rgb(var(--color-base-accent-1));
+  transition: all .3s ease-out;
+}
+.login-link:hover:after {
+  width: 50%;
+  left: 30%;
+}
 .login-btn {
   max-width: none;
 }
