@@ -10,3 +10,7 @@
     cursor: pointer;
     font-weight: 700;
 }
+
+.blog-filter.selected {
+    border-bottom: 2px solid #B499BF;
+}
