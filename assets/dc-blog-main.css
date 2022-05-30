@@ -20,10 +20,11 @@
   margin: 0 -0.5%;
 }
 
-.article.all {
+.article {
     width: 32.33333%;
     margin: 0 0.5%;
     margin-bottom: 30px;
+  display: block;
 }
 
 .article-image {
