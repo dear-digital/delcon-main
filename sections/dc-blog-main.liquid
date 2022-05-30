@@ -17,8 +17,7 @@
         </span>
         <span class="article-info">
           <span class="article-tag-date">
-            {% for tag in article.tags %}{% assign fl = forloop.index  %}{% endfor %}
-            <span class="article-tag{% if fl >= 1 %} tag-exists{% endif %}">{% for tag in article.tags %}{% if forloop.first %}{{ tag }}{% endif %}{% endfor %}</span>
+            <span class="article-tag{% for tag in article.tags %}{% if forloop.first != blank %} tag-exists{% endif %}{% endfor %}">{% for tag in article.tags %}{% if forloop.first %}{{ tag }}{% endif %}{% endfor %}</span>
             <span class="article-date">{{ article.created_at | date: "%d %B %Y" }}</span>
           </span>
           <span class="article-title">{{ article.title }}</span>
