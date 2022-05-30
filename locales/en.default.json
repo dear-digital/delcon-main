@@ -354,7 +354,7 @@
       "login_success": "We will send you an email to reset your password",
       "update_pwd_msg": "We've sent you an email with a link to update your password.",
       "adjust_following": "Please adjust the following:",
-      "show": "show",
+      "show": "Show",
       "guest_login": "Guest Login"
     },
     "order": {
