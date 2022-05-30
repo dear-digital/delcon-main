@@ -12,17 +12,17 @@
     <div class="articles flex-box">
       {% for article in blog.articles %}
       <a href="{{ article.url }}" class="article all{% for tag in article.tags %} {{ tag }}{% endfor %}">
-        <div class="article-image">
+        <span class="article-image">
         	<img src="{{ article.image.src | image_url: width: 388 }}">
-        </div>
-        <div class="article-info">
+        </span>
+        <span class="article-info">
           <div class="article-tag-date">
             <div class="article-tag">{% for tag in article.tags %}{% if forloop.first %}{{ tag }}{% endif %}{% endfor %}</div>
             <div class="article-date">{{ article.created_at | date: "%d %B %Y" }}</div>
           </div>
           <div class="article-title">{{ article.title }}</div>
           <div class="article-desc">{{ article.content }}</div>
-        </div>
+        </span>
       </a>
       {% endfor %}
     </div>
