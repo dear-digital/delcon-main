@@ -34,6 +34,8 @@
   	$('.blog-filter').removeClass('selected');
     $(this).addClass('selected');
     var filter = $(this).data('filter');
+    $('.article').removeClass('no-disp');
+    $('.'+ filter +).addClass('no-disp');
   });
 </script>
 
