@@ -54,3 +54,10 @@
     display: block;
     margin-bottom: 8px;
 }
+
+.article-desc {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
