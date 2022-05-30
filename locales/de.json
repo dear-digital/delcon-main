@@ -378,7 +378,8 @@
       "last_name": "Nachname",
       "email": "E-Mail",
       "password": "Passwort",
-      "submit": "Registrieren"
+      "submit": "Registrieren",
+      "login_link": "Sie haben bereits ein Konto? Anmeldung"
     },
     "reset_password": {
       "title": "Passwort für Konto zurücksetzen",
