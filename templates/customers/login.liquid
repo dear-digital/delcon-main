@@ -56,79 +56,78 @@
           {%- endif -%}
           {%- form 'customer_login', novalidate: 'novalidate' -%}
             {%- if form.errors -%}
-              <h1 class="form__message" tabindex="-1" autofocus>
-                {{ 'customer.login_page.adjust_following' | t }}
-              </h1>
-              {{ form.errors | default_errors }}
+            <h1 class="form__message" tabindex="-1" autofocus>
+              {{ 'customer.login_page.adjust_following' | t }}
+            </h1>
+            {{ form.errors | default_errors }}
             {%- endif -%}
 
-          	<h1 class="login-heading tk-le-monde-livre-classic-byol">{{ 'customer.login_page.title' | t }}</h1>
-          
+            <h1 class="login-heading tk-le-monde-livre-classic-byol">{{ 'customer.login_page.title' | t }}</h1>
+
             <div class="field">   
               <label for="CustomerEmail" class="no-disp">
                 {{ 'customer.login_page.email' | t }}
               </label>     
               <input
-                type="email"
-                name="customer[email]"
-                id="CustomerEmail"
-                autocomplete="email"
-                autocorrect="off"
-                autocapitalize="off"
-                {% if form.errors contains 'form' %}
-                  aria-invalid="true"
-                {% endif %}
-                placeholder="{{ 'customer.login_page.email' | t }}"
-              >
+                     type="email"
+                     name="customer[email]"
+                     id="CustomerEmail"
+                     autocomplete="email"
+                     autocorrect="off"
+                     autocapitalize="off"
+                     {% if form.errors contains 'form' %}
+                     aria-invalid="true"
+                     {% endif %}
+                     placeholder="{{ 'customer.login_page.email' | t }}"
+                     >
             </div>
 
             {%- if form.password_needed -%}
-              <div class="field">    
-                <label for="CustomerPassword" class="no-disp">
-                  {{ 'customer.login_page.password' | t }}
-                </label>   
-                <div class="rel">
-                  <input
-                    type="password"
-                    value=""
-                    name="customer[password]"
-                    id="CustomerPassword"
-                    autocomplete="current-password"
-                    {% if form.errors contains 'form' %}
-                      aria-invalid="true"
-                    {% endif %}
-                    placeholder="{{ 'customer.login_page.password' | t }}"
-                    class="marg-bottom-xxs"
-                  >
-                  <div id="show-pwd">{{ 'customer.login_page.show' | t }}</div>
-                </div>
+            <div class="field">    
+              <label for="CustomerPassword" class="no-disp">
+                {{ 'customer.login_page.password' | t }}
+              </label>   
+              <div class="rel">
+                <input
+                       type="password"
+                       value=""
+                       name="customer[password]"
+                       id="CustomerPassword"
+                       autocomplete="current-password"
+                       {% if form.errors contains 'form' %}
+                       aria-invalid="true"
+                       {% endif %}
+                       placeholder="{{ 'customer.login_page.password' | t }}"
+                       class="marg-bottom-xxs"
+                       >
+                <div id="show-pwd">{{ 'customer.login_page.show' | t }}</div>
               </div>
+            </div>
 
-              <a href="#forgot-password" class="forgot-password">
-                {{ 'customer.login_page.forgot_password' | t }}
-              </a>
-              
+            <a href="#forgot-password" class="forgot-password">
+              {{ 'customer.login_page.forgot_password' | t }}
+            </a>
+
             {%- endif -%}
 
-            <button class="btn login-btn">
-              {{ 'customer.log_in' | t }}
-            </button>
-          
-          	<a href="{{ routes.account_register_url }}" class="create_account sub-marg-top-xs">{{ 'customer.login_page.create_account' }}</a>
+            <button class="btn login-btn">{{ 'customer.log_in' | t }}</button>
+
+            <a href="{{ routes.account_register_url }}" class="create-account sub-marg-top-xs">{{ 'customer.login_page.create_account' }}</a>
 
           {%- endform -%}
-            {%- if shop.checkout.guest_login -%}
-              <div>
-                <h2>{{ 'customer.login_page.guest_login' | t }}</h2>
+          
+          {%- if shop.checkout.guest_login -%}
+          <div>
+            <h2>{{ 'customer.login_page.guest_login' | t }}</h2>
 
-                {%- form 'guest_login' -%}
-                  <button class="btn btn-full">
-                    {{ 'customer.log_in' | t }}
-                  </button>
-                {%- endform -%}
-              </div>
-            {%- endif -%}
+            {%- form 'guest_login' -%}
+            <button class="btn btn-full">
+              {{ 'customer.log_in' | t }}
+            </button>
+            {%- endform -%}
           </div>
+          {%- endif -%}
+        </div>
       </div>
     </div>
   </div>
