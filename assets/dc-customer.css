@@ -71,6 +71,7 @@ input:focus-visible, select:focus-visible, textarea:focus-visible {
   line-height: 24px;
   color: rgb(var(--color-base-accent-1));
   text-decoration: none;
+  margin-bottom: 24px;
 }
 .create-account {
   display: block;
@@ -82,6 +83,7 @@ input:focus-visible, select:focus-visible, textarea:focus-visible {
   text-transform: uppercase;
   color: rgb(var(--color-base-accent-1));
   text-decoration: none;
+  margin: 0 auto;
 }
 .login-btn {
   max-width: none;
