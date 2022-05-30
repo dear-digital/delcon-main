@@ -117,4 +117,8 @@ a{
     width: 50%;
     margin-bottom: 24px;
 }
+  
+  .article-image {
+    height: 125px;
+}
 }
