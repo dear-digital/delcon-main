@@ -5,7 +5,7 @@
     <div class="blog-filters">
     	{% for block in section.blocks %}
       		{% if block.type == 'filter' %}
-      			<div class="blog-filter" data-filter="{{ block.settings.filter }}">{{ block.settings.filter_title }}</div>
+      			<div class="blog-filter{% if forloop.first %} selected{% endif %}" data-filter="{{ block.settings.filter }}">{{ block.settings.filter_title }}</div>
       		{% endif %}
       	{% endfor %}
     </div>
