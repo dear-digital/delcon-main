@@ -65,7 +65,7 @@
           	<h1 class="login-heading tk-le-monde-livre-classic-byol">{{ 'customer.login_page.title' | t }}</h1>
           
             <div class="field">   
-              <label for="CustomerEmail">
+              <label for="CustomerEmail" class="no-disp">
                 {{ 'customer.login_page.email' | t }}
               </label>     
               <input
@@ -84,7 +84,7 @@
 
             {%- if form.password_needed -%}
               <div class="field">    
-                <label for="CustomerPassword">
+                <label for="CustomerPassword" class="no-disp">
                   {{ 'customer.login_page.password' | t }}
                 </label>   
                 <div class="rel">
