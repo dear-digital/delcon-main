@@ -76,4 +76,9 @@
     text-align: center;
     padding: 24px;
 }
+  
+  .coll-title {
+    font-size: 24px;
+    line-height: 33px;
+}
 }
