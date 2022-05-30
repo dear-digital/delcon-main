@@ -12,6 +12,14 @@
   </div>
 </div>
 
+
+<script>
+  $('.blog-filter').click(function() {
+  	$('.blog-filter').removeClass('selected');
+    $(this).addClass('selected');
+  });
+</script>
+
 {% schema %}
   {
     "name": "DC Blog Main",
