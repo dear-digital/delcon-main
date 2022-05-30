@@ -63,6 +63,26 @@ input:focus-visible, select:focus-visible, textarea:focus-visible {
   font-weight: 300;
   text-decoration: underline;
 }
+.forgot-password {
+  display: block;
+  width: fit-content;
+  width: -moz-fit-content;
+  font-size: 16px;
+  line-height: 24px;
+  color: rgb(var(--color-base-accent-1));
+  text-decoration: none;
+}
+.create-account {
+  display: block;
+  width: fit-content;
+  width: -moz-fit-content;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: rgb(var(--color-base-accent-1));
+  text-decoration: none;
+}
 .login-btn {
   max-width: none;
 }
