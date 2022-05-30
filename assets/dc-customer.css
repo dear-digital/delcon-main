@@ -52,6 +52,17 @@ input:focus-visible, select:focus-visible, textarea:focus-visible {
 ::-ms-input-placeholder {
   opacity: 0.5;
 }
+#show-pwd {
+  font-size: 16px;
+  line-height: 24px;
+  position: absolute;
+  right: 24px;
+  bottom: 20px;
+  cursor: pointer;
+  text-transform: capitalize;
+  font-weight: 300;
+  text-decoration: underline;
+}
 .login-btn {
   max-width: none;
 }
