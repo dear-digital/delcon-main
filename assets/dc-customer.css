@@ -63,7 +63,7 @@ input:focus-visible, select:focus-visible, textarea:focus-visible {
   font-weight: 300;
   text-decoration: underline;
 }
-.forgot-password, .login {
+.forgot-password, .login-link {
   display: block;
   width: fit-content;
   width: -moz-fit-content;
