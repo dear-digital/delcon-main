@@ -351,7 +351,7 @@
       "title": "Login",
       "sign_in": "Anmelden",
       "submit": "Senden",
-      "login_success": "Wir senden Ihnen eine E-Mail, um Ihr Passwort zurückzusetzen",
+      "recover_title": "Setze dein Passwort zurück",
       "update_pwd_msg": "Wir haben Ihnen eine E-Mail mit einem Link zum Aktualisieren Ihres Passworts gesendet.",
       "adjust_following": "Bitte passen Sie Folgendes an:",
       "show": "show",
