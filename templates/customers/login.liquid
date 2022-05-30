@@ -34,9 +34,9 @@
                    >
           </div>
           {%- if form.errors -%}
-          <small id="RecoverEmail-email-error" class="form__message">
+          <p id="RecoverEmail-email-error" class="form__message">
             {{ form.errors.messages['form'] }}
-          </small>
+          </p>
           {%- endif -%}
 
           <button class="btn btn-full">
@@ -54,7 +54,7 @@
               {{ 'customer.login_page.update_pwd_msg' | t }}
             </h3>
           {%- endif -%}
-          {%- form 'customer_login', novalidate: 'novalidate' -%}
+          {%- form 'customer_login' -%}
             {%- if form.errors -%}
             <p class="form__message" tabindex="-1" autofocus>
               {{ 'customer.login_page.adjust_following' | t }}
