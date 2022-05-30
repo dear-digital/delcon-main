@@ -112,4 +112,8 @@ a{
     border-bottom: 1px solid;
     background-color: #B499BF;
 }
+  
+  .article {
+    width: 50%;
+}
 }
