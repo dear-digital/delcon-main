@@ -218,6 +218,12 @@ main {
   height: 8px;
 }
 
+.form__message {
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0;
+  margin-bottom: 16px;
+}
 .errors {
   color: red;
 }
