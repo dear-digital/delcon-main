@@ -14,3 +14,7 @@
 .blog-filter.selected {
     border-bottom: 2px solid #B499BF;
 }
+
+.articles {
+    flex-wrap: wrap;
+}
