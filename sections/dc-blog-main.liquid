@@ -1,7 +1,40 @@
+{{ 'dc-blog-main.css' | asset_url | stylesheet_tag }}
+
+<div class="blog-main">
+  <div class="container">
+    <div class="blog-filters"></div>
+  </div>
+</div>
+
 {% schema %}
   {
-    "name": "Section name",
-    "settings": []
+    "name": "DC Blog Main",
+    "settings": [
+		
+	],
+	"blocks": [
+		{
+			"type": "filter",
+			"name": "Filter",
+			"settings": [
+				{
+					"type": "text",
+					"id": "filter_title",
+					"label": "Filter Title"
+				},
+				{
+					"type": "text",
+					"id": "filter",
+					"label": "Filter Id"
+				}
+			]
+		}
+	],
+	"presets": [
+		{
+			"name": "DC Blog Main"
+		}
+	]
   }
 {% endschema %}
 
