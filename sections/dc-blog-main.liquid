@@ -11,7 +11,7 @@
     </div>
     <div class="articles flex-box">
       {% for article in blog.articles %}
-      <div class="article{% for tag in article.tags %} {{ tag }}{% endfor %}">
+      <div class="article all{% for tag in article.tags %} {{ tag }}{% endfor %}">
         <div class="article-image">
         	<img src="{{ article.image.src | image_url: width: 388 }}">
         </div>
@@ -34,8 +34,8 @@
   	$('.blog-filter').removeClass('selected');
     $(this).addClass('selected');
     var filter = $(this).data('filter');
-    $('.article').removeClass('no-disp');
-    $('.'+ filter +).addClass('no-disp');
+    $('.article').addClass('no-disp');
+    $('.'+ filter +).removeClass('no-disp');
   });
 </script>
 
