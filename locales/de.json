@@ -373,7 +373,7 @@
       "success": "Wir haben dir eine E-Mail mit einem Link zum Aktualisieren deines Passworts geschickt."
     },
     "register": {
-      "title": "Konto erstellen",
+      "title": "Registrieren",
       "first_name": "Vorname",
       "last_name": "Nachname",
       "email": "E-Mail",
