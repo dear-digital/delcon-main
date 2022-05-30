@@ -9,6 +9,22 @@
       		{% endif %}
       	{% endfor %}
     </div>
+    <div class="articles flex-box">
+      {% for article in blog.articles %}
+      <div class="article{% for tag in article.tags %} {{ tag }}{% endfor %}">
+        <div class="article-image">
+        	<img src="{{ article.image.src | image_url: width: 388 }}">
+        </div>
+        <div class="article-info">
+          <div class="article-tag-date">
+            <div class="article-tag">{% for tag in article.tags %}{% if forloop.first %}{{ tag }}{% endif %}{% endfor %}</div>
+            <div class="article-date">{{ article.created_at | date: "%D %B %Y" }}</div>
+          </div>
+        </div>
+      </div>
+      	<h2>{{ article.title }}</h2>
+      {% endfor %}
+    </div>
   </div>
 </div>
 
