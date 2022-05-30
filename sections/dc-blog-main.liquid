@@ -2,7 +2,13 @@
 
 <div class="blog-main">
   <div class="container">
-    <div class="blog-filters"></div>
+    <div class="blog-filters">
+    	{% for block in section.blocks %}
+      		{% if block.type == 'filter' %}
+      			<div class="blog-filter" data-filter="{{ block.settings.filter }}">{{ block.settings.filter_title }}</div>
+      		{% endif %}
+      	{% endfor %}
+    </div>
   </div>
 </div>
 
