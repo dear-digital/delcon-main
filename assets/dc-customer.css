@@ -107,7 +107,7 @@ input:focus-visible, select:focus-visible, textarea:focus-visible {
   width: 40%;
   left: 30%;
 }
-.login-link {
+.has-account {
   display: block;
   width: fit-content;
   width: -moz-fit-content;
@@ -119,7 +119,7 @@ input:focus-visible, select:focus-visible, textarea:focus-visible {
   text-decoration: none;
   margin: 0 auto;
 }
-.login-link:after {
+.has-account:after {
   content: "";
   position: absolute;
   left: 50%;
@@ -129,7 +129,7 @@ input:focus-visible, select:focus-visible, textarea:focus-visible {
   background: rgb(var(--color-base-accent-1));
   transition: all .3s ease-out;
 }
-.login-link:hover:after {
+.has-account:hover:after {
   width: 50%;
   left: 30%;
 }
