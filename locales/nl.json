@@ -373,7 +373,7 @@
       "success": "We hebben je een e-mail gestuurd met een link om je wachtwoord opnieuw in te stellen."
     },
     "register": {
-      "title": "Account aanmaken",
+      "title": "Registreren",
       "first_name": "Voornaam",
       "last_name": "Achternaam",
       "email": "E‑mail",
