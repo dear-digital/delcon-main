@@ -72,9 +72,9 @@
             <label for="RegisterForm-password" class="no-disp">
               {{ 'customer.register.password' | t }}
             </label>
+            <div class="rel">
             <input
               type="password"
-			  class="rel"
               name="customer[password]"
               id="RegisterForm-password"
               aria-required="true"
@@ -85,6 +85,7 @@
               placeholder="{{ 'customer.register.password' | t }}"
               required>
             <div id="show-pwd">{{ 'customer.login_page.show' | t }}</div>
+            </div>
           </div>
 
           <button class="btn register-btn">
