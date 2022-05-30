@@ -25,8 +25,20 @@
   font-size: 32px;
   line-height: 48px;
   font-weight: bold;
+  text-align: center;
   margin: 0;
   margin-bottom: 24px;
+}
+input, select, textarea {
+  font-size: 16px;
+  line-height: 24px;
+  padding: 12px 24px;
+  width: 100%;
+  margin-bottom: 16px;
+  font-weight: 300;
+  background-color: rgb(var(--color-base-text));
+  color: rgb(var(--color-base-accent-1));
+  border: 1px solid #746B63;
 }
 #forgot-password {
   display: none;
