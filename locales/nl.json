@@ -351,12 +351,11 @@
       "title": "Inloggen",
       "sign_in": "Inloggen",
       "submit": "Verzenden",
-      "login_success": "We will send you an email to reset your password",
-      "update_pwd_msg": "We've sent you an email with a link to update your password.",
-      "adjust_following": "Please adjust the following:",
-      "show": "show",
-      "lost_pwd": "Lost your password?",
-      "guest_login": "Guest Login"
+      "login_success": "We sturen je een e-mail om je wachtwoord opnieuw in te stellen",
+      "update_pwd_msg": "We hebben je een e-mail gestuurd met een link om je wachtwoord bij te werken.",
+      "adjust_following": "Pas het volgende aan::",
+      "show": "Tonen",
+      "guest_login": "Gast login"
     },
     "orders": {
       "title": "Besteloverzicht",
