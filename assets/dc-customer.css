@@ -18,6 +18,16 @@
   max-width: 488px;
   margin: 0 0 0 auto;
 }
+#login {
+
+}
+.login-heading {
+  font-size: 32px;
+  line-height: 48px;
+  font-weight: bold;
+  margin: 0;
+  margin-bottom: 24px;
+}
 #forgot-password {
   display: none;
 }
