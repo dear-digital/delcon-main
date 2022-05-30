@@ -83,6 +83,7 @@
               {% endif %}
               placeholder="{{ 'customer.register.password' | t }}"
               required>
+            <div id="show-pwd">{{ 'customer.login_page.show' | t }}</div>
           </div>
 
           <button class="btn register-btn">
@@ -95,3 +96,16 @@
     </div>
   </div>
 </div>
+
+<script>
+
+  $('#show-pwd').click(function(){
+    if('password' == $('#RegisterForm-password').attr('type')){
+      $('#RegisterForm-password').prop('type', 'text');
+    }else{
+      $('#RegisterForm-password').prop('type', 'password');
+    }
+  });
+  
+
+</script>
