@@ -11,7 +11,7 @@
     </div>
     <div class="articles flex-box">
       {% for article in blog.articles %}
-      <div class="article all{% for tag in article.tags %} {{ tag }}{% endfor %}">
+      <a href="{{ article.url }}" class="article all{% for tag in article.tags %} {{ tag }}{% endfor %}">
         <div class="article-image">
         	<img src="{{ article.image.src | image_url: width: 388 }}">
         </div>
@@ -22,7 +22,7 @@
           </div>
           <div class="article-title">{{ article.title }}</div>
         </div>
-      </div>
+      </a>
       {% endfor %}
     </div>
   </div>
