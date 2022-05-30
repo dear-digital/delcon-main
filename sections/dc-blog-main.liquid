@@ -12,22 +12,22 @@
     </div>
     <div class="articles flex-box">
       {% for article in blog.articles %}
-      <a href="{{ article.url }}" class="article product-card rel all{% for tag in article.tags %} {{ tag }}{% endfor %}">
+      <div class="article product-card rel all{% for tag in article.tags %} {{ tag }}{% endfor %}">
         <span class="product-card-hover no-t-m">
             <a href="{{ article.url }}" class="btn product-btn">{{ section.settings.meerInfo }}</a>
           </span>
-        <span class="article-image">
+        <a href="{{ article.url }}" class="article-image">
         	<img src="{{ article.image.src | image_url: width: 388 }}">
-        </span>
+        </a>
         <span class="article-info">
           <span class="article-tag-date align-center">
             <span class="article-tag{% for tag in article.tags %}{% if forloop.first != blank %} tag-exists{% endif %}{% endfor %}">{% for tag in article.tags %}{% if forloop.first %}{{ tag }}{% endif %}{% endfor %}</span>
             <span class="article-date">{{ article.created_at | date: "%d %B %Y" }}</span>
           </span>
-          <span class="article-title">{{ article.title }}</span>
+          <a href="{{ article.url }}" class="article-title">{{ article.title }}</a>
           <span class="article-desc no-t-m">{{ article.content | strip_html }}</span>
         </span>
-      </a>
+      </div>
       {% endfor %}
     </div>
   </div>
