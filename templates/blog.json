@@ -22,10 +22,28 @@
         "desc": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet",
         "image": "shopify:\/\/shop_images\/Hero_image_2x_c4b6d25f-59ea-45f1-a5a8-fb73e3262e9f.png"
       }
+    },
+    "1653892332a73d4f37": {
+      "type": "dc-blog-main",
+      "blocks": {
+        "157c99e4-429c-41e4-8e2b-598cf46a5f6e": {
+          "type": "filter",
+          "settings": {
+            "filter_title": "ALLE ARTIKELS",
+            "filter": "all"
+          }
+        }
+      },
+      "block_order": [
+        "157c99e4-429c-41e4-8e2b-598cf46a5f6e"
+      ],
+      "settings": {
+      }
     }
   },
   "order": [
     "main",
-    "1653547426eba974e7"
+    "1653547426eba974e7",
+    "1653892332a73d4f37"
   ]
 }
