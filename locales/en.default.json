@@ -351,7 +351,7 @@
       "title": "Login",
       "sign_in": "Sign in",
       "submit": "Submit",
-      "login_success": "We will send you an email to reset your password",
+      "recover_title": "Reset your password",
       "update_pwd_msg": "We've sent you an email with a link to update your password.",
       "adjust_following": "Please adjust the following:",
       "show": "Show",
