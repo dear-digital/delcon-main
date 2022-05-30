@@ -32,7 +32,7 @@
 input, select, textarea {
   font-size: 16px;
   line-height: 24px;
-  padding: 12px 24px;
+  padding: 11px 24px 10px;
   width: 100%;
   margin-bottom: 16px;
   font-weight: 300;
@@ -51,6 +51,9 @@ input:focus-visible, select:focus-visible, textarea:focus-visible {
 }
 ::-ms-input-placeholder {
   opacity: 0.5;
+}
+.login-btn {
+  max-width: none;
 }
 #forgot-password {
   display: none;

@@ -95,6 +95,9 @@
   margin-left: 0 !important;
   margin-right: auto !important;
 }
+.marg-bottom-xxs {
+  margin-bottom: 8px;
+}
 .padd-top {
   padding-top: 80px;
 }

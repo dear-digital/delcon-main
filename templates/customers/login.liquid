@@ -78,7 +78,7 @@
                 {% if form.errors contains 'form' %}
                   aria-invalid="true"
                 {% endif %}
-                placeholder="Email address"
+                placeholder="{{ 'customer.login_page.email' | t }}"
               >
             </div>
 
@@ -97,7 +97,7 @@
                     {% if form.errors contains 'form' %}
                       aria-invalid="true"
                     {% endif %}
-                    placeholder="Password"
+                    placeholder="{{ 'customer.login_page.password' | t }}"
                     class="marg-bottom-xxs"
                   >
                   <div id="show-pwd">{{ 'customer.login_page.show' | t }}</div>
@@ -112,10 +112,11 @@
             
             {%- endif -%}
 
-            <button class="btn btn-full">
+            <button class="btn login-btn">
               {{ 'customer.log_in' | t }}
             </button>
-
+          
+          	<a href="" class="sub-marg-top-xs"></a>
 
           {%- endform -%}
             {%- if shop.checkout.guest_login -%}
