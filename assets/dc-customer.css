@@ -74,6 +74,9 @@ input:focus-visible, select:focus-visible, textarea:focus-visible {
   margin-bottom: 24px;
   cursor: pointer;
 }
+.login-link {
+  margin: 0 auto;
+}
 .create-account {
   display: block;
   width: fit-content;
