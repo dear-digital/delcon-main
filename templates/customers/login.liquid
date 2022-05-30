@@ -56,9 +56,9 @@
           {%- endif -%}
           {%- form 'customer_login', novalidate: 'novalidate' -%}
             {%- if form.errors -%}
-            <h1 class="form__message" tabindex="-1" autofocus>
+            <p class="form__message" tabindex="-1" autofocus>
               {{ 'customer.login_page.adjust_following' | t }}
-            </h1>
+            </p>
             {{ form.errors | default_errors }}
             {%- endif -%}
 
