@@ -218,6 +218,10 @@ main {
   height: 8px;
 }
 
+.errors {
+  color: red;
+}
+
 /* Custom Radio Button */
 [type="radio"]:checked,
 [type="radio"]:not(:checked) {
