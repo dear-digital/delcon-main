@@ -18,3 +18,9 @@
 .articles {
     flex-wrap: wrap;
 }
+
+.article.all {
+    width: 32%;
+    margin: 0 0.5%;
+    margin-bottom: 30px;
+}
