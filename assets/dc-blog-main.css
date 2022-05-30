@@ -53,6 +53,7 @@ a{
 .article-tag-date {
     display: flex;
   margin-bottom: 12px;
+  line-height: 19px;
 }
 
 .article-title {
