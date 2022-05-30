@@ -16,7 +16,7 @@
         	<img src="{{ article.image.src | image_url: width: 388 }}">
         </span>
         <span class="article-info">
-          <span class="article-tag-date">
+          <span class="article-tag-date align-center">
             <span class="article-tag{% for tag in article.tags %}{% if forloop.first != blank %} tag-exists{% endif %}{% endfor %}">{% for tag in article.tags %}{% if forloop.first %}{{ tag }}{% endif %}{% endfor %}</span>
             <span class="article-date">{{ article.created_at | date: "%d %B %Y" }}</span>
           </span>
