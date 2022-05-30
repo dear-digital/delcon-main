@@ -95,3 +95,10 @@ input:focus-visible, select:focus-visible, textarea:focus-visible {
 #forgot-password {
   display: none;
 }
+.register-btn {
+  max-width: none;
+  background-color: rgb(var(--color-base-text)) !important;
+}
+.register-btn:hover {
+  background-color: #E8E6E4 !important;
+}
