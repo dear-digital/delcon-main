@@ -11,7 +11,7 @@
     </div>
     <div class="articles flex-box">
       {% for article in blog.articles %}
-      <div class="article all{% for tag in article.tags %} {{ tag }}{% endfor %}">
+      <div class="article product-card rel all{% for tag in article.tags %} {{ tag }}{% endfor %}">
         <div class="product-card-hover no-t-m">
             <a href="{{ article.url }}" class="btn product-btn">{{ section.settings.meerInfo }}</a>
           </div>
