@@ -30,6 +30,7 @@ a{
     width: 32.33333%;
     margin: 0 0 30px;
   display: block;
+  max-width: none;
 }
 
 .article-image {
