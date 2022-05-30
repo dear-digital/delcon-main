@@ -91,4 +91,9 @@
     padding-bottom: 11.75px;
     margin-bottom: 8px;
 }
+  
+  .blog-filters {
+    flex-wrap: wrap;
+    margin-bottom: 8px;
+}
 }
