@@ -66,3 +66,9 @@ a{
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
 }
+
+.tag-exists{
+	padding-right: 8px;
+  margin-right: 8px;
+  border-right: 1px solid;
+}
