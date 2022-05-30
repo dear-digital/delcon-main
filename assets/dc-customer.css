@@ -56,8 +56,8 @@ input:focus-visible, select:focus-visible, textarea:focus-visible {
   font-size: 16px;
   line-height: 24px;
   position: absolute;
+  top: 12px;
   right: 24px;
-  bottom: 20px;
   cursor: pointer;
   text-transform: capitalize;
   font-weight: 300;
@@ -145,4 +145,8 @@ input:focus-visible, select:focus-visible, textarea:focus-visible {
 }
 .register-btn:hover {
   background-color: #E8E6E4 !important;
+}
+.recover-text {
+  margin: 0;
+  margin-bottom: 24px;
 }
