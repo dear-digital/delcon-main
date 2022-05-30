@@ -43,6 +43,15 @@ input, select, textarea {
 input:focus-visible, select:focus-visible, textarea:focus-visible {
   outline: 1px solid rgb(var(--color-base-accent-1));
 }
+::placeholder {
+  opacity: 0.5;
+}
+:-ms-input-placeholder {
+  opacity: 0.5;
+}
+::-ms-input-placeholder {
+  opacity: 0.5;
+}
 #forgot-password {
   display: none;
 }
