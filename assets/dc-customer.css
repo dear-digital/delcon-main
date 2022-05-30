@@ -21,7 +21,7 @@
 #login {
 
 }
-.login-heading {
+.login-heading, .recover-heading {
   font-size: 32px;
   line-height: 48px;
   font-weight: bold;
