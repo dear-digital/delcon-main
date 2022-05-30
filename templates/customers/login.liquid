@@ -51,9 +51,9 @@
         </div>
         <div id="login">
           {%- if recover_success == true -%}
-            <h3 class="form__message" tabindex="-1" autofocus>
+            <p class="form__message" tabindex="-1" autofocus>
               {{ 'customer.login_page.update_pwd_msg' | t }}
-            </h3>
+            </p>
           {%- endif -%}
           {%- form 'customer_login' -%}
             {%- if form.errors -%}
