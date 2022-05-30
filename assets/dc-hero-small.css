@@ -57,4 +57,10 @@
     width: 100%;
     text-align: center;
 }
+  
+  .hero-small-img {
+    height: calc(100vw - 40px);
+    position: unset;
+    width: 100%;
+}
 }
