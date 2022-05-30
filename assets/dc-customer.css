@@ -40,6 +40,9 @@ input, select, textarea {
   color: rgb(var(--color-base-accent-1));
   border: 1px solid #746B63;
 }
+input:focus-visible, select:focus-visible, textarea:focus-visible {
+  outline: 1px solid rgb(var(--color-base-accent-1));
+}
 #forgot-password {
   display: none;
 }
