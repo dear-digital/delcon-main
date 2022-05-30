@@ -49,3 +49,8 @@
     display: flex;
   margin-bottom: 12px;
 }
+
+.article-title {
+    display: block;
+    margin-bottom: 8px;
+}
