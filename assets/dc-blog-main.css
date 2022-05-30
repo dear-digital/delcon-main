@@ -107,4 +107,9 @@ a{
     flex-wrap: wrap;
     margin-bottom: 8px;
 }
+  
+  .blog-filter.selected {
+    border-bottom: 1px solid;
+    background-color: #B499BF;
+}
 }
