@@ -43,7 +43,7 @@
             {{ 'customer.login_page.submit' | t }}
           </button>
 
-          <a class="login">
+          <a class="login-link">
             {{ 'customer.login_page.cancel' | t }}
           </a>
           {%- endform -%}
@@ -148,7 +148,7 @@
     $('#forgot-password').css("display","block");
   });
   
-  $('.login').click(function() {
+  $('.login-link').click(function() {
     $('#login').css("display","block");
     $('#forgot-password').css("display","none");
   });
