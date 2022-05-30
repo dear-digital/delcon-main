@@ -25,3 +25,16 @@
     margin: 0 0.5%;
     margin-bottom: 30px;
 }
+
+.article-image {
+    width: 100%;
+    height: 291px;
+    margin-bottom: 8px;
+}
+
+.article-image img{
+	display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
