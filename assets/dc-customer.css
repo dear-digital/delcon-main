@@ -73,7 +73,6 @@ input:focus-visible, select:focus-visible, textarea:focus-visible {
   text-decoration: none;
   margin-bottom: 24px;
   cursor: pointer;
-  transition: all .3s ease-out;
 }
 .login-link {
   margin: 0 auto;
