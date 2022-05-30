@@ -360,7 +360,7 @@
       "submit": "Envoyer",
       "login_success": "Nous vous enverrons un e-mail pour réinitialiser votre mot de passe",
       "update_pwd_msg": "Nous vous avons envoyé un e-mail avec un lien pour mettre à jour votre mot de passe.",
-      "adjust_following": "Veuillez ajuster les éléments suivants :",
+      "adjust_following": "Veuillez ajuster les éléments suivants:",
       "show": "Montrer",
       "guest_login": "Connexion invité"
     },
