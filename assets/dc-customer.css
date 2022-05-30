@@ -1,0 +1,19 @@
+.customer.login {
+  margin-top: 91px;
+}
+.customer-image-block {
+  width: 50%;
+  max-width: 598px;
+  height: 590px;
+}
+.customer-image-block img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.customer-text-block {
+  width: 45%;
+  max-width: 488px;
+  margin: 0 0 0 auto;
+}

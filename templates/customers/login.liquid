@@ -1,5 +1,20 @@
 {{ 'dc-customer.css' | asset_url | stylesheet_tag }}
+{{ 'dc-img-video-text.css' | asset_url | stylesheet_tag }}
 
+<div class="customer login">
+  <div class="container">
+    <div class="flex-box justify-between align-center">
+      <div class="customer-image-block rel">
+        <img src="{{ "" | asset_img_url: 'x590' }}" alt="login image" loading="lazy">
+      </div>
+      <div class="customer-text-block rel">
+        <h1 id="recover" tabindex="-1">
+          {{ 'customer.recover_password.title' | t }}
+        </h1>
+      </div>
+    </div>
+  </div>
+</div>
 <div class="customer login">
   <h1 id="recover" tabindex="-1">
     {{ 'customer.recover_password.title' | t }}
