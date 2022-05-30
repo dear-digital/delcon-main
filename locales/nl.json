@@ -351,7 +351,7 @@
       "title": "Inloggen",
       "sign_in": "Inloggen",
       "submit": "Verzenden",
-      "login_success": "We sturen je een e-mail om je wachtwoord opnieuw in te stellen",
+      "recover_title": "Stel je wachtwoord opnieuw in",
       "update_pwd_msg": "We hebben je een e-mail gestuurd met een link om je wachtwoord bij te werken.",
       "adjust_following": "Pas het volgende aan:",
       "show": "Tonen",
