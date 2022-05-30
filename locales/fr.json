@@ -385,7 +385,7 @@
       "last_name": "Nom de famille",
       "email": "E-mail",
       "password": "Mot de passe",
-      "submit": "Créer"
+      "submit": "S'inscrire"
     },
     "reset_password": {
       "title": "Réinitialiser le mot de passe du compte",
