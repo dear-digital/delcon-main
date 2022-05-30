@@ -80,6 +80,7 @@ input:focus-visible, select:focus-visible, textarea:focus-visible {
 }
 .forgot-password:hover, .login-link:hover {
   color: #B499BF;
+  text-decoration: underline;
 }
 .create-account {
   display: block;
@@ -104,8 +105,8 @@ input:focus-visible, select:focus-visible, textarea:focus-visible {
   transition: all .3s ease-out;
 }
 .create-account:hover:after {
-  width: 100%;
-  left: 0;
+  width: 40%;
+  left: 30%;
 }
 .login-btn {
   max-width: none;
