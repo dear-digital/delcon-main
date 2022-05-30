@@ -63,7 +63,7 @@ input:focus-visible, select:focus-visible, textarea:focus-visible {
   font-weight: 300;
   text-decoration: underline;
 }
-.forgot-password {
+.forgot-password, .login {
   display: block;
   width: fit-content;
   width: -moz-fit-content;
@@ -72,6 +72,7 @@ input:focus-visible, select:focus-visible, textarea:focus-visible {
   color: rgb(var(--color-base-accent-1));
   text-decoration: none;
   margin-bottom: 24px;
+  cursor: pointer;
 }
 .create-account {
   display: block;
