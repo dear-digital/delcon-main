@@ -39,11 +39,19 @@
             "filter_title": "HONDEN",
             "filter": "Hond"
           }
+        },
+        "9c0a3f27-bd5a-47b9-afcf-0d9311169a92": {
+          "type": "filter",
+          "settings": {
+            "filter_title": "KATTEN",
+            "filter": "Kat"
+          }
         }
       },
       "block_order": [
         "157c99e4-429c-41e4-8e2b-598cf46a5f6e",
-        "b1f1ccdc-d58e-4073-8740-2a7a312be37a"
+        "b1f1ccdc-d58e-4073-8740-2a7a312be37a",
+        "9c0a3f27-bd5a-47b9-afcf-0d9311169a92"
       ],
       "settings": {
       }
