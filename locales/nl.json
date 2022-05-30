@@ -378,7 +378,8 @@
       "last_name": "Achternaam",
       "email": "E‑mail",
       "password": "Wachtwoord",
-      "submit": "Registreer"
+      "submit": "Registreer",
+      "login_link": "Al een account? Log in"
     },
     "reset_password": {
       "title": "Account-wachtwoord opnieuw instellen",

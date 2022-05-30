@@ -403,7 +403,8 @@
       "last_name": "Last name",
       "email": "Email",
       "password": "Password",
-      "submit": "Register"
+      "submit": "Register",
+      "login_link": "Already have an account? Log in"
     },
     "reset_password": {
       "title": "Reset account password",
