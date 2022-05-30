@@ -7,9 +7,8 @@
         <img src="{{ "Hero_image_2x.png" | asset_img_url: 'x590' }}" alt="login image" loading="lazy">
       </div>
       <div class="customer-text-block rel">
-        <h1>
-          {{ 'customer.register.title' | t }}
-        </h1>
+        <h1 class="login-heading tk-le-monde-livre-classic-byol">{{ 'customer.register.title' | t }}</h1>
+        
         {%- form 'create_customer' -%}
           {%- if form.errors -%}
             <h2 class="form__message" tabindex="-1" autofocus>
