@@ -350,7 +350,13 @@
       "password": "Wachtwoord",
       "title": "Inloggen",
       "sign_in": "Inloggen",
-      "submit": "Verzenden"
+      "submit": "Verzenden",
+      "login_success": "We will send you an email to reset your password",
+      "update_pwd_msg": "We've sent you an email with a link to update your password.",
+      "adjust_following": "Please adjust the following:",
+      "show": "show",
+      "lost_pwd": "Lost your password?",
+      "guest_login": "Guest Login"
     },
     "orders": {
       "title": "Besteloverzicht",
