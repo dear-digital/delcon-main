@@ -129,6 +129,10 @@ body.no-scroll {
   overflow: hidden;
 }
 
+:focus-visible {
+  outline: none;
+}
+
 main {
   margin-top: 48px;
 }
