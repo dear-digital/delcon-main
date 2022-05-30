@@ -121,4 +121,8 @@ a{
   .article-image {
     height: 125px;
 }
+  
+  .article-title {
+    margin-bottom: 0;
+}
 }
