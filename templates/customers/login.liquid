@@ -12,10 +12,10 @@
           {%- form 'recover_customer_password' -%}
           {% assign recover_success = form.posted_successfully? %}
 
-          <h1 class="recover-heading tk-le-monde-livre-classic-byol">{{ 'customer.login_page.title' | t }}</h1>
+          <h1 class="recover-heading tk-le-monde-livre-classic-byol">{{ 'customer.login_page.recover_title' | t }}</h1>
 
           <div class="field">
-            <label for="RecoverEmail">
+            <label for="RecoverEmail" class="no-disp">
               {{ 'customer.login_page.email' | t }}
             </label>
             <input type="email"
@@ -39,11 +39,11 @@
           </p>
           {%- endif -%}
 
-          <button class="btn btn-full">
+          <button class="btn login-btn">
             {{ 'customer.login_page.submit' | t }}
           </button>
 
-          <a href="#login" class="small-text underline">
+          <a class="login">
             {{ 'customer.login_page.cancel' | t }}
           </a>
           {%- endform -%}
@@ -104,7 +104,7 @@
               </div>
             </div>
 
-            <a href="#forgot-password" class="forgot-password">
+            <a class="forgot-password">
               {{ 'customer.login_page.forgot_password' | t }}
             </a>
 
@@ -146,6 +146,11 @@
   $('.forgot-password').click(function() {
     $('#login').css("display","none");
     $('#forgot-password').css("display","block");
+  });
+  
+  $('.login').click(function() {
+    $('#login').css("display","block");
+    $('#forgot-password').css("display","none");
   });
 
 </script>
