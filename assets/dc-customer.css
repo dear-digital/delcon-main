@@ -224,6 +224,7 @@ input:focus-visible, select:focus-visible, textarea:focus-visible {
   align-items: center;
   position: relative;
   width: 100%;
+  margin-bottom: 12px;
 }
 .ordered-product-image {
   display: block;
@@ -252,10 +253,14 @@ input:focus-visible, select:focus-visible, textarea:focus-visible {
   height: 28px;
   justify-content: center;
   align-items: center;
-  font-size:16px;
+  font-size: 16px;
   line-height: 24px;
   font-weight: bold;
   background-color: rgb(var(--color-base-background-1));
   color: rgb(var(--color-base-accent-1));
   border: 1px solid rgb(var(--color-base-accent-1));
+  margin-right: 16px;
+}
+.ordered-info .product-color {
+  margin-bottom: 4px;
 }
