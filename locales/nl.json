@@ -304,6 +304,7 @@
       "title": "Account",
       "welcome_title": "Welkom terug {{ name }}",
       "details": "Accountgegevens",
+      "pets": "Jouw huisdieren",
       "view_addresses": "Adressen bekijken",
       "return": "Terug naar Accountgegevens"
     },
