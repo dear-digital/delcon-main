@@ -13,12 +13,14 @@
       <div class="account-details">
         {% paginate customer.orders by 20 %}
           {%- if customer.orders.size > 0 -%}
+        	{%- for order in customer.orders -%}
             <div class="order-wrapper">
               <h2 class="accordion">{{ order.name }} - {{ order.created_at | time_tag: format: 'date' }} - {{ order.total_price | money }}<span class="symbol">{% render "accordion-plus" %}</span></h2>
               <div class="panel">
                 <p>Order Details</p>
               </div>
             </div>
+        	{% endfor %}
           {%- else -%}
             <p>{{ 'customer.orders.none' | t }}</p>
           {%- endif -%}
