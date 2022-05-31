@@ -1,6 +1,6 @@
 {{ 'dc-article-hero.css' | asset_url | stylesheet_tag }}
 
-<div class="article-hero"></div>
+<div class="article-hero" style="background-image:url({{ section.settings.article_hero | img_url: '2000x' }})"></div>
 
 {% schema %}
   {
