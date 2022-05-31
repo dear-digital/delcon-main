@@ -1,3 +1,7 @@
-.article-hero{
-	height: 60vh;
+.article-hero {
+    height: 65vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: 72px;
+    background-size: cover;
 }
