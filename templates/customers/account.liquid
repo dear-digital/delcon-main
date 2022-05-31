@@ -15,7 +15,7 @@
           {%- if customer.orders.size > 0 -%}
         	{%- for order in customer.orders -%}
             <div class="order-wrapper">
-              <h2 class="accordion">{{ order.name }} - {{ order.created_at | time_tag: format: 'date' }} - {{ order.total_price | money }}<span class="symbol">{% render "accordion-plus" %}</span></h2>
+              <h2 class="accordion">{{ 'customer.order.title' | t: name: order.name }} - {{ 'customer.order.date_html' | t: date: order.created_at | date: format: 'basic'  }} - {{ order.total_price | money }}<span class="symbol">{% render "accordion-plus" %}</span></h2>
               <div class="panel">
                 <p>Order Details</p>
               </div>
