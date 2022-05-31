@@ -293,7 +293,7 @@ input:focus-visible, select:focus-visible, textarea:focus-visible {
   margin: 0;
   margin-bottom: 8px;
 }
-.addresses {
+.addresses, #AddAddress {
   display: none;
   width: 100%;
   height: 590px;
@@ -376,7 +376,4 @@ input:focus-visible, select:focus-visible, textarea:focus-visible {
 }
 .address-btn:hover {
   background-color: #E8E6E4;
-}
-#AddAddress {
-  display: none;
 }
