@@ -49,6 +49,10 @@
                           <input type="text" id="AddressCompany_{{ form.id }}" name="address[company]" value="{{ form.company }}" autocomplete="organization" placeholder="{{ 'customer.addresses.company' | t }}">
                           <label for="AddressCompany_{{ form.id }}" class="no-disp">{{ 'customer.addresses.company' | t }}</label>
                         </div>
+                        <div class="field column">
+                          <input type="text" id="AddressVATnumber_{{ form.id }}" name="customer[note][VAT Registration Number]" value="{{ customer.notes.VAT_Registration_Number }}" autocomplete="off" placeholder="{{ 'BTW Number' | t }}">
+                          <label for="AddressVATnumber_{{ form.id }}" class="no-disp">{{ 'BTW Number' | t }}</label>
+                        </div>
                       </div>
                       <div class="row">
                         <div class="field column">
@@ -88,7 +92,7 @@
                           {{ 'customer.addresses.set_default' | t }}
                         </label>
                       </div>
-                      <div class="flex-box justify-between align-center">
+                      <div class="flex-box justify-between align-center" style="margin-top: 8px;">
                         <span class="cancel-edit">{{ 'customer.addresses.cancel' | t }}</span>
                         <button type="submit" class="btn address-btn">{{ 'customer.addresses.update' | t }}</button>
                       </div>
