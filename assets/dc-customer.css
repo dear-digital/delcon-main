@@ -198,3 +198,6 @@ input:focus-visible, select:focus-visible, textarea:focus-visible {
 .order-wrapper .accordion {
   padding: 24px 24px 24px 0;
 }
+.order-wrapper .accordion .symbol {
+  top: 30px;
+}
