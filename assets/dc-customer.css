@@ -297,6 +297,7 @@ input:focus-visible, select:focus-visible, textarea:focus-visible {
 }
 .edit-address {
   display: block;
+  position: relative;
   text-transform: capitalize;
   font-size: 16px;
   line-height: 24px;
@@ -316,6 +317,6 @@ input:focus-visible, select:focus-visible, textarea:focus-visible {
   transition: all .3s ease-out;
 }
 .edit-address:hover:after {
-  width: 40%;
-  left: 30%;
+  width: 100%;
+  left: 0%;
 }
