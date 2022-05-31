@@ -59,7 +59,7 @@
                   </div>
                   <div class="checkout-subtotal justify-between">
                     <div class="subtotal-title">{{ 'customer.order.discount' | t }}</div>
-                    <div class="subtotal">
+                    <div class="subtotal">{{ order.total_discounts }}
                       {% if order.total_discounts > 0 %}
                         {{ order.total_discounts | money }}
                       {% else %}-{% endif %}
