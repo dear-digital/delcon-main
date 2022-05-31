@@ -319,6 +319,7 @@
     },
     "addresses": {
       "title": "Addresses",
+      "login_details": "Login Details",
       "default": "Default",
       "add_new": "Add a new address",
       "edit_address": "Edit address",
