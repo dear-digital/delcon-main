@@ -15,14 +15,17 @@
         {%- paginate customer.addresses by 5 -%}
           <div class="">
 
-            <div class="account-address-wrapper">
+            <div class="account-address-wrapper flex-box">
               {% for address in customer.addresses %}
               <div class="customer-address">
-                <p class="address-heading">{{ address.id }}</p>
+                <p class="address-heading">{% if address == customer.default_address %}{{ 'customer.addresses.default' | t }}{% else %}{{ 'customer.addresses.title' | t }}{% endif %}</p>
                 {{ address | format_address }}
               </div>
-              <span class="edit-address" id="EditFormButton_{{ address.id }}">{{ 'customer.addresses.edit' | t }}</span>
-              <span class="delete-address" id="DeleteFormButton_{{ address.id }}">{{ 'customer.addresses.delete' | t }}</span>
+              
+              <div class="">
+                <span class="edit-address" id="EditFormButton_{{ address.id }}">{{ 'customer.addresses.edit' | t }}</span>
+                <span class="delete-address" id="DeleteFormButton_{{ address.id }}">{{ 'customer.addresses.delete' | t }}</span>
+              </div>
               
               <div class="addresses" id="EditAddress_{{ address.id }}">
                 <h2>{{ 'customer.addresses.edit_address' | t }}</h2>
