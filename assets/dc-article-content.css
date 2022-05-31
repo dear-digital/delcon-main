@@ -15,3 +15,8 @@ a{
     letter-spacing: 0;
     transition: .4s ease;
 }
+
+.back-btn:hover .back-txt{
+	color: #B499BF;
+  text-decoration: underline;
+}
