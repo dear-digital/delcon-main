@@ -147,6 +147,7 @@ input:focus-visible, select:focus-visible, textarea:focus-visible {
   background-color: #E8E6E4 !important;
 }
 .recover-text {
+  text-align: center;
   margin: 0;
   margin-bottom: 24px;
 }
