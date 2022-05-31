@@ -60,7 +60,7 @@
                   <div class="checkout-subtotal justify-between">
                     <div class="subtotal-title">{{ 'customer.order.discount' | t }}</div>
                     <div class="subtotal">
-                      {% if order.total_discounts %}
+                      {% if order.total_discounts > 0 %}
                         {{ order.total_discounts | money }}
                       {% else %}-{% endif %}
                     </div>
@@ -68,7 +68,7 @@
                   <div class="checkout-subtotal justify-between">
                     <div class="subtotal-title">{{ 'customer.order.shipping' | t }}</div>
                     <div class="subtotal">
-                      {% if order.shipping_price %}
+                      {% if order.shipping_price > 0 %}
                       	{{ order.shipping_price | money }}
                       {% else %}
                       	{{ 'customer.order.shipping_free' | t }}
@@ -78,7 +78,7 @@
                   <div class="checkout-subtotal justify-between">
                     <div class="subtotal-title">{{ 'customer.order.tax' | t }}</div>
                     <div class="subtotal">
-                      {% if order.tax_price %}
+                      {% if order.tax_price > 0 %}
                       	{{ order.tax_price | money }}
                       {% else %}
                       	{{ 'customer.order.shipping_free' | t }}
