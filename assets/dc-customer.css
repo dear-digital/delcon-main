@@ -279,6 +279,7 @@ input:focus-visible, select:focus-visible, textarea:focus-visible {
   display: block;
   position: relative;
   width: 349px;
+  text-align: left;
   margin-bottom: 24px;
 }
 .customer-address p {
