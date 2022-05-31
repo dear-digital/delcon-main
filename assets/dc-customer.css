@@ -264,3 +264,6 @@ input:focus-visible, select:focus-visible, textarea:focus-visible {
 .ordered-info .product-color {
   margin-bottom: 4px;
 }
+.order-subtotal-wrapper {
+  margin-top: 24px;
+}
