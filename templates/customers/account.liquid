@@ -36,6 +36,17 @@
                         <img src="{{ line_item.variant.image.src | default: line_item.product.featured_image | img_url: '120x' }}" alt="{{ line_item.title }}">
                       </a>
                     </div>
+                    <div class="ordered-product-details">
+                      <div class="ordered-info">
+                        <span class="ordered-qty-box">{{ line_item.quantity }}</span>
+                        <div class="product-name">{{ line_item.title }}</div>
+                        <div class="product-color">{{ line_item.product.metafields.my_fields.extra_info }} - inhoud: {{ line_item.variant.title }}</div>
+                        <div class="product-selling-price">{{ line_item.final_price | money }}</div>
+                      </div>
+                      <div class="ordered-product-price">
+                        <div class="ordered-price">{{ line_item.final_line_price | money }}</div>
+                      </div>
+                    </div>
                   </div>
                   {% endfor %}
                 </div>
