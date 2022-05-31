@@ -3,3 +3,8 @@
     transform: rotate(180deg);
     margin-right: 8px;
 }
+
+a{
+	color: inherit;
+  text-decoration: none;
+}
