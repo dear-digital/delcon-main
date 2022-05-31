@@ -55,6 +55,7 @@
     }
   },
   "newsletter": {
+    "title": "Nieuwsbrief",
     "label": "E‑mail",
     "success": "Bedankt voor het abonneren",
     "button_label": "Abonneren"
