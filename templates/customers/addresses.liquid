@@ -11,15 +11,13 @@
         <a href="/pages/my-pets" class="account-option">{{ 'customer.account.pets' | t }} <span class="arrow-right">{% include "arrow-right" %}</span></a>
       </div>
       <div class="account-details">
-        <div class="order-address-wrapper">
+        <div class="account-address-wrapper">
+          {% for address in customer.addresses %}
           <div class="order-billing-address">
-            <p class="address-title">{{ 'customer.order.billing_address' | t }}</p>
-            {{ customer.billing_address | format_address }}
+            <p class="address-title">{{ address.type }}</p>
+            {{ address | format_address }}
           </div>
-          <div class="order-shipping-address">
-            <p class="address-title">{{ 'customer.order.shipping_address' | t }}</p>
-            {{ customer.shipping_address | format_address }}
-          </div>
+          {% endfor %}
         </div>
       </div>
     </div>
