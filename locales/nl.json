@@ -302,6 +302,7 @@
   "customer": {
     "account": {
       "title": "Account",
+      "welcome_title": "Welkom terug {{ name }}",
       "details": "Accountgegevens",
       "view_addresses": "Adressen bekijken",
       "return": "Terug naar Accountgegevens"
