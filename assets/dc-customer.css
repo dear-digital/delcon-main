@@ -178,7 +178,7 @@ input:focus-visible, select:focus-visible, textarea:focus-visible {
   color: rgb(var(--color-base-accent-1));
 }
 .account-option::first-child {
-  border-top: 1px solid rgb(var(--color-base-accent-1));
+  border-bottom: 1px solid rgb(var(--color-base-accent-1));
 }
 .account-option.selected {
   background-color: rgb(var(--color-base-text));
