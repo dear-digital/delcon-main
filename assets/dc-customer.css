@@ -317,6 +317,8 @@ input:focus-visible, select:focus-visible, textarea:focus-visible {
   font-weight:  bold;
   margin-bottom: 8px;
   cursor: pointer;
+  text-decoration: none;
+  color: rgb(var(--color-base-accent-1));
 }
 .edit-address:hover, .delete-address:hover, .cancel-edit:hover, .forgot-pass-link:hover {
   color: #B499BF;
