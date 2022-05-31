@@ -306,7 +306,7 @@ input:focus-visible, select:focus-visible, textarea:focus-visible {
   margin: 0;
   margin-bottom: 40px;
 }
-.edit-address, .delete-address, .cancel-edit {
+.edit-address, .delete-address, .cancel-edit, .forgot-pass-link {
   display: block;
   width: fit-content;
   width: -moz-fit-content;
@@ -318,10 +318,10 @@ input:focus-visible, select:focus-visible, textarea:focus-visible {
   margin-bottom: 8px;
   cursor: pointer;
 }
-.edit-address:hover, .delete-address:hover, .cancel-edit:hover {
+.edit-address:hover, .delete-address:hover, .cancel-edit:hover, .forgot-pass-link:hover {
   color: #B499BF;
 }
-.edit-address:after, .delete-address:after, .cancel-edit:after {
+.edit-address:after, .delete-address:after, .cancel-edit:after, .forgot-pass-link:after {
   content: "";
   position: absolute;
   left: 50%;
@@ -331,7 +331,7 @@ input:focus-visible, select:focus-visible, textarea:focus-visible {
   background: #B499BF;
   transition: all .3s ease-out;
 }
-.edit-address:hover:after, .delete-address:hover:after, .cancel-edit:hover:after {
+.edit-address:hover:after, .delete-address:hover:after, .cancel-edit:hover:after, .forgot-pass-link:hover:after {
   width: 100%;
   left: 0%;
 }
