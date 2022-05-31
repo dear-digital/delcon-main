@@ -278,7 +278,7 @@ input:focus-visible, select:focus-visible, textarea:focus-visible {
 .customer-address {
   display: block;
   position: relative;
-  width: 349px;
+  width: 287px;
   text-align: left;
   margin-bottom: 24px;
 }
@@ -293,10 +293,10 @@ input:focus-visible, select:focus-visible, textarea:focus-visible {
   margin: 0;
   margin-bottom: 8px;
 }
-/* .addresses {
+.addresses {
   display: none;
-} */
-.edit-address {
+}
+.edit-address, .delete-address {
   display: block;
   position: relative;
   text-transform: capitalize;
@@ -304,10 +304,10 @@ input:focus-visible, select:focus-visible, textarea:focus-visible {
   line-height: 24px;
   cursor: pointer;
 }
-.edit-address:hover {
+.edit-address:hover, .delete-address:hover {
   color: #B499BF;
 }
-.edit-address:after {
+.edit-address:after, .delete-address:after {
   content: "";
   position: absolute;
   left: 50%;
@@ -317,7 +317,7 @@ input:focus-visible, select:focus-visible, textarea:focus-visible {
   background: #B499BF;
   transition: all .3s ease-out;
 }
-.edit-address:hover:after {
+.edit-address:hover:after, .delete-address:hover:after {
   width: 100%;
   left: 0%;
 }

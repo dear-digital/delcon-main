@@ -1,5 +1,4 @@
 {{ 'dc-customer.css' | asset_url | stylesheet_tag }}
-{{ 'customer.css' | asset_url | stylesheet_tag }}
 
 <script src="{{ 'customer.js' | asset_url }}" defer></script>
 
@@ -22,6 +21,9 @@
                 <p class="address-heading">{{ address.id }}</p>
                 {{ address | format_address }}
               </div>
+              <span class="edit-address" id="EditFormButton_{{ address.id }}">{{ 'customer.addresses.edit' | t }}</span>
+              <span class="delete-address" id="DeleteFormButton_{{ address.id }}">{{ 'customer.addresses.delete' | t }}</span>
+              
               <div class="addresses" id="EditAddress_{{ address.id }}">
                 <h2>{{ 'customer.addresses.edit_address' | t }}</h2>
                 {%- form 'customer_address', address -%}
