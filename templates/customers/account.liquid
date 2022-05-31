@@ -52,6 +52,46 @@
                   </div>
                   {% endfor %}
                 </div>
+                <div class="order-subtotal-wrapper">
+                  <div class="checkout-subtotal justify-between">
+                    <div class="subtotal-title">{{ 'customer.order.subtotal' | t }}</div>
+                    <div class="subtotal">{{ order.line_items_subtotal_price | money }}</div>
+                  </div>
+                  <div class="checkout-subtotal justify-between">
+                    <div class="subtotal-title">{{ 'customer.order.discount' | t }}</div>
+                    <div class="subtotal">
+                      {% if order.total_discounts %}
+                        {{ order.total_discounts | money }}
+                      {% else %}-{% endif %}
+                    </div>
+                  </div>
+                  <div class="checkout-subtotal justify-between">
+                    <div class="subtotal-title">{{ 'customer.order.shipping' | t }}</div>
+                    <div class="subtotal">
+                      {% if order.shipping_price %}
+                      	{{ order.shipping_price | money }}
+                      {% else %}
+                      	{{ 'customer.order.shipping_free' | t }}
+                      {% endif %}
+                    </div>
+                  </div>
+                  <div class="checkout-subtotal justify-between">
+                    <div class="subtotal-title">{{ 'customer.order.tax' | t }}</div>
+                    <div class="subtotal">
+                      {% if order.tax_price %}
+                      	{{ order.tax_price | money }}
+                      {% else %}
+                      	{{ 'customer.order.shipping_free' | t }}
+                      {% endif %}
+                    </div>
+                  </div>
+                  <div class="checkout-subtotal justify-between">
+                    <div class="subtotal-title">{{ 'customer.order.total' | t }}</div>
+                    <div class="subtotal">
+                      {{ order.total_price | money }}
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
         	{% endfor %}
