@@ -157,12 +157,12 @@
     $("#EditAddress_"+addressForm).parent().parent().css("pointer-events","auto");
   });
   
-  $(".close-address, cancel-edit").click(function() {
+  $(".close-address, .cancel-edit").click(function() {
     var addressForm = $(this).data('form');
-    console.log($("#EditAddress_"+addressForm));
-    $("#EditAddress_"+addressForm).css("display","none");
-    $("#EditAddress_"+addressForm).parent().parent().css("opacity","0");
-    $("#EditAddress_"+addressForm).parent().parent().css("pointer-events","none");
+    console.log($("#"+addressForm));
+    $("#"+addressForm).css("display","none");
+    $("#"+addressForm).parent().parent().css("opacity","0");
+    $("#"+addressForm).parent().parent().css("pointer-events","none");
   });
   
   $(".delete-address").click(function() {
