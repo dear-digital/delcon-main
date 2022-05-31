@@ -378,6 +378,10 @@ input:focus-visible, select:focus-visible, textarea:focus-visible {
   background-color: #E8E6E4;
 }
 
+.email-password-wrapper, .newsletter-wrapper {
+  margin-top: 24px;
+}
+
 .customer .pagination {
   display: flex;
   justify-content: center;
