@@ -7,6 +7,9 @@
         <span class="left-chev">{% render 'icon-left-chevron' %}</span>
         <span class="back-txt">{{ section.settings.back }}</span>
       </a>
+      <div class="article-content" style="background-color:{{ section.settings.background_color }}">
+      	
+      </div>
     </div>
   </div>
   
@@ -21,6 +24,11 @@
 			"id": "back",
 			"label": "Back Text",
 			"default": "terug naar blog"
+		},
+		{
+			"type": "color",
+			"id": "background_color",
+			"label": "Background Color"
 		}
 	],
 	"presets": [
