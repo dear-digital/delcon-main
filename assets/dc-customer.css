@@ -365,8 +365,8 @@ input:focus-visible, select:focus-visible, textarea:focus-visible {
   align-items: center;
 }
 .default-address input, .newsletter-wrapper input {
-  width: fit-content;
-  width: -moz-fit-content;
+  width: 16px;
+  height: 16px;
   margin: 0 8px 0 0;
 }
 .default-address label, .newsletter-wrapper label {
