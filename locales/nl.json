@@ -58,6 +58,7 @@
     "title": "Nieuwsbrief",
     "label": "E‑mail",
     "success": "Bedankt voor het abonneren",
+    "subscribe_text": "Ik ontvang graag de delcon nieuwsbrief",
     "button_label": "Abonneren"
   },
   "accessibility": {

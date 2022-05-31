@@ -58,6 +58,7 @@
     "title": "Bulletin",
     "label": "E-mail",
     "success": "Merci de votre inscription",
+    "subscribe_text": "Ik ontvang graag de delcon nieuwsbrief",
     "button_label": "S'inscrire"
   },
   "accessibility": {
