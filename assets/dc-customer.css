@@ -300,6 +300,12 @@ input:focus-visible, select:focus-visible, textarea:focus-visible {
   padding: 64px 101px;
   background-color: #FBFBFB;
 }
+.addresses h2 {
+  font-size; 32px;
+  line-height: 48px;
+  margin: 0;
+  margin-bottom: 40px;
+}
 .edit-address, .delete-address, .cancel-edit {
   display: block;
   width: fit-content;
