@@ -43,10 +43,17 @@
       ],
       "settings": {
       }
+    },
+    "1653974653417e16cf": {
+      "type": "dc-article-content",
+      "settings": {
+        "back": "terug naar blog"
+      }
     }
   },
   "order": [
     "1653973054cb30b22b",
-    "main"
+    "main",
+    "1653974653417e16cf"
   ]
 }
