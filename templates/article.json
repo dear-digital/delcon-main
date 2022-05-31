@@ -47,7 +47,8 @@
     "1653974653417e16cf": {
       "type": "dc-article-content",
       "settings": {
-        "back": "terug naar blog"
+        "back": "terug naar blog",
+        "background_color": "#f2f1f0"
       }
     }
   },
