@@ -195,3 +195,6 @@ input:focus-visible, select:focus-visible, textarea:focus-visible {
 .order-wrapper:first-child {
   border-top: 1px solid rgba(var(--color-base-accent-1),1);
 }
+.order-wrapper .accordion {
+  padding: 24px 24px 0;
+}
