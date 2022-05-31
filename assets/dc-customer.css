@@ -280,7 +280,7 @@ input:focus-visible, select:focus-visible, textarea:focus-visible {
   position: relative;
   width: 287px;
   text-align: left;
-  margin-bottom: 24px;
+  margin:  0 16px 24px 0;
 }
 .customer-address p {
   margin: 0;
@@ -298,6 +298,8 @@ input:focus-visible, select:focus-visible, textarea:focus-visible {
 }
 .edit-address, .delete-address {
   display: block;
+  width: fit-content;
+  width: -moz-fit-content;
   position: relative;
   text-transform: capitalize;
   font-size: 16px;
