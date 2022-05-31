@@ -20,3 +20,7 @@ a{
 	color: #B499BF;
   text-decoration: underline;
 }
+
+.back-btn:hover .left-chev #Arrow{
+	stroke: #B499BF;
+}
