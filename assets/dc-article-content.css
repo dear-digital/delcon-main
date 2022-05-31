@@ -4,6 +4,10 @@
     margin-right: 8px;
 }
 
+.left-chev #Arrow{
+	transition: .4s ease;
+}
+
 a{
 	color: inherit;
   text-decoration: none;
