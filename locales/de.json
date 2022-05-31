@@ -304,6 +304,7 @@
       "title": "Konto",
       "welcome_title": "Willkommen zurück {{ name }}",
       "details": "Kontodetails",
+      "pets": "deine Haustiere",
       "view_addresses": "Adressen anzeigen",
       "return": "Zurück zu Kontodetails"
     },
