@@ -268,3 +268,15 @@ input:focus-visible, select:focus-visible, textarea:focus-visible {
 .order-subtotal-wrapper {
   margin-top: 24px;
 }
+
+/* Address Page CSS */
+.address-details {
+  display: block;
+  width: 70%;
+  max-width: 792px;
+}
+.customer-address {
+  display: block;
+  position: relative;
+  width: 349px;
+}
