@@ -1,7 +1,14 @@
 {
   "sections": {
+    "1653973054cb30b22b": {
+      "type": "dc-article-hero",
+      "settings": {
+        "article_hero": "shopify:\/\/shop_images\/Image_2x_08842411-8838-4190-9f06-a6f9ef370da4.png"
+      }
+    },
     "main": {
       "type": "main-article",
+      "disabled": true,
       "blocks": {
         "featured_image": {
           "type": "featured_image",
@@ -23,7 +30,9 @@
           }
         },
         "content": {
-          "type": "content"
+          "type": "content",
+          "settings": {
+          }
         }
       },
       "block_order": [
@@ -31,10 +40,13 @@
         "title",
         "share",
         "content"
-      ]
+      ],
+      "settings": {
+      }
     }
   },
   "order": [
+    "1653973054cb30b22b",
     "main"
   ]
 }
