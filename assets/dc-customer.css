@@ -377,3 +377,27 @@ input:focus-visible, select:focus-visible, textarea:focus-visible {
 .address-btn:hover {
   background-color: #E8E6E4;
 }
+
+.customer .pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.customer .pagination svg {
+  display: block;
+  width: 16px;
+  height: 16px;
+  transform: rotate(-90deg);
+}
+.customer .pagination ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+.customer .pagination ul li {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0 6px;
+}
