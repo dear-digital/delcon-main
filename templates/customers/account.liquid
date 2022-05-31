@@ -71,3 +71,28 @@
     </div>
   </div>
 </div>
+
+<script>
+
+  $(document).ready(function() {
+    $(".accordion").click(function() {
+      var acc = $(this).hasClass('faq-active')
+      $(".accordion").each(function() {
+        $(this).removeClass("faq-active");
+        var panel = $(this).next()[0];
+        panel.style.maxHeight = null;
+      });
+      if(acc) {
+        $(this).removeClass("faq-active")
+        var panel = $(this).next()[0];
+        panel.style.maxHeight = null;
+      }
+      else {
+        $(this).addClass("faq-active")
+        var panel = $(this).next()[0];
+        panel.style.maxHeight = panel.scrollHeight + "px";
+      } 
+    });
+  });
+
+</script>
