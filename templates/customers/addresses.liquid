@@ -18,12 +18,38 @@
 
             <ul role="list">
               {%- for address in customer.addresses -%}
-              <li data-address>
+              <li class="customer-address" data-address>
                 {%- if address == customer.default_address -%}
-                <h2>{{ 'customer.addresses.default' | t }}</h2>
+                <h2 class="address-heading">{{ 'customer.addresses.default' | t }} 
+                  <button class="edit-address" type="button"
+                        id="EditFormButton_{{ address.id }}"
+                        aria-label="{{ 'customer.addresses.edit_address' | t }} {{ forloop.index }}"
+                        aria-controls="EditAddress_{{ address.id }}"
+                        aria-expanded="false"
+                        data-address-id="{{ address.id }}">{{ 'customer.addresses.edit' | t }}</button>
+                  <button class="edit-address" type="button"
+                        type="button"
+                        aria-label="{{ 'customer.addresses.delete' | t }} {{ forloop.index }}"
+                        data-target="{{ address.url }}"
+                        data-confirm-message="{{ 'customer.addresses.delete_confirm' | t }}">{{ 'customer.addresses.delete' | t }}</button>
+                </h2>
+                {% else %}
+                <h2 class="address-heading">{{ 'customer.addresses.title' | t }} 
+                  <button class="edit-address" type="button"
+                        id="EditFormButton_{{ address.id }}"
+                        aria-label="{{ 'customer.addresses.edit_address' | t }} {{ forloop.index }}"
+                        aria-controls="EditAddress_{{ address.id }}"
+                        aria-expanded="false"
+                        data-address-id="{{ address.id }}">{{ 'customer.addresses.edit' | t }}</button>
+                  <button class="edit-address" type="button"
+                        type="button"
+                        aria-label="{{ 'customer.addresses.delete' | t }} {{ forloop.index }}"
+                        data-target="{{ address.url }}"
+                        data-confirm-message="{{ 'customer.addresses.delete_confirm' | t }}">{{ 'customer.addresses.delete' | t }}</button>
+                </h2>
                 {%- endif -%}
                 {{ address | format_address }}
-                <button
+                <button class="no-disp"
                         type="button"
                         id="EditFormButton_{{ address.id }}"
                         aria-label="{{ 'customer.addresses.edit_address' | t }} {{ forloop.index }}"
@@ -33,7 +59,7 @@
                         >
                   {{ 'customer.addresses.edit' | t }}
                 </button>
-                <button
+                <button class="no-disp"
                         type="button"
                         aria-label="{{ 'customer.addresses.delete' | t }} {{ forloop.index }}"
                         data-target="{{ address.url }}"
