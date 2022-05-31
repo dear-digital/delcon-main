@@ -292,9 +292,9 @@ input:focus-visible, select:focus-visible, textarea:focus-visible {
   margin: 0;
   margin-bottom: 8px;
 }
-.addresses {
+/* .addresses {
   display: none;
-}
+} */
 .edit-address {
   display: block;
   position: relative;
