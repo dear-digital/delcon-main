@@ -188,3 +188,10 @@ input:focus-visible, select:focus-visible, textarea:focus-visible {
   width: 70%;
   max-width: 792px;
 }
+.order-wrapper {
+  border-bottom: 1px solid rgba(var(--color-base-accent-1),1);
+  position: relative;
+}
+.order-wrapper:first-child {
+  border-top: 1px solid rgba(var(--color-base-accent-1),1);
+}
