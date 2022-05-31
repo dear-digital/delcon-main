@@ -185,6 +185,6 @@ input:focus-visible, select:focus-visible, textarea:focus-visible {
 }
 .account-details {
   display: block;
-  width: 65%;
+  width: 70%;
   max-width: 792px;
 }
