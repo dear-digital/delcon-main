@@ -1,7 +1,22 @@
+{{ 'dc-article-hero.css' | asset_url | stylesheet_tag }}
+
+<div class="article-hero"></div>
+
 {% schema %}
   {
-    "name": "Section name",
-    "settings": []
+    "name": "DC Article Hero",
+    "settings": [
+		{
+			"type": "image_picker",
+			"id": "article_hero",
+			"label": "Article Hero"
+		}
+	],
+	"presets": [
+		{
+			"name": "DC Article Hero"
+		}
+	]
   }
 {% endschema %}
 
