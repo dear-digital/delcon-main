@@ -380,7 +380,7 @@ input:focus-visible, select:focus-visible, textarea:focus-visible {
   background-color: #E8E6E4;
 }
 
-.email-password-wrapper, .newsletter-wrapper {
+.email-password-wrapper {
   margin-top: 24px;
 }
 
