@@ -82,15 +82,15 @@
                           <label for="AddressPhone_{{ form.id }}" class="no-disp">{{ 'customer.addresses.phone' | t }}</label>
                         </div>
                       </div>
-                      <div>
+                      <div class="default-address">
                         {{ form.set_as_default_checkbox }}
                         <label for="address_default_address_{{ form.id }}">
                           {{ 'customer.addresses.set_default' | t }}
                         </label>
                       </div>
-                      <div>
-                        <button>{{ 'customer.addresses.update' | t }}</button>
-                        <button type="reset">{{ 'customer.addresses.cancel' | t }}</button>
+                      <div class="flex-box justify-between align-center">
+                        <span class="cancel-edit">{{ 'customer.addresses.cancel' | t }}</span>
+                        <button type="submit" class="btn address-btn">{{ 'customer.addresses.update' | t }}</button>
                       </div>
                       {%- endform -%}
                     </div>

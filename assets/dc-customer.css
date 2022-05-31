@@ -300,7 +300,7 @@ input:focus-visible, select:focus-visible, textarea:focus-visible {
   padding: 64px 101px;
   background-color: #FBFBFB;
 }
-.edit-address, .delete-address {
+.edit-address, .delete-address, .cancel-edit {
   display: block;
   width: fit-content;
   width: -moz-fit-content;
@@ -312,10 +312,10 @@ input:focus-visible, select:focus-visible, textarea:focus-visible {
   margin-bottom: 8px;
   cursor: pointer;
 }
-.edit-address:hover, .delete-address:hover {
+.edit-address:hover, .delete-address:hover, .cancel-edit:hover {
   color: #B499BF;
 }
-.edit-address:after, .delete-address:after {
+.edit-address:after, .delete-address:after, .cancel-edit:after {
   content: "";
   position: absolute;
   left: 50%;
@@ -325,7 +325,7 @@ input:focus-visible, select:focus-visible, textarea:focus-visible {
   background: #B499BF;
   transition: all .3s ease-out;
 }
-.edit-address:hover:after, .delete-address:hover:after {
+.edit-address:hover:after, .delete-address:hover:after, .cancel-edit:hover:after {
   width: 100%;
   left: 0%;
 }
@@ -336,6 +336,7 @@ input:focus-visible, select:focus-visible, textarea:focus-visible {
   right: 24px;
   width: 24px;
   height: 24px;
+  cursor: pointer;
 }
 .row {
   display: flex;
@@ -346,4 +347,23 @@ input:focus-visible, select:focus-visible, textarea:focus-visible {
 .column {
   display: flex;
   width: calc(50% - 8px);
+}
+.default-address {
+  display: flex;
+  align-items: center;
+}
+.default-address input {
+  width: fit-content;
+  width: -moz-fit-content;
+  margin: 0 8px 0 0;
+}
+.default-address label {
+  font-size: 14px;
+  line-height: 22px;
+}
+.address-btn {
+  background-color: #F2F1F0;
+}
+.address-btn:hover {
+  background-color: #E8E6E4;
 }
