@@ -239,6 +239,23 @@ main {
   margin: 0;
 }
 
+.modal, .wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.modal {
+  position: fixed;
+  top: 0px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  pointer-events: none;
+  background-color: #18171666;
+  transition: all 0.3s ease-out;
+}
+
 /* Custom Radio Button */
 [type="radio"]:checked,
 [type="radio"]:not(:checked) {
