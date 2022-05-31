@@ -40,3 +40,9 @@ a{
 .back-btn:hover .left-chev #Arrow{
 	stroke: #B499BF;
 }
+
+.article-content {
+    padding: 40px;
+    margin-top: -200px;
+    width: 792px;
+}
