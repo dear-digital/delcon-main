@@ -14,11 +14,11 @@
         <div class="order-address-wrapper">
           <div class="order-billing-address">
             <p class="address-title">{{ 'customer.order.billing_address' | t }}</p>
-            {{ order.billing_address | format_address }}
+            {{ customer.billing_address | format_address }}
           </div>
           <div class="order-shipping-address">
             <p class="address-title">{{ 'customer.order.shipping_address' | t }}</p>
-            {{ order.shipping_address | format_address }}
+            {{ customer.shipping_address | format_address }}
           </div>
         </div>
       </div>
