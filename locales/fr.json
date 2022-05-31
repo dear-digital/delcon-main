@@ -309,7 +309,7 @@
   "customer": {
     "account": {
       "title": "Compte",
-      "welcome_title": "Welcome back {{ name }}",
+      "welcome_title": "Bienvenue à {{ name }}",
       "details": "Détails du compte",
       "view_addresses": "Voir les adresses",
       "return": "Retour aux détails du compte"
