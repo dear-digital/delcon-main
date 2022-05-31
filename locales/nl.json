@@ -319,6 +319,7 @@
     },
     "addresses": {
       "title": "Adressen",
+      "login_details": "Inloggegevens",
       "default": "Standaard",
       "add_new": "Voeg een nieuw adres toe",
       "edit_address": "Adres bewerken",
