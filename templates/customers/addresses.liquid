@@ -149,7 +149,9 @@
   
   $(".edit-address").click(function() {
   	var addressForm = $(this).data('form');
-    $("#EditAddress_"+addressForm).toggle("no-disp");
+    $("#EditAddress_"+addressForm).css("display","block");
+    $("#EditAddress_"+addressForm).parent().css("opacity","1");
+    $("#EditAddress_"+addressForm).parent().css("pointer-events","auto");
   });
   
   $(".delete-address").click(function() {
