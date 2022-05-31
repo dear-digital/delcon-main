@@ -326,6 +326,7 @@
     },
     "addresses": {
       "title": "Adresses",
+      "login_details": "détails de connexion",
       "default": "Par défaut",
       "add_new": "Ajouter une nouvelle adresse",
       "edit_address": "Modifier l'adresse",
