@@ -50,8 +50,8 @@
                           <label for="AddressCompany_{{ form.id }}" class="no-disp">{{ 'customer.addresses.company' | t }}</label>
                         </div>
                         <div class="field column">
-                          <input type="text" id="AddressVATnumber_{{ form.id }}" name="customer[note][VAT Registration Number]" value="{{ customer.notes.VAT_Registration_Number }}" autocomplete="off" placeholder="{{ 'BTW Number' | t }}">
-                          <label for="AddressVATnumber_{{ form.id }}" class="no-disp">{{ 'BTW Number' | t }}</label>
+                          <input type="tel" id="AddressPhone_{{ form.id }}"  name="address[phone]" value="{{ form.phone }}" autocomplete="tel" placeholder="{{ 'customer.addresses.phone' | t }}">
+                          <label for="AddressPhone_{{ form.id }}" class="no-disp">{{ 'customer.addresses.phone' | t }}</label>
                         </div>
                       </div>
                       <div class="row">
@@ -80,10 +80,6 @@
                             {{ 'customer.addresses.country' | t }}
                           </label>
                           <select id="AddressCountry_{{ form.id }}" name="address[country]" data-address-country-select data-default="{{ form.country }}" data-form-id="{{ form.id }}" autocomplete="country">{{ all_country_option_tags }}</select>
-                        </div>
-                        <div class="field column">
-                          <input type="tel" id="AddressPhone_{{ form.id }}"  name="address[phone]" value="{{ form.phone }}" autocomplete="tel" placeholder="{{ 'customer.addresses.phone' | t }}">
-                          <label for="AddressPhone_{{ form.id }}" class="no-disp">{{ 'customer.addresses.phone' | t }}</label>
                         </div>
                       </div>
                       <div class="default-address">
