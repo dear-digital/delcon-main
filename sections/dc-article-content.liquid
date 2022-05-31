@@ -1,7 +1,28 @@
+{{ 'dc-article-content.css' | asset_url | stylesheet_tag }}
+
+<div class="article-content-wrap rel">
+  <a class="back-btn" href="">
+    <span class="left-chev"></span>
+    <span class="back-txt">{{ section.settings.back }}</span>
+  </a>
+</div>
+
 {% schema %}
   {
-    "name": "Section name",
-    "settings": []
+    "name": "DC Article Content",
+    "settings": [
+		{
+			"type": "text",
+			"id": "back",
+			"label": "Back Text",
+			"default": "terug naar blog"
+		}
+	],
+	"presets": [
+		{
+			"name": "DC Article Content"
+		}
+	]
   }
 {% endschema %}
 
