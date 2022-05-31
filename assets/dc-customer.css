@@ -279,4 +279,14 @@ input:focus-visible, select:focus-visible, textarea:focus-visible {
   display: block;
   position: relative;
   width: 349px;
+  margin-bottom: 24px;
+}
+.customer-address p {
+  margin: 0;
+}
+.address-title {
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 8px;
 }
