@@ -17,14 +17,13 @@
             <div class="order-wrapper">
               <h2 class="accordion">{{ 'customer.orders.order_number_link' | t: number: order.name }} - {{ 'customer.orders.date' | t }} {{ order.created_at | date: format: 'basic' }} - {{ order.total_price | money }}<span class="symbol">{% render "accordion-plus" %}</span></h2>
               <div class="panel">
-                <p>Order Details</p>
                 <div class="order-address-wrapper">
                   <div class="order-billing-address">
-                    <p>{{ 'customer.order.billing_address' | t }}</p>
+                    <p class="address-title">{{ 'customer.order.billing_address' | t }}</p>
                     {{ order.billing_address | format_address }}
                   </div>
                   <div class="order-shipping-address">
-                    <p>{{ 'customer.order.shipping_address' | t }}</p>
+                    <p class="address-title">{{ 'customer.order.shipping_address' | t }}</p>
                     {{ order.shipping_address | format_address }}
                   </div>
                 </div>

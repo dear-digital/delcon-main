@@ -201,3 +201,18 @@ input:focus-visible, select:focus-visible, textarea:focus-visible {
 .order-wrapper .accordion .symbol {
   top: 30px;
 }
+.order-address-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 690px;
+}
+.order-billing-address, .order-shipping-address {
+  display: block;
+  width: 287px;
+}
+.address-title {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: :bold;
+}
