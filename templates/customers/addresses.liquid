@@ -1,7 +1,5 @@
 {{ 'dc-customer.css' | asset_url | stylesheet_tag }}
 
-<script src="{{ 'customer.js' | asset_url }}" defer></script>
-
 <div class="customer account">
   <div class="container">
     <div class="flex-box justify-between align-start">
@@ -165,7 +163,8 @@
   });
   
   $(".delete-address").click(function() {
-  	var addressForm = $(this).data('form');
+  	var addressId = $(this).data('form');
+    Shopify.postLink('/account/addresses/'+addressId, {'parameters': {'_method': 'delete'}});
     console.log("delete this form");
   });
   
