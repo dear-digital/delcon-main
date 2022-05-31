@@ -5,7 +5,7 @@
     <span class="header-announcement">{{ section.settings.announcement_msg }}</span>
     <ul class="announcement-bar-list">
       <li class="round no-t-m"></li>
-      <li class="round no-t-m"><a href="/account">{% include "account-icon" %}</a></li>
+      <li class="round no-t-m"><a href="{{ routes.account_url }}">{% include "account-icon" %}</a></li>
       <li class="round no-t-m"><a href="#" aria-label="cart-link" class="icon-item cart-toggler cart-items-total rel" onClick="return false;">{{ cart.item_count }}</a></li>
     </ul>
   </div>
