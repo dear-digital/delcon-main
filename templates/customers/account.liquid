@@ -27,6 +27,18 @@
                     {{ order.shipping_address | format_address }}
                   </div>
                 </div>
+                <div class="order-products-wrapper">
+                  <p class="order-product-title">{{ 'customer.order.product' | t }}</p>
+                  {%- for line_item in order.line_items -%}
+                  <div class="ordered-product">
+                    <div class="ordered-product-image">
+                      <a href="{{ line_item.url }}">
+                        <img src="{{ line_item.variant.image.src | default: line_item.product.featured_image | img_url: '120x' }}" alt="{{ line_item.title }}">
+                      </a>
+                    </div>
+                  </div>
+                  {% endfor %}
+                </div>
               </div>
             </div>
         	{% endfor %}
