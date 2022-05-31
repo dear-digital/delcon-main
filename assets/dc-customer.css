@@ -301,7 +301,7 @@ input:focus-visible, select:focus-visible, textarea:focus-visible {
   background-color: #FBFBFB;
 }
 .addresses h2 {
-  font-size; 32px;
+  font-size: 32px;
   line-height: 48px;
   margin: 0;
   margin-bottom: 40px;
