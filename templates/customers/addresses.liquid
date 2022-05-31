@@ -13,16 +13,19 @@
         {%- paginate customer.addresses by 5 -%}
           <div class="">
 
-            <div class="account-address-wrapper flex-box">
-              {% for address in customer.addresses %}
-              <div class="customer-address">
-                <p class="address-heading">{% if address == customer.default_address %}{{ 'customer.addresses.default' | t }}{% else %}{{ 'customer.addresses.title' | t }}{% endif %}</p>
-                {{ address | format_address }}
-              </div>
+            <div class="account-address-wrapper">
               
-              <div class="">
-                <span class="edit-address" id="EditFormButton_{{ address.id }}" data-form="{{ address.id }}">{{ 'customer.addresses.edit' | t }}</span>
-                <span class="delete-address" id="DeleteFormButton_{{ address.id }}" data-form="{{ address.id }}">{{ 'customer.addresses.delete' | t }}</span>
+              {% for address in customer.addresses %}
+              <div class="flex-box">
+                <div class="customer-address">
+                  <p class="address-heading">{% if address == customer.default_address %}{{ 'customer.addresses.default' | t }}{% else %}{{ 'customer.addresses.title' | t }}{% endif %}</p>
+                  {{ address | format_address }}
+                </div>
+
+                <div class="">
+                  <span class="edit-address" id="EditFormButton_{{ address.id }}" data-form="{{ address.id }}">{{ 'customer.addresses.edit' | t }}</span>
+                  <span class="delete-address" id="DeleteFormButton_{{ address.id }}" data-form="{{ address.id }}">{{ 'customer.addresses.delete' | t }}</span>
+                </div>
               </div>
               
               <div class="wrap" style="position: relative; z-index: 9;">
