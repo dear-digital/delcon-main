@@ -13,7 +13,7 @@
         <div class="account-address-wrapper">
           {% for address in customer.addresses %}
           <div class="customer-address">
-            <p class="address-title">{{ address.id }} <span class="edit-address" id="EditFormButton_{{ address.id }}">{{ 'customer.addresses.edit_address' | t }}</span></p>
+            <p class="address-heading">{{ address.id }} <span class="edit-address" id="EditFormButton_{{ address.id }}">{{ 'customer.addresses.edit_address' | t }}</span></p>
             {{ address | format_address }}
           </div>
           <div id="EditAddress_{{ address.id }}">
