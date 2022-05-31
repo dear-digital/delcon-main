@@ -58,6 +58,7 @@
     "title": "Newsletter",
     "label": "Email",
     "success": "Thanks for subscribing",
+    "subscribe_text": "I would like to receive the delcon newsletter",
     "button_label": "Subscribe"
   },
   "accessibility": {
