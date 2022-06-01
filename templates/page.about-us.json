@@ -66,7 +66,7 @@
     "165408112696adb82f": {
       "type": "dc-img-video-text",
       "settings": {
-        "background_color": "#BDB4AC",
+        "background_color": "#bdb4ac",
         "media_alignment": "left",
         "section_type": "img_txt",
         "section_image": "shopify:\/\/shop_images\/Image_2x_08842411-8838-4190-9f06-a6f9ef370da4.png",
@@ -75,7 +75,7 @@
         "custom_logo": "",
         "section_subtitle": "MEER DAN X JAAR ERVARING",
         "section_title": "Onze geschiedenis",
-        "section_text": "",
+        "section_text": "<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea<\/p><p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea<\/p>",
         "section_link": "",
         "section_url": "",
         "isProductFinder": false,
@@ -88,7 +88,7 @@
     "1654081203ec6b513b": {
       "type": "dc-img-video-text",
       "settings": {
-        "background_color": "#BDB4AC",
+        "background_color": "#bdb4ac",
         "media_alignment": "right",
         "section_type": "img_txt",
         "section_image": "shopify:\/\/shop_images\/Image_2x_08842411-8838-4190-9f06-a6f9ef370da4.png",
@@ -110,7 +110,7 @@
     "165408120865a70365": {
       "type": "dc-img-video-text",
       "settings": {
-        "background_color": "#BDB4AC",
+        "background_color": "#bdb4ac",
         "media_alignment": "left",
         "section_type": "img_txt",
         "section_image": "shopify:\/\/shop_images\/Image_2x_08842411-8838-4190-9f06-a6f9ef370da4.png",
