@@ -17,6 +17,8 @@
 }
 
 .hero-title {
+  width: 100%;
+  max-width: 588px;
   font-size: 56px;
   line-height: 109px;
   font-weight: 700;
