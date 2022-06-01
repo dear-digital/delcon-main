@@ -88,7 +88,7 @@
     "1654081203ec6b513b": {
       "type": "dc-img-video-text",
       "settings": {
-        "background_color": "#bdb4ac",
+        "background_color": "#f2f1f0",
         "media_alignment": "right",
         "section_type": "img_txt",
         "section_image": "shopify:\/\/shop_images\/Image_2x_08842411-8838-4190-9f06-a6f9ef370da4.png",
@@ -97,7 +97,7 @@
         "custom_logo": "",
         "section_subtitle": "BELGISCH",
         "section_title": "Met onze korte keten gaan we voor duurzaamheid",
-        "section_text": "",
+        "section_text": "<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea<\/p>",
         "section_link": "",
         "section_url": "",
         "isProductFinder": false,
