@@ -7,9 +7,15 @@
         "padding_top": 28,
         "padding_bottom": 28
       }
+    },
+    "16540621309469cdcb": {
+      "type": "dc-store-locator",
+      "settings": {
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "16540621309469cdcb"
   ]
 }
