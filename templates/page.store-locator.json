@@ -21,11 +21,21 @@
       "type": "dc-store-locator",
       "settings": {
       }
+    },
+    "1654081053cecec939": {
+      "type": "dc-newsletter",
+      "settings": {
+        "title": "Krijg nu 20% korting",
+        "desc": "Schrijf je in op onze nieuwsbrief en blijf op de hoogte van acties en promoties. 20% korting die je kan gebruiken bij je volgende aankoop in onze shop",
+        "email_placeholder": "Email adres",
+        "subscribe_btn": "Send"
+      }
     }
   },
   "order": [
     "main",
     "16540687157d794388",
-    "16540621309469cdcb"
+    "16540621309469cdcb",
+    "1654081053cecec939"
   ]
 }
