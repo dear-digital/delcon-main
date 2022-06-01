@@ -23,29 +23,33 @@
         "eb2ee39f-0126-44c5-b101-3d48956f4777": {
           "type": "features",
           "settings": {
-            "logo_title": "",
-            "logo_desc": ""
+            "logo_img": "shopify:\/\/shop_images\/Icon_2x_4dcbb3d9-27ad-4898-afe7-a3fb25e3168b.png",
+            "logo_title": "BELGISCH",
+            "logo_desc": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et"
           }
         },
         "4b905781-1823-4975-a835-3b61d4f8515b": {
           "type": "features",
           "settings": {
-            "logo_title": "",
-            "logo_desc": ""
+            "logo_img": "shopify:\/\/shop_images\/Icon_2x_3dcc2c82-5820-4af0-870a-1fdc3848120f.png",
+            "logo_title": "SNELLE VERZENDING",
+            "logo_desc": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et"
           }
         },
         "7e4364a3-ae32-426a-9073-22c5090ba52c": {
           "type": "features",
           "settings": {
-            "logo_title": "",
-            "logo_desc": ""
+            "logo_img": "shopify:\/\/shop_images\/Icon_2x_7445ba4d-c2b8-4b72-80ae-44e592cccc0a.png",
+            "logo_title": "KWALITEIT",
+            "logo_desc": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et"
           }
         },
         "ee9efaa3-304f-4611-a2b8-056859d177ab": {
           "type": "features",
           "settings": {
-            "logo_title": "",
-            "logo_desc": ""
+            "logo_img": "shopify:\/\/shop_images\/Icon_2x_d069f4b3-d157-48b1-b4dc-4e2439b9fc30.png",
+            "logo_title": "CUSTOMER SERVICE",
+            "logo_desc": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et"
           }
         }
       },
