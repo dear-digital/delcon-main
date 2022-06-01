@@ -1,14 +1,12 @@
 {{ 'dc-our-team.css' | asset_url | stylesheet_tag }}
 
 <div class="our-team-wrapper marg-top-xl marg-bottom-xl">
-  <div class="flex-box">
-    <div class="our-team">
-      <div class="container rel">
-        <h2 class="our-team-title">{{ section.settings.section_title }}</h2>
-        <div class="our-team-text">{{ section.settings.section_text }}</div>
-        <div class="our-team-image">
-          <img src="{{ section.settings.section_image | img_src: "698x" }}" class="" alt="Our Team image">
-        </div>
+  <div class="our-team">
+    <div class="container rel">
+      <h2 class="our-team-title">{{ section.settings.section_title }}</h2>
+      <div class="our-team-text">{{ section.settings.section_text }}</div>
+      <div class="our-team-image">
+        <img src="{{ section.settings.section_image | img_src: "698x" }}" class="" alt="Our Team image">
       </div>
     </div>
   </div>
