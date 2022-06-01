@@ -1,7 +1,94 @@
+{{ 'dc-hero.css' | asset_url | stylesheet_tag }}
+
+<div class="hero-sec marg-bottom no-t-m" style="background-image: linear-gradient(rgba(24, 23, 22, .25), rgba(24, 23, 22, .25)),url({{ section.settings.hero_img | img_url: '2000x' }})">
+  <div class="hero-wrapper container flex-box" {% if section.settings.hero_align %}style="justify-content: {{ section.settings.hero_align }}"{% endif %}>
+    <p class="sub-title light hero-reviews"></p>
+    <h1 class="hero-title tk-le-monde-livre-classic-byol">{{ section.settings.hero_title }}</h1>
+    <p class="hero-subtitle">{{ section.settings.hero_subtitle }}</p>
+    <div class="hero-cta-wrapper">
+      {% for block in section.blocks %}
+      	{% if block.settings.hero_cta_text != blank %}
+      	  <a href="{{ block.settings.hero_cta_link }}" class="hero-btn btn">{{ block.settings.hero_cta_text }}</a>
+      	{% endif %}
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+{% comment %}
+<div class="hero-sec no-d" style="background-image: url({{ section.settings.hero_mobile_img | img_url: '2000x' }})">
+  <div class="container flex-box">
+      <h1 class="title bold hero-title">{{ section.settings.title }}</h1>
+      <a href="{{ section.settings.button_url }}" class="hero-btn btn">{{ section.settings.button_txt }}</a>
+  </div>
+</div>
+{% endcomment %}
+
 {% schema %}
   {
-    "name": "Section name",
-    "settings": []
+    "name": "Delcon About Hero",
+    "settings": [
+		{
+			"type": "image_picker",
+			"id": "hero_img",
+			"label": "Hero Image"
+		},
+		{
+          "type": "select",
+          "id": "hero_align",
+          "label": "Hero Alignment",
+          "options": [
+          {
+            "value": "flex-start",
+            "label": "Top"
+          },
+		  {
+            "value": "center",
+            "label": "Center"
+          },
+          {
+            "value": "flex-end",
+            "label": "Bottom"
+          }
+          ],
+          "default": "center"
+        },
+		{
+			"type": "text",
+			"id": "hero_title",
+			"label": "Hero Title",
+			"default": "Met zorg geformuleerde dierenvoeding"
+		},
+		{
+			"type": "html",
+			"id": "hero_subtitle",
+			"label": "Hero Sub title",
+			"default": "Elke hond en elke kat heeft eigen specifieke behoeften. Daarom maken wij met veel zorg voeding die aangepast is aan jouw pluizige vriend."
+		}
+	],
+	"blocks": [ 
+		{
+			"type": "hero-cta",
+			"name": "Hero CTA",
+			"settings": [
+				{
+					"type": "text",
+					"id": "hero_cta_text",
+					"label": "Hero CTA Text"
+				},
+				{
+                  "type": "url",
+                  "id": "hero_cta_link",
+                  "label": "Hero CTA Link"
+                }
+			]
+		}
+	],
+	"presets":[
+      {
+         "name":"Delcon About Hero"
+      }
+   ]
   }
 {% endschema %}
 
