@@ -56,6 +56,7 @@
         "ee9efaa3-304f-4611-a2b8-056859d177ab"
       ],
       "settings": {
+        "feature_background": "#e4edf2"
       }
     },
     "165408112696adb82f": {
@@ -64,6 +65,7 @@
         "background_color": "",
         "media_alignment": "left",
         "section_type": "img_txt",
+        "product_video": "",
         "video_link": "",
         "custom_logo": "",
         "section_subtitle": "",
@@ -84,6 +86,7 @@
         "background_color": "",
         "media_alignment": "right",
         "section_type": "img_txt",
+        "product_video": "",
         "video_link": "",
         "custom_logo": "",
         "section_subtitle": "",
@@ -104,6 +107,7 @@
         "background_color": "",
         "media_alignment": "left",
         "section_type": "img_txt",
+        "product_video": "",
         "video_link": "",
         "custom_logo": "",
         "section_subtitle": "",
