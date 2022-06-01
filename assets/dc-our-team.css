@@ -1,7 +1,8 @@
 .our-team {
-  display: flex;
+  display: block;
   width: 100%;
   height: 698px;
+  padding: 131px 0;
 }
 .team-block {
   padding: 80px 0;
