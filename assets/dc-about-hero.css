@@ -1,14 +1,17 @@
 .about-hero-sec {
-  height: 30vw !important;
+  height: 35vw !important;
 }
 .about-wrapper {
   flex-direction: column;
   align-items: center;
   width: 100%;
   max-width: 588px;
-  margin: 0 auto 0 0;
+  margin: 0 auto;
 }
-.about-wrapper .hero-title, .about-wrapper .hero-subtitle {
+.store-hero-wrapper {
+  margin: 0 auto 0 0 !important;
+}
+.store-hero-wrapper .hero-title, ..store-hero-wrapper .hero-subtitle {
   text-align: left;
   color: rgb(var(--color-base-accent-1));
 }
