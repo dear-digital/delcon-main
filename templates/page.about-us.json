@@ -8,6 +8,15 @@
         "padding_bottom": 28
       }
     },
+    "1654068533ed7bd583": {
+      "type": "dc-about-hero",
+      "settings": {
+        "hero_img": "shopify:\/\/shop_images\/Image_2x_39e61b2e-7305-4cd7-8686-8ddaa5d55b19.png",
+        "hero_align": "center",
+        "hero_title": "Met zorg geformuleerde dierenvoeding",
+        "hero_subtitle": "Elke hond en elke kat heeft eigen specifieke behoeften. Daarom maken wij met veel zorg voeding die aangepast is aan jouw pluizige vriend."
+      }
+    },
     "165375100706003da3": {
       "type": "dc-all-ingredients",
       "blocks": {
@@ -79,6 +88,7 @@
   },
   "order": [
     "main",
+    "1654068533ed7bd583",
     "165375100706003da3"
   ]
 }
