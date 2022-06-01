@@ -4,4 +4,8 @@
 .about-wrapper {
   flex-direction: column;
   align-items: center;
+  width: 100%;
+  max-width: 476px;
+  margin: 0 auto 0 0;
 }
+    
