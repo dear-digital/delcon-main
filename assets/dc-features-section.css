@@ -13,7 +13,6 @@
   width: 86px;
   height: 86px;
   border-radius: 50%;
-  background-color: rgb(var(--color-base-text));
   margin-bottom: 16px;
 }
 .feature-logo-wrap img {
