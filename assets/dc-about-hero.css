@@ -11,7 +11,7 @@
 .store-hero-wrapper {
   margin: 0 auto 0 0 !important;
 }
-.store-hero-wrapper .hero-title, ..store-hero-wrapper .hero-subtitle {
+.store-hero-wrapper .hero-title, .store-hero-wrapper .hero-subtitle {
   text-align: left;
   color: rgb(var(--color-base-accent-1));
 }
