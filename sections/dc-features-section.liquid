@@ -6,7 +6,7 @@
       {% for block in section.blocks %}
         {% if block.type == 'features' %}
         <div class="features-content-wrap">
-          <div class="feature-logo-wrap">
+          <div class="feature-logo-wrap" style="background-color: {{ section.settings.feature_background }}">
             <img src="{{ block.settings.logo_img | img_url: "x50" }}" alt="{{ block.settings.logo_title }}">
           </div>
           <div class="feature-title">{{ block.settings.logo_title }}</div>
@@ -21,7 +21,13 @@
 {% schema %}
   {
     "name": "Delcon Features Section",
-    "settings": [],
+    "settings": [
+		{
+          "type": "color",
+          "id": "feature_background",
+          "label": "Feature Backgrouund Color"
+		}
+	],
 	"blocks": [
 		{
 			"type": "features",
