@@ -15,6 +15,7 @@
   right: 25px;
   width: 698px;
   height: 698px;
+  background-color: rgb(var(--color-base-text));
 }
 .our-team-image img {
   width: 100%;
