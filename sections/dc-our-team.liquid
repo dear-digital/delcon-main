@@ -1,7 +1,47 @@
+{{ 'dc-our-team.css' | asset_url | stylesheet_tag }}
+
+<div class="our-team-wrapper marg-top-xl marg-bottom-xl">
+  <div class="flex-box justify-between align-center">
+    <div class="our-team container">
+      <h2 class="our-team-title">{{ section.settings.section_title }}</h2>
+      <div class="our-team-text">{{ section.settings.section_text }}</div>
+    </div>
+    <div class="our-team-image">
+      <img src="{{ section.settings.section_image | img_src: "698x" }}" class="" alt="Our Team image">
+    </div>
+  </div>
+</div>
+
 {% schema %}
   {
-    "name": "Section name",
-    "settings": []
+    "name": "DC Our Team",
+    "settings": [
+	  {
+        "label": "Section Backgrgound",
+        "id": "section_background",
+        "type": "color"
+      },
+	  {
+        "label": "Section Image",
+        "id": "section_image",
+        "type": "image_picker"
+      },
+	  {
+        "label": "Section Title",
+        "id": "section_title",
+        "type": "text"
+      },
+	  {
+        "label": "Section Text",
+        "id": "section_text",
+        "type": "text"
+      }
+	],
+	"presets": [
+    {
+      "name": "DC Our Team"
+    }
+  ]
   }
 {% endschema %}
 
