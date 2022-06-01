@@ -71,6 +71,7 @@
         "f5429921-b8df-4340-a643-859bd108cb0b"
       ],
       "settings": {
+        "feature_background": "#f2f1f0"
       }
     },
     "16522710367299c830": {
@@ -88,6 +89,7 @@
         "section_text": "<p>Ontvang eenmalig een proefpakket met overheerlijke Delcon producten en laat je huisdier smullen. Gegarandeerd een leef kommetje!<\/p><p>Een pakket bestaat uit:<\/p><ul>\n<li>\n<strong>Droge voeding:<\/strong> 3 kg hondenvoer of 1,75kg kattenvoer<\/li>\n<li>Voor honden enkele <strong>treats<\/strong>, voor katten een blikje <strong>natvoer<\/strong>\n<\/li>\n<li>Een <strong>maatbeker<\/strong>\n<\/li>\n<\/ul>",
         "section_link": "MEER WETEN",
         "section_url": "",
+        "isProductFinder": false,
         "isProefpakketten": true,
         "proefpakketten_text": "Proefpakketten vanaf € 12,95",
         "section_btn_text": "PROEFPAKKET",
@@ -103,7 +105,11 @@
         "vanaf_text": "vanaf",
         "meerInfo": "QUICK VIEW",
         "featured_btn_text": "ALLE PRODUCTEN",
-        "featured_btn_url": "shopify:\/\/collections\/hondenvoer"
+        "featured_btn_url": "shopify:\/\/collections\/hondenvoer",
+        "total_variants": "Verkrijgbaar in",
+        "maten": "maten:",
+        "koop_online": "KOOP ONLINE",
+        "koop_local": "KOOP LOKAAL"
       }
     },
     "165220075608ac05ae": {
@@ -115,7 +121,11 @@
         "vanaf_text": "vanaf",
         "meerInfo": "QUICK VIEW",
         "featured_btn_text": "ALLE PRODUCTEN",
-        "featured_btn_url": "shopify:\/\/collections\/kattenvoer"
+        "featured_btn_url": "shopify:\/\/collections\/kattenvoer",
+        "total_variants": "Verkrijgbaar in",
+        "maten": "maten:",
+        "koop_online": "KOOP ONLINE",
+        "koop_local": "KOOP LOKAAL"
       }
     },
     "1652266546129bd5f6": {
@@ -133,6 +143,7 @@
         "section_text": "Onze voeding is met veel zorg geformuleerd. Ze is enkel opgebouwd uit de meest <strong>verfijnde ingrediënten<\/strong>. Zo bekomen wij de meest gezonde voeding waarop jij trots mag zijn dat je ze aan je geliefde viervoeter kan geven.",
         "section_link": "MEER WETEN",
         "section_url": "shopify:\/\/pages\/over-ons",
+        "isProductFinder": false,
         "isProefpakketten": false,
         "proefpakketten_text": "",
         "section_btn_text": "",
@@ -154,6 +165,7 @@
         "section_text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea",
         "section_link": "KOOP LOKAAL",
         "section_url": "",
+        "isProductFinder": false,
         "isProefpakketten": false,
         "proefpakketten_text": "",
         "section_btn_text": "",
@@ -167,6 +179,7 @@
         "section_title": "Keuzestress?",
         "section_text": "<p>Elke hond en elke kat heeft eigen specifieke behoeften. Daarom maken wij met veel zorg voeding die aangepast is aan jouw pluizige vriend.<\/p><ul class=\"checked-list\">\n<li>Met zorg geformuleerde dierenvoeding<\/li>\n<li>Opgebouwd uit de meest verfijnde natuurlijke ingrediënten<\/li>\n<li>Voor een optimale gezondheid van jouw viervoeter<\/li>\n<\/ul>",
         "isProductFinder": true,
+        "isProefpakketten": false,
         "section_btn_text": "PRODUCTFINDER",
         "section_btn_url": ""
       }
@@ -186,6 +199,7 @@
         "section_text": "<p>Dat een kat of hond geen 70 jaar wordt, dat is over het algemeen wel geweten. Maar hoe oud is een kat nu eigenlijk in mensenjaren?<\/p><p>Vaak wordt dan de regel bovengehaald dat je hun leeftijd moet vermenigvuldigen met 7 om de leeftijd in mensenjaren uit te rekenen. Maar eigenlijk is dit niet helemaal accuraat. Wist je dat?<\/p>",
         "section_link": "MEER WETEN",
         "section_url": "",
+        "isProductFinder": false,
         "isProefpakketten": false,
         "proefpakketten_text": "",
         "section_btn_text": "",
@@ -197,6 +211,7 @@
       "settings": {
         "title": "Krijg nu 20% korting",
         "desc": "Schrijf je in op onze nieuwsbrief en blijf op de hoogte van acties en promoties. 20% korting die je kan gebruiken bij je volgende aankoop in onze shop",
+        "email_placeholder": "Email adres",
         "subscribe_btn": "Send"
       }
     }
