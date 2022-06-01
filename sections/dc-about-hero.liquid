@@ -2,16 +2,18 @@
 {{ 'dc-about-hero.css' | asset_url | stylesheet_tag }}
 
 <div class="hero-sec {% if template == "page.about-us" %}about-hero-sec{% endif %} no-t-m" style="background-image: linear-gradient(rgba(24, 23, 22, .25), rgba(24, 23, 22, .25)),url({{ section.settings.hero_img | img_url: '2000x' }})">
-  <div class="about-wrapper {% if template == "page.store-locator" %}store-hero-wrapper{% endif %} container flex-box" {% if section.settings.hero_align %}style="justify-content: {{ section.settings.hero_align }}"{% endif %}>
-    <p class="sub-title light hero-reviews"></p>
-    <h1 class="hero-title tk-le-monde-livre-classic-byol">{{ section.settings.hero_title }}</h1>
-    <div class="hero-subtitle">{{ section.settings.hero_subtitle }}</div>
-    <div class="hero-cta-wrapper">
-      {% for block in section.blocks %}
-      	{% if block.settings.hero_cta_text != blank %}
-      	  <a href="{{ block.settings.hero_cta_link }}" class="hero-btn btn">{{ block.settings.hero_cta_text }}</a>
-      	{% endif %}
-      {% endfor %}
+  <div class="container">
+    <div class="about-wrapper {% if template == "page.store-locator" %}store-hero-wrapper{% endif %} container flex-box" {% if section.settings.hero_align %}style="justify-content: {{ section.settings.hero_align }}"{% endif %}>
+      <p class="sub-title light hero-reviews"></p>
+      <h1 class="hero-title tk-le-monde-livre-classic-byol">{{ section.settings.hero_title }}</h1>
+      <div class="hero-subtitle">{{ section.settings.hero_subtitle }}</div>
+      <div class="hero-cta-wrapper">
+        {% for block in section.blocks %}
+          {% if block.settings.hero_cta_text != blank %}
+            <a href="{{ block.settings.hero_cta_link }}" class="hero-btn btn">{{ block.settings.hero_cta_text }}</a>
+          {% endif %}
+        {% endfor %}
+      </div>
     </div>
   </div>
 </div>
