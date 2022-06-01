@@ -8,6 +8,15 @@
         "padding_bottom": 28
       }
     },
+    "16540687157d794388": {
+      "type": "dc-about-hero",
+      "settings": {
+        "hero_img": "shopify:\/\/shop_images\/Hero_image.png",
+        "hero_align": "center",
+        "hero_title": "Koop lokaal",
+        "hero_subtitle": "<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo<\/p><ul class=\"checked-list\">\n<li>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed<\/li>\n<li>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed<\/li>\n<li>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed<\/li>\n<\/ul>"
+      }
+    },
     "16540621309469cdcb": {
       "type": "dc-store-locator",
       "settings": {
@@ -16,6 +25,7 @@
   },
   "order": [
     "main",
+    "16540687157d794388",
     "16540621309469cdcb"
   ]
 }
