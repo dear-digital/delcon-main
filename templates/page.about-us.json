@@ -17,6 +17,107 @@
         "hero_subtitle": "Elke hond en elke kat heeft eigen specifieke behoeften. Daarom maken wij met veel zorg voeding die aangepast is aan jouw pluizige vriend."
       }
     },
+    "165408112156807147": {
+      "type": "dc-features-section",
+      "blocks": {
+        "eb2ee39f-0126-44c5-b101-3d48956f4777": {
+          "type": "features",
+          "settings": {
+            "logo_title": "",
+            "logo_desc": ""
+          }
+        },
+        "4b905781-1823-4975-a835-3b61d4f8515b": {
+          "type": "features",
+          "settings": {
+            "logo_title": "",
+            "logo_desc": ""
+          }
+        },
+        "7e4364a3-ae32-426a-9073-22c5090ba52c": {
+          "type": "features",
+          "settings": {
+            "logo_title": "",
+            "logo_desc": ""
+          }
+        },
+        "ee9efaa3-304f-4611-a2b8-056859d177ab": {
+          "type": "features",
+          "settings": {
+            "logo_title": "",
+            "logo_desc": ""
+          }
+        }
+      },
+      "block_order": [
+        "eb2ee39f-0126-44c5-b101-3d48956f4777",
+        "4b905781-1823-4975-a835-3b61d4f8515b",
+        "7e4364a3-ae32-426a-9073-22c5090ba52c",
+        "ee9efaa3-304f-4611-a2b8-056859d177ab"
+      ],
+      "settings": {
+      }
+    },
+    "165408112696adb82f": {
+      "type": "dc-img-video-text",
+      "settings": {
+        "background_color": "",
+        "media_alignment": "left",
+        "section_type": "img_txt",
+        "video_link": "",
+        "custom_logo": "",
+        "section_subtitle": "",
+        "section_title": "",
+        "section_text": "",
+        "section_link": "",
+        "section_url": "",
+        "isProductFinder": false,
+        "isProefpakketten": false,
+        "proefpakketten_text": "",
+        "section_btn_text": "",
+        "section_btn_url": ""
+      }
+    },
+    "1654081203ec6b513b": {
+      "type": "dc-img-video-text",
+      "settings": {
+        "background_color": "",
+        "media_alignment": "right",
+        "section_type": "img_txt",
+        "video_link": "",
+        "custom_logo": "",
+        "section_subtitle": "",
+        "section_title": "",
+        "section_text": "",
+        "section_link": "",
+        "section_url": "",
+        "isProductFinder": false,
+        "isProefpakketten": false,
+        "proefpakketten_text": "",
+        "section_btn_text": "",
+        "section_btn_url": ""
+      }
+    },
+    "165408120865a70365": {
+      "type": "dc-img-video-text",
+      "settings": {
+        "background_color": "",
+        "media_alignment": "left",
+        "section_type": "img_txt",
+        "video_link": "",
+        "custom_logo": "",
+        "section_subtitle": "",
+        "section_title": "",
+        "section_text": "",
+        "section_link": "",
+        "section_url": "",
+        "isProductFinder": false,
+        "isProefpakketten": false,
+        "proefpakketten_text": "",
+        "section_btn_text": "",
+        "section_btn_url": ""
+      }
+    },
     "165375100706003da3": {
       "type": "dc-all-ingredients",
       "blocks": {
@@ -84,11 +185,25 @@
         "section_subtitle": "INGREDIENTEN",
         "section_title": "Natuurlijke ingrediënten"
       }
+    },
+    "1654081225eb27023c": {
+      "type": "dc-newsletter",
+      "settings": {
+        "title": "Krijg nu 20% korting",
+        "desc": "Schrijf je in op onze nieuwsbrief en blijf op de hoogte van acties en promoties. 20% korting die je kan gebruiken bij je volgende aankoop in onze shop",
+        "email_placeholder": "Email adres",
+        "subscribe_btn": "Send"
+      }
     }
   },
   "order": [
     "main",
     "1654068533ed7bd583",
-    "165375100706003da3"
+    "165408112156807147",
+    "165408112696adb82f",
+    "1654081203ec6b513b",
+    "165408120865a70365",
+    "165375100706003da3",
+    "1654081225eb27023c"
   ]
 }
