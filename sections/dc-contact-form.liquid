@@ -2,13 +2,13 @@
 
 <div class="marg-top-xl marg-bottom-xl">
   <div class="contact-form-wrapper">
-    <div class="form-block" style="background-color: url({{section.settings.section_background  }})">
+    <div class="form-block" style="background-color: {{section.settings.section_background  }}">
       <div class="container rel">
         <div class="form-wrapper">
           <h2 class="contact-title tk-le-monde-livre-classic-byol">{{ section.settings.section_title }}</h2>
           <div class="contact-text">{{ section.settings.section_text }}</div>
         </div>
-        <div class="contact-form-image" style="background-image: {{ section.settings.section_image | img_url: '698x' }}">
+        <div class="contact-form-image" style="background-image: url({{ section.settings.section_image | img_url: '698x' }})">
           
         </div>
       </div>
