@@ -51,7 +51,7 @@
   max-width: none;
   margin-bottom: 8px;
 }
-.contact-terms-conditions input[type="checkbox"] {
+.contact-terms-conditions input[checkbox] {
   display: inline-block;
   width: 16px;
   height: 16px;
