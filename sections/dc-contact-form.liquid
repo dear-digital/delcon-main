@@ -9,7 +9,21 @@
           <div class="contact-text">{{ section.settings.section_text }}</div>
         </div>
         <div class="contact-form-image" style="background-image: url({{ section.settings.section_image | img_url: '698x' }})">
-          
+          {% form 'contact' %}
+            {% if form.posted_successfully? %} 
+            <div class="success_message form-success text-center">{{ 'templates.contact.form.post_success' | t }}</div>
+            {% endif %}
+            {{ form.errors | default_errors }}
+            <input class="field" type="text" id="ContactName" name="contact[name]" placeholder="{{ 'templates.contact.form.name' | t }}" required>
+            <input class="field" type="text" id="ContactPhone" name="contact[phone]" placeholder="{{ 'templates.contact.form.phone' | t }}" required>
+            <input class="field" type="email" id="ContactEmail" name="contact[email]" placeholder="{{ 'templates.contact.form.email' | t }}" required>
+            <textarea id="ContactDescription" name="contact[description]" rows="7" cols="50" placeholder="{{ 'templates.contact.form.comment' | t }}" required></textarea>
+            <input class="btn contact-submit" type="submit" value="{{ 'templates.contact.form.send' | t }}" />
+            <div classs="">
+              <input class="field" type="checekbox" id="ContactTermsConditions" name="contact[terms_and_conditions]">
+              <label>{{ section.settings.agree_terms }}</label>
+            </div>
+          {% endform %}
         </div>
       </div>
     </div>
@@ -39,6 +53,11 @@
         "label": "Section Text",
         "id": "section_text",
         "type": "html"
+      },
+	  {
+        "label": "Contact form Agreement of Terms and Condition Text",
+        "id": "agree_terms",
+        "type": "richtext"
       }
 	],
 	"presets": [
