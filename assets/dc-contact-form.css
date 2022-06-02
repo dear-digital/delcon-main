@@ -40,3 +40,10 @@
   line-height: 24px;
   margin: 0;
 }
+.contact-form {
+  display: block;
+  width: 100%;
+  max-width: 489px;
+  margin: 0 auto;
+  padding: 83px 0;
+}
