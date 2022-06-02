@@ -22,7 +22,7 @@
               <textarea id="ContactDescription" name="contact[description]" rows="5" cols="50" placeholder="{{ 'templates.contact.form.comment' | t }}" required></textarea>
               <button class="btn contact-submit" type="submit">{{ 'templates.contact.form.send' | t }}</button>
               <div class="flex-box align-center contact-terms-conditions">
-                <input class="field" type="checkbox" id="ContactTermsConditions" name="contact[terms_and_conditions]">
+                <input class="field" type="checkbox" id="ContactTermsConditions" name="contact[terms_and_conditions]" checked="checked">
                 <label>{{ section.settings.agree_terms }}</label>
               </div>
             {% endform %}
