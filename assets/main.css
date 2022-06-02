@@ -243,6 +243,18 @@ main {
   margin: 0;
 }
 
+input, select, textarea {
+  font-size: 16px;
+  line-height: 24px;
+  padding: 10px 24pxpx 9px;
+  width: 100%;
+  margin-bottom: 16px;
+  font-weight: 300;
+  background-color: rgb(var(--color-base-text));
+  color: rgb(var(--color-base-accent-1));
+  border: 1px solid #746B63;
+}
+
 .modal, .wrap {
   display: flex;
   align-items: center;
