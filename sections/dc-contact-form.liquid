@@ -9,7 +9,7 @@
           <div class="contact-text">{{ section.settings.section_text }}</div>
         </div>
         <div class="contact-form-image" style="background-image: url({{ section.settings.section_image | img_url: '698x' }})">
-          <div class="contact-form">
+          <div class="contact-form-block">
             <h2 class="contact-title tk-le-monde-livre-classic-byol text-center">{{ 'templates.contact.form.title' | t }}</h2>
             {% form 'contact' %}
               {% if form.posted_successfully? %} 
