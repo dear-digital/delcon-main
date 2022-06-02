@@ -63,3 +63,8 @@
   line-height: 16px;
   margin: 0;
 }
+.contact-terms-conditions label a {
+  font-weight: bold;
+  color: rgb(var(--color-base-accent-1));
+  text-decoration: none;
+}
