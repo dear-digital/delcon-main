@@ -62,6 +62,7 @@
   font-size: 12px;
   line-height: 16px;
   margin: 0;
+  letter-spacing: 0;
 }
 .contact-terms-conditions label a {
   font-weight: bold;

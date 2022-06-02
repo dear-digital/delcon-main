@@ -111,6 +111,7 @@ body {
   font-family: "Avenir",sans-serif;
   font-weight: 300;
   margin: 0;
+  letter-spacing: 0;
   color: rgb(var(--color-base-accent-1));
   scroll-behavior: smooth;
   background-color: #FBFBFB;
