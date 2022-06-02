@@ -246,13 +246,25 @@ main {
 input, select, textarea {
   font-size: 16px;
   line-height: 24px;
-  padding: 10px 24pxpx 9px;
+  padding: 10px 24px 9px;
   width: 100%;
   margin-bottom: 16px;
   font-weight: 300;
   background-color: rgb(var(--color-base-text));
   color: rgb(var(--color-base-accent-1));
   border: 1px solid #746B63;
+}
+input:focus-visible, select:focus-visible, textarea:focus-visible {
+  outline: 1px solid rgb(var(--color-base-accent-1));
+}
+::placeholder {
+  opacity: 0.5;
+}
+:-ms-input-placeholder {
+  opacity: 0.5;
+}
+::-ms-input-placeholder {
+  opacity: 0.5;
 }
 
 .modal, .wrap {
