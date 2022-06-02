@@ -47,3 +47,14 @@
   margin: 0 auto;
   padding: 83px 0;
 }
+.contact-submit {
+  max-width: none;
+  margin-bottom: 8px;
+}
+.contact-terms-conditions input[type="checkbox"] {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin: 0;
+  margin-right: 12px;
+}
