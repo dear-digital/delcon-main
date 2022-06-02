@@ -20,8 +20,8 @@
               <input class="field" type="text" id="ContactPhone" name="contact[phone]" placeholder="{{ 'templates.contact.form.phone' | t }}" required>
               <input class="field" type="email" id="ContactEmail" name="contact[email]" placeholder="{{ 'templates.contact.form.email' | t }}" required>
               <textarea id="ContactDescription" name="contact[description]" rows="7" cols="50" placeholder="{{ 'templates.contact.form.comment' | t }}" required></textarea>
-              <input class="btn contact-submit" type="submit" value="{{ 'templates.contact.form.send' | t }}" />
-              <div classs="">
+              <button class="btn contact-submit" type="submit">{{ 'templates.contact.form.send' | t }}</button>
+              <div classs="flex-box align-center contact-terms-conditions">
                 <input class="field" type="checekbox" id="ContactTermsConditions" name="contact[terms_and_conditions]">
                 <label>{{ section.settings.agree_terms }}</label>
               </div>
