@@ -229,7 +229,7 @@ main {
   height: 16px;
 }
 
-.form__message {
+.form__message, .form-success {
   font-size: 16px;
   line-height: 24px;
   margin: 0;
