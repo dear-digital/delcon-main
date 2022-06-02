@@ -58,3 +58,8 @@
   margin: 0;
   margin-right: 12px;
 }
+.contact-terms-conditions label * {
+  font-size: 12px;
+  line-height: 16px;
+  margin: 0;
+}
