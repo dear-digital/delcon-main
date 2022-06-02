@@ -10,7 +10,7 @@
         </div>
         <div class="contact-form-image" style="background-image: url({{ section.settings.section_image | img_url: '698x' }})">
           <div class="contact-form-block">
-            <h2 class="contact-title tk-le-monde-livre-classic-byol text-center">{{ 'templates.contact.form.title' | t }}</h2>
+            <h2 class="contact-title tk-le-monde-livre-classic-byol text-center" style="margin-bottom: 40px;">{{ 'templates.contact.form.title' | t }}</h2>
             {% form 'contact' %}
               {% if form.posted_successfully? %} 
               <div class="success_message form-success text-center">{{ 'templates.contact.form.post_success' | t }}</div>
@@ -19,7 +19,7 @@
               <input class="field" type="text" id="ContactName" name="contact[name]" placeholder="{{ 'templates.contact.form.name' | t }}" required>
               <input class="field" type="text" id="ContactPhone" name="contact[phone]" placeholder="{{ 'templates.contact.form.phone' | t }}" required>
               <input class="field" type="email" id="ContactEmail" name="contact[email]" placeholder="{{ 'templates.contact.form.email' | t }}" required>
-              <textarea id="ContactDescription" name="contact[description]" rows="7" cols="50" placeholder="{{ 'templates.contact.form.comment' | t }}" required></textarea>
+              <textarea id="ContactDescription" name="contact[description]" rows="5" cols="50" placeholder="{{ 'templates.contact.form.comment' | t }}" required></textarea>
               <button class="btn contact-submit" type="submit">{{ 'templates.contact.form.send' | t }}</button>
               <div class="flex-box align-center contact-terms-conditions">
                 <input class="field" type="checkbox" id="ContactTermsConditions" name="contact[terms_and_conditions]">
