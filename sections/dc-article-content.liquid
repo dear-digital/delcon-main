@@ -2,6 +2,7 @@
 
 <div class="main-article container marg-top-xl rel flex-box justify-center">
   <div class="article-content flex-box">
+    {% comment %}
     <span class="share-box no-t-m">
       <a href="/blogs/news" class="back-btn">{% include "back-icon" %}</a>
       <a target="_blank" href="http://www.facebook.com/sharer.php?u=https://{{ shop.domain }}{{ article.url }}">{% include "facebook-share-icon" %}</a>
@@ -11,9 +12,10 @@
       <a target="_blank" href="https://plus.google.com/share?url=https://{{ shop.domain }}{{ article.url }}">{% include "email-share-icon" %}</a>
       <a href="#" class="social-icon tooltip rel" id="share" onClick="return false;">{% include "share-icon-new" %}</a>
     </span>
+    {% endcomment %}
     <div class="article-container">
       <div class="article-image-block rel">
-        <img src="{{ article.image.src | img_url: '2000x' }}" alt="Article Image" loading="lazy">
+        {% comment %}<img src="{{ article.image.src | img_url: '2000x' }}" alt="Article Image" loading="lazy">{% endcomment %}
         <div class="details-box justify-between">
           <span class="date-box no-t-m">{{ article.published_at | date: '%d %b %Y' }}</span>
           <span class="date-box no-t-m">Written by {{ article.author }}</span>
