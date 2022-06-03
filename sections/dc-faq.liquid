@@ -1,14 +1,14 @@
 {{ 'dc-faq-section.css' | asset_url | stylesheet_tag }}
 
-<div class="faq-sec" id="faq-section">
+<div class="faq-sec marg-top-xl marg-bottom-xl" id="faq-section">
   <div class="container">
     <div class="faq-sec-inner">
-      <div class="faq-content">
-        <div class="faq-title title sec-title color-title bold">{{ section.settings.title }}</div>
+      <div class="faq-content faqs">
+        <div class="faq-heading tk-le-monde-livre-classic-byol text-center">{{ section.settings.title }}</div>
         <div class="faq-types">
         	{% for block in section.blocks %}
           		{% if block.type == 'faqs' %}
-          			<a class="btn faq-type-btn" href="#{{ block.settings.faq_id }}">{{ block.settings.faq_title }}</a>
+          			<a class="faq-type-btn" href="#{{ block.settings.faq_id }}">{{ block.settings.faq_title }}</a>
           		{% endif %}
           	{% endfor %}
         </div>
@@ -16,13 +16,13 @@
         	{% for block in section.blocks %}
           		{% if block.type == 'faqs' %}
           			<div id="{{ block.settings.faq_id }}" class="faq-type">
-                      <div class="faq-type-title bold title">{{ block.settings.faq_title }}</div>
+                      <div class="faq-type-title tk-le-monde-livre-classic-byol text-center">{{ block.settings.faq_title }}</div>
                       <div class="faq-wrap">
                         {% if block.settings.question1 != blank %}
                         <div class="faq-qa-wrap">
                           <div class="faq-question-wrap accordion flex-box justify-between align-center" role="button">
                             <div class="faq-question bold">{{ block.settings.question1 }}</div>
-                            <div class="faq-plus-icon">{% include 'icon-plus' %}</div>
+                            <div class="faq-plus-icon">{% include 'accordion-plus' %}</div>
                           </div>
                           <div class="faq-answer panel light">
                             {{ block.settings.answer1 }}
@@ -34,7 +34,7 @@
                         <div class="faq-qa-wrap">
                           <div class="faq-question-wrap accordion flex-box justify-between align-center" role="button">
                             <div class="faq-question bold">{{ block.settings.question2 }}</div>
-                            <div class="faq-plus-icon">{% include 'icon-plus' %}</div>
+                            <div class="faq-plus-icon">{% include 'accordion-plus' %}</div>
                           </div>
                           <div class="faq-answer panel light">
                             {{ block.settings.answer2 }}
@@ -46,7 +46,7 @@
                         <div class="faq-qa-wrap">
                           <div class="faq-question-wrap accordion flex-box justify-between align-center" role="button">
                             <div class="faq-question bold">{{ block.settings.question3 }}</div>
-                            <div class="faq-plus-icon">{% include 'icon-plus' %}</div>
+                            <div class="faq-plus-icon">{% include 'accordion-plus' %}</div>
                           </div>
                           <div class="faq-answer panel light">
                             {{ block.settings.answer3 }}
@@ -58,7 +58,7 @@
                         <div class="faq-qa-wrap">
                           <div class="faq-question-wrap accordion flex-box justify-between align-center" role="button">
                             <div class="faq-question bold">{{ block.settings.question4 }}</div>
-                            <div class="faq-plus-icon">{% include 'icon-plus' %}</div>
+                            <div class="faq-plus-icon">{% include 'accordion-plus' %}</div>
                           </div>
                           <div class="faq-answer panel light">
                             {{ block.settings.answer4 }}
@@ -70,7 +70,7 @@
                         <div class="faq-qa-wrap">
                           <div class="faq-question-wrap accordion flex-box justify-between align-center" role="button">
                             <div class="faq-question bold">{{ block.settings.question5 }}</div>
-                            <div class="faq-plus-icon">{% include 'icon-plus' %}</div>
+                            <div class="faq-plus-icon">{% include 'accordion-plus' %}</div>
                           </div>
                           <div class="faq-answer panel light">
                             {{ block.settings.answer5 }}
@@ -82,7 +82,7 @@
                         <div class="faq-qa-wrap">
                           <div class="faq-question-wrap accordion flex-box justify-between align-center" role="button">
                             <div class="faq-question bold">{{ block.settings.question6 }}</div>
-                            <div class="faq-plus-icon">{% include 'icon-plus' %}</div>
+                            <div class="faq-plus-icon">{% include 'accordion-plus' %}</div>
                           </div>
                           <div class="faq-answer panel light">
                             {{ block.settings.answer6 }}
@@ -94,7 +94,7 @@
                         <div class="faq-qa-wrap">
                           <div class="faq-question-wrap accordion flex-box justify-between align-center" role="button">
                             <div class="faq-question bold">{{ block.settings.question7 }}</div>
-                            <div class="faq-plus-icon">{% include 'icon-plus' %}</div>
+                            <div class="faq-plus-icon">{% include 'accordion-plus' %}</div>
                           </div>
                           <div class="faq-answer panel light">
                             {{ block.settings.answer7 }}
@@ -106,7 +106,7 @@
                         <div class="faq-qa-wrap">
                           <div class="faq-question-wrap accordion flex-box justify-between align-center" role="button">
                             <div class="faq-question bold">{{ block.settings.question8 }}</div>
-                            <div class="faq-plus-icon">{% include 'icon-plus' %}</div>
+                            <div class="faq-plus-icon">{% include 'accordion-plus' %}</div>
                           </div>
                           <div class="faq-answer panel light">
                             {{ block.settings.answer8 }}
@@ -118,7 +118,7 @@
                         <div class="faq-qa-wrap">
                           <div class="faq-question-wrap accordion flex-box justify-between align-center" role="button">
                             <div class="faq-question bold">{{ block.settings.question9 }}</div>
-                            <div class="faq-plus-icon">{% include 'icon-plus' %}</div>
+                            <div class="faq-plus-icon">{% include 'accordion-plus' %}</div>
                           </div>
                           <div class="faq-answer panel light">
                             {{ block.settings.answer9 }}
@@ -130,7 +130,7 @@
                         <div class="faq-qa-wrap">
                           <div class="faq-question-wrap accordion flex-box justify-between align-center" role="button">
                             <div class="faq-question bold">{{ block.settings.question10 }}</div>
-                            <div class="faq-plus-icon">{% include 'icon-plus' %}</div>
+                            <div class="faq-plus-icon">{% include 'accordion-plus' %}</div>
                           </div>
                           <div class="faq-answer panel light">
                             {{ block.settings.answer10 }}
