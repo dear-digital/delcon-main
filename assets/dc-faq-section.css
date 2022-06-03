@@ -130,7 +130,7 @@
   transition: all .3s ease-out;
 }
 .faq-type-btn:hover:after {
-  width: 100%;
+  width: 25%;
   left: 0;
 }
 .faq-type-title {
