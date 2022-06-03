@@ -1,7 +1,307 @@
+{{ 'dc-faq-section.css' | asset_url | stylesheet_tag }}
+
+<div class="faq-sec" id="faq-section">
+  <div class="container">
+    <div class="faq-sec-inner">
+      <div class="faq-content">
+        <div class="faq-title title sec-title color-title bold">{{ section.settings.title }}</div>
+        <div class="faq-types">
+        	{% for block in section.blocks %}
+          		{% if block.type == 'faqs' %}
+          			<a class="btn faq-type-btn" href="#{{ block.settings.faq_id }}">{{ block.settings.faq_title }}</a>
+          		{% endif %}
+          	{% endfor %}
+        </div>
+        <div class="faqs">
+        	{% for block in section.blocks %}
+          		{% if block.type == 'faqs' %}
+          			<div id="{{ block.settings.faq_id }}" class="faq-type">
+                      <div class="faq-type-title bold title">{{ block.settings.faq_title }}</div>
+                      <div class="faq-wrap">
+                        {% if block.settings.question1 != blank %}
+                        <div class="faq-qa-wrap">
+                          <div class="faq-question-wrap accordion flex-box justify-between align-center" role="button">
+                            <div class="faq-question bold">{{ block.settings.question1 }}</div>
+                            <div class="faq-plus-icon">{% include 'icon-plus' %}</div>
+                          </div>
+                          <div class="faq-answer panel light">
+                            {{ block.settings.answer1 }}
+                          </div>
+                        </div>
+                        {% endif %}
+                        
+                        {% if block.settings.question2 != blank %}
+                        <div class="faq-qa-wrap">
+                          <div class="faq-question-wrap accordion flex-box justify-between align-center" role="button">
+                            <div class="faq-question bold">{{ block.settings.question2 }}</div>
+                            <div class="faq-plus-icon">{% include 'icon-plus' %}</div>
+                          </div>
+                          <div class="faq-answer panel light">
+                            {{ block.settings.answer2 }}
+                          </div>
+                        </div>
+                        {% endif %}
+                        
+                        {% if block.settings.question3 != blank %}
+                        <div class="faq-qa-wrap">
+                          <div class="faq-question-wrap accordion flex-box justify-between align-center" role="button">
+                            <div class="faq-question bold">{{ block.settings.question3 }}</div>
+                            <div class="faq-plus-icon">{% include 'icon-plus' %}</div>
+                          </div>
+                          <div class="faq-answer panel light">
+                            {{ block.settings.answer3 }}
+                          </div>
+                        </div>
+                        {% endif %}
+                        
+                        {% if block.settings.question4 != blank %}
+                        <div class="faq-qa-wrap">
+                          <div class="faq-question-wrap accordion flex-box justify-between align-center" role="button">
+                            <div class="faq-question bold">{{ block.settings.question4 }}</div>
+                            <div class="faq-plus-icon">{% include 'icon-plus' %}</div>
+                          </div>
+                          <div class="faq-answer panel light">
+                            {{ block.settings.answer4 }}
+                          </div>
+                        </div>
+                        {% endif %}
+                        
+                        {% if block.settings.question5 != blank %}
+                        <div class="faq-qa-wrap">
+                          <div class="faq-question-wrap accordion flex-box justify-between align-center" role="button">
+                            <div class="faq-question bold">{{ block.settings.question5 }}</div>
+                            <div class="faq-plus-icon">{% include 'icon-plus' %}</div>
+                          </div>
+                          <div class="faq-answer panel light">
+                            {{ block.settings.answer5 }}
+                          </div>
+                        </div>
+                        {% endif %}
+                        
+                        {% if block.settings.question6 != blank %}
+                        <div class="faq-qa-wrap">
+                          <div class="faq-question-wrap accordion flex-box justify-between align-center" role="button">
+                            <div class="faq-question bold">{{ block.settings.question6 }}</div>
+                            <div class="faq-plus-icon">{% include 'icon-plus' %}</div>
+                          </div>
+                          <div class="faq-answer panel light">
+                            {{ block.settings.answer6 }}
+                          </div>
+                        </div>
+                        {% endif %}
+                        
+                        {% if block.settings.question7 != blank %}
+                        <div class="faq-qa-wrap">
+                          <div class="faq-question-wrap accordion flex-box justify-between align-center" role="button">
+                            <div class="faq-question bold">{{ block.settings.question7 }}</div>
+                            <div class="faq-plus-icon">{% include 'icon-plus' %}</div>
+                          </div>
+                          <div class="faq-answer panel light">
+                            {{ block.settings.answer7 }}
+                          </div>
+                        </div>
+                        {% endif %}
+                        
+                        {% if block.settings.question8 != blank %}
+                        <div class="faq-qa-wrap">
+                          <div class="faq-question-wrap accordion flex-box justify-between align-center" role="button">
+                            <div class="faq-question bold">{{ block.settings.question8 }}</div>
+                            <div class="faq-plus-icon">{% include 'icon-plus' %}</div>
+                          </div>
+                          <div class="faq-answer panel light">
+                            {{ block.settings.answer8 }}
+                          </div>
+                        </div>
+                        {% endif %}
+                        
+                        {% if block.settings.question9 != blank %}
+                        <div class="faq-qa-wrap">
+                          <div class="faq-question-wrap accordion flex-box justify-between align-center" role="button">
+                            <div class="faq-question bold">{{ block.settings.question9 }}</div>
+                            <div class="faq-plus-icon">{% include 'icon-plus' %}</div>
+                          </div>
+                          <div class="faq-answer panel light">
+                            {{ block.settings.answer9 }}
+                          </div>
+                        </div>
+                        {% endif %}
+                        
+                        {% if block.settings.question10 != blank %}
+                        <div class="faq-qa-wrap">
+                          <div class="faq-question-wrap accordion flex-box justify-between align-center" role="button">
+                            <div class="faq-question bold">{{ block.settings.question10 }}</div>
+                            <div class="faq-plus-icon">{% include 'icon-plus' %}</div>
+                          </div>
+                          <div class="faq-answer panel light">
+                            {{ block.settings.answer10 }}
+                          </div>
+                        </div>
+                        {% endif %}
+                        
+                      </div>
+          			</div>
+          		{% endif %}
+          	{% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+
+	///----- Auto-Close Accordion
+$(document).ready(function() {
+  //--- initial state of elements
+  $('.faq-sec .panel').hide();
+    //----- click function
+  $(".faq-wrap").find("div[role|='button']").click(function() { //---- tabs or buttons
+    //---- active class
+    $(".faq-wrap").find("div[role|='button']").removeClass('active');
+    $('.panel').slideUp();
+    var selected = $(this).next('.panel');
+    if (selected.is(":hidden")) {
+      $(this).next('.panel').slideDown();
+      $(this).toggleClass('active');
+    }
+  });
+});
+  
+</script>
+
 {% schema %}
   {
-    "name": "Section name",
-    "settings": []
+    "name": "DC FAQ",
+    "settings": [
+		{
+			"type": "text",
+			"id": "title",
+			"label": "Title"
+		}
+	],
+	"blocks": [
+		{
+			"type": "faqs",
+			"name": "FAQs",
+			"settings": [
+				{
+					"type": "text",
+					"id": "faq_title",
+					"label": "FAQ Title"
+				},
+				{
+					"type": "text",
+					"id": "faq_id",
+					"label": "FAQ ID"
+				},
+				{
+					"type": "text",
+					"id": "question1",
+					"label": "Question 1"
+				},
+				{
+					"type": "richtext",
+					"id": "answer1",
+					"label": "Answer 1"
+				},
+				{
+					"type": "text",
+					"id": "question2",
+					"label": "Question 2"
+				},
+				{
+					"type": "richtext",
+					"id": "answer2",
+					"label": "Answer 2"
+				},
+				{
+					"type": "text",
+					"id": "question3",
+					"label": "Question 3"
+				},
+				{
+					"type": "richtext",
+					"id": "answer3",
+					"label": "Answer 3"
+				},
+				{
+					"type": "text",
+					"id": "question4",
+					"label": "Question 4"
+				},
+				{
+					"type": "richtext",
+					"id": "answer4",
+					"label": "Answer 4"
+				},
+				{
+					"type": "text",
+					"id": "question5",
+					"label": "Question 5"
+				},
+				{
+					"type": "richtext",
+					"id": "answer5",
+					"label": "Answer 5"
+				},
+				{
+					"type": "text",
+					"id": "question6",
+					"label": "Question 6"
+				},
+				{
+					"type": "richtext",
+					"id": "answer6",
+					"label": "Answer 6"
+				},
+				{
+					"type": "text",
+					"id": "question7",
+					"label": "Question 7"
+				},
+				{
+					"type": "richtext",
+					"id": "answer7",
+					"label": "Answer 7"
+				},
+				{
+					"type": "text",
+					"id": "question8",
+					"label": "Question 8"
+				},
+				{
+					"type": "richtext",
+					"id": "answer8",
+					"label": "Answer 8"
+				},
+				{
+					"type": "text",
+					"id": "question9",
+					"label": "Question 9"
+				},
+				{
+					"type": "richtext",
+					"id": "answer9",
+					"label": "Answer 9"
+				},
+				{
+					"type": "text",
+					"id": "question10",
+					"label": "Question 10"
+				},
+				{
+					"type": "richtext",
+					"id": "answer10",
+					"label": "Answer 10"
+				}
+			]
+		}
+	],
+	"presets":[
+      {
+         "name":"DC FAQ"
+      }
+   ]
   }
 {% endschema %}
 
