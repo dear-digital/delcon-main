@@ -157,12 +157,12 @@ $(document).ready(function() {
     //----- click function
   $(".faq-wrap").find("div[role|='button']").click(function() { //---- tabs or buttons
     //---- active class
-    $(".faq-wrap").find("div[role|='button']").removeClass('active');
+    $(".faq-wrap").find("div[role|='button']").removeClass('faq-active');
     $('.panel').slideUp();
     var selected = $(this).next('.panel');
     if (selected.is(":hidden")) {
       $(this).next('.panel').slideDown();
-      $(this).toggleClass('active');
+      $(this).toggleClass('faq-active');
     }
   });
 });
