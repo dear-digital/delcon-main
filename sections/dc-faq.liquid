@@ -150,22 +150,26 @@
 
 <script>
 
-	///----- Auto-Close Accordion
-$(document).ready(function() {
-  //--- initial state of elements
-  $('.faq-sec .panel').hide();
-    //----- click function
-  $(".faq-wrap").find("div[role|='button']").click(function() { //---- tabs or buttons
-    //---- active class
-    $(".faq-wrap").find("div[role|='button']").removeClass('faq-active');
-    $('.panel').slideUp();
-    var selected = $(this).next('.panel');
-    if (selected.is(":hidden")) {
-      $(this).next('.panel').slideDown();
-      $(this).toggleClass('faq-active');
-    }
+  $(document).ready(function() {
+    $(".accordion").click(function() {
+      var acc = $(this).hasClass('faq-active')
+      $(".accordion").each(function() {
+        $(this).removeClass("faq-active");
+        var panel = $(this).next()[0];
+        panel.style.maxHeight = null;
+      });
+      if(acc) {
+        $(this).removeClass("faq-active")
+        var panel = $(this).next()[0];
+        panel.style.maxHeight = null;
+      }
+      else {
+        $(this).addClass("faq-active")
+        var panel = $(this).next()[0];
+        panel.style.maxHeight = panel.scrollHeight + "px";
+      } 
+    });
   });
-});
   
 </script>
 
