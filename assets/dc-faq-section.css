@@ -131,7 +131,7 @@
   transition: all .3s ease-out;
 }
 .faq-type-btn:hover:after {
-  width: 25%;
+  width: 100%;
   left: 0;
 }
 .faq-type-title {
