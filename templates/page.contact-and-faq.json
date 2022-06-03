@@ -8,6 +8,128 @@
         "padding_bottom": 28
       }
     },
+    "16542253407f5c93ea": {
+      "type": "dc-faq",
+      "blocks": {
+        "8194cb9e-9138-4b20-99bb-f0c9f69cf466": {
+          "type": "faqs",
+          "settings": {
+            "faq_title": "Verzending",
+            "faq_id": "verzending",
+            "question1": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonum?",
+            "answer1": "<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit<\/p>",
+            "question2": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonum?",
+            "answer2": "<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit<\/p>",
+            "question3": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonum?",
+            "answer3": "<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit<\/p>",
+            "question4": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonum?",
+            "answer4": "<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit<\/p>",
+            "question5": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonum?",
+            "answer5": "<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit<\/p>",
+            "question6": "",
+            "answer6": "",
+            "question7": "",
+            "answer7": "",
+            "question8": "",
+            "answer8": "",
+            "question9": "",
+            "answer9": "",
+            "question10": "",
+            "answer10": ""
+          }
+        },
+        "81a122b8-808f-4eb8-8b90-0dbbbaf49eb3": {
+          "type": "faqs",
+          "settings": {
+            "faq_title": "Onderwerp 2",
+            "faq_id": "onderwerp-2",
+            "question1": "",
+            "answer1": "",
+            "question2": "",
+            "answer2": "",
+            "question3": "",
+            "answer3": "",
+            "question4": "",
+            "answer4": "",
+            "question5": "",
+            "answer5": "",
+            "question6": "",
+            "answer6": "",
+            "question7": "",
+            "answer7": "",
+            "question8": "",
+            "answer8": "",
+            "question9": "",
+            "answer9": "",
+            "question10": "",
+            "answer10": ""
+          }
+        },
+        "782d427b-3cb3-41d0-8b70-b091c6309d8d": {
+          "type": "faqs",
+          "settings": {
+            "faq_title": "Onderwerp 3",
+            "faq_id": "onderwerp-3",
+            "question1": "",
+            "answer1": "",
+            "question2": "",
+            "answer2": "",
+            "question3": "",
+            "answer3": "",
+            "question4": "",
+            "answer4": "",
+            "question5": "",
+            "answer5": "",
+            "question6": "",
+            "answer6": "",
+            "question7": "",
+            "answer7": "",
+            "question8": "",
+            "answer8": "",
+            "question9": "",
+            "answer9": "",
+            "question10": "",
+            "answer10": ""
+          }
+        },
+        "fbf89284-caa5-45a1-b3e6-ae0dc47911a5": {
+          "type": "faqs",
+          "settings": {
+            "faq_title": "Onderwerp 4",
+            "faq_id": "onderwerp-4",
+            "question1": "",
+            "answer1": "",
+            "question2": "",
+            "answer2": "",
+            "question3": "",
+            "answer3": "",
+            "question4": "",
+            "answer4": "",
+            "question5": "",
+            "answer5": "",
+            "question6": "",
+            "answer6": "",
+            "question7": "",
+            "answer7": "",
+            "question8": "",
+            "answer8": "",
+            "question9": "",
+            "answer9": "",
+            "question10": "",
+            "answer10": ""
+          }
+        }
+      },
+      "block_order": [
+        "8194cb9e-9138-4b20-99bb-f0c9f69cf466",
+        "81a122b8-808f-4eb8-8b90-0dbbbaf49eb3",
+        "782d427b-3cb3-41d0-8b70-b091c6309d8d",
+        "fbf89284-caa5-45a1-b3e6-ae0dc47911a5"
+      ],
+      "settings": {
+        "title": "Veelgestelde vragen"
+      }
+    },
     "1654088993c2efaab8": {
       "type": "dc-contact-form",
       "settings": {
@@ -21,6 +143,7 @@
   },
   "order": [
     "main",
+    "16542253407f5c93ea",
     "1654088993c2efaab8"
   ]
 }
