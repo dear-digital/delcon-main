@@ -1,7 +1,7 @@
 {{ 'dc-article-content.css' | asset_url | stylesheet_tag }}
 
 <div class="main-article container marg-top-xl rel flex-box justify-center">
-  <div class="article-content flex-box">
+  <div class="article-content flex-box" style="background-color:{{ section.settings.background_color }}">
     {% comment %}
     <span class="share-box no-t-m">
       <a href="/blogs/news" class="back-btn">{% include "back-icon" %}</a>
@@ -176,7 +176,7 @@
   </div>
 </div>
 
-
+{% comment %}
 <div class="article-content-wrapper">
   <div class="container">
     <div class="article-content-wrap rel flex-box">
@@ -191,7 +191,7 @@
   </div>
   
 </div>
-{% comment %}{% endcomment %}
+{% endcomment %}
 
 {% schema %}
   {
