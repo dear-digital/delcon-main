@@ -108,6 +108,7 @@
 }
 .faq-type-btn {
   width: 25%;
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
