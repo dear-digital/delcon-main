@@ -94,9 +94,12 @@ a{
   text-transform: lowercase;
   text-decoration: none;
 }
-.prev-next-comments .left-arrow, .prev-next-comments .right-arrow {
+.prev-next-comments .left-arrow {
   margin-right: 8px;
 }
 .prev-next-comments .left-arrow svg {
   transform: rotate(180deg);
+}
+.prev-next-comments .right-arrow {
+  margin-left: 8px;
 }
