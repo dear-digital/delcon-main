@@ -1,19 +1,19 @@
 .left-chev {
-  display: inline-block;
+  display: block;
   transform: rotate(180deg);
   margin-right: 8px;
 }
 
 .left-chev #Arrow{
-  transition: .4s ease;
+  transition: all .3s ease-out;
 }
 
 .back-btn {
   display: flex;
   align-items: center;
-  position: absolute;
-  top: 0;
-  left: 0;
+  height: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
 }
 
 a{
@@ -26,6 +26,7 @@ a{
 }
 
 .back-txt {
+  display: block;
   font-size: 16px;
   line-height: 22px;
   letter-spacing: 0;
