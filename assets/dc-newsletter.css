@@ -48,19 +48,6 @@
   outline: none;
 }
 
-/* ::placeholder {
-color: var(--dd-color-first);
-opacity: 0.5;
-}
-
-:-ms-input-placeholder {
-color: var(--dd-color-first);
-}
-
-::-ms-input-placeholder {
-color: var(--dd-color-first);
-} */
-
 @media(max-width: 992px){
   .newsletter-form-wrap{
     width: 100%;
