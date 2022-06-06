@@ -202,6 +202,32 @@
 </div>
 
 <script>
+  
+  function checkUpsellAvailability() {
+
+    var selectedVariant = $(".article-upsell .variant-box.variant-selected").attr("variant-name");
+
+    //Hide Unavailable variants
+    $(".variant-box").each(function() {
+      if($(this).attr("data-inventory-management") != "undefined" && $(this).attr("data-inventory-management") != null) {
+      	if(($(this).attr("variant-name") == selectedVariant) && ($(this).attr("data-quantity") < parseInt($(".qty-number").text())) && ($(this).attr("data-sell-out-of-stock") == "deny")) {
+          $(".addArticleUpsell").attr("disabled",true);
+        }
+        else if(($(this).attr("variant-name") == selectedVariant) && ($(this).attr("data-quantity") >= parseInt($(".qty-number").text()))) {
+          $(".addArticleUpsell").attr("disabled",false);
+        }  
+	  }
+	  else {
+	  	  $(".addArticleUpsell").attr("disabled",false);
+	  }
+    });
+
+  }
+  
+  $(document).ready(function() {
+    checkUpsellAvailability();
+  });
+          
   $('.addArticleUpsell').click(function() {
     let renderedHtml;
     $('.drawer-cart').addClass('drawn');
