@@ -210,3 +210,25 @@ input.input--error, select.input--error, textarea.input--error {
   background-color: #fff8f8;
   color: #d20000;
 }
+
+ul.comments .comment {
+  margin-bottom: 40px;
+}
+.comment-author {
+  display: block;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+.comment-date {
+  display: block;
+  font-size: 14px;
+  line-height: 19px;
+  margin-bottom: 8px;
+}
+.comment-message {
+  display: block;
+  font-size: 16px;
+  line-height: 24px;
+}
