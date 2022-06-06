@@ -33,7 +33,7 @@
     </div>
     
     
-      <div class="comment-box">
+      <div class="comment-box comment-wrapper">
         <div class="flex-box comment-box">
           <div class="comment-box">
             <div class="comment-form">
@@ -110,12 +110,13 @@
               {% endif %}
               {% endcomment %}
 
-              <input type="submit" class="comment-post-btn" value="Post Comment">
+              <button type="submit" class="btn">{{ 'templates.contact.form.send' | t }}</button>
               {% endform %}
             </div>
           </div>
         </div>
       </div>
+    
       {% if articles.comments.size > 0 %}
         <div class="comment-box">
           <div class="flex-box comment-box">
