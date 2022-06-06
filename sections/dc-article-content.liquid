@@ -60,21 +60,8 @@
     </div>
     
     <div class="prev-next-comments justify-between">
-      
-      <script id="blog-json" type="application/json">
-        {{ blog.previous_article | json }}
-      </script>
-      
-      <script id="article-json" type="application/json">
-        {{ article | json }}
-      </script>
-      
-      {% if blog.previous_article != blank %}
-      <a href="{{ blog.previous_article }}" class="shop-link"><span class="left-arrow">{% include "arrow-right-sm" %}</span>{{ section.settings.prev_article }}</a>
-      {% endif %}
-      {% if blog.next_article != blank %}
-      <a href="{{ blog.next_article }}" class="shop-link">{{ section.settings.next_article }}<span class="right-arrow">{% include "arrow-right-sm" %}</span></a>
-      {% endif %}
+      <a href="{{ blog.previous_article }}" class="shop-link {% if blog.previous_article == blank %}no-disp{% endif %}"><span class="left-arrow">{% include "arrow-right-sm" %}</span>{{ section.settings.prev_article }}</a>
+      <a href="{{ blog.next_article }}" class="shop-link {% if blog.next_article == blank %}no-disp{% endif %}">{{ section.settings.next_article }}<span class="right-arrow">{% include "arrow-right-sm" %}</span></a>
     </div>
     
     {% if blog.comments_enabled? %}
