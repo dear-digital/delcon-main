@@ -1,0 +1,66 @@
+{{ 'dc-hero-small.css' | asset_url | stylesheet_tag }}
+
+<div class="hero-small rel" style="background-color: {{ section.settings.background_color }}">
+  <div class="hero-small-content container flex-box justify-between align-center{% if section.settings.media_alignment == 'left' %} rev-cols{% endif %}">
+    <div class="hero-small-text">
+      <h1 class="coll-title tk-le-monde-livre-classic-byol">{% if collection.title != blank %}{{ collection.title }}{% else %}{{ section.settings.title }}{% endif %}</h1>
+      <div class="coll-desc">{% if collection.description != blank %}{{ collection.description }}{% else %}{{ section.settings.desc }}{% endif %}</div>
+    </div>
+    <div class="hero-small-img">{% if collection.image != blank %}{{ collection.image | image_url: width: 720 | image_tag }}{% else %}<img src="{{ section.settings.image | img_url: 'x720' }}">{% endif %}</div>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "DC Collection Hero Small",
+    "settings": [
+		{
+			"type": "color",
+			"id": "background_color",
+			"label": "Background Color"
+		},
+	  {
+        "type": "radio",
+        "id": "media_alignment",
+        "label": "Media alignment",
+        "options": [
+          {
+            "value": "left",
+            "label": "Left"
+          },
+          {
+            "value": "right",
+            "label": "Right"
+          }
+        ],
+        "default": "right"
+      },
+		{
+			"type": "text",
+			"id": "title",
+			"label": "Title"
+		},
+		{
+			"type": "text",
+			"id": "desc",
+			"label": "Description"
+		},
+		{
+			"type": "image_picker",
+			"id": "image",
+			"label": "Image"
+		}
+	],
+	"presets": [
+		{
+			"name": "DC Collection Hero Small"
+		}
+	]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}
