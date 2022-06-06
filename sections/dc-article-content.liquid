@@ -9,19 +9,18 @@
   <div class="main-content-wrapper">
     <div class="article-content flex-box" style="background-color:{{ section.settings.background_color }}">
       <div class="article-container">
-        <div class="details-box justify-between">
-          <span class="article-tag-date justify-between align-center">
-            <div>
-              <span class="article-tag{% for tag in article.tags %}{% if forloop.first != blank %} tag-exists{% endif %}{% endfor %}">{% for tag in article.tags %}{% if forloop.first %}{{ tag }}{% endif %}{% endfor %}</span>
-              <span class="article-date">{{ article.created_at | date: "%d %B %Y" }}</span>
-            </div>
-            <span class="article-author">{{ article.author }}</span>
-          </span>
-        </div>
+        <span class="article-tag-date justify-between align-center">
+          <div>
+            <span class="article-tag{% for tag in article.tags %}{% if forloop.first != blank %} tag-exists{% endif %}{% endfor %}">{% for tag in article.tags %}{% if forloop.first %}{{ tag }}{% endif %}{% endfor %}</span>
+            <span class="article-date">{{ article.created_at | date: "%d %B %Y" }}</span>
+          </div>
+          <span class="article-author">{{ article.author }}</span>
+        </span>
         {% comment %}
         <div class="article-image-block rel">
           <img src="{{ article.image.src | img_url: '2000x' }}" alt="Article Image" loading="lazy">
-          
+          <div class="details-box justify-between">
+          </div>  
         </div>
         {% endcomment %}
         <div class="article-contant">
