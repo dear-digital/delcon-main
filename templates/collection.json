@@ -37,11 +37,63 @@
         "desc": "Binnen het Delcon gamma kan je hondenvoer vinden die ontwikkeld werd voor de volledige levenscyclus van jouw hond. Deze uitgebalanceerde en complete variëteiten hondenvoeding zijn elk op zich rijk aan kwaliteitsvolle ingrediënten. Ze bevatten multi-vitamines en essentiële mineralen.",
         "image": "shopify:\/\/shop_images\/Image_2x_e91738de-bcc2-4a55-b173-43507937fd81.png"
       }
+    },
+    "1654500934ac4d77ba": {
+      "type": "dc-coll-main",
+      "blocks": {
+        "e5612db2-2971-42fa-8315-821c32f2906e": {
+          "type": "coll",
+          "settings": {
+            "collection": "jonge-honden",
+            "age": "0 - 9 maanden"
+          }
+        },
+        "3308ef63-2d5c-4472-9ef1-51960b99131e": {
+          "type": "coll",
+          "settings": {
+            "collection": "volwassen-honden",
+            "age": "9 maanden - 10 jaar"
+          }
+        },
+        "2c81aa55-55f2-41b2-9b2a-d457c7ed3590": {
+          "type": "coll",
+          "settings": {
+            "collection": "oudere-honden",
+            "age": "10+ jaar"
+          }
+        },
+        "7846b221-82fb-428e-960c-a8a347d26b50": {
+          "type": "suggestion",
+          "settings": {
+            "bg_img": "shopify:\/\/shop_images\/Mask_Group_1_2x_c7fd7bfd-8968-4ef6-9ad3-0a843e305cb0.png",
+            "title": "Keuzestress?",
+            "desc": "Elke hond en elke kat heeft eigen specifieke behoeften. Daarom maken wij met veel zorg voeding die aangepast is aan jouw pluizige vriend.",
+            "isProductFinder": true,
+            "section_btn_text": "PRODUCTFINDER",
+            "section_btn_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "e5612db2-2971-42fa-8315-821c32f2906e",
+        "3308ef63-2d5c-4472-9ef1-51960b99131e",
+        "2c81aa55-55f2-41b2-9b2a-d457c7ed3590",
+        "7846b221-82fb-428e-960c-a8a347d26b50"
+      ],
+      "settings": {
+        "meerInfo": "QUICK VIEW",
+        "filter": "Filter",
+        "tot_products": "Products",
+        "sort": "Sort By",
+        "koop_online": "KOOP ONLINE",
+        "koop_local": "KOOP LOKAAL"
+      }
     }
   },
   "order": [
     "banner",
     "product-grid",
-    "165450085366a69edc"
+    "165450085366a69edc",
+    "1654500934ac4d77ba"
   ]
 }
