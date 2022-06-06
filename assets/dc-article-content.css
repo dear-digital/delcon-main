@@ -65,8 +65,8 @@ a{
   align-items: center;
   position: sticky;
   position: -webkit-sticky;
-  top: 20vh;
-  left: 16px;
+  top: 86vh;
+  left: auto;
   width: auto;
   height: min-content;
   height: -webkit-min-content;
