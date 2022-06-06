@@ -62,7 +62,7 @@
           <div class="coll-filter-type">
             <div class="coll-filter-type-name-wrap accordion">
               <div class="coll-filter-type-name">{{ block.settings.main_filter }}</div>
-              <div class="plus-sign">{% include 'icon-plus-new' %}</div>
+              <span class="symbol">{% render "accordion-plus" %}</span>
             </div>
             <div class="coll-filter-options-wrap panel">
               {% if block.settings.sub_filter_1 != blank %}
