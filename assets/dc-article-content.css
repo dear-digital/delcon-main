@@ -112,8 +112,8 @@
   display: flex;
   width: calc(100% - 271px);
 }
-.article-product-name {
-  display: flex;
+.article-upsell-infos .flex-box {
+  width: 100%;
 }
 
 .prev-next-comments {
