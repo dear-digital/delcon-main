@@ -1,5 +1,6 @@
 {{ 'dc-article-content.css' | asset_url | stylesheet_tag }}
-{{ 'dc-blog-main.css' | asset_url | stylesheet_tag }}
+
+{{ 'dc-product-card.css' | asset_url | stylesheet_tag }}
 
 <div class="main-article container rel flex-box justify-between">
   <a href="{% unless routes.root_url == "/" %}{{ routes.root_url }}{% endunless %}/blogs/nieuws" class="back-btn">
@@ -34,6 +35,7 @@
                   <a href="{{ articleUpsellProd.url }}" class="product-name">{{ articleUpsellProd.title }}</a>
                   <span class="product-selling-price">{{ articleUpsellProd.price | money }}</span>
                 </div>
+                <div class="article-product-desc">{{ articleUpsellProd.metafields.my_fields.extra_info }}</div>
               </div>
             </div>
           </div>
