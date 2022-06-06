@@ -1,7 +1,7 @@
 {{ 'dc-article-content.css' | asset_url | stylesheet_tag }}
 {{ 'dc-blog-main.css' | asset_url | stylesheet_tag }}
 
-<div class="main-article container rel flex-box justify-center">
+<div class="main-article container rel flex-box justify-between">
   <a href="{% unless routes.root_url == "/" %}{{ routes.root_url }}{% endunless %}/blogs/nieuws" class="back-link">{{ section.settings.back }}</a>
   <div>
     <div class="article-content flex-box" style="background-color:{{ section.settings.background_color }}">
