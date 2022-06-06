@@ -1,5 +1,5 @@
 .left-chev {
-  display: block;
+  display: flex;
   transform: rotate(180deg);
   margin-right: 8px;
 }
