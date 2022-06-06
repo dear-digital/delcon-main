@@ -1,0 +1,236 @@
+{{ 'dc-article-content.css' | asset_url | stylesheet_tag }}
+{{ 'dc-blog-main.css' | asset_url | stylesheet_tag }}
+
+<div class="main-article container marg-top-xl rel flex-box justify-center">
+  <a href="{% unless routes.root_url == "/" %}{{ routes.root_url }}{% endunless %}/blogs/nieuws" class="back-link">{{ section.settings.back }}</a>
+  <div>
+    <div class="article-content flex-box" style="background-color:{{ section.settings.background_color }}">
+      <div class="article-container">
+        <div class="article-image-block rel">
+          {% comment %}<img src="{{ article.image.src | img_url: '2000x' }}" alt="Article Image" loading="lazy">{% endcomment %}
+          <div class="details-box justify-between">
+            <span class="article-tag-date justify-between align-center">
+              <div>
+                <span class="article-tag{% for tag in article.tags %}{% if forloop.first != blank %} tag-exists{% endif %}{% endfor %}">{% for tag in article.tags %}{% if forloop.first %}{{ tag }}{% endif %}{% endfor %}</span>
+                <span class="article-date">{{ article.created_at | date: "%d %B %Y" }}</span>
+              </div>
+              <span class="article-author">{{ article.author }}</span>
+            </span>
+          </div>
+        </div>
+        <div class="article-contant">
+          <div class="mobile-date-author no-d">
+            <span class="hmpg-article-details">{{ article.published_at | date: '%b %d, %Y' }}</span>
+            <span class="hmpg-article-details">- by {{ article.author }}</span>
+          </div>
+          <h1 class="article-heading tk-le-monde-livre-classic-byol">{{ article.title }}</h1>
+          <div class="article-content-wrapper">{{ article.content }}</div>
+        </div>
+
+        {% if blog.comments_enabled? %}
+        {% if number_of_comments > 0 %}
+        <div class="comment-box">
+          <div class="flex-box comment-box">
+            <div class="comment-box">
+              <h2 class="comment-heading">Comments on Blog</h2>
+
+              {% paginate article.comments by 5 %}
+
+              {% comment %}
+              #comments is required, it is used as an anchor link by Shopify.
+              {% endcomment %}
+              <div id="comments">
+                <ul class="comments">
+                  {% comment %}
+                  If a comment was just submitted with no blank field, show it.
+                  {% endcomment %}
+                  {% if comment.status == 'pending' %}
+                  <li id="{{ comment.id }}" class="comment">
+                    {% include 'comment', comment: comment %}
+                  </li>
+                  {% endif %}
+
+                  {% for comment in article.comments %}
+                  <li id="{{ comment.id }}" class="comment">
+                    {% include 'comment', comment: comment %}
+                  </li>
+                  {% endfor %}
+                </ul>
+
+                {%- if paginate.pages > 1 -%}
+                {% include 'pagination', paginate: paginate %}
+                {%- endif -%}
+
+              </div>
+              {% endpaginate %}
+            </div>
+          </div>
+        </div>
+        {% endif %}
+
+        <div class="comment-box">
+          <div class="flex-box comment-box">
+            <div class="comment-box">
+              <div class="comment-form">
+                {% form 'new_comment', article %}
+
+                {%- assign formId = 'CommentForm' -%}
+
+                <h2 class="comment-heading">Leave a comment</h2>
+
+                {%- assign post_message = 'success' -%}
+                {%- if blog.moderated? and comment.status == 'pending' -%}
+                {%- assign post_message = 'success_moderated' -%}
+                {%- elsif comment.status == 'unapproved' or comment.status == 'spam' -%}
+                {%- assign post_message = 'unapproved' -%}
+                {%- endif -%}
+
+                {% include 'form-status', form: form, form_id: formId, success_message: post_message %}
+
+                <div class="flex-box justify-between comment-box">
+
+                  <div class="col-half">
+                    <label for="{{ formId }}-author">Name</label>
+                    <input type="text" name="comment[author]" id="{{ formId }}-author" class="login-input input-full{% if form.errors contains 'author' %} input--error{% endif %}" value="{{ form.author }}"{% if form.errors contains 'author' %} aria-invalid="true" aria-describedby="{{ formId}}-author-error"{% endif %} required>
+
+                    {% if form.errors contains 'author' %}
+                    <span id="{{ formId}}-author-error" class="input-error-message">
+                      <span class="visually-hidden">Name can't be blank </span>
+                      {% include 'icon-error' %}
+                      <span>Name {{ form.errors.messages['author'] }}.</span>
+                    </span>
+                    {% endif %}
+
+                  </div>
+
+                  <div class="col-half">
+                    <label for="{{ formId }}-email">Email</label>
+                    <input type="email" name="comment[email]" id="{{ formId }}-email" class="login-input input-full{% if form.errors contains 'email' %} input--error{% endif %}" value="{{ form.email }}" autocorrect="off" autocapitalize="off" {% if form.errors contains 'email' %} aria-invalid="true" aria-describedby="{{ formId}}-email-error"{% endif %} required>
+
+                    {% if form.errors contains 'email' %}
+                    <span id="{{ formId}}-email-error" class="input-error-message">
+                      <span class="visually-hidden">Email must be formatted as an email</span>
+                      {% include 'icon-error' %}
+                      <span>{{ form.errors.translated_fields['email'] | capitalize }} {{ form.errors.messages['email'] }}.</span>
+                    </span>
+                    {% endif %}
+
+                  </div>
+
+                </div>
+
+                <div class="comment-message comment-box">
+                  <label for="{{ formId }}-body">Message</label>
+                  <textarea name="comment[body]" id="{{ formId }}-body" rows="4" class="textarea-input input-full{% if form.errors contains 'body' %} input--error{% endif %}"{% if form.errors contains 'body' %} aria-invalid="true" aria-describedby="{{ formId}}-body-error"{% endif %} required>{{ form.body }}</textarea>
+
+                  {% if form.errors contains 'body' %}
+                  <span id="{{ formId}}-body-error" class="input-error-message">
+                    <span class="visually-hidden">Message can't be blank </span>
+                    {% include 'icon-error' %}
+                    <span>Message {{ form.errors.messages['body'] }}.</span>
+                  </span>
+                  {% endif %}
+
+                </div>
+
+                {% if blog.moderated? %}
+                <p class="fine-print">Please note, comments must be approved before they are published</p>
+                {% endif %}
+
+                <input type="submit" class="comment-post-btn" value="Post Comment">
+                {% endform %}
+              </div>
+            </div>
+          </div>
+        </div>
+        {% endif %}
+      </div>
+    </div>
+    <div class="prev-next-comments justify-between">
+      {% if blog.previous_article != blank %}
+      <a href="{{ blog.previous_article }}" class="shop-link">
+        <span class="left-arrow">{% include "arrow-right-sm" %}</span>
+        Previous article
+      </a>
+      {% endif %}
+      {% if blog.next_article != blank %}
+      <a href="{{ blog.next_article }}" class="shop-link">
+        Next article 
+        <span class="right-arrow">{% include "arrow-right-sm" %}</span>
+      </a>
+      {% endif %}
+    </div>
+  </div>
+  <span class="share-box no-t-m">
+    <a target="_blank" class="social-icon" aria-label="facebook share icon"  href="http://www.facebook.com/sharer.php?u=https://{{ shop.domain }}{{ article.url }}">{% include "icon-facebook" %}</a>
+    <a target="_blank" class="social-icon" aria-label="instagram share icon" href="https://www.instagram.com/delcon_petfood/">{% include "icon-instagram" %}</a>
+    <a target="_blank" class="social-icon" aria-label="pinterest share icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https://{{ shop.domain }}{{ article.url }}">{% include "icon-pinterest" %}</a>
+  </span>
+</div>
+
+{% comment %}
+<div class="article-content-wrapper">
+  <div class="container">
+    <div class="article-content-wrap rel flex-box">
+      <a class="back-btn" href="/blogs/nieuws">
+        <span class="left-chev">{% render 'icon-left-chevron' %}</span>
+        <span class="back-txt">{{ section.settings.back }}</span>
+      </a>
+      <div class="article-content" style="background-color:{{ section.settings.background_color }}">
+      	
+      </div>
+    </div>
+  </div>
+  
+</div>
+{% endcomment %}
+
+{% schema %}
+  {
+    "name": "DC Article Content",
+    "settings": [
+		{
+			"type": "text",
+			"id": "back",
+			"label": "Back Text",
+			"default": "terug naar blog"
+		},
+		{
+			"type": "color",
+			"id": "background_color",
+			"label": "Background Color"
+		},
+		{
+			"type": "text",
+			"id": "tag",
+			"label": "Article Tag"
+		},
+		{
+			"type": "text",
+			"id": "date",
+			"label": "Article Date"
+		},
+		{
+			"type": "text",
+			"id": "author",
+			"label": "Article Author"
+		},
+		{
+			"type": "product",
+			"id": "article_upsell",
+			"label": "Article Upsell Product"
+		}
+	],
+	"presets": [
+		{
+			"name": "DC Article Content"
+		}
+	]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}
