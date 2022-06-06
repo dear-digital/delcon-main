@@ -72,13 +72,81 @@
             "section_btn_text": "PRODUCTFINDER",
             "section_btn_url": ""
           }
+        },
+        "e2864443-00d3-4d06-a75d-5d2bdafc8a0b": {
+          "type": "filter",
+          "settings": {
+            "main_filter": "",
+            "sub_filter_1": "",
+            "sub_filter_2": "",
+            "sub_filter_3": "",
+            "sub_filter_4": "",
+            "sub_filter_5": "",
+            "sub_filter_6": "",
+            "sub_filter_7": "",
+            "sub_filter_8": "",
+            "sub_filter_9": "",
+            "sub_filter_10": ""
+          }
+        },
+        "42f50eed-3330-4adf-94ce-9ca84dc2e5d6": {
+          "type": "filter",
+          "settings": {
+            "main_filter": "",
+            "sub_filter_1": "",
+            "sub_filter_2": "",
+            "sub_filter_3": "",
+            "sub_filter_4": "",
+            "sub_filter_5": "",
+            "sub_filter_6": "",
+            "sub_filter_7": "",
+            "sub_filter_8": "",
+            "sub_filter_9": "",
+            "sub_filter_10": ""
+          }
+        },
+        "9a8c3c58-cfaf-4c8b-942a-5f3a5661b076": {
+          "type": "filter",
+          "settings": {
+            "main_filter": "",
+            "sub_filter_1": "",
+            "sub_filter_2": "",
+            "sub_filter_3": "",
+            "sub_filter_4": "",
+            "sub_filter_5": "",
+            "sub_filter_6": "",
+            "sub_filter_7": "",
+            "sub_filter_8": "",
+            "sub_filter_9": "",
+            "sub_filter_10": ""
+          }
+        },
+        "3da49a7a-1482-42bb-a07d-1492a20bd65e": {
+          "type": "filter",
+          "settings": {
+            "main_filter": "",
+            "sub_filter_1": "",
+            "sub_filter_2": "",
+            "sub_filter_3": "",
+            "sub_filter_4": "",
+            "sub_filter_5": "",
+            "sub_filter_6": "",
+            "sub_filter_7": "",
+            "sub_filter_8": "",
+            "sub_filter_9": "",
+            "sub_filter_10": ""
+          }
         }
       },
       "block_order": [
         "e5612db2-2971-42fa-8315-821c32f2906e",
         "3308ef63-2d5c-4472-9ef1-51960b99131e",
         "2c81aa55-55f2-41b2-9b2a-d457c7ed3590",
-        "7846b221-82fb-428e-960c-a8a347d26b50"
+        "7846b221-82fb-428e-960c-a8a347d26b50",
+        "e2864443-00d3-4d06-a75d-5d2bdafc8a0b",
+        "42f50eed-3330-4adf-94ce-9ca84dc2e5d6",
+        "9a8c3c58-cfaf-4c8b-942a-5f3a5661b076",
+        "3da49a7a-1482-42bb-a07d-1492a20bd65e"
       ],
       "settings": {
         "meerInfo": "QUICK VIEW",
