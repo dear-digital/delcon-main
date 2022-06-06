@@ -82,3 +82,21 @@ a{
   text-align: left;
   text-decoration: none;
 }
+.prev-next-comments {
+  display: flex;
+}
+.prev-next-comments .shop-link {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 0px;
+  text-transform: lowercase;
+  text-decoration: none;
+}
+.prev-next-comments .left-arrow, .prev-next-comments .right-arrow {
+  margin-right: 8px;
+}
+.prev-next-comments .left-arrow svg {
+  transform: rotate(180deg);
+}
