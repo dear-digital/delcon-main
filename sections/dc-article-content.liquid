@@ -3,7 +3,7 @@
 
 <div class="main-article container rel flex-box justify-between">
   <a href="{% unless routes.root_url == "/" %}{{ routes.root_url }}{% endunless %}/blogs/nieuws" class="back-link">{{ section.settings.back }}</a>
-  <div>
+  <div class="main-content-wrapper">
     <div class="article-content flex-box" style="background-color:{{ section.settings.background_color }}">
       <div class="article-container">
         <div class="article-image-block rel">
