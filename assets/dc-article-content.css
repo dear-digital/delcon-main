@@ -40,11 +40,14 @@ a{
 .back-btn:hover .left-chev #Arrow{
   stroke: #B499BF;
 }
-
+.main-content-wrapper {
+  width: 70%;
+  max-width: 792px;
+}
 .article-content {
   padding: 40px;
   margin-top: -200px;
-  width: 792px;
+  width: 100%;
   margin-bottom: 64px;
 }
 .article-author {
