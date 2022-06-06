@@ -198,6 +198,7 @@
   font-weight: bold;
   letter-spacing: 0;
   margin-bottom: 4px;
+  color: rgb(var(--color-base-accent-1));
 }
 
 .cart-product-price-wrapper {
