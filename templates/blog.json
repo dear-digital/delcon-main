@@ -56,11 +56,21 @@
       "settings": {
         "meerInfo": "VERDER LEZEN"
       }
+    },
+    "16545359016ccec964": {
+      "type": "dc-newsletter",
+      "settings": {
+        "title": "Krijg nu 20% korting",
+        "desc": "Schrijf je in op onze nieuwsbrief en blijf op de hoogte van acties en promoties. 20% korting die je kan gebruiken bij je volgende aankoop in onze shop",
+        "email_placeholder": "Email adres",
+        "subscribe_btn": "Send"
+      }
     }
   },
   "order": [
     "main",
     "1654500497089b775d",
-    "165450051473c21051"
+    "165450051473c21051",
+    "16545359016ccec964"
   ]
 }
