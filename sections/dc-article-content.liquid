@@ -60,8 +60,8 @@
     </div>
     
     <div class="prev-next-comments justify-between">
-      <a href="{{ blog.previous_article }}" class="shop-link {% if blog.previous_article == blank %}no-disp{% endif %}"><span class="left-arrow">{% include "arrow-right-sm" %}</span>{{ section.settings.prev_article }}</a>
-      <a href="{{ blog.next_article }}" class="shop-link {% if blog.next_article == blank %}no-disp{% endif %}">{{ section.settings.next_article }}<span class="right-arrow">{% include "arrow-right-sm" %}</span></a>
+      <a href="{{ blog.previous_article }}" class="shop-link {% if blog.previous_article == blank %}visibility-hidden{% endif %}"><span class="left-arrow">{% include "arrow-right-sm" %}</span>{{ section.settings.prev_article }}</a>
+      <a href="{{ blog.next_article }}" class="shop-link {% if blog.next_article == blank %}visibility-hidden{% endif %}">{{ section.settings.next_article }}<span class="right-arrow">{% include "arrow-right-sm" %}</span></a>
     </div>
     
     {% if blog.comments_enabled? %}
