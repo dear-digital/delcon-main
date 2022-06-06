@@ -2,6 +2,7 @@
   "sections": {
     "main": {
       "type": "main-article",
+      "disabled": true,
       "blocks": {
         "featured_image": {
           "type": "featured_image",
@@ -23,7 +24,9 @@
           }
         },
         "content": {
-          "type": "content"
+          "type": "content",
+          "settings": {
+          }
         }
       },
       "block_order": [
@@ -31,10 +34,31 @@
         "title",
         "share",
         "content"
-      ]
+      ],
+      "settings": {
+      }
+    },
+    "1654500702c09c7b5b": {
+      "type": "dc-article-hero",
+      "settings": {
+        "article_hero": "shopify:\/\/shop_images\/Image_2x_08842411-8838-4190-9f06-a6f9ef370da4.png"
+      }
+    },
+    "1654500709509719c2": {
+      "type": "dc-article-content",
+      "settings": {
+        "back": "terug naar blog",
+        "background_color": "#f2f1f0",
+        "tag": "",
+        "date": "",
+        "author": "",
+        "article_upsell": "delcon-kitten"
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "1654500702c09c7b5b",
+    "1654500709509719c2"
   ]
 }
