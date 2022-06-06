@@ -16,13 +16,6 @@
           </div>
           <span class="article-author">{{ article.author }}</span>
         </span>
-        {% comment %}
-        <div class="article-image-block rel">
-          <img src="{{ article.image.src | img_url: '2000x' }}" alt="Article Image" loading="lazy">
-          <div class="details-box justify-between">
-          </div>  
-        </div>
-        {% endcomment %}
         <div class="article-contant">
           <h1 class="article-heading tk-le-monde-livre-classic-byol">{{ article.title }}</h1>
           <div class="article-content-wrapper">{{ article.content }}</div>
@@ -32,16 +25,10 @@
     
     <div class="prev-next-comments justify-between">
       {% if blog.previous_article != blank %}
-      <a href="{{ blog.previous_article }}" class="shop-link">
-        <span class="left-arrow">{% include "arrow-right-sm" %}</span>
-        Previous article
-      </a>
+      <a href="{{ blog.previous_article }}" class="shop-link"><span class="left-arrow">{% include "arrow-right-sm" %}</span>{{ section.settings.prev_article }}</a>
       {% endif %}
       {% if blog.next_article != blank %}
-      <a href="{{ blog.next_article }}" class="shop-link">
-        Next article 
-        <span class="right-arrow">{% include "arrow-right-sm" %}</span>
-      </a>
+      <a href="{{ blog.next_article }}" class="shop-link">{{ section.settings.next_article }}<span class="right-arrow">{% include "arrow-right-sm" %}</span></a>
       {% endif %}
     </div>
     
@@ -169,23 +156,6 @@
   </span>
 </div>
 
-{% comment %}
-<div class="article-content-wrapper">
-  <div class="container">
-    <div class="article-content-wrap rel flex-box">
-      <a class="back-btn" href="/blogs/nieuws">
-        <span class="left-chev">{% render 'icon-left-chevron' %}</span>
-        <span class="back-txt">{{ section.settings.back }}</span>
-      </a>
-      <div class="article-content" style="background-color:{{ section.settings.background_color }}">
-      	
-      </div>
-    </div>
-  </div>
-  
-</div>
-{% endcomment %}
-
 {% schema %}
   {
     "name": "DC Article Content",
@@ -216,6 +186,7 @@
 			"id": "author",
 			"label": "Article Author"
 		},
+		
 		{
 			"type": "product",
 			"id": "article_upsell",
