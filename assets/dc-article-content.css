@@ -123,6 +123,14 @@
   line-height: 16px;
   margin: 12px 0 24px;
 }
+.addArticleUpsell {
+  max-width: none;
+  background-color: #0d553f;
+  color: #fff;
+}
+.addArticleUpsell:hover {
+  background-color: #063323;
+}
 
 .prev-next-comments {
   display: flex;
