@@ -17,9 +17,10 @@
       <div class="article-image-block rel">
         {% comment %}<img src="{{ article.image.src | img_url: '2000x' }}" alt="Article Image" loading="lazy">{% endcomment %}
         <div class="details-box justify-between">
-          <span class="date-box no-t-m">{{ article.published_at | date: '%d %b %Y' }}</span>
-          <span class="date-box no-t-m">Written by {{ article.author }}</span>
-          <span class="date-box">Categorie</span>
+          <span class="article-tag-date align-center">
+            <span class="article-tag{% for tag in article.tags %}{% if forloop.first != blank %} tag-exists{% endif %}{% endfor %}">{% for tag in article.tags %}{% if forloop.first %}{{ tag }}{% endif %}{% endfor %}</span>
+            <span class="article-date">{{ article.created_at | date: "%d %B %Y" }}</span>
+          </span>
         </div>
       </div>
       <div class="article-contant">
