@@ -52,3 +52,6 @@ a{
   font-size: 14px;
   line-height: 19px;
 }
+.article-content-wrapper .container {
+  padding: 0;
+}
