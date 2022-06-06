@@ -39,6 +39,7 @@
                 <div class="variants-wrapper">
                   {% for variant in articleUpsellProd.variants %}
                   <div class="variant-box {% if forloop.index == 1 %}variant-selected{% endif %} {% if product.has_only_default_variant %}no-disp{% endif %}" 
+                       data-index="{{ forloop.index }}"
                        data-avaliable="{% if variant.available %}yes{% else %}no{% endif %}"
                        data-sell-out-of-stock="{{ variant.inventory_policy }}"
                        data-inventory-management="{{ variant.inventory_management }}"
@@ -199,6 +200,63 @@
     <a target="_blank" class="social-icon" aria-label="pinterest share icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https://{{ shop.domain }}{{ article.url }}">{% include "icon-pinterest" %}</a>
   </span>
 </div>
+
+<script>
+  $('.addArticleUpsell').click(function() {
+    let renderedHtml;
+    $('.drawer-cart').addClass('drawn');
+    $('.background-drawer-cart').addClass('drawn');
+    $('body').addClass('no-scroll');
+    $('.cart-body').append(`<div class="load-container"><div class="load"></div></div>`);
+    
+    var formData = {
+      'items': [{
+        'id': parseInt($(".article-upsell .variant-box.variant-selected").attr("value")),
+        'quantity': 1
+      }],
+      'sections': "dc-cart-drawer"
+    };
+    $.ajax({
+      url: "/cart/add.js",
+      method: "POST",
+      dataType: "json",
+      data: formData,
+    })
+    .done(function( data ) {
+      console.log(data);
+      
+      $.ajax({
+        url: "/cart.js",
+        method: "GET",
+        dataType: "json"
+      })
+      .done(function( cartData ) {
+        $('.cart-items-total').text(cartData.item_count);
+      })
+      .fail(function(cartError) {
+        console.log( cartError );
+        $('.load-container').remove();
+      });
+      
+      renderedHtml = getSectionInnerHTML(
+        data.sections["dc-cart-drawer"],
+        "#CartContainer"
+      );
+      $("#CartContainer").html(renderedHtml);
+      if($('.drawer-cart-upsell').length > 0 && $('.upsell-product-wrap').length > 0) {
+        $('.drawer-cart').addClass("with-upsell");
+      }
+      else {
+        $('.drawer-cart').removeClass("with-upsell");
+      }
+      $('.load-container').remove();
+    })
+    .fail(function(error) {
+      console.log(error);
+      $('.load-container').remove();
+    });
+  });
+</script>
 
 {% schema %}
   {
