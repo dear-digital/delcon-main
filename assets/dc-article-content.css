@@ -131,6 +131,10 @@
 .addArticleUpsell:hover {
   background-color: #063323;
 }
+.addArticleUpsell:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
 
 .prev-next-comments {
   display: flex;
