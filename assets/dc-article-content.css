@@ -47,3 +47,8 @@ a{
   width: 792px;
   margin-bottom: 64px;
 }
+.article-author {
+  display: block;
+  font-size: 14px;
+  line-height: 19px;
+}
