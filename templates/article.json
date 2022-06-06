@@ -52,13 +52,28 @@
         "tag": "",
         "date": "",
         "author": "",
+        "article_content": "",
+        "prev_article": "Previous article",
+        "next_article": "Next article",
+        "required_error_msg": "can't be blank",
+        "email_format_error": "must be formatted as an email",
         "article_upsell": "delcon-kitten"
+      }
+    },
+    "1654535954d42991f5": {
+      "type": "dc-newsletter",
+      "settings": {
+        "title": "Krijg nu 20% korting",
+        "desc": "Schrijf je in op onze nieuwsbrief en blijf op de hoogte van acties en promoties. 20% korting die je kan gebruiken bij je volgende aankoop in onze shop",
+        "email_placeholder": "Email adres",
+        "subscribe_btn": "Send"
       }
     }
   },
   "order": [
     "main",
     "1654500702c09c7b5b",
-    "1654500709509719c2"
+    "1654500709509719c2",
+    "1654535954d42991f5"
   ]
 }
