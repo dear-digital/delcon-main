@@ -9,23 +9,22 @@
   <div class="main-content-wrapper">
     <div class="article-content flex-box" style="background-color:{{ section.settings.background_color }}">
       <div class="article-container">
-        <div class="article-image-block rel">
-          {% comment %}<img src="{{ article.image.src | img_url: '2000x' }}" alt="Article Image" loading="lazy">{% endcomment %}
-          <div class="details-box justify-between">
-            <span class="article-tag-date justify-between align-center">
-              <div>
-                <span class="article-tag{% for tag in article.tags %}{% if forloop.first != blank %} tag-exists{% endif %}{% endfor %}">{% for tag in article.tags %}{% if forloop.first %}{{ tag }}{% endif %}{% endfor %}</span>
-                <span class="article-date">{{ article.created_at | date: "%d %B %Y" }}</span>
-              </div>
-              <span class="article-author">{{ article.author }}</span>
-            </span>
-          </div>
+        <div class="details-box justify-between">
+          <span class="article-tag-date justify-between align-center">
+            <div>
+              <span class="article-tag{% for tag in article.tags %}{% if forloop.first != blank %} tag-exists{% endif %}{% endfor %}">{% for tag in article.tags %}{% if forloop.first %}{{ tag }}{% endif %}{% endfor %}</span>
+              <span class="article-date">{{ article.created_at | date: "%d %B %Y" }}</span>
+            </div>
+            <span class="article-author">{{ article.author }}</span>
+          </span>
         </div>
+        {% comment %}
+        <div class="article-image-block rel">
+          <img src="{{ article.image.src | img_url: '2000x' }}" alt="Article Image" loading="lazy">
+          
+        </div>
+        {% endcomment %}
         <div class="article-contant">
-          <div class="mobile-date-author no-d">
-            <span class="hmpg-article-details">{{ article.published_at | date: '%b %d, %Y' }}</span>
-            <span class="hmpg-article-details">- by {{ article.author }}</span>
-          </div>
           <h1 class="article-heading tk-le-monde-livre-classic-byol">{{ article.title }}</h1>
           <div class="article-content-wrapper">{{ article.content }}</div>
         </div>
