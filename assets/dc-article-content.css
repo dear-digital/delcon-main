@@ -41,6 +41,9 @@ a{
 .back-btn:hover .left-chev #Arrow{
   stroke: #B499BF;
 }
+.main-article {
+  margin-bottom: 68px;
+}
 .main-content-wrapper {
   width: 70%;
   max-width: 792px;
