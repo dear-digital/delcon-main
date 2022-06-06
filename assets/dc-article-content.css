@@ -60,3 +60,17 @@ a{
 .article-content-wrapper .container {
   padding: 0;
 }
+.share-box {
+  display: flex;
+  align-items: center;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 20vh;
+  left: 16px;
+  width: auto;
+  height: min-content;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  text-align: left;
+  text-decoration: none;
+}
