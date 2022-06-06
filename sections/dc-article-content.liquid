@@ -19,6 +19,18 @@
         <div class="article-contant">
           <h1 class="article-heading tk-le-monde-livre-classic-byol">{{ article.title }}</h1>
           <div class="article-content-wrapper">{{ section.settings.article_content | default: article.content }}</div>
+          <div class="article-upsell-wrapper">
+            <div class="article-upsell">
+              <div class="article-upsell-image">
+                <a href="{{ article_upsell.url }}" aria-label="article upsell">
+                  <img src="{{ article_upsell.featured_img | img_url: 'x240' }}" alt="{{article_upsell.title  }}">
+                </a>
+              </div>
+              <div class="article-upsell-infos">
+                <a href="" class="">{{ article_upsell.title }}</a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
