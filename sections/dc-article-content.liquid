@@ -4,17 +4,6 @@
 <div class="main-article container marg-top-xl rel flex-box justify-center">
   <a href="{% unless routes.root_url == "/" %}{{ routes.root_url }}{% endunless %}/blogs/nieuws" class="back-link">{{ section.settings.back }}</a>
   <div class="article-content flex-box" style="background-color:{{ section.settings.background_color }}">
-    {% comment %}
-    <span class="share-box no-t-m">
-      <a href="/blogs/news" class="back-btn">{% include "back-icon" %}</a>
-      <a target="_blank" href="http://www.facebook.com/sharer.php?u=https://{{ shop.domain }}{{ article.url }}">{% include "facebook-share-icon" %}</a>
-      <a target="_blank" href="https://www.linkedin.com/shareArticle?url=https://{{ shop.domain }}{{ article.url }}">{% include "linkedin-share-icon" %}</a>
-      <a target="_blank" href="https://pinterest.com/pin/create/bookmarklet/?url=https://{{ shop.domain }}{{ article.url }}">{% include "pinterest-share-icon" %}</a>
-      <a target="_blank" href="https://twitter.com/share?url=https://{{ shop.domain }}{{ article.url }}">{% include "twitter-share-icon" %}</a>
-      <a target="_blank" href="https://plus.google.com/share?url=https://{{ shop.domain }}{{ article.url }}">{% include "email-share-icon" %}</a>
-      <a href="#" class="social-icon tooltip rel" id="share" onClick="return false;">{% include "share-icon-new" %}</a>
-    </span>
-    {% endcomment %}
     <div class="article-container">
       <div class="article-image-block rel">
         {% comment %}<img src="{{ article.image.src | img_url: '2000x' }}" alt="Article Image" loading="lazy">{% endcomment %}
@@ -180,6 +169,11 @@
       {% endif %}
     </div>
   </div>
+  <span class="share-box no-t-m">
+    <a target="_blank" href="http://www.facebook.com/sharer.php?u=https://{{ shop.domain }}{{ article.url }}">{% include "icon-facebook" %}</a>
+    <a target="_blank" href="https://www.linkedin.com/shareArticle?url=https://{{ shop.domain }}{{ article.url }}">{% include "icon-instagram" %}</a>
+    <a target="_blank" href="https://pinterest.com/pin/create/bookmarklet/?url=https://{{ shop.domain }}{{ article.url }}">{% include "icon-pinterest" %}</a>
+  </span>
 </div>
 
 {% comment %}
