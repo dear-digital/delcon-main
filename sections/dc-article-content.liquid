@@ -2,7 +2,10 @@
 {{ 'dc-blog-main.css' | asset_url | stylesheet_tag }}
 
 <div class="main-article container rel flex-box justify-between">
-  <a href="{% unless routes.root_url == "/" %}{{ routes.root_url }}{% endunless %}/blogs/nieuws" class="back-link">{{ section.settings.back }}</a>
+  <a href="{% unless routes.root_url == "/" %}{{ routes.root_url }}{% endunless %}/blogs/nieuws" class="back-btn">
+    <span class="left-chev">{% render 'arrow-right-sm' %}</span>
+    <span class="back-txt">{{ section.settings.back }}</span>
+  </a>
   <div class="main-content-wrapper">
     <div class="article-content flex-box" style="background-color:{{ section.settings.background_color }}">
       <div class="article-container">
