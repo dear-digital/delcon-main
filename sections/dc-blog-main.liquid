@@ -11,7 +11,7 @@
       	{% endfor %}
     </div>
     <div class="articles flex-box">
-      {% assign blogArticles = blog.articles | sort: 'published-at' %}
+      {% assign blogArticles = blog.articles | reverse %}
       {% for article in blogArticles %}
       <div class="article product-card rel all{% for tag in article.tags %} {{ tag }}{% endfor %}">
         <a href="{{ article.url }}" class="product-card-hover no-t-m">
