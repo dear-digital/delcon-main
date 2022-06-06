@@ -29,22 +29,22 @@
         "7a47b5a2-807a-443b-b282-219f2f43cf23": {
           "type": "filter",
           "settings": {
-            "filter_title": "",
-            "filter": ""
+            "filter_title": "ALLE ARTIKELS",
+            "filter": "all"
           }
         },
         "0f693f9d-991c-40e8-b2b9-ee9c58b3ae33": {
           "type": "filter",
           "settings": {
-            "filter_title": "",
-            "filter": ""
+            "filter_title": "HONDEN",
+            "filter": "Hond"
           }
         },
         "986aa56a-3cda-49e6-8017-dfd32c6ef812": {
           "type": "filter",
           "settings": {
-            "filter_title": "",
-            "filter": ""
+            "filter_title": "KATTEN",
+            "filter": "Kat"
           }
         }
       },
