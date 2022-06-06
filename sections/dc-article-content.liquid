@@ -32,7 +32,7 @@
       {% endif %}
     </div>
     
-    {% if blog.comments_enabled? %}
+    
       <div class="comment-box">
         <div class="flex-box comment-box">
           <div class="comment-box">
@@ -116,7 +116,7 @@
           </div>
         </div>
       </div>
-      {% if number_of_comments > 0 %}
+      {% if articles.comments.size > 0 %}
         <div class="comment-box">
           <div class="flex-box comment-box">
             <div class="comment-box">
@@ -155,6 +155,7 @@
           </div>
         </div>
       {% endif %}
+    {% if blog.comments_enabled? %}
     {% endif %}
   </div>
   <span class="share-box no-t-m">
