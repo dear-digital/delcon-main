@@ -1,0 +1,27 @@
+{{ 'dc-article-hero.css' | asset_url | stylesheet_tag }}
+
+<div class="article-hero" style="background-image:url({{ article.image.src | default: section.settings.article_hero | img_url: '2000x' }})"></div>
+
+{% schema %}
+  {
+    "name": "DC Article Hero",
+    "settings": [
+		{
+			"type": "image_picker",
+			"id": "article_hero",
+			"label": "Article Hero"
+		}
+	],
+	"presets": [
+		{
+			"name": "DC Article Hero"
+		}
+	]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}
