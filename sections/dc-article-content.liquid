@@ -41,7 +41,13 @@
 
               {%- assign formId = 'CommentForm' -%}
 
-              <h2 class="comment-heading">Leave a comment</h2>
+              <h2 class="comment-heading">
+                {% if article.comments.size > 1 %}
+                	{{ 'blogs.article.comments.other' | t: count:article.comments.size }}
+                {% else %}
+                	{{ 'blogs.article.comments.one' | t: count:article.comments.size }}
+                {% endif %}
+              </h2>
 
               {%- assign post_message = 'success' -%}
               {%- if blog.moderated? and comment.status == 'pending' -%}
@@ -55,12 +61,12 @@
               <div class="flex-box justify-between comment-box">
 
                 <div class="col-half">
-                  <label for="{{ formId }}-author">Name</label>
+                  <label for="{{ formId }}-author">{{ 'blogs.article.name' | t }}</label>
                   <input type="text" name="comment[author]" id="{{ formId }}-author" class="login-input input-full{% if form.errors contains 'author' %} input--error{% endif %}" value="{{ form.author }}"{% if form.errors contains 'author' %} aria-invalid="true" aria-describedby="{{ formId}}-author-error"{% endif %} required>
 
                   {% if form.errors contains 'author' %}
                   <span id="{{ formId}}-author-error" class="input-error-message">
-                    <span class="visually-hidden">Name can't be blank </span>
+                    <span class="visually-hidden">{{ 'blogs.article.name' | t }} {{ section.settings.required_error_msg }}</span>
                     {% include 'icon-error' %}
                     <span>Name {{ form.errors.messages['author'] }}.</span>
                   </span>
@@ -69,12 +75,12 @@
                 </div>
 
                 <div class="col-half">
-                  <label for="{{ formId }}-email">Email</label>
+                  <label for="{{ formId }}-email">{{ 'blogs.article.email' | t }}</label>
                   <input type="email" name="comment[email]" id="{{ formId }}-email" class="login-input input-full{% if form.errors contains 'email' %} input--error{% endif %}" value="{{ form.email }}" autocorrect="off" autocapitalize="off" {% if form.errors contains 'email' %} aria-invalid="true" aria-describedby="{{ formId}}-email-error"{% endif %} required>
 
                   {% if form.errors contains 'email' %}
                   <span id="{{ formId}}-email-error" class="input-error-message">
-                    <span class="visually-hidden">Email must be formatted as an email</span>
+                    <span class="visually-hidden">{{ 'blogs.article.email' | t }} {{ section.settings.email_format_error }}</span>
                     {% include 'icon-error' %}
                     <span>{{ form.errors.translated_fields['email'] | capitalize }} {{ form.errors.messages['email'] }}.</span>
                   </span>
@@ -85,12 +91,12 @@
               </div>
 
               <div class="comment-message comment-box">
-                <label for="{{ formId }}-body">Message</label>
+                <label for="{{ formId }}-body">{{ 'blogs.article.message' | t }}</label>
                 <textarea name="comment[body]" id="{{ formId }}-body" rows="4" class="textarea-input input-full{% if form.errors contains 'body' %} input--error{% endif %}"{% if form.errors contains 'body' %} aria-invalid="true" aria-describedby="{{ formId}}-body-error"{% endif %} required>{{ form.body }}</textarea>
 
                 {% if form.errors contains 'body' %}
                 <span id="{{ formId}}-body-error" class="input-error-message">
-                  <span class="visually-hidden">Message can't be blank </span>
+                  <span class="visually-hidden">{{ 'blogs.article.message' | t }} {{ section.settings.required_error_msg }}</span>
                   {% include 'icon-error' %}
                   <span>Message {{ form.errors.messages['body'] }}.</span>
                 </span>
@@ -114,7 +120,7 @@
         <div class="comment-box">
           <div class="flex-box comment-box">
             <div class="comment-box">
-              <h2 class="comment-heading">Comments on Blog</h2>
+              {% comment %}<h2 class="comment-heading">Comments on Blog</h2>{% endcomment %}
 
               {% paginate article.comments by 5 %}
 
@@ -199,6 +205,18 @@
 			"id": "next_article",
 			"label": "Next article Text",
 			"default": "Next article"
+		},
+		{
+			"type": "text",
+			"id": "required_error_msg",
+			"label": "Required Error Message",
+			"default": "can't be blank"
+		},
+		{
+			"type": "text",
+			"id": "email_format_error",
+			"label": "Email Format Error Message",
+			"default": "must be formatted as an email"
 		},
 		{
 			"type": "product",
