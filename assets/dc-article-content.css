@@ -47,12 +47,13 @@ a{
 .main-content-wrapper {
   width: 70%;
   max-width: 792px;
+  height: 100%;
 }
 .article-content {
   padding: 40px;
   margin-top: -200px;
   width: 100%;
-  margin-bottom: 64px;
+  margin-bottom: 24px;
 }
 .article-author {
   display: block;
