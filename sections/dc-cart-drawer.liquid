@@ -50,7 +50,7 @@
           </div>
           <div class="cart-product-infos justify-between align-end">
             <div class="cart-product-info">
-              <div class="product-name">{{ item.product.title | strip_html | truncatewords: 3 }}</div>
+              <a href="{{ item.url }}" class="product-name">{{ item.product.title | strip_html | truncatewords: 3 }}</a>
               <div class="product-color">{{ item.product.metafields.my_fields.extra_info }} - inhoud: {{ item.variant.title }}</div>
               
               <div class="cart-product-qty-wrapper">
@@ -80,11 +80,13 @@
       <div class="drawer-cart-upsell">
         <div class="upsell-product-wrap {{ upsellProd.id }}">
           <div class="upsell-product-image">
-            <img src="{{ upsellProd.featured_image | product_img_url: '120x' }}" alt="{{ upsellProd.title }}">
+            <a href="{{ upsellProd.url }}">
+              <img src="{{ upsellProd.featured_image | product_img_url: '120x' }}" alt="{{ upsellProd.title }}">
+            </a>
           </div>
           <div class="upsell-product-infos rel">
             <div class="upsell-product-title-price">
-              <div class="product-name">{{ upsellProd.title }}</div>
+              <a href="{{ upsellProd.url }}" class="product-name">{{ upsellProd.title }}</a>
               <div class="product-price upsell-price">
                 {% if upsellProd.compare_at_price %}<span class="product-compare-price upsell-compare-price">{{ upsellProd.compare_at_price | money }}</span>{% endif %}
                 <span class="product-selling-price">{{ upsellProd.price | money }}</span>
