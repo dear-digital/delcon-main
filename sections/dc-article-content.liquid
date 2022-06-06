@@ -61,8 +61,8 @@
               <div class="flex-box justify-between comment-box">
 
                 <div class="col-half">
-                  <label for="{{ formId }}-author">{{ 'blogs.article.name' | t }}</label>
-                  <input type="text" name="comment[author]" id="{{ formId }}-author" class="login-input input-full{% if form.errors contains 'author' %} input--error{% endif %}" value="{{ form.author }}"{% if form.errors contains 'author' %} aria-invalid="true" aria-describedby="{{ formId}}-author-error"{% endif %} required>
+                  <label for="{{ formId }}-author" class="no-disp">{{ 'blogs.article.name' | t }}</label>
+                  <input type="text" name="comment[author]" id="{{ formId }}-author" placeholder="{{ 'blogs.article.name' | t }}" class="login-input input-full{% if form.errors contains 'author' %} input--error{% endif %}" value="{{ form.author }}"{% if form.errors contains 'author' %} aria-invalid="true" aria-describedby="{{ formId}}-author-error"{% endif %} required>
 
                   {% if form.errors contains 'author' %}
                   <span id="{{ formId}}-author-error" class="input-error-message">
@@ -75,8 +75,8 @@
                 </div>
 
                 <div class="col-half">
-                  <label for="{{ formId }}-email">{{ 'blogs.article.email' | t }}</label>
-                  <input type="email" name="comment[email]" id="{{ formId }}-email" class="login-input input-full{% if form.errors contains 'email' %} input--error{% endif %}" value="{{ form.email }}" autocorrect="off" autocapitalize="off" {% if form.errors contains 'email' %} aria-invalid="true" aria-describedby="{{ formId}}-email-error"{% endif %} required>
+                  <label for="{{ formId }}-email" class="no-disp">{{ 'blogs.article.email' | t }}</label>
+                  <input type="email" name="comment[email]" id="{{ formId }}-email" placeholder="{{ 'blogs.article.email' | t }}"class="login-input input-full{% if form.errors contains 'email' %} input--error{% endif %}" value="{{ form.email }}" autocorrect="off" autocapitalize="off" {% if form.errors contains 'email' %} aria-invalid="true" aria-describedby="{{ formId}}-email-error"{% endif %} required>
 
                   {% if form.errors contains 'email' %}
                   <span id="{{ formId}}-email-error" class="input-error-message">
@@ -91,8 +91,8 @@
               </div>
 
               <div class="comment-message comment-box">
-                <label for="{{ formId }}-body">{{ 'blogs.article.message' | t }}</label>
-                <textarea name="comment[body]" id="{{ formId }}-body" rows="4" class="textarea-input input-full{% if form.errors contains 'body' %} input--error{% endif %}"{% if form.errors contains 'body' %} aria-invalid="true" aria-describedby="{{ formId}}-body-error"{% endif %} required>{{ form.body }}</textarea>
+                <label for="{{ formId }}-body" class="no-disp">{{ 'blogs.article.message' | t }}</label>
+                <textarea name="comment[body]" id="{{ formId }}-body" rows="4" placeholder="{{ 'blogs.article.comment_form_title' | t }}" class="textarea-input input-full{% if form.errors contains 'body' %} input--error{% endif %}"{% if form.errors contains 'body' %} aria-invalid="true" aria-describedby="{{ formId}}-body-error"{% endif %} required>{{ form.body }}</textarea>
 
                 {% if form.errors contains 'body' %}
                 <span id="{{ formId}}-body-error" class="input-error-message">
