@@ -26,6 +26,7 @@
         <div class="article-content-wrapper">{{ article.content }}</div>
       </div>
       
+      {% comment %}
       <div class="mobile-share-box justify-between no-d">
         <a target="_blank" href="http://www.facebook.com/sharer.php?u=https://{{ shop.domain }}{{ article.url }}">{% include "facebook-share-icon" %}</a>
         <a target="_blank" href="https://www.linkedin.com/shareArticle?url=https://{{ shop.domain }}{{ article.url }}">{% include "linkedin-share-icon" %}</a>
@@ -34,8 +35,7 @@
         <a target="_blank" href="https://plus.google.com/share?url=https://{{ shop.domain }}{{ article.url }}">{% include "email-share-icon" %}</a>
         <a href="#" class="social-icon tooltip rel" id="share" onClick="return false;">{% include "share-icon-new" %}</a>
       </div>
-      
-      <hr class="comment-breaker" aria-hidden="true">
+      {% endcomment %}
       
       <div class="prev-next-comments justify-between marg-bottom">
         <a href="{{ blog.previous_article }}" class="shop-link">
