@@ -1,0 +1,88 @@
+{{ 'dc-featured-products.css' | asset_url | stylesheet_tag }}
+{{ 'dc-blog-main.css' | asset_url | stylesheet_tag }}
+
+<div class="blog-main">
+  <div class="container">
+    <div class="blog-filters">
+    	{% for block in section.blocks %}
+      		{% if block.type == 'filter' %}
+      			<div class="blog-filter{% if forloop.first %} selected{% endif %}" data-filter="{{ block.settings.filter }}">{{ block.settings.filter_title }}</div>
+      		{% endif %}
+      	{% endfor %}
+    </div>
+    <div class="articles flex-box">
+      {% for article in blog.articles %}
+      <div class="article product-card rel all{% for tag in article.tags %} {{ tag }}{% endfor %}">
+        <a href="{{ article.url }}" class="product-card-hover no-t-m">
+          <button class="btn product-btn">{{ section.settings.meerInfo }}</button>
+        </a>
+        <div class="article-image">
+          <img src="{{ article.image.src | image_url: width: 388 }}">
+        </div>
+        <span class="article-info">
+          <span class="article-tag-date align-center">
+            <span class="article-tag{% for tag in article.tags %}{% if forloop.first != blank %} tag-exists{% endif %}{% endfor %}">{% for tag in article.tags %}{% if forloop.first %}{{ tag }}{% endif %}{% endfor %}</span>
+            <span class="article-date">{{ article.created_at | date: "%d %B %Y" }}</span>
+          </span>
+          <a href="{{ article.url }}" class="article-title">{{ article.title }}</a>
+          <span class="article-desc no-t-m">{{ article.content | strip_html }}</span>
+        </span>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+
+<script>
+  $('.blog-filter').click(function() {
+  	$('.blog-filter').removeClass('selected');
+    $(this).addClass('selected');
+    var filter = $(this).data('filter');
+    $('.article').addClass('no-disp');
+    $('.'+filter).removeClass('no-disp');
+  });
+</script>
+
+{% schema %}
+  {
+    "name": "DC Blog Main",
+    "settings": [
+		{
+          "type": "text",
+          "id": "meerInfo",
+          "label": "Quick View button text",
+		  "default": "VERDER LEZEN"
+        }
+	],
+	"blocks": [
+		{
+			"type": "filter",
+			"name": "Filter",
+			"settings": [
+				{
+					"type": "text",
+					"id": "filter_title",
+					"label": "Filter Title"
+				},
+				{
+					"type": "text",
+					"id": "filter",
+					"label": "Filter Id"
+				}
+			]
+		}
+	],
+	"presets": [
+		{
+			"name": "DC Blog Main"
+		}
+	]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}
