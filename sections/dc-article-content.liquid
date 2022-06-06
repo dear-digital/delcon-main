@@ -33,13 +33,12 @@
               <div class="article-upsell-infos">
                 <div class="flex-box justify-between align-center">
                   <a href="{{ articleUpsellProd.url }}" class="product-name">{{ articleUpsellProd.title }}</a>
-                  <span class="product-selling-price">{{ articleUpsellProd.price | money }}</span>
+                  <span class="product-selling-price article-upsell-price">{{ articleUpsellProd.price | money }}</span>
                 </div>
                 <div class="article-product-desc">{{ articleUpsellProd.metafields.my_fields.extra_info }}</div>
                 <div class="variants-wrapper">
                   {% for variant in articleUpsellProd.variants %}
                   <div class="variant-box {% if forloop.index == 1 %}variant-selected{% endif %} {% if product.has_only_default_variant %}no-disp{% endif %}" 
-                       data-index="{{ forloop.index }}" 
                        data-avaliable="{% if variant.available %}yes{% else %}no{% endif %}"
                        data-sell-out-of-stock="{{ variant.inventory_policy }}"
                        data-inventory-management="{{ variant.inventory_management }}"
@@ -50,6 +49,7 @@
                        data-price="{{ variant.price | money }}">{{ variant.title }}</div>
                   {% endfor %}
                 </div>
+                <button class="btn addArticleUpsell">{{ 'products.product.add_to_cart' | t }}</button>
               </div>
             </div>
           </div>
