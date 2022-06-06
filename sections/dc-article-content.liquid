@@ -62,7 +62,7 @@
     <div class="prev-next-comments justify-between">
       
       <script id="article-json" type="application/json">
-        console.log({{ article | json }});
+        {{ article | json }}
       </script>
       
       {% if blog.previous_article != blank %}
