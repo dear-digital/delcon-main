@@ -1,0 +1,412 @@
+{{ 'dc-coll-main.css' | asset_url | stylesheet_tag }}
+{{ 'dc-featured-products.css' | asset_url | stylesheet_tag }}
+
+<div class="dc-coll-main">
+  <div class="container">
+    {% assign sug_col = 0 %}
+    {% for block in section.blocks %}
+    {% if block.type == 'coll' %}
+    {% assign sug_col = sug_col | plus: 1 %}
+    {% endif %}
+  	{% endfor %}
+    {% if sug_col != 0 %}
+    <div class="sugg-collections flex-box{% if sug_col == 3 %} justify-between{% elsif sug_col == 2 %} justify-around{% else %} justify-center{% endif %}">
+    {% for block in section.blocks %}
+    {% if block.type == 'coll' %}
+      {% assign sugg_coll = block.settings.collection %}
+      <a href="{{ sugg_coll.url }}" class="sugg-collection flex-box">
+        <div class="sugg-coll-img">
+        	{% if sugg_coll.image != blank %}
+          		{{ sugg_coll.image | image_url: width: 146 | image_tag }}
+          	{% else %}
+          		<img src="{{ section.settings.image | img_url: 'x146' }}">
+          	{% endif %}
+        </div>
+        <div class="sugg-coll-txt">
+          <div class="sugg-coll-title">{{ sugg_coll.title }}</div>
+          <div class="sugg-coll-age">{{ block.settings.age }}</div>
+        </div>
+      </a>  
+    {% endif %}
+  	{% endfor %}
+    </div>
+    {% endif %}
+    
+    <div class="filters-titles-wrap flex-box justify-between align-center">
+      <div class="filter-title">{{ section.settings.filter }}</div>
+      <div class="total-porducts-wrap">
+        <span class="total-products">{{ collection.products_count }} </span>
+        <span class="total-products-title">{{ section.settings.tot_products }}</span>
+      </div>
+      <div class="sort-wrap">
+        <div class="sort-title">{{ section.settings.sort }}</div>
+        <div class="sort-types rel">
+          <div class="selected-sort flex-box justify-between align-center">
+            <div class="selected-sort-txt">Bestseller</div>
+            <div class="down-chev">{% include 'icon-arrow-sm' %}</div>
+          </div>
+          <div class="sort-options">
+            <div class="sort-option" data-value="bestseller">Bestseller</div>
+            <div class="sort-option" data-value="low-to-high">Price Low to High</div>
+            <div class="sort-option" data-value="high-to-low">Price High to Low</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    
+    <div class="coll-products-n-filter-wrap flex-box justify-between">
+      <div class="coll-filters">
+        {% for block in section.blocks %}
+        {% if block.type == 'filter' %}
+          <div class="coll-filter-type">
+            <div class="coll-filter-type-name-wrap accordion">
+              <div class="coll-filter-type-name">{{ block.settings.main_filter }}</div>
+              <div class="plus-sign">{% include 'icon-plus-new' %}</div>
+            </div>
+            <div class="coll-filter-options-wrap panel">
+              {% if block.settings.sub_filter_1 != blank %}
+              <div class="coll-filter-option-wrap" data-value="{{ block.settings.sub_filter_1 }}">
+                <div class="checkbox"><span class="check-sign">{% include 'icon-check-sign' %}</span></div>
+                <div class="coll-filter-option-txt">{{ block.settings.sub_filter_1 }}</div>
+              </div>
+              {% endif %}
+              {% if block.settings.sub_filter_2 != blank %}
+              <div class="coll-filter-option-wrap" data-value="{{ block.settings.sub_filter_2 }}">
+                <div class="checkbox"><span class="check-sign">{% include 'icon-check-sign' %}</span></div>
+                <div class="coll-filter-option-txt">{{ block.settings.sub_filter_2 }}</div>
+              </div>
+              {% endif %}
+              {% if block.settings.sub_filter_3 != blank %}
+              <div class="coll-filter-option-wrap" data-value="{{ block.settings.sub_filter_3 }}">
+                <div class="checkbox"><span class="check-sign">{% include 'icon-check-sign' %}</span></div>
+                <div class="coll-filter-option-txt">{{ block.settings.sub_filter_3 }}</div>
+              </div>
+              {% endif %}
+              {% if block.settings.sub_filter_4 != blank %}
+              <div class="coll-filter-option-wrap" data-value="{{ block.settings.sub_filter_4 }}">
+                <div class="checkbox"><span class="check-sign">{% include 'icon-check-sign' %}</span></div>
+                <div class="coll-filter-option-txt">{{ block.settings.sub_filter_4 }}</div>
+              </div>
+              {% endif %}
+              {% if block.settings.sub_filter_5 != blank %}
+              <div class="coll-filter-option-wrap" data-value="{{ block.settings.sub_filter_5 }}">
+                <div class="checkbox"><span class="check-sign">{% include 'icon-check-sign' %}</span></div>
+                <div class="coll-filter-option-txt">{{ block.settings.sub_filter_5 }}</div>
+              </div>
+              {% endif %}
+              {% if block.settings.sub_filter_6 != blank %}
+              <div class="coll-filter-option-wrap" data-value="{{ block.settings.sub_filter_6 }}">
+                <div class="checkbox"><span class="check-sign">{% include 'icon-check-sign' %}</span></div>
+                <div class="coll-filter-option-txt">{{ block.settings.sub_filter_6 }}</div>
+              </div>
+              {% endif %}
+              {% if block.settings.sub_filter_7 != blank %}
+              <div class="coll-filter-option-wrap" data-value="{{ block.settings.sub_filter_7 }}">
+                <div class="checkbox"><span class="check-sign">{% include 'icon-check-sign' %}</span></div>
+                <div class="coll-filter-option-txt">{{ block.settings.sub_filter_7 }}</div>
+              </div>
+              {% endif %}
+              {% if block.settings.sub_filter_8 != blank %}
+              <div class="coll-filter-option-wrap" data-value="{{ block.settings.sub_filter_8 }}">
+                <div class="checkbox"><span class="check-sign">{% include 'icon-check-sign' %}</span></div>
+                <div class="coll-filter-option-txt">{{ block.settings.sub_filter_8 }}</div>
+              </div>
+              {% endif %}
+              {% if block.settings.sub_filter_9 != blank %}
+              <div class="coll-filter-option-wrap" data-value="{{ block.settings.sub_filter_9 }}">
+                <div class="checkbox"><span class="check-sign">{% include 'icon-check-sign' %}</span></div>
+                <div class="coll-filter-option-txt">{{ block.settings.sub_filter_9 }}</div>
+              </div>
+              {% endif %}
+              {% if block.settings.sub_filter_10 != blank %}
+              <div class="coll-filter-option-wrap" data-value="{{ block.settings.sub_filter_10 }}">
+                <div class="checkbox"><span class="check-sign">{% include 'icon-check-sign' %}</span></div>
+                <div class="coll-filter-option-txt">{{ block.settings.sub_filter_10 }}</div>
+              </div>
+              {% endif %}
+            </div>
+          </div>
+        {% endif %}
+        {% endfor %}
+      </div>
+      <div class="coll-porducts flex-box">
+      	{% for product in collection.products %}
+          <div class="product-card rel" data-product-id="{{ product.id }}">
+            <a title="{{ product.title | escape  }}" class="product-card-hover no-t-m">
+              <button class="btn product-btn">{{ section.settings.meerInfo }}</button>
+            </a>
+            <div class="product-card-image rel">
+              <img class="default-img" src="{{ product.images[0] | default: product.featured_image | img_url: '392x' }}" alt="{{ product.title | escape }}" loading="lazy" />
+              <img class="hovered-img no-t-m" src="{{ product.images[1] | default: product.featured_image | img_url: '392x' }}" alt="{{ product.title | escape }}" loading="lazy" />
+            </div>
+            <div class="product-card-details">
+              <div class="prooduct-title-desc">
+                <p class="product-card-title">{{ product.title | strip_html | truncate: 17 | escape }}</p>
+                <p class="product-card-desc">{{ product.metafields.my_fields.extra_info | escape  }}</p>
+              </div>
+              <div class="product-card-price">
+                <p class="product-price">{{ section.settings.vanaf_text }} {{ product.selected_or_first_available_variant.price | money }}</p>
+              </div>
+            </div>
+          </div>
+          {% if collection.products_count >= 5 %}
+        	{% if forloop.index == 4 %}
+        		{% for block in section.blocks %}
+        			{% if block.type == 'suggestion' %}
+        				<div class="product-finder" style="background-image: url({{ block.settings.bg_img | img_url: '590x' }});">
+                          <div class="product-finder-title tk-le-monde-livre-classic-byol">{{ block.settings.title }}</div>
+                          <div class="product-finder-desc">{{ block.settings.desc }}</div>
+                          {% if block.settings.section_btn_text != blank %}
+                          <a href="{{ block.settings.section_btn_url }}" class="btn {% if block.settings.isProductFinder == true %}btn-productFinder blue-btn{% endif %}">{{ block.settings.section_btn_text }}</a>
+                          {% endif %}
+        				</div>
+        			{% endif %}
+        		{% endfor %}
+        	{% endif %}
+          {% endif %}
+        {% endfor %}
+        {% if collection.products_count <= 4 %}
+        		{% for block in section.blocks %}
+        			{% if block.type == 'suggestion' %}
+        				<div class="product-finder" style="background-image: url({{ block.settings.bg_img | img_url: '590x' }});">
+                          <div class="product-finder-title tk-le-monde-livre-classic-byol">{{ block.settings.title }}</div>
+                          <div class="product-finder-desc">{{ block.settings.desc }}</div>
+                          {% if block.settings.section_btn_text != blank %}
+                          <a href="{{ block.settings.section_btn_url }}" class="btn {% if block.settings.isProductFinder == true %}btn-productFinder blue-btn{% endif %}">{{ block.settings.section_btn_text }}</a>
+                          {% endif %}
+        				</div>
+        			{% endif %}
+        		{% endfor %}
+          {% endif %}
+        {% for product in collection.products %}
+    	{% include "product-card", total_variants: section.settings.total_variants, maten: section.settings.maten, koop_online: section.settings.koop_online, koop_local: section.settings.koop_local %}
+    {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<script>
+  $('.selected-sort').click(function() {
+  	$(this).toggleClass('open');
+    $('.sort-options').toggleClass('open');
+  });
+  $('.sort-option').click(function() {
+    var new_val = $(this).text();
+    $('.selected-sort-txt').text(new_val);
+  	$('.selected-sort').removeClass('open');
+    $('.sort-options').removeClass('open');
+  });
+</script>
+
+<script>
+  $('.product-card, .product-card-hover, .product-btn').click(function() {
+    var productId = $(this).closest(".product-card").data("product-id");
+    $('#card-product-'+productId).css("opacity", 1);
+    $('#card-product-'+productId).css("pointer-events", "auto");
+    $('#card-product-'+productId).find(".card-product").removeClass("no-disp");
+  });
+</script>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    }
+  });
+}
+</script>
+
+<script>
+  $('.coll-filter-option-wrap').click(function(){
+  	$(this).toggleClass('checked');
+  });
+</script>
+
+{% schema %}
+  {
+    "name": "DC Collection Main",
+    "settings": [
+		{
+          "type": "text",
+          "id": "meerInfo",
+          "label": "Quick View button text",
+		  "default": "QUICK VIEW"
+        },
+		{
+			"type": "text",
+			"id": "filter",
+			"label": "Filter Title",
+			"default": "Filter"
+		},
+		{
+			"type": "text",
+			"id": "tot_products",
+			"label": "Total Products",
+			"default": "Products"
+		},
+		{
+			"type": "text",
+			"id": "sort",
+			"label": "Sort Title",
+			"default": "Sort By"
+		},
+		{
+          "type": "text",
+          "id": "koop_online",
+          "label": "Koop Online Button text",
+		  "default": "KOOP ONLINE"
+        },
+		{
+          "type": "text",
+          "id": "koop_local",
+          "label": "Koop Lokaal Button text",
+		  "default": "KOOP LOKAAL"
+        }
+	],
+	"blocks": [
+		{
+			"name": "Collection",
+			"type": "coll",
+			"limit": 3,
+			"settings": [
+				{
+					"type": "collection",
+					"id": "collection",
+					"label": "Collection"
+				},
+				{
+					"type": "image_picker",
+					"id": "image",
+					"label": "Image"
+				},
+				{
+					"type": "text",
+					"id": "age",
+					"label": "Age Range"
+				}
+			]
+			
+		},
+		{
+			"name": "Filter",
+			"type": "filter",
+			"settings": [
+				{
+					"type": "text",
+					"id": "main_filter",
+					"label": "Main Filter"
+				},
+				{
+					"type": "text",
+					"id": "sub_filter_1",
+					"label": "Sub Filter 1"
+				},
+				{
+					"type": "text",
+					"id": "sub_filter_2",
+					"label": "Sub Filter 2"
+				},
+				{
+					"type": "text",
+					"id": "sub_filter_3",
+					"label": "Sub Filter 3"
+				},
+				{
+					"type": "text",
+					"id": "sub_filter_4",
+					"label": "Sub Filter 4"
+				},
+				{
+					"type": "text",
+					"id": "sub_filter_5",
+					"label": "Sub Filter 5"
+				},
+				{
+					"type": "text",
+					"id": "sub_filter_6",
+					"label": "Sub Filter 6"
+				},
+				{
+					"type": "text",
+					"id": "sub_filter_7",
+					"label": "Sub Filter 7"
+				},
+				{
+					"type": "text",
+					"id": "sub_filter_8",
+					"label": "Sub Filter 8"
+				},
+				{
+					"type": "text",
+					"id": "sub_filter_9",
+					"label": "Sub Filter 9"
+				},
+				{
+					"type": "text",
+					"id": "sub_filter_10",
+					"label": "Sub Filter 10"
+				}
+			]
+		},
+		{
+			"name": "Product Finder",
+			"type": "suggestion",
+			"settings": [
+				{
+					"type": "image_picker",
+					"id": "bg_img",
+					"label": "Background Image"
+				},
+				{
+					"type": "text",
+					"id": "title",
+					"label": "Title"
+				},
+				{
+					"type": "text",
+					"id": "desc",
+					"label": "Description"
+				},
+				{
+					"type": "checkbox",
+					"id": "isProductFinder",
+					"label": "Is Button ProductFinder",
+					"info": "Tick this field only on ProductFinder related button"
+				},
+				{
+                    "label": "Section Button text",
+                    "id": "section_btn_text",
+                    "type": "text"
+                },
+                {
+                    "label": "Section Button url",
+                    "id": "section_btn_url",
+                    "type": "url"
+                }
+			]
+		}
+	],
+	"presets": [
+		{
+			"name": "DC Collection Main"
+		}
+	]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}
