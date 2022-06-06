@@ -61,6 +61,10 @@
     
     <div class="prev-next-comments justify-between">
       
+      <script id="blog-json" type="application/json">
+        {{ blog.articles | json }}
+      </script>
+      
       <script id="article-json" type="application/json">
         {{ article | json }}
       </script>
