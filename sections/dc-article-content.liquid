@@ -2,6 +2,7 @@
 {{ 'dc-blog-main.css' | asset_url | stylesheet_tag }}
 
 <div class="main-article container marg-top-xl rel flex-box justify-center">
+  <a href="{% unless routes.root_url == "/" %}{{ routes.root_url }}{% endunless %}/blogs/nieuws" class="back-link">{{ section.settings.back }}</a>
   <div class="article-content flex-box" style="background-color:{{ section.settings.background_color }}">
     {% comment %}
     <span class="share-box no-t-m">
@@ -32,7 +33,7 @@
           <span class="hmpg-article-details">{{ article.published_at | date: '%b %d, %Y' }}</span>
           <span class="hmpg-article-details">- by {{ article.author }}</span>
         </div>
-        <h1 class="article-heading">{{ article.title }}</h1>
+        <h1 class="article-heading tk-le-monde-livre-classic-byol">{{ article.title }}</h1>
         <div class="article-content-wrapper">{{ article.content }}</div>
       </div>
       
