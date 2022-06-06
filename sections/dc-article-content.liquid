@@ -98,9 +98,11 @@
 
               </div>
 
+              {% comment %}
               {% if blog.moderated? %}
               <p class="fine-print">Please note, comments must be approved before they are published</p>
               {% endif %}
+              {% endcomment %}
 
               <input type="submit" class="comment-post-btn" value="Post Comment">
               {% endform %}
