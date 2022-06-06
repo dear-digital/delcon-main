@@ -105,6 +105,9 @@ a{
 }
 
 /* Comments CSS */
+.comment-wrapper {
+  margin: 64px auto 40px;
+}
 .comment-box {
   width: 100%;
 }
