@@ -45,7 +45,7 @@
               {% endfor %}
             </div>
             <a href="{{ product.url }}" class="btn product-card-btn">{{ koop_online }}</a>
-            <a href="/pages/verdeelpunten-belgie" class="btn product-local-btn">{{ koop_local }}</a>
+            <a href="{% unless routes.root_url == "/" %}{{ routes.root_url }}{% endunless %}/pages/verdeelpunten-belgie" class="btn product-local-btn">{{ koop_local }}</a>
           </div>
         </div>
       </div>
