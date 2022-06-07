@@ -31,6 +31,8 @@
             	{{ article.content | split: "---article-upsell-here---" | first }}
             	{% render "article-upsell" %}
             	{{ article.content | split: "---article-upsell-here---" | last }}
+            {% else %}
+            	{{ article.content }}
             {% endif %}
           </div>
         </div>
