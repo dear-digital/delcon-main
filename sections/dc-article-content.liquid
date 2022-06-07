@@ -27,7 +27,7 @@
         <div class="article-contant">
           <h1 class="article-heading tk-le-monde-livre-classic-byol">{{ article.title }}</h1>
           <div class="article-content-wrapper">
-          	{% if article.content contains "---article-upsell-here---" and articleUpsellHandle != blank %}
+          	{% if article.content contains "---article-upsell-here---" and articleUpsellHandle != "" %}
             	{{ article.content | split: "---article-upsell-here---" | first }}
             	{% include "article-upsell" %}
             	{{ article.content | split: "---article-upsell-here---" | last }}
@@ -176,89 +176,6 @@
     <a target="_blank" class="social-icon" aria-label="pinterest share icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https://{{ shop.domain }}{{ article.url }}">{% include "icon-pinterest" %}</a>
   </span>
 </div>
-
-<script>
-  
-  function checkUpsellAvailability() {
-
-    var selectedVariant = $(".article-upsell .variant-box.variant-selected").attr("variant-name");
-
-    //Hide Unavailable variants
-    $(".variant-box").each(function() {
-      if($(this).attr("data-inventory-management") != "undefined" && $(this).attr("data-inventory-management") != null) {
-      	if(($(this).attr("variant-name") == selectedVariant) && ($(this).attr("data-quantity") < parseInt($(".qty-number").text())) && ($(this).attr("data-sell-out-of-stock") == "deny")) {
-          $(".addArticleUpsell").attr("disabled",true);
-        }
-        else if(($(this).attr("variant-name") == selectedVariant) && ($(this).attr("data-quantity") >= parseInt($(".qty-number").text()))) {
-          $(".addArticleUpsell").attr("disabled",false);
-        }  
-	  }
-	  else {
-	  	  $(".addArticleUpsell").attr("disabled",false);
-	  }
-    });
-
-  }
-  
-  $(document).ready(function() {
-    checkUpsellAvailability();
-  });
-          
-  $('.addArticleUpsell').click(function() {
-    let renderedHtml;
-    $('.drawer-cart').addClass('drawn');
-    $('.background-drawer-cart').addClass('drawn');
-    $('body').addClass('no-scroll');
-    $('.cart-body').append(`<div class="load-container"><div class="load"></div></div>`);
-    
-    var formData = {
-      'items': [{
-        'id': parseInt($(".article-upsell .variant-box.variant-selected").attr("value")),
-        'quantity': 1
-      }],
-      'sections': "dc-cart-drawer"
-    };
-    $.ajax({
-      url: "/cart/add.js",
-      method: "POST",
-      dataType: "json",
-      data: formData,
-    })
-    .done(function( data ) {
-      console.log(data);
-      
-      $.ajax({
-        url: "/cart.js",
-        method: "GET",
-        dataType: "json"
-      })
-      .done(function( cartData ) {
-        $('.cart-items-total').text(cartData.item_count);
-      })
-      .fail(function(cartError) {
-        console.log( cartError );
-        $('.load-container').remove();
-      });
-      
-      renderedHtml = getSectionInnerHTML(
-        data.sections["dc-cart-drawer"],
-        "#CartContainer"
-      );
-      $("#CartContainer").html(renderedHtml);
-      if($('.drawer-cart-upsell').length > 0 && $('.upsell-product-wrap').length > 0) {
-        $('.drawer-cart').addClass("with-upsell");
-      }
-      else {
-        $('.drawer-cart').removeClass("with-upsell");
-      }
-      $('.load-container').remove();
-    })
-    .fail(function(error) {
-      console.log(error);
-      $('.load-container').remove();
-    });
-  });
-</script>
 
 {% schema %}
   {
