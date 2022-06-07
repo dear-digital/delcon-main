@@ -6,10 +6,10 @@
         <img src="{{ articleUpsellProd.featured_image | img_url: 'x240' }}" alt="{{ articleUpsellProd.title }}">
       </a>
     </div>
-    <div class="article-upsell-infos">
+    <div class="article-upsell-infos product-info">
       <div class="flex-box justify-between align-center">
         <a href="{{ articleUpsellProd.url }}" class="product-name">{{ articleUpsellProd.title }}</a>
-        <span class="product-selling-price article-upsell-price">{{ articleUpsellProd.price | money }}</span>
+        <span class="product-selling-price card-product-price">{{ articleUpsellProd.price | money }}</span>
       </div>
       <div class="article-product-desc">{{ articleUpsellProd.metafields.my_fields.extra_info }}</div>
       <div class="variants-wrapper">
