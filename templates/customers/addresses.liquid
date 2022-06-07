@@ -251,7 +251,7 @@
 <script>
   
   $("#accountNewsletter").click(function() {
-    console.log($(this).attr("checked"));
+    console.log($(this).prop("checked"));
     if($(this).attr("checked")) {
       return;
     }
