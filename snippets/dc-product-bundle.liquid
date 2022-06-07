@@ -1,4 +1,6 @@
 {% if product.metafields.my_fields.bundle_products != blank %}
+  {%- render 'shappify-bdl-load-bundle' -%}
+  {% comment %}
   {% assign bundled_product_handles = product.metafields.my_fields.bundle_products | split: "," %}
   <div class="product-bundle-wrapper rel">
     <div class="flex-box justify-between align-center">
@@ -27,7 +29,7 @@
       {% endfor %}
     </div>
   </div>
-
+  {% endcomment %}
 <script>
   
   $.ajax({
