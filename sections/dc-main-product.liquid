@@ -77,6 +77,8 @@
         
         <span class="shipping-details">{{ section.settings.shipping_details }}</span>
         
+        {% include "dc-product-bundle" %}
+        
         <div class="other-details">
           {% if product.metafields.my_fields.product_general %}
           <div class="product-faq">
