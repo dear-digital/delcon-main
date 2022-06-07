@@ -250,7 +250,7 @@
 
 <script>
   
-  $("#accountNewsletter").click(function() {
+  $("#accountNewsletter").change(function() {
     console.log($(this).prop("checked"));
     if($(this).prop("checked") == false) {
       $("#email_signup_newsletter #k_id_email").val("{{ customer.email }}");
