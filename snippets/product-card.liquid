@@ -5,7 +5,7 @@
         <div class="card-product-wrapper flex-box justify-between align-center rel">
           <div class="card-product-image rel">
             
-            <div class="product-slider-for rel" id="product-card-slider">
+            <div class="product-card-for rel" id="product-card-slider">
               {% for media in product.media %}
               {% if media.media_type == "video" %}
               <div class="product-img" data-vid="yes" href="{{ media | img_url: 'master' }}" data-caption="{{ product.title | escape  }}" data-width="{{media.width}}" data-height="{{media.height}}" itemprop="contentUrl" data-index="{{ forloop.index0 }}">
@@ -17,7 +17,7 @@
               {% endfor %}
             </div>
             
-            <div class="slider-nav no-t no-m {% for media in product.media %}{% if forloop.length < 8 %} no-transform{% endif %}{% endfor %}">
+            <div class="product-card-nav no-t no-m {% for media in product.media %}{% if forloop.length < 8 %} no-transform{% endif %}{% endfor %}">
               {% for media in product.media %}          
               {% if media.media_type == "video" %}
               <video autoplay muted playsinline="playsinline" preload="metadata" aria-label="{{ product.title }}" poster="{{ media.preview_image | img_url: '200x' }}" loop>{% for video_source in media.sources %}<source src="{{ video_source.url }}" type="{{ video_source.mime_type }}">{% endfor %}</video>
