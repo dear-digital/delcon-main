@@ -2,7 +2,7 @@
   {% assign bundled_product_handles = product.metafields.my_fields.bundle_products | split: "," %}
   {% for handle in bundled_product_handles %}
 	{% assign bundle_product = all_products[handle] %}
-	<div class="card-product rel">
+	<div class="card-product bundled-product rel">
       <div class="card-product-wrapper flex-box justify-between align-center rel">
         <div class="card-product-image rel">
           <img src="{{ bundle_product.featured_image | img_url: '200x' }}" alt="{{ bundle_product.title }}">
