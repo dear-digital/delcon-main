@@ -21,6 +21,12 @@
   margin: 0;
   margin-bottom: 24px;
 }
+.terug-btn:hover {
+  color: #B499BF;
+}
+.terug-btn:hover svg path {
+  stroke: #B499BF;
+}
 .variantType {
   display: block;
   font-size: 16px;
