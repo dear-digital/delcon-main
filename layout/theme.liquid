@@ -315,13 +315,14 @@
     
     <script>
       
-      $(".product-details .variant-box, .card-product-text .variant-box").click(function() {
+      $(".variant-box").click(function() {
         var variantIndex = $(this).data('index');
         var variantPrice = $(this).data('price');
 
         $(this).parent().find(".variant-box").removeClass('variant-selected');
         $(this).addClass('variant-selected');
-        $('.card-product-price').text(variantPrice);
+        $(this).closest(".product-details").find('.card-product-price').text(variantPrice);
+        $(this).closest(".card-product-text").find('.card-product-price').text(variantPrice);
         $('.article-upsell-price').text(variantPrice);
 
         $('.variant-features').addClass('no-disp');
