@@ -34,10 +34,10 @@
       </div>
       <div class="product-details product-info" data-type="{{ product.type }}" data-handle="{{ product.handle }}">
         
-        <div class="flex-box justify-between align-end">
-          <h2 class="product-title">{{ product.title }}</h2>
-          <p class="card-product-price product-main-price">{{ product.selected_or_first_available_variant.price | money }}</p>
-        </div>
+        <h2 class="product-title flex-box justify-between align-end">{{ product.title }}
+          <div class="card-product-price">{{ product.selected_or_first_available_variant.price | money }}</div>
+        </h2>
+        
         
         {% for variant in product.variants %}
         <div class="variant-features {% if forloop.index != 1 %}no-disp{% endif %}" data-index="{{ forloop.index }}">
