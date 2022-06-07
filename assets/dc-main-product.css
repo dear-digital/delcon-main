@@ -157,6 +157,7 @@
 .bundled-product .card-product-text {
   width: 100%;
   padding: 0;
+  margin-top: 9px;
 }
 .bundled-product .product-title {
   font-size: 16px;
@@ -166,5 +167,6 @@
   font-weight: 700;
 }
 .bundled-product .product-card-desc {
+  margin-top: 4px;
   margin-bottom: 8px;
 }
