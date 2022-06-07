@@ -36,7 +36,7 @@
     dataType: "json"
   })
   .done(function( data ) {
-    console.log("Bold App Response : "+JSON.stringify(data));
+    console.log(JSON.stringify(data));
     var indexNo;
     $.each( data.member_bundles, function( index, value ){
       var found = true;
