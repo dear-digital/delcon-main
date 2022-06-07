@@ -90,7 +90,7 @@
   font-weight: 700;
   border-bottom: 2px solid transparent;
   color: rgba(var(--color-base-accent-1),1);
-  transition: all .3s ease-out;
+/*   transition: all .3s ease-out; */
 }
 .faq-link:hover {
   border-bottom: 2px solid rgba(var(--color-base-accent-1),1);
