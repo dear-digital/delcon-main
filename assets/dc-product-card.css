@@ -49,7 +49,7 @@
   display: block;
   width: 100%;
   height: 590px;
-  object-fit: cover;
+  object-fit: contain;
 }
 .card-product-text {
   width: 50%;

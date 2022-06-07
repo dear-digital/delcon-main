@@ -138,6 +138,11 @@
 }
 
 /* Bundle Product CSS */
+.product-bundle-wrapper {
+  display: block;
+  padding: 24px;
+  border: 1px solid rgb(var(--color-base-accent-1));
+}
 .bundled-product {
   width: 231px;
 }
