@@ -28,10 +28,201 @@
         "hero_title": "Laat je viervoeter eerst een proeven",
         "hero_subtitle": "Elke hond en elke kat heeft eigen specifieke behoeften. Daarom maken wij met veel zorg voeding die aangepast is aan jouw pluizige vriend."
       }
+    },
+    "16545818624c0e5b97": {
+      "type": "dc-features-section",
+      "blocks": {
+        "bfd05407-f35a-4358-b1ee-06335fdc5283": {
+          "type": "features",
+          "settings": {
+            "logo_title": "",
+            "logo_desc": ""
+          }
+        },
+        "a4f892c1-1c4b-49a3-8f31-11aad9b36982": {
+          "type": "features",
+          "settings": {
+            "logo_title": "",
+            "logo_desc": ""
+          }
+        },
+        "701ba9aa-3513-4230-ab58-df0e65dacf78": {
+          "type": "features",
+          "settings": {
+            "logo_title": "",
+            "logo_desc": ""
+          }
+        },
+        "0a91af16-9a91-4c50-88dc-81958fad11cd": {
+          "type": "features",
+          "settings": {
+            "logo_title": "",
+            "logo_desc": ""
+          }
+        }
+      },
+      "block_order": [
+        "bfd05407-f35a-4358-b1ee-06335fdc5283",
+        "a4f892c1-1c4b-49a3-8f31-11aad9b36982",
+        "701ba9aa-3513-4230-ab58-df0e65dacf78",
+        "0a91af16-9a91-4c50-88dc-81958fad11cd"
+      ],
+      "settings": {
+        "feature_background": ""
+      }
+    },
+    "16545818913b5fe9fb": {
+      "type": "dc-img-video-text",
+      "settings": {
+        "background_color": "",
+        "media_alignment": "left",
+        "section_type": "img_txt",
+        "video_link": "",
+        "custom_logo": "",
+        "section_subtitle": "",
+        "section_title": "",
+        "section_text": "",
+        "section_link": "",
+        "section_url": "",
+        "isProductFinder": false,
+        "isProefpakketten": false,
+        "proefpakketten_text": "",
+        "section_btn_text": "",
+        "section_btn_url": ""
+      }
+    },
+    "16545819179fd3c847": {
+      "type": "dc-product-ingredients",
+      "blocks": {
+        "3ef4c039-70dd-4d44-a86d-a5f5c37bf8f1": {
+          "type": "select",
+          "settings": {
+            "ingredient_name": "",
+            "ingredient_details": ""
+          }
+        },
+        "d401652c-dfdf-471a-b338-cfac29a3fc64": {
+          "type": "select",
+          "settings": {
+            "ingredient_name": "",
+            "ingredient_details": ""
+          }
+        },
+        "3bb341dd-db1c-42cf-99cd-c71fea62d68b": {
+          "type": "select",
+          "settings": {
+            "ingredient_name": "",
+            "ingredient_details": ""
+          }
+        },
+        "283f007e-3817-4d31-a1de-772b8934c2cf": {
+          "type": "select",
+          "settings": {
+            "ingredient_name": "",
+            "ingredient_details": ""
+          }
+        },
+        "fc195c23-2f9b-4809-9cf3-df95df3bc397": {
+          "type": "select",
+          "settings": {
+            "ingredient_name": "",
+            "ingredient_details": ""
+          }
+        },
+        "0c60aea7-8564-4953-9b63-53165ad8b78d": {
+          "type": "select",
+          "settings": {
+            "ingredient_name": "",
+            "ingredient_details": ""
+          }
+        }
+      },
+      "block_order": [
+        "3ef4c039-70dd-4d44-a86d-a5f5c37bf8f1",
+        "d401652c-dfdf-471a-b338-cfac29a3fc64",
+        "3bb341dd-db1c-42cf-99cd-c71fea62d68b",
+        "283f007e-3817-4d31-a1de-772b8934c2cf",
+        "fc195c23-2f9b-4809-9cf3-df95df3bc397",
+        "0c60aea7-8564-4953-9b63-53165ad8b78d"
+      ],
+      "settings": {
+        "ingredient_details_background": "",
+        "ingredient_title_background": "",
+        "media_alignment": "right",
+        "section_subtitle": "",
+        "section_title": ""
+      }
+    },
+    "1654581944e4919d6d": {
+      "type": "dc-img-video-text",
+      "settings": {
+        "background_color": "",
+        "media_alignment": "left",
+        "section_type": "img_txt",
+        "video_link": "",
+        "custom_logo": "",
+        "section_subtitle": "",
+        "section_title": "",
+        "section_text": "",
+        "section_link": "",
+        "section_url": "",
+        "isProductFinder": false,
+        "isProefpakketten": false,
+        "proefpakketten_text": "",
+        "section_btn_text": "",
+        "section_btn_url": ""
+      }
+    },
+    "16545819618bc11d42": {
+      "type": "dc-full-banner-image",
+      "settings": {
+        "section_title": "",
+        "section_text": "",
+        "isProductFinder": false,
+        "isProefpakketten": false,
+        "section_btn_text": "",
+        "section_btn_url": ""
+      }
+    },
+    "1654581972010cd7d6": {
+      "type": "dc-img-video-text",
+      "settings": {
+        "background_color": "",
+        "media_alignment": "left",
+        "section_type": "img_txt",
+        "video_link": "",
+        "custom_logo": "",
+        "section_subtitle": "",
+        "section_title": "",
+        "section_text": "",
+        "section_link": "",
+        "section_url": "",
+        "isProductFinder": false,
+        "isProefpakketten": false,
+        "proefpakketten_text": "",
+        "section_btn_text": "",
+        "section_btn_url": ""
+      }
+    },
+    "1654581985cd9c24a7": {
+      "type": "dc-newsletter",
+      "settings": {
+        "title": "Krijg nu 20% korting",
+        "desc": "Schrijf je in op onze nieuwsbrief en blijf op de hoogte van acties en promoties. 20% korting die je kan gebruiken bij je volgende aankoop in onze shop",
+        "email_placeholder": "Email adres",
+        "subscribe_btn": "Send"
+      }
     }
   },
   "order": [
     "main",
-    "16545817604ab77d8e"
+    "16545817604ab77d8e",
+    "16545818624c0e5b97",
+    "16545818913b5fe9fb",
+    "16545819179fd3c847",
+    "1654581944e4919d6d",
+    "16545819618bc11d42",
+    "1654581972010cd7d6",
+    "1654581985cd9c24a7"
   ]
 }
