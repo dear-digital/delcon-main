@@ -88,7 +88,7 @@
   position: relative;
 }
 .product-faq:first-child {
-  border-top: 1px solid rgba(var(--color-base-accent-1),1) !important;
+/*   border-top: 1px solid rgba(var(--color-base-accent-1),1) !important; */
 }
 .product-accordion {
   cursor: pointer;
