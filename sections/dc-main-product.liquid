@@ -77,9 +77,11 @@
         
         <span class="shipping-details">{{ section.settings.shipping_details }}</span>
         
+        {% comment %}
         {%- include 'bold-product' with product, hide_action: 'header' -%}
         {%- include 'bold-common' -%}
         {%- render 'shappify-bdl-load-bundle' -%}
+        {% endcomment %}
         
         {% include "dc-product-bundle" %}
         
