@@ -60,6 +60,41 @@ $(document).ready(function(){
   ]
   });
   
+  $('.product-card-for').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    dots: false,
+    fade: true,
+    asNavFor: '.product-card-nav',
+    responsive: [
+      {
+        breakpoint: 992,
+        settings: {
+          arrows: false,
+          dots: true
+        }
+      }
+    ]
+  });
+  
+  $('.product-card-nav').slick({
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    asNavFor: '.product-card-for',
+    focusOnSelect: true,
+    centerMode: true,
+    responsive: [
+      {
+        breakpoint: 992,
+        settings: {
+          centerMode: false,
+          slidesToShow: 5
+        }
+      }
+    ]
+  });
+  
   $('.product-slider-for').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
