@@ -35,29 +35,33 @@
         "bfd05407-f35a-4358-b1ee-06335fdc5283": {
           "type": "features",
           "settings": {
-            "logo_title": "",
-            "logo_desc": ""
+            "logo_img": "shopify:\/\/shop_images\/Icon_2x_4dcbb3d9-27ad-4898-afe7-a3fb25e3168b.png",
+            "logo_title": "BELGISCH",
+            "logo_desc": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et"
           }
         },
         "a4f892c1-1c4b-49a3-8f31-11aad9b36982": {
           "type": "features",
           "settings": {
-            "logo_title": "",
-            "logo_desc": ""
+            "logo_img": "shopify:\/\/shop_images\/Icon_2x_3dcc2c82-5820-4af0-870a-1fdc3848120f.png",
+            "logo_title": "SNELLE VERZENDING",
+            "logo_desc": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et"
           }
         },
         "701ba9aa-3513-4230-ab58-df0e65dacf78": {
           "type": "features",
           "settings": {
-            "logo_title": "",
-            "logo_desc": ""
+            "logo_img": "shopify:\/\/shop_images\/Icon_2x_7445ba4d-c2b8-4b72-80ae-44e592cccc0a.png",
+            "logo_title": "KWALITEIT",
+            "logo_desc": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et"
           }
         },
         "0a91af16-9a91-4c50-88dc-81958fad11cd": {
           "type": "features",
           "settings": {
-            "logo_title": "",
-            "logo_desc": ""
+            "logo_img": "shopify:\/\/shop_images\/Icon_2x_d069f4b3-d157-48b1-b4dc-4e2439b9fc30.png",
+            "logo_title": "CUSTOMER SERVICE",
+            "logo_desc": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et"
           }
         }
       },
@@ -74,20 +78,22 @@
     "16545818913b5fe9fb": {
       "type": "dc-img-video-text",
       "settings": {
-        "background_color": "",
+        "background_color": "#e4edf2",
         "media_alignment": "left",
         "section_type": "img_txt",
+        "section_image": "shopify:\/\/shop_images\/Image_2x_08842411-8838-4190-9f06-a6f9ef370da4.png",
+        "product_video": "",
         "video_link": "",
         "custom_logo": "",
-        "section_subtitle": "",
-        "section_title": "",
-        "section_text": "",
+        "section_subtitle": "PROEFPAKKET",
+        "section_title": "Laat je viervoeter eerst eens proeven.",
+        "section_text": "<p>Ontvang eenmalig een proefpakket met overheerlijke Delcon producten en laat je huisdier smullen. Gegarandeerd een leef kommetje!<\/p><p>Een pakket bestaat uit:<\/p><ul>\n<li>\n<strong>Droge voeding:<\/strong> 3 kg hondenvoer of 1,75kg kattenvoer<\/li>\n<li>Voor honden enkele <strong>treats<\/strong>, voor katten een blikje <strong>natvoer<\/strong>\n<\/li>\n<li>Een <strong>maatbeker<\/strong>\n<\/li>\n<\/ul>",
         "section_link": "",
         "section_url": "",
         "isProductFinder": false,
-        "isProefpakketten": false,
+        "isProefpakketten": true,
         "proefpakketten_text": "",
-        "section_btn_text": "",
+        "section_btn_text": "PROEFPAKKET",
         "section_btn_url": ""
       }
     },
