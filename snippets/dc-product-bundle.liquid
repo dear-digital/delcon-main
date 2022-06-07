@@ -1,3 +1,24 @@
 {% if product.metafields.my_fields.bundle_products != blank %}
-	{{ product.metafields.my_fields.bundle_products | replace: ","," " }}
+  {% assign bundled_product_handles = product.metafields.my_fields.bundle_products | split: "," %}
+  {% for handle in bundled_product_handles %}
+	{% assign bundle_product = all_products[handle] %}
+	<div class="card-product rel">
+      <div class="card-product-wrapper flex-box justify-between align-center rel">
+        <div class="card-product-image rel">
+          <img src="{{ bundle_product.featured_image | img_url: '200x' }}" alt="{{ bundle_product.title }}">
+        </div>
+        <div class="card-product-text rel">
+          <div class="flex-box justify-between align-end">
+            <div class="product-title">{{ bundle_product.title }}</div>
+            <p class="card-product-price product-price">{{ bundle_product.selected_or_first_available_variant.price | money }}</p>
+          </div>
+          <div class="variants-wrapper">
+            {% for variant in bundle_product.variants %}
+            <div class="variant-box {% if forloop.index == 1 %}variant-selected{% endif %}" data-index="{{ forloop.index }}" data-price="{{ variant.price | money }}">{{ variant.title }}</div>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+    </div>
+  {% endfor %}
 {% endif %}
