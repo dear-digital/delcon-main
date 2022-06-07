@@ -20,7 +20,7 @@
   position: relative;
 }
 .faq-wrapper:first-child {
-  border-top: 1px solid rgba(var(--color-base-accent-1),1);
+/*   border-top: 1px solid rgba(var(--color-base-accent-1),1); */
 }
 .accordion {
   cursor: pointer;
