@@ -252,7 +252,7 @@
   
   $("#accountNewsletter").change(function() {
     console.log($(this).prop("checked"));
-    if($(this).prop("checked") == false) {
+    if($(this).prop("checked")) {
       $("#email_signup_newsletter #k_id_email").val("{{ customer.email }}");
       $("#email_signup_newsletter").submit();
     }
