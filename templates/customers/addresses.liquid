@@ -250,7 +250,7 @@
 
 <script>
   
-  $("#accountNewsletter:not(disabled)").change(function() {
+  $("#accountNewsletter:is(disabled)").change(function() {
     console.log("{{ customer.email }}")
     $("#email_signup_newsletter #k_id_email").val("{{ customer.email }}");
 	$("#email_signup_newsletter").submit();
