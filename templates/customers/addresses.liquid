@@ -235,7 +235,7 @@
         <div class="newsletter-wrapper">
           <p class="address-heading">{{ 'newsletter.title' | t }}</p>
           <div class="flex-box align-center">
-            <input type="checkbox" value="" id="accountNewsletter" checked>
+            <input type="checkbox" value="" id="accountNewsletter" {% if customer.accepts_marketing %}checked="checked"{% endif %}>
             <label for="accountNewsletter">{{ 'newsletter.subscribe_text' | t }}</label>
           </div>
         </div>
