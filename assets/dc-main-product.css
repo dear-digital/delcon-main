@@ -144,13 +144,13 @@
   border: 1px solid rgb(var(--color-base-accent-1));
 }
 .bundled-product {
-  width: 231px;
+  width: 45%;
 }
 .bundled-product .card-product-wrapper {
   flex-direction: column;
 }
 .bundled-product .card-product-image {
-  width: 231px;
+  width: 100%;
   height: 231px;
 }
 .bundled-product .card-product-text {
