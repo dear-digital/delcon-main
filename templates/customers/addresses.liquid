@@ -235,7 +235,7 @@
         <div class="newsletter-block">
           <p class="address-heading">{{ 'newsletter.title' | t }}</p>
           <div class="flex-box align-center">
-            <input type="checkbox" value="" id="accountNewsletter" {% if customer.accepts_marketing == true %}checked="checked" readonly="true"{% endif %}>
+            <input type="checkbox" value="" id="accountNewsletter" {% if customer.accepts_marketing == true %}checked="checked" disabled{% endif %}>
             <label for="accountNewsletter">{{ 'newsletter.subscribe_text' | t }}</label>
             <div class="no-disp">
               {% section "dc-newsletter" %}
@@ -250,9 +250,14 @@
 
 <script>
   
-  $("#accountNewsletter").change(function() {
-    $("#email_signup_newsletter #k_id_email").val("{{ customer.email }}");
-	$("#email_signup_newsletter").submit();
+  $("#accountNewsletter").click(function() {
+    if($(this).attr("checked") == false) {
+      $("#email_signup_newsletter #k_id_email").val("{{ customer.email }}");
+      $("#email_signup_newsletter").submit();
+    }
+    else {
+      return;
+    }
   });
   
   $(".edit-address").click(function() {
