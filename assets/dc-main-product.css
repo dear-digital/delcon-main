@@ -136,3 +136,19 @@
   overflow: hidden;
   transition: max-height .3s ease-out;
 }
+
+/* Bundle Product CSS */
+.bundled-product {
+  width: 231px;
+}
+.bundled-product .card-product-wrapper {
+  flex-direction: column;
+}
+.bundled-product .card-product-image {
+  width: 231px;
+  height: 231px;
+}
+.bundled-product .card-product-text {
+  width: 100%;
+  padding: 0;
+}
