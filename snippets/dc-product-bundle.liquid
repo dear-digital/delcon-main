@@ -4,7 +4,7 @@
     <div class="flex-box justify-between align-center">
       {% for handle in bundled_product_handles %}
       {% assign bundle_product = all_products[handle] %}
-      <div class="card-product bundled-product rel">
+      <div class="card-product bundled-product rel" data-variant="{{ bundle_product.first_available_variant.id }}" data-product="{{ bundle_product.id }}" data-handle="{{ handle }}">
         <div class="card-product-wrapper flex-box justify-between align-center rel">
           <div class="card-product-image rel">
             <img src="{{ bundle_product.featured_image | img_url: '200x' }}" alt="{{ bundle_product.title }}">
@@ -27,4 +27,47 @@
       {% endfor %}
     </div>
   </div>
+
+<script>
+  
+  $.ajax({
+    url: "https://bundles.boldapps.net/v2/4goldstore.myshopify.com/product/{{ product.id }}/bundles?tmp="+Math.random().toString().slice(2,11),
+    method: "GET",
+    dataType: "json"
+  })
+  .done(function( data ) {
+    console.log("Bold App Response : "+data);
+    var indexNo;
+    $.each( data.member_bundles, function( index, value ){
+      var found = true;
+      $.each( value.products, function( index2, value2 ){
+        var foundInside = false;
+        $('.related-product').each(function() {
+          if($(this).data('product') == value2.fulfillments[0].product_id) {
+            foundInside = true;
+          }
+        });
+        if(!foundInside) {
+          found = false;
+        }
+      });
+      if(found) {
+        indexNo = index;
+      }
+    });
+    
+    $.each( data.member_bundles[indexNo].products, function( index, value ){
+      $('.related-product').each(function() {
+        if($(this).data('product') == value.fulfillments[0].product_id) {
+          $(this).data('external',value.id);
+        }
+      });
+    });
+    console.log('script finished loading');
+  })
+  .fail(function(error) {
+    console.log( error );
+  });
+  
+</script>
 {% endif %}
