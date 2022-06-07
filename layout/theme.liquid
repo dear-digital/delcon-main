@@ -226,7 +226,7 @@
     </a>
     {% endcomment %}
 
-    <div class="for-header header-wrapper {% if template == "product" or template == "collection" or template == "blog" or template == "article" or template == "page.about-us" or template == "page.store-locator" or template == "page.contact-and-faq" or template == "customers/login" or template == "customers/register" or template == "customers/account" or template == "customers/addresses" or template == "customers/order" or template == "customers/reset_password" %}shadow{% endif %}">
+    <div class="for-header header-wrapper {% if template == "product" or template == "collection" or template == "blog" or template == "article" or template == "page.about-us" or template == "page.proefpakket" or template == "page.store-locator" or template == "page.contact-and-faq" or template == "customers/login" or template == "customers/register" or template == "customers/account" or template == "customers/addresses" or template == "customers/order" or template == "customers/reset_password" %}shadow{% endif %}">
       {% section 'dc-announcement-bar' %}
       {% section 'dc-header' %}{% section 'dc-cart-drawer' %}
     </div>
@@ -282,7 +282,7 @@
         if (scroll > 0) {
           $(".for-header").addClass("shadow");
         } else {
-          if(!(url.includes("products") || url.includes("collections") || url.includes("blogs") || (url.includes("account")) || url.includes("account/addresses") || url.includes("account/reset") || url.includes("pages/over-ons") || url.includes("pages/verdeelpunten-belgie") || url.includes("pages/contact-and-faq"))) {
+          if(!(url.includes("products") || url.includes("collections") || url.includes("blogs") || (url.includes("account")) || url.includes("account/addresses") || url.includes("account/reset") || url.includes("pages/over-ons") || url.includes("pages/proefpakket") || url.includes("pages/verdeelpunten-belgie") || url.includes("pages/contact-and-faq"))) {
             $(".for-header").removeClass("shadow");
           }
         }
