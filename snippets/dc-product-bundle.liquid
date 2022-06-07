@@ -39,6 +39,7 @@
     var indexNo;
     $.each( data.member_bundles, function( index, value ){
       var found = true;
+      console.log("found : "+found);
       console.log("index : "+index);
       console.log("value : "+JSON.stringify(value));
       $.each( value.products, function( index2, value2 ){
