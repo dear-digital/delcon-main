@@ -252,12 +252,12 @@
   
   $("#accountNewsletter").click(function() {
     console.log($(this).attr("checked"));
-    if($(this).attr("checked") == false) {
-      $("#email_signup_newsletter #k_id_email").val("{{ customer.email }}");
-      $("#email_signup_newsletter").submit();
+    if($(this).attr("checked")) {
+      return;
     }
     else {
-      return;
+      $("#email_signup_newsletter #k_id_email").val("{{ customer.email }}");
+      $("#email_signup_newsletter").submit();
     }
   });
   
