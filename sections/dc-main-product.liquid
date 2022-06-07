@@ -36,7 +36,7 @@
         
         <div class="flex-box justify-between align-end">
           <h2 class="product-title">{{ product.title }}</h2>
-          <p class="card-product-price">{{ product.selected_or_first_available_variant.price | money }}</p>
+          <p class="card-product-price product-main-price">{{ product.selected_or_first_available_variant.price | money }}</p>
         </div>
         
         {% for variant in product.variants %}
