@@ -6,6 +6,7 @@
 {% for tag in article.tags %}
   {% if tag contains "upsell: " %}
   	{% assign articleUpsellHandle = tag | replace: "upsell: ","" %}
+	{{articleUpsellHandle}}
   {% endif %}
 {% endfor %}
 
