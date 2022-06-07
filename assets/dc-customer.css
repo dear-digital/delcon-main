@@ -342,12 +342,12 @@
   display: flex;
   align-items: center;
 }
-.default-address input, .newsletter-wrapper input {
+.default-address input, .newsletter-block input {
   width: 16px;
   height: 16px;
   margin: 0 8px 0 0;
 }
-.default-address label, .newsletter-wrapper label {
+.default-address label, .newsletter-block label {
   font-size: 14px;
   line-height: 22px;
 }
