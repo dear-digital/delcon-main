@@ -2,13 +2,20 @@
   "sections": {
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
         "padding_top": 28,
         "padding_bottom": 28
       }
+    },
+    "16545856879e36ce96": {
+      "type": "dc-policy-section",
+      "settings": {
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "16545856879e36ce96"
   ]
 }
