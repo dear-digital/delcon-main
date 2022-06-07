@@ -43,6 +43,7 @@
     $('#card-product-'+productId).css("opacity", 1);
     $('#card-product-'+productId).css("pointer-events", "auto");
     $('#card-product-'+productId).find(".card-product").removeClass("no-disp");
+    $('#card-product-'+productId+' .product-slider-for').slick();
     $('#card-product-'+productId+' .product-slider-for').slick('resize');
   });
 </script>
