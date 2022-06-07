@@ -22,8 +22,8 @@
           </div>
         </div>
       </div>
+      {% if forloop.last %}{% else %}<span class="product-title bundle-plus">+</span>{% endif %}
       {% endfor %}
-      <span class="product-title bundle-plus">+</span>
     </div>
   </div>
 {% endif %}
