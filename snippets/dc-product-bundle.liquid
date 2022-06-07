@@ -1,6 +1,6 @@
 {% if product.metafields.my_fields.bundle_products != blank %}
   {% assign bundled_product_handles = product.metafields.my_fields.bundle_products | split: "," %}
-  <div class="product-bundle-wrapper">
+  <div class="product-bundle-wrapper rel">
     <div class="flex-box justify-between align-center">
       {% for handle in bundled_product_handles %}
       {% assign bundle_product = all_products[handle] %}
@@ -22,8 +22,8 @@
           </div>
         </div>
       </div>
-      <span class="product-title">+</span>
       {% endfor %}
+      <span class="product-title bundle-plus">+</span>
     </div>
   </div>
 {% endif %}
