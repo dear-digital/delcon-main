@@ -1,0 +1,3 @@
+{% if product.metafields.my_fields.bundle_products != blank %}
+	{{ product.metafields.my_fields.bundle_products | split: "," }}
+{% endif %}
