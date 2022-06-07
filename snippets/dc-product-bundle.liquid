@@ -35,16 +35,16 @@
     dataType: "json"
   })
   .done(function( data ) {
-    console.log(JSON.stringify(data));
+//     console.log(JSON.stringify(data));
     var indexNo;
     $.each( data.member_bundles, function( index, value ){
       var found = true;
       console.log("index : "+index);
-      console.log("value : "+value);
+      console.log("value : "+JSON.stringify(value));
       $.each( value.products, function( index2, value2 ){
         var foundInside = false;
         console.log("index2 : "+index2);
-        console.log("value2 : "+value2);
+        console.log("value2 : "+JSON.stringify(value2));
         $('.bundled-product').each(function() {
           console.log("product : "+$(this).data('product'));
           if($(this).data('product') == value2.fulfillments[0].product_id) {
