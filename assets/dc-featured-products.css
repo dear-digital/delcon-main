@@ -79,7 +79,7 @@
   height: 16px;
   overflow: hidden;
 }
-.product-price, .product-card-desc {
+.product-card-price .product-price, .product-card-desc {
   font-size: 12px;
   line-height: 16px;
   font-family: "Avenir",sans-serif;
