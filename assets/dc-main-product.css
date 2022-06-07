@@ -22,8 +22,12 @@
   margin-bottom: 24px;
   transition: all .3s ease-out;
 }
+.terug-btn svg {
+  transition: all .3s ease-out;
+}
 .terug-btn:hover {
   color: #B499BF;
+  text-decoration: underline;
 }
 .terug-btn:hover svg path {
   stroke: #B499BF;
