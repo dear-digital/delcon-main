@@ -29,7 +29,7 @@
           <div class="article-content-wrapper">
           	{% if article.content contains "---article-upsell-here---" and articleUpsellHandle != blank %}
             	{{ article.content | split: "---article-upsell-here---" | first }}
-            	{% render "article-upsell" %}
+            	{% render "article-upsell" articleUpsellHandle: articleUpsellHandle %}
             	{{ article.content | split: "---article-upsell-here---" | last }}
             {% else %}
             	{{ article.content | replace: "---article-upsell-here---","" }}
