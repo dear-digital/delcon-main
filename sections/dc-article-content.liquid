@@ -26,7 +26,13 @@
         </span>
         <div class="article-contant">
           <h1 class="article-heading tk-le-monde-livre-classic-byol">{{ article.title }}</h1>
-          <div class="article-content-wrapper">{{ article.content | replace: "---article-upsell-here---", article-upsell }}</div>
+          <div class="article-content-wrapper">
+          	{% if article.content contains "---article-upsell-here---" %}
+            	{{ article.content | split: "---article-upsell-here---" | first }}
+            	{% render "article-upsell" %}
+            	{{ article.content | split: "---article-upsell-here---" | last }}
+            {% endif %}
+          </div>
         </div>
       </div>
     </div>
