@@ -165,3 +165,6 @@
 .bundled-product .product-price {
   font-weight: 700;
 }
+.bundled-product .product-card-desc {
+  margin-bottom: 8px;
+}
