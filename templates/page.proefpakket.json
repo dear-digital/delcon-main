@@ -158,11 +158,11 @@
         "0c60aea7-8564-4953-9b63-53165ad8b78d"
       ],
       "settings": {
-        "ingredient_details_background": "",
-        "ingredient_title_background": "",
+        "ingredient_details_background": "#f2f1f0",
+        "ingredient_title_background": "#bdb4ac",
         "media_alignment": "right",
-        "section_subtitle": "",
-        "section_title": ""
+        "section_subtitle": "INGREDIENTEN",
+        "section_title": "Natuurlijke ingrediënten"
       }
     },
     "1654581944e4919d6d": {
