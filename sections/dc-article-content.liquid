@@ -2,6 +2,13 @@
 {{ 'dc-blog-main.css' | asset_url | stylesheet_tag }}
 {{ 'dc-product-card.css' | asset_url | stylesheet_tag }}
 
+{% assign articleUpsell = blank %}
+{% for tag in article.tags %}
+  {% if tag contains "upsell:" %}
+  	{% assign articleUpsell = tag | replace: "upsell:","" %}
+  {% endif %}
+{% endfor %}
+
 <div class="main-article container rel flex-box justify-between">
   <a href="{% unless routes.root_url == "/" %}{{ routes.root_url }}{% endunless %}/blogs/nieuws" class="back-btn">
     <span class="left-chev">{% render 'arrow-right-sm' %}</span>
@@ -19,42 +26,7 @@
         </span>
         <div class="article-contant">
           <h1 class="article-heading tk-le-monde-livre-classic-byol">{{ article.title }}</h1>
-          <div class="article-content-wrapper">{{ section.settings.article_content | default: article.content }}</div>
-          
-          {% if section.settings.article_upsell.id != blank %}
-          {% assign articleUpsellProd = section.settings.article_upsell %}
-          <div class="article-upsell-wrapper">
-            <div class="article-upsell">
-              <div class="article-upsell-image">
-                <a href="{{ articleUpsellProd.url }}" aria-label="article upsell">
-                  <img src="{{ articleUpsellProd.featured_image | img_url: 'x240' }}" alt="{{ articleUpsellProd.title }}">
-                </a>
-              </div>
-              <div class="article-upsell-infos">
-                <div class="flex-box justify-between align-center">
-                  <a href="{{ articleUpsellProd.url }}" class="product-name">{{ articleUpsellProd.title }}</a>
-                  <span class="product-selling-price article-upsell-price">{{ articleUpsellProd.price | money }}</span>
-                </div>
-                <div class="article-product-desc">{{ articleUpsellProd.metafields.my_fields.extra_info }}</div>
-                <div class="variants-wrapper">
-                  {% for variant in articleUpsellProd.variants %}
-                  <div class="variant-box {% if forloop.index == 1 %}variant-selected{% endif %} {% if product.has_only_default_variant %}no-disp{% endif %}" 
-                       data-index="{{ forloop.index }}"
-                       data-avaliable="{% if variant.available %}yes{% else %}no{% endif %}"
-                       data-sell-out-of-stock="{{ variant.inventory_policy }}"
-                       data-inventory-management="{{ variant.inventory_management }}"
-                       data-quantity="{{ variant.inventory_quantity }}"
-                       value="{{ variant.id }}"
-                       variant-name="{{ variant.title }}"
-                       data-compare="{{ variant.compare_at_price | money }}"
-                       data-price="{{ variant.price | money }}">{{ variant.title }}</div>
-                  {% endfor %}
-                </div>
-                <button class="btn addArticleUpsell">{{ 'products.product.add_to_cart' | t }}</button>
-              </div>
-            </div>
-          </div>
-          {% endif %}
+          <div class="article-content-wrapper">{{ article.content | replace: "---article-upsell-here---", article-upsell }}</div>
         </div>
       </div>
     </div>
@@ -310,11 +282,7 @@
 			"id": "author",
 			"label": "Article Author"
 		},
-		{
-			"type": "html",
-			"id": "article_content",
-			"label": "Article Content"
-		},
+		
 		{
 			"type": "text",
 			"id": "prev_article",
@@ -338,11 +306,6 @@
 			"id": "email_format_error",
 			"label": "Email Format Error Message",
 			"default": "must be formatted as an email"
-		},
-		{
-			"type": "product",
-			"id": "article_upsell",
-			"label": "Article Upsell Product"
 		}
 	],
 	"presets": [
