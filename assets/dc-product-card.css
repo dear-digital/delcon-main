@@ -33,6 +33,9 @@
   height: 590px;
   background-color: rgb(var(--color-base-text));
 }
+.card-product-image * {
+  height: 100%;
+}
 .card-product-image img {
   display: block;
   width: 100%;
