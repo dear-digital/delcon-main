@@ -123,3 +123,6 @@ It may be overwritten and any customizations would be lost.
 </script>
 
 {%- comment -%} INCLUDE APP SCRIPTS BELOW {%- endcomment -%}
+
+{{ 'https://bundles.boldapps.net/js/bundles.js' | script_tag }} 
+{{ 'bold-bundles.css' | asset_url | stylesheet_tag }}
