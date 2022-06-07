@@ -33,10 +33,10 @@
   height: 100%;
   background-color: rgb(var(--color-base-text));
 }
-.product-slider-for:not(.slick-initialized), .slider-nav:not(.slick-initialized) {
+.product-card-for:not(.slick-initialized), .product-card-nav:not(.slick-initialized) {
   visibility: hidden;
 }
-.product-slider-for img {
+.product-card-for img {
   display: block;
   width: 100%;
   height: 590px;
