@@ -38,10 +38,10 @@
 //     console.log(JSON.stringify(data));
     var indexNo;
     $.each( data.member_bundles, function( index, value ){
+      var found = true;
       console.log("index : "+index);
       console.log("value : "+JSON.stringify(value));
       $.each( value.products, function( index2, value2 ){
-        var found = true;
         console.log("found : "+found);
         var foundInside = false;
         console.log("index2 : "+index2);
