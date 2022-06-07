@@ -319,7 +319,7 @@
         var variantIndex = $(this).data('index');
         var variantPrice = $(this).data('price');
 
-        $(".variant-box").removeClass('variant-selected');
+        $(this).parent().find(".variant-box").removeClass('variant-selected');
         $(this).addClass('variant-selected');
         $('.card-product-price').text(variantPrice);
         $('.article-upsell-price').text(variantPrice);
