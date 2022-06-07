@@ -11,9 +11,10 @@
           </div>
           <div class="card-product-text rel">
             <div class="flex-box justify-between align-end">
-              <div class="product-title">{{ bundle_product.title }}</div>
+              <div class="product-title">{{ bundle_product.title | strip_html | truncatewords: 2 | escape }}</div>
               <p class="card-product-price product-price">{{ bundle_product.selected_or_first_available_variant.price | money }}</p>
             </div>
+            <p class="product-card-desc">{{ product.metafields.my_fields.extra_info | escape  }}</p>
             <div class="variants-wrapper">
               {% for variant in bundle_product.variants %}
               <div class="variant-box {% if forloop.index == 1 %}variant-selected{% endif %}" data-index="{{ forloop.index }}" data-price="{{ variant.price | money }}">{{ variant.title }}</div>
