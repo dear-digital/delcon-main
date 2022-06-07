@@ -26,7 +26,7 @@
         </span>
         <div class="article-contant">
           <h1 class="article-heading tk-le-monde-livre-classic-byol">{{ article.title }}</h1>
-          <div class="article-content-wrapper">{{ article.content }}</div>
+          <div class="article-content-wrapper">{{ article.content | replace: "---article-upsell-here---", article-upsell }}</div>
         </div>
       </div>
     </div>
