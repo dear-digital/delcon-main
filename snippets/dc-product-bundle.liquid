@@ -4,7 +4,7 @@
     <div class="flex-box justify-between align-center">
       {% for handle in bundled_product_handles %}
       {% assign bundle_product = all_products[handle] %}
-      <div class="card-product bundled-product rel" data-variant="{{ bundle_product.first_available_variant.id }}" data-product="{{ bundle_product.id }}" data-handle="{{ handle }}">
+      <div class="card-product bundled-product rel" data-external="{{ bundleProductsExternalId[forloop.index0] }}" data-variant="{{ bundle_product.first_available_variant.id }}" data-product="{{ bundle_product.id }}" data-handle="{{ handle }}">
         <div class="card-product-wrapper flex-box justify-between align-center rel">
           <div class="card-product-image rel">
             <img src="{{ bundle_product.featured_image | img_url: '200x' }}" alt="{{ bundle_product.title }}">
