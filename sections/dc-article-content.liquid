@@ -2,10 +2,10 @@
 {{ 'dc-blog-main.css' | asset_url | stylesheet_tag }}
 {{ 'dc-product-card.css' | asset_url | stylesheet_tag }}
 
-{% assign articleUpsell = blank %}
+{% assign articleUpsellHandle = blank %}
 {% for tag in article.tags %}
   {% if tag contains "upsell:" %}
-  	{% assign articleUpsell = tag | replace: "upsell:","" %}
+  	{% assign articleUpsellHandle = tag | replace: "upsell:","" %}
   {% endif %}
 {% endfor %}
 
