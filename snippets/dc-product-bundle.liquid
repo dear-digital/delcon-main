@@ -42,7 +42,7 @@
       var found = true;
       $.each( value.products, function( index2, value2 ){
         var foundInside = false;
-        $('.related-product').each(function() {
+        $('.bundled-product').each(function() {
           if($(this).data('product') == value2.fulfillments[0].product_id) {
             foundInside = true;
           }
