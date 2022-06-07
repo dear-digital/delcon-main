@@ -316,9 +316,7 @@ input:focus-visible, select:focus-visible, textarea:focus-visible {
   max-width: 560px;
   max-width: 65ch;
   margin: 0 auto;
-  padding-top: 72px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 72px 20px;
 }
 .shopify-policy__title {
   text-align: center;
