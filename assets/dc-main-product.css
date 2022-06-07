@@ -148,6 +148,7 @@
 }
 .bundled-product .card-product-wrapper {
   flex-direction: column;
+  width: 100%;
 }
 .bundled-product .card-product-image {
   width: 100%;
