@@ -57,7 +57,7 @@
     });
     
     $.each( data.member_bundles[indexNo].products, function( index, value ){
-      $('.related-product').each(function() {
+      $('.bundled-product').each(function() {
         if($(this).data('product') == value.fulfillments[0].product_id) {
           $(this).data('external',value.id);
         }
