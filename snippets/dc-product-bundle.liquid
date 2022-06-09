@@ -1,5 +1,6 @@
 {% if product.metafields.my_fields.bundle_products != blank %}
   {% assign bundled_product_handles = product.metafields.my_fields.bundle_products | split: "," %}
+  {% assign bundleDiscount = product.metafields.my_fields.bundle_percentage %}
   <div class="product-bundle-wrapper rel">
     <div class="flex-box justify-between align-center">
       {% for handle in bundled_product_handles %}
