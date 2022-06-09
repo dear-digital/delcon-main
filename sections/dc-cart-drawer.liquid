@@ -203,7 +203,7 @@
           quantityLines.push(parseInt($(this).data('qty')));
         }
       });
-      formData = {updates: quantityLines};
+      formData = {'updates': quantityLines,'sections': "dc-cart-drawer"};
     }
     $.ajax({
       url: urlHit,
