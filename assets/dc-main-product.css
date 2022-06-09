@@ -171,3 +171,17 @@
   margin-top: 4px;
   margin-bottom: 8px;
 }
+.bundle-addToCart {
+  width: 100%;
+  max-width: none;
+  background-color: #0d553f;
+  color: #fff;
+  transition: all .3s ease-out;
+}
+.bundle-addToCart:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+.bundle-addToCart:hover {
+  background-color: #063323;
+}
