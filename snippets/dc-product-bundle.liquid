@@ -96,7 +96,7 @@
       let renderedHtml;
       var valid = true;
       $('.product-bundle-wrapper .bundled-product').each(function() {
-        if($(".variant-box").data('available') != "yes") {
+        if($(this).find(".variant-box").data('available') != "yes") {
           valid = false
         }
       });
