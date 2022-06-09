@@ -22,6 +22,28 @@
 //   console.log(upsellProducts);
 </script>
 
+{% for item in cart.items %}
+    {% assign discount = blank %}
+    {% assign bundleId = blank %}        
+    {% for property in item.properties %}
+      {% if property.first == 'discount' %}
+        {% assign discount = property.last | plus: 0 %}
+      {% endif %}
+    {% endfor %}
+    {% if discount != blank %}
+    {% assign multipliedProduct = item.final_price | times: multiplier %}
+    {% assign discCut = multipliedProduct | divided_by: 100.0 %}
+    {% assign discCut = discCut | times: discount %}
+    {% assign splits = discCut | append: "" | split: "." %}
+    {% assign splitsFirst = splits | first | plus: "0.0" %}
+    {% assign disc_price = multipliedProduct | minus: splitsFirst | round %}
+    {% assign totalDiscountX = totalDiscountX | plus: disc_price %}
+    {% else %}
+    {% assign multipliedProduct = item.final_line_price | times: multiplier %}
+    {% assign totalDiscountX = totalDiscountX | plus: multipliedProduct %}
+    {% endif %}
+{% endfor %}
+
 <div class="drawer-cart {% if upsell == "no" %}with-upsell{% endif %}">
   <div class="drawer-cart-header">
     <span class="close-cart">{% include 'icon-close-new' %}</span>
@@ -44,6 +66,28 @@
       <div class="cart-body">
         {% for item in cart.items %}
         {% assign featured_image = item.variant.image.src | default: item.product.featured_image %}
+        {% assign discount = blank %}
+        {% assign bundleId = blank %}        
+        {% for property in item.properties %}
+          {% if property.first == 'discount' %}
+        	{% assign discount = property.last | plus: 0 %}
+          {% endif %}
+          {% if property.first == 'bundle' %}
+        	{% assign bundleId = property.last %}
+          {% endif %}
+        {% endfor %}
+        {% if discount != blank %}
+        {% assign multipliedProduct = item.final_price | times: multiplier %}
+        {% assign discCut = multipliedProduct | divided_by: 100.0 %}
+        {% assign discCut = discCut | times: discount %}
+        {% assign splits = discCut | append: "" | split: "." %}
+        {% assign splitsFirst = splits | first | plus: "0.0" %}
+        {% assign disc_price = multipliedProduct | minus: splitsFirst | round %}
+        {% assign totalDiscount = totalDiscount | plus: disc_price %}
+        {% else %}
+        {% assign multipliedProduct = item.final_line_price | times: multiplier %}
+        {% assign totalDiscount = totalDiscount | plus: multipliedProduct %}
+        {% endif %}
         <div class="cart-product-wrapper">
           <div class="cart-product-image">
             <a href="{{ item.url }}"><img src="{{ featured_image | product_img_url: '120x' }}" alt="{{ item.product.title }}"></a>
@@ -59,7 +103,7 @@
                   <div class="cart-qty" value="{{item.quantity}}">{{item.quantity}}</div>
                   <div class="qty-manipulation-symbol plus-symbol cart-plus" data-variant="{{ item.variant.id }}" data-value="{{item.quantity}}">{% render "icon-plus" %}</div>
                 </div>
-                <div class="delete-cart-product" data-variant="{{ item.variant.id }}">
+                <div class="delete-cart-product {% if discount != blank %}bundle-delete bundle-{{ bundleId }}{% endif %}" data-variant="{{ item.variant.id }}" data-bundle="{{ bundleId }}" data-qty="{{item.quantity}}">
                   <div class="delete-text">{{ section.settings.delete_text }}</div>
                 </div>
               </div>
@@ -147,8 +191,22 @@
       'quantity': 0,
       'sections': "dc-cart-drawer"
     };
+    var urlHit = "/cart/change.js";
+    if($(this).hasClass('bundle-delete')) {
+      urlHit = "/cart/update.js";
+      var key = "bundle-"+$(this).data('bundle');
+      var quantityLines = [];
+      $('.delete-cart-product').each(function(){
+        if($(this).hasClass(key)) {
+          quantityLines.push(0);
+        } else {
+          quantityLines.push(parseInt($(this).data('qty')));
+        }
+      });
+      formData = {updates: quantityLines};
+    }
     $.ajax({
-      url: "/cart/change.js",
+      url: urlHit,
       method: "POST",
       dataType: "json",
       data: formData,
