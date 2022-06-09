@@ -26,6 +26,7 @@
       {% if forloop.last %}{% else %}<span class="product-title bundle-plus">+</span>{% endif %}
       {% endfor %}
     </div>
+    <button class="btn bundle-addToCart">{{ section.settings.add_to_cart }}</button>
   </div>
 <script>
   
@@ -78,5 +79,70 @@
     console.log( error );
   });
   
+  $( document ).ready(function() {  
+    
+    
+  
+    $('.add-bundle-to-cart-btn').click(function() {
+      var valid = true;
+      $('.product-bundle-sec .related-product').each(function() {
+        if(!$(this).find('.sold-status').hasClass('no-disp')) {
+          valid = false
+        }
+      });
+      if(!valid) {
+      return 0;
+      }
+      var random = Math.floor(Math.random() * 1000) + 1;
+      $('.drawer-cart').addClass('drawn');
+      $('.background-drawer-cart').addClass('drawn');
+      $('body').addClass('no-scroll');
+//       hideChatBtn();
+      $('.cart-body').append(`<div class="load-container"><div class="load"></div></div>`);
+      var formData = {
+            'items': []
+      };      
+      $('.product-bundle-sec .related-product').each(function() {
+          formData.items.push({
+              'id': parseInt($(this).data('variant')),
+            'quantity': 1,
+            'properties': {
+              'bundle': 'bundle'+random,
+              'external': $(this).data('external'),
+              'discount': '{{bundleDiscount}}'
+            }
+            });   
+      });
+      console.log(formData);
+      $.ajax({
+        url: "/cart/add.js",
+        method: "POST",
+        dataType: "json",
+        data: formData,
+      })
+      .done(function( data ) {     
+        $.ajax({
+          url: '{% unless routes.root_url == "/" %}{{ routes.root_url }}{% endunless %}/?sections=4g-cart',
+          method: "GET",
+          dataType: "json"
+        })
+        .done(function( data ) {
+          {% include "cart-done" %}
+        })
+        .fail(function(error) {
+          console.log('error1');
+          console.log( error );
+          $('.load-container').remove();
+        });
+      })
+      .fail(function(error) {
+        console.log('error2');
+        console.log( error );
+        $('.load-container').remove();
+      });
+    });
+    
+    
+  });
 </script>
 {% endif %}
