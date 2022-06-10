@@ -201,13 +201,9 @@
   color: rgb(var(--color-base-accent-1));
 }
 
-.cart-product-price-wrapper {
+.cart-title-price-wrapper, .cart-product-details-wrapper {
   display: flex;
   height: auto;
-}
-.cart-product-price {
-  display: flex;
-  flex-direction: column;
 }
 
 .product-discount-price {
