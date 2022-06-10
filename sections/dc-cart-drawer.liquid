@@ -108,7 +108,7 @@
                 <span class="product-selling-price product-price">{% if discount != blank %}{{ disc_price | money }}{% else %}{{ item.final_price | times: multiplier | money }}{% endif %}</span>
               </div>
               <div class="cart-product-details-wrapper">
-                <div class="product-color">{{ item.product.metafields.my_fields.extra_info }} - inhoud: {{ item.variant.title }}</div>
+                <div class="product-color">{{ item.product.metafields.my_fields.extra_info }} - {{section.settings.content_text  }} {{ item.variant.title }}</div>
                 {% if item.variant.compare_at_price > item.variant.price or discount != blank %}
                 <span class="product-discount-price" data-x="{{ item.final_price }}">{% if discount != blank %}{{ item.final_price | times: multiplier | money }}{% else %}{{- item.variant.compare_at_price | times: multiplier | money | replace: " ","" -}}{% endif %}</span>
                 {% endif %}
@@ -498,6 +498,12 @@
           "id": "free_shipping_text",
           "label": "Free Shipping Text",
           "default": "Gratis verzending vanaf €60"
+        },
+		{
+          "type": "text",
+          "id": "content_text",
+          "label": "Variant Details Text",
+          "default": "inhoud:"
         },
 		{
 			"id": "upsell_collection",
