@@ -158,6 +158,7 @@
         </div>
         {% assign discountCode = "" %}
         {% if item.discounts %}
+          {{ item.discounts.title }}
           {% for itemDiscount in item.discounts %}
         	{% assign discountCode = itemDiscount.title %}
           {% endfor %}
