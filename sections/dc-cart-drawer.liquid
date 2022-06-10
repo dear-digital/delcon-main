@@ -79,7 +79,7 @@
         {% endfor %}
         {% if discount != blank %}
         {{ "discount = " | append: discount }}
-        {% assign multipliedProduct = item.final_price | times: multiplier %}
+        {% assign multipliedProduct = item.final_price | times: multiplier | divided_by: 100.0 %}
         {{ "multipliedProduct = " | append: multipliedProduct }}
         {% assign discCut = multipliedProduct | divided_by: 100.0 %}
         {{ "discCut = " | append: discCut }}
