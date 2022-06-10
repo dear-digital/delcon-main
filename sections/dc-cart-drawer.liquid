@@ -21,8 +21,8 @@
   
 //   console.log(upsellProducts);
 </script>
-
 {% for item in cart.items %}
+	{% assign multiplier = 1 %}
     {% assign discount = blank %}
     {% assign bundleId = blank %}        
     {% for property in item.properties %}
@@ -65,6 +65,7 @@
       </div>
       <div class="cart-body">
         {% for item in cart.items %}
+        {% assign multiplier = 1 %}
         {% assign featured_image = item.variant.image.src | default: item.product.featured_image %}
         {% assign discount = blank %}
         {% assign bundleId = blank %}        
@@ -98,11 +99,13 @@
               <div class="product-color">{{ item.product.metafields.my_fields.extra_info }} - inhoud: {{ item.variant.title }}</div>
               
               <div class="cart-product-qty-wrapper">
+                {% if discount == blank %}
                 <div class="cart-product-qty" data-quantity="{{item.quantity}}">
                   <div class="qty-manipulation-symbol minus-symbol cart-minus" data-variant="{{ item.variant.id }}" data-value="{{item.quantity}}">{% render "icon-minus" %}</div>
                   <div class="cart-qty" value="{{item.quantity}}">{{item.quantity}}</div>
                   <div class="qty-manipulation-symbol plus-symbol cart-plus" data-variant="{{ item.variant.id }}" data-value="{{item.quantity}}">{% render "icon-plus" %}</div>
                 </div>
+                {% endif %}
                 <div class="delete-cart-product {% if discount != blank %}bundle-delete bundle-{{ bundleId }}{% endif %}" data-variant="{{ item.variant.id }}" data-bundle="{{ bundleId }}" data-qty="{{item.quantity}}">
                   <div class="delete-text">{{ section.settings.delete_text }}</div>
                 </div>
@@ -110,8 +113,10 @@
             </div>
             <div class="cart-product-price-wrapper">
               <div class="product-price">
-                {% if item.variant.compare_at_price %}<span class="product-discount-price">{{ item.variant.compare_at_price | money }}</span>{% endif %}
-                <span class="product-selling-price">{{ item.final_price | money }}</span>
+                {% if item.variant.compare_at_price > item.variant.price or discount != blank %}
+                <span class="product-discount-price" data-x="{{ item.final_price }}">{% if discount != blank %}{{ item.final_price | times: multiplier | money }}{% else %}{{- item.variant.compare_at_price | times: multiplier | money | replace: " ","" -}}{% endif %}</span>
+                {% endif %}
+                <span class="product-selling-price">{% if discount != blank %}{{ disc_price | money }}{% else %}{{ item.final_price | times: multiplier | money }}{% endif %}</span>
               </div>
             </div>
           </div>
@@ -151,7 +156,8 @@
           <div class="shipping-title">{{ section.settings.shipping_text }}</div>
           <div class="shipping-price">{% if cart.total_price < 6000 %}{{ section.settings.calc_text }}{% else %}{{ section.settings.free_shipping }}{% endif %}</div>
         </div>
-        <a href="{% unless routes.root_url == "/" %}{{ routes.root_url }}{% endunless %}/checkout" class="checkout-btn">{% include "icon-lock" %} {{ section.settings.checkout_text }}</a>
+        <a href="{% unless routes.root_url == "/" %}{{ routes.root_url }}{% endunless %}/checkout" class="checkout-btn normal-checkout">{% include "icon-lock" %} {{ section.settings.checkout_text }}</a>
+        <a href="{% unless routes.root_url == "/" %}{{ routes.root_url }}{% endunless %}/checkout" class="checkout-btn boldapp no-disp" onclick="return false;">{% include "icon-lock" %} {{ section.settings.checkout_text }}</a>
       </div>
     </div>
     {% endif %}
@@ -160,6 +166,84 @@
 <div class="background-drawer-cart"></div>
 
 <script>
+  {% assign discount = blank %}
+  {% for item in cart.items %}
+  {% for property in item.properties %}
+  {% if property.first == 'external' %}
+  {% assign discount = property.last | plus: 0 %}
+  {% endif %}
+  {% endfor %}
+  {% endfor %}
+  {% if discount != blank %}
+  $('.boldapp').removeClass('no-disp');
+  $('.normal-checkout').addClass('no-disp');
+  {% else %}
+  $('.boldapp').addClass('no-disp');
+  $('.normal-checkout').removeClass('no-disp');
+  {% endif %}
+  
+  function getCookieValue(cname) { // cname is nothing but the cookie value which 
+    //contains the value
+    var name = cname + "=";
+    var decodedCookie = decodeURIComponent(document.cookie);
+    var ca = decodedCookie.split(';');
+    for(var i = 0; i <ca.length; i++) {
+      var c = ca[i];
+      while (c.charAt(0) == ' ') {
+        c = c.substring(1);
+      }
+      if (c.indexOf(name) == 0) {
+        return c.substring(name.length, c.length);
+      }
+    }
+    return "";
+  }
+  var cart = getCookieValue('cart');
+  if(cart == null) {
+    cart = "";
+  }
+  var boldCheckout = {
+    "items": [
+      {% for item in cart.items %}{% assign discount = blank %}{% for property in item.properties %}{% if property.first == 'external' %}{% assign discount = property.last | plus: 0 %}{% endif %}{% endfor %}
+      {
+        "variant_id": {{item.variant_id}},
+        "product_id": {{item.product_id}}{% if discount != blank %},
+        "properties": {
+        "_bold_bundle_price_rules_external_id": "{{ discount }}",
+        "_bold_bundles_locked": "true"
+      }{% endif %}{% if item.quantity > 1 %},
+      "quantity": {{ item.quantity }}
+      {% endif %}
+      }{% unless forloop.last %},{% endunless %}
+      {% endfor %}
+    ],
+    "currency": "{{ cart.currency.iso_code }}",
+    "token": cart,
+    "domain": "delcon-petfood.myshopify.com",
+    "order_data": {},
+      "json": ""
+  };
+  
+  $('.boldapp').click(function() {
+  	$.ajax({
+        url: "https://apps.boldapps.net/pricerules/delcon-petfood.myshopify.com/checkout",
+        method: "POST",
+        dataType: "json",
+        data: JSON.stringify(boldCheckout),
+        contentType : "application/json",
+        headers: { 'Content-Type': 'application/json' }
+      })
+    .done(function( data ) {
+      if(data.url != null) {
+        window.location.href = data.url;
+      } else {
+        window.location.href = '{% unless routes.root_url == "/" %}{{ routes.root_url }}{% endunless %}/checkout';
+      }
+      })
+      .fail(function(error) {
+        console.log( error );
+      });
+  });
   
   {% if cart.item_count == 0 %}
   $('.cart-toggler').addClass('cart--empty');
