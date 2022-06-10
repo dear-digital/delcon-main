@@ -202,8 +202,12 @@
 }
 
 .cart-product-price-wrapper {
-  display: block;
-  height: 87px;
+  display: flex;
+  height: auto;
+}
+.cart-product-price {
+  display: flex;
+  flex-direction: column;
 }
 
 .product-discount-price {
@@ -211,7 +215,10 @@
   color: #7A7A7A;
   text-decoration: line-through;
   letter-spacing: 0;
-  margin-right: 4px;
+/*   margin-right: 4px; */
+  font-size: 12px;
+  line-height: 16px;
+  text-align: right;
 }
 
 .product-selling-price {

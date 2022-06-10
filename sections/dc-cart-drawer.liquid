@@ -101,7 +101,7 @@
           <div class="cart-product-image">
             <a href="{{ item.url }}"><img src="{{ featured_image | product_img_url: '120x' }}" alt="{{ item.product.title }}"></a>
           </div>
-          <div class="cart-product-infos justify-between align-end">
+          <div class="cart-product-infos justify-between align-start">
             <div class="cart-product-info">
               <a href="{{ item.url }}" class="product-name">{{ item.product.title | strip_html | truncatewords: 3 }}</a>
               <div class="product-color">{{ item.product.metafields.my_fields.extra_info }} - inhoud: {{ item.variant.title }}</div>
@@ -120,11 +120,11 @@
               </div>
             </div>
             <div class="cart-product-price-wrapper">
-              <div class="product-price">
+              <div class="cart-product-price product-price">
+                <span class="product-selling-price">{% if discount != blank %}{{ disc_price | money }}{% else %}{{ item.final_price | times: multiplier | money }}{% endif %}</span>
                 {% if item.variant.compare_at_price > item.variant.price or discount != blank %}
                 <span class="product-discount-price" data-x="{{ item.final_price }}">{% if discount != blank %}{{ item.final_price | times: multiplier | money }}{% else %}{{- item.variant.compare_at_price | times: multiplier | money | replace: " ","" -}}{% endif %}</span>
                 {% endif %}
-                <span class="product-selling-price">{% if discount != blank %}{{ disc_price | money }}{% else %}{{ item.final_price | times: multiplier | money }}{% endif %}</span>
               </div>
             </div>
           </div>
