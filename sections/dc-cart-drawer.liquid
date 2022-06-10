@@ -78,24 +78,24 @@
           {% endif %}
         {% endfor %}
         {% if discount != blank %}
-        {{ "discount = " | append: discount }}
+        {% comment %}{{ "discount = " | append: discount }}{% endcomment %}
         {% assign multipliedProduct = item.final_price | times: multiplier | divided_by: 100.0 %}
-        {{ "multipliedProduct = " | append: multipliedProduct }}
+        {% comment %}{{ "multipliedProduct = " | append: multipliedProduct }}{% endcomment %}
         {% assign discCut = multipliedProduct | divided_by: 100.0 %}
-        {{ "discCut = " | append: discCut }}
+        {% comment %}{{ "discCut = " | append: discCut }}{% endcomment %}
         {% assign discCut = discCut | times: discount %}
-        {{ "discCut = " | append: discCut }}
+        {% comment %}{{ "discCut = " | append: discCut }}{% endcomment %}
         {% assign splits = discCut | append: "" %}
-        {{ "splits = " | append: splits }}
+        {% comment %}{{ "splits = " | append: splits }}{% endcomment %}
         {% assign disc_price = multipliedProduct | minus: splits | times: 100.0 %}
-        {{ "disc_price = " | append: disc_price }}
+        {% comment %}{{ "disc_price = " | append: disc_price }}{% endcomment %}
         {% assign totalDiscount = totalDiscount | plus: disc_price %}
-        {{ "totalDiscount = " | append: totalDiscount }}
+        {% comment %}{{ "totalDiscount = " | append: totalDiscount }}{% endcomment %}
         {% else %}
         {% assign multipliedProduct = item.final_line_price | times: multiplier %}
-        {{ "multipliedProduct = " | append: multipliedProduct }}
+        {% comment %}{{ "multipliedProduct = " | append: multipliedProduct }}{% endcomment %}
         {% assign totalDiscount = totalDiscount | plus: multipliedProduct | times: 100.0 %}
-        {{ "totalDiscount = " | append: totalDiscount }}
+        {% comment %}{{ "totalDiscount = " | append: totalDiscount }}{% endcomment %}
         {% endif %}
         <div class="cart-product-wrapper">
           <div class="cart-product-image">
