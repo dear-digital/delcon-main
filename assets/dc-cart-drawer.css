@@ -178,6 +178,9 @@
 }
 
 .cart-product-info {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
   height: auto;
 }
 
@@ -188,7 +191,8 @@
 
 .cart-product-qty-wrapper {
   display: flex;
-  margin-top: 12px;
+  width: 100%;
+/*   margin-top: 12px; */
 }
 
 .product-name {
