@@ -85,11 +85,9 @@
         {{ "discCut = " | append: discCut }}
         {% assign discCut = discCut | times: discount %}
         {{ "discCut = " | append: discCut }}
-        {% assign splits = discCut | append: "" | split: "." %}
+        {% assign splits = discCut | append: "" %}
         {{ "splits = " | append: splits }}
-        {% assign splitsFirst = splits | first | plus: "0.0" %}
-        {{ "splitsFirst = " | append: splitsFirst }}
-        {% assign disc_price = multipliedProduct | minus: splitsFirst %}
+        {% assign disc_price = multipliedProduct | minus: splits %}
         {{ "disc_price = " | append: disc_price }}
         {% assign totalDiscount = totalDiscount | plus: disc_price %}
         {{ "totalDiscount = " | append: totalDiscount }}
