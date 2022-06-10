@@ -87,14 +87,14 @@
         {{ "discCut = " | append: discCut }}
         {% assign splits = discCut | append: "" %}
         {{ "splits = " | append: splits }}
-        {% assign disc_price = multipliedProduct | minus: splits %}
+        {% assign disc_price = multipliedProduct | minus: splits | times: 100.0 %}
         {{ "disc_price = " | append: disc_price }}
         {% assign totalDiscount = totalDiscount | plus: disc_price %}
         {{ "totalDiscount = " | append: totalDiscount }}
         {% else %}
         {% assign multipliedProduct = item.final_line_price | times: multiplier %}
         {{ "multipliedProduct = " | append: multipliedProduct }}
-        {% assign totalDiscount = totalDiscount | plus: multipliedProduct %}
+        {% assign totalDiscount = totalDiscount | plus: multipliedProduct | times: 100.0 %}
         {{ "totalDiscount = " | append: totalDiscount }}
         {% endif %}
         <div class="cart-product-wrapper">
