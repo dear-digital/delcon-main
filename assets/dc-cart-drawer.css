@@ -207,6 +207,7 @@
 
 .cart-title-price-wrapper, .cart-product-details-wrapper {
   display: flex;
+  justify-content: space-between;
   height: auto;
 }
 
