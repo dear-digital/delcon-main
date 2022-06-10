@@ -79,15 +79,24 @@
         {% endfor %}
         {% if discount != blank %}
         {% assign multipliedProduct = item.final_price | times: multiplier %}
+        {{ "multipliedProduct = " | append: multipliedProduct }}
         {% assign discCut = multipliedProduct | divided_by: 100.0 %}
+        {{ "discCut = " | append: discCut }}
         {% assign discCut = discCut | times: discount %}
+        {{ "discCut = " | append: discCut }}
         {% assign splits = discCut | append: "" | split: "." %}
+        {{ "splits = " | append: splits }}
         {% assign splitsFirst = splits | first | plus: "0.0" %}
-        {% assign disc_price = multipliedProduct | minus: splitsFirst | round %}
+        {{ "splitsFirst = " | append: splitsFirst }}
+        {% assign disc_price = multipliedProduct | minus: splitsFirst %}
+        {{ "disc_price = " | append: disc_price }}
         {% assign totalDiscount = totalDiscount | plus: disc_price %}
+        {{ "totalDiscount = " | append: totalDiscount }}
         {% else %}
         {% assign multipliedProduct = item.final_line_price | times: multiplier %}
+        {{ "multipliedProduct = " | append: multipliedProduct }}
         {% assign totalDiscount = totalDiscount | plus: multipliedProduct %}
+        {{ "totalDiscount = " | append: totalDiscount }}
         {% endif %}
         <div class="cart-product-wrapper">
           <div class="cart-product-image">
