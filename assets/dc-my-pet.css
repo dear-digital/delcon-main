@@ -2,4 +2,7 @@
   display: block;
   width: 70%;
   max-width: 792px;
+  padding: 24px;
+  background-color: rgb(var(--color-base-text));
+  border: 1px solid rgb(var(--color-base-accent-1));
 }
