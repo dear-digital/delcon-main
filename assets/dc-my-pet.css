@@ -1,7 +1,11 @@
-.pet-details {
+.pet-details-wrapper {
   display: block;
   width: 70%;
   max-width: 792px;
+}
+.pet-details {
+  display: block;
+  width: 100%;
   padding: 24px;
   background-color: rgb(var(--color-base-text));
   border: 1px solid rgb(var(--color-base-accent-1));
