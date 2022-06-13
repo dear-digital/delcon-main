@@ -314,6 +314,7 @@
       "welcome_title": "Bienvenue à {{ name }}",
       "details": "Détails du compte",
       "pets": "vos animaux de compagnie",
+      "add_pet": "Ajouter un animal de compagnie",
       "view_addresses": "Voir les adresses",
       "return": "Retour aux détails du compte"
     },
