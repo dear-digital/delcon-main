@@ -60,10 +60,12 @@
         {% for block in section.blocks %}
         {% if block.type == 'filter' %}
           <div class="coll-filter-type">
+            {% if block.settings.main_filter != blank %}
             <div class="coll-filter-type-name-wrap accordion">
               <div class="coll-filter-type-name">{{ block.settings.main_filter }}</div>
               <span class="symbol">{% render "accordion-plus" %}</span>
             </div>
+            {% endif %}
             <div class="coll-filter-options-wrap panel">
               {% if block.settings.sub_filter_1 != blank %}
               <div class="coll-filter-option-wrap" data-value="{{ block.settings.sub_filter_1 }}">
