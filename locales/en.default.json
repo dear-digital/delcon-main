@@ -307,6 +307,7 @@
       "welcome_title": "Welcome back {{ name }}",
       "details": "Account details",
       "pets": "Your pets",
+      "add_pet": "Add pet",
       "view_addresses": "View addresses",
       "return": "Return to Account details"
     },
