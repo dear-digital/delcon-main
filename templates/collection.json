@@ -76,10 +76,10 @@
         "e2864443-00d3-4d06-a75d-5d2bdafc8a0b": {
           "type": "filter",
           "settings": {
-            "main_filter": "",
-            "sub_filter_1": "",
-            "sub_filter_2": "",
-            "sub_filter_3": "",
+            "main_filter": "Type voeding",
+            "sub_filter_1": "Droge voeding",
+            "sub_filter_2": "Treats",
+            "sub_filter_3": "Dental chews",
             "sub_filter_4": "",
             "sub_filter_5": "",
             "sub_filter_6": "",
@@ -92,10 +92,10 @@
         "42f50eed-3330-4adf-94ce-9ca84dc2e5d6": {
           "type": "filter",
           "settings": {
-            "main_filter": "",
-            "sub_filter_1": "",
-            "sub_filter_2": "",
-            "sub_filter_3": "",
+            "main_filter": "Grootte hond",
+            "sub_filter_1": "filter 1",
+            "sub_filter_2": "filter 2",
+            "sub_filter_3": "filter 3",
             "sub_filter_4": "",
             "sub_filter_5": "",
             "sub_filter_6": "",
