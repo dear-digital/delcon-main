@@ -307,7 +307,7 @@
       "welcome_title": "Welkom terug {{ name }}",
       "details": "Accountgegevens",
       "pets": "Jouw huisdieren",
-      "add_pet": "Huisdier Toevgoegen",
+      "add_pet": "Huisdier Toevoegen",
       "view_addresses": "Adressen bekijken",
       "return": "Terug naar Accountgegevens"
     },
