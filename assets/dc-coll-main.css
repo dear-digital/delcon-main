@@ -30,6 +30,7 @@
 }
 
 .sugg-coll-txt {
+  width: calc(100% - 170px);
   display: flex;
   flex-direction: column;
   justify-content: center;
