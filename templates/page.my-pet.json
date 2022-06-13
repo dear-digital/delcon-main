@@ -7,9 +7,15 @@
         "padding_top": 28,
         "padding_bottom": 28
       }
+    },
+    "1655126762cd76199b": {
+      "type": "dc-my-pet",
+      "settings": {
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "1655126762cd76199b"
   ]
 }
