@@ -357,8 +357,8 @@
     var filtervar = getUrlParameter('filters');
     var sortvar = getUrlParameter('sort_by');
 
-    if(typeof filtervar !== "undefined") {        
-      $('.coll-filter-option-wrap').removeClass('checked'); 
+    if(typeof filtervar !== "undefined") {
+      $('.coll-filter-option-wrap').removeClass('checked');
       var array = filtervar.split(",");
       $.each(array,function(i){
 
@@ -371,9 +371,12 @@
 
       });
     }
+    else {
+      $('.coll-filter-option-wrap').removeClass('checked');
+    }
 
     if(typeof sortvar !== "undefined") {
-      $('.sort-option').removeClass('checked');        
+      $('.sort-option').removeClass('checked');
       var array = sortvar.split(",");
       $.each(array,function(i){
 
@@ -387,10 +390,14 @@
       });
       $(".selected-sort-txt").text($('.sort-option.checked').text());
     }
+    else {
+      $('.sort-option').removeClass('checked');
+    }
+    
     var collex = window.location.href.split('/').pop().split('?')[0];
     $('.filter-collection').each(function() {
-//       console.log($(this).data('value'));
-//       console.log(collex);
+      console.log($(this).data('value'));
+      console.log(collex);
       if($(this).data('value') == collex) {
         $(this).addClass('checked');
       }
