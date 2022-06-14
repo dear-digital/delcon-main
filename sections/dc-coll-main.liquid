@@ -278,7 +278,7 @@
         arrows: false,
         dots: false,
         fade: true,
-        asNavFor: '.product-card-nav',
+        asNavFor: '#card-product-'+productId+' .product-card-nav',
         responsive: [
           {
             breakpoint: 992,
@@ -292,7 +292,7 @@
       $('#card-product-'+productId+' .product-card-nav').not('.slick-initialized').slick({
         slidesToShow: 5,
         slidesToScroll: 1,
-        asNavFor: '.product-card-for',
+        asNavFor: '#card-product-'+productId+' .product-card-for',
         focusOnSelect: true,
         centerMode: true,
         responsive: [
