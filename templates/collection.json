@@ -125,9 +125,9 @@
           "type": "physical-filter",
           "settings": {
             "main_filter": "Aandachtspunten",
-            "sub_filter_1": "",
-            "sub_filter_2": "",
-            "sub_filter_3": "",
+            "sub_filter_1": "Hypoallergeen",
+            "sub_filter_2": "Goede vertering",
+            "sub_filter_3": "Filter 3",
             "sub_filter_4": "",
             "sub_filter_5": "",
             "sub_filter_6": "",
