@@ -305,7 +305,16 @@ for (j = 0; j < acc3.length; j++) {
 
 <script>
   $('.coll-filter-option-wrap').click(function(){
-  	$(this).toggleClass('checked');
+    $filterType = $(this).parent().parent().data("filter-type");
+    $siblingFilters = $(this).parent().find(".coll-filter-option-wrap");
+    console.log($filterType);
+    if($filterType.includes("physical")) {
+      $(this).toggleClass('checked');
+    }
+    else {
+      $siblingFilters.removeClass("checked");
+      $(this).addClass('checked');
+    }
   });
 </script>
 
