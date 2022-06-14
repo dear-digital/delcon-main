@@ -338,6 +338,25 @@ for (j = 0; j < acc3.length; j++) {
       	$(this).addClass("checked");
       }
     }
+    
+    var filtersx = '';
+    if($('.coll-filter-option-wrap.checked').length > 0) {
+      if($('.sort-option.selected').length > 0) {
+        filtersx = '&filters=';      
+      } else {      
+        filtersx = 'filters=';    
+      }
+      $('.coll-filter-option-wrap.checked').each(function(index) {
+        if(index > 0) {
+          filtersx += ','+$(this).data('value');
+        } else {
+          filtersx += $(this).data('value');        
+        }
+      });
+    }
+    var url = 'https://'+window.location.hostname+'{%- unless routes.root_url == '/' -%}{{ routes.root_url }}{%- endunless -%}/collections/'+window.location.href.split('/').pop().split('?')[0]+sortx+filtersx;
+    console.log(url);
+    window.history.pushState({}, null, url);
     runFilter();
   });
   
