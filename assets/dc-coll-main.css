@@ -254,13 +254,11 @@
   width: fit-content;
   width: -moz-fit-content;
 }
+.coll-filter-option-wrap:first-child {
+  margin-top: 12px;
+}
 .coll-filter-option-wrap:last-child {
   margin-bottom: 0;
-}
-
-.coll-filter-options-wrap.panel {
-/*   margin-bottom: -15px; */
-  padding-top: 12px;
 }
 
 .coll-accordion {
