@@ -279,7 +279,7 @@
 .coll-accordion .coll-symbol svg * {
   transition: all .3s ease-out;
 }
-.coll-accordion.active .coll-symbol svg #Line-2 {
+.coll-accordion.active .coll-symbol svg #Line-1 {
   transform: translate(5.001px,-5px) rotate(90deg);
   opacity: 0;
 }
