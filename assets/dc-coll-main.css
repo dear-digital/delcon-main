@@ -17,6 +17,10 @@
   background-color: #E8E6E4;
 }
 
+.sugg-collection.checked {
+  background-color: #BDB4AC;
+}
+
 .sugg-coll-img {
   width: 146px;
   height: 146px;
