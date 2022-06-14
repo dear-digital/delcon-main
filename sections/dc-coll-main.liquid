@@ -596,6 +596,8 @@
       placeholder.innerHTML = data;
       var divx = $(placeholder).find('.coll-porducts');
       $('.coll-porducts').first().replaceWith(placeholder.querySelector('.coll-porducts'));
+      var collHero = $(placeholder).find('.hero-small');
+      $('.hero-small').first().replaceWith(collHero);
       addProductCard();
       runFilter();
     })
