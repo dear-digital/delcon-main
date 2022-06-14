@@ -206,7 +206,7 @@
       </div>
       <div class="coll-porducts flex-box">
       	{% for product in collection.products %}
-          <div class="product-card rel{% for tag in product.tags %}{% assign allTags = tag | split: " - " %}{% for currTag in allTags %}{{ currTag | replace: " ","-" | downcase }}{% endfor %}{% endfor %}" data-product-id="{{ product.id }}">
+          <div class="product-card rel{% for tag in product.tags %}{% assign allTags = tag | split: " - " %}{% for currTag in allTags %} {{ currTag | replace: " ","-" | downcase }}{% endfor %}{% endfor %}" data-product-id="{{ product.id }}">
             <a title="{{ product.title | escape  }}" class="product-card-hover no-t-m">
               <button class="btn product-btn">{{ section.settings.meerInfo }}</button>
             </a>
@@ -331,6 +331,7 @@ for (j = 0; j < acc3.length; j++) {
     } else {
       $('.product-card').removeClass('no-disp');
     }
+    $('.total-products').text($('.product-card:not(.no-disp)').length);
   }
   runFilter();
   
