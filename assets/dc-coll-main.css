@@ -243,7 +243,9 @@
 }
 
 .checked .checkbox .check-sign{
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .coll-filter-option-wrap {
