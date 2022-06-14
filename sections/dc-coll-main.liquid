@@ -42,13 +42,13 @@
         <div class="sort-title">{{ section.settings.sort }}</div>
         <div class="sort-types rel">
           <div class="selected-sort flex-box justify-between align-center">
-            <div class="selected-sort-txt">Bestseller</div>
+            <div class="selected-sort-txt">{{ 'products.facets.sort_by_bestsellers' | t }}</div>
             <div class="down-chev">{% include 'icon-arrow-sm' %}</div>
           </div>
           <div class="sort-options">
-            <div class="sort-option" data-value="bestseller">Bestseller</div>
-            <div class="sort-option" data-value="low-to-high">Price Low to High</div>
-            <div class="sort-option" data-value="high-to-low">Price High to Low</div>
+            <div class="sort-option" data-value="bestseller">{{ 'products.facets.sort_by_bestsellers' | t }}</div>
+            <div class="sort-option" data-value="price-low-to-high">{{ 'products.facets.sort_by_price_low_to_high' | t }}</div>
+            <div class="sort-option" data-value="price-high-to-low">{{ 'products.facets.sort_by_price_high_to_low' | t }}</div>
           </div>
         </div>
       </div>
