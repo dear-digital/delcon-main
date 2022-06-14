@@ -4,12 +4,13 @@
 
 .sugg-collection {
   width: 32.5%;
-  background-color: #F2F1F0;
-  border: 1px solid #181716;
+  background-color: rgb(var(--color-base-text));
+  border: 1px solid rgb(var(--color-base-accent-1));
   padding: 24px;
   text-decoration: none;
   color: inherit;
-  transition: .4s ease;
+  cursor: pointer;
+  transition: all .3s ease-out;
 }
 
 .sugg-collection:hover{
