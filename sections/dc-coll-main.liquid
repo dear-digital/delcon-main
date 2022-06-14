@@ -312,20 +312,20 @@
 </script>
 
 <script>
-var acc3 = document.getElementsByClassName("coll-accordion");
-var j;
+  var acc3 = document.getElementsByClassName("coll-accordion");
+  var j;
 
-for (j = 0; j < acc3.length; j++) {
-  acc3[j].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var panel3 = this.nextElementSibling;
-    if (panel3.style.maxHeight) {
-      panel3.style.maxHeight = null;
-    } else {
-      panel3.style.maxHeight = panel3.scrollHeight + "px";
-    }
-  });
-}
+  for (j = 0; j < acc3.length; j++) {
+    acc3[j].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var panel3 = this.nextElementSibling;
+      if (panel3.style.maxHeight) {
+        panel3.style.maxHeight = null;
+      } else {
+        panel3.style.maxHeight = panel3.scrollHeight + "px";
+      }
+    });
+  }
 </script>
 
 <script>
@@ -349,6 +349,12 @@ for (j = 0; j < acc3.length; j++) {
       }
     };
 
+    getSelectedFilters();
+    runFilter();
+
+  });
+  
+  function getSelectedFilters() {
     var filtervar = getUrlParameter('filters');
     var sortvar = getUrlParameter('sort_by');
 
@@ -387,10 +393,7 @@ for (j = 0; j < acc3.length; j++) {
         $(this).addClass('checked');
       }
     });
-
-    runFilter();
-
-  });
+  }
   
   function runFilter() {
   	$(".product-card").addClass("no-disp");
@@ -537,6 +540,12 @@ for (j = 0; j < acc3.length; j++) {
     .fail(function(error) {
       console.log( error );
     });
+  });
+  
+  $(window).on('popstate', function() {
+    getSelectedFilters();
+    runFilter();
+    console.log('Back button was pressed.');
   });
   
 </script>
