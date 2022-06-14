@@ -14,7 +14,7 @@
     {% for block in section.blocks %}
     {% if block.type == 'coll' %}
       {% assign sugg_coll = block.settings.collection %}
-      <a href="{{ sugg_coll.url }}" class="sugg-collection flex-box">
+      <div href="{{ sugg_coll.url }}" class="sugg-collection flex-box">
         <div class="sugg-coll-img">
         	{% if sugg_coll.image != blank %}
           		{{ sugg_coll.image | image_url: width: 146 | image_tag }}
@@ -26,7 +26,7 @@
           <div class="sugg-coll-title">{{ sugg_coll.title }}</div>
           <div class="sugg-coll-age">{{ block.settings.age }}</div>
         </div>
-      </a>  
+      </div>
     {% endif %}
   	{% endfor %}
     </div>
