@@ -554,12 +554,14 @@
   
   $('.sugg-collection').click(function() {
     var collx;
+    var selectedColl = $(this).hasClass('checked');
     
-    if($(this).hasClass('checked')) {
-      $('.sugg-collection').removeClass('checked');
+    $('.sugg-collection').removeClass('checked');
+    if(selectedColl) {
+      $(this).removeClass("checked");
       collx = 'all';
-    } else {
-      $('.sugg.collection').removeClass('checked');    
+    }
+    else {
       $(this).addClass('checked');
       collx = $(this).data('value');
     }
