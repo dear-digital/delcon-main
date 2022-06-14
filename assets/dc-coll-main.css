@@ -256,13 +256,15 @@
 }
 
 .coll-filter-options-wrap.panel {
-  margin-bottom: -15px;
+/*   margin-bottom: -15px; */
   padding-top: 12px;
 }
 
 .coll-accordion {
   position: relative;
-  padding: 0 0 12px;
   color: rgb(var(--color-base-accent-1));
-  margin: 0 0 24px;
+}
+.coll-accordion .coll-symbol {
+  display: flex;
+  align-items: center;
 }
