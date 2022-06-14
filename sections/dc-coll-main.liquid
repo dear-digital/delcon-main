@@ -366,6 +366,9 @@
             console.log($(this).data('value'));
             $(this).addClass('checked');
           }
+          else {
+          	$(this).remomveClass('checked');
+          }
         });
 
       });
@@ -380,6 +383,9 @@
           if($(this).data('value') == array[i]) {
             console.log($(this).data('value'));
             $(this).addClass('checked');
+          }
+          else {
+          	$(this).remomveClass('checked');
           }
         });
 
