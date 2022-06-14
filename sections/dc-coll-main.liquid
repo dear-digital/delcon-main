@@ -263,14 +263,17 @@
 
 
 <script>
-  $('.product-card, .product-card-hover, .product-btn').click(function() {
-    var productId = $(this).closest(".product-card").data("product-id");
-    $('#card-product-'+productId).css("opacity", 1);
-    $('#card-product-'+productId).css("pointer-events", "auto");
-    $('#card-product-'+productId).find(".card-product").removeClass("no-disp");
-    $('#card-product-'+productId+' .product-card-for').slick('resize');
-    $('#card-product-'+productId+' .product-card-nav').slick('resize');
-  });
+  
+  function addProductCard() {
+    $('.product-card, .product-card-hover, .product-btn').click(function() {
+      var productId = $(this).closest(".product-card").data("product-id");
+      $('#card-product-'+productId).css("opacity", 1);
+      $('#card-product-'+productId).css("pointer-events", "auto");
+      $('#card-product-'+productId).find(".card-product").removeClass("no-disp");
+      $('#card-product-'+productId+' .product-card-for').slick('resize');
+      $('#card-product-'+productId+' .product-card-nav').slick('resize');
+    });
+  }
 </script>
 
 <script>
@@ -354,6 +357,7 @@ for (j = 0; j < acc3.length; j++) {
         }
       });
     }
+    var sortx = '?';
     var url = 'https://'+window.location.hostname+'{%- unless routes.root_url == '/' -%}{{ routes.root_url }}{%- endunless -%}/collections/'+window.location.href.split('/').pop().split('?')[0]+sortx+filtersx;
     console.log(url);
     window.history.pushState({}, null, url);
@@ -408,7 +412,7 @@ for (j = 0; j < acc3.length; j++) {
       placeholder.innerHTML = data;
       var divx = $(placeholder).find('.coll-porducts');
       $('.coll-porducts').first().replaceWith(placeholder.querySelector('.coll-porducts'));
-//       addApply();
+      addProductCard();
       runFilter();
     })
     .fail(function(error) {
