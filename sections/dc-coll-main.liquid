@@ -1,5 +1,4 @@
 {{ 'dc-coll-main.css' | asset_url | stylesheet_tag }}
-{{ 'dc-faq-section.css' | asset_url | stylesheet_tag }}
 {{ 'dc-featured-products.css' | asset_url | stylesheet_tag }}
 
 <div class="dc-coll-main">
@@ -62,7 +61,7 @@
         {% if block.type == 'filter' %}
           <div class="coll-filter-type">
             {% if block.settings.main_filter != blank %}
-            <div class="coll-filter-type-name-wrap accordion">
+            <div class="coll-filter-type-name-wrap coll-accordion">
               <div class="coll-filter-type-name">{{ block.settings.main_filter }}</div>
               <span class="symbol">{% render "accordion-plus" %}</span>
             </div>
@@ -216,17 +215,17 @@
 </script>
 
 <script>
-var acc = document.getElementsByClassName("accordion");
-var i;
+var acc3 = document.getElementsByClassName("coll-accordion");
+var j;
 
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
+for (j = 0; j < acc3.length; j++) {
+  acc3[j].addEventListener("click", function() {
     this.classList.toggle("active");
-    var panel = this.nextElementSibling;
-    if (panel.style.maxHeight) {
-      panel.style.maxHeight = null;
+    var panel3 = this.nextElementSibling;
+    if (panel3.style.maxHeight) {
+      panel3.style.maxHeight = null;
     } else {
-      panel.style.maxHeight = panel.scrollHeight + "px";
+      panel3.style.maxHeight = panel3.scrollHeight + "px";
     }
   });
 }

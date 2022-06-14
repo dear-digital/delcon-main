@@ -192,6 +192,7 @@
 
 .coll-filter-type-name-wrap {
   display: flex;
+  font-size: 16px;
   font-weight: 700;
   align-items: center;
   line-height: 24px;
@@ -257,4 +258,11 @@
 .coll-filter-options-wrap.panel {
   margin-bottom: -15px;
   padding-top: 12px;
+}
+
+.coll-accordion {
+  position: relative;
+  padding: 0 0 12px;
+  color: rgb(var(--color-base-accent-1));
+  margin: 0 0 24px;
 }
