@@ -358,6 +358,7 @@
     var sortvar = getUrlParameter('sort_by');
 
     if(typeof filtervar !== "undefined") {        
+      $('.coll-filter-option-wrap').removeClass('checked'); 
       var array = filtervar.split(",");
       $.each(array,function(i){
 
@@ -365,9 +366,6 @@
           if($(this).data('value') == array[i]) {
             console.log($(this).data('value'));
             $(this).addClass('checked');
-          }
-          else {
-          	$(this).remomveClass('checked');
           }
         });
 
@@ -383,9 +381,6 @@
           if($(this).data('value') == array[i]) {
             console.log($(this).data('value'));
             $(this).addClass('checked');
-          }
-          else {
-          	$(this).remomveClass('checked');
           }
         });
 
