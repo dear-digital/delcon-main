@@ -254,6 +254,9 @@
   width: fit-content;
   width: -moz-fit-content;
 }
+.coll-filter-option-wrap:last-child {
+  margin-bottom: 0;
+}
 
 .coll-filter-options-wrap.panel {
 /*   margin-bottom: -15px; */
@@ -274,4 +277,11 @@
   max-height: 0;
   overflow: hidden;
   transition: max-height .3s ease-out;
+}
+.coll-accordion .coll-symbol svg * {
+  transition: all .3s ease-out;
+}
+.coll-accordion.active .coll-symbol svg #Line-2 {
+  transform: translate(5.001px,-5px) rotate(90deg);
+  opacity: 0;
 }
