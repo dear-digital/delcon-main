@@ -88,6 +88,54 @@
             "sub_filter_9": "",
             "sub_filter_10": ""
           }
+        },
+        "a73de303-1a43-4b54-a53f-89d0655a2375": {
+          "type": "behavioral-filter",
+          "settings": {
+            "main_filter": "Grootte hond",
+            "sub_filter_1": "",
+            "sub_filter_2": "",
+            "sub_filter_3": "",
+            "sub_filter_4": "",
+            "sub_filter_5": "",
+            "sub_filter_6": "",
+            "sub_filter_7": "",
+            "sub_filter_8": "",
+            "sub_filter_9": "",
+            "sub_filter_10": ""
+          }
+        },
+        "04c8b320-ca96-4e38-bd80-feedaacce3dd": {
+          "type": "behavioral-filter",
+          "settings": {
+            "main_filter": "Hoe energiek is je hond?",
+            "sub_filter_1": "",
+            "sub_filter_2": "",
+            "sub_filter_3": "",
+            "sub_filter_4": "",
+            "sub_filter_5": "",
+            "sub_filter_6": "",
+            "sub_filter_7": "",
+            "sub_filter_8": "",
+            "sub_filter_9": "",
+            "sub_filter_10": ""
+          }
+        },
+        "d4b70376-e102-40a8-91a7-15859e4453b3": {
+          "type": "physical-filter",
+          "settings": {
+            "main_filter": "Aandachtspunten",
+            "sub_filter_1": "",
+            "sub_filter_2": "",
+            "sub_filter_3": "",
+            "sub_filter_4": "",
+            "sub_filter_5": "",
+            "sub_filter_6": "",
+            "sub_filter_7": "",
+            "sub_filter_8": "",
+            "sub_filter_9": "",
+            "sub_filter_10": ""
+          }
         }
       },
       "block_order": [
@@ -95,7 +143,10 @@
         "3308ef63-2d5c-4472-9ef1-51960b99131e",
         "2c81aa55-55f2-41b2-9b2a-d457c7ed3590",
         "7846b221-82fb-428e-960c-a8a347d26b50",
-        "2da734dd-78ef-4c4c-a1e8-d674a59b73fe"
+        "2da734dd-78ef-4c4c-a1e8-d674a59b73fe",
+        "a73de303-1a43-4b54-a53f-89d0655a2375",
+        "04c8b320-ca96-4e38-bd80-feedaacce3dd",
+        "d4b70376-e102-40a8-91a7-15859e4453b3"
       ],
       "settings": {
         "meerInfo": "QUICK VIEW",
