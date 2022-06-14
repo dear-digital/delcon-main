@@ -14,7 +14,7 @@
     {% for block in section.blocks %}
     {% if block.type == 'coll' %}
       {% assign sugg_coll = block.settings.collection %}
-      <div href="{{ sugg_coll.url }}" class="sugg-collection flex-box">
+      <div href="{{ sugg_coll.url }}" class="sugg-collection flex-box" data-value="{{ sugg_coll.handle }}">
         <div class="sugg-coll-img">
         	{% if sugg_coll.image != blank %}
           		{{ sugg_coll.image | image_url: width: 146 | image_tag }}
