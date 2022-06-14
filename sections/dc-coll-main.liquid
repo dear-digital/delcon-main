@@ -363,6 +363,7 @@
 
         $('.coll-filter-option-wrap').each(function() {
           if($(this).data('value') == array[i]) {
+            console.log($(this).data('value'));
             $(this).addClass('checked');
           }
         });
@@ -377,6 +378,7 @@
 
         $('.sort-option').each(function() {
           if($(this).data('value') == array[i]) {
+            console.log($(this).data('value'));
             $(this).addClass('checked');
           }
         });
@@ -386,8 +388,8 @@
     }
     var collex = window.location.href.split('/').pop().split('?')[0];
     $('.filter-collection').each(function() {
-      console.log($(this).data('value'));
-      console.log(collex);
+//       console.log($(this).data('value'));
+//       console.log(collex);
       if($(this).data('value') == collex) {
         $(this).addClass('checked');
       }
@@ -544,7 +546,6 @@
   $(window).on('popstate', function() {
     getSelectedFilters();
     runFilter();
-    console.log('Back button was pressed.');
   });
   
 </script>
