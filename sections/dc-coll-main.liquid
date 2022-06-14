@@ -326,13 +326,17 @@ for (j = 0; j < acc3.length; j++) {
   $('.coll-filter-option-wrap').click(function() {
     $filterType = $(this).parent().parent().data("filter-type");
     $siblingFilters = $(this).parent().find(".coll-filter-option-wrap");
-    console.log($filterType);
     if($filterType.includes("physical")) {
       $(this).toggleClass('checked');
     }
     else {
+      var isSelected = $(this).hasClass('checked');
       $siblingFilters.removeClass("checked");
-      $(this).toggleClass('checked');
+      if(isSelected) {
+        $(this).removeClass("checked");
+      } else {
+      	$(this).addClass("checked");
+      }
     }
     runFilter();
   });
