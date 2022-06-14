@@ -142,14 +142,15 @@
 }
 
 .coll-porducts {
-  width: 74.66%;
+  width: 75%;
+  justify-content: space-between;
   flex-wrap: wrap;
-  margin: 0 -2%;
+/*   margin: 0 -2%; */
 }
 
 .coll-porducts .product-card{
   width: 31%;
-  margin: 0 1%;
+/*   margin: 0 1%; */
   margin-bottom: 24px;
 }
 
