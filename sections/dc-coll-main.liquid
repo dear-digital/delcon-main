@@ -351,12 +351,12 @@ for (j = 0; j < acc3.length; j++) {
   
   $('.sort-option').click(function() {
     var sortx = '';
-    if($(this).hasClass('selected-sort')) {
-      $('.sort-option').removeClass('selected-sort');
+    if($(this).hasClass('selected')) {
+      $('.sort-option').removeClass('selected');
       sortx = '?';
     } else {
-      $('.sort-option').removeClass('selected-sort');
-      $(this).addClass('selected-sort');
+      $('.sort-option').removeClass('selected');
+      $(this).addClass('selected');
       sortx = '?sort_by='+$(this).data('value');
     }
     var filtersx = '';
