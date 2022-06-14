@@ -304,7 +304,7 @@ for (j = 0; j < acc3.length; j++) {
         });
         $.each(arrClass , function(index, val) {
           $('.product-card').each(function(i,v) {        
-            if($(this).hasClass('tag-'+val)) {
+            if($(this).hasClass(val)) {
               $(this).data('iteration',$('.coll-filter-option-wrap.checked').length);
             }
           });
