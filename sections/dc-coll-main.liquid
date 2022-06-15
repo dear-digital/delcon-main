@@ -414,7 +414,7 @@
       });
       
       $('.product-card').each(function(i,v) {
-        if(($(this).data('iteration') >= (totalPhyicalIteration+arrClassBehavioral.length)) && $(this).hasClass('fop')) {
+        if(($(this).data('iteration') >= (arrClassPhysical.length+arrClassBehavioral.length)) && $(this).hasClass('fop')) {
           $(this).removeClass('no-disp');
         }
       });
