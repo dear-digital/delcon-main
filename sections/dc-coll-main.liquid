@@ -343,9 +343,10 @@
       
       for(var i=0; i< $('.coll-filter-type').length; i++) {
         $currentFilter = $('.coll-filter-type')[i];
+        console.log($currentFilter);
         if($($currentFilter).data("filter-type") == "multiple") {
           var tempArr = new Array();
-          $multipleFilters = $(this).find(".coll-filter-option-wrap.checked");
+          $multipleFilters = $($currentFilter).find(".coll-filter-option-wrap.checked");
           $($multipleFilters).each(function() {
           	tempArr.push($(this).data("value"));
           });
