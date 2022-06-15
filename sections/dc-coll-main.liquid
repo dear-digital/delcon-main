@@ -345,10 +345,10 @@
         $currentFilter = $('.coll-filter-type')[i];
 
         if($($currentFilter).data("filter-type") == "multiple") {
+          
           $multipleFilters = $($currentFilter).find(".coll-filter-option-wrap.checked");
           var tempArr = new Array();
-          console.log($multipleFilters);
-          console.log($multipleFilters.length);
+          
           if($($multipleFilters).length > 0) {
             $($multipleFilters).each(function() {
               tempArr.push($(this).data("value"));
