@@ -383,6 +383,8 @@
       console.log(arrClassPhysical);
       console.log(arrClassBehavioral);
       
+      var totalPhyicalIteration = 0;
+      
       for(var j = 0; j < arrClassPhysical.length; j++) {
         
         var tempFilterArr = arrClassPhysical[j];
@@ -395,6 +397,7 @@
 
               if($(this).hasClass(tempFilterArr[k])) {
                 $(this).data('iteration',(parseInt($(this).data('iteration')) || 0)+1);
+                totalPhyicalIteration += 1;
 //                 console.log($(this));
               }
             }
@@ -411,7 +414,7 @@
       });
       
       $('.product-card').each(function(i,v) {
-        if(($(this).data('iteration') >= (arrClassPhysical.length+arrClassBehavioral.length)) && $(this).hasClass('fop')) {
+        if(($(this).data('iteration') == (totalPhyicalIteration+arrClassBehavioral.length)) && $(this).hasClass('fop')) {
           $(this).removeClass('no-disp');
         }
       });
