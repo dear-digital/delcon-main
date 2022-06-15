@@ -59,7 +59,7 @@
       <div class="coll-filters">
         {% for block in section.blocks %}
         {% if block.type == 'physical-filter' %}
-          <div class="coll-filter-type" data-filter-type="{{ block.type }}">
+          <div class="coll-filter-type" data-filter-type="{{ block.settings.filter_type }}">
             {% if block.settings.main_filter != blank %}
             <div class="coll-filter-type-name-wrap coll-accordion">
               <div class="coll-filter-type-name">{{ block.settings.main_filter }}</div>
@@ -131,7 +131,7 @@
           </div>
         {% endif %}
         {% if block.type == 'behavioral-filter' %}
-          <div class="coll-filter-type" data-filter-type="{{ block.type }}">
+          <div class="coll-filter-type" data-filter-type="{{ block.settings.filter_type }}">
             {% if block.settings.main_filter != blank %}
             <div class="coll-filter-type-name-wrap coll-accordion">
               <div class="coll-filter-type-name">{{ block.settings.main_filter }}</div>
@@ -683,6 +683,22 @@
 			"type": "physical-filter",
 			"settings": [
 				{
+                  "type": "select",
+                  "id": "filter_type",
+                  "label": "Filter Type",
+                  "options": [
+                  {
+                    "value": "single",
+                    "label": "Single Selection"
+                  },
+                  {
+                    "value": "multiple",
+                    "label": "Multiple Selection"
+                  }
+                  ],
+                  "default": "single"
+                },
+				{
 					"type": "text",
 					"id": "main_filter",
 					"label": "Main Filter"
@@ -743,6 +759,22 @@
 			"name": "Behavioral Filter",
 			"type": "behavioral-filter",
 			"settings": [
+				{
+                  "type": "select",
+                  "id": "filter_type",
+                  "label": "Filter Type",
+                  "options": [
+                  {
+                    "value": "single",
+                    "label": "Single Selection"
+                  },
+                  {
+                    "value": "multiple",
+                    "label": "Multiple Selection"
+                  }
+                  ],
+                  "default": "single"
+                },
 				{
 					"type": "text",
 					"id": "main_filter",
