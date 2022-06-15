@@ -198,8 +198,6 @@
       $('#card-product-'+productId).css("opacity", 1);
       $('#card-product-'+productId).css("pointer-events", "auto");
       $('#card-product-'+productId).find(".card-product").removeClass("no-disp");
-//       $('#card-product-'+productId+' .product-card-for').not('.slick-initialized').slick();
-//       $('#card-product-'+productId+' .product-card-nav').not('.slick-initialized').slick();
       $('#card-product-'+productId+' .product-card-for').not('.slick-initialized').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
@@ -292,7 +290,6 @@
 
         $('.coll-filter-option-wrap').each(function() {
           if($(this).data('value') == array[i]) {
-//             console.log($(this).data('value'));
             $(this).addClass('checked');
           }
         });
@@ -310,7 +307,6 @@
 
         $('.sort-option').each(function() {
           if($(this).data('value') == array[i]) {
-//             console.log($(this).data('value'));
             $(this).addClass('checked');
           }
         });
@@ -325,8 +321,6 @@
     var collex = window.location.href.split('/').pop().split('?')[0];
     $('.sugg-collection').removeClass("checked");
     $('.sugg-collection').each(function() {
-//       console.log($(this).data('value'));
-//       console.log(collex);
       if($(this).data('value') == collex) {
         $(this).addClass('checked');
       }
@@ -371,15 +365,6 @@
       
       $('.product-card').data('iteration',0);
       
-//       $('.coll-filter-option-wrap.checked').each(function() {
-//         $filterType = $(this).parent().parent().data("filter-type");
-//         if($filterType.includes("multiple")) {
-// //           arrClassPhysical.push($(this).data('value'));
-//         }
-//         else {
-//           arrClassBehavioral.push($(this).data('value'));
-//         }
-//       });
       console.log(arrClassPhysical);
       console.log(arrClassBehavioral);
       
@@ -445,7 +430,7 @@
       $('.product-card').removeClass('no-disp');
     }
     
-//     $('.fop').removeClass('fop'); 
+    $('.fop').removeClass('fop'); 
     $('.total-products').text($('.product-card:not(.no-disp)').length);
   }
   runFilter();
