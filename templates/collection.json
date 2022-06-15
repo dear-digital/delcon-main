@@ -73,9 +73,10 @@
             "section_btn_url": ""
           }
         },
-        "2da734dd-78ef-4c4c-a1e8-d674a59b73fe": {
-          "type": "physical-filter",
+        "0c741e8c-cc14-440a-9de9-e7bb95a0f2d8": {
+          "type": "filter",
           "settings": {
+            "filter_type": "multiple",
             "main_filter": "Type voeding",
             "sub_filter_1": "Droge voeding",
             "sub_filter_2": "Met Zalmolie",
@@ -89,9 +90,10 @@
             "sub_filter_10": ""
           }
         },
-        "a73de303-1a43-4b54-a53f-89d0655a2375": {
-          "type": "behavioral-filter",
+        "4edda507-870a-455a-9d88-3f4882f0186e": {
+          "type": "filter",
           "settings": {
+            "filter_type": "single",
             "main_filter": "Grootte hond",
             "sub_filter_1": "Puppy",
             "sub_filter_2": "Junior",
@@ -105,14 +107,15 @@
             "sub_filter_10": ""
           }
         },
-        "04c8b320-ca96-4e38-bd80-feedaacce3dd": {
-          "type": "behavioral-filter",
+        "2e922ddd-970e-45b4-b528-6a28f607caab": {
+          "type": "filter",
           "settings": {
+            "filter_type": "single",
             "main_filter": "Hoe energiek is je hond?",
-            "sub_filter_1": "Zeer Rustig",
+            "sub_filter_1": "Very Quiet",
             "sub_filter_2": "Relaxed",
-            "sub_filter_3": "Active",
-            "sub_filter_4": "Very Active",
+            "sub_filter_3": "Very Active",
+            "sub_filter_4": "",
             "sub_filter_5": "",
             "sub_filter_6": "",
             "sub_filter_7": "",
@@ -121,9 +124,10 @@
             "sub_filter_10": ""
           }
         },
-        "d4b70376-e102-40a8-91a7-15859e4453b3": {
-          "type": "physical-filter",
+        "0bb8b744-7179-4c7f-a43d-dd66f357f310": {
+          "type": "filter",
           "settings": {
+            "filter_type": "multiple",
             "main_filter": "Aandachtspunten",
             "sub_filter_1": "Hypoallergeen",
             "sub_filter_2": "Goede vertering",
@@ -143,10 +147,10 @@
         "3308ef63-2d5c-4472-9ef1-51960b99131e",
         "2c81aa55-55f2-41b2-9b2a-d457c7ed3590",
         "7846b221-82fb-428e-960c-a8a347d26b50",
-        "2da734dd-78ef-4c4c-a1e8-d674a59b73fe",
-        "a73de303-1a43-4b54-a53f-89d0655a2375",
-        "04c8b320-ca96-4e38-bd80-feedaacce3dd",
-        "d4b70376-e102-40a8-91a7-15859e4453b3"
+        "0c741e8c-cc14-440a-9de9-e7bb95a0f2d8",
+        "4edda507-870a-455a-9d88-3f4882f0186e",
+        "2e922ddd-970e-45b4-b528-6a28f607caab",
+        "0bb8b744-7179-4c7f-a43d-dd66f357f310"
       ],
       "settings": {
         "meerInfo": "QUICK VIEW",
