@@ -343,7 +343,7 @@
       $('.product-card').data('iteration',0);
       $('.coll-filter-option-wrap.checked').each(function() {
         $filterType = $(this).parent().parent().data("filter-type");
-        if($filterType.includes("physical")) {
+        if($filterType.includes("multiple")) {
           arrClassPhysical.push($(this).data('value'));
         }
         else {
@@ -389,7 +389,7 @@
   $('.coll-filter-option-wrap').click(function() {
     $filterType = $(this).parent().parent().data("filter-type");
     $siblingFilters = $(this).parent().find(".coll-filter-option-wrap");
-    if($filterType.includes("physical")) {
+    if($filterType.includes("multiple")) {
       $(this).toggleClass('checked');
     }
     else {
