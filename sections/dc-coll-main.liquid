@@ -378,18 +378,18 @@
         });
       });
       
-      $.each(arrClassPhysical, function(index, val) {
-        $('.product-card').each(function(i,v) {        
-          if($(this).hasClass(val)) {
-            $(this).data('iteration',(parseInt($(this).data('iteration')) || 0)+1);
-          }
-        });
-        $('.product-card').each(function(i,v) {            
-          if($(this).data('iteration') == $('.coll-filter-option-wrap.checked').length && $(this).hasClass('fop')) {
-            $(this).removeClass('no-disp');
-          }
-        });
-      });
+//       $.each(arrClassPhysical, function(index, val) {
+//         $('.product-card').each(function(i,v) {        
+//           if($(this).hasClass(val)) {
+//             $(this).data('iteration',(parseInt($(this).data('iteration')) || 0)+1);
+//           }
+//         });
+//         $('.product-card').each(function(i,v) {            
+//           if($(this).data('iteration') == $('.coll-filter-option-wrap.checked').length && $(this).hasClass('fop')) {
+//             $(this).removeClass('no-disp');
+//           }
+//         });
+//       });
       console.log(arrClassPhysical);
       console.log(arrClassBehavioral);
     } else {
