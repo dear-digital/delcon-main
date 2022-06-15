@@ -358,8 +358,10 @@
         }
         else {
           $selectedFilter = $($currentFilter).find(".coll-filter-option-wrap.checked");
-          if($($selectedFilter).data('value') != "undefined") {
-          	arrClassBehavioral.push($($selectedFilter).data('value'));
+          if($($selectedFilter).length > 0) {
+            $($selectedFilter).each(function() {
+              arrClassBehavioral.push($(this).data("value"));
+            });
           }
         }
       }
