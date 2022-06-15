@@ -414,7 +414,7 @@
       
       $.each(arrClassBehavioral, function(index, val) {
         $('.product-card').each(function(i,v) {
-          if($(this).data("itertaion") == totalIterations) {
+          if(parseInt($(this).data("itertaion")) == totalIterations) {
             console.log($(this));
             console.log($(this).data("iteration"));
             if($(this).hasClass(val)) {
