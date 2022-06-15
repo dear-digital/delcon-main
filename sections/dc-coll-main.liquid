@@ -398,7 +398,7 @@
       }
       
       $('.product-card').each(function(i,v) {            
-        if($(this).data('iteration') > 0 && $(this).hasClass('fop')) {
+        if($(this).data('iteration') == arrClassPhysical.length && $(this).hasClass('fop')) {
           $(this).removeClass('no-disp');
         }
       });
