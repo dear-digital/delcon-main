@@ -398,7 +398,7 @@
             for(var k = 0; k < tempFilterArr.length; k++) {
 
               if($(this).hasClass(tempFilterArr[k])) {
-                $(this).data("iteration",k+1);
+                $(this).data("iteration",j+1);
                 
               }
               
@@ -427,7 +427,7 @@
       console.log(totalIterations)
       
       $('.product-card').each(function(i,v) {
-        if($(this).data("iteration") == totalIterations && $(this).hasClass('fop')) {
+        if($(this).data("iteration") >= totalIterations && $(this).hasClass('fop')) {
           $(this).removeClass('no-disp');
         }
       });
