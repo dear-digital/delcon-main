@@ -382,8 +382,9 @@
 //       });
       console.log(arrClassPhysical);
       console.log(arrClassBehavioral);
+      console.log("========================");
       
-      var totalIteratedProducts = $('.product-card');
+      var totalIterations = 0;
       
       for(var j = 0; j < arrClassPhysical.length; j++) {
         
@@ -391,42 +392,41 @@
         console.log(tempFilterArr);
         
         if(tempFilterArr.length > 0) {
-          $.each(totalIteratedProducts, function(i, v) {
+          $('.product-card').each(function(i, v) {
             for(var k = 0; k < tempFilterArr.length; k++) {
 
               if($(this).hasClass(tempFilterArr[k])) {
                 $(this).data("iteration",k+1);
+                totalIterations = totalIterations + 1;
               }
             }
           });
         }
         
-        $.each(totalIteratedProducts, function(i, v) {
-          if($(this).data("iteration") >= j+1) {
-            $(this).removeClass("no-disp");
-          }
-        });
+//         $('.product-card').each(function(i, v) {
+//           if($(this).data("iteration") >= j+1) {
+//             $(this).removeClass("no-disp");
+//           }
+//         });
       }
       
       $.each(arrClassBehavioral, function(index, val) {
-        $.each(totalPhyicalIteration, function(i,v) {
+        $('.product-card').each(function(i,v) {
           if($(this).hasClass(val)) {
             $(this).data('iteration',(parseInt($(this).data('iteration')) || 0)+1);
-            $(this).removeClass('no-disp');
+            totalIterations = totalIterations + 1;
           }
         });
-//         $.each(totalIteratedProducts,function(i,v) {            
-//           if($(this).data('iteration') >=  && $(this).hasClass('fop')) {
-            
-//           }
-//         });
       });
       
-//       $.each(totalIteratedProducts, function(i,v) {
-//         if($(this).hasClass('fop')) {
-//           $(this).removeClass('no-disp');
-//         }
-//       });
+      console.log("totalIterations - ");
+      console.log(totalIterations)
+      
+      $('.product-card').each(function(i,v) {
+        if($(this).data("iteration") == totalIterations && $(this).hasClass('fop')) {
+          $(this).removeClass('no-disp');
+        }
+      });
       
 //       $.each(arrClassPhysical, function(index, val) {
 //         $('.product-card').each(function(i,v) {        
