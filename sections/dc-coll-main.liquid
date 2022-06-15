@@ -341,7 +341,7 @@
       var arrClassPhysical = [];
       var arrClassBehavioral = [];
       
-      for(var i=0; i< $('.coll-filter-type').length; i++) {
+      for(var i = 0; i < $('.coll-filter-type').length; i++) {
         $currentFilter = $('.coll-filter-type')[i];
 
         if($($currentFilter).data("filter-type") == "multiple") {
@@ -379,6 +379,14 @@
 //       });
       console.log(arrClassPhysical);
       console.log(arrClassBehavioral);
+      
+      for(var j = 0; j < arrClassPhysical.length; j++) {
+        var tempFilterArr = arrClassPhysical[j];
+        console.log(tempFilterArr);
+        for(var k = 0; k < tempFilterArr.length; k++) {
+          console.log(tempFilterArr[k]);
+        }
+      }
       
       $.each(arrClassBehavioral, function(index, val) {
         $('.product-card').each(function(i,v) {        
