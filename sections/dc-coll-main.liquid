@@ -407,13 +407,10 @@
           });
           totalIterations = totalIterations + 1;
         }
-        
-//         $('.product-card').each(function(i, v) {
-//           if($(this).data("iteration") >= j+1) {
-//             $(this).removeClass("no-disp");
-//           }
-//         });
+
       }
+      
+      console.log("totalIterations first - "+totalIterations);
       
       $.each(arrClassBehavioral, function(index, val) {
         $('.product-card').each(function(i,v) {
@@ -426,8 +423,7 @@
         totalIterations = totalIterations + 1;
       });
       
-      console.log("totalIterations - ");
-      console.log(totalIterations)
+      console.log("totalIterations second - "+totalIterations);
       
       $('.product-card').each(function(i,v) {
         if($(this).data("iteration") >= totalIterations && $(this).hasClass('fop')) {
