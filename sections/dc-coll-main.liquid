@@ -347,14 +347,20 @@
         if($($currentFilter).data("filter-type") == "multiple") {
           var tempArr = new Array();
           $multipleFilters = $($currentFilter).find(".coll-filter-option-wrap.checked");
-          $($multipleFilters).each(function() {
-          	tempArr.push($(this).data("value"));
-          });
+          
+          if($($multipleFilters).length > 0) {
+            $($multipleFilters).each(function() {
+              tempArr.push($(this).data("value"));
+            });
+          }
+          
           arrClassPhysical.push(tempArr);
         }
         else {
-          var selectedFilter = $($currentFilter).find(".coll-filter-option-wrap.checked").data('value')
-          arrClassBehavioral.push(selectedFilter);
+          $selectedFilter = $($currentFilter).find(".coll-filter-option-wrap.checked");
+          if($($selectedFilter).data('value') != "undefined") {
+          	arrClassBehavioral.push($($selectedFilter).data('value'));
+          }
         }
       }
       
