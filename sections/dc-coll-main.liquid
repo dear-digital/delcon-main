@@ -342,7 +342,8 @@
       var arrClassBehavioral = [];
       
       for(var i=0; i< $('.coll-filter-type').length; i++) {
-        if($('.coll-filter-type')[i].data("filter-type") == "multiple") {
+        $currentFilter = $('.coll-filter-type')[i];
+        if($($currentFilter).data("filter-type") == "multiple") {
           var tempArr = new Array();
           $multipleFilters = $(this).find(".coll-filter-option-wrap.checked");
           $($multipleFilters).each(function() {
