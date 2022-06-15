@@ -59,7 +59,7 @@
       <div class="coll-filters">
         {% for block in section.blocks %}
         {% if block.type == 'filter' %}
-          <div class="coll-filter-type" data-filter-type="{{ block.settings.filter_type }}">
+          <div class="coll-filter-type" data-filter-type="{{ block.settings.filter_type }}" data-filter-name="{{ block.settings.main_filter }}">
             {% if block.settings.main_filter != blank %}
             <div class="coll-filter-type-name-wrap coll-accordion">
               <div class="coll-filter-type-name">{{ block.settings.main_filter }}</div>
@@ -340,6 +340,19 @@
     if($('.coll-filter-option-wrap.checked').length > 0) {
       var arrClassPhysical = [];
       var arrClassBehavioral = [];
+      
+      for(var i=0; i< $('.coll-filter-type').length; i++) {
+        if($('.coll-filter-type')[i].data("filter-type") == "multiple") {
+          var tempArr = new Array();
+          $multipleFilters = $(this).find(".coll-filter-option-wrap.checked");
+          $($multipleFilters).each(function() {
+          	tempArr.push($(this).data("value"));
+          });
+          arrClassPhysical.push(tempArr)
+        }
+      }
+      console.log("arrClassPhysical : "+arrClassPhysical);
+      
       $('.product-card').data('iteration',0);
       $('.coll-filter-option-wrap.checked').each(function() {
         $filterType = $(this).parent().parent().data("filter-type");
