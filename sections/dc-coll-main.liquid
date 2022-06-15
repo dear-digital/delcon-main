@@ -392,16 +392,19 @@
         console.log(tempFilterArr);
         
         if(tempFilterArr.length > 0) {
+          
           $('.product-card').each(function(i, v) {
+          
             for(var k = 0; k < tempFilterArr.length; k++) {
 
               if($(this).hasClass(tempFilterArr[k])) {
                 $(this).data("iteration",k+1);
                 
               }
-              totalIterations = totalIterations + 1;
+              
             }
           });
+          totalIterations = totalIterations + 1;
         }
         
 //         $('.product-card').each(function(i, v) {
