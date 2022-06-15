@@ -346,17 +346,18 @@
 
         if($($currentFilter).data("filter-type") == "multiple") {
           $multipleFilters = $($currentFilter).find(".coll-filter-option-wrap.checked");
-          
+          var tempArr = new Array();
           console.log($multipleFilters);
           console.log($multipleFilters.length);
           if($($multipleFilters).length > 0) {
-            var tempArr = new Array();
             $($multipleFilters).each(function() {
               tempArr.push($(this).data("value"));
             });
           }
           
-          arrClassPhysical.push(tempArr);
+          if(tempArr.length > 0) {
+            arrClassPhysical.push(tempArr);
+          }
         }
         else {
           $selectedFilter = $($currentFilter).find(".coll-filter-option-wrap.checked");
