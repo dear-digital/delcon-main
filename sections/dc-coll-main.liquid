@@ -395,12 +395,14 @@
           
           $('.product-card').each(function(i, v) {
           
-            for(var k = 0; k < tempFilterArr.length; k++) {
+            if($(this).data("iteration") == j+1) {
+              for(var k = 0; k < tempFilterArr.length; k++) {
 
-              if($(this).hasClass(tempFilterArr[k])) {
-                $(this).data("iteration",j+1);
+                if($(this).hasClass(tempFilterArr[k])) {
+                  $(this).data("iteration",j+1);
+                }
+
               }
-              
             }
           });
           totalIterations = totalIterations + 1;
