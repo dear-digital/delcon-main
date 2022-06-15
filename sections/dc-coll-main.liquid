@@ -417,11 +417,11 @@
       
       $.each(arrClassBehavioral, function(index, val) {
         $('.product-card').each(function(i,v) {
-          if($(this).hasClass(val)) {
+          if($(this).data("itertaion") == totalIterations && $(this).hasClass(val)) {
             $(this).data('iteration',(parseInt($(this).data('iteration')) || 0)+1);
-            totalIterations = totalIterations + 1;
           }
         });
+        totalIterations = totalIterations + 1;
       });
       
       console.log("totalIterations - ");
