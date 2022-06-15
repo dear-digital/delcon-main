@@ -385,16 +385,18 @@
         var tempFilterArr = arrClassPhysical[j];
         console.log(tempFilterArr);
         
-        $('.product-card').each(function() {
-          for(var k = 0; k < tempFilterArr.length; k++) {
-            console.log(tempFilterArr[k]);
-            
-            if($(this).hasClass(tempFilterArr[k])) {
-              $(this).data('iteration',(parseInt($(this).data('iteration')) || 0)+1);
-              console.log($(this));
+        if(tempFilterArr.length > 0) {
+          $('.product-card').each(function() {
+            for(var k = 0; k < tempFilterArr.length; k++) {
+  //             console.log(tempFilterArr[k]);
+
+              if($(this).hasClass(tempFilterArr[k])) {
+                $(this).data('iteration',(parseInt($(this).data('iteration')) || 0)+1);
+                console.log($(this));
+              }
             }
-          }
-        });
+          });
+        }
       }
       
       $.each(arrClassBehavioral, function(index, val) {
