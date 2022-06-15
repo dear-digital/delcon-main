@@ -389,7 +389,7 @@
       for(var j = 0; j < arrClassPhysical.length; j++) {
         
         var tempFilterArr = arrClassPhysical[j];
-        console.log(tempFilterArr);
+//         console.log(tempFilterArr);
         
         if(tempFilterArr.length > 0) {
           
@@ -415,8 +415,6 @@
       $.each(arrClassBehavioral, function(index, val) {
         $('.product-card').each(function(i,v) {
           if($(this).hasClass(val)) {
-            console.log($(this));
-            console.log($(this).data("iteration"));
             $(this).data('iteration',(parseInt($(this).data('iteration')) || 0)+1);
           }
         });
@@ -426,7 +424,7 @@
       console.log("totalIterations second - "+totalIterations);
       
       $('.product-card').each(function(i,v) {
-        if($(this).data("iteration") >= totalIterations && $(this).hasClass('fop')) {
+        if($(this).data("iteration") == totalIterations && $(this).hasClass('fop')) {
           $(this).removeClass('no-disp');
         }
       });
