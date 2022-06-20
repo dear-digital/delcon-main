@@ -39,7 +39,7 @@
     {% endif %}
 {% endfor %}
 
-<div class="drawer-cart {% if upsell == "no" %}with-upsell{% endif %}">
+<div class="drawer-cart">
   <div class="drawer-cart-header">
     <span class="close-cart">{% include 'icon-close-new' %}</span>
     <h2 class="cart-heading tk-le-monde-livre-classic-byol">{{ section.settings.cart_title }}</h2>
@@ -58,7 +58,7 @@
           {{ section.settings.free_shipping_text }}
         </p>
       </div>
-      <div class="cart-body">
+      <div class="cart-body {% if upsell == "no" %}with-upsell{% endif %}">
         <div class="product-wrapper-container">
           {% for item in cart.items %}
           {% assign multiplier = 1 %}
