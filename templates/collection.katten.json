@@ -111,28 +111,11 @@
           "type": "filter",
           "settings": {
             "filter_type": "single",
-            "main_filter": "Hoe energiek is je hond?",
-            "sub_filter_1": "Very Quiet",
-            "sub_filter_2": "Relaxed",
-            "sub_filter_3": "Very Active",
-            "sub_filter_4": "",
-            "sub_filter_5": "",
-            "sub_filter_6": "",
-            "sub_filter_7": "",
-            "sub_filter_8": "",
-            "sub_filter_9": "",
-            "sub_filter_10": ""
-          }
-        },
-        "0bb8b744-7179-4c7f-a43d-dd66f357f310": {
-          "type": "filter",
-          "settings": {
-            "filter_type": "multiple",
-            "main_filter": "Aandachtspunten",
-            "sub_filter_1": "Hypoallergeen",
-            "sub_filter_2": "Goede vertering",
-            "sub_filter_3": "Filter 3",
-            "sub_filter_4": "",
+            "main_filter": "Extra points",
+            "sub_filter_1": "Extra points: Nice fur",
+            "sub_filter_2": "Extra points: Bad digestion",
+            "sub_filter_3": "Extra points: Bladder problems",
+            "sub_filter_4": "Extra points: Doesn’t get much exercise",
             "sub_filter_5": "",
             "sub_filter_6": "",
             "sub_filter_7": "",
@@ -149,8 +132,7 @@
         "7846b221-82fb-428e-960c-a8a347d26b50",
         "0c741e8c-cc14-440a-9de9-e7bb95a0f2d8",
         "4edda507-870a-455a-9d88-3f4882f0186e",
-        "2e922ddd-970e-45b4-b528-6a28f607caab",
-        "0bb8b744-7179-4c7f-a43d-dd66f357f310"
+        "2e922ddd-970e-45b4-b528-6a28f607caab"
       ],
       "settings": {
         "meerInfo": "QUICK VIEW",
