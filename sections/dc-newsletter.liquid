@@ -39,6 +39,23 @@
 </div>
 
 <script type="text/javascript" src="//www.klaviyo.com/media/js/public/klaviyo_subscribe.js"></script>
+<script type="text/javascript">
+  KlaviyoSubscribe.attachToForms('#email_signup', {
+    hide_form_on_success: true,
+    success_message: "Thanks for subscribing! Check your email for a confirmation message.",
+    error_message: "Wrong email",
+    extra_properties: {
+      $source: 'Newsletter Embed'
+    },
+
+    success: function ($form) {
+      // `$form` is a jQuery wrapper around the form that was submitted. This makes it easy to get the email address or form fields.
+      var email = $form.find('[name="email"]').val();
+      _learnq.push(['identify', { $email: email }]);
+      _learnq.push(['track', 'Signed Up for Newsletter']);
+    }
+  });
+</script>
 
 {% schema %}
   {
