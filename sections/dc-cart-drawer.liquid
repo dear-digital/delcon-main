@@ -258,6 +258,14 @@
   $('.cart-toggler').removeClass('cart--empty');
   {% endif %}
   
+  {% if upsell == "no" %}
+  $('.cart-body').addClass('with-upsell');
+  {% else %}
+  $('.cart-body').removeClass('with-upsell');
+  {% endif %}
+  
+  $('.header-cart-items').text('{{ cart.item_count }}');
+  
   $('.cart-toggler').click(function() {
     $('.drawer-cart').addClass('drawn');
     $('.background-drawer-cart').addClass('drawn');
