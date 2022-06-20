@@ -365,8 +365,8 @@
       
       $('.product-card').data('iteration',0);
       
-      console.log(arrClassPhysical);
-      console.log(arrClassBehavioral);
+//       console.log(arrClassPhysical);
+//       console.log(arrClassBehavioral);
       
       var totalIterations = 0;
       
@@ -394,7 +394,7 @@
 
       }
       
-      console.log("totalIterations first - "+totalIterations);
+//       console.log("totalIterations first - "+totalIterations);
       
       $.each(arrClassBehavioral, function(index, val) {
         $('.product-card').each(function(i,v) {
@@ -405,7 +405,7 @@
         totalIterations = totalIterations + 1;
       });
       
-      console.log("totalIterations second - "+totalIterations);
+//       console.log("totalIterations second - "+totalIterations);
       
       $('.product-card').each(function(i,v) {
         if($(this).data("iteration") == totalIterations && $(this).hasClass('fop')) {
