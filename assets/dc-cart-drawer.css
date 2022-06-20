@@ -66,8 +66,8 @@
   display: block;
   margin: 0 auto;
   height: calc(100vh - 130px);
-/*   height: calc(100vh - 300px); */
-  overflow-y: scroll;
+/*   height: calc(100vh - 300px); 
+  overflow-y: scroll; */
 }
 
 .product-wrapper-container {
@@ -447,9 +447,9 @@
   color: #0D553F;
 }
 
-.with-upsell .cart-body {
+/* .with-upsell .cart-body {
   height: calc(100vh - 450px);
-}
+} */
 
 .addUpsell {
   margin-top: 4px;
