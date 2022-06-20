@@ -375,11 +375,11 @@
   background-color: #fff;
 }
 
-.with-upsell .drawer-cart-footer {
+/* .with-upsell .drawer-cart-footer {
   height: 320px;
   display: flex;
   flex-direction: column;
-}
+} */
 
 .drawer-cart-checkout {
   width: 100%;
