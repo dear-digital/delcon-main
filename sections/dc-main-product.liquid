@@ -205,19 +205,6 @@
     .done(function( data ) {
       console.log(data);
       
-//       $.ajax({
-//         url: "/cart.js",
-//         method: "GET",
-//         dataType: "json"
-//       })
-//       .done(function( cartData ) {
-//         $('.cart-items-total').text(cartData.item_count);
-//       })
-//       .fail(function(cartError) {
-//         console.log( cartError );
-//         $('.load-container').remove();
-//       });
-      
       $.ajax({
         url: '{% unless routes.root_url == "/" %}{{ routes.root_url }}{% endunless %}/?sections=dc-cart-drawer',
         method: "GET",
