@@ -25,7 +25,7 @@
       const settings = {
         "async": true,
         "crossDomain": true,
-        "url": "https://a.klaviyo.com/api/v1/person/01G60BF07T5F5XKFH8YB2F1T0E?api_key=pk_b8b3a840ce3025cedf08b4be02dcba19af",
+        "url": "https://a.klaviyo.com/api/v2/people/search?email=dhaval%40demo.com&api_key=pk_b8b3a840ce3025cedf08b4be02dcba19af",
         "method": "GET",
         "headers": {
           "Accept": "application/json"
@@ -35,6 +35,9 @@
       console.log("API Call");
       $.ajax(settings).done(function (response) {
         console.log(response);
+      })
+      .fail(function(error) {
+        console.log(error);
       });
       console.log("API Called");
 	});
