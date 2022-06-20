@@ -174,7 +174,7 @@
           {% endif %}
         {% endfor %}
         <a href="{% unless routes.root_url == "/" %}{{ routes.root_url }}{% endunless %}/checkout{% if discountCode != "" %}?discount={{ discountCode }}{% endif %}" class="checkout-btn normal-checkout">{% include "icon-lock" %} {{ section.settings.checkout_text }}</a>
-        <a href="{% unless routes.root_url == "/" %}{{ routes.root_url }}{% endunless %}/checkout" class="checkout-btn boldapp no-disp" onclick="return false;">{% include "icon-lock" %} {{ section.settings.checkout_text }}</a>
+        <a href="{% unless routes.root_url == "/" %}{{ routes.root_url }}{% endunless %}/checkout{% if discountCode != "" %}?discount={{ discountCode }}{% endif %}" class="checkout-btn boldapp no-disp" onclick="return false;">{% include "icon-lock" %} {{ section.settings.checkout_text }}</a>
       </div>
     </div>
     {% endif %}
