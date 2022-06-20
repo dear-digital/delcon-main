@@ -70,11 +70,11 @@
   overflow-y: scroll; */
 }
 
-.product-wrapper-container {
+.with-upsell .product-wrapper-container {
   max-height: calc( 100vh - 455px );
   overflow-y: auto;
 }
-.with-upsell .product-wrapper-container {
+.product-wrapper-container {
   max-height: calc( 100vh - 320px );
 }
 
