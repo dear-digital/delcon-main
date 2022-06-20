@@ -71,11 +71,11 @@
 }
 
 .product-wrapper-container {
-  max-height: calc( 100vh - 490px );
+  max-height: calc( 100vh - 455px );
   overflow-y: auto;
 }
-.upsell-added .product-wrapper-container {
-  max-height: calc( 100vh - 368px );
+.with-upsell .product-wrapper-container {
+  max-height: calc( 100vh - 320px );
 }
 
 /* width */
