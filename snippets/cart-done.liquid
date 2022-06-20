@@ -38,9 +38,9 @@ if($('.cart-body').hasClass('c-empty') && !$content.find('.cart-body').hasClass(
 	  $('.free-shipping-wrapper').html($content.find('.free-shipping-wrapper').html());
       $('.cart-body').removeClass('c-empty');
       if($content.find('.drawer-cart').hasClass('with-upsell')) {
-        $('.cart-body').addClass('c-empty');
-      } else {
         $('.cart-body').removeClass('c-empty');
+      } else {
+        $('.cart-body').addClass('c-empty');
       }
     }
   }
