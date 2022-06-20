@@ -1,6 +1,4 @@
 var $content = $(data["dc-cart-drawer"]);
-console.log("Cart content");
-console.log($content);
 if($('.cart-body').hasClass('c-empty') && !$content.find('.cart-body').hasClass('c-empty')) {
   $('.drawer-cart').html('');
   $($content.find('.drawer-cart-header')).appendTo('.drawer-cart');
@@ -29,7 +27,7 @@ if($('.cart-body').hasClass('c-empty') && !$content.find('.cart-body').hasClass(
     if($content.find('.cart-body').hasClass('c-empty')) {
 	  $('.free-shipping-wrapper').html($content.find('.free-shipping-wrapper').html());
       $('.cart-body').html($content.find('.cart-body').html());
-      $('.drawer-cart').removeClass('with-upsell');
+      $('.cart-body').removeClass('with-upsell');
     } else {
       $('.drawer-cart-checkout').html($content.find('.drawer-cart-checkout').html());
       $('.product-wrapper-container').html($content.find('.product-wrapper-container').html());
@@ -37,7 +35,7 @@ if($('.cart-body').hasClass('c-empty') && !$content.find('.cart-body').hasClass(
       $('.remove-scripts').html($content.find('.remove-scripts').html());
 	  $('.free-shipping-wrapper').html($content.find('.free-shipping-wrapper').html());
       $('.cart-body').removeClass('c-empty');
-      if($content.find('.drawer-cart').hasClass('with-upsell')) {
+      if($content.find('.cart-body').hasClass('with-upsell')) {
         $('.cart-body').removeClass('c-empty');
       } else {
         $('.cart-body').addClass('c-empty');
