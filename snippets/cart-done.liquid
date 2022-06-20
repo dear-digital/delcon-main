@@ -4,6 +4,7 @@ console.log($content);
 if($('.cart-body').hasClass('c-empty') && !$content.find('.cart-body').hasClass('c-empty')) {
   $('.drawer-cart').html('');
   $($content.find('.drawer-cart-header')).appendTo('.drawer-cart');
+  $($content.find('.free-shipping-wrapper')).appendTo('.drawer-cart');
   $($content.find('.drawer-cart-main-sec')).appendTo('.drawer-cart');
   $($content.find('.drawer-cart-footer')).appendTo('.drawer-cart');
   $('.close-cart').click(function() {
@@ -16,6 +17,7 @@ if($('.cart-body').hasClass('c-empty') && !$content.find('.cart-body').hasClass(
   if(!$('.cart-body').hasClass('c-empty') && $content.find('.cart-body').hasClass('c-empty')) {
     $('.drawer-cart').html('');
     $($content.find('.drawer-cart-header')).appendTo('.drawer-cart');
+	$($content.find('.free-shipping-wrapper')).appendTo('.drawer-cart');
     $($content.find('.drawer-cart-main-sec')).appendTo('.drawer-cart');
     $('.close-cart').click(function() {
       $('.drawer-cart').removeClass('drawn');
@@ -25,6 +27,7 @@ if($('.cart-body').hasClass('c-empty') && !$content.find('.cart-body').hasClass(
     $('.remove-scripts').html($content.find('.remove-scripts').html());
   } else {
     if($content.find('.cart-body').hasClass('c-empty')) {
+	  $('.free-shipping-wrapper').html($content.find('.free-shipping-wrapper').html());
       $('.cart-body').html($content.find('.cart-body').html());
       $('.cart-body').removeClass('upsell');
     } else {
@@ -32,6 +35,7 @@ if($('.cart-body').hasClass('c-empty') && !$content.find('.cart-body').hasClass(
       $('.product-wrapper-container').html($content.find('.product-wrapper-container').html());
       $('.drawer-cart-footer').html($content.find('.drawer-cart-footer').html());
       $('.remove-scripts').html($content.find('.remove-scripts').html());
+	  $('.free-shipping-wrapper').html($content.find('.free-shipping-wrapper').html());
       $('.cart-body').removeClass('c-empty');
       if($content.find('.cart-body').hasClass('upsell')) {
         $('.cart-body').addClass('c-empty');
