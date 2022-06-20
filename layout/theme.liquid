@@ -332,9 +332,12 @@
 
       });
       
-      $('.btn-productFinder').click(function() {
-      	$('#productFinderQuiz').trigger("click");
+      $(document).ready(function() {
+        $('.btn-productFinder').click(function() {
+          $('#productFinderQuiz').trigger("click");
+        });
       });
+      
     </script>
     
     {%- if settings.predictive_search_enabled -%}
