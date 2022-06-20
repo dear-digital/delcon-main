@@ -225,7 +225,7 @@
         method: "GET",
         dataType: "json"
       })
-      .done(function( data ) {
+      .done(function( cartData ) {
         $('.cart-items-total').text(cartData.item_count);
         {% include "cart-done" %}
       })
