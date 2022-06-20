@@ -94,7 +94,6 @@
     
   
     $('.bundle-addToCart').click(function() {
-      let renderedHtml;
       var valid = true;
       $('.product-bundle-wrapper .bundled-product').each(function() {
         if($(this).find(".variant-box").data('available') != "yes") {
@@ -110,8 +109,7 @@
       $('body').addClass('no-scroll');
       $('.cart-body').append(`<div class="load-container"><div class="load"></div></div>`);
       var formData = {
-        'items': [],
-        'sections': "dc-cart-drawer"
+        'items': []
       };      
       $('.product-bundle-wrapper .bundled-product').each(function() {
           formData.items.push({
@@ -132,31 +130,26 @@
         data: formData,
       })
       .done(function( data ) {     
-        console.log(data);
+        
         $.ajax({
-          url: "/cart.js",
+          url: '{% unless routes.root_url == "/" %}{{ routes.root_url }}{% endunless %}/?sections=dc-cart-drawer',
           method: "GET",
           dataType: "json"
         })
-        .done(function( cartData ) {
-          $('.cart-items-total').text(cartData.item_count);
+        .done(function( data ) {
+          {% include "cart-done" %}
         })
-        .fail(function(cartError) {
-          console.log( cartError );
+        .fail(function(error) {
+          console.log( error );
           $('.load-container').remove();
         });
 
-        renderedHtml = getSectionInnerHTML(
-          data.sections["dc-cart-drawer"],
-          "#CartContainer"
-        );
-        $("#CartContainer").html(renderedHtml);
-        if($('.drawer-cart-upsell').length > 0 && $('.upsell-product-wrap').length > 0) {
-          $('.drawer-cart').addClass("with-upsell");
-        }
-        else {
-          $('.drawer-cart').removeClass("with-upsell");
-        }
+//       if($('.drawer-cart-upsell').length > 0 && $('.upsell-product-wrap').length > 0) {
+//       	$('.cart-body').addClass("with-upsell");
+//       }
+//       else {
+//       	$('.cart-body').removeClass("with-upsell");
+//       }
         $('.load-container').remove();
       })
       .fail(function(error) {
