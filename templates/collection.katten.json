@@ -1,0 +1,171 @@
+{
+  "sections": {
+    "banner": {
+      "type": "main-collection-banner",
+      "disabled": true,
+      "settings": {
+        "show_collection_description": true,
+        "show_collection_image": false,
+        "color_scheme": "background-1"
+      }
+    },
+    "product-grid": {
+      "type": "main-collection-product-grid",
+      "disabled": true,
+      "settings": {
+        "products_per_page": 16,
+        "columns_desktop": 4,
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "enable_filtering": true,
+        "filter_type": "horizontal",
+        "enable_sorting": true,
+        "columns_mobile": "2",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "165450085366a69edc": {
+      "type": "dc-coll-hero-small",
+      "settings": {
+        "background_color": "#f2f1f0",
+        "media_alignment": "right",
+        "title": "Van puppy tot Senior",
+        "desc": "Binnen het Delcon gamma kan je hondenvoer vinden die ontwikkeld werd voor de volledige levenscyclus van jouw hond. Deze uitgebalanceerde en complete variëteiten hondenvoeding zijn elk op zich rijk aan kwaliteitsvolle ingrediënten. Ze bevatten multi-vitamines en essentiële mineralen.",
+        "image": "shopify:\/\/shop_images\/Image_2x_e91738de-bcc2-4a55-b173-43507937fd81.png"
+      }
+    },
+    "1654500934ac4d77ba": {
+      "type": "dc-coll-main",
+      "blocks": {
+        "e5612db2-2971-42fa-8315-821c32f2906e": {
+          "type": "coll",
+          "settings": {
+            "collection": "jonge-honden",
+            "age": "0 - 9 maanden"
+          }
+        },
+        "3308ef63-2d5c-4472-9ef1-51960b99131e": {
+          "type": "coll",
+          "settings": {
+            "collection": "volwassen-honden",
+            "age": "9 maanden - 10 jaar"
+          }
+        },
+        "2c81aa55-55f2-41b2-9b2a-d457c7ed3590": {
+          "type": "coll",
+          "settings": {
+            "collection": "oudere-honden",
+            "age": "10+ jaar"
+          }
+        },
+        "7846b221-82fb-428e-960c-a8a347d26b50": {
+          "type": "suggestion",
+          "settings": {
+            "bg_img": "shopify:\/\/shop_images\/Mask_Group_1_2x_c7fd7bfd-8968-4ef6-9ad3-0a843e305cb0.png",
+            "title": "Keuzestress?",
+            "desc": "Elke hond en elke kat heeft eigen specifieke behoeften. Daarom maken wij met veel zorg voeding die aangepast is aan jouw pluizige vriend.",
+            "isProductFinder": true,
+            "section_btn_text": "PRODUCTFINDER",
+            "section_btn_url": ""
+          }
+        },
+        "0c741e8c-cc14-440a-9de9-e7bb95a0f2d8": {
+          "type": "filter",
+          "settings": {
+            "filter_type": "multiple",
+            "main_filter": "Type voeding",
+            "sub_filter_1": "Droge voeding",
+            "sub_filter_2": "Met Zalmolie",
+            "sub_filter_3": "Natuurlijke Ingrediënten",
+            "sub_filter_4": "",
+            "sub_filter_5": "",
+            "sub_filter_6": "",
+            "sub_filter_7": "",
+            "sub_filter_8": "",
+            "sub_filter_9": "",
+            "sub_filter_10": ""
+          }
+        },
+        "4edda507-870a-455a-9d88-3f4882f0186e": {
+          "type": "filter",
+          "settings": {
+            "filter_type": "single",
+            "main_filter": "Grootte hond",
+            "sub_filter_1": "Puppy",
+            "sub_filter_2": "Junior",
+            "sub_filter_3": "Senior",
+            "sub_filter_4": "",
+            "sub_filter_5": "",
+            "sub_filter_6": "",
+            "sub_filter_7": "",
+            "sub_filter_8": "",
+            "sub_filter_9": "",
+            "sub_filter_10": ""
+          }
+        },
+        "2e922ddd-970e-45b4-b528-6a28f607caab": {
+          "type": "filter",
+          "settings": {
+            "filter_type": "single",
+            "main_filter": "Hoe energiek is je hond?",
+            "sub_filter_1": "Very Quiet",
+            "sub_filter_2": "Relaxed",
+            "sub_filter_3": "Very Active",
+            "sub_filter_4": "",
+            "sub_filter_5": "",
+            "sub_filter_6": "",
+            "sub_filter_7": "",
+            "sub_filter_8": "",
+            "sub_filter_9": "",
+            "sub_filter_10": ""
+          }
+        },
+        "0bb8b744-7179-4c7f-a43d-dd66f357f310": {
+          "type": "filter",
+          "settings": {
+            "filter_type": "multiple",
+            "main_filter": "Aandachtspunten",
+            "sub_filter_1": "Hypoallergeen",
+            "sub_filter_2": "Goede vertering",
+            "sub_filter_3": "Filter 3",
+            "sub_filter_4": "",
+            "sub_filter_5": "",
+            "sub_filter_6": "",
+            "sub_filter_7": "",
+            "sub_filter_8": "",
+            "sub_filter_9": "",
+            "sub_filter_10": ""
+          }
+        }
+      },
+      "block_order": [
+        "e5612db2-2971-42fa-8315-821c32f2906e",
+        "3308ef63-2d5c-4472-9ef1-51960b99131e",
+        "2c81aa55-55f2-41b2-9b2a-d457c7ed3590",
+        "7846b221-82fb-428e-960c-a8a347d26b50",
+        "0c741e8c-cc14-440a-9de9-e7bb95a0f2d8",
+        "4edda507-870a-455a-9d88-3f4882f0186e",
+        "2e922ddd-970e-45b4-b528-6a28f607caab",
+        "0bb8b744-7179-4c7f-a43d-dd66f357f310"
+      ],
+      "settings": {
+        "meerInfo": "QUICK VIEW",
+        "filter": "Filter",
+        "tot_products": "Products",
+        "sort": "Sort By",
+        "koop_online": "KOOP ONLINE",
+        "koop_local": "KOOP LOKAAL"
+      }
+    }
+  },
+  "order": [
+    "banner",
+    "product-grid",
+    "165450085366a69edc",
+    "1654500934ac4d77ba"
+  ]
+}
