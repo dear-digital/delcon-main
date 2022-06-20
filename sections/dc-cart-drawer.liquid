@@ -264,7 +264,7 @@
   $('.cart-body').removeClass('with-upsell');
   {% endif %}
   
-  $('.header-cart-items').text('{{ cart.item_count }}');
+  $('.cart-items-total').text('{{ cart.item_count }}');
   
   $('.cart-toggler').click(function() {
     $('.drawer-cart').addClass('drawn');
