@@ -70,12 +70,12 @@
   overflow-y: scroll; */
 }
 
-.with-upsell .product-wrapper-container {
-  max-height: calc( 100vh - 455px );
-  overflow-y: auto;
-}
 .product-wrapper-container {
   max-height: calc( 100vh - 320px );
+  overflow-y: auto;
+}
+.with-upsell .product-wrapper-container {
+  max-height: calc( 100vh - 455px );
 }
 
 /* width */
