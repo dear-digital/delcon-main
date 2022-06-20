@@ -60,6 +60,7 @@
         </p>
       </div>
       <div class="cart-body">
+        <div class="product-wrapper-container">
         {% for item in cart.items %}
         {% assign multiplier = 1 %}
         {% assign featured_image = item.variant.image.src | default: item.product.featured_image %}
@@ -117,6 +118,8 @@
           </div>
         </div>
         {% endfor %}
+        </div>
+          
         <div class="drawer-cart-footer">
           {% if upsell == "no" %}
           <div class="drawer-cart-upsell">
