@@ -1,26 +1,22 @@
 {{ 'dc-cart-drawer.css' | asset_url | stylesheet_tag }}
 
-<script>
-  var upsellProducts = [];
-  {% assign upsellProd = blank %}
-  
-  {% for product in section.settings.upsell_collection.products %}
-    {% assign found = "no" %}
-    {% for item in cart.items %}
-      {% if item.product.id == product.id %}
-          {% assign found = "yes" %}
-      {% endif %}
-    {% endfor %}
-    {% if found == "no" %}
-      {% assign upsell = "no" %}
-  	  upsellProducts.push("{{ product.id }}");
-	  {% assign upsellProd = product %}
-	  {% break %}
+{% assign upsellProd = blank %}
+
+{% for product in section.settings.upsell_collection.products %}
+  {% assign found = "no" %}
+  {% for item in cart.items %}
+    {% if item.product.id == product.id %}
+        {% assign found = "yes" %}
     {% endif %}
   {% endfor %}
-  
-//   console.log(upsellProducts);
-</script>
+  {% if found == "no" %}
+    {% assign upsell = "no" %}
+    upsellProducts.push("{{ product.id }}");
+    {% assign upsellProd = product %}
+    {% break %}
+  {% endif %}
+{% endfor %}
+
 {% for item in cart.items %}
 	{% assign multiplier = 1 %}
     {% assign discount = blank %}
@@ -78,24 +74,15 @@
           {% endif %}
         {% endfor %}
         {% if discount != blank %}
-        {% comment %}{{ "discount = " | append: discount }}{% endcomment %}
         {% assign multipliedProduct = item.final_price | times: multiplier | divided_by: 100.0 %}
-        {% comment %}{{ "multipliedProduct = " | append: multipliedProduct }}{% endcomment %}
         {% assign discCut = multipliedProduct | divided_by: 100.0 %}
-        {% comment %}{{ "discCut = " | append: discCut }}{% endcomment %}
         {% assign discCut = discCut | times: discount %}
-        {% comment %}{{ "discCut = " | append: discCut }}{% endcomment %}
         {% assign splits = discCut | append: "" %}
-        {% comment %}{{ "splits = " | append: splits }}{% endcomment %}
         {% assign disc_price = multipliedProduct | minus: splits | times: 100.0 %}
-        {% comment %}{{ "disc_price = " | append: disc_price }}{% endcomment %}
         {% assign totalDiscount = totalDiscount | plus: disc_price %}
-        {% comment %}{{ "totalDiscount = " | append: totalDiscount }}{% endcomment %}
         {% else %}
         {% assign multipliedProduct = item.final_line_price | times: multiplier %}
-        {% comment %}{{ "multipliedProduct = " | append: multipliedProduct }}{% endcomment %}
         {% assign totalDiscount = totalDiscount | plus: multipliedProduct | times: 100.0 %}
-        {% comment %}{{ "totalDiscount = " | append: totalDiscount }}{% endcomment %}
         {% endif %}
         <div class="cart-product-wrapper">
           <div class="cart-product-image">
@@ -130,51 +117,51 @@
           </div>
         </div>
         {% endfor %}
-      </div>
-    </div>
-    <div class="drawer-cart-footer">
-      {% if upsell == "no" %}
-      <div class="drawer-cart-upsell">
-        <div class="upsell-product-wrap {{ upsellProd.id }}">
-          <div class="upsell-product-image">
-            <a href="{{ upsellProd.url }}">
-              <img src="{{ upsellProd.featured_image | product_img_url: '120x' }}" alt="{{ upsellProd.title }}">
-            </a>
-          </div>
-          <div class="upsell-product-infos rel">
-            <div class="upsell-product-title-price">
-              <a href="{{ upsellProd.url }}" class="product-name">{{ upsellProd.title }}</a>
-              <div class="product-price upsell-price">
-                {% if upsellProd.compare_at_price %}<span class="product-compare-price upsell-compare-price">{{ upsellProd.compare_at_price | money }}</span>{% endif %}
-                <span class="product-selling-price">{{ upsellProd.price | money }}</span>
+        <div class="drawer-cart-footer">
+          {% if upsell == "no" %}
+          <div class="drawer-cart-upsell">
+            <div class="upsell-product-wrap {{ upsellProd.id }}">
+              <div class="upsell-product-image">
+                <a href="{{ upsellProd.url }}">
+                  <img src="{{ upsellProd.featured_image | product_img_url: '120x' }}" alt="{{ upsellProd.title }}">
+                </a>
+              </div>
+              <div class="upsell-product-infos rel">
+                <div class="upsell-product-title-price">
+                  <a href="{{ upsellProd.url }}" class="product-name">{{ upsellProd.title }}</a>
+                  <div class="product-price upsell-price">
+                    {% if upsellProd.compare_at_price %}<span class="product-compare-price upsell-compare-price">{{ upsellProd.compare_at_price | money }}</span>{% endif %}
+                    <span class="product-selling-price">{{ upsellProd.price | money }}</span>
+                  </div>
+                </div>
+                <div class="upsell-product-desc">{{ upsellProd.metafields.my_fields.extra_info }}</div>
+                <button class="btn addUpsell" data-variant="{{ upsellProd.selected_or_first_available_variant.id }}" {% if upsellProd.selected_or_first_available_variant.inventory_quantity < 1 %}disabled="disabled"{% endif %}>{{ section.settings.upsell_addtoCart }}</button>
               </div>
             </div>
-            <div class="upsell-product-desc">{{ upsellProd.metafields.my_fields.extra_info }}</div>
-            <button class="btn addUpsell" data-variant="{{ upsellProd.selected_or_first_available_variant.id }}" {% if upsellProd.selected_or_first_available_variant.inventory_quantity < 1 %}disabled="disabled"{% endif %}>{{ section.settings.upsell_addtoCart }}</button>
           </div>
-        </div>
-      </div>
-      {% endif %}
-      <div class="drawer-cart-checkout">
-        <div class="checkout-subtotal justify-between">
-          <div class="subtotal-title">{{ section.settings.subtotal_text }}</div>
-          <div class="subtotal">{{ cart.total_price | money_without_trailing_zeros }}</div>
-        </div>
-        <div class="checkout-shipping justify-between">
-          <div class="shipping-title">{{ section.settings.shipping_text }}</div>
-          <div class="shipping-price">{% if cart.total_price < 6000 %}{{ section.settings.calc_text }}{% else %}{{ section.settings.free_shipping }}{% endif %}</div>
-        </div>
-        {% assign discountCode = "" %}
-        {% for item in cart.items %}
-          {% if item.discounts %}
+          {% endif %}
+          <div class="drawer-cart-checkout">
+            <div class="checkout-subtotal justify-between">
+              <div class="subtotal-title">{{ section.settings.subtotal_text }}</div>
+              <div class="subtotal">{{ cart.total_price | money_without_trailing_zeros }}</div>
+            </div>
+            <div class="checkout-shipping justify-between">
+              <div class="shipping-title">{{ section.settings.shipping_text }}</div>
+              <div class="shipping-price">{% if cart.total_price < 6000 %}{{ section.settings.calc_text }}{% else %}{{ section.settings.free_shipping }}{% endif %}</div>
+            </div>
+            {% assign discountCode = "" %}
+            {% for item in cart.items %}
+            {% if item.discounts %}
             {{ item.discounts.title }}
             {% for itemDiscount in item.discounts %}
-              {% assign discountCode = itemDiscount.title %}
+            {% assign discountCode = itemDiscount.title %}
             {% endfor %}
-          {% endif %}
-        {% endfor %}
-        <a href="{% unless routes.root_url == "/" %}{{ routes.root_url }}{% endunless %}/checkout{% if discountCode != "" %}?discount={{ discountCode }}{% endif %}" class="checkout-btn normal-checkout">{% include "icon-lock" %} {{ section.settings.checkout_text }}</a>
-        <a href="{% unless routes.root_url == "/" %}{{ routes.root_url }}{% endunless %}/checkout{% if discountCode != "" %}?discount={{ discountCode }}{% endif %}" class="checkout-btn boldapp no-disp" onclick="return false;">{% include "icon-lock" %} {{ section.settings.checkout_text }}</a>
+            {% endif %}
+            {% endfor %}
+            <a href="{% unless routes.root_url == "/" %}{{ routes.root_url }}{% endunless %}/checkout{% if discountCode != "" %}?discount={{ discountCode }}{% endif %}" class="checkout-btn normal-checkout">{% include "icon-lock" %} {{ section.settings.checkout_text }}</a>
+            <a href="{% unless routes.root_url == "/" %}{{ routes.root_url }}{% endunless %}/checkout{% if discountCode != "" %}?discount={{ discountCode }}{% endif %}" class="checkout-btn boldapp no-disp" onclick="return false;">{% include "icon-lock" %} {{ section.settings.checkout_text }}</a>
+          </div>
+        </div>
       </div>
     </div>
     {% endif %}
