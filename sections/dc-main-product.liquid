@@ -207,24 +207,33 @@
     .done(function( data ) {
       console.log(data);
       
+//       $.ajax({
+//         url: "/cart.js",
+//         method: "GET",
+//         dataType: "json"
+//       })
+//       .done(function( cartData ) {
+//         $('.cart-items-total').text(cartData.item_count);
+//       })
+//       .fail(function(cartError) {
+//         console.log( cartError );
+//         $('.load-container').remove();
+//       });
+      
       $.ajax({
-        url: "/cart.js",
+        url: '{% unless routes.root_url == "/" %}{{ routes.root_url }}{% endunless %}/?sections=4g-cart',
         method: "GET",
         dataType: "json"
       })
-      .done(function( cartData ) {
+      .done(function( data ) {
         $('.cart-items-total').text(cartData.item_count);
+        {% include "cart-done" %}
       })
-      .fail(function(cartError) {
-        console.log( cartError );
+      .fail(function(error) {
+        console.log( error );
         $('.load-container').remove();
       });
       
-      renderedHtml = getSectionInnerHTML(
-        data.sections["dc-cart-drawer"],
-        "#dc-main-cart"
-      );
-      $("#dc-main-cart").html(renderedHtml);
       if($('.drawer-cart-upsell').length > 0 && $('.upsell-product-wrap').length > 0) {
         $('.drawer-cart').addClass("with-upsell");
       }
