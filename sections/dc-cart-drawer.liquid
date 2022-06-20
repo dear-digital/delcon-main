@@ -1,5 +1,6 @@
 {{ 'dc-cart-drawer.css' | asset_url | stylesheet_tag }}
 
+<div id="dc-main-cart">
 <script>
   var upsellProducts = [];
   {% assign upsellProd = blank %}
@@ -316,9 +317,9 @@
       $('.cart-items-total').text(data.item_count);
       renderedHtml = getSectionInnerHTML(
         data.sections["dc-cart-drawer"],
-        "#shopify-section-dc-cart-drawer"
+        "#dc-main-cart"
       );
-      $("#shopify-section-dc-cart-drawer").html(renderedHtml);
+      $("#dc-main-cart").html(renderedHtml);
       if($('.drawer-cart-upsell').length > 0 && $('.upsell-product-wrap').length > 0) {
       	$('.drawer-cart').addClass("with-upsell");
       }
@@ -355,9 +356,9 @@
       $('.cart-items-total').text(data.item_count);
       renderedHtml = getSectionInnerHTML(
         data.sections["dc-cart-drawer"],
-        "#shopify-section-dc-cart-drawer"
+        "#dc-main-cart"
       );
-      $("#shopify-section-dc-cart-drawer").html(renderedHtml);
+      $("#dc-main-cart").html(renderedHtml);
       if($('.drawer-cart-upsell').length > 0 && $('.upsell-product-wrap').length > 0) {
       	$('.drawer-cart').addClass("with-upsell");
       }
@@ -394,9 +395,9 @@
       $('.cart-items-total').text(data.item_count);
       renderedHtml = getSectionInnerHTML(
         data.sections["dc-cart-drawer"],
-        "#shopify-section-dc-cart-drawer"
+        "#dc-main-cart"
       );
-      $("#shopify-section-dc-cart-drawer").html(renderedHtml);
+      $("#dc-main-cart").html(renderedHtml);
       if($('.drawer-cart-upsell').length > 0 && $('.upsell-product-wrap').length > 0) {
       	$('.drawer-cart').addClass("with-upsell");
       }
@@ -436,9 +437,9 @@
       $('.cart-items-total').text(data.item_count);
       renderedHtml = getSectionInnerHTML(
         data.sections["dc-cart-drawer"],
-        "#shopify-section-dc-cart-drawer"
+        "#dc-main-cart"
       );
-      $("#shopify-section-dc-cart-drawer").html(renderedHtml);
+      $("#dc-main-cart").html(renderedHtml);
       if($('.drawer-cart-upsell').length > 0 && $('.upsell-product-wrap').length > 0) {
       	$('.drawer-cart').addClass("with-upsell");
       }
@@ -481,6 +482,7 @@
 
   });
 </script>
+</div>
   
 {% schema %}
   {
