@@ -182,7 +182,8 @@
 </div>
 <div class="background-drawer-cart"></div>
 
-<script class="remove-scripts">
+<div class="remove-scripts">
+<script>
   {% assign discount = blank %}
   {% for item in cart.items %}
   {% for property in item.properties %}
@@ -508,6 +509,7 @@
 
   });
 </script>
+</div>
   
 {% schema %}
   {
