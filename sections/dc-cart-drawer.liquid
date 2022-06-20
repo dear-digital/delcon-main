@@ -61,63 +61,63 @@
       </div>
       <div class="cart-body">
         <div class="product-wrapper-container">
-        {% for item in cart.items %}
-        {% assign multiplier = 1 %}
-        {% assign featured_image = item.variant.image.src | default: item.product.featured_image %}
-        {% assign discount = blank %}
-        {% assign bundleId = blank %}        
-        {% for property in item.properties %}
-          {% if property.first == 'discount' %}
-        	{% assign discount = property.last | plus: 0 %}
+          {% for item in cart.items %}
+          {% assign multiplier = 1 %}
+          {% assign featured_image = item.variant.image.src | default: item.product.featured_image %}
+          {% assign discount = blank %}
+          {% assign bundleId = blank %}        
+          {% for property in item.properties %}
+            {% if property.first == 'discount' %}
+              {% assign discount = property.last | plus: 0 %}
+            {% endif %}
+            {% if property.first == 'bundle' %}
+              {% assign bundleId = property.last %}
+            {% endif %}
+          {% endfor %}
+          {% if discount != blank %}
+          {% assign multipliedProduct = item.final_price | times: multiplier | divided_by: 100.0 %}
+          {% assign discCut = multipliedProduct | divided_by: 100.0 %}
+          {% assign discCut = discCut | times: discount %}
+          {% assign splits = discCut | append: "" %}
+          {% assign disc_price = multipliedProduct | minus: splits | times: 100.0 %}
+          {% assign totalDiscount = totalDiscount | plus: disc_price %}
+          {% else %}
+          {% assign multipliedProduct = item.final_line_price | times: multiplier %}
+          {% assign totalDiscount = totalDiscount | plus: multipliedProduct | times: 100.0 %}
           {% endif %}
-          {% if property.first == 'bundle' %}
-        	{% assign bundleId = property.last %}
-          {% endif %}
-        {% endfor %}
-        {% if discount != blank %}
-        {% assign multipliedProduct = item.final_price | times: multiplier | divided_by: 100.0 %}
-        {% assign discCut = multipliedProduct | divided_by: 100.0 %}
-        {% assign discCut = discCut | times: discount %}
-        {% assign splits = discCut | append: "" %}
-        {% assign disc_price = multipliedProduct | minus: splits | times: 100.0 %}
-        {% assign totalDiscount = totalDiscount | plus: disc_price %}
-        {% else %}
-        {% assign multipliedProduct = item.final_line_price | times: multiplier %}
-        {% assign totalDiscount = totalDiscount | plus: multipliedProduct | times: 100.0 %}
-        {% endif %}
-        <div class="cart-product-wrapper">
-          <div class="cart-product-image">
-            <a href="{{ item.url }}"><img src="{{ featured_image | product_img_url: '120x' }}" alt="{{ item.product.title }}"></a>
-          </div>
-          <div class="cart-product-infos justify-between align-end">
-            <div class="cart-product-info">
-              <div class="cart-title-price-wrapper">
-                <a href="{{ item.url }}" class="product-name">{{ item.product.title | strip_html | truncatewords: 3 }}</a>
-                <span class="product-selling-price product-price">{% if discount != blank %}{{ disc_price | money }}{% else %}{{ item.final_price | times: multiplier | money }}{% endif %}</span>
+            <div class="cart-product-wrapper">
+              <div class="cart-product-image">
+                <a href="{{ item.url }}"><img src="{{ featured_image | product_img_url: '120x' }}" alt="{{ item.product.title }}"></a>
               </div>
-              <div class="cart-product-details-wrapper">
-                <div class="product-color">{{ item.product.metafields.my_fields.extra_info }} - {{section.settings.content_text  }} {{ item.variant.title }}</div>
-                {% if item.variant.compare_at_price > item.variant.price or discount != blank %}
-                <span class="product-discount-price" data-x="{{ item.final_price }}">{% if discount != blank %}{{ item.final_price | times: multiplier | money }}{% else %}{{- item.variant.compare_at_price | times: multiplier | money | replace: " ","" -}}{% endif %}</span>
-                {% endif %}
+              <div class="cart-product-infos justify-between align-end">
+                <div class="cart-product-info">
+                  <div class="cart-title-price-wrapper">
+                    <a href="{{ item.url }}" class="product-name">{{ item.product.title | strip_html | truncatewords: 3 }}</a>
+                    <span class="product-selling-price product-price">{% if discount != blank %}{{ disc_price | money }}{% else %}{{ item.final_price | times: multiplier | money }}{% endif %}</span>
+                  </div>
+                  <div class="cart-product-details-wrapper">
+                    <div class="product-color">{{ item.product.metafields.my_fields.extra_info }} - {{section.settings.content_text  }} {{ item.variant.title }}</div>
+                    {% if item.variant.compare_at_price > item.variant.price or discount != blank %}
+                    <span class="product-discount-price" data-x="{{ item.final_price }}">{% if discount != blank %}{{ item.final_price | times: multiplier | money }}{% else %}{{- item.variant.compare_at_price | times: multiplier | money | replace: " ","" -}}{% endif %}</span>
+                    {% endif %}
+                  </div>
+                </div>
+                <div class="cart-product-qty-wrapper">
+                  {% if discount == blank %}
+                  <div class="cart-product-qty" data-quantity="{{item.quantity}}">
+                    <div class="qty-manipulation-symbol minus-symbol cart-minus" data-variant="{{ item.variant.id }}" data-value="{{item.quantity}}">{% render "icon-minus" %}</div>
+                    <div class="cart-qty" value="{{item.quantity}}">{{item.quantity}}</div>
+                    <div class="qty-manipulation-symbol plus-symbol cart-plus" data-variant="{{ item.variant.id }}" data-value="{{item.quantity}}">{% render "icon-plus" %}</div>
+                  </div>
+                  {% endif %}
+                  <div class="delete-cart-product {% if discount != blank %}bundle-delete bundle-{{ bundleId }}{% endif %}" data-variant="{{ item.variant.id }}" data-bundle="{{ bundleId }}" data-qty="{{item.quantity}}">
+                    <div class="delete-text">{{ section.settings.delete_text }}</div>
+                  </div>
+                </div>
+
               </div>
             </div>
-            <div class="cart-product-qty-wrapper">
-              {% if discount == blank %}
-              <div class="cart-product-qty" data-quantity="{{item.quantity}}">
-                <div class="qty-manipulation-symbol minus-symbol cart-minus" data-variant="{{ item.variant.id }}" data-value="{{item.quantity}}">{% render "icon-minus" %}</div>
-                <div class="cart-qty" value="{{item.quantity}}">{{item.quantity}}</div>
-                <div class="qty-manipulation-symbol plus-symbol cart-plus" data-variant="{{ item.variant.id }}" data-value="{{item.quantity}}">{% render "icon-plus" %}</div>
-              </div>
-              {% endif %}
-              <div class="delete-cart-product {% if discount != blank %}bundle-delete bundle-{{ bundleId }}{% endif %}" data-variant="{{ item.variant.id }}" data-bundle="{{ bundleId }}" data-qty="{{item.quantity}}">
-                <div class="delete-text">{{ section.settings.delete_text }}</div>
-              </div>
-            </div>
-            
-          </div>
-        </div>
-        {% endfor %}
+          {% endfor %}
         </div>
           
         <div class="drawer-cart-footer">
