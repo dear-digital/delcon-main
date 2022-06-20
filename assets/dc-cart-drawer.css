@@ -71,7 +71,7 @@
 }
 
 .product-wrapper-container {
-  max-height: calc( 100vh - 320px );
+  max-height: calc( 100vh - 305px );
   overflow-y: auto;
 }
 .with-upsell .product-wrapper-container {
