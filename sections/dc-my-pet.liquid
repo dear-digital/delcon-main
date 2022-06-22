@@ -20,11 +20,13 @@
               <img src="{{ "Cat_image.png" | asset_url: '150x' }}" class="pet-image" alt="{{ customer.metafields.customer.pet_name }}">
               {% endif %}
             </div>
-          {{ customer.metafields.customer.pet_name }}
-          {{ customer.metafields.customer.pet_gender }}
-          {{ customer.metafields.customer.pet_type }}
-          {{ customer.metafields.customer.pet_dob }}
-          {{ customer.metafields.customer.pet_breed }}
+            <div class="pet-info-wrapper">
+              {{ customer.metafields.customer.pet_name }}
+              {{ customer.metafields.customer.pet_gender }}
+              {{ customer.metafields.customer.pet_type }}
+              {{ customer.metafields.customer.pet_dob }}
+              {{ customer.metafields.customer.pet_breed }}
+            </div>
           </div>
         </div>
         <a href="#" class="btn grey-btn add-pet">{{ 'customer.account.add_pet' | t }}</a>
