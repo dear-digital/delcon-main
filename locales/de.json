@@ -318,7 +318,8 @@
       "pet_dog": "Dog",
       "pet_cat": "Cat",
       "pet_male": "Male",
-      "pet_female": "Female"
+      "pet_female": "Female",
+      "change": "Change"
     },
     "account_fallback": "Konto",
     "activate_account": {
