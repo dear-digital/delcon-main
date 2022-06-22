@@ -94,6 +94,16 @@
         "section_btn_url": ""
       }
     },
+    "16558959112d9559d5": {
+      "type": "dc-review-with-text",
+      "settings": {
+        "background_color": "#fbfbfb",
+        "media_alignment": "right",
+        "section_subtitle": "REVIEWS",
+        "section_title": "Dit vinden de baasjes",
+        "section_text": "<p>Ontvang eenmalig een proefpakket met overheerlijke Delcon producten en laat je huisdier smullen. Gegarandeerd een leef kommetje!<\/p>"
+      }
+    },
     "165219334440eb74eb": {
       "type": "dc-featured-products",
       "settings": {
@@ -214,6 +224,7 @@
     "165217987528287991",
     "1652188517cd05b004",
     "16522710367299c830",
+    "16558959112d9559d5",
     "165219334440eb74eb",
     "165220075608ac05ae",
     "1652266546129bd5f6",
