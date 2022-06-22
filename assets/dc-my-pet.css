@@ -35,6 +35,7 @@
   font-size: 24px;
   line-height: 33px;
   font-weight: 400;
+  margin: 0 0 8px;
 }
 .edit-pet-details {
   display: flex;
