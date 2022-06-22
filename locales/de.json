@@ -314,6 +314,12 @@
       "view_addresses": "Adressen anzeigen",
       "return": "Zurück zu Kontodetails"
     },
+    "pet_details": {
+      "pet_dog": "Dog",
+      "pet_cat": "Cat",
+      "pet_male": "Male",
+      "pet_female": "Female"
+    },
     "account_fallback": "Konto",
     "activate_account": {
       "title": "Konto aktivieren",
