@@ -326,6 +326,7 @@
       "pet_cat": "Chat",
       "pet_male": "Mâle",
       "pet_female": "Femelle",
+      "pet_breed": "Race d'animal de compagnie",
       "change": "Changer"
     },
     "account_fallback": "Compte",
