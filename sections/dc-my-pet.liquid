@@ -24,7 +24,9 @@
             </div>
             <div class="pet-info-wrapper">
               <div class="flex-box justify-between align-center">
-                <p class="pet-name tk-le-monde-livre-classic-byol">'{{ customer.metafields.customer.pet_name }}' {{ customer.metafields.customer.pet_gender }}</p>
+                <p class="pet-name tk-le-monde-livre-classic-byol">'{{ customer.metafields.customer.pet_name }}'
+                  {% assign petGender = customer.metafields.customer.pet_gender | downcase | append: "icon" %}
+                  <span class="pet-gender">{% include petGender %}</span></p>
                 <a href="#" class="edit-pet-details">{{ 'customer.pet_details.change' | t }}</a>
               </div>
               <div class="pet-info">
