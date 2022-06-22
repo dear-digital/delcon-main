@@ -1,7 +1,169 @@
+{{ 'dc-img-video-text.css' | asset_url | stylesheet_tag }}
+{{ 'dc-review-with-text.css' | asset_url | stylesheet_tag }}
+
+<div class="image-video-text-block marg-top-xl marg-bottom-xl">
+  <div class="container">
+    <div class="flex-box justify-between align-center rel image-text-wrapper {% if section.settings.media_alignment == 'right' %}rev-cols{% endif %}" style="background-color: {{ section.settings.background_color }}">
+      <span class="custom-logo">{{ section.settings.custom_logo }}</span>
+      <div class="image-video-block rel {% if section.settings.section_type == 'video' %}img-w-txt-video-wrap {% if section.settings.video_link != '' %}custom-video{% endif %}{% endif %}">
+        {% if section.settings.section_type == 'video' %}
+          <img  class="video-cover" src="{{ section.settings.cover_img | image_url: height: 600 }}" loading="lazy" alt="Video title">
+          {% if section.settings.video_link != '' %}
+            <video class="cust-video" width="100%" height="100%" controls>
+              <source src="{{ section.settings.video_link }}" type="video/mp4">
+            </video>
+          {% else %}
+            <iframe class="no-disp yt-video" width="100%" height="100%" src="https://www.youtube.com/embed/{{ section.settings.product_video.id }}" frameborder="0">
+            </iframe>
+          {% endif %}
+            <div id="play" class="play-btn">
+              {% include 'icon-play-button' %}
+            </div>
+        {% else %}
+          <img src="{{ section.settings.section_image | img_url: 'x590' }}" alt="{{ section.settings.section_title }} image" loading="lazy">
+        {% endif %}
+      </div>
+      <div class="text-block rel">
+        <span class="subheading-text">{{ section.settings.section_subtitle }}</span>
+        <h2 class="heading-text tk-le-monde-livre-classic-byol">{{ section.settings.section_title }}</h2>
+        <div class="about-text">{{ section.settings.section_text }}</div>
+        {% if section.settings.section_btn_text != blank %}
+          <a href="{{ section.settings.section_btn_url }}" class="btn {% if section.settings.isProefpakketten == true %}btn-proefpakketten grey-btn{% endif %}">{{ section.settings.section_btn_text }}</a>
+        {% endif %}
+        {% if section.settings.isProefpakketten == true and section.settings.proefpakketten_text != blank %}
+          <span class="proefpakketten-text">{{ section.settings.proefpakketten_text }}</span>
+        {% endif %}
+        {% if section.settings.section_link != blank %}
+          <a href="{{ section.settings.section_url }}" rel="noreferrer" class="about-link">{{ section.settings.section_link }}</a>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</div>
+
 {% schema %}
   {
-    "name": "Section name",
-    "settings": []
+    "name": "DC Review with text",
+    "settings": [
+      {
+        "label": "Background Color",
+        "id": "background_color",
+        "type": "color"
+      },
+	  {
+        "type": "radio",
+        "id": "media_alignment",
+        "label": "Media alignment",
+        "options": [
+          {
+            "value": "left",
+            "label": "Left"
+          },
+          {
+            "value": "right",
+            "label": "Right"
+          }
+        ],
+        "default": "left"
+      },
+	  {
+        "type": "select",
+        "id": "section_type",
+        "label": "Section Type",
+        "options": [
+        {
+          "value": "img_txt",
+          "label": "Image Text"
+        },
+        {
+          "value": "video",
+          "label": "Video Text"
+        }
+        ],
+        "default": "img_txt"
+      },
+      {
+        "label": "Section Image",
+        "id": "section_image",
+        "type": "image_picker"
+      },
+      {
+        "type": "video_url",
+        "id": "product_video",
+        "label": "Video URL",
+        "accept": [
+          "youtube",
+          "vimeo"
+        ]
+      },
+      {
+        "type": "image_picker",
+        "id": "cover_img",
+        "label": "Video Cover Image"
+      },
+      {
+        "type": "text",
+        "id": "video_link",
+        "label": "Custom Video Link"
+      },
+	  {
+          "label": "Custom Logo",
+          "id": "custom_logo",
+          "type": "text"
+      },
+	  {
+          "label": "Section sub title",
+          "id": "section_subtitle",
+          "type": "text"
+      },
+	  {
+          "label": "Section title",
+          "id": "section_title",
+          "type": "text"
+      },
+      {
+          "label": "Section text",
+          "id": "section_text",
+          "type": "html"
+      },
+	  {
+          "label": "Section link text",
+          "id": "section_link",
+          "type": "text"
+      },
+      {
+          "label": "Section url",
+          "id": "section_url",
+          "type": "url"
+      },
+	  {
+          "label": "Is Button Proefpakketten",
+          "id": "isProefpakketten",
+          "type": "checkbox",
+		  "info": "Tick this field only on Proefpakketten related button"
+      },
+	  {
+          "label": "Proefpakketten Price text",
+          "id": "proefpakketten_text",
+          "type": "text",
+		  "info": "Fill this text field only on Proefpakketten related sections"
+      },
+	  {
+          "label": "Section Button text",
+          "id": "section_btn_text",
+          "type": "text"
+      },
+      {
+          "label": "Section Button url",
+          "id": "section_btn_url",
+          "type": "url"
+      }
+	],
+	"presets": [
+    {
+      "name": "DC Review with text"
+    }
+  ]
   }
 {% endschema %}
 
