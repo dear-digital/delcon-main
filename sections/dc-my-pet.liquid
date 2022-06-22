@@ -23,11 +23,22 @@
               {% endif %}
             </div>
             <div class="pet-info-wrapper">
-              {{ customer.metafields.customer.pet_name }}
-              {{ customer.metafields.customer.pet_gender }}
-              {{ customer.metafields.customer.pet_type }}
-              {{ customer.metafields.customer.pet_dob }}
-              {{ customer.metafields.customer.pet_breed }}
+              <div class="flex-box justify-between align-center">
+                <p class="pet-name tk-le-monde-livre-classic-byol">'{{ customer.metafields.customer.pet_name }}' {{ customer.metafields.customer.pet_gender }}</p>
+                <a href="#" class="edit-pet-details">{{ 'customer.pet_details.change' | t }}</a>
+              </div>
+              <div class="pet-info">
+                <p class="">{{ 'customer.pet_details.breed' | t }}</p>
+                <p class="">{{ customer.metafields.customer.pet_breed }}</p>
+              </div>
+              <div class="pet-info">
+                <p class="">{{ 'customer.pet_details.dob' | t }}</p>
+                <p class="">{{ customer.metafields.customer.pet_dob }}</p>
+              </div>
+              <div class="pet-info">
+                <p class="">{{ 'customer.pet_details.breed' | t }}</p>
+                <p class="">{{ customer.metafields.customer.pet_breed }}</p>
+              </div>
             </div>
           </div>
         </div>
