@@ -319,6 +319,7 @@
       "pet_cat": "Kat",
       "pet_male": "Mannelijk",
       "pet_female": "Vrouwelijk",
+      "pet_breed": "Ras",
       "change": "Wijzig"
     },
     "account_fallback": "Account",
