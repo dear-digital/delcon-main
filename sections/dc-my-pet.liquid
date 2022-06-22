@@ -12,11 +12,20 @@
       </div>
       <div class="pet-details-wrapper">
         <div class="pet-details">
+          <div class="flex-box justify-between align-start">
+            <div class="pet-image-wrapper">
+              {% if customer.metafields.customer.pet_type == 'customer.pet_details.pet_dog | t' %}
+              <img src="{{ "Dog_image.png" | asset_url: '150x' }}" class="pet-image" alt="{{ customer.metafields.customer.pet_name }}">
+              {% elsif customer.metafields.customer.pet_type == 'customer.pet_details.pet_cat | t' %}
+              <img src="{{ "Cat_image.png" | asset_url: '150x' }}" class="pet-image" alt="{{ customer.metafields.customer.pet_name }}">
+              {% endif %}
+            </div>
           {{ customer.metafields.customer.pet_name }}
           {{ customer.metafields.customer.pet_gender }}
           {{ customer.metafields.customer.pet_type }}
           {{ customer.metafields.customer.pet_dob }}
           {{ customer.metafields.customer.pet_breed }}
+          </div>
         </div>
         <a href="#" class="btn grey-btn add-pet">{{ 'customer.account.add_pet' | t }}</a>
       </div>
