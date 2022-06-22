@@ -32,10 +32,17 @@
   width: calc(100% - 170px);
 }
 .pet-name {
+  display: flex;
+  align-items: center;
   font-size: 24px;
   line-height: 33px;
   font-weight: 400;
   margin: 0 0 8px;
+}
+.pet-gender {
+  display: flex;
+  align-items: center;
+  margin-left: 12px;
 }
 .edit-pet-details {
   display: flex;
