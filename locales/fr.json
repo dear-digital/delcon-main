@@ -327,6 +327,7 @@
       "pet_male": "Mâle",
       "pet_female": "Femelle",
       "pet_breed": "Race d'animal de compagnie",
+      "pet_dob": "Date de naissance",
       "change": "Changer"
     },
     "account_fallback": "Compte",
