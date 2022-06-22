@@ -314,6 +314,12 @@
       "view_addresses": "Adressen bekijken",
       "return": "Terug naar Accountgegevens"
     },
+    "pet_details": {
+      "pet_dog": "Hond",
+      "pet_cat": "Kat",
+      "pet_male": "Mannelijk",
+      "pet_female": "Vrouwelijk"
+    },
     "account_fallback": "Account",
     "activate_account": {
       "title": "Account activeren",
