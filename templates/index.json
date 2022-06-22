@@ -94,6 +94,17 @@
         "section_btn_url": ""
       }
     },
+    "1655895566c787d650": {
+      "type": "dc-review-with-text",
+      "disabled": true,
+      "settings": {
+        "background_color": "",
+        "media_alignment": "left",
+        "section_subtitle": "",
+        "section_title": "",
+        "section_text": ""
+      }
+    },
     "165219334440eb74eb": {
       "type": "dc-featured-products",
       "settings": {
@@ -103,7 +114,11 @@
         "vanaf_text": "vanaf",
         "meerInfo": "QUICK VIEW",
         "featured_btn_text": "ALLE PRODUCTEN",
-        "featured_btn_url": "shopify:\/\/collections\/hondenvoer"
+        "featured_btn_url": "shopify:\/\/collections\/hondenvoer",
+        "total_variants": "Verkrijgbaar in",
+        "maten": "maten:",
+        "koop_online": "KOOP ONLINE",
+        "koop_local": "KOOP LOKAAL"
       }
     },
     "165220075608ac05ae": {
@@ -115,7 +130,11 @@
         "vanaf_text": "vanaf",
         "meerInfo": "QUICK VIEW",
         "featured_btn_text": "ALLE PRODUCTEN",
-        "featured_btn_url": "shopify:\/\/collections\/kattenvoer"
+        "featured_btn_url": "shopify:\/\/collections\/kattenvoer",
+        "total_variants": "Verkrijgbaar in",
+        "maten": "maten:",
+        "koop_online": "KOOP ONLINE",
+        "koop_local": "KOOP LOKAAL"
       }
     },
     "1652266546129bd5f6": {
@@ -197,6 +216,7 @@
       "settings": {
         "title": "Krijg nu 20% korting",
         "desc": "Schrijf je in op onze nieuwsbrief en blijf op de hoogte van acties en promoties. 20% korting die je kan gebruiken bij je volgende aankoop in onze shop",
+        "email_placeholder": "Email adres",
         "subscribe_btn": "Send"
       }
     }
@@ -205,6 +225,7 @@
     "165217987528287991",
     "1652188517cd05b004",
     "16522710367299c830",
+    "1655895566c787d650",
     "165219334440eb74eb",
     "165220075608ac05ae",
     "1652266546129bd5f6",
