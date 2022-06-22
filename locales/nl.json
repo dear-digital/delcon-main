@@ -318,7 +318,8 @@
       "pet_dog": "Hond",
       "pet_cat": "Kat",
       "pet_male": "Mannelijk",
-      "pet_female": "Vrouwelijk"
+      "pet_female": "Vrouwelijk",
+      "change": "Wijzig"
     },
     "account_fallback": "Account",
     "activate_account": {
