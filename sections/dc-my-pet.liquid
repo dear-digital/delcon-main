@@ -11,6 +11,7 @@
         <a href="#" class="account-option selected">{{ 'customer.account.pets' | t }} <span class="arrow-right">{% include "arrow-right" %}</span></a>
       </div>
       <div class="pet-details-wrapper">
+        {% if customer.metafields.customer.pet_name != blank %}
         <div class="pet-details">
           <div class="flex-box justify-between align-start">
             <div class="pet-image-wrapper">
@@ -56,7 +57,57 @@
             </div>
           </div>
         </div>
-        <a href="#" class="btn grey-btn add-pet">{{ 'customer.account.add_pet' | t }}</a>
+        {% endif %}
+        <a href="#" class="btn grey-btn add-pet {% if customer.metafields.customer.pet_name != blank %}no-disp{% endif %}">{{ 'customer.account.add_pet' | t }}</a>
+        
+        {% if customer.metafields.customer.pet_name != blank %}
+        <div class="pet-details">
+          <div class="flex-box justify-between align-start">
+            <div class="pet-image-wrapper">
+              {% assign petTypeDog = 'customer.pet_details.pet_dog' | t %}
+              {% assign petTypeCat = 'customer.pet_details.pet_cat' | t %}
+              {% if customer.metafields.customer.pet_type contains petTypeDog %}
+              <img src="{{ "Dog_image.png" | asset_img_url: '150x' }}" class="pet-image" alt="{{ customer.metafields.customer.pet_name }}">
+              {% elsif customer.metafields.customer.pet_type contains petTypeCat %}
+              <img src="{{ "Cat_image.png" | asset_img_url: '150x' }}" class="pet-image" alt="{{ customer.metafields.customer.pet_name }}">
+              {% endif %}
+            </div>
+            <div class="pet-info-wrapper">
+              <div class="flex-box justify-between align-center">
+                <p class="pet-name tk-le-monde-livre-classic-byol">'{{ customer.metafields.customer.pet_name }}'
+                  {% assign petGender = customer.metafields.customer.pet_gender | downcase | append: "-icon" %}
+                  <span class="pet-gender">{% include petGender %}</span></p>
+                <a href="#" class="edit-pet-details">{{ 'customer.pet_details.change' | t }}</a>
+              </div>
+              <div class="pet-info">
+                <p class="pet-label">{{ 'customer.pet_details.pet_breed' | t }}</p>
+                <p class="pet-value">{{ customer.metafields.customer.pet_breed }}</p>
+              </div>
+              <div class="pet-info">
+                <p class="pet-label">{{ 'customer.pet_details.pet_dob' | t }}</p>
+                <p class="pet-value">{{ customer.metafields.customer.pet_dob }}</p>
+              </div>
+              <div class="pet-info">
+                <p class="pet-label">{{ 'customer.pet_details.pet_weight' | t }}</p>
+                <p class="pet-value">{{ customer.metafields.customer.pet_weight }} {{ 'customer.pet_details.pet_weight_unit' | t }}</p>
+              </div>
+              <div class="pet-info">
+                <p class="pet-label">{{ 'customer.pet_details.pet_activity' | t }}</p>
+                <p class="pet-value">{{ customer.metafields.customer.pet_activity }}</p>
+              </div>
+              <div class="pet-info">
+                <p class="pet-label">{{ 'customer.pet_details.pet_neutered' | t }}</p>
+                <p class="pet-value">{{ customer.metafields.customer.pet_neutered }}</p>
+              </div>
+              <div class="pet-info">
+                <p class="pet-label">{{ 'customer.pet_details.pet_complaints' | t }}</p>
+                <p class="pet-value">{{ customer.metafields.customer.pet_complaints }}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        {% endif %}
+        <a href="#" class="btn grey-btn add-pet2 {% if customer.metafields.customer.pet_name != blank %}no-disp{% endif %}">{{ 'customer.account.add_pet' | t }}</a>
       </div>
     </div>
   </div>
