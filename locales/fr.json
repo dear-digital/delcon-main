@@ -328,6 +328,10 @@
       "pet_female": "Femelle",
       "pet_breed": "Race d'animal de compagnie",
       "pet_dob": "Date de naissance",
+      "pet_weight": "Lester",
+      "pet_activity": "Activité",
+      "pet_neutered": "Castré\/stérilisé",
+      "pet_complaints": "Plaintes",
       "change": "Changer"
     },
     "account_fallback": "Compte",
