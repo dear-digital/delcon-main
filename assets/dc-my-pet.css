@@ -31,3 +31,52 @@
   flex-direction: column;
   width: calc(100% - 170px);
 }
+.pet-name {
+  font-size: 24px;
+  line-height: 33px;
+  font-weight: 400;
+}
+.edit-pet-details {
+  display: flex;
+  position: relative;
+  width: fit-content;
+  width: -moz-fit-content;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+  color: rgb(var(--color-base-accent-1));
+  transition: all .3s ease-out;
+}
+.edit-pet-details:after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -2px;
+  width: 0px;
+  height: 2px;
+  background: #B499BF;
+  transition: all .3s ease-out;
+}
+.edit-pet-details:hover:after {
+  width: 100%;
+  left: 0;
+}
+.pet-info {
+  display: flex;
+  width: 100%;
+  margin-top: 8px;
+}
+.pet-info .pet-label, .pet-info .pet-value {
+  display: block;
+  width: 50%;
+  margin: 0;
+  font-size: 16px;
+  line-height: 24px;
+}
+.pet-info .pet-label {
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.pet-info .pet-value {
+  font-weight: 700;
+}
