@@ -94,17 +94,6 @@
         "section_btn_url": ""
       }
     },
-    "1655895566c787d650": {
-      "type": "dc-review-with-text",
-      "disabled": true,
-      "settings": {
-        "background_color": "",
-        "media_alignment": "left",
-        "section_subtitle": "",
-        "section_title": "",
-        "section_text": ""
-      }
-    },
     "165219334440eb74eb": {
       "type": "dc-featured-products",
       "settings": {
@@ -225,7 +214,6 @@
     "165217987528287991",
     "1652188517cd05b004",
     "16522710367299c830",
-    "1655895566c787d650",
     "165219334440eb74eb",
     "165220075608ac05ae",
     "1652266546129bd5f6",
