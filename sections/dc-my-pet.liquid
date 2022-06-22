@@ -68,39 +68,39 @@
               {% if customer.metafields.customer.pet_type2 contains petTypeDog %}
               <img src="{{ "Dog_image.png" | asset_img_url: '150x' }}" class="pet-image" alt="{{ customer.metafields.customer.pet_name2 }}">
               {% elsif customer.metafields.customer.pet_type2 contains petTypeCat %}
-              <img src="{{ "Cat_image.png" | asset_img_url: '150x' }}" class="pet-image" alt="{{ customer.metafields.customer.pet_name }}">
+              <img src="{{ "Cat_image.png" | asset_img_url: '150x' }}" class="pet-image" alt="{{ customer.metafields.customer.pet_name2 }}">
               {% endif %}
             </div>
             <div class="pet-info-wrapper">
               <div class="flex-box justify-between align-center">
-                <p class="pet-name tk-le-monde-livre-classic-byol">'{{ customer.metafields.customer.pet_name }}'
-                  {% assign petGender = customer.metafields.customer.pet_gender | downcase | append: "-icon" %}
+                <p class="pet-name tk-le-monde-livre-classic-byol">'{{ customer.metafields.customer.pet_name2 }}'
+                  {% assign petGender = customer.metafields.customer.pet_gender2 | downcase | append: "-icon" %}
                   <span class="pet-gender">{% include petGender %}</span></p>
                 <a href="#" class="edit-pet-details">{{ 'customer.pet_details.change' | t }}</a>
               </div>
               <div class="pet-info">
                 <p class="pet-label">{{ 'customer.pet_details.pet_breed' | t }}</p>
-                <p class="pet-value">{{ customer.metafields.customer.pet_breed }}</p>
+                <p class="pet-value">{{ customer.metafields.customer.pet_breed2 }}</p>
               </div>
               <div class="pet-info">
                 <p class="pet-label">{{ 'customer.pet_details.pet_dob' | t }}</p>
-                <p class="pet-value">{{ customer.metafields.customer.pet_dob }}</p>
+                <p class="pet-value">{{ customer.metafields.customer.pet_dob2 }}</p>
               </div>
               <div class="pet-info">
                 <p class="pet-label">{{ 'customer.pet_details.pet_weight' | t }}</p>
-                <p class="pet-value">{{ customer.metafields.customer.pet_weight }} {{ 'customer.pet_details.pet_weight_unit' | t }}</p>
+                <p class="pet-value">{{ customer.metafields.customer.pet_weight2 }} {{ 'customer.pet_details.pet_weight_unit' | t }}</p>
               </div>
               <div class="pet-info">
                 <p class="pet-label">{{ 'customer.pet_details.pet_activity' | t }}</p>
-                <p class="pet-value">{{ customer.metafields.customer.pet_activity }}</p>
+                <p class="pet-value">{{ customer.metafields.customer.pet_activity2 }}</p>
               </div>
               <div class="pet-info">
                 <p class="pet-label">{{ 'customer.pet_details.pet_neutered' | t }}</p>
-                <p class="pet-value">{{ customer.metafields.customer.pet_neutered }}</p>
+                <p class="pet-value">{{ customer.metafields.customer.pet_neutered2 }}</p>
               </div>
               <div class="pet-info">
                 <p class="pet-label">{{ 'customer.pet_details.pet_complaints' | t }}</p>
-                <p class="pet-value">{{ customer.metafields.customer.pet_complaints }}</p>
+                <p class="pet-value">{{ customer.metafields.customer.pet_complaints2 }}</p>
               </div>
             </div>
           </div>
