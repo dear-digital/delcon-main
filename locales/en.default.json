@@ -322,6 +322,7 @@
       "pet_breed": "Breed",
       "pet_dob": "Date of Birth",
       "pet_weight": "Weight",
+      "pet_weight_unit": "kg",
       "pet_activity": "Activity",
       "pet_neutered": "Neutered\/Sterilized",
       "pet_complaints": "Complaints",
