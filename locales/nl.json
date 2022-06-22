@@ -320,6 +320,7 @@
       "pet_male": "Mannelijk",
       "pet_female": "Vrouwelijk",
       "pet_breed": "Ras",
+      "pet_dob": "Geboortedatum",
       "change": "Wijzig"
     },
     "account_fallback": "Account",
