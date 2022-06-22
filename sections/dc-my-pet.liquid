@@ -17,9 +17,9 @@
               {% assign petTypeDog = 'customer.pet_details.pet_dog' | t %}
               {% assign petTypeCat = 'customer.pet_details.pet_cat' | t %}
               {% if customer.metafields.customer.pet_type contains petTypeDog %}
-              <img src="{{ "Dog_image.png" | asset_url: '150x' }}" class="pet-image" alt="{{ customer.metafields.customer.pet_name }}">
+              <img src="{{ "Dog_image.png" | asset_img_url: '150x' }}" class="pet-image" alt="{{ customer.metafields.customer.pet_name }}">
               {% elsif customer.metafields.customer.pet_type contains petTypeCat %}
-              <img src="{{ "Cat_image.png" | asset_url: '150x' }}" class="pet-image" alt="{{ customer.metafields.customer.pet_name }}">
+              <img src="{{ "Cat_image.png" | asset_img_url: '150x' }}" class="pet-image" alt="{{ customer.metafields.customer.pet_name }}">
               {% endif %}
             </div>
             <div class="pet-info-wrapper">
@@ -40,24 +40,7 @@
 <script>
   $(document).ready(function() {
     $('.add-pet').click(function() {
-      const settings = {
-        "async": true,
-        "crossDomain": true,
-        "url": "https://a.klaviyo.com/api/v2/people/search?email=dhaval%40demo.com&api_key=pk_b8b3a840ce3025cedf08b4be02dcba19af",
-        "method": "GET",
-        "headers": {
-          "Accept": "application/json"
-        }
-      };
-
-      console.log("API Call");
-      $.ajax(settings).done(function (response) {
-        console.log(response);
-      })
-      .fail(function(error) {
-        console.log(error);
-      });
-      console.log("API Called");
+      
 	});
   });
 </script>
