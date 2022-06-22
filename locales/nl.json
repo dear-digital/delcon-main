@@ -321,6 +321,10 @@
       "pet_female": "Vrouwelijk",
       "pet_breed": "Ras",
       "pet_dob": "Geboortedatum",
+      "pet_weight": "Gewicht",
+      "pet_activity": "Activiteit",
+      "pet_neutered": "Gecastreerd\/Gesteriliseerd",
+      "pet_complaints": "Klachten",
       "change": "Wijzig"
     },
     "account_fallback": "Account",
