@@ -320,6 +320,7 @@
       "pet_male": "Male",
       "pet_female": "Female",
       "pet_breed": "Breed",
+      "pet_dob": "Date of Birth",
       "change": "Change"
     },
     "account_fallback": "Konto",
