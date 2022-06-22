@@ -321,6 +321,12 @@
       "view_addresses": "Voir les adresses",
       "return": "Retour aux détails du compte"
     },
+    "pet_details": {
+      "pet_dog": "Chien",
+      "pet_cat": "Chat",
+      "pet_male": "Mâle",
+      "pet_female": "Femelle"
+    },
     "account_fallback": "Compte",
     "activate_account": {
       "title": "Activer le compte",
