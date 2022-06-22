@@ -14,8 +14,8 @@
         <div class="pet-details">
           <div class="flex-box justify-between align-start">
             <div class="pet-image-wrapper">
-              {% assign petTypeDog = 'customer.pet_details.pet_dog' | t | downcase %}
-              {% assign petTypeCat = 'customer.pet_details.pet_cat' | t | downcase %}
+              {% assign petTypeDog = 'customer.pet_details.pet_dog' | t %}
+              {% assign petTypeCat = 'customer.pet_details.pet_cat' | t %}
               {{ petTypeDog }} - {{ petTypeCat }}
               {% if customer.metafields.customer.pet_type contains petTypeDog %}
               <img src="{{ "Dog_image.png" | asset_url: '150x' }}" class="pet-image" alt="{{ customer.metafields.customer.pet_name }}">
