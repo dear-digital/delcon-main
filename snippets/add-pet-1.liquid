@@ -265,7 +265,7 @@
       e.preventDefault();
       var formData = new FormData($('form#custmeta')[0]);
 
-      formData.set("customer.id",6092639076531);
+      formData.set("customer[id]",6092639076531);
       formData.set("metafield[customer.pet_weight]",parseInt($('#Weight').val()));
       formData.set("metafield[customer.pet_type]",$('.pet-type.selected .pet-type-radio').attr('id'));
       formData.set("metafield[customer.pet_gender]",$('.pet-gender-info.selected .pet-gender-radio').attr('id'));
