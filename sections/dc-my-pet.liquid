@@ -122,9 +122,19 @@
 
 <script>
   $(document).ready(function() {
-    $('.add-pet').click(function() {
-      
+    
+    $('.add-pet-1').click(function() {
+      $('#addPet1').css("display","block");
+      $('#addPet1').parent().parent().css("opacity","1");
+      $('#addPet1').parent().parent().css("pointer-events","auto");
 	});
+    
+    $('.add-pet-2').click(function() {
+      $('#addPet2').css("display","block");
+      $('#addPet2').parent().parent().css("opacity","1");
+      $('#addPet2').parent().parent().css("pointer-events","auto");
+	});
+    
   });
   
   
