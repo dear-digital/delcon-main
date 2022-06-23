@@ -20,6 +20,23 @@
               </div>
             </div>
 
+            <div class="row">
+              <div class="column">
+                <label class="my-pet-info">{{ 'customer.pet_details.pet_gender' | t }}</label>
+                <div class="pet-gender-info pet-male selected">
+                  <input type="radio" name="metafield[customer.pet_gender]" checked="checked" class="pet-gender-radio" id="{{ 'customer.pet_details.pet_male' | t }}">
+                  <label class="" for="{{ 'customer.pet_details.pet_male' | t }}">{{ 'customer.pet_details.pet_male' | t }}</label>
+                </div>
+                <div class="pet-gender-info pet-female">
+                  <input type="radio" name="metafield[customer.pet_gender]" class="pet-gender-radio" id="{{ 'customer.pet_details.pet_female' | t }}">
+                  <label class="" for="{{ 'customer.pet_details.pet_female' | t }}">{{ 'customer.pet_details.pet_female' | t }}</label>
+                </div>
+              </div>
+              <div class="column">
+                <label class="my-pet-info">{{ 'customer.pet_details.pet_weight' | t }}</label>
+                <input type="number" name="metafield[customer.pet_weight]" value="" id="{{ 'customer.pet_details.pet_weight' | t }}" placeholder="{{ 'customer.pet_details.pet_weight' | t }} kg" required />
+              </div>
+            </div>
             
           </div>
             
@@ -61,10 +78,9 @@
       e.preventDefault();
       var formData = new FormData($('form#custmeta')[0]);
 
-//       formData.set("customer[id]",6092639076531);
-//       formData.set("metafield[customer.pet_weight]",parseInt($('#Weight').val()));
+      formData.set("metafield[customer.pet_weight]",parseInt($('#Weight').val()));
 //       formData.set("metafield[customer.pet_type]",$('.pet-type.selected .pet-type-radio').attr('id'));
-//       formData.set("metafield[customer.pet_gender]",$('.pet-gender-info.selected .pet-gender-radio').attr('id'));
+      formData.set("metafield[customer.pet_gender]",$('.pet-gender-info.selected .pet-gender-radio').attr('id'));
 //       formData.set("metafield[customer.pet_neutered]",$('.pet-neutered.selected .pet-neutered-radio').attr('id'));
 //       formData.set("metafield[customer.pet_activity]",$('.pet-activity.selected .pet-activity-radio').attr('id'));
 
