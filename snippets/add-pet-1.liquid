@@ -12,7 +12,7 @@
             <div class="row">
               <div class="column">
                 <label class="my-pet-info">{{ 'customer.pet_details.pet_name' | t }}</label>
-                <input type="text" name="{{ customer.metafield.customer.pet_name }}" value="" placeholder="{{ 'customer.pet_details.pet_name' | t }}" />
+                <input type="text" name="{{ customer.metafield.customer.pet_name.key }}" value="" placeholder="{{ 'customer.pet_details.pet_name' | t }}" />
               </div>
               <div class="column">
                 <label class="my-pet-info">{{ 'customer.pet_details.pet_dob' | t }}</label>
@@ -45,6 +45,14 @@
               </div>
             </div>
 
+            <div class="row">
+              <div class="column">
+                <label class="my-pet-info">{{ 'customer.pet_details.pet_breed' | t }}</label>
+              </div>
+              <div class="column">
+                <label class="my-pet-info">{{ 'customer.pet_details.pet_weight' | t }}</label>
+              </div>
+            </div>
             <div class="row">
               <div class="column">
                 <label class="my-pet-info">{{ 'customer.pet_details.pet_activity' | t }}</label>
