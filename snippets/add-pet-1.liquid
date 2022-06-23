@@ -261,7 +261,7 @@
       $.ajax({
         type: "POST",
         dataType: "json",
-        data: formData,
+        data: $(formData).serialize(),
         url: $(this).attr('action'),
         success: function (data) {
           var formValid = (data.status === 'OK');
