@@ -258,8 +258,8 @@
       const value = Object.fromEntries(formData.entries());
       console.log(value);
       
-      value.metafield[customer.pet_complaints] = formData.getAll("metafield[customer.pet_complaints]");
-      console.log(value);
+//       value.metafield[customer.pet_complaints] = formData.getAll("metafield[customer.pet_complaints]");
+      console.log(formData.getAll("metafield[customer.pet_complaints]"));
       
       $.ajax({
         type: "POST",
