@@ -242,7 +242,7 @@
       petComplaints = petComplaints + complaintId + ", ";
     });
     
-    petComplaints = petComplaints.substring(petComplaints.lastIndexOf(','));
+    petComplaints = petComplaints.substring(0,petComplaints.lastIndexOf(','));
     console.log("Complaints : "+petComplaints);
     data.set("metafield[customer.pet_complaints]",petComplaints);
     
