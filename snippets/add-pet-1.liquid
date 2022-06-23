@@ -258,10 +258,13 @@
       const value = Object.fromEntries(formData.entries());
       console.log(value);
       
+      value.metafield[customer.pet_complaints] = formData.getAll("metafield[customer.pet_complaints]");
+      console.log(value);
+      
       $.ajax({
         type: "POST",
         dataType: "json",
-        data: $(formData).serialize(),
+        data: value,
         url: $(this).attr('action'),
         success: function (data) {
           var formValid = (data.status === 'OK');
