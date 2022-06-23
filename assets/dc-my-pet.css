@@ -122,6 +122,7 @@
   justify-content: space-evenly;
 }
 .my-pet-1 .column {
+  width: calc(50% - 16px);
   flex-direction: column;
 }
 .my-pet-info {
