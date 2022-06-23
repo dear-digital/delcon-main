@@ -47,10 +47,42 @@
               <label class="my-pet-info">{{ 'customer.pet_details.pet_gender' | t }}</label>
               {% for block in section.blocks %}
               	{% if block.type == "pet-activity" %}
-              	  <div class="pet-activity pet-{{ block.settinngs.pet_activity }} {% if forloop.first %}selected{% endif %}">
-                    <input type="radio" name="metafield[customer.pet_activity]" checked="checked" class="pet-activity-radio" id="{{ block.settinngs.pet_activity }}">
-                    <label class="" for="{{ block.settinngs.pet_activity }}">{{ block.settinngs.pet_activity }}</label>
+              	  
+              	  {% if block.settinngs.pet_activity1 != blank %}
+              	  <div class="pet-activity pet-{{ block.settinngs.pet_activity1 }} {% if forloop.first %}selected{% endif %}">
+                    <input type="radio" name="metafield[customer.pet_activity]" checked="checked" class="pet-activity-radio" id="{{ block.settinngs.pet_activity1 }}">
+                    <label class="" for="{{ block.settinngs.pet_activity1 }}">{{ block.settinngs.pet_activity1 }}</label>
                   </div>
+              	  {% endif %}
+              
+              	  {% if block.settinngs.pet_activity2 != blank %}
+              	  <div class="pet-activity pet-{{ block.settinngs.pet_activity2 }}">
+                    <input type="radio" name="metafield[customer.pet_activity]" checked="checked" class="pet-activity-radio" id="{{ block.settinngs.pet_activity2 }}">
+                    <label class="" for="{{ block.settinngs.pet_activity2 }}">{{ block.settinngs.pet_activity2 }}</label>
+                  </div>
+              	  {% endif %}
+              
+              	  {% if block.settinngs.pet_activity3 != blank %}
+              	  <div class="pet-activity pet-{{ block.settinngs.pet_activity3 }}">
+                    <input type="radio" name="metafield[customer.pet_activity]" checked="checked" class="pet-activity-radio" id="{{ block.settinngs.pet_activity3 }}">
+                    <label class="" for="{{ block.settinngs.pet_activity3 }}">{{ block.settinngs.pet_activity3 }}</label>
+                  </div>
+              	  {% endif %}
+              
+              	  {% if block.settinngs.pet_activity4 != blank %}
+              	  <div class="pet-activity pet-{{ block.settinngs.pet_activity4 }} {% if forloop.first %}selected{% endif %}">
+                    <input type="radio" name="metafield[customer.pet_activity]" checked="checked" class="pet-activity-radio" id="{{ block.settinngs.pet_activity4 }}">
+                    <label class="" for="{{ block.settinngs.pet_activity4 }}">{{ block.settinngs.pet_activity4 }}</label>
+                  </div>
+              	  {% endif %}
+              
+              	  {% if block.settinngs.pet_activity5 != blank %}
+              	  <div class="pet-activity pet-{{ block.settinngs.pet_activity5 }} {% if forloop.first %}selected{% endif %}">
+                    <input type="radio" name="metafield[customer.pet_activity]" checked="checked" class="pet-activity-radio" id="{{ block.settinngs.pet_activity5 }}">
+                    <label class="" for="{{ block.settinngs.pet_activity5 }}">{{ block.settinngs.pet_activity5 }}</label>
+                  </div>
+              	  {% endif %}
+              
                 {% endif %}
               {% endfor %}
             </div>
