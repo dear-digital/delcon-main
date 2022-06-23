@@ -110,16 +110,21 @@
         <a href="#" class="btn grey-btn add-pet">{{ 'customer.account.add_pet' | t }}</a>
         
 <!--         sineLABS example snippet, writable customer metafields. Replace example metafield inputs with your actual metafields. -->
-        <div>
-          <form action="/a/custmeta" method="POST" id="custmeta">  
-            <input type="hidden" name="customer[id]" value="{{ customer.id }}" />
-            <input type="text" name=“metafield[namespace1.key1]" value="{{ customer.metafields.namespace1.key1 }}" placeholder=“namespace1.key1" />
-            <input type="text" name=“metafield[namespace2.key2]" value="{{ customer.metafields.namespace2.key2 }}" placeholder=“namespace2.key2" />
-            <input type="submit" />
-          </form>
-
+        <div class="wrap" style="position: relative; z-index: 9;">
+          <div class="modal">
+            <div class="container">
+              <div class="my-pet-1 rel" id="myPet1">
+                <form action="/a/custmeta" method="POST" id="custmeta">  
+                  <input type="hidden" name="customer[id]" value="{{ customer.id }}" />
+                  <input type="text" name="metafield[customer.pet_name]" value="{{ customer.metafields.customer.pet_name }}" placeholder="customer.pet_name" />
+                  <input type="text" name="metafield[customer.pet_complaints]" value="{{ customer.metafields.customer.pet_pet_complaintsname }}" placeholder="customer.pet_complaints" />
+                  <input type="submit" />
+                </form>
+              </div>
+            </div>
+          </div>
         </div>
-<!--         End of sineLABS example -->
+        <!--         End of sineLABS example -->
       </div>
     </div>
   </div>
