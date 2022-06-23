@@ -24,11 +24,11 @@
               <div class="column">
                 <label class="my-pet-info">{{ 'customer.pet_details.pet_gender' | t }}</label>
                 <div class="pet-gender-info pet-male selected">
-                  <input type="radio" name="metafield[customer.pet_gender]" checked="checked" class="pet-gender-radio" id="{{ 'customer.pet_details.pet_male' | t }}">
+                  <input type="radio" name="metafield[customer.pet_gender]" {% if customer.metafields.customer.pet_gender == "Male" %}checked="checked"{% endif %} class="pet-gender-radio" id="{{ 'customer.pet_details.pet_male' | t }}" value="{{ 'customer.pet_details.pet_male' | t }}">
                   <label class="" for="{{ 'customer.pet_details.pet_male' | t }}">{{ 'customer.pet_details.pet_male' | t }}</label>
                 </div>
                 <div class="pet-gender-info pet-female">
-                  <input type="radio" name="metafield[customer.pet_gender]" class="pet-gender-radio" id="{{ 'customer.pet_details.pet_female' | t }}">
+                  <input type="radio" name="metafield[customer.pet_gender]" {% if customer.metafields.customer.pet_gender == "Female" %}checked="checked"{% endif %} class="pet-gender-radio" id="{{ 'customer.pet_details.pet_female' | t }}" value="{{ 'customer.pet_details.pet_female' | t }}">
                   <label class="" for="{{ 'customer.pet_details.pet_female' | t }}">{{ 'customer.pet_details.pet_female' | t }}</label>
                 </div>
               </div>
