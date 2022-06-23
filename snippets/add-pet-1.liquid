@@ -5,7 +5,7 @@
         <span class="close-pet" data-form="addPet1">{% include 'icon-close-new' %}</span>
         <h2 class="tk-le-monde-livre-classic-byol text-center">{{ 'customer.pet_details.add_pet' | t }}</h2>
         
-        <form action="/a/custmeta" method="POST" id="custmeta">
+        <form id="custmeta">
           <div class="my-pet-form">
 
             <input type="hidden" id="customer_id" name="customer[id]" value="{{ customer.id }}" />
@@ -264,7 +264,7 @@
         type: "POST",
         dataType: "json",
         data: formValue,
-        url: $(this).attr('action'),
+        url: "/a/custmeta",
         success: function (data) {
           var formValid = (data.status === 'OK');
           if (formValid) {
