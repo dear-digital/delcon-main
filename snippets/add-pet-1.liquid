@@ -79,35 +79,35 @@
                   {% if block.type == "pet-activity" %}
 
                     {% if block.settings.pet_activity1 != blank %}
-                    <div class="pet-activity pet-{{ block.settings.pet_activity1 }} selected">
+                    <div class="pet-activity pet-{{ block.settings.pet_activity1 | replace: " ","" | downcase }} selected">
                       <input type="radio" name="pet_activity" checked="checked" class="pet-activity-radio" id="{{ block.settings.pet_activity1 }}">
                       <label class="" for="{{ block.settings.pet_activity1 }}">{{ block.settings.pet_activity1 }}</label>
                     </div>
                     {% endif %}
 
                     {% if block.settings.pet_activity2 != blank %}
-                    <div class="pet-activity pet-{{ block.settings.pet_activity2 }}">
+                    <div class="pet-activity pet-{{ block.settings.pet_activity2 | replace: " ","" | downcase }}">
                       <input type="radio" name="pet_activity" class="pet-activity-radio" id="{{ block.settings.pet_activity2 }}">
                       <label class="" for="{{ block.settings.pet_activity2 }}">{{ block.settings.pet_activity2 }}</label>
                     </div>
                     {% endif %}
 
                     {% if block.settings.pet_activity3 != blank %}
-                    <div class="pet-activity pet-{{ block.settings.pet_activity3 }}">
+                    <div class="pet-activity pet-{{ block.settings.pet_activity3 | replace: " ","" | downcase }}">
                       <input type="radio" name="pet_activity" class="pet-activity-radio" id="{{ block.settings.pet_activity3 }}">
                       <label class="" for="{{ block.settings.pet_activity3 }}">{{ block.settings.pet_activity3 }}</label>
                     </div>
                     {% endif %}
 
                     {% if block.settings.pet_activity4 != blank %}
-                    <div class="pet-activity pet-{{ block.settings.pet_activity4 }}">
+                    <div class="pet-activity pet-{{ block.settings.pet_activity4 | replace: " ","" | downcase }}">
                       <input type="radio" name="pet_activity" class="pet-activity-radio" id="{{ block.settings.pet_activity4 }}">
                       <label class="" for="{{ block.settings.pet_activity4 }}">{{ block.settings.pet_activity4 }}</label>
                     </div>
                     {% endif %}
 
                     {% if block.settings.pet_activity5 != blank %}
-                    <div class="pet-activity pet-{{ block.settings.pet_activity5 }}">
+                    <div class="pet-activity pet-{{ block.settings.pet_activity5 | replace: " ","" | downcase }}">
                       <input type="radio" name="pet_activity" class="pet-activity-radio" id="{{ block.settings.pet_activity5 }}">
                       <label class="" for="{{ block.settings.pet_activity5 }}">{{ block.settings.pet_activity5 }}</label>
                     </div>
@@ -122,70 +122,70 @@
                   {% if block.type == "pet-complaints" %}
 
                     {% if block.settings.pet_complaint1 != blank %}
-                    <div class="pet-complaint pet-{{ block.settings.pet_complaint1 }}">
+                    <div class="pet-complaint pet-{{ block.settings.pet_complaint1 | replace: " ","" | downcase }}">
                       <input type="checkbox" name="pet_complaint" class="pet-complaint-checkbox" id="{{ block.settings.pet_complaint1 }}">
                       <label class="" for="{{ block.settings.pet_complaint1 }}">{{ block.settings.pet_complaint1 }}</label>
                     </div>
                     {% endif %}
 
                     {% if block.settings.pet_complaint2 != blank %}
-                    <div class="pet-complaint pet-{{ block.settings.pet_complaint2 }}">
+                    <div class="pet-complaint pet-{{ block.settings.pet_complaint2 | replace: " ","" | downcase }}">
                       <input type="checkbox" name="pet_complaint" class="pet-complaint-checkbox" id="{{ block.settings.pet_complaint2 }}">
                       <label class="" for="{{ block.settings.pet_complaint2 }}">{{ block.settings.pet_complaint2 }}</label>
                     </div>
                     {% endif %}
 
                     {% if block.settings.pet_complaint3 != blank %}
-                    <div class="pet-complaint pet-{{ block.settings.pet_complaint3 }}">
+                    <div class="pet-complaint pet-{{ block.settings.pet_complaint3 | replace: " ","" | downcase }}">
                       <input type="checkbox" name="pet_complaint" class="pet-complaint-checkbox" id="{{ block.settings.pet_complaint3 }}">
                       <label class="" for="{{ block.settings.pet_complaint3 }}">{{ block.settings.pet_complaint3 }}</label>
                     </div>
                     {% endif %}
 
                     {% if block.settings.pet_complaint4 != blank %}
-                    <div class="pet-complaint pet-{{ block.settings.pet_complaint4 }}">
+                    <div class="pet-complaint pet-{{ block.settings.pet_complaint4 | replace: " ","" | downcase }}">
                       <input type="checkbox" name="pet_complaint" class="pet-complaint-checkbox" id="{{ block.settings.pet_complaint4 }}">
                       <label class="" for="{{ block.settings.pet_complaint4 }}">{{ block.settings.pet_complaint4 }}</label>
                     </div>
                     {% endif %}
 
                     {% if block.settings.pet_complaint5 != blank %}
-                    <div class="pet-complaint pet-{{ block.settings.pet_complaint5 }}">
+                    <div class="pet-complaint pet-{{ block.settings.pet_complaint5 | replace: " ","" | downcase }}">
                       <input type="checkbox" name="pet_complaint" class="pet-complaint-checkbox" id="{{ block.settings.pet_complaint5 }}">
                       <label class="" for="{{ block.settings.pet_complaint5 }}">{{ block.settings.pet_complaint5 }}</label>
                     </div>
                     {% endif %}
                 
                 	{% if block.settings.pet_complaint6 != blank %}
-                    <div class="pet-complaint pet-{{ block.settings.pet_complaint6 }}">
+                    <div class="pet-complaint pet-{{ block.settings.pet_complaint6 | replace: " ","" | downcase }}">
                       <input type="checkbox" name="pet_complaint" class="pet-complaint-checkbox" id="{{ block.settings.pet_complaint6 }}">
                       <label class="" for="{{ block.settings.pet_complaint6 }}">{{ block.settings.pet_complaint6 }}</label>
                     </div>
                     {% endif %}
                 
                 	{% if block.settings.pet_complaint7 != blank %}
-                    <div class="pet-complaint pet-{{ block.settings.pet_complaint7 }}">
+                    <div class="pet-complaint pet-{{ block.settings.pet_complaint7 | replace: " ","" | downcase }}">
                       <input type="checkbox" name="pet_complaint" class="pet-complaint-checkbox" id="{{ block.settings.pet_complaint7 }}">
                       <label class="" for="{{ block.settings.pet_complaint7 }}">{{ block.settings.pet_complaint7 }}</label>
                     </div>
                     {% endif %}
 
                     {% if block.settings.pet_complaint8 != blank %}
-                    <div class="pet-complaint pet-{{ block.settings.pet_complaint8 }}">
+                    <div class="pet-complaint pet-{{ block.settings.pet_complaint8 | replace: " ","" | downcase }}">
                       <input type="checkbox" name="pet_complaint" class="pet-complaint-checkbox" id="{{ block.settings.pet_complaint8 }}">
                       <label class="" for="{{ block.settings.pet_complaint8 }}">{{ block.settings.pet_complaint8 }}</label>
                     </div>
                     {% endif %}
 
                     {% if block.settings.pet_complaint9 != blank %}
-                    <div class="pet-complaint pet-{{ block.settings.pet_complaint9 }}">
+                    <div class="pet-complaint pet-{{ block.settings.pet_complaint9 | replace: " ","" | downcase }}">
                       <input type="checkbox" name="pet_complaint" class="pet-complaint-checkbox" id="{{ block.settings.pet_complaint9 }}">
                       <label class="" for="{{ block.settings.pet_complaint9 }}">{{ block.settings.pet_complaint9 }}</label>
                     </div>
                     {% endif %}
                 
                 	{% if block.settings.pet_complaint10 != blank %}
-                    <div class="pet-complaint pet-{{ block.settings.pet_complaint10 }}">
+                    <div class="pet-complaint pet-{{ block.settings.pet_complaint10 | replace: " ","" | downcase }}">
                       <input type="checkbox" name="pet_complaint" class="pet-complaint-checkbox" id="{{ block.settings.pet_complaint10 }}">
                       <label class="" for="{{ block.settings.pet_complaint10 }}">{{ block.settings.pet_complaint10 }}</label>
                     </div>
