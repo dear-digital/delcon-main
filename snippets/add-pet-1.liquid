@@ -24,7 +24,7 @@
               <div class="column">
                 <label class="my-pet-info">{{ 'customer.pet_details.pet_gender' | t }}</label>
                 <div class="pet-gender-info pet-male selected">
-                  <input type="radio" name="metafield[customer.pet_gender]" {% if customer.metafields.customer.pet_gender == "Male" %}checked="checked"{% endif %} class="pet-gender-radio" id="{{ 'customer.pet_details.pet_male' | t }}" value="Male">
+                  <input type="radio" name="metafield[customer.pet_gender]" {% if customer.metafields.customer.pet_gender == "Male" or customer.metafields.customer.pet_gender == blank %}checked="checked"{% endif %} class="pet-gender-radio" id="{{ 'customer.pet_details.pet_male' | t }}" value="Male">
                   <label class="" for="{{ 'customer.pet_details.pet_male' | t }}">{{ 'customer.pet_details.pet_male' | t }}</label>
                 </div>
                 <div class="pet-gender-info pet-female">
@@ -60,7 +60,7 @@
                   <div class="column">
                     <label class="my-pet-info">{{ 'customer.pet_details.pet_neutered' | t }}</label>
                     <div class="pet-neutered pet-neutered-yes selected">
-                      <input type="radio" name="metafield[customer.pet_neutered]" {% if customer.metafields.customer.pet_neutered == "Yes" or customer.metafields.customer.pet_neutered == "" %}checked="checked"{% endif %} class="pet-neutered-radio" id="{{ 'customer.pet_details.pet_neutered_yes' | t }}" value="Yes">
+                      <input type="radio" name="metafield[customer.pet_neutered]" {% if customer.metafields.customer.pet_neutered == "Yes" or customer.metafields.customer.pet_neutered == blank %}checked="checked"{% endif %} class="pet-neutered-radio" id="{{ 'customer.pet_details.pet_neutered_yes' | t }}" value="Yes">
                       <label class="" for="{{ 'customer.pet_details.pet_neutered_yes' | t }}">{{ 'customer.pet_details.pet_neutered_yes' | t }}</label>
                     </div>
                     <div class="pet-neutered pet-neutered-no">
