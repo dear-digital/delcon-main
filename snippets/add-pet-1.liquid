@@ -5,7 +5,7 @@
         <span class="close-pet" data-form="addPet1">{% include 'icon-close-new' %}</span>
         <h2 class="tk-le-monde-livre-classic-byol text-center">{{ 'customer.pet_details.add_pet' | t }}</h2>
         
-        <form id="custmeta">
+        <form action="/a/custmeta" method="POST" id="custmeta">
           <div class="my-pet-form">
 
             <input type="hidden" id="customer_id" name="customer[id]" value="{{ customer.id }}" />
@@ -237,12 +237,6 @@
       e.preventDefault();
       var formData = new FormData($('form#custmeta')[0]);
 
-//       formData.set("metafield[customer.pet_weight]",parseInt($('#Weight').val()));
-//       formData.set("metafield[customer.pet_type]",$('.pet-type.selected .pet-type-radio').attr('id'));
-//       formData.set("metafield[customer.pet_gender]",$('.pet-gender-info.selected .pet-gender-radio').attr('id'));
-//       formData.set("metafield[customer.pet_neutered]",$('.pet-neutered.selected .pet-neutered-radio').attr('id'));
-//       formData.set("metafield[customer.pet_activity]",$('.pet-activity.selected .pet-activity-radio').attr('id'));
-
       var petComplaints = "";
 
       $('.pet-complaint-checkbox:checked').each(function() {
@@ -251,21 +245,18 @@
       });
 
       petComplaints = petComplaints.substring(0,petComplaints.lastIndexOf(','));
-      console.log("Complaints : "+petComplaints);
+
       formData.set("metafield[customer.pet_complaints]",petComplaints);
 
       var formValue = Object.fromEntries(formData.entries());
       
-//       formValue.customerString = formData.getAll("metafield[customer.pet_complaints]");
-      
       console.log(formValue);
-      console.log(formData.getAll("metafield[customer.pet_complaints]"));
       
       $.ajax({
         type: "POST",
         dataType: "json",
         data: formValue,
-        url: "/a/custmeta",
+        url: $(this).attr('action'),
         success: function (data) {
           var formValid = (data.status === 'OK');
           if (formValid) {
@@ -289,6 +280,9 @@
         }
       });
       
+      const myPetTimeout = setTimeout(function() {
+		window.location.reload(1);      
+      }, 2000);
 
       return false;
     });
