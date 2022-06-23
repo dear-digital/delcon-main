@@ -31,11 +31,11 @@
             </div>
             <div class="column">
               <label class="my-pet-info">{{ 'customer.pet_details.pet_gender' | t }}</label>
-              <div class="pet-gender pet-male selected">
+              <div class="pet-gender-info pet-male selected">
                 <input type="radio" name="metafield[customer.pet_gender]" checked="checked" class="pet-gender-radio" id="{{ 'customer.pet_details.pet_male' | t }}">
                 <label class="" for="{{ 'customer.pet_details.pet_male' | t }}">{{ 'customer.pet_details.pet_male' | t }}</label>
               </div>
-              <div class="pet-gender pet-female">
+              <div class="pet-gender-info pet-female">
                 <input type="radio" name="metafield[customer.pet_gender]" class="pet-gender-radio" id="{{ 'customer.pet_details.pet_female' | t }}">
                 <label class="" for="{{ 'customer.pet_details.pet_female' | t }}">{{ 'customer.pet_details.pet_female' | t }}</label>
               </div>
@@ -86,8 +86,8 @@
       $(this).addClass("selected");
     });
     
-    $(".pet-gender").click(function() {
-      $(".pet-gender").removeClass("selected");
+    $(".pet-gender-info").click(function() {
+      $(".pet-gender-info").removeClass("selected");
       $(this).addClass("selected");
     });
     
