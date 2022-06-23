@@ -110,6 +110,9 @@
 .my-pet-1 [type=radio]:checked+label:after, .my-pet-1 [type=radio]:not(:checked)+label:after {
   top: 8px;
 }
-.pet-type, .pet-gender, .pet-activity, .pet-neutered {
-  margin-bottom: 16px;
+.pet-type, .pet-gender-info, .pet-activity, .pet-neutered {
+  margin-bottom: 8px;
+}
+.pet-type:last-child, .pet-gender-info:last-child, .pet-activity:last-child, .pet-neutered:last-child {
+  margin-bottom: 8px;
 }
