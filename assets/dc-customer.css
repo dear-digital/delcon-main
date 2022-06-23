@@ -351,10 +351,10 @@
   font-size: 14px;
   line-height: 22px;
 }
-.address-btn {
+.address-btn, .pet-btn {
   background-color: #F2F1F0;
 }
-.address-btn:hover {
+.address-btn:hover, .pet-btn:hover {
   background-color: #E8E6E4;
 }
 
