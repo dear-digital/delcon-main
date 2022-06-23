@@ -385,22 +385,3 @@
   line-height: 24px;
   margin: 0 6px;
 }
-
-/* Pet Details Page CSS */
-.my-pet-1 .column {
-  flex-direction: column;
-}
-.my-pet-info {
-  display: block;
-  font-size: 16px;
-  line-height: 22px;
-  font-weight: 400;
-  text-transform: uppercase;
-  margin-bottom: 8px;
-}
-.my-pet-1 [type=radio]:checked+label:before, .my-pet-1 [type=radio]:not(:checked)+label:before {
-  top: 4px;
-}
-.my-pet-1 [type=radio]:checked+label:after, .my-pet-1 [type=radio]:not(:checked)+label:after {
-  top: 8px;
-}
