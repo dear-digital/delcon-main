@@ -239,9 +239,10 @@
       
     $('.pet-complaint-checkbox').each(function() {
       var complaintId = $(this).attr("id");
-      petComplaints = petComplaints + complaintId + ","
+      petComplaints = petComplaints + complaintId + ", ";
     });
     
+    petComplaints = petComplaints.substring(petComplaints.lastIndexOf(','));
     console.log("Complaints : "+petComplaints);
     data.set("metafield[customer.pet_complaints]",petComplaints);
     
@@ -274,7 +275,7 @@
 //         alert('AJAX or Server 500 error occurred');
 //       }
 //     });
-    return false;
+//     return false;
   });
   });
   
