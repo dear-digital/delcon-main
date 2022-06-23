@@ -238,9 +238,12 @@
     var petComplaints = "";
       
     $('.pet-complaint-checkbox').each(function() {
-		var complaintId = $(this).attr("id");
+      var complaintId = $(this).attr("id");
       petComplaints = petComplaints + complaintId + ","
     });
+    
+    console.log("Complaints : "+petComplaints);
+    data.set("metafield[customer.pet_complaints]",petComplaints);
     
     const value = Object.fromEntries(data.entries());
     console.log(value);
