@@ -123,21 +123,21 @@
 
                     {% if block.settings.pet_complaint1 != blank %}
                     <div class="pet-complaint pet-{{ block.settings.pet_complaint1 | replace: " ","" | downcase }}">
-                      <input type="checkbox" name="metafield[customer.pet_complaints]" {% if customer.metafields.customer.pet_complaints contains block.settings.pet_complaint1 %}checked="checked"{% endif %} class="pet-complaint-checkbox" id="{{ block.settings.pet_complaint1 }}" value="{{ block.settings.pet_complaint1 }}">
+                      <input type="checkbox" name="metafield[customer.pet_complaints]" {% if customer.metafields.customer.pet_complaints contains block.settings.pet_complaint1 %}checked{% endif %} class="pet-complaint-checkbox" id="{{ block.settings.pet_complaint1 }}" value="{{ block.settings.pet_complaint1 }}">
                       <label class="" for="{{ block.settings.pet_complaint1 }}">{{ block.settings.pet_complaint1 }}</label>
                     </div>
                     {% endif %}
 
                     {% if block.settings.pet_complaint2 != blank %}
                     <div class="pet-complaint pet-{{ block.settings.pet_complaint2 | replace: " ","" | downcase }}">
-                      <input type="checkbox" name="metafield[customer.pet_complaints]" {% if customer.metafields.customer.pet_complaints contains block.settings.pet_complaint2 %}checked="checked"{% endif %} class="pet-complaint-checkbox" id="{{ block.settings.pet_complaint2 }}" value="{{ block.settings.pet_complaint2 }}">
+                      <input type="checkbox" name="metafield[customer.pet_complaints]" {% if customer.metafields.customer.pet_complaints contains block.settings.pet_complaint2 %}checked{% endif %} class="pet-complaint-checkbox" id="{{ block.settings.pet_complaint2 }}" value="{{ block.settings.pet_complaint2 }}">
                       <label class="" for="{{ block.settings.pet_complaint2 }}">{{ block.settings.pet_complaint2 }}</label>
                     </div>
                     {% endif %}
 
                     {% if block.settings.pet_complaint3 != blank %}
                     <div class="pet-complaint pet-{{ block.settings.pet_complaint3 | replace: " ","" | downcase }}">
-                      <input type="checkbox" name="metafield[customer.pet_complaints]" {% if customer.metafields.customer.pet_complaints contains block.settings.pet_complaint3 %}checked="checked"{% endif %} class="pet-complaint-checkbox" id="{{ block.settings.pet_complaint3 }}" value="{{ block.settings.pet_complaint3 }}">
+                      <input type="checkbox" name="metafield[customer.pet_complaints]" {% if customer.metafields.customer.pet_complaints contains block.settings.pet_complaint3 %}checked{% endif %} class="pet-complaint-checkbox" id="{{ block.settings.pet_complaint3 }}" value="{{ block.settings.pet_complaint3 }}">
                       <label class="" for="{{ block.settings.pet_complaint3 }}">{{ block.settings.pet_complaint3 }}</label>
                     </div>
                     {% endif %}
