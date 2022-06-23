@@ -316,6 +316,7 @@
     },
     "pet_details": {
       "pet_name": "Name",
+      "pet_type": "Pet Type",
       "pet_dog": "Dog",
       "pet_cat": "Cat",
       "pet_gender": "Gender",
