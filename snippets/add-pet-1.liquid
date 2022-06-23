@@ -14,7 +14,12 @@
               <input type="date" name="metafield[customer.pet_dob]" value="{{ customer.metafields.customer.pet_dob }}" placeholder="{{ 'customer.pet_details.pet_dob' | t }}" />
             </div>
           </div>
-          <button type="submit" class="btn pet-btn">{{ 'customer.pet_details.add_pet' | t }}</button>
+          
+          <div class="flex-box justify-between align-center" style="margin-top: 8px;">
+            <span class="cancel-edit" data-form="addPet1">{{ 'customer.addresses.cancel' | t }}</span>
+            <button type="submit" class="btn pet-btn">{{ 'customer.pet_details.add_pet' | t }}</button>
+          </div>
+          
         </form>
       </div>
     </div>
