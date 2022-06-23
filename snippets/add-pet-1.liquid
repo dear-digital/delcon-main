@@ -242,7 +242,7 @@
       
     var petComplaints = "";
       
-    $('.pet-complaint-checkbox').each(function() {
+      $('.pet-complaint-checkbox:checked').each(function() {
       var complaintId = $(this).attr("id");
       petComplaints = petComplaints + complaintId + ", ";
     });
