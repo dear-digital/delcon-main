@@ -117,7 +117,82 @@
                 {% endfor %}
               </div>
               <div class="column">
+                <label class="my-pet-info">{{ 'customer.pet_details.pet_complaints' | t }}</label>
+                {% for block in section.blocks %}
+                  {% if block.type == "pet-complaints" %}
+
+                    {% if block.settings.pet_complaint1 != blank %}
+                    <div class="pet-activity pet-{{ block.settings.pet_complaint1 }}">
+                      <input type="checkbox" name="pet_complaint" class="pet-complaint-radio" id="{{ block.settings.pet_complaint1 }}">
+                      <label class="" for="{{ block.settings.pet_complaint1 }}">{{ block.settings.pet_complaint1 }}</label>
+                    </div>
+                    {% endif %}
+
+                    {% if block.settings.pet_complaint2 != blank %}
+                    <div class="pet-activity pet-{{ block.settings.pet_complaint2 }}">
+                      <input type="checkbox" name="pet_complaint" class="pet-complaint-radio" id="{{ block.settings.pet_complaint2 }}">
+                      <label class="" for="{{ block.settings.pet_complaint2 }}">{{ block.settings.pet_complaint2 }}</label>
+                    </div>
+                    {% endif %}
+
+                    {% if block.settings.pet_complaint3 != blank %}
+                    <div class="pet-activity pet-{{ block.settings.pet_complaint3 }}">
+                      <input type="checkbox" name="pet_complaint" class="pet-complaint-radio" id="{{ block.settings.pet_complaint3 }}">
+                      <label class="" for="{{ block.settings.pet_complaint3 }}">{{ block.settings.pet_complaint3 }}</label>
+                    </div>
+                    {% endif %}
+
+                    {% if block.settings.pet_complaint4 != blank %}
+                    <div class="pet-activity pet-{{ block.settings.pet_complaint4 }}">
+                      <input type="checkbox" name="pet_complaint" class="pet-complaint-radio" id="{{ block.settings.pet_complaint4 }}">
+                      <label class="" for="{{ block.settings.pet_complaint4 }}">{{ block.settings.pet_complaint4 }}</label>
+                    </div>
+                    {% endif %}
+
+                    {% if block.settings.pet_complaint5 != blank %}
+                    <div class="pet-activity pet-{{ block.settings.pet_complaint5 }}">
+                      <input type="checkbox" name="pet_complaint" class="pet-complaint-radio" id="{{ block.settings.pet_complaint5 }}">
+                      <label class="" for="{{ block.settings.pet_complaint5 }}">{{ block.settings.pet_complaint5 }}</label>
+                    </div>
+                    {% endif %}
                 
+                	{% if block.settings.pet_complaint6 != blank %}
+                    <div class="pet-activity pet-{{ block.settings.pet_complaint6 }}">
+                      <input type="checkbox" name="pet_complaint" class="pet-complaint-radio" id="{{ block.settings.pet_complaint6 }}">
+                      <label class="" for="{{ block.settings.pet_complaint6 }}">{{ block.settings.pet_complaint6 }}</label>
+                    </div>
+                    {% endif %}
+                
+                	{% if block.settings.pet_complaint7 != blank %}
+                    <div class="pet-activity pet-{{ block.settings.pet_complaint7 }}">
+                      <input type="checkbox" name="pet_complaint" class="pet-complaint-radio" id="{{ block.settings.pet_complaint7 }}">
+                      <label class="" for="{{ block.settings.pet_complaint7 }}">{{ block.settings.pet_complaint7 }}</label>
+                    </div>
+                    {% endif %}
+
+                    {% if block.settings.pet_complaint8 != blank %}
+                    <div class="pet-activity pet-{{ block.settings.pet_complaint8 }}">
+                      <input type="checkbox" name="pet_complaint" class="pet-complaint-radio" id="{{ block.settings.pet_complaint8 }}">
+                      <label class="" for="{{ block.settings.pet_complaint8 }}">{{ block.settings.pet_complaint8 }}</label>
+                    </div>
+                    {% endif %}
+
+                    {% if block.settings.pet_complaint9 != blank %}
+                    <div class="pet-activity pet-{{ block.settings.pet_complaint9 }}">
+                      <input type="checkbox" name="pet_complaint" class="pet-complaint-radio" id="{{ block.settings.pet_complaint9 }}">
+                      <label class="" for="{{ block.settings.pet_complaint9 }}">{{ block.settings.pet_complaint9 }}</label>
+                    </div>
+                    {% endif %}
+                
+                	{% if block.settings.pet_complaint10 != blank %}
+                    <div class="pet-activity pet-{{ block.settings.pet_complaint10 }}">
+                      <input type="checkbox" name="pet_complaint" class="pet-complaint-radio" id="{{ block.settings.pet_complaint10 }}">
+                      <label class="" for="{{ block.settings.pet_complaint10 }}">{{ block.settings.pet_complaint10 }}</label>
+                    </div>
+                    {% endif %}
+
+                  {% endif %}
+                {% endfor %}
               </div>
             </div>
           </div>
