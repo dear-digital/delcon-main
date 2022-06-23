@@ -326,6 +326,8 @@
       "pet_weight_unit": "kg",
       "pet_activity": "Activity",
       "pet_neutered": "Neutered\/Sterilized",
+      "pet_neutered_yes": "Yes",
+      "pet_neutered_no": "No",
       "pet_complaints": "Complaints",
       "add_pet": "Add Pet Profile",
       "edit_pet": "Edit Pet Profile",
