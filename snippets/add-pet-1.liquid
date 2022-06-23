@@ -232,56 +232,57 @@
     });
     
     $('.pet-btn').click(function(e) {
-    e.preventDefault();
-    var data = new FormData($('form#custmeta')[0]);
-    
-    data.set("metafield[customer.pet_type]",$('.pet-type.selected .pet-type-radio').attr('id'));
-    data.set("metafield[customer.pet_gender]",$('.pet-gender-info.selected .pet-gender-radio').attr('id'));
-    data.set("metafield[customer.pet_neutered]",$('.pet-neutered.selected .pet-neutered-radio').attr('id'));
-    data.set("metafield[customer.pet_activity]",$('.pet-activity.selected .pet-activity-radio').attr('id'));
+      e.preventDefault();
+      var formData = new FormData($('form#custmeta')[0]);
+
+      formData.set("metafield[customer.pet_type]",$('.pet-type.selected .pet-type-radio').attr('id'));
+      formData.set("metafield[customer.pet_gender]",$('.pet-gender-info.selected .pet-gender-radio').attr('id'));
+      formData.set("metafield[customer.pet_neutered]",$('.pet-neutered.selected .pet-neutered-radio').attr('id'));
+      formData.set("metafield[customer.pet_activity]",$('.pet-activity.selected .pet-activity-radio').attr('id'));
+
+      var petComplaints = "";
+
+      $('.pet-complaint-checkbox:checked').each(function() {
+        var complaintId = $(this).attr("id");
+        petComplaints = petComplaints + complaintId + ", ";
+      });
+
+      petComplaints = petComplaints.substring(0,petComplaints.lastIndexOf(','));
+      console.log("Complaints : "+petComplaints);
+      formData.set("metafield[customer.pet_complaints]",petComplaints);
+
+      const value = Object.fromEntries(formData.entries());
+      console.log(value);
       
-    var petComplaints = "";
-      
-    $('.pet-complaint-checkbox:checked').each(function() {
-      var complaintId = $(this).attr("id");
-      petComplaints = petComplaints + complaintId + ", ";
+      $.ajax({
+        type: "POST",
+        dataType: "json",
+        data: formData,
+        url: "/a/custmeta",
+        success: function (data) {
+          var formValid = (data.status === 'OK');
+          if (formValid) {
+            var msgs = '';
+            for (var i=0;i<data.messages.length;i++) {
+              msgs += '-- ' + data.messages[i] + '\n';
+            }
+            if (msgs > '') {
+              alert('SUCCESS WITH MESSAGES:\n\n' + msgs);
+            }
+            else {
+              alert('SUCCESS!');
+            }
+          }
+          else {
+            alert('Status: ' + data.status + '\nMessage: ' + data.message);
+          }
+        },
+        error: function (jqXHR, textStatus, errorThrown) {
+          alert('AJAX or Server 500 error occurred');
+        }
+      });
+      return false;
     });
-    
-    petComplaints = petComplaints.substring(0,petComplaints.lastIndexOf(','));
-    console.log("Complaints : "+petComplaints);
-    data.set("metafield[customer.pet_complaints]",petComplaints);
-    
-    const value = Object.fromEntries(data.entries());
-    console.log(value);
-//     $.ajax({
-//       type: "POST",
-//       dataType: "json",
-//       data: $(this).serialize(),
-//       url: $(this).attr('action') /a/custmeta,
-//       success: function (data) {
-//         var formValid = (data.status === 'OK');
-//         if (formValid) {
-//           var msgs = '';
-//           for (var i=0;i<data.messages.length;i++) {
-//             msgs += '-- ' + data.messages[i] + '\n';
-//           }
-//           if (msgs > '') {
-//             alert('SUCCESS WITH MESSAGES:\n\n' + msgs);
-//           }
-//           else {
-//             alert('SUCCESS!');
-//           }
-//         }
-//         else {
-//           alert('Status: ' + data.status + '\nMessage: ' + data.message);
-//         }
-//       },
-//       error: function (jqXHR, textStatus, errorThrown) {
-//         alert('AJAX or Server 500 error occurred');
-//       }
-//     });
-//     return false;
-  });
   });
   
 </script>
