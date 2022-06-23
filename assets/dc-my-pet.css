@@ -150,6 +150,7 @@
   align-items: center;
 }
 .pet-complaint .pet-complaint-checkbox {
-  width: auto;
-  margin: 0;
+  width: 16px;
+  height: 16px;
+  margin: 0 8px 0 0;
 }
