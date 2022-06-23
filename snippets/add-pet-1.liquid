@@ -229,33 +229,37 @@
   
   $('form#custmeta').submit(function(e) {
     e.preventDefault();
-    $.ajax({
-      type: "POST",
-      dataType: "json",
-      data: $(this).serialize(),
-      url: $(this).attr('action'),
-      success: function (data) {
-        var formValid = (data.status === 'OK');
-        if (formValid) {
-          var msgs = '';
-          for (var i=0;i<data.messages.length;i++) {
-            msgs += '-- ' + data.messages[i] + '\n';
-          }
-          if (msgs > '') {
-            alert('SUCCESS WITH MESSAGES:\n\n' + msgs);
-          }
-          else {
-            alert('SUCCESS!');
-          }
-        }
-        else {
-          alert('Status: ' + data.status + '\nMessage: ' + data.message);
-        }
-      },
-      error: function (jqXHR, textStatus, errorThrown) {
-        alert('AJAX or Server 500 error occurred');
-      }
-    });
+    var data = new FormData($('form#custmeta')[0]);
+    console.log(data);
+    data.set("metafield[customer.pet_gender]",$('.pet-gender-info.selected .pet-gender-radio').attr('id'));
+    console.log(data);
+//     $.ajax({
+//       type: "POST",
+//       dataType: "json",
+//       data: $(this).serialize(),
+//       url: $(this).attr('action'),
+//       success: function (data) {
+//         var formValid = (data.status === 'OK');
+//         if (formValid) {
+//           var msgs = '';
+//           for (var i=0;i<data.messages.length;i++) {
+//             msgs += '-- ' + data.messages[i] + '\n';
+//           }
+//           if (msgs > '') {
+//             alert('SUCCESS WITH MESSAGES:\n\n' + msgs);
+//           }
+//           else {
+//             alert('SUCCESS!');
+//           }
+//         }
+//         else {
+//           alert('Status: ' + data.status + '\nMessage: ' + data.message);
+//         }
+//       },
+//       error: function (jqXHR, textStatus, errorThrown) {
+//         alert('AJAX or Server 500 error occurred');
+//       }
+//     });
     return false;
   });
 </script>
