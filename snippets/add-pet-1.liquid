@@ -5,7 +5,7 @@
         <span class="close-pet" data-form="addPet1">{% include 'icon-close-new' %}</span>
         <h2 class="tk-le-monde-livre-classic-byol text-center">{{ 'customer.pet_details.add_pet' | t }}</h2>
         
-        <form id="custmeta">
+        <form action="/a/custmeta" method="POST" id="custmeta">
           <div class="my-pet-form">
 
             <input type="hidden" id="customer_id" name="customer[id]" value="{{ customer.id }}" />
@@ -261,7 +261,7 @@
       $(this).addClass("selected");
     });
     
-    $('.pet-btn').click(function(e) {
+    $('form#custmeta').submit(function(e) {
       e.preventDefault();
       var formData = new FormData($('form#custmeta')[0]);
 
