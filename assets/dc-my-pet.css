@@ -139,9 +139,17 @@
 .my-pet-1 [type=radio]:checked+label:after, .my-pet-1 [type=radio]:not(:checked)+label:after {
   top: 8px;
 }
-.pet-type, .pet-gender-info, .pet-activity, .pet-neutered {
+.pet-type, .pet-gender-info, .pet-activity, .pet-neutered, .pet-complaint {
   margin-bottom: 8px;
 }
-.pet-type:last-child, .pet-gender-info:last-child, .pet-activity:last-child, .pet-neutered:last-child {
+.pet-type:last-child, .pet-gender-info:last-child, .pet-activity:last-child, .pet-neutered:last-child, .pet-complaint:last-child {
   margin-bottom: 16px;
+}
+.pet-complaint {
+  display: flex;
+  align-items: center;
+}
+.pet-complaint input[type="checekbox"] {
+  width: auto;
+  margin: 0;
 }
