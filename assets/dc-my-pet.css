@@ -154,3 +154,8 @@
   height: 16px;
   margin: 0 8px 0 0;
 }
+.pet-complaint label {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+}
