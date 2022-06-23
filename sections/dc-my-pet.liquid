@@ -28,7 +28,7 @@
                 <p class="pet-name tk-le-monde-livre-classic-byol">'{{ customer.metafields.customer.pet_name }}'
                   {% assign petGender = customer.metafields.customer.pet_gender | downcase | append: "-icon" %}
                   <span class="pet-gender">{% include petGender %}</span></p>
-                <a href="#" class="edit-pet-details" data-pet="myPet1">{{ 'customer.pet_details.change' | t }}</a>
+                <a href="#" class="edit-pet-details" data-form="addPet1">{{ 'customer.pet_details.change' | t }}</a>
               </div>
               <div class="pet-info">
                 <p class="pet-label">{{ 'customer.pet_details.pet_breed' | t }}</p>
@@ -57,7 +57,6 @@
             </div>
           </div>
         </div>
-        {% include "edit-pet-1" %}
         {% endif %}
         
         <a href="#" class="btn grey-btn add-pet add-pet-1 {% if customer.metafields.customer.pet_name != blank %}no-disp{% endif %}" data-add-pet="1">{{ 'customer.account.add_pet' | t }}</a>
@@ -80,7 +79,7 @@
                 <p class="pet-name tk-le-monde-livre-classic-byol">'{{ customer.metafields.customer.pet_name2 }}'
                   {% assign petGender = customer.metafields.customer.pet_gender2 | downcase | append: "-icon" %}
                   <span class="pet-gender">{% include petGender %}</span></p>
-                <a href="#" class="edit-pet-details" data-pet="myPet2">{{ 'customer.pet_details.change' | t }}</a>
+                <a href="#" class="edit-pet-details" data-pet="addPet2">{{ 'customer.pet_details.change' | t }}</a>
               </div>
               <div class="pet-info">
                 <p class="pet-label">{{ 'customer.pet_details.pet_breed' | t }}</p>
@@ -109,7 +108,6 @@
             </div>
           </div>
         </div>
-        {% include "edit-pet-2" %}
         {% endif %}
         
         <a href="#" class="btn grey-btn add-pet add-pet-2 {% if customer.metafields.customer.pet_name != blank and customer.metafields.customer.pet_name2 == blank %}{% else %}no-disp{% endif %}" data-add-pet="2">{{ 'customer.account.add_pet' | t }}</a>
@@ -122,7 +120,6 @@
 
 <script>
   $(document).ready(function() {
-    
     $('.add-pet-1').click(function() {
       $('#addPet1').css("display","block");
       $('#addPet1').parent().parent().css("opacity","1");
@@ -133,6 +130,13 @@
       $('#addPet2').css("display","block");
       $('#addPet2').parent().parent().css("opacity","1");
       $('#addPet2').parent().parent().css("pointer-events","auto");
+	});
+    
+    $('.edit-pet-details').click(function() {
+      var petForm = $(this).data('form');
+      $('#'+petForm).css("display","block");
+      $('#'+petForm).parent().parent().css("opacity","1");
+      $('#'+petForm).parent().parent().css("pointer-events","auto");
 	});
     
     $(".close-pet, .cancel-edit").click(function() {
