@@ -258,7 +258,9 @@
       var customer = "{{ customer }}"
       
       console.log(typeof (formValue));
-      formValue.metafield[customer.pet_complaints] = formData.getAll("metafield[customer.pet_complaints]");
+      
+      var customerString = "metafield[customer.pet_complaints]";
+      formValue.customerString = formData.getAll("metafield[customer.pet_complaints]");
       
       console.log(formValue);
       console.log(formData.getAll("metafield[customer.pet_complaints]"));
