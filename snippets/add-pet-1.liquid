@@ -120,7 +120,8 @@
                 <label class="my-pet-info">{{ 'customer.pet_details.pet_complaints' | t }}</label>
                 {% for block in section.blocks %}
                   {% if block.type == "pet-complaints" %}
-
+					
+                	{{ customer.metafields.customer.pet_complaints }}
                     {% if block.settings.pet_complaint1 != blank %}
                     <div class="pet-complaint pet-{{ block.settings.pet_complaint1 | replace: " ","" | downcase }}">
                       <input type="checkbox" name="metafield[customer.pet_complaints]" {% if customer.metafields.customer.pet_complaints contains block.settings.pet_complaint1 %}checked{% endif %} class="pet-complaint-checkbox" id="{{ block.settings.pet_complaint1 }}" value="{{ block.settings.pet_complaint1 }}">
