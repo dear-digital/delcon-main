@@ -12,12 +12,12 @@
             <div class="row">
               <div class="column">
                 <label class="my-pet-info">{{ 'customer.pet_details.pet_name' | t }}</label>
-                <input type="text" name="metafield[customer.pet_name]" value="" id="{{ 'customer.pet_details.pet_name' | t }}" placeholder="{{ 'customer.pet_details.pet_name' | t }}" required />
+                <input type="text" name="metafield[customer.pet_name]" value="{{ customer.metafields.customer.pet_name }}" id="{{ 'customer.pet_details.pet_name' | t }}" placeholder="{{ 'customer.pet_details.pet_name' | t }}" required />
               </div>
-<!--               <div class="column">
+              <div class="column">
                 <label class="my-pet-info">{{ 'customer.pet_details.pet_dob' | t }}</label>
-                <input type="date" name="metafield[customer.pet_dob]" value="" id="{{ 'customer.pet_details.pet_dob' | t }}" placeholder="{{ 'customer.pet_details.pet_dob' | t }}" required />
-              </div> -->
+                <input type="date" name="metafield[customer.pet_dob]" value="{{ customer.metafields.customer.pet_dob }}" id="{{ 'customer.pet_details.pet_dob' | t }}" placeholder="{{ 'customer.pet_details.pet_dob' | t }}" required />
+              </div>
             </div>
 
             
