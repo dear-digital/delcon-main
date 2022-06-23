@@ -114,5 +114,5 @@
   margin-bottom: 8px;
 }
 .pet-type:last-child, .pet-gender-info:last-child, .pet-activity:last-child, .pet-neutered:last-child {
-  margin-bottom: 8px;
+  margin-bottom: 16px;
 }
