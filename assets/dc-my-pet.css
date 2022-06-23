@@ -102,6 +102,7 @@
 /* width */
 .my-pet-form::-webkit-scrollbar {
   width: 4px;
+  border-radius: 4px;
 }
 
 /* Track */
