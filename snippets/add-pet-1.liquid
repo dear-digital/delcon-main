@@ -9,25 +9,50 @@
           <div class="row">
             <div class="column">
               <label class="my-pet-info">{{ 'customer.pet_details.pet_name' | t }}</label>
-              <input type="text" name="metafield[customer.pet_name]" value="{{ customer.metafields.customer.pet_name }}" placeholder="{{ 'customer.pet_details.pet_name' | t }}" />
+              <input type="text" name="metafield[customer.pet_name]" value="" placeholder="{{ 'customer.pet_details.pet_name' | t }}" />
             </div>
             <div class="column">
               <label class="my-pet-info">{{ 'customer.pet_details.pet_dob' | t }}</label>
-              <input type="date" name="metafield[customer.pet_dob]" value="{{ customer.metafields.customer.pet_dob }}" placeholder="{{ 'customer.pet_details.pet_dob' | t }}" />
+              <input type="date" name="metafield[customer.pet_dob]" value="" placeholder="{{ 'customer.pet_details.pet_dob' | t }}" />
             </div>
           </div>
           
           <div class="row">
             <div class="column">
+              <label class="my-pet-info">{{ 'customer.pet_details.pet_type' | t }}</label>
+              <div class="pet-type pet-dog selected">
+                <input type="radio" name="metafield[customer.pet_type]" checked="checked" class="pet-type-radio" id="{{ 'customer.pet_details.pet_dog' | t }}">
+                <label class="" for="{{ 'customer.pet_details.pet_dog' | t }}">{{ 'customer.pet_details.pet_dog' | t }}</label>
+              </div>
+              <div class="pet-type pet-cat">
+                <input type="radio" name="metafield[customer.pet_type]" class="pet-type-radio" id="{{ 'customer.pet_details.pet_female' | t }}">
+                <label class="" for="{{ 'customer.pet_details.pet_cat' | t }}">{{ 'customer.pet_details.pet_female' | t }}</label>
+              </div>
+            </div>
+            <div class="column">
               <label class="my-pet-info">{{ 'customer.pet_details.pet_gender' | t }}</label>
               <div class="pet-gender pet-male selected">
-                <input type="radio" name="metafield[customer.pet_gender]" checked="checked" class="pet-gender-radio" id="{{ 'customer.pet_details.pet_male' | t }}" value="{{ customer.metafields.customer.pet_gender }}">
+                <input type="radio" name="metafield[customer.pet_gender]" checked="checked" class="pet-gender-radio" id="{{ 'customer.pet_details.pet_male' | t }}">
                 <label class="" for="{{ 'customer.pet_details.pet_male' | t }}">{{ 'customer.pet_details.pet_male' | t }}</label>
               </div>
               <div class="pet-gender pet-female">
                 <input type="radio" name="metafield[customer.pet_gender]" class="pet-gender-radio" id="{{ 'customer.pet_details.pet_female' | t }}">
                 <label class="" for="{{ 'customer.pet_details.pet_female' | t }}">{{ 'customer.pet_details.pet_female' | t }}</label>
               </div>
+            </div>
+          </div>
+            
+          <div class="row">
+            <div class="column">
+              <label class="my-pet-info">{{ 'customer.pet_details.pet_gender' | t }}</label>
+              {% for block in section.blocks %}
+              	{% if block.type == "pet-activity" %}
+              	  <div class="pet-activity pet-{{ block.settinngs.pet_activity }} {% if forloop.first %}selected{% endif %}">
+                    <input type="radio" name="metafield[customer.pet_activity]" checked="checked" class="pet-activity-radio" id="{{ block.settinngs.pet_activity }}">
+                    <label class="" for="{{ block.settinngs.pet_activity }}">{{ block.settinngs.pet_activity }}</label>
+                  </div>
+                {% endif %}
+              {% endfor %}
             </div>
             <div class="column">
               <label class="my-pet-info">{{ 'customer.pet_details.pet_neutered' | t }}</label>
@@ -56,6 +81,11 @@
 <script>
   
   $(document).ready(function() {
+    $(".pet-type").click(function() {
+      $(".pet-type").removeClass("selected");
+      $(this).addClass("selected");
+    });
+    
     $(".pet-gender").click(function() {
       $(".pet-gender").removeClass("selected");
       $(this).addClass("selected");
