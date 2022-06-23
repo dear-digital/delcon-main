@@ -3,12 +3,18 @@
     <div class="container">
       <div class="my-pet-1 rel" id="addPet1">
         <span class="close-pet" data-form="AddPet_{{ customer.id }}">{% include 'icon-close-new' %}</span>
-        <h2 class="tk-le-monde-livre-classic-byol text-center">{{ 'customer.pet_details.change' | t }}</h2>
+        <h2 class="tk-le-monde-livre-classic-byol text-center">{{ 'customer.pet_details.add_pet' | t }}</h2>
         <form action="/a/custmeta" method="POST" id="custmeta">  
           <input type="hidden" name="customer[id]" value="{{ customer.id }}" />
-          <input type="text" name="metafield[customer.pet_name]" value="{{ customer.metafields.customer.pet_name }}" placeholder="customer.pet_name" />
-          <input type="text" name="metafield[customer.pet_complaints]" value="{{ customer.metafields.customer.pet_complaints }}" placeholder="customer.pet_complaints" />
-          <input type="submit" />
+          <div class="row">
+            <div class="column">
+              <input type="text" name="metafield[customer.pet_name]" value="{{ customer.metafields.customer.pet_name }}" placeholder="{{ 'customer.pet_details.pet_name' | t }}" />
+            </div>
+            <div class="column">
+              <input type="date" name="metafield[customer.pet_dob]" value="{{ customer.metafields.customer.pet_dob }}" placeholder="{{ 'customer.pet_details.pet_dob' | t }}" />
+            </div>
+          </div>
+          <button type="submit" class="btn pet-btn">{{ 'customer.pet_details.add_pet' | t }}</button>
         </form>
       </div>
     </div>
