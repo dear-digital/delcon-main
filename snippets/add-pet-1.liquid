@@ -34,7 +34,7 @@
               </div>
               <div class="column">
                 <label class="my-pet-info">{{ 'customer.pet_details.pet_weight' | t }}</label>
-                <input type="number" name="metafield[customer.pet_weight]" value="" id="{{ 'customer.pet_details.pet_weight' | t }}" placeholder="{{ 'customer.pet_details.pet_weight' | t }} kg" required />
+                <input type="number" name="metafield[customer.pet_weight]" value="{{ customer.metafields.customer.pet_weight }}" id="{{ 'customer.pet_details.pet_weight' | t }}" placeholder="{{ 'customer.pet_details.pet_weight' | t }} kg" required />
               </div>
             </div>
             
