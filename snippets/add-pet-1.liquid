@@ -122,7 +122,6 @@
                   {% if block.type == "pet-complaints" %}
 					
                 	{% assign petComplaints = customer.metafields.customer.pet_complaints | split: ", " %}
-                	{{petComplaints}}
                     {% if block.settings.pet_complaint1 != blank %}
                     <div class="pet-complaint pet-{{ block.settings.pet_complaint1 | replace: " ","" | downcase }}">
                       <input type="checkbox" name="metafield[customer.pet_complaints]" {% if petComplaints contains block.settings.pet_complaint1 %}checked{% endif %} class="pet-complaint-checkbox" id="{{ block.settings.pet_complaint1 }}" value="{{ block.settings.pet_complaint1 }}">
@@ -238,25 +237,25 @@
       e.preventDefault();
       var formData = new FormData($('form#custmeta')[0]);
 
-      formData.set("metafield[customer.pet_weight]",parseInt($('#Weight').val()));
-      formData.set("metafield[customer.pet_type]",$('.pet-type.selected .pet-type-radio').attr('id'));
-      formData.set("metafield[customer.pet_gender]",$('.pet-gender-info.selected .pet-gender-radio').attr('id'));
-      formData.set("metafield[customer.pet_neutered]",$('.pet-neutered.selected .pet-neutered-radio').attr('id'));
-      formData.set("metafield[customer.pet_activity]",$('.pet-activity.selected .pet-activity-radio').attr('id'));
+//       formData.set("metafield[customer.pet_weight]",parseInt($('#Weight').val()));
+//       formData.set("metafield[customer.pet_type]",$('.pet-type.selected .pet-type-radio').attr('id'));
+//       formData.set("metafield[customer.pet_gender]",$('.pet-gender-info.selected .pet-gender-radio').attr('id'));
+//       formData.set("metafield[customer.pet_neutered]",$('.pet-neutered.selected .pet-neutered-radio').attr('id'));
+//       formData.set("metafield[customer.pet_activity]",$('.pet-activity.selected .pet-activity-radio').attr('id'));
 
-      var petComplaints = "";
+//       var petComplaints = "";
 
-      $('.pet-complaint-checkbox:checked').each(function() {
-        var complaintId = $(this).attr("id");
-        petComplaints = petComplaints + complaintId + ", ";
-      });
+//       $('.pet-complaint-checkbox:checked').each(function() {
+//         var complaintId = $(this).attr("id");
+//         petComplaints = petComplaints + complaintId + ", ";
+//       });
 
-      petComplaints = petComplaints.substring(0,petComplaints.lastIndexOf(','));
-      console.log("Complaints : "+petComplaints);
-      formData.set("metafield[customer.pet_complaints]",petComplaints);
+//       petComplaints = petComplaints.substring(0,petComplaints.lastIndexOf(','));
+//       console.log("Complaints : "+petComplaints);
+//       formData.set("metafield[customer.pet_complaints]",petComplaints);
 
-      const value = Object.fromEntries(formData.entries());
-      console.log(value);
+      var formValue = Object.fromEntries(formData.entries());
+      console.log(formValue);
       
 //       value.metafield[customer.pet_complaints] = formData.getAll("metafield[customer.pet_complaints]");
       console.log(formData.getAll("metafield[customer.pet_complaints]"));
@@ -264,7 +263,7 @@
       $.ajax({
         type: "POST",
         dataType: "json",
-        data: value,
+        data: formValue,
         url: $(this).attr('action'),
         success: function (data) {
           var formValid = (data.status === 'OK');
