@@ -20,22 +20,22 @@
           <div class="row">
             <div class="column">
               <label class="my-pet-info">{{ 'customer.pet_details.pet_gender' | t }}</label>
-              <div class="pet-gender">
-                <input type="radio" name="metafield[customer.pet_gender]" class="pet-gender-radio selected" id="{{ 'customer.pet_details.pet_male' | t }}" value="{{ customer.metafields.customer.pet_gender }}">
+              <div class="pet-gender pet-male selected">
+                <input type="radio" name="metafield[customer.pet_gender]" class="pet-gender-radio" id="{{ 'customer.pet_details.pet_male' | t }}" value="{{ customer.metafields.customer.pet_gender }}">
                 <label class="" for="{{ 'customer.pet_details.pet_male' | t }}">{{ 'customer.pet_details.pet_male' | t }}</label>
               </div>
-              <div class="pet-gender">
+              <div class="pet-gender pet-female">
                 <input type="radio" name="metafield[customer.pet_gender]" class="pet-gender-radio" id="{{ 'customer.pet_details.pet_female' | t }}">
                 <label class="" for="{{ 'customer.pet_details.pet_female' | t }}">{{ 'customer.pet_details.pet_female' | t }}</label>
               </div>
             </div>
             <div class="column">
               <label class="my-pet-info">{{ 'customer.pet_details.pet_neutered' | t }}</label>
-              <div class="pet-neutered">
-                <input type="radio" name="metafield[customer.pet_neutered]" class="pet-neutered-radio selected" id="{{ 'customer.pet_details.pet_neutered_yes' | t }}">
+              <div class="pet-neutered pet-neutered-yes selected">
+                <input type="radio" name="metafield[customer.pet_neutered]" class="pet-neutered-radio" id="{{ 'customer.pet_details.pet_neutered_yes' | t }}">
                 <label class="" for="{{ 'customer.pet_details.pet_neutered_yes' | t }}">{{ 'customer.pet_details.pet_neutered_yes' | t }}</label>
               </div>
-              <div class="pet-neutered">
+              <div class="pet-neutered pet-neutered-no">
                 <input type="radio" name="metafield[customer.pet_neutered]" class="pet-neutered-radio" id="{{ 'customer.pet_details.pet_neutered_no' | t }}">
                 <label class="" for="{{ 'customer.pet_details.pet_neutered_no' | t }}">{{ 'customer.pet_details.pet_neutered_no' | t }}</label>
               </div>
