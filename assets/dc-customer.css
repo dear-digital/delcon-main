@@ -324,7 +324,7 @@
   height: 24px;
   cursor: pointer;
 }
-.close-address svg {
+.close-address svg, .close-pet svg {
   width: 24px;
   height: 24px;
 }
