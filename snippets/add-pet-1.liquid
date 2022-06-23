@@ -229,9 +229,10 @@
     $('form#custmeta').submit(function(e) {
     e.preventDefault();
     var data = new FormData($('form#custmeta')[0]);
-    console.log(data);
+    const value = Object.fromEntries(data.entries());
+    console.log(value);
     data.set("metafield[customer.pet_gender]",$('.pet-gender-info.selected .pet-gender-radio').attr('id'));
-    console.log(data);
+    console.log(value);
 //     $.ajax({
 //       type: "POST",
 //       dataType: "json",
