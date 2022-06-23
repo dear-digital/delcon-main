@@ -23,11 +23,11 @@
             <div class="row">
               <div class="column">
                 <label class="my-pet-info">{{ 'customer.pet_details.pet_gender' | t }}</label>
-                <div class="pet-gender-info pet-male selected">
+                <div class="pet-gender-info pet-male {% if customer.metafields.customer.pet_gender == "Male" or customer.metafields.customer.pet_gender == blank %}selected{% endif %}">
                   <input type="radio" name="metafield[customer.pet_gender]" {% if customer.metafields.customer.pet_gender == "Male" or customer.metafields.customer.pet_gender == blank %}checked="checked"{% endif %} class="pet-gender-radio" id="{{ 'customer.pet_details.pet_male' | t }}" value="Male">
                   <label class="" for="{{ 'customer.pet_details.pet_male' | t }}">{{ 'customer.pet_details.pet_male' | t }}</label>
                 </div>
-                <div class="pet-gender-info pet-female">
+                <div class="pet-gender-info pet-female {% if customer.metafields.customer.pet_gender == "Female" %}selected{% endif %}">
                   <input type="radio" name="metafield[customer.pet_gender]" {% if customer.metafields.customer.pet_gender == "Female" %}checked="checked"{% endif %} class="pet-gender-radio" id="{{ 'customer.pet_details.pet_female' | t }}" value="Female">
                   <label class="" for="{{ 'customer.pet_details.pet_female' | t }}">{{ 'customer.pet_details.pet_female' | t }}</label>
                 </div>
@@ -47,11 +47,11 @@
                 <div class="row">
                   <div class="column">
                     <label class="my-pet-info">{{ 'customer.pet_details.pet_type' | t }}</label>
-                    <div class="pet-type pet-dog selected">
+                    <div class="pet-type pet-dog {% if customer.metafields.customer.pet_type == "Dog" or customer.metafields.customer.pet_type == blank %}selected{% endif %}">
                       <input type="radio" name="metafield[customer.pet_type]" {% if customer.metafields.customer.pet_type == "Dog" or customer.metafields.customer.pet_type == blank %}checked="checked"{% endif %} class="pet-type-radio" id="{{ 'customer.pet_details.pet_dog' | t }}" value="Dog">
                       <label class="" for="{{ 'customer.pet_details.pet_dog' | t }}">{{ 'customer.pet_details.pet_dog' | t }}</label>
                     </div>
-                    <div class="pet-type pet-cat">
+                    <div class="pet-type pet-cat {% if customer.metafields.customer.pet_type == "Cat" %}selected{% endif %}">
                       <input type="radio" name="metafield[customer.pet_type]" {% if customer.metafields.customer.pet_type == "Cat" %}checked="checked"{% endif %} class="pet-type-radio" id="{{ 'customer.pet_details.pet_cat' | t }}" value="Cat">
                       <label class="" for="{{ 'customer.pet_details.pet_cat' | t }}">{{ 'customer.pet_details.pet_cat' | t }}</label>
                     </div>
@@ -59,11 +59,11 @@
                 
                   <div class="column">
                     <label class="my-pet-info">{{ 'customer.pet_details.pet_neutered' | t }}</label>
-                    <div class="pet-neutered pet-neutered-yes selected">
+                    <div class="pet-neutered pet-neutered-yes {% if customer.metafields.customer.pet_neutered == "Yes" or customer.metafields.customer.pet_neutered == blank %}selected{% endif %}">
                       <input type="radio" name="metafield[customer.pet_neutered]" {% if customer.metafields.customer.pet_neutered == "Yes" or customer.metafields.customer.pet_neutered == blank %}checked="checked"{% endif %} class="pet-neutered-radio" id="{{ 'customer.pet_details.pet_neutered_yes' | t }}" value="Yes">
                       <label class="" for="{{ 'customer.pet_details.pet_neutered_yes' | t }}">{{ 'customer.pet_details.pet_neutered_yes' | t }}</label>
                     </div>
-                    <div class="pet-neutered pet-neutered-no">
+                    <div class="pet-neutered pet-neutered-no {% if customer.metafields.customer.pet_neutered == "No" %}selected{% endif %}">
                       <input type="radio" name="metafield[customer.pet_neutered]" {% if customer.metafields.customer.pet_neutered == "No" %}checked="checked"{% endif %} class="pet-neutered-radio" id="{{ 'customer.pet_details.pet_neutered_no' | t }}" value="No">
                       <label class="" for="{{ 'customer.pet_details.pet_neutered_no' | t }}">{{ 'customer.pet_details.pet_neutered_no' | t }}</label>
                     </div>
@@ -79,35 +79,35 @@
                   {% if block.type == "pet-activity" %}
 
                     {% if block.settings.pet_activity1 != blank %}
-                    <div class="pet-activity pet-{{ block.settings.pet_activity1 | replace: " ","" | downcase }} selected">
+                    <div class="pet-activity pet-{{ block.settings.pet_activity1 | replace: " ","" | downcase }} {% if customer.metafields.customer.pet_activity == block.settings.pet_activity1 or customer.metafields.customer.pet_activity == blank %}selected{% endif %}">
                       <input type="radio" name="metafield[customer.pet_activity]" {% if customer.metafields.customer.pet_activity == block.settings.pet_activity1 or customer.metafields.customer.pet_activity == blank %}checked="checked"{% endif %} class="pet-activity-radio" id="{{ block.settings.pet_activity1 }}" value="{{ block.settings.pet_activity1 }}">
                       <label class="" for="{{ block.settings.pet_activity1 }}">{{ block.settings.pet_activity1 }}</label>
                     </div>
                     {% endif %}
 
                     {% if block.settings.pet_activity2 != blank %}
-                    <div class="pet-activity pet-{{ block.settings.pet_activity2 | replace: " ","" | downcase }}">
+                    <div class="pet-activity pet-{{ block.settings.pet_activity2 | replace: " ","" | downcase }} {% if customer.metafields.customer.pet_activity == block.settings.pet_activity2 %}selected{% endif %}">
                       <input type="radio" name="metafield[customer.pet_activity]" {% if customer.metafields.customer.pet_activity == block.settings.pet_activity2 %}checked="checked"{% endif %} class="pet-activity-radio" id="{{ block.settings.pet_activity2 }}" value="{{ block.settings.pet_activity2 }}">
                       <label class="" for="{{ block.settings.pet_activity2 }}">{{ block.settings.pet_activity2 }}</label>
                     </div>
                     {% endif %}
 
                     {% if block.settings.pet_activity3 != blank %}
-                    <div class="pet-activity pet-{{ block.settings.pet_activity3 | replace: " ","" | downcase }}">
+                    <div class="pet-activity pet-{{ block.settings.pet_activity3 | replace: " ","" | downcase }} {% if customer.metafields.customer.pet_activity == block.settings.pet_activity3 %}selected{% endif %}">
                       <input type="radio" name="metafield[customer.pet_activity]" {% if customer.metafields.customer.pet_activity == block.settings.pet_activity3 %}checked="checked"{% endif %} class="pet-activity-radio" id="{{ block.settings.pet_activity3 }}" value="{{ block.settings.pet_activity3 }}">
                       <label class="" for="{{ block.settings.pet_activity3 }}">{{ block.settings.pet_activity3 }}</label>
                     </div>
                     {% endif %}
 
                     {% if block.settings.pet_activity4 != blank %}
-                    <div class="pet-activity pet-{{ block.settings.pet_activity4 | replace: " ","" | downcase }}">
+                    <div class="pet-activity pet-{{ block.settings.pet_activity4 | replace: " ","" | downcase }} {% if customer.metafields.customer.pet_activity == block.settings.pet_activity4 %}selected{% endif %}">
                       <input type="radio" name="metafield[customer.pet_activity]" {% if customer.metafields.customer.pet_activity == block.settings.pet_activity4 %}checked="checked"{% endif %} class="pet-activity-radio" id="{{ block.settings.pet_activity4 }}" value="{{ block.settings.pet_activity4 }}">
                       <label class="" for="{{ block.settings.pet_activity4 }}">{{ block.settings.pet_activity4 }}</label>
                     </div>
                     {% endif %}
 
                     {% if block.settings.pet_activity5 != blank %}
-                    <div class="pet-activity pet-{{ block.settings.pet_activity5 | replace: " ","" | downcase }}">
+                    <div class="pet-activity pet-{{ block.settings.pet_activity5 | replace: " ","" | downcase }} {% if customer.metafields.customer.pet_activity == block.settings.pet_activity5 %}selected{% endif %}">
                       <input type="radio" name="metafield[customer.pet_activity]" {% if customer.metafields.customer.pet_activity == block.settings.pet_activity5 %}checked="checked"{% endif %} class="pet-activity-radio" id="{{ block.settings.pet_activity5 }}" value="{{ block.settings.pet_activity5 }}">
                       <label class="" for="{{ block.settings.pet_activity5 }}">{{ block.settings.pet_activity5 }}</label>
                     </div>
