@@ -282,6 +282,7 @@
       formData.set("metafield[customer.pet_complaints]",petComplaints);
 
       const value = Object.fromEntries(formData.entries());
+      console.log($(formData).serialize());
       console.log(value);
       
       addPet(formData);
