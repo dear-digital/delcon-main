@@ -243,16 +243,16 @@
 //       formData.set("metafield[customer.pet_neutered]",$('.pet-neutered.selected .pet-neutered-radio').attr('id'));
 //       formData.set("metafield[customer.pet_activity]",$('.pet-activity.selected .pet-activity-radio').attr('id'));
 
-//       var petComplaints = "";
+      var petComplaints = "";
 
-//       $('.pet-complaint-checkbox:checked').each(function() {
-//         var complaintId = $(this).attr("id");
-//         petComplaints = petComplaints + complaintId + ", ";
-//       });
+      $('.pet-complaint-checkbox:checked').each(function() {
+        var complaintId = $(this).attr("id");
+        petComplaints = petComplaints + complaintId + ", ";
+      });
 
-//       petComplaints = petComplaints.substring(0,petComplaints.lastIndexOf(','));
-//       console.log("Complaints : "+petComplaints);
-//       formData.set("metafield[customer.pet_complaints]",petComplaints);
+      petComplaints = petComplaints.substring(0,petComplaints.lastIndexOf(','));
+      console.log("Complaints : "+petComplaints);
+      formData.set("metafield[customer.pet_complaints]",petComplaints);
 
       var formValue = Object.fromEntries(formData.entries());
       var customer = "{{ customer }}"
