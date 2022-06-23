@@ -36,36 +36,6 @@
 
 <script>
   
-  function addPet(formData) {
-    $.ajax({
-      type: "POST",
-      dataType: "json",
-      data: $(formData).serialize(),
-      url: "/a/custmeta",
-      success: function (data) {
-        var formValid = (data.status === 'OK');
-        if (formValid) {
-          var msgs = '';
-          for (var i=0;i<data.messages.length;i++) {
-            msgs += '-- ' + data.messages[i] + '\n';
-          }
-          if (msgs > '') {
-            alert('SUCCESS WITH MESSAGES:\n\n' + msgs);
-          }
-          else {
-            alert('SUCCESS!');
-          }
-        }
-        else {
-          alert('Status: ' + data.status + '\nMessage: ' + data.message);
-        }
-      },
-      error: function (jqXHR, textStatus, errorThrown) {
-        alert('AJAX or Server 500 error occurred');
-      }
-    });
-  }
-  
   $(document).ready(function() {
     $(".pet-type").click(function() {
       $(".pet-type").removeClass("selected");
@@ -113,7 +83,34 @@
       console.log($(formData).serialize());
       console.log(value);
       
-      addPet(formData);
+      $.ajax({
+        type: "POST",
+        dataType: "json",
+        data: $(this).serialize(),
+        url: $(this).attr('action'),
+        success: function (data) {
+          var formValid = (data.status === 'OK');
+          if (formValid) {
+            var msgs = '';
+            for (var i=0;i<data.messages.length;i++) {
+              msgs += '-- ' + data.messages[i] + '\n';
+            }
+            if (msgs > '') {
+              alert('SUCCESS WITH MESSAGES:\n\n' + msgs);
+            }
+            else {
+              alert('SUCCESS!');
+            }
+          }
+          else {
+            alert('Status: ' + data.status + '\nMessage: ' + data.message);
+          }
+        },
+        error: function (jqXHR, textStatus, errorThrown) {
+          alert('AJAX or Server 500 error occurred');
+        }
+      });
+      return false;
     });
   });
   
