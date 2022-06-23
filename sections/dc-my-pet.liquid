@@ -28,7 +28,7 @@
                 <p class="pet-name tk-le-monde-livre-classic-byol">'{{ customer.metafields.customer.pet_name }}'
                   {% assign petGender = customer.metafields.customer.pet_gender | downcase | append: "-icon" %}
                   <span class="pet-gender">{% include petGender %}</span></p>
-                <a href="#" class="edit-pet-details">{{ 'customer.pet_details.change' | t }}</a>
+                <a href="#" class="edit-pet-details" data-pet="myPet1">{{ 'customer.pet_details.change' | t }}</a>
               </div>
               <div class="pet-info">
                 <p class="pet-label">{{ 'customer.pet_details.pet_breed' | t }}</p>
@@ -77,7 +77,7 @@
                 <p class="pet-name tk-le-monde-livre-classic-byol">'{{ customer.metafields.customer.pet_name2 }}'
                   {% assign petGender = customer.metafields.customer.pet_gender2 | downcase | append: "-icon" %}
                   <span class="pet-gender">{% include petGender %}</span></p>
-                <a href="#" class="edit-pet-details">{{ 'customer.pet_details.change' | t }}</a>
+                <a href="#" class="edit-pet-details" data-pet="myPet2">{{ 'customer.pet_details.change' | t }}</a>
               </div>
               <div class="pet-info">
                 <p class="pet-label">{{ 'customer.pet_details.pet_breed' | t }}</p>
@@ -106,6 +106,7 @@
             </div>
           </div>
         </div>
+        {% include "edit-pet-2" %}
         {% endif %}
         
         <a href="#" class="btn grey-btn add-pet">{{ 'customer.account.add_pet' | t }}</a>
