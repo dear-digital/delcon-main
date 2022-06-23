@@ -256,7 +256,7 @@
 
       var formValue = Object.fromEntries(formData.entries());
       
-      formValue.metafield[customer.pet_complaints] = formData.getAll("metafield[customer.pet_complaints]");
+      formValue."metafield[customer.pet_complaints]" = formData.getAll("metafield[customer.pet_complaints]");
       
       console.log(formValue);
       console.log(formData.getAll("metafield[customer.pet_complaints]"));
