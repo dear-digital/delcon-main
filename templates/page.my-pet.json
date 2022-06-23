@@ -10,6 +10,37 @@
     },
     "1655126762cd76199b": {
       "type": "dc-my-pet",
+      "blocks": {
+        "d35be29c-1289-4a6d-88dc-5f7b8bde4dbe": {
+          "type": "pet-activity",
+          "settings": {
+            "pet_activity1": "Zeer Rustig",
+            "pet_activity2": "Relaxed",
+            "pet_activity3": "Actief",
+            "pet_activity4": "Zeer Actief",
+            "pet_activity5": ""
+          }
+        },
+        "a445dbfc-1969-4e28-9e8d-6b22c753d368": {
+          "type": "pet-complaints",
+          "settings": {
+            "pet_complaint1": "Huid & Vacht",
+            "pet_complaint2": "Stress",
+            "pet_complaint3": "Andere",
+            "pet_complaint4": "",
+            "pet_complaint5": "",
+            "pet_complaint6": "",
+            "pet_complaint7": "",
+            "pet_complaint8": "",
+            "pet_complaint9": "",
+            "pet_complaint10": ""
+          }
+        }
+      },
+      "block_order": [
+        "d35be29c-1289-4a6d-88dc-5f7b8bde4dbe",
+        "a445dbfc-1969-4e28-9e8d-6b22c753d368"
+      ],
       "settings": {
       }
     }
