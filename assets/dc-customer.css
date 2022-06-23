@@ -385,3 +385,16 @@
   line-height: 24px;
   margin: 0 6px;
 }
+
+/* Pet Details Page CSS */
+.my-pet-1 .column {
+  flex-direction: column;
+}
+.my-pet-info {
+  display: block;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
