@@ -5,7 +5,7 @@
         <span class="close-pet" data-form="addPet1">{% include 'icon-close-new' %}</span>
         <h2 class="tk-le-monde-livre-classic-byol text-center">{{ 'customer.pet_details.add_pet' | t }}</h2>
         
-        <form action="/a/custmeta" method="POST" id="custmeta">
+        <form id="custmeta">
           <div class="my-pet-form">
 
             <input type="hidden" name="customer[id]" value="{{ customer.id }}" />
@@ -225,9 +225,8 @@
       $(".pet-neutered").removeClass("selected");
       $(this).addClass("selected");
     });
-  });
-  
-  $('form#custmeta').submit(function(e) {
+    
+    $('form#custmeta').submit(function(e) {
     e.preventDefault();
     var data = new FormData($('form#custmeta')[0]);
     console.log(data);
@@ -237,7 +236,7 @@
 //       type: "POST",
 //       dataType: "json",
 //       data: $(this).serialize(),
-//       url: $(this).attr('action'),
+//       url: $(this).attr('action') /a/custmeta,
 //       success: function (data) {
 //         var formValid = (data.status === 'OK');
 //         if (formValid) {
@@ -262,4 +261,6 @@
 //     });
     return false;
   });
+  });
+  
 </script>
