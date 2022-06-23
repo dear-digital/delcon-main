@@ -8,7 +8,7 @@
         <form action="/a/custmeta" method="POST" id="custmeta">
           <div class="my-pet-form">
 
-            <input type="hidden" id="customer_id" name="customer[id]" value="{{ customer.id }}" />
+            <input type="hidden" id="customer_id" name="customer[id]" value={{ customer.id }} />
             <div class="row">
               <div class="column">
                 <label class="my-pet-info">{{ 'customer.pet_details.pet_name' | t }}</label>
