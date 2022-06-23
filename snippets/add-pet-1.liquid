@@ -199,7 +199,7 @@
             
           <div class="flex-box justify-between align-center" style="margin-top: 8px;">
             <span class="cancel-edit" data-form="addPet1">{{ 'customer.addresses.cancel' | t }}</span>
-            <button type="submit" class="btn pet-btn">{{ 'customer.pet_details.add_pet' | t }}</button>
+            <button type="button" class="btn pet-btn">{{ 'customer.pet_details.add_pet' | t }}</button>
           </div>
           
         </form>
@@ -231,7 +231,7 @@
       $(this).addClass("selected");
     });
     
-    $('form#custmeta').submit(function(e) {
+    $('.pet-btn').click(function(e) {
     e.preventDefault();
     var data = new FormData($('form#custmeta')[0]);
     
@@ -242,7 +242,7 @@
       
     var petComplaints = "";
       
-      $('.pet-complaint-checkbox:checked').each(function() {
+    $('.pet-complaint-checkbox:checked').each(function() {
       var complaintId = $(this).attr("id");
       petComplaints = petComplaints + complaintId + ", ";
     });
