@@ -2,7 +2,7 @@
   <div class="modal">
     <div class="container">
       <div class="my-pet-1 rel" id="addPet2">
-        <span class="close-pet" data-form="AddPet_{{ customer.id }}">{% include 'icon-close-new' %}</span>
+        <span class="close-pet" data-form="addPet2">{% include 'icon-close-new' %}</span>
         <h2 class="tk-le-monde-livre-classic-byol text-center">{{ 'customer.pet_details.add_pet' | t }}</h2>
         <form action="/a/custmeta" method="POST" id="custmeta">  
           <input type="hidden" name="customer[id]" value="{{ customer.id }}" />
@@ -14,7 +14,12 @@
               <input type="date" name="metafield[customer.pet_dob2]" value="{{ customer.metafields.customer.pet_dob2 }}" placeholder="{{ 'customer.pet_details.pet_dob' | t }}" />
             </div>
           </div>
-          <button type="submit" class="btn pet-btn">{{ 'customer.pet_details.add_pet' | t }}</button>
+          
+          <div class="flex-box justify-between align-center" style="margin-top: 8px;">
+            <span class="cancel-edit" data-form="addPet2">{{ 'customer.addresses.cancel' | t }}</span>
+            <button type="submit" class="btn pet-btn">{{ 'customer.pet_details.add_pet' | t }}</button>
+          </div>
+         
         </form>
       </div>
     </div>
