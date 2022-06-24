@@ -444,11 +444,11 @@
   .account-logged-in, .order-address-wrapper {
     flex-direction: column;
   }
-  .account-logged-in .account-options-wrapper, .account-logged-in .account-details {
+  .account-logged-in .account-options-wrapper, .account-logged-in .account-details, .account-logged-in .address-details, .account-logged-in .pet-details-wrapper {
     width: 100%;
     max-width: none;
   }
-  .account-logged-in .account-details {
+  .account-logged-in .account-details, .account-logged-in .pet-details-wrapper {
     margin-top: 24px;
   }
   .ordered-product {
@@ -467,5 +467,8 @@
   .ordered-info .product-color {
     font-size: 12px;
     line-height: 16px;
+  }
+  .account-logged-in .address-details {
+    margin-top: 32px;
   }
 }
