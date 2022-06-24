@@ -438,6 +438,9 @@
   .account-logged-in .account-details {
     margin-top: 24px;
   }
+  .ordered-product {
+  	align-items: flex-start;
+  }
   .ordered-product-image {
     width: 101px;
     height: 101px;
