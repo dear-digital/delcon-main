@@ -71,9 +71,9 @@
               {% assign petTypeDog = 'customer.pet_details.pet_dog' | t %}
               {% assign petTypeCat = 'customer.pet_details.pet_cat' | t %}
               {% if customer.metafields.customer.pet_type2 contains petTypeDog %}
-              <img src="{{ "Dog_image.png" | asset_img_url: '150x' }}" class="pet-image" alt="{{ customer.metafields.customer.pet_name2 }}">
+              <img src="{{ "Dog_image.png" | asset_img_url: 'x600' }}" class="pet-image" alt="{{ customer.metafields.customer.pet_name2 }}">
               {% elsif customer.metafields.customer.pet_type2 contains petTypeCat %}
-              <img src="{{ "Cat_image.png" | asset_img_url: '150x' }}" class="pet-image" alt="{{ customer.metafields.customer.pet_name2 }}">
+              <img src="{{ "Cat_image.png" | asset_img_url: 'x600' }}" class="pet-image" alt="{{ customer.metafields.customer.pet_name2 }}">
               {% endif %}
             </div>
             <div class="pet-info-wrapper">
