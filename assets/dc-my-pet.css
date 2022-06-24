@@ -181,5 +181,8 @@
   }
   .pet-details {
   	margin-bottom: 16px;
-  }  
+  }
+  .add-pet {
+  	max-width: none;
+  }
 }
