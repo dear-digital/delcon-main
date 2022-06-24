@@ -428,7 +428,7 @@
 }
 
 @media (max-width: 560px) {
-  .account-logged-in {
+  .account-logged-in, .order-address-wrapper {
     flex-direction: column;
   }
   .account-logged-in .account-options-wrapper, .account-logged-in .account-details {
@@ -437,5 +437,12 @@
   }
   .account-logged-in .account-details {
     margin-top: 24px;
+  }
+  .ordered-product-image {
+    width: 101px;
+    height: 101px;
+  }
+  .ordered-info {
+  	flex-direction: column;
   }
 }
