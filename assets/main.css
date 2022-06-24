@@ -389,3 +389,15 @@ input:focus-visible, select:focus-visible, textarea:focus-visible {
     display: none!important;
   }
 }
+
+@media (min-width: 561px) and (max-width: 992px) {
+  .no-t {
+    display: none!important;
+  }
+}
+
+@media (max-width: 560px) {
+  .no-m {
+    display: none!important;
+  }
+}
