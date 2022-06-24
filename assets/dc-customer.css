@@ -406,7 +406,8 @@
   bottom: -2px;
   width: 0px;
   height: 2px;
-  background: #B499BF; 
+  background: #B499BF;
+  transition: all .3s ease-out;
 }
 .logout-link:hover {
   color: #B499BF;
