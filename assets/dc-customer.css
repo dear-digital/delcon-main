@@ -428,5 +428,14 @@
 }
 
 @media (max-width: 560px) {
-
+  .account-logged-in {
+    flex-direction: column;
+  }
+  .account-logged-in .account-options-wrapper, .account-logged-in .account-details {
+    width: 100%;
+    max-width: none;
+  }
+  .account-logged-in .account-details {
+    margin-top: 24px;
+  }
 }
