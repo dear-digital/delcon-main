@@ -161,6 +161,12 @@
 }
 
 @media (max-width: 992px) {
+  .pet-info .pet-value {
+    text-align: right;
+  }
+}
+
+@media (max-width: 560px) {
   .pet-flex-column {
 	flex-direction: column;
   }
@@ -173,4 +179,7 @@
   .pet-info-wrapper {
     width: 100%;
   }
+  .pet-details {
+  	margin-bottom: 16px;
+  }  
 }
