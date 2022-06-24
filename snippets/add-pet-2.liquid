@@ -240,8 +240,7 @@
       var petComplaints2 = "";
 
       $('.pet-complaint-checkbox:checked').each(function() {
-        var complaintId2 = $(this).attr("id")
-        complaintId2 = complaintId2.substring(0, complaintId2.length - 1);
+        var complaintId2 = $(this).attr("value");
         petComplaints2 = petComplaints2 + complaintId2 + ", ";
       });
 
