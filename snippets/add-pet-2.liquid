@@ -34,7 +34,7 @@
               </div>
               <div class="column">
                 <label class="my-pet-info">{{ 'customer.pet_details.pet_weight' | t }}</label>
-                <input type="number" name="metafield[customer.pet_weight2]" value="{{ customer.metafields.customer.pet_weight2 }}" id="{{ 'customer.pet_details.pet_weight' | t }}2" placeholder="{{ 'customer.pet_details.pet_weight' | t }} kg" required />
+                <input type="number" name="metafield[customer.pet_weight2]" min="10" value="{{ customer.metafields.customer.pet_weight2 }}" id="{{ 'customer.pet_details.pet_weight' | t }}2" placeholder="{{ 'customer.pet_details.pet_weight' | t }} kg" required />
               </div>
             </div>
             
@@ -124,70 +124,70 @@
                 	{% assign petComplaints = customer.metafields.customer.pet_complaints2 | split: ", " %}
                     {% if block.settings.pet_complaint1 != blank %}
                     <div class="pet-complaint pet-{{ block.settings.pet_complaint1 | replace: " ","" | downcase }}">
-                      <input type="checkbox" name="metafield[customer.pet_complaints2]" {% if petComplaints contains block.settings.pet_complaint1 %}checked{% endif %} class="pet-complaint-checkbox" id="{{ block.settings.pet_complaint1 }}2" value="{{ block.settings.pet_complaint1 }}">
+                      <input type="checkbox" name="metafield[customer.pet_complaints2]" {% if petComplaints contains block.settings.pet_complaint1 %}checked{% endif %} class="pet-complaint-checkbox2" id="{{ block.settings.pet_complaint1 }}2" value="{{ block.settings.pet_complaint1 }}">
                       <label class="" for="{{ block.settings.pet_complaint1 }}2">{{ block.settings.pet_complaint1 }}</label>
                     </div>
                     {% endif %}
 
                     {% if block.settings.pet_complaint2 != blank %}
                     <div class="pet-complaint pet-{{ block.settings.pet_complaint2 | replace: " ","" | downcase }}">
-                      <input type="checkbox" name="metafield[customer.pet_complaints2]" {% if petComplaints contains block.settings.pet_complaint2 %}checked{% endif %} class="pet-complaint-checkbox" id="{{ block.settings.pet_complaint2 }}2" value="{{ block.settings.pet_complaint2 }}">
+                      <input type="checkbox" name="metafield[customer.pet_complaints2]" {% if petComplaints contains block.settings.pet_complaint2 %}checked{% endif %} class="pet-complaint-checkbox2" id="{{ block.settings.pet_complaint2 }}2" value="{{ block.settings.pet_complaint2 }}">
                       <label class="" for="{{ block.settings.pet_complaint2 }}2">{{ block.settings.pet_complaint2 }}</label>
                     </div>
                     {% endif %}
 
                     {% if block.settings.pet_complaint3 != blank %}
                     <div class="pet-complaint pet-{{ block.settings.pet_complaint3 | replace: " ","" | downcase }}">
-                      <input type="checkbox" name="metafield[customer.pet_complaints2]" {% if petComplaints contains block.settings.pet_complaint3 %}checked{% endif %} class="pet-complaint-checkbox" id="{{ block.settings.pet_complaint3 }}2" value="{{ block.settings.pet_complaint3 }}">
+                      <input type="checkbox" name="metafield[customer.pet_complaints2]" {% if petComplaints contains block.settings.pet_complaint3 %}checked{% endif %} class="pet-complaint-checkbox2" id="{{ block.settings.pet_complaint3 }}2" value="{{ block.settings.pet_complaint3 }}">
                       <label class="" for="{{ block.settings.pet_complaint3 }}2">{{ block.settings.pet_complaint3 }}</label>
                     </div>
                     {% endif %}
 
                     {% if block.settings.pet_complaint4 != blank %}
                     <div class="pet-complaint pet-{{ block.settings.pet_complaint4 | replace: " ","" | downcase }}">
-                      <input type="checkbox" name="metafield[customer.pet_complaints2]" {% if petComplaints contains block.settings.pet_complaint4 %}checked="checked"{% endif %} class="pet-complaint-checkbox" id="{{ block.settings.pet_complaint4 }}2" value="{{ block.settings.pet_complaint4 }}">
+                      <input type="checkbox" name="metafield[customer.pet_complaints2]" {% if petComplaints contains block.settings.pet_complaint4 %}checked="checked"{% endif %} class="pet-complaint-checkbox2" id="{{ block.settings.pet_complaint4 }}2" value="{{ block.settings.pet_complaint4 }}">
                       <label class="" for="{{ block.settings.pet_complaint4 }}2">{{ block.settings.pet_complaint4 }}</label>
                     </div>
                     {% endif %}
 
                     {% if block.settings.pet_complaint5 != blank %}
                     <div class="pet-complaint pet-{{ block.settings.pet_complaint5 | replace: " ","" | downcase }}">
-                      <input type="checkbox" name="metafield[customer.pet_complaints2]" {% if petComplaints contains block.settings.pet_complaint5 %}checked="checked"{% endif %} class="pet-complaint-checkbox" id="{{ block.settings.pet_complaint5 }}2" value="{{ block.settings.pet_complaint5 }}">
+                      <input type="checkbox" name="metafield[customer.pet_complaints2]" {% if petComplaints contains block.settings.pet_complaint5 %}checked="checked"{% endif %} class="pet-complaint-checkbox2" id="{{ block.settings.pet_complaint5 }}2" value="{{ block.settings.pet_complaint5 }}">
                       <label class="" for="{{ block.settings.pet_complaint5 }}2">{{ block.settings.pet_complaint5 }}</label>
                     </div>
                     {% endif %}
                 
                 	{% if block.settings.pet_complaint6 != blank %}
                     <div class="pet-complaint pet-{{ block.settings.pet_complaint6 | replace: " ","" | downcase }}">
-                      <input type="checkbox" name="metafield[customer.pet_complaints2]" {% if petComplaints contains block.settings.pet_complaint6 %}checked="checked"{% endif %} class="pet-complaint-checkbox" id="{{ block.settings.pet_complaint6 }}2" value="{{ block.settings.pet_complaint6 }}">
+                      <input type="checkbox" name="metafield[customer.pet_complaints2]" {% if petComplaints contains block.settings.pet_complaint6 %}checked="checked"{% endif %} class="pet-complaint-checkbox2" id="{{ block.settings.pet_complaint6 }}2" value="{{ block.settings.pet_complaint6 }}">
                       <label class="" for="{{ block.settings.pet_complaint6 }}2">{{ block.settings.pet_complaint6 }}</label>
                     </div>
                     {% endif %}
                 
                 	{% if block.settings.pet_complaint7 != blank %}
                     <div class="pet-complaint pet-{{ block.settings.pet_complaint7 | replace: " ","" | downcase }}">
-                      <input type="checkbox" name="metafield[customer.pet_complaints2]" {% if petComplaints contains block.settings.pet_complaint7 %}checked="checked"{% endif %} class="pet-complaint-checkbox" id="{{ block.settings.pet_complaint7 }}2" value="{{ block.settings.pet_complaint7 }}">
+                      <input type="checkbox" name="metafield[customer.pet_complaints2]" {% if petComplaints contains block.settings.pet_complaint7 %}checked="checked"{% endif %} class="pet-complaint-checkbox2" id="{{ block.settings.pet_complaint7 }}2" value="{{ block.settings.pet_complaint7 }}">
                       <label class="" for="{{ block.settings.pet_complaint7 }}2">{{ block.settings.pet_complaint7 }}</label>
                     </div>
                     {% endif %}
 
                     {% if block.settings.pet_complaint8 != blank %}
                     <div class="pet-complaint pet-{{ block.settings.pet_complaint8 | replace: " ","" | downcase }}">
-                      <input type="checkbox" name="metafield[customer.pet_complaints2]" {% if petComplaints contains block.settings.pet_complaint8 %}checked="checked"{% endif %} class="pet-complaint-checkbox" id="{{ block.settings.pet_complaint8 }}2" value="{{ block.settings.pet_complaint8 }}">
+                      <input type="checkbox" name="metafield[customer.pet_complaints2]" {% if petComplaints contains block.settings.pet_complaint8 %}checked="checked"{% endif %} class="pet-complaint-checkbox2" id="{{ block.settings.pet_complaint8 }}2" value="{{ block.settings.pet_complaint8 }}">
                       <label class="" for="{{ block.settings.pet_complaint8 }}2">{{ block.settings.pet_complaint8 }}</label>
                     </div>
                     {% endif %}
 
                     {% if block.settings.pet_complaint9 != blank %}
                     <div class="pet-complaint pet-{{ block.settings.pet_complaint9 | replace: " ","" | downcase }}">
-                      <input type="checkbox" name="metafield[customer.pet_complaints2]" {% if petComplaints contains block.settings.pet_complaint9 %}checked="checked"{% endif %} class="pet-complaint-checkbox" id="{{ block.settings.pet_complaint9 }}2" value="{{ block.settings.pet_complaint9 }}">
+                      <input type="checkbox" name="metafield[customer.pet_complaints2]" {% if petComplaints contains block.settings.pet_complaint9 %}checked="checked"{% endif %} class="pet-complaint-checkbox2" id="{{ block.settings.pet_complaint9 }}2" value="{{ block.settings.pet_complaint9 }}">
                       <label class="" for="{{ block.settings.pet_complaint9 }}2">{{ block.settings.pet_complaint9 }}</label>
                     </div>
                     {% endif %}
                 
                 	{% if block.settings.pet_complaint10 != blank %}
                     <div class="pet-complaint pet-{{ block.settings.pet_complaint10 | replace: " ","" | downcase }}">
-                      <input type="checkbox" name="metafield[customer.pet_complaints2]" {% if petComplaints contains block.settings.pet_complaint10 %}checked="checked"{% endif %} class="pet-complaint-checkbox" id="{{ block.settings.pet_complaint10 }}2" value="{{ block.settings.pet_complaint10 }}">
+                      <input type="checkbox" name="metafield[customer.pet_complaints2]" {% if petComplaints contains block.settings.pet_complaint10 %}checked="checked"{% endif %} class="pet-complaint-checkbox2" id="{{ block.settings.pet_complaint10 }}2" value="{{ block.settings.pet_complaint10 }}">
                       <label class="" for="{{ block.settings.pet_complaint10 }}2">{{ block.settings.pet_complaint10 }}</label>
                     </div>
                     {% endif %}
@@ -239,7 +239,7 @@
 
       var petComplaints2 = "";
 
-      $('.pet-complaint-checkbox:checked').each(function() {
+      $('.pet-complaint-checkbox2:checked').each(function() {
         var complaintId2 = $(this).attr("value");
         petComplaints2 = petComplaints2 + complaintId2 + ", ";
       });
