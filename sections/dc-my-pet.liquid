@@ -29,7 +29,7 @@
                 <p class="pet-name tk-le-monde-livre-classic-byol">'{{ customer.metafields.customer.pet_name }}'
                   {% assign petGender = customer.metafields.customer.pet_gender | downcase | append: "-icon" %}
                   <span class="pet-gender">{% include petGender %}</span></p>
-                <a href="#" class="edit-pet-details" data-form="addPet1">{{ 'customer.pet_details.change' | t }}</a>
+                <a href="#" class="edit-pet-details no-m" data-form="addPet1">{{ 'customer.pet_details.change' | t }}</a>
               </div>
               <div class="pet-info">
                 <p class="pet-label">{{ 'customer.pet_details.pet_breed' | t }}</p>
@@ -56,6 +56,7 @@
                 <p class="pet-value">{{ customer.metafields.customer.pet_complaints }}</p>
               </div>
             </div>
+            <a href="#" class="edit-pet-details no-d no-t" data-form="addPet1">{{ 'customer.pet_details.change' | t }}</a>
           </div>
         </div>
         {% endif %}
