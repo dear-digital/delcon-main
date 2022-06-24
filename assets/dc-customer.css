@@ -431,6 +431,13 @@
 }
 
 @media (max-width: 560px) {
+  .customer {
+  	padding-top: 0;
+  }
+  .logout-link {
+    top: -24px;
+    right: 21px;
+  }
   .account-logged-in, .order-address-wrapper {
     flex-direction: column;
   }
