@@ -438,6 +438,9 @@
     top: -24px;
     right: 21px;
   }
+  .account-heading {
+    margin: 0 0 24px;
+  }
   .account-logged-in, .order-address-wrapper {
     flex-direction: column;
   }
