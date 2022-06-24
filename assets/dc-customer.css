@@ -471,4 +471,7 @@
   .account-logged-in .address-details {
     margin-top: 32px;
   }
+  .email-password-wrapper {
+  	flex-direction: column;
+  }
 }
