@@ -164,6 +164,9 @@
   .pet-info .pet-value {
     text-align: right;
   }
+  .pet-info .pet-label, .pet-info .pet-value {
+    word-break: break-word;
+  }
 }
 
 @media (max-width: 560px) {
