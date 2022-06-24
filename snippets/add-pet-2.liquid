@@ -4,22 +4,206 @@
       <div class="my-pet-1 rel" id="addPet2">
         <span class="close-pet" data-form="addPet2">{% include 'icon-close-new' %}</span>
         <h2 class="tk-le-monde-livre-classic-byol text-center">{{ 'customer.pet_details.add_pet' | t }}</h2>
-        <form action="/a/custmeta" method="POST" id="custmeta2">  
-          <input type="hidden" name="customer[id]" value="{{ customer.id }}" />
-          <div class="row">
-            <div class="column">
-              <input type="text" name="metafield[customer.pet_name2]" value="{{ customer.metafields.customer.pet_name2 }}" placeholder="{{ 'customer.pet_details.pet_name' | t }}" />
+        
+        <form action="/a/custmeta" method="POST" id="custmeta2">
+          <div class="my-pet-form">
+
+            <input type="hidden" id="customer_id2" name="customer[id]" value="{{ customer.id }}" />
+            <div class="row">
+              <div class="column">
+                <label class="my-pet-info">{{ 'customer.pet_details.pet_name' | t }}</label>
+                <input type="text" name="metafield[customer.pet_name2]" value="{{ customer.metafields.customer.pet_name2 }}" id="{{ 'customer.pet_details.pet_name' | t }}2" placeholder="{{ 'customer.pet_details.pet_name' | t }}" required />
+              </div>
+              <div class="column">
+                <label class="my-pet-info">{{ 'customer.pet_details.pet_dob' | t }}</label>
+                <input type="date" name="metafield[customer.pet_dob2]" value="{{ customer.metafields.customer.pet_dob2 }}" id="{{ 'customer.pet_details.pet_dob' | t }}2" placeholder="{{ 'customer.pet_details.pet_dob' | t }}" required />
+              </div>
             </div>
-            <div class="column">
-              <input type="date" name="metafield[customer.pet_dob2]" value="{{ customer.metafields.customer.pet_dob2 }}" placeholder="{{ 'customer.pet_details.pet_dob' | t }}" />
+
+            <div class="row">
+              <div class="column">
+                <label class="my-pet-info">{{ 'customer.pet_details.pet_gender' | t }}</label>
+                <div class="pet-gender-info pet-male {% if customer.metafields.customer.pet_gender2 == "Male" or customer.metafields.customer.pet_gender2 == blank %}selected{% endif %}">
+                  <input type="radio" name="metafield[customer.pet_gender2]" {% if customer.metafields.customer.pet_gender2 == "Male" or customer.metafields.customer.pet_gender2 == blank %}checked="checked"{% endif %} class="pet-gender-radio" id="{{ 'customer.pet_details.pet_male' | t }}2" value="Male">
+                  <label class="" for="{{ 'customer.pet_details.pet_male' | t }}2">{{ 'customer.pet_details.pet_male' | t }}</label>
+                </div>
+                <div class="pet-gender-info pet-female {% if customer.metafields.customer.pet_gender2 == "Female" %}selected{% endif %}">
+                  <input type="radio" name="metafield[customer.pet_gender2]" {% if customer.metafields.customer.pet_gender2 == "Female" %}checked="checked"{% endif %} class="pet-gender-radio" id="{{ 'customer.pet_details.pet_female' | t }}2" value="Female">
+                  <label class="" for="{{ 'customer.pet_details.pet_female' | t }}2">{{ 'customer.pet_details.pet_female' | t }}</label>
+                </div>
+              </div>
+              <div class="column">
+                <label class="my-pet-info">{{ 'customer.pet_details.pet_weight' | t }}</label>
+                <input type="number" name="metafield[customer.pet_weight2]" value="{{ customer.metafields.customer.pet_weight2 }}" id="{{ 'customer.pet_details.pet_weight' | t }}2" placeholder="{{ 'customer.pet_details.pet_weight' | t }} kg" required />
+              </div>
             </div>
+            
+            <div class="row">
+              <div class="column">
+                <label class="my-pet-info">{{ 'customer.pet_details.pet_breed' | t }}</label>
+                <input type="text" name="metafield[customer.pet_breed2]" value="{{ customer.metafields.customer.pet_breed2 }}" id="{{ 'customer.pet_details.pet_breed' | t }}2" placeholder="{{ 'customer.pet_details.pet_breed' | t }}" required />
+              </div>
+              <div class="column">
+                <div class="row">
+                  <div class="column">
+                    <label class="my-pet-info">{{ 'customer.pet_details.pet_type' | t }}</label>
+                    <div class="pet-type pet-dog {% if customer.metafields.customer.pet_type2 == "Dog" or customer.metafields.customer.pet_type2 == blank %}selected{% endif %}">
+                      <input type="radio" name="metafield[customer.pet_type2]" {% if customer.metafields.customer.pet_type2 == "Dog" or customer.metafields.customer.pet_type2 == blank %}checked="checked"{% endif %} class="pet-type-radio" id="{{ 'customer.pet_details.pet_dog' | t }}2" value="Dog">
+                      <label class="" for="{{ 'customer.pet_details.pet_dog' | t }}2">{{ 'customer.pet_details.pet_dog' | t }}</label>
+                    </div>
+                    <div class="pet-type pet-cat {% if customer.metafields.customer.pet_type2 == "Cat" %}selected{% endif %}">
+                      <input type="radio" name="metafield[customer.pet_type2]" {% if customer.metafields.customer.pet_type2 == "Cat" %}checked="checked"{% endif %} class="pet-type-radio" id="{{ 'customer.pet_details.pet_cat' | t }}2" value="Cat">
+                      <label class="" for="{{ 'customer.pet_details.pet_cat' | t }}2">{{ 'customer.pet_details.pet_cat' | t }}</label>
+                    </div>
+                  </div>
+                
+                  <div class="column">
+                    <label class="my-pet-info">{{ 'customer.pet_details.pet_neutered' | t }}</label>
+                    <div class="pet-neutered pet-neutered-yes {% if customer.metafields.customer.pet_neutered2 == "Yes" or customer.metafields.customer.pet_neutered2 == blank %}selected{% endif %}">
+                      <input type="radio" name="metafield[customer.pet_neutered2]" {% if customer.metafields.customer.pet_neutered2 == "Yes" or customer.metafields.customer.pet_neutered2 == blank %}checked="checked"{% endif %} class="pet-neutered-radio" id="{{ 'customer.pet_details.pet_neutered_yes' | t }}2" value="Yes">
+                      <label class="" for="{{ 'customer.pet_details.pet_neutered_yes' | t }}2">{{ 'customer.pet_details.pet_neutered_yes' | t }}</label>
+                    </div>
+                    <div class="pet-neutered pet-neutered-no {% if customer.metafields.customer.pet_neutered2 == "No" %}selected{% endif %}">
+                      <input type="radio" name="metafield[customer.pet_neutered2]" {% if customer.metafields.customer.pet_neutered2 == "No" %}checked="checked"{% endif %} class="pet-neutered-radio" id="{{ 'customer.pet_details.pet_neutered_no' | t }}2" value="No">
+                      <label class="" for="{{ 'customer.pet_details.pet_neutered_no' | t }}2">{{ 'customer.pet_details.pet_neutered_no' | t }}</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="row">
+              <div class="column">
+                <label class="my-pet-info">{{ 'customer.pet_details.pet_activity' | t }}</label>
+                {% for block in section.blocks %}
+                  {% if block.type == "pet-activity" %}
+
+                    {% if block.settings.pet_activity1 != blank %}
+                    <div class="pet-activity pet-{{ block.settings.pet_activity1 | replace: " ","" | downcase }} {% if customer.metafields.customer.pet_activity2 == block.settings.pet_activity1 or customer.metafields.customer.pet_activity2 == blank %}selected{% endif %}">
+                      <input type="radio" name="metafield[customer.pet_activity2]" {% if customer.metafields.customer.pet_activity2 == block.settings.pet_activity1 or customer.metafields.customer.pet_activity2 == blank %}checked="checked"{% endif %} class="pet-activity-radio" id="{{ block.settings.pet_activity1 }}2" value="{{ block.settings.pet_activity1 }}">
+                      <label class="" for="{{ block.settings.pet_activity1 }}2">{{ block.settings.pet_activity1 }}</label>
+                    </div>
+                    {% endif %}
+
+                    {% if block.settings.pet_activity2 != blank %}
+                    <div class="pet-activity pet-{{ block.settings.pet_activity2 | replace: " ","" | downcase }} {% if customer.metafields.customer.pet_activity2 == block.settings.pet_activity2 %}selected{% endif %}">
+                      <input type="radio" name="metafield[customer.pet_activity2]" {% if customer.metafields.customer.pet_activity2 == block.settings.pet_activity2 %}checked="checked"{% endif %} class="pet-activity-radio" id="{{ block.settings.pet_activity2 }}2" value="{{ block.settings.pet_activity2 }}">
+                      <label class="" for="{{ block.settings.pet_activity2 }}2">{{ block.settings.pet_activity2 }}</label>
+                    </div>
+                    {% endif %}
+
+                    {% if block.settings.pet_activity3 != blank %}
+                    <div class="pet-activity pet-{{ block.settings.pet_activity3 | replace: " ","" | downcase }} {% if customer.metafields.customer.pet_activity2 == block.settings.pet_activity3 %}selected{% endif %}">
+                      <input type="radio" name="metafield[customer.pet_activity2]" {% if customer.metafields.customer.pet_activity2 == block.settings.pet_activity3 %}checked="checked"{% endif %} class="pet-activity-radio" id="{{ block.settings.pet_activity3 }}2" value="{{ block.settings.pet_activity3 }}">
+                      <label class="" for="{{ block.settings.pet_activity3 }}2">{{ block.settings.pet_activity3 }}</label>
+                    </div>
+                    {% endif %}
+
+                    {% if block.settings.pet_activity4 != blank %}
+                    <div class="pet-activity pet-{{ block.settings.pet_activity4 | replace: " ","" | downcase }} {% if customer.metafields.customer.pet_activity2 == block.settings.pet_activity4 %}selected{% endif %}">
+                      <input type="radio" name="metafield[customer.pet_activity2]" {% if customer.metafields.customer.pet_activity2 == block.settings.pet_activity4 %}checked="checked"{% endif %} class="pet-activity-radio" id="{{ block.settings.pet_activity4 }}2" value="{{ block.settings.pet_activity4 }}">
+                      <label class="" for="{{ block.settings.pet_activity4 }}2">{{ block.settings.pet_activity4 }}</label>
+                    </div>
+                    {% endif %}
+
+                    {% if block.settings.pet_activity5 != blank %}
+                    <div class="pet-activity pet-{{ block.settings.pet_activity5 | replace: " ","" | downcase }} {% if customer.metafields.customer.pet_activity2 == block.settings.pet_activity5 %}selected{% endif %}">
+                      <input type="radio" name="metafield[customer.pet_activity2]" {% if customer.metafields.customer.pet_activity2 == block.settings.pet_activity5 %}checked="checked"{% endif %} class="pet-activity-radio" id="{{ block.settings.pet_activity5 }}2" value="{{ block.settings.pet_activity5 }}">
+                      <label class="" for="{{ block.settings.pet_activity5 }}2">{{ block.settings.pet_activity5 }}</label>
+                    </div>
+                    {% endif %}
+
+                  {% endif %}
+                {% endfor %}
+              </div>
+              <div class="column">
+                <label class="my-pet-info">{{ 'customer.pet_details.pet_complaints' | t }}</label>
+                {% for block in section.blocks %}
+                  {% if block.type == "pet-complaints" %}
+					
+                	{% assign petComplaints = customer.metafields.customer.pet_complaints2 | split: ", " %}
+                    {% if block.settings.pet_complaint1 != blank %}
+                    <div class="pet-complaint pet-{{ block.settings.pet_complaint1 | replace: " ","" | downcase }}">
+                      <input type="checkbox" name="metafield[customer.pet_complaints2]" {% if petComplaints contains block.settings.pet_complaint1 %}checked{% endif %} class="pet-complaint-checkbox" id="{{ block.settings.pet_complaint1 }}2" value="{{ block.settings.pet_complaint1 }}">
+                      <label class="" for="{{ block.settings.pet_complaint1 }}2">{{ block.settings.pet_complaint1 }}</label>
+                    </div>
+                    {% endif %}
+
+                    {% if block.settings.pet_complaint2 != blank %}
+                    <div class="pet-complaint pet-{{ block.settings.pet_complaint2 | replace: " ","" | downcase }}">
+                      <input type="checkbox" name="metafield[customer.pet_complaints2]" {% if petComplaints contains block.settings.pet_complaint2 %}checked{% endif %} class="pet-complaint-checkbox" id="{{ block.settings.pet_complaint2 }}2" value="{{ block.settings.pet_complaint2 }}">
+                      <label class="" for="{{ block.settings.pet_complaint2 }}2">{{ block.settings.pet_complaint2 }}</label>
+                    </div>
+                    {% endif %}
+
+                    {% if block.settings.pet_complaint3 != blank %}
+                    <div class="pet-complaint pet-{{ block.settings.pet_complaint3 | replace: " ","" | downcase }}">
+                      <input type="checkbox" name="metafield[customer.pet_complaints2]" {% if petComplaints contains block.settings.pet_complaint3 %}checked{% endif %} class="pet-complaint-checkbox" id="{{ block.settings.pet_complaint3 }}2" value="{{ block.settings.pet_complaint3 }}">
+                      <label class="" for="{{ block.settings.pet_complaint3 }}2">{{ block.settings.pet_complaint3 }}</label>
+                    </div>
+                    {% endif %}
+
+                    {% if block.settings.pet_complaint4 != blank %}
+                    <div class="pet-complaint pet-{{ block.settings.pet_complaint4 | replace: " ","" | downcase }}">
+                      <input type="checkbox" name="metafield[customer.pet_complaints2]" {% if petComplaints contains block.settings.pet_complaint4 %}checked="checked"{% endif %} class="pet-complaint-checkbox" id="{{ block.settings.pet_complaint4 }}2" value="{{ block.settings.pet_complaint4 }}">
+                      <label class="" for="{{ block.settings.pet_complaint4 }}2">{{ block.settings.pet_complaint4 }}</label>
+                    </div>
+                    {% endif %}
+
+                    {% if block.settings.pet_complaint5 != blank %}
+                    <div class="pet-complaint pet-{{ block.settings.pet_complaint5 | replace: " ","" | downcase }}">
+                      <input type="checkbox" name="metafield[customer.pet_complaints2]" {% if petComplaints contains block.settings.pet_complaint5 %}checked="checked"{% endif %} class="pet-complaint-checkbox" id="{{ block.settings.pet_complaint5 }}2" value="{{ block.settings.pet_complaint5 }}">
+                      <label class="" for="{{ block.settings.pet_complaint5 }}2">{{ block.settings.pet_complaint5 }}</label>
+                    </div>
+                    {% endif %}
+                
+                	{% if block.settings.pet_complaint6 != blank %}
+                    <div class="pet-complaint pet-{{ block.settings.pet_complaint6 | replace: " ","" | downcase }}">
+                      <input type="checkbox" name="metafield[customer.pet_complaints2]" {% if petComplaints contains block.settings.pet_complaint6 %}checked="checked"{% endif %} class="pet-complaint-checkbox" id="{{ block.settings.pet_complaint6 }}2" value="{{ block.settings.pet_complaint6 }}">
+                      <label class="" for="{{ block.settings.pet_complaint6 }}2">{{ block.settings.pet_complaint6 }}</label>
+                    </div>
+                    {% endif %}
+                
+                	{% if block.settings.pet_complaint7 != blank %}
+                    <div class="pet-complaint pet-{{ block.settings.pet_complaint7 | replace: " ","" | downcase }}">
+                      <input type="checkbox" name="metafield[customer.pet_complaints2]" {% if petComplaints contains block.settings.pet_complaint7 %}checked="checked"{% endif %} class="pet-complaint-checkbox" id="{{ block.settings.pet_complaint7 }}2" value="{{ block.settings.pet_complaint7 }}">
+                      <label class="" for="{{ block.settings.pet_complaint7 }}2">{{ block.settings.pet_complaint7 }}</label>
+                    </div>
+                    {% endif %}
+
+                    {% if block.settings.pet_complaint8 != blank %}
+                    <div class="pet-complaint pet-{{ block.settings.pet_complaint8 | replace: " ","" | downcase }}">
+                      <input type="checkbox" name="metafield[customer.pet_complaints2]" {% if petComplaints contains block.settings.pet_complaint8 %}checked="checked"{% endif %} class="pet-complaint-checkbox" id="{{ block.settings.pet_complaint8 }}2" value="{{ block.settings.pet_complaint8 }}">
+                      <label class="" for="{{ block.settings.pet_complaint8 }}2">{{ block.settings.pet_complaint8 }}</label>
+                    </div>
+                    {% endif %}
+
+                    {% if block.settings.pet_complaint9 != blank %}
+                    <div class="pet-complaint pet-{{ block.settings.pet_complaint9 | replace: " ","" | downcase }}">
+                      <input type="checkbox" name="metafield[customer.pet_complaints2]" {% if petComplaints contains block.settings.pet_complaint9 %}checked="checked"{% endif %} class="pet-complaint-checkbox" id="{{ block.settings.pet_complaint9 }}2" value="{{ block.settings.pet_complaint9 }}">
+                      <label class="" for="{{ block.settings.pet_complaint9 }}2">{{ block.settings.pet_complaint9 }}</label>
+                    </div>
+                    {% endif %}
+                
+                	{% if block.settings.pet_complaint10 != blank %}
+                    <div class="pet-complaint pet-{{ block.settings.pet_complaint10 | replace: " ","" | downcase }}">
+                      <input type="checkbox" name="metafield[customer.pet_complaints2]" {% if petComplaints contains block.settings.pet_complaint10 %}checked="checked"{% endif %} class="pet-complaint-checkbox" id="{{ block.settings.pet_complaint10 }}2" value="{{ block.settings.pet_complaint10 }}">
+                      <label class="" for="{{ block.settings.pet_complaint10 }}2">{{ block.settings.pet_complaint10 }}</label>
+                    </div>
+                    {% endif %}
+
+                  {% endif %}
+                {% endfor %}
+              </div>
+            </div>
+            
           </div>
-          
+            
           <div class="flex-box justify-between align-center" style="margin-top: 8px;">
             <span class="cancel-edit" data-form="addPet2">{{ 'customer.addresses.cancel' | t }}</span>
-            <button type="submit" class="btn pet-btn">{{ 'customer.pet_details.add_pet' | t }}</button>
+            <input type="submit" class="btn pet-btn" value="{{ 'customer.pet_details.add_pet' | t }}" />
           </div>
-         
+          
         </form>
       </div>
     </div>
@@ -27,35 +211,82 @@
 </div>
 
 <script>
-  $('form#custmeta2').submit(function(e) {
-    e.preventDefault();
-    $.ajax({
-      type: "POST",
-      dataType: "json",
-      data: $(this).serialize(),
-      url: $(this).attr('action'),
-      success: function (data) {
-        var formValid = (data.status === 'OK');
-        if (formValid) {
-          var msgs = '';
-          for (var i=0;i<data.messages.length;i++) {
-            msgs += '-- ' + data.messages[i] + '\n';
-          }
-          if (msgs > '') {
-            alert('SUCCESS WITH MESSAGES:\n\n' + msgs);
+  
+  $(document).ready(function() {
+    $(".pet-type").click(function() {
+      $(".pet-type").removeClass("selected");
+      $(this).addClass("selected");
+    });
+    
+    $(".pet-gender-info").click(function() {
+      $(".pet-gender-info").removeClass("selected");
+      $(this).addClass("selected");
+    });
+    
+    $(".pet-activity").click(function() {
+      $(".pet-activity").removeClass("selected");
+      $(this).addClass("selected");
+    });
+    
+    $(".pet-neutered").click(function() {
+      $(".pet-neutered").removeClass("selected");
+      $(this).addClass("selected");
+    });
+    
+    $('form#custmeta2').submit(function(e) {
+      e.preventDefault();
+      var formData2 = new FormData($('form#custmeta2')[0]);
+
+      var petComplaints2 = "";
+
+      $('.pet-complaint-checkbox:checked').each(function() {
+        var complaintId2 = $(this).attr("id")
+        complaintId2 = complaintId2.substring(0, complaintId2.length - 1);
+        petComplaints2 = petComplaints2 + complaintId2 + ", ";
+      });
+
+      petComplaints2 = petComplaints2.substring(0,petComplaints2.lastIndexOf(','));
+
+      formData2.set("metafield[customer.pet_complaints2]",petComplaints2);
+
+      var formValue2 = Object.fromEntries(formData2.entries());
+      
+      console.log(formValue2);
+      
+      $.ajax({
+        type: "POST",
+        dataType: "json",
+        data: formValue2,
+        url: $(this).attr('action'),
+        success: function (data) {
+          var formValid = (data.status === 'OK');
+          if (formValid) {
+            var msgs = '';
+            for (var i=0;i<data.messages.length;i++) {
+              msgs += '-- ' + data.messages[i] + '\n';
+            }
+            if (msgs > '') {
+              alert('SUCCESS WITH MESSAGES:\n\n' + msgs);
+            }
+            else {
+              alert('SUCCESS!');
+            }
           }
           else {
-            alert('SUCCESS!');
+            alert('Status: ' + data.status + '\nMessage: ' + data.message);
           }
+        },
+        error: function (jqXHR, textStatus, errorThrown) {
+          alert('AJAX or Server 500 error occurred');
         }
-        else {
-          alert('Status: ' + data.status + '\nMessage: ' + data.message);
-        }
-      },
-      error: function (jqXHR, textStatus, errorThrown) {
-        alert('AJAX or Server 500 error occurred');
-      }
+      });
+      
+      const myPetTimeout2 = setTimeout(function() {
+		window.location.reload(true);      
+      }, 2000);
+
+      return false;
     });
-    return false;
   });
+  
 </script>
