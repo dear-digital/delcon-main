@@ -297,6 +297,7 @@
   cursor: pointer;
   text-decoration: none;
   color: rgb(var(--color-base-accent-1));
+  transition: all .3s ease-out;
 }
 .edit-address:hover, .delete-address:hover, .cancel-edit:hover, .forgot-pass-link:hover {
   color: #B499BF;
@@ -384,4 +385,33 @@
   font-size: 16px;
   line-height: 24px;
   margin: 0 6px;
+}
+.logout-link {
+  position: absolute;
+  display: block;
+  top: -72px;
+  right: 25px;
+  width: fit-content;
+  width: -moz-fit-content;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: rgb(var(--color-base-accent-1));
+  transition: all .3s ease-out;
+}
+.logout-link:after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -2px;
+  width: 0px;
+  height: 2px;
+  background: #B499BF; 
+}
+.logout-link:hover {
+  color: #B499BF;
+}
+.logout-link:hover:after {
+  width: 100%;
+  left: 0%;
 }
