@@ -188,4 +188,7 @@
   .add-pet {
   	max-width: none;
   }
+  .edit-pet-details {
+  	margin: 24px 0 0 auto;
+  }
 }
