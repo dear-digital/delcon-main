@@ -41,7 +41,8 @@
                       <div class="ordered-info">
                         <span class="ordered-qty-box">{{ line_item.quantity }}</span>
                         <div>
-                          <div class="product-name">{{ line_item.title }}</div>
+                          <div class="product-name no-m">{{ line_item.title }}</div>
+                          <div class="product-name no-d no-t">{{ line_item.title | truncatewords: 2 }}</div>
                           <div class="product-color">{{ line_item.product.metafields.my_fields.extra_info }} - inhoud: {{ line_item.variant.title }}</div>
                           <div class="product-color">{{ line_item.final_price | money }}</div>
                         </div>
@@ -127,7 +128,8 @@
                     <div class="ordered-info">
                       <span class="ordered-qty-box">3</span>
                       <div>
-                        <div class="product-name">Assortment chews (12pcs x 12)</div>
+                        <div class="product-name no-m">Assortment chews (12pcs x 12)</div>
+                        <div class="product-name no-d no-t">Assortment chews (12pcs x 12)</div>
                         <div class="product-color"> - inhoud: Default Title</div>
                         <div class="product-color">€109,50</div>
                       </div>
