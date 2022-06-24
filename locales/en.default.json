@@ -327,7 +327,7 @@
       "pet_weight": "Weight",
       "pet_weight_unit": "kg",
       "pet_activity": "Activity",
-      "pet_neutered": "Neutered\/Sterilized",
+      "pet_neutered": "Neutered \/ Sterilized",
       "pet_neutered_yes": "Yes",
       "pet_neutered_no": "No",
       "pet_complaints": "Complaints",
