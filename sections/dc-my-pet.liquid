@@ -2,7 +2,8 @@
 {{ 'dc-my-pet.css' | asset_url | stylesheet_tag }}
 
 <div class="customer account">
-  <div class="container">
+  <div class="container rel">
+    <a href="{{ routes.account_logout_url }}" class="logout-link">{{ 'customer.log_out' | t }}</a>
     <div class="flex-box justify-between align-start">
       <div class="account-options-wrapper">
         <h1 class="account-heading tk-le-monde-livre-classic-byol">{{ 'customer.account.welcome_title' | t: name: customer.first_name }}</h1>
