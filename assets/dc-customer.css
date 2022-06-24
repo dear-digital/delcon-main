@@ -473,5 +473,9 @@
   }
   .email-password-wrapper {
   	flex-direction: column;
+    margin: 32px auto;
+  }
+  .email-password-wrapper .customer-address {
+  	margin-bottom: 0;
   }
 }
