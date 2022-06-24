@@ -416,3 +416,17 @@
   width: 100%;
   left: 0%;
 }
+
+@media (max-width: 992px) {
+  .login-wrapper {
+  	flex-direction: column;
+  }
+  .login-wrapper .customer-text-block {
+  	width: 100%;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 560px) {
+
+}
