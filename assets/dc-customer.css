@@ -246,6 +246,9 @@
 .order-subtotal-wrapper {
   margin-top: 24px;
 }
+.order-subtotal-wrapper .checkout-subtotal, .order-subtotal-wrapper .checkout-shipping {
+  margin-bottom: 12px;
+}
 
 /* Address Page CSS */
 .address-details {
@@ -450,5 +453,9 @@
   }
   .ordered-info {
   	flex-direction: column;
+  }
+  .ordered-info .product-color {
+    font-size: 12px;
+    line-height: 16px;
   }
 }
