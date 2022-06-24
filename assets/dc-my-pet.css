@@ -164,4 +164,13 @@
   .pet-flex-column {
 	flex-direction: column;
   }
+  .pet-image-wrapper {
+    width: 100%;
+    height: 100%;
+    margin-right: 0;
+    margin-bottom: 16px;
+  }
+  .pet-info-wrapper {
+    width: 100%;
+  }
 }
