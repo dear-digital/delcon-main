@@ -442,6 +442,9 @@
     width: 101px;
     height: 101px;
   }
+  .ordered-product-details {
+    width: calc(100% - 117px);
+  }
   .ordered-info {
   	flex-direction: column;
   }
