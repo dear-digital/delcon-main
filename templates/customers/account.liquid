@@ -96,8 +96,9 @@
               </div>
             </div>
         	{% endfor %}
-        	
-        	<div class="order-wrapper">
+          {%- else -%}
+            <p>{{ 'customer.orders.none' | t }}</p>
+            <div class="order-wrapper">
               <h2 class="accordion">Bestelnummer #1638 - Datum 31-5-2022 - €444,40<span class="symbol"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12">
                 <g id="Lines" transform="translate(-0.001 5)">
                   <line id="Line-1" y2="12" transform="translate(6.001 -5)" fill="none" stroke="#b499bf" stroke-linejoin="round" stroke-width="2"></line>
@@ -213,10 +214,8 @@
                   </div>
                 </div>
               </div>
-        </div>	
+            </div>	
         
-          {%- else -%}
-            <p>{{ 'customer.orders.none' | t }}</p>
           {%- endif -%}
 
           {%- if paginate.pages > 1 -%}
