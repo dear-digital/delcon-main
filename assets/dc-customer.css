@@ -486,7 +486,7 @@
     height: 100%;
   }
   .addresses .form-address-wrapper, #AddAddress .form-address-wrapper {
-    height: calc(100% - 160px);
+    height: calc(100% - 170px);
     padding-bottom: 20px;
     overflow: auto;
   }
