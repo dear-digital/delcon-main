@@ -286,7 +286,7 @@
   $(".delete-address").click(function() {
   	var addressId = $(this).data('form');
     Shopify.postLink('/account/addresses/'+addressId, {'parameters': {'_method': 'delete'}});
-    console.log("delete this form");
+    console.log("deleted this address");
   });
   
 </script>
