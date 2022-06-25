@@ -195,10 +195,21 @@
     height: 80vh;
     padding: 24px;
   }
+  .my-pet-1 form {
+    height: auto;
+  }
+  .my-pet-1 .my-pet-form {
+  	height: calc(100% - 160px);
+    padding-bottom: 20px;
+    overflow: auto;
+  }
   .my-pet-1 h2 {
     font-size: 24px;
     line-height: 33px;
     margin: 16px auto 24px;
+  }
+  .my-pet-1 .column {
+    width: 100%;
   }
   .pet-btn {
     max-width: none;
