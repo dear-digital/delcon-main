@@ -511,4 +511,8 @@
     width: 16px;
     height: 16px;
   }
+  .close-address svg, .close-pet svg {
+    width: 16px;
+    height: 16px;
+  }
 }
