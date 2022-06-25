@@ -428,9 +428,6 @@
   	width: 100%;
     margin: 0 auto;
   }
-  .addresses .form-address-wrapper, #AddAddress .form-address-wrapper {
-    overflow: auto;
-  }
 }
 
 @media (max-width: 560px) {
@@ -485,8 +482,13 @@
     height: 80vh;
     padding: 24px;
   }
+  .addresses form, #AddAddress form {
+    height: 100%;
+  }
   .addresses .form-address-wrapper, #AddAddress .form-address-wrapper {
-    height: calc(100% - 120px);
+    height: calc(100% - 160px);
+    padding-bottom: 20px;
+    overflow: auto;
   }
   .addresses h2, #AddAddress h2 {
     font-size: 24px;
@@ -501,6 +503,9 @@
   }
   .address-flex-column {
     flex-direction: column-reverse;
+    justify-content: flex-end;
+    margin-top: 16px !important;
+    height: auto;
   }
   .address-btn {
     max-width: none;
