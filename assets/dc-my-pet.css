@@ -203,12 +203,12 @@
     padding-bottom: 20px;
     overflow: auto;
   }
-  .pet-flex-column {
+/*   .pet-flex-column {
     margin-top: 16px !important;
     justify-content: flex-end;
     height: auto;
     flex-direction: column-reverse;
-  }
+  } */
   .my-pet-1 h2 {
     font-size: 24px;
     line-height: 33px;
