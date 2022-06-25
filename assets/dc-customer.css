@@ -481,11 +481,11 @@
   .email-password-wrapper .customer-address {
   	margin-bottom: 0;
   }
-  .addresses, #AddAddress, .my-pet-1 {
+  .addresses, #AddAddress {
     height: 80vh;
     padding: 24px;
   }
-  .addresses h2, #AddAddress h2, .my-pet-1 h2 {
+  .addresses h2, #AddAddress h2 {
     font-size: 24px;
     line-height: 33px;
     margin: 16px auto 24px;
@@ -499,19 +499,19 @@
   .address-flex-column {
     flex-direction: column-reverse;
   }
-  .address-btn, .pet-btn {
+  .address-btn {
     max-width: none;
   }
   .cancel-edit {
     margin: 16px auto 0;
   }
-  .close-address, .close-pet {
+  .close-address {
     top: 16px;
     right: 16px;
     width: 16px;
     height: 16px;
   }
-  .close-address svg, .close-pet svg {
+  .close-address svg {
     width: 16px;
     height: 16px;
   }
