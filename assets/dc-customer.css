@@ -428,7 +428,7 @@
   	width: 100%;
     margin: 0 auto;
   }
-  .addresses, #AddAddress, .my-pet-1 {
+  .addresses form, #AddAddress form {
     overflow: auto;
   }
 }
@@ -484,6 +484,9 @@
   .addresses, #AddAddress {
     height: 80vh;
     padding: 24px;
+  }
+  .addresses form, #AddAddress form {
+    height: calc(100% - 120px);
   }
   .addresses h2, #AddAddress h2 {
     font-size: 24px;
