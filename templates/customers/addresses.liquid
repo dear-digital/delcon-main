@@ -33,7 +33,7 @@
                 <div class="modal">
                   <div class="container">
                     <div class="addresses rel" id="EditAddress_{{ address.id }}">
-                      <span class="close-address" data-form="EditAddress_{{ address.id }}">{% include 'icon-close-new' %}</span>
+                      <span class="close-address no-m" data-form="EditAddress_{{ address.id }}">{% include 'icon-close-new' %}</span>
                       <h2 class="tk-le-monde-livre-classic-byol text-center">{{ 'customer.addresses.edit_address' | t }}</h2>
                       {%- form 'customer_address', address -%}
                       <div class="form-address-wrapper">
@@ -154,7 +154,7 @@
           <div class="modal">
             <div class="container">
               <div id="AddAddress" class="rel">
-                <span class="close-address" data-form="AddAddress">{% include 'icon-close-new' %}</span>
+                <span class="close-address no-m" data-form="AddAddress">{% include 'icon-close-new' %}</span>
                 <h2 id="AddressNewHeading" class="tk-le-monde-livre-classic-byol text-center">{{ 'customer.addresses.add_new' | t }}</h2>
                 {%- form 'customer_address', customer.new_address, aria-labelledBy: 'AddressNewHeading' -%}
                 <div class="form-address-wrapper">
