@@ -428,6 +428,9 @@
   	width: 100%;
     margin: 0 auto;
   }
+  .addresses, #AddAddress, .my-pet-1 {
+    overflow: auto;
+  }
 }
 
 @media (max-width: 560px) {
@@ -477,5 +480,8 @@
   }
   .email-password-wrapper .customer-address {
   	margin-bottom: 0;
+  }
+  .addresses, #AddAddress, .my-pet-1 {
+    height: 80vh;
   }
 }
