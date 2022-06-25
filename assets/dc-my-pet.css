@@ -196,12 +196,18 @@
     padding: 24px;
   }
   .my-pet-1 form {
-    height: auto;
+    height: 100%;
   }
   .my-pet-1 .my-pet-form {
   	height: calc(100% - 160px);
     padding-bottom: 20px;
     overflow: auto;
+  }
+  .pet-flex-column {
+    margin-top: 16px !important;
+    justify-content: flex-end;
+    height: auto;
+    flex-direction: column-reverse;
   }
   .my-pet-1 h2 {
     font-size: 24px;
@@ -213,6 +219,7 @@
   }
   .pet-btn {
     max-width: none;
+    margin-bottom: 0px;
   }
   .close-pet {
     top: 16px;
