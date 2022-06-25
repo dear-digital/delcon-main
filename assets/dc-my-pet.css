@@ -199,7 +199,7 @@
     height: 100%;
   }
   .my-pet-1 .my-pet-form {
-  	height: calc(100% - 160px);
+  	height: calc(100% - 170px);
     padding-bottom: 20px;
     overflow: auto;
   }
