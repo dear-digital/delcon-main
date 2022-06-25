@@ -507,7 +507,7 @@
     margin-top: 16px !important;
     height: auto;
   }
-  .address-btn {
+  .add-address-btn, .address-btn {
     max-width: none;
   }
   .cancel-edit {
