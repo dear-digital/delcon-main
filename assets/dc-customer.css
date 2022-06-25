@@ -496,4 +496,13 @@
   .row .column {
   	width: 100%;
   }
+  .address-flex-column {
+    flex-direction: column-reverse;
+  }
+  .address-btn, .pet-btn {
+    max-width: none;
+  }
+  .cancel-edit {
+    margin: 16px auto 0;
+  }
 }
