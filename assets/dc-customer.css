@@ -428,7 +428,7 @@
   	width: 100%;
     margin: 0 auto;
   }
-  .addresses form, #AddAddress form {
+  .addresses .form-address-wrapper, #AddAddress .form-address-wrapper {
     overflow: auto;
   }
 }
@@ -485,7 +485,7 @@
     height: 80vh;
     padding: 24px;
   }
-  .addresses form, #AddAddress form {
+  .addresses .form-address-wrapper, #AddAddress .form-address-wrapper {
     height: calc(100% - 120px);
   }
   .addresses h2, #AddAddress h2 {
