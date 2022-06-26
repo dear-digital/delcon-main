@@ -61,3 +61,48 @@
     text-align: left !important;
   }
 }
+
+
+/* css added by suchit on 22/06/2022 */
+
+.newsletter-desc {
+	padding : 0 10px;
+}
+
+@media(max-width: 992px){
+
+  .newsletter-wrapper {
+  	padding : 40px 0;
+  }
+  
+  .newsletter-title {
+    font-size: 24px;
+    line-height: 20px;
+  }
+  
+  .nl-input-group.flex-box {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .nl-submit-btn{
+    width: calc(100% - 80px);
+    padding: 12px 0 11px 0;
+    margin-top: 16px;
+  }
+
+  .newsletter-desc{
+    margin-bottom : 16px;
+  }
+}
+
+
+@media(max-width: 560px){
+  .nl-input{
+    width: 100%;
+  }
+  
+  .nl-submit-btn{
+    width: 100%;
+  }
+}
