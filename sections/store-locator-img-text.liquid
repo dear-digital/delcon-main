@@ -19,7 +19,8 @@
         {% include 'icon-play-button' %}
       </div>
       {% else %}
-      <div class="store-img" style="background: linear-gradient( 90deg, #FBFBFB 0%, #FBFBFB00 100% ), url({{ section.settings.section_image | img_url: 'x590' }}) no-repeat;background-position: top center;background-size: cover;" alt="{{ section.settings.section_title }} image" loading="lazy"></div>
+      <div class="store-img no-t-m" style="background: linear-gradient( 90deg, #FBFBFB 0%, #FBFBFB00 100% ), url({{ section.settings.section_image | img_url: 'x590' }}) no-repeat;background-position: top center;background-size: cover;" alt="{{ section.settings.section_title }} image" loading="lazy"></div>
+      <div class="store-img no-d" style="background: url({{ section.settings.section_image | img_url: 'x590' }}) no-repeat;background-position: top center;background-size: cover;" alt="{{ section.settings.section_title }} image" loading="lazy"></div>
       {% endif %}
     </div>
     <div class="text-block rel">
