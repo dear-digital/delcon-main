@@ -135,12 +135,13 @@
     margin-left : 0;
   }
   .product-card {
-    padding : 0;
+    padding: 0;
   }
-  .product-card-image{
+  .product-card-image {
     height : 100%;
   }
-  .featured-title{
+  .featured-title {
   	font-size : 24px;
+    line-height: 33px;
   }
 }
