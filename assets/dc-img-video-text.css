@@ -98,3 +98,34 @@
   line-height: 24px;
   letter-spacing: 0;
 }
+
+/* css added by suchit on 22/06/22 for mobile screen */
+
+@media(max-width: 992px){
+  .flex-box.image-text-wrapper {
+    flex-direction : column;
+  }
+  .image-text-wrapper .image-video-block{
+    width: 100%;
+    max-width: 100%;
+    height: 80vw;
+  }
+  .image-text-wrapper .text-block{
+    width: 100%;
+    padding: 24px;
+  }
+  .heading-text {
+  	font-size : 24px;
+    line-height : 42px;
+  }
+  
+}
+
+@media(max-width: 560px){
+  .image-text-wrapper .image-video-block{
+    height: 100vw;
+  }
+  .about-link.center{
+    margin: 24px auto 0;
+  }
+}
