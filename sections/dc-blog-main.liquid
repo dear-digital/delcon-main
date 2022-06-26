@@ -13,10 +13,11 @@
     <div class="articles flex-box">
       {% assign blogArticles = blog.articles | reverse %}
       {% for article in blogArticles %}
-      <div class="article product-card rel all{% for tag in article.tags %} {{ tag }}{% endfor %}">
-        <a href="{{ article.url }}" class="product-card-hover no-t-m">
+      <a href="{{ article.url }}" class="article product-card rel all{% for tag in article.tags %} {{ tag }}{% endfor %}">
+        
+        <div class="product-card-hover no-t-m">
           <button class="btn product-btn">{{ section.settings.meerInfo }}</button>
-        </a>
+        </div>
         <div class="article-image">
           <img src="{{ article.image.src | image_url: width: 388 }}">
         </div>
@@ -25,10 +26,11 @@
             <span class="article-tag{% for tag in article.tags %}{% if forloop.first != blank %} tag-exists{% endif %}{% endfor %}">{% for tag in article.tags %}{% if forloop.first %}{{ tag }}{% endif %}{% endfor %}</span>
             <span class="article-date">{{ article.created_at | date: "%d %B %Y" }}</span>
           </span>
-          <a href="{{ article.url }}" class="article-title">{{ article.title }}</a>
+          <div class="article-title">{{ article.title }}</div>
           <span class="article-desc no-t-m">{{ article.content | strip_html }}</span>
         </span>
-      </div>
+        
+      </a>
       {% endfor %}
     </div>
   </div>
