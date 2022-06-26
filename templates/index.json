@@ -7,14 +7,16 @@
           "type": "hero-cta",
           "settings": {
             "hero_cta_text": "Honden",
-            "hero_cta_link": "shopify:\/\/collections\/hondenvoer"
+            "hero_cta_link": "shopify:\/\/collections\/hondenvoer",
+            "isProefpakketten": false
           }
         },
         "acb9f6e3-0778-4839-bc89-062c2f2803a7": {
           "type": "hero-cta",
           "settings": {
             "hero_cta_text": "Katten",
-            "hero_cta_link": "shopify:\/\/collections\/kattenvoer"
+            "hero_cta_link": "shopify:\/\/collections\/kattenvoer",
+            "isProefpakketten": false
           }
         }
       },
@@ -211,7 +213,7 @@
       "type": "dc-newsletter",
       "settings": {
         "title": "Krijg nu 20% korting",
-        "desc": "Schrijf je in op onze nieuwsbrief en blijf op de hoogte van acties en promoties. 20% korting die je kan gebruiken bij je volgende aankoop in onze shop",
+        "desc": "Schrijf je in op onze nieuwsbrief en blijf op de hoogte van acties en promoties.<br> 20% korting die je kan gebruiken bij je volgende aankoop in onze shop",
         "email_placeholder": "Email adres",
         "subscribe_btn": "Send"
       }
