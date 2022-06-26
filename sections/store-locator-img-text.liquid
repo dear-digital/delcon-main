@@ -1,4 +1,5 @@
 {{ 'dc-img-video-text.css' | asset_url | stylesheet_tag }}
+{{ 'dc-store-img-text.css' | asset_url | stylesheet_tag }}
 
 <div class="image-video-text-block store-img-text">
   <div class="container">
@@ -19,7 +20,7 @@
               {% include 'icon-play-button' %}
             </div>
         {% else %}
-          <img src="{{ section.settings.section_image | img_url: 'x590' }}" alt="{{ section.settings.section_title }} image" loading="lazy">
+        	<div style="background: linear-gradient( 90deg, #FBFBFB 0%, #FBFBFB00 100% ), url({{ section.settings.section_image | img_url: 'x590' }}) no-repeat;background-position: top center;background-size: cover;" alt="{{ section.settings.section_title }} image" loading="lazy"></div>
         {% endif %}
       </div>
       <div class="text-block rel">
