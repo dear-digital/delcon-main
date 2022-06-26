@@ -58,26 +58,21 @@
   .nl-input{
     width: calc(100% - 80px);
   }
-  
   .newsletter-wrapper {
   	padding : 40px 0;
   }
-  
   .newsletter-title {
     font-size: 24px;
     line-height: 33px;
   }
-  
   .nl-input-group.flex-box {
     flex-direction: column;
     align-items: center;
   }
-  
   .nl-submit-btn{
     width: calc(100% - 80px);
     margin-top: 16px;
   }
-
   .newsletter-desc{
     margin-bottom : 16px;
   }
@@ -87,7 +82,6 @@
   .nl-input{
     width: 100%;
   }
-  
   .nl-submit-btn{
     width: 100%;
   }
