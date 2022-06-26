@@ -89,6 +89,7 @@
     padding: 40px 21px;
   }
   .contact-form-image {
+    position: relative;
   	top: auto;
     right: auto;
     width: auto;
