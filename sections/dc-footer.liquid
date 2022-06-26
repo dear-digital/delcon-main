@@ -65,6 +65,41 @@
           {% endfor %}
         </div>
         
+        <div class="no-d footer-upper-part address__social-icons">
+          <div class="footer-store-address">{{ section.settings.footer_address }}</div>
+
+          <div class="footer-social-wrap">
+            {% if settings.social_facebook_link != blank %}
+            <a href="{{ settings.social_facebook_link }}" class="social-icon" target="_blank" aria-label="Facebook logo" rel="noreferrer">{% render "icon-facebook" %}</a>
+            {% endif %}
+
+            {% if settings.social_instagram_link != blank %}
+            <a href="{{ settings.social_instagram_link }}" class="social-icon" target="_blank" aria-label="Instagram logo" rel="noreferrer">{% render "icon-instagram" %}</a>
+            {% endif %}
+
+            {% if settings.social_pinterest_link != blank %}
+            <a href="{{ settings.social_pinterest_link }}" class="social-icon" target="_blank" aria-label="Pinterest logo" rel="noreferrer">{% render "icon-pinterest" %}</a>
+            {% endif %}
+
+            {% if settings.social_twitter_link != blank %}
+            <a href="{{ settings.social_twitter_link }}" class="social-icon" target="_blank" aria-label="Twitter logo" rel="noreferrer">{% render "icon-twitter" %}</a>
+            {% endif %}
+
+            {% if settings.social_youtube_link != blank %}
+            <a href="{{ settings.social_youtube_link }}" class="social-icon" target="_blank" aria-label="Youtube logo" rel="noreferrer">{% render "icon-youtube" %}</a>
+            {% endif %}
+
+            {% for block in section.blocks %}
+            {% if block.type == 'social-media' %}
+            <span class="social-icon" onclick="copyToClipBoard(this.id)" id="social_{{ block.settings.social_media_title | downcase | replace: " ","_" }}2_icon" data-media="{{ block.settings.media_text_to_copy }}" aria-label="{{ block.settings.social_media_title }} icon">
+              <span class="tooltiptext" id="social_{{ block.settings.social_media_title | downcase | replace: " ","_" }}2_tooltip">{{ section.settings.copy_to_clipboard }}</span>
+              {{ block.settings.social_media_icon }}
+            </span>
+            {% endif %}
+            {% endfor %}
+          </div>
+        </div>
+        
         <div class="footer-nav-right">
           <div class="footer-upper-part">
             <p class="partners-text">{{ section.settings.partners_text }}</p>
