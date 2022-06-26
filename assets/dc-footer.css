@@ -122,6 +122,10 @@
 /* new css added by suchit on 22/06/22 */
 
 @media(max-width: 992px){
+  .footer-logo-img {
+    width: 102px;
+    height: 24px;
+  }
   .footer-nav-wrapper {
 	flex-direction: column;
   }
