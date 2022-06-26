@@ -141,7 +141,10 @@
     height : 100%;
   }
   .featured-title {
-  	font-size : 24px;
+  	font-size: 24px;
     line-height: 33px;
+  }
+  .featured-sub-title {
+    margin: 0 auto 16px;
   }
 }
