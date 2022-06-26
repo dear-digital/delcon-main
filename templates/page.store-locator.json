@@ -8,37 +8,6 @@
         "padding_bottom": 28
       }
     },
-    "16540687157d794388": {
-      "type": "dc-about-hero",
-      "settings": {
-        "hero_img": "shopify:\/\/shop_images\/Hero_image_2x_4f29c069-6109-4931-8af1-6987500ec5bb.png",
-        "hero_align": "center",
-        "hero_title": "Koop lokaal",
-        "hero_subtitle": "<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo<\/p><ul class=\"checked-list\">\n<li>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed<\/li>\n<li>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed<\/li>\n<li>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed<\/li>\n<\/ul>"
-      }
-    },
-    "165626989860ce7495": {
-      "type": "dc-img-video-text",
-      "settings": {
-        "background_color": "#fbfbfb",
-        "media_alignment": "right",
-        "section_type": "img_txt",
-        "section_image": "shopify:\/\/shop_images\/Hero_image_2x_4f29c069-6109-4931-8af1-6987500ec5bb.png",
-        "product_video": "",
-        "video_link": "",
-        "custom_logo": "",
-        "section_subtitle": "",
-        "section_title": "Koop lokaal",
-        "section_text": "<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo<\/p><ul class=\"checked-list\">\n<li>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed<\/li>\n<li>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed<\/li>\n<li>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed<\/li>\n<\/ul>",
-        "section_link": "",
-        "section_url": "",
-        "isProductFinder": false,
-        "isProefpakketten": false,
-        "proefpakketten_text": "",
-        "section_btn_text": "",
-        "section_btn_url": ""
-      }
-    },
     "165627177494ec373b": {
       "type": "store-locator-img-text",
       "settings": {
@@ -46,6 +15,7 @@
         "media_alignment": "right",
         "section_type": "img_txt",
         "section_image": "shopify:\/\/shop_images\/Hero_image_2x_4f29c069-6109-4931-8af1-6987500ec5bb.png",
+        "product_video": "",
         "video_link": "",
         "custom_logo": "",
         "section_subtitle": "",
@@ -78,8 +48,6 @@
   },
   "order": [
     "main",
-    "16540687157d794388",
-    "165626989860ce7495",
     "165627177494ec373b",
     "16540621309469cdcb",
     "1654081053cecec939"
