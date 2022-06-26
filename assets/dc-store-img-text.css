@@ -1,8 +1,26 @@
 .store-img-text {
   margin-top: 72px;
 }
+.store-img-text .image-video-block {
+  width: 50%;
+  max-width: none;
+  height: 45vw;
+  max-height: 80vh;
+}
 .store-img-text .store-img {
   display: block;
   width: 100%;
   height: 100%;
+}
+.store-img-text .text-block {
+  width: 50%;
+  max-width: 470px;
+  margin: 0 auto;
+}
+.store-img-text .heading-text {
+  width: 100%;
+  font-size: 56px;
+  line-height: 109px;
+  letter-spacing: 0;
+  margin: 0;
 }
