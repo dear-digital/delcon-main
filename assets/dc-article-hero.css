@@ -6,3 +6,9 @@
   background-size: cover;
   margin-bottom: 32px;
 }
+
+@media (max-width: 992px) {
+  .article-hero {
+    margin-bottom: 0;
+  }
+}
