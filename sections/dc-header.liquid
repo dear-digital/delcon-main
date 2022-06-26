@@ -23,7 +23,7 @@
     </nav>
     
     <nav class="right-nav">
-      <ul class="header-nav-list header-nav-list-small">
+      <ul class="header-nav-list header-nav-list-small no-t-m">
         {% for link in section.settings.header_right_menu.links %}
           <li class="no-t-m"><a href="{{ link.url }}">{{ link.title | escape }}</a></li>
         {% endfor %}
@@ -33,12 +33,6 @@
         <li class="round no-d"><a href="#" aria-label="cart-link" class="icon-item cart-toggler cart-items-total rel" onClick="return false;">{{ cart.item_count }}</a></li>
       </ul>
     </nav>
-    
-<!--     <div class="mobile_cart-toggler no-d">
-      <div class="round ">
-        
-      </div>
-    </div> -->
   </div>
 </header>
 
