@@ -130,6 +130,37 @@ $(document).ready(function(){
     ]
   });
   
+  mobileOnlySlider(".features-content", false , true , 560);
+
+  function mobileOnlySlider($slidername, $dots, $arrows, $breakpoint) {
+    var slider = $($slidername);
+    var settings = {
+      infinite: false,
+      mobileFirst: true,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      dots: $dots,
+      arrows: $arrows,
+      responsive: [
+        {
+          breakpoint: $breakpoint,
+          settings: "unslick"
+        }
+      ]
+    };
+
+    slider.slick(settings);
+
+    $(window).on("resize", function () {
+      if ($(window).width() > $breakpoint) {
+        return;
+      }
+      if (!slider.hasClass("slick-initialized")) {
+        return slider.slick(settings);
+      }
+    });
+  }
+  
   //remove added items from upsell 
 //   staticupsell.forEach(function(data,index){
 //     $('.upsell').slick('slickRemove', $(".upsell-product."+data).index());
