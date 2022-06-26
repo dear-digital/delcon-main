@@ -28,7 +28,9 @@
           <li class="no-t-m"><a href="{{ link.url }}">{{ link.title | escape }}</a></li>
         {% endfor %}
         <li class="no-t-m"><span href="{{ section.settings.header_btn_url }}" class="btn header-btn {% if section.settings.isProefpakketten == true %}btn-proefpakketten{% endif %}">{{ section.settings.header_btn_text }}</span></li>
-        <li class="no-d"><a href="#" aria-label="cart-link" class="icon-item cart-toggler cart-items-total rel" onClick="return false;">{{ cart.item_count }}</a></li>
+      </ul>
+      <ul class="announcement-bar-list no-d">
+        <li class="round no-d"><a href="#" aria-label="cart-link" class="icon-item cart-toggler cart-items-total rel" onClick="return false;">{{ cart.item_count }}</a></li>
       </ul>
     </nav>
     
