@@ -301,7 +301,7 @@
   }
   .header #Delcon_logo_white path {
     fill: rgb(var(--color-base-accent-1));
-      }
+  }
 
   .mobile_menu-wrapper.show{
     opacity: 1;
