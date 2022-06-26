@@ -118,3 +118,48 @@
   max-height: 69px;
   margin-top: 8px;
 }
+
+/* new css added by suchit on 22/06/22 */
+
+@media(max-width: 992px){
+  .footer-nav-wrapper {
+	flex-direction: column;
+  }
+  .footer-nav-wrapper .footer-nav-left{
+  	margin-bottom: 40px;
+    width : 60%;
+  }
+  .footer-nav-left .footer-upper-part:nth-child(1){
+    display : none;
+    margin-bottom: 24px;
+  }
+  .footer-nav-wrapper .footer-nav-right{
+    width: 100%;
+    max-width: 100%;
+  }
+  .footer-lower{
+    flex-direction: column;
+    text-align: center;
+  }
+  .footer-lower-left {
+    width: 100%;
+    margin-bottom: 16px;
+  }
+  .footer-lower-right{
+    flex-direction: column;
+    width: 100%;
+  }
+  .footer-lower-right .footer-lower-text:nth-child(1){
+    margin-bottom: 16px;
+  }
+  .address__social-icons{
+  	margin-bottom : 24px;
+  }
+}
+
+@media(max-width: 560px){
+  .footer-nav-wrapper .footer-nav-left{
+    width : 85%;
+  }
+  
+}
