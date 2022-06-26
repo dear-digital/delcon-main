@@ -2,45 +2,41 @@
 {{ 'dc-store-img-text.css' | asset_url | stylesheet_tag }}
 
 <div class="image-video-text-block store-img-text">
-  
-    <div class="flex-box justify-between align-center rel image-text-wrapper {% if section.settings.media_alignment == 'right' %}rev-cols{% endif %}" style="background-color: {{ section.settings.background_color }}">
-      <span class="custom-logo">{{ section.settings.custom_logo }}</span>
-      <div class="image-video-block rel {% if section.settings.section_type == 'video' %}img-w-txt-video-wrap {% if section.settings.video_link != '' %}custom-video{% endif %}{% endif %}">
-        {% if section.settings.section_type == 'video' %}
-          <img  class="video-cover" src="{{ section.settings.cover_img | image_url: height: 600 }}" loading="lazy" alt="Video title">
-          {% if section.settings.video_link != '' %}
-            <video class="cust-video" width="100%" height="100%" controls>
-              <source src="{{ section.settings.video_link }}" type="video/mp4">
-            </video>
-          {% else %}
-            <iframe class="no-disp yt-video" width="100%" height="100%" src="https://www.youtube.com/embed/{{ section.settings.product_video.id }}" frameborder="0">
-            </iframe>
-          {% endif %}
-            <div id="play" class="play-btn">
-              {% include 'icon-play-button' %}
-            </div>
-        {% else %}
-          <div class="store-img" style="background: linear-gradient( 90deg, #FBFBFB 0%, #FBFBFB00 100% ), url({{ section.settings.section_image | img_url: 'x590' }}) no-repeat;background-position: top center;background-size: cover;" alt="{{ section.settings.section_title }} image" loading="lazy"></div>
-        {% endif %}
+  <div class="flex-box justify-between align-center rel image-text-wrapper {% if section.settings.media_alignment == 'right' %}rev-cols{% endif %}" style="background-color: {{ section.settings.background_color }}">
+    <span class="custom-logo">{{ section.settings.custom_logo }}</span>
+    <div class="image-video-block rel {% if section.settings.section_type == 'video' %}img-w-txt-video-wrap {% if section.settings.video_link != '' %}custom-video{% endif %}{% endif %}">
+      {% if section.settings.section_type == 'video' %}
+      <img  class="video-cover" src="{{ section.settings.cover_img | image_url: height: 600 }}" loading="lazy" alt="Video title">
+      {% if section.settings.video_link != '' %}
+      <video class="cust-video" width="100%" height="100%" controls>
+        <source src="{{ section.settings.video_link }}" type="video/mp4">
+      </video>
+      {% else %}
+      <iframe class="no-disp yt-video" width="100%" height="100%" src="https://www.youtube.com/embed/{{ section.settings.product_video.id }}" frameborder="0">
+      </iframe>
+      {% endif %}
+      <div id="play" class="play-btn">
+        {% include 'icon-play-button' %}
       </div>
-      <div class="text-block rel">
-        <div class="container">
-          <span class="subheading-text">{{ section.settings.section_subtitle }}</span>
-          <h2 class="heading-text tk-le-monde-livre-classic-byol">{{ section.settings.section_title }}</h2>
-          <div class="about-text">{{ section.settings.section_text }}</div>
-          {% if section.settings.section_btn_text != blank %}
-          <a href="{{ section.settings.section_btn_url }}" class="btn {% if section.settings.isProefpakketten == true %}btn-proefpakketten grey-btn{% endif %} {% if section.settings.isProductFinder == true %}btn-productFinder grey-btn{% endif %}">{{ section.settings.section_btn_text }}</a>
-          {% endif %}
-          {% if section.settings.isProefpakketten == true and section.settings.proefpakketten_text != blank %}
-          <span class="proefpakketten-text">{{ section.settings.proefpakketten_text }}</span>
-          {% endif %}
-          {% if section.settings.section_link != blank %}
-          <a href="{{ section.settings.section_url }}" rel="noreferrer" class="about-link{% if section.settings.isProefpakketten == true and section.settings.proefpakketten_text != blank %} center{% endif %}">{{ section.settings.section_link }}</a>
-          {% endif %}
-        </div>
-      </div>
+      {% else %}
+      <div class="store-img" style="background: linear-gradient( 90deg, #FBFBFB 0%, #FBFBFB00 100% ), url({{ section.settings.section_image | img_url: 'x590' }}) no-repeat;background-position: top center;background-size: cover;" alt="{{ section.settings.section_title }} image" loading="lazy"></div>
+      {% endif %}
     </div>
-  
+    <div class="text-block rel">
+      <span class="subheading-text">{{ section.settings.section_subtitle }}</span>
+      <h2 class="heading-text tk-le-monde-livre-classic-byol">{{ section.settings.section_title }}</h2>
+      <div class="about-text">{{ section.settings.section_text }}</div>
+      {% if section.settings.section_btn_text != blank %}
+      <a href="{{ section.settings.section_btn_url }}" class="btn {% if section.settings.isProefpakketten == true %}btn-proefpakketten grey-btn{% endif %} {% if section.settings.isProductFinder == true %}btn-productFinder grey-btn{% endif %}">{{ section.settings.section_btn_text }}</a>
+      {% endif %}
+      {% if section.settings.isProefpakketten == true and section.settings.proefpakketten_text != blank %}
+      <span class="proefpakketten-text">{{ section.settings.proefpakketten_text }}</span>
+      {% endif %}
+      {% if section.settings.section_link != blank %}
+      <a href="{{ section.settings.section_url }}" rel="noreferrer" class="about-link{% if section.settings.isProefpakketten == true and section.settings.proefpakketten_text != blank %} center{% endif %}">{{ section.settings.section_link }}</a>
+      {% endif %}
+    </div>
+  </div>
 </div>
 
 {% schema %}
