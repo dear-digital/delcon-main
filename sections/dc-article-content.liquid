@@ -10,7 +10,7 @@
 {% endfor %}
 
 <div class="main-article container rel flex-box justify-between">
-  <a href="{% unless routes.root_url == "/" %}{{ routes.root_url }}{% endunless %}/blogs/nieuws" class="back-btn">
+  <a href="{% unless routes.root_url == "/" %}{{ routes.root_url }}{% endunless %}/blogs/nieuws" class="back-btn no-t-m">
     <span class="left-chev">{% render 'arrow-right-sm' %}</span>
     <span class="back-txt">{{ section.settings.back }}</span>
   </a>
