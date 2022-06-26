@@ -27,9 +27,12 @@
   background-color: #B499BF;
   border: none;
   width: 185px;
+  font-size: 16px;
+  line-height: 24px;
   font-weight: 700;
   text-transform: uppercase;
   cursor: pointer;
+  padding: 12px 24px 9px;
   transition: all .3s ease-out;
 }
 .nl-submit-btn:hover {
@@ -52,32 +55,17 @@
   .newsletter-form-wrap{
     width: 100%;
   }
-
   .nl-input{
     width: calc(100% - 80px);
   }
-
-  .newsletter-desc{
-    text-align: left !important;
-  }
-}
-
-
-/* css added by suchit on 22/06/2022 */
-
-.newsletter-desc {
-	padding : 0 10px;
-}
-
-@media(max-width: 992px){
-
+  
   .newsletter-wrapper {
   	padding : 40px 0;
   }
   
   .newsletter-title {
     font-size: 24px;
-    line-height: 20px;
+    line-height: 33px;
   }
   
   .nl-input-group.flex-box {
@@ -87,7 +75,6 @@
   
   .nl-submit-btn{
     width: calc(100% - 80px);
-    padding: 12px 0 11px 0;
     margin-top: 16px;
   }
 
@@ -95,7 +82,6 @@
     margin-bottom : 16px;
   }
 }
-
 
 @media(max-width: 560px){
   .nl-input{
