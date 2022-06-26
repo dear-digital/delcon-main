@@ -14,13 +14,35 @@
   </div>
 </div>
 
+<div class="full-banner-img-mobile">
+  <img src="{{ section.settings.section_image_mobile | img_url: 'large' }}" > 
+  <div class="flex-box align-center">
+    <div class="container">
+      <div class="full-banner-wrapper">
+        <h2 class="full-banner-title tk-le-monde-livre-classic-byol">{{ section.settings.section_title }}</h2>
+        <div class="banner-text">{{ section.settings.section_text }}</div>
+        {% if section.settings.section_btn_text != blank %}
+          <a href="{{ section.settings.section_btn_url }}" class="btn {% if section.settings.isProefpakketten == true %}btn-proefpakketten grey-btn{% endif %} {% if section.settings.isProductFinder == true %}btn-productFinder grey-btn{% endif %}">{{ section.settings.section_btn_text }}</a>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- changes in schema -->
+
 {% schema %}
   {
     "name": "Delcon Full Image Banner",
     "settings": [
 	  {
-        "label": "Section Image",
+        "label": "Section Desktop Image",
         "id": "section_image",
+        "type": "image_picker"
+	  },
+	  {
+        "label": "Section Mobile Image",
+        "id": "section_image_mobile",
         "type": "image_picker"
 	  },
 	  {
