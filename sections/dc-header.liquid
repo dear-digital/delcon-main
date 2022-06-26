@@ -2,14 +2,8 @@
 
 <header class="header">
   <div class="dc-header container">
-    <div class="header-hamburger-menu no-d">
-      <button type="button" class="navbar-toggler">
-        <div class="icon-bar"></div>
-      </button>
-    </div>
-    
-    <nav class="left-nav no-t-m">
-      <ul class="header-nav-list header-nav-list-small">
+    <nav class="left-nav">
+      <ul class="header-nav-list header-nav-list-small no-t-m">
         {% for link in section.settings.header_left_menu.links %}
           <li class="no-t-m"><a href="{{ link.url }}">{{ link.title | escape }}</a></li>
         {% endfor %}
@@ -28,20 +22,21 @@
       <a href="/" aria-label="header-logo">{{ section.settings.header_logo }}</a>
     </nav>
     
-    <nav class="right-nav no-t-m">
+    <nav class="right-nav">
       <ul class="header-nav-list header-nav-list-small">
         {% for link in section.settings.header_right_menu.links %}
           <li class="no-t-m"><a href="{{ link.url }}">{{ link.title | escape }}</a></li>
         {% endfor %}
         <li class="no-t-m"><span href="{{ section.settings.header_btn_url }}" class="btn header-btn {% if section.settings.isProefpakketten == true %}btn-proefpakketten{% endif %}">{{ section.settings.header_btn_text }}</span></li>
+        <li class="no-d"><a href="#" aria-label="cart-link" class="icon-item cart-toggler cart-items-total rel" onClick="return false;">{{ cart.item_count }}</a></li>
       </ul>
     </nav>
     
-    <div class="mobile_cart-toggler no-d">
+<!--     <div class="mobile_cart-toggler no-d">
       <div class="round ">
-        <a href="#" aria-label="cart-link" class="icon-item cart-toggler cart-items-total rel" onClick="return false;">{{ cart.item_count }}</a>
+        
       </div>
-    </div>
+    </div> -->
   </div>
 </header>
 
