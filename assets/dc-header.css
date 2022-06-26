@@ -282,6 +282,18 @@
   .bar2 {
     margin: 5px 0;
   }
+  .dc-header nav.middle-nav svg {
+    max-width: 102px;
+    max-height: 24px;
+  }
+  .dc-header .right-nav .announcement-bar-list {
+  	width: 100%;
+    justify-content: flex-end;
+    position: relative;
+  }
+  .dc-header .right-nav .announcement-bar-list a {
+  	font-size: 18px;
+  }
   
   .header{
     background-color: #fff!important;
