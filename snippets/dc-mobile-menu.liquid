@@ -1,0 +1,39 @@
+<div class="mobile_menu-wrapper">
+  <div class="mobile_menu">
+    {%- if section.settings.mobile_top_menu != blank -%}
+    <nav class="mobile_nav-top">
+      <ul class="mobile_nav-list-wrapper">
+        {%- for link in section.settings.mobile_top_menu.links -%}
+        <li><a href="{{ link.url }}" class="mobile_nav-link">{{ link.title | escape }} <span class="link_arrow">{% render "icon-arrow-big" %}</span></a></li>
+        {%- endfor -%}
+      </ul>
+    </nav>
+    {%- endif -%}
+    
+    {%- if section.settings.mobile_middle_menu != blank -%}
+    <nav class="mobile_nav-middle">
+      <ul class="mobile_nav-list-wrapper">
+        {%- for link in section.settings.mobile_middle_menu.links -%}
+        <li><a href="{{ link.url }}" class="mobile_nav-link">{{ link.title | escape }} <span class="link_arrow">{% render "icon-arrow-big" %}</span></a></li>
+        {%- endfor -%}
+      </ul>
+    </nav>
+    {%- endif -%}
+    
+    {%- if section.settings.mobile_bottom_menu != blank -%}
+    <nav class="mobile_nav-bottom">
+      <ul class="mobile_nav-list-wrapper">
+        {%- for link in section.settings.mobile_bottom_menu.links -%}
+        <li><a href="{{ link.url }}" class="mobile_nav-link">{{ link.title | escape }} <span class="link_arrow">{% render "icon-arrow-big" %}</span></a></li>
+        {%- endfor -%}
+      </ul>
+    </nav>
+    {%- endif -%}
+    
+    <div class="mobile_menu-lang">
+      <div class="round active">nl</div>
+      <div class="round">en</div>
+      <div class="round">fr</div>
+    </div>
+  </div>
+</div>
