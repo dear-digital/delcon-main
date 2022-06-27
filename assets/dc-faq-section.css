@@ -165,5 +165,8 @@
   	margin: 0 auto;
     margin-bottom: 24px;
   }
+  .faq-container .faq-heading {
+    margin-top: 24px;
+  }
 }
 
