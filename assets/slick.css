@@ -577,12 +577,12 @@
   
   .product-slider-for .slick-dots {
     width: 100%;
-    bottom: 30px;
+    bottom: -10px;
   }
   .product-slider-for .slick-dots li {
     width: 8px;
     height: 8px;
-    margin: 0 2px;
+    margin: 0 5px;
   }
   .product-slider-for .slick-dots li.slick-active {
     width: 8px !important;
@@ -597,15 +597,12 @@
   .product-slider-for .slick-dots li.slick-active button:before {
     opacity: 1;
     width: 8px !important;
-    content: url("https://cdn.shopify.com/s/files/1/0507/5674/7460/files/slick_dot_fill.svg?v=1643289808");
   }
   .product-slider-for .slick-dots li button:before {
     width: 8px;
     height: 8px;
-    content: url("https://cdn.shopify.com/s/files/1/0507/5674/7460/files/slick_dot.svg?v=1643289795");
     font-size: 8px;
     line-height: 8px;
-    background-color: transparent;
   }
 }
 
