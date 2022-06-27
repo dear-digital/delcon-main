@@ -283,3 +283,16 @@
   	margin-top: 16px;
   }
 }
+
+@media (max-width: 375px) {
+  .bundled-product .card-product-wrapper {
+  	align-items: flex-start;
+  }
+  .bundled-product .variants-wrapper {
+  	flex-direction: column;
+  }
+  .bundle-variant-box {
+  	margin-right: 0;
+    margin-bottom: 8px;
+  }
+}
