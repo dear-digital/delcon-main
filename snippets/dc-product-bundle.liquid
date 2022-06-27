@@ -45,9 +45,22 @@
       {% if forloop.last %}{% else %}<span class="product-title bundle-plus">+</span>{% endif %}
       {% endfor %}
     </div>
-    <button class="btn bundle-addToCart">{{ section.settings.add_to_cart }}</button>
+    <button class="btn bundle-addToCart">{{ 'template.products.product.buy_now' | t }} <span class="original-bundle-price"></span> <span class="discounted-bundle-price"></span></button>
   </div>
+
 <script>
+  
+  function calculateBundlePrice() {
+  	var originalBundlePrice = 0;
+    var discountedBundlePrice = 0;
+    $(".bundle-variant-box.variant-selected").each(function() {
+      originalBundlePrice = originalBundlePrice + $(this).data("compare");
+      discountedBundlePrice = discountedBundlePrice + $(this).data("price");
+    });
+    
+    $(".original-bundle-price").text(originalBundlePrice);
+    $(".discounted-bundle-price").text(discountedBundlePrice);
+  }
   
   $(".bundle-variant-box").click(function() {
     var variantPrice = $(this).data('price');
@@ -106,7 +119,9 @@
     console.log( error );
   });
   
-  $( document ).ready(function() {  
+  $( document ).ready(function() {
+    
+    calculateBundlePrice();
   
     $('.bundle-addToCart').click(function() {
       var valid = true;
