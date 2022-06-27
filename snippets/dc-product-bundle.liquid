@@ -54,7 +54,7 @@
     $(this).parent().find(".bundle-variant-box").removeClass('variant-selected');
     $(this).addClass('variant-selected');
     $(this).parent().parent().find('.bundled-product-price').text(variantPrice);
-    
+    $(this).closest(".bundled-product").attr("data-variant", $(this).attr("value"));
   });
   
   $.ajax({
