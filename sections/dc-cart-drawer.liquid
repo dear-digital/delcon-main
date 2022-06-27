@@ -77,11 +77,17 @@
         {% endfor %}
         {% if discount != blank %}
         {% assign multipliedProduct = item.final_price | times: multiplier %}
+        {{ multipliedProduct }}
         {% assign discCut = multipliedProduct | divided_by: 100.0 %}
+        {{ discCut }}
         {% assign discCut = discCut | times: discount %}
+        {{ discCut }}
         {% assign splits = discCut | append: "" | split: "." %}
+        {{ splits }}
         {% assign splitsFirst = splits | first | plus: "0.0" %}
+        {{ splitsFirst }}
         {% assign disc_price = multipliedProduct | minus: splitsFirst | round %}
+        {{ disc_price }}
         {% assign totalDiscount = totalDiscount | plus: disc_price %}
         {% else %}
         {% assign multipliedProduct = item.final_line_price | times: multiplier %}
