@@ -205,4 +205,20 @@
   .terug-btn {
   	margin-bottom: 8px;
   }
+  .qty-wrapper {
+  	width: 100%;
+    justify-content: space-between;
+    margin-bottom: 16px;
+    padding: 0 8px;
+  }
+  .addToCart {
+  	width: 100%;
+  }
+  .shipping-details {
+    margin: 8px 0 32px;
+  }
+}
+
+@media (max-width: 560px) {
+  
 }
