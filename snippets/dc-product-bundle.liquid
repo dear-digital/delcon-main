@@ -35,7 +35,7 @@
                    value="{{ variant.id }}"
                    variant-name="{{ variant.title }}"
                    data-compare="{{ variant.price }}"
-                   data-original-price="{{ variantPrice | divided_by: 100 }}"
+                   data-original-price="{{ variantPrice }}"
                    data-price="{{ variantPrice | money }}">{{ variant.title }}</div>
               {% endfor %}
             </div>
@@ -59,8 +59,8 @@
       discountedBundlePrice = discountedBundlePrice + $(this).data("original-price");
     });
     
-    $(".original-bundle-price").text(originalBundlePrice);
-    $(".discounted-bundle-price").text(discountedBundlePrice);
+    $(".original-bundle-price").text((originalBundlePrice/100).toFixed(2));
+    $(".discounted-bundle-price").text((discountedBundlePrice/100).toFixed(2));
   }
   
   $(".bundle-variant-box").click(function() {
