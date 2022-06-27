@@ -193,15 +193,16 @@
   .card-product-image {
     width: 100%;
     max-width: none;
-    height: 590px;
+    height: 90vw;
   }
   .product-details {
     position: relative;
     width: 100%;
     max-width: none;
     margin: 0 auto;
+    margin-top: 64px;
   }
-  .card-product-image .product-slider-for .slick-dots {
+/*   .card-product-image .product-slider-for .slick-dots {
   	height: 2px !important;
-  }
+  } */
 }
