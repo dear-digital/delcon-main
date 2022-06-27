@@ -316,8 +316,11 @@
       "return": "Terug naar Accountgegevens"
     },
     "pet_details": {
+      "pet_name": "Name",
+      "pet_type": "Pet Type",
       "pet_dog": "Hond",
       "pet_cat": "Kat",
+      "pet_gender": "Gender",
       "pet_male": "Mannelijk",
       "pet_female": "Vrouwelijk",
       "pet_breed": "Ras",
@@ -326,7 +329,11 @@
       "pet_weight_unit": "kg",
       "pet_activity": "Activiteit",
       "pet_neutered": "Gecastreerd \/ Gesteriliseerd",
+      "pet_neutered_yes": "Yes",
+      "pet_neutered_no": "No",
       "pet_complaints": "Klachten",
+      "add_pet": "Add Pet Profile",
+      "edit_pet": "Edit Pet Profile",
       "change": "Wijzig"
     },
     "account_fallback": "Account",

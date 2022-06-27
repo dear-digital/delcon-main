@@ -323,6 +323,8 @@
       "return": "Retour aux détails du compte"
     },
     "pet_details": {
+      "pet_name": "Name",
+      "pet_type": "Pet Type",
       "pet_dog": "Chien",
       "pet_cat": "Chat",
       "pet_male": "Mâle",
@@ -333,7 +335,11 @@
       "pet_weight_unit": "kg",
       "pet_activity": "Activité",
       "pet_neutered": "Castré \/ stérilisé",
+      "pet_neutered_yes": "Yes",
+      "pet_neutered_no": "No",
       "pet_complaints": "Plaintes",
+      "add_pet": "Add Pet Profile",
+      "edit_pet": "Edit Pet Profile",
       "change": "Changer"
     },
     "account_fallback": "Compte",
