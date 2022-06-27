@@ -220,5 +220,25 @@
 }
 
 @media (max-width: 560px) {
-  
+  .product-bundle-column {
+  	flex-direction: column;
+  }
+  .product-bundle-column .bundled-product {
+  	width: 100%;
+  }
+  .bundled-product .card-product-wrapper {
+  	flex-direction: row;
+  }
+  .bundled-product .card-product-image {
+    width: 120px;
+    height: 120px;
+  }
+  .bundled-product .card-product-text {
+    width: calc(100% - 138px);
+    margin-top: 0;
+    margin-left: 16px;
+  }
+  .bundle-addToCart {
+  	margin-top: 16px;
+  }
 }
