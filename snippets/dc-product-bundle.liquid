@@ -1,8 +1,7 @@
 {% if product.metafields.my_fields.bundle_products != blank %}
   {% assign bundled_product_handles = product.metafields.my_fields.bundle_products | split: "," %}
   {% assign bundleDiscount = product.metafields.my_fields.bundle_percentage %}
-  {% assign bundleVariantPrice = bundle_product.selected_or_first_available_variant.price %}
-  {% assign bundleVariantPrice = bundleVariantPrice | times: bundleDiscount %}
+  {% assign bundleVariantPrice = bundle_product.selected_or_first_available_variant.price | times: bundleDiscount %}
   {% assign bundleVariantPrice = bundleVariantPrice | divided_by: 100 %}
   {% assign bundleVariantPrice = bundle_product.selected_or_first_available_variant.price | minus: bundleVariantPrice %}
   <div class="product-bundle-wrapper rel">
