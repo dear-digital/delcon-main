@@ -69,6 +69,7 @@
     $(this).addClass('variant-selected');
     $(this).parent().parent().find('.bundled-product-price').text(variantPrice);
     $(this).closest(".bundled-product").attr("data-variant", $(this).attr("value"));
+    calculateBundlePrice()
   });
   
   $.ajax({
