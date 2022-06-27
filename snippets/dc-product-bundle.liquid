@@ -2,7 +2,7 @@
   {% assign bundled_product_handles = product.metafields.my_fields.bundle_products | split: "," %}
   {% assign bundleDiscount = product.metafields.my_fields.bundle_percentage %}
   <div class="product-bundle-wrapper rel">
-    <div class="flex-box justify-between align-center">
+    <div class="flex-box justify-between align-center product-bundle-column">
       {% for handle in bundled_product_handles %}
       {% assign bundle_product = all_products[handle] %}
       <div class="card-product bundled-product rel" data-external="{{ bundleProductsExternalId[forloop.index0] }}" data-variant="{{ bundle_product.first_available_variant.id }}" data-product="{{ bundle_product.id }}" data-handle="{{ handle }}">
