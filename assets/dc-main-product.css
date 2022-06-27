@@ -185,3 +185,20 @@
 .bundle-addToCart:hover {
   background-color: #063323;
 }
+
+@media (max-width: 992px) {
+  .product-flex-column {
+  	flex-direction: column;
+  }
+  .card-product-image {
+    width: 100%;
+    max-width: none;
+    height: 590px;
+  }
+  .product-details {
+    position: relative;
+    width: 100%;
+    max-width: none;
+    margin: 0 auto;
+  }
+}
