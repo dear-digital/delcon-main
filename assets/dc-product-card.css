@@ -33,7 +33,7 @@
   height: 590px;
   background-color: rgb(var(--color-base-text));
 }
-.card-product-image .product-slider-for, .card-product-image .product-slider-for * {
+.card-product-image .product-slider-for, .card-product-image .product-slider-for .slick-list, .card-product-image .product-slider-for .slick-track {
   height: 100%;
 }
 .card-product-image img {
