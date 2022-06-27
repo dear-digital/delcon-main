@@ -95,7 +95,7 @@
   
   $( document ).ready(function() {  
     
-    $(".variant-box").each(function() {
+    $(".variants-wrapper .variant-box:first-child").each(function() {
       $(this).parent().parent().find(".card-product-price").text($(this).data("price"));
     });
   
