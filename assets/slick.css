@@ -557,6 +557,10 @@
   .product-slider-for .slick-prev, .product-slider-for .slick-next {
     top: auto;
     bottom: -50px;
+    background-color: transparent;
+    border: 0;
+    width: auto;
+    height: auto;
   }
   .product-slider-forr .slick-prev:hover:before, .product-slider-for .slick-next:hover:before {
     content: url("https://cdn.shopify.com/s/files/1/0578/5976/8499/files/right-arrow-hover.svg?v=1652199980") !important;
