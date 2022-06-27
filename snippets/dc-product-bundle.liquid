@@ -47,6 +47,13 @@
   </div>
 <script>
   
+  $(".bundle-variant-box").click(function() {
+    var variantPrice = $(this).data('price');
+    $(this).parent().find(".bundle-variant-box").removeClass('variant-selected');
+    $(this).addClass('variant-selected');
+    $(this).parent().parent().find('.bundled-product-price').text(variantPrice);        
+  });
+  
   $.ajax({
     url: "https://bundles.boldapps.net/v2/delcon-petfood.myshopify.com/product/{{ product.id }}/bundles?tmp="+Math.random().toString().slice(2,11),
     method: "GET",
