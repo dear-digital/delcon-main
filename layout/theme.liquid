@@ -323,8 +323,8 @@
         $(this).addClass('variant-selected');
         $(this).closest(".product-info").find('.card-product-price').text(variantPrice);
         
-        $(this).closest(".product-info").find('.variant-features').addClass('no-disp');
-        $(this).closest(".product-info").find('.variant-features').each(function() {
+        $(this).parent().parent().find('.variant-features').addClass('no-disp');
+        $(this).parent().parent().find('.variant-features').each(function() {
           if($(this).data('index') == variantIndex) {
             $(this).removeClass('no-disp');
           }
