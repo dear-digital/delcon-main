@@ -23,6 +23,9 @@
 .ingredient-label.selected {
   background-color: rgb(var(--color-base-text));
 }
+.ingredient-label label {
+  justify-content: space-between;
+}
 .ingredients-radio {
   margin-right: 12px;
 }
@@ -69,5 +72,24 @@
   }
   .ingredient-label {
   	display: block;
+    height: auto;
+  }
+  .ingredient-details-wrapper {
+    display: none;
+    width: 100%;
+    max-width: none;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+    visibility: hidden;
+  }
+  .ingredient-details-wrapper.selected {
+    display: block;
+    visibility: visible;
+    pointer-events: all;
+    z-index: 2;
+  }
+  .ingredient-label.selected .arrow-right {
+  	transform: rotate(90deg);
   }
 }
