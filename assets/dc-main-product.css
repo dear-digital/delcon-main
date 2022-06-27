@@ -214,7 +214,7 @@
   font-size: 12px;
   line-height: 16px;
   font-weight: 400;
-  text-decoration: strike-through;
+  text-decoration: line-through;
   margin: 0 8px;
 }
 .discounted-bundle-price {
