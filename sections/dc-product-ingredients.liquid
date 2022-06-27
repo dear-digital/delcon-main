@@ -26,7 +26,7 @@
 <div class="image-video-text-block marg-top-xl marg-bottom-xl">
   <div class="container">
     <div class="flex-box justify-between align-center rel image-text-wrapper {% if section.settings.media_alignment == 'right' %}rev-cols{% endif %}" style="background-color: {{ section.settings.ingredient_title_background }}">
-      <div class="ingredient-details-block rel" style="background-color: {{ section.settings.ingredient_details_background }}">
+      <div class="ingredient-details-block rel no-t-m" style="background-color: {{ section.settings.ingredient_details_background }}">
 		{% for block in section.blocks %}
         <div class="ingredient-details-wrapper {{ block.settings.ingredient_name }}-details {% if template == "product" %}no-disp{% endif %}">
           <p class="ingredient-details-title">{{ block.settings.ingredient_name }}</p>
