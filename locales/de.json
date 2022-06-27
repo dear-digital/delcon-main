@@ -316,8 +316,11 @@
       "return": "Zurück zu Kontodetails"
     },
     "pet_details": {
+      "pet_name": "Name",
+      "pet_type": "Pet Type",
       "pet_dog": "Dog",
       "pet_cat": "Cat",
+      "pet_gender": "Gender",
       "pet_male": "Male",
       "pet_female": "Female",
       "pet_breed": "Breed",
@@ -326,7 +329,11 @@
       "pet_weight_unit": "kg",
       "pet_activity": "Activity",
       "pet_neutered": "Neutered \/ Sterilized",
+      "pet_neutered_yes": "Yes",
+      "pet_neutered_no": "No",
       "pet_complaints": "Complaints",
+      "add_pet": "Add Pet Profile",
+      "edit_pet": "Edit Pet Profile",
       "change": "Change"
     },
     "account_fallback": "Konto",
