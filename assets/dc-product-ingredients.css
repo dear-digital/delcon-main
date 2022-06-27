@@ -82,14 +82,16 @@
     position: relative;
     overflow: hidden;
     visibility: hidden;
+    padding: 12px 0;
   }
   .ingredient-details-wrapper.selected {
     display: block;
-    visibility: visible;
-    pointer-events: all;
-    z-index: 2;
   }
   .ingredient-label.selected .arrow-right {
   	transform: rotate(90deg);
+  }
+  .ingredient-image {
+    height: 100%;
+    margin: 12px 0 0;
   }
 }
