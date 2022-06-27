@@ -21,6 +21,12 @@
             <input type="radio" name="ingredients-name" class="ingredients-radio" id="{{ block.settings.ingredient_name }}" {% if forloop.first %}checked="checked"{% endif %}>
             <label class="" for="{{ block.settings.ingredient_name }}">{{ block.settings.ingredient_name }}</label>
             <span class="arrow-right">{% include "arrow-right" %}</span>
+            
+            <div class="ingredient-details-wrapper {{ block.settings.ingredient_name }}-details {% if forloop.first %}selected{% endif %} no-d">
+              <p class="ingredient-details-title">{{ block.settings.ingredient_name }}</p>
+              <div class="ingredient-details-text">{{ block.settings.ingredient_details }}</div>
+              <img class="ingredient-image" src="{{ block.settings.ingredient_image | img_url: '480x' }}" alt="{{ block.settings.ingredient_name }} image" loading="lazy">
+            </div>
           </div>
         {% endfor %}
       </div>
