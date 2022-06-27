@@ -63,5 +63,6 @@
   .team-wrapper {
   	width: 100%;
     margin: 0 auto;
+    margin-top: 24px;
   }
 }
