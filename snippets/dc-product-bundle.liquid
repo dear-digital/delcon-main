@@ -20,7 +20,7 @@
               {% for variant in bundle_product.variants %}
               {% assign variantPrice = variant.price | times: bundleDiscount %}
               {% assign variantPrice = variantPrice | divided_by: 100 %}
-              {% assign variantPrice = variantPrice | minus: variant.price %}
+              {% assign variantPrice = variant.price | minus: variantPrice %}
               <div class="variant-box {% if forloop.index == 1 %}variant-selected{% endif %}" 
                    data-index="{{ forloop.index }}"
                    data-available="{% if variant.available %}yes{% else %}no{% endif %}"
