@@ -201,4 +201,7 @@
     max-width: none;
     margin: 0 auto;
   }
+  .card-product-image .product-slider-for .slick-dots {
+  	height: 2px !important;
+  }
 }
