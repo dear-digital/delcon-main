@@ -321,7 +321,6 @@
 
         $(this).parent().find(".variant-box").removeClass('variant-selected');
         $(this).addClass('variant-selected');
-        console.log($(this).closest(".product-info"));
         $(this).parent().parent().find('.card-product-price').text(variantPrice);
         
         $(this).parent().parent().find('.variant-features').addClass('no-disp');
