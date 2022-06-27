@@ -59,8 +59,8 @@
       discountedBundlePrice = discountedBundlePrice + $(this).data("original-price");
     });
     
-    $(".original-bundle-price").text((originalBundlePrice/100).toFixed(2));
-    $(".discounted-bundle-price").text((discountedBundlePrice/100).toFixed(2));
+    $(".original-bundle-price").text("€"+(originalBundlePrice/100).toFixed(2));
+    $(".discounted-bundle-price").text("€"+(discountedBundlePrice/100).toFixed(2));
   }
   
   $(".bundle-variant-box").click(function() {
