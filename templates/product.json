@@ -83,9 +83,11 @@
       "type": "dc-full-banner-image",
       "settings": {
         "section_image": "shopify:\/\/shop_images\/Hero_image_2x_c4b6d25f-59ea-45f1-a5a8-fb73e3262e9f.png",
+        "section_image_mobile": "shopify:\/\/shop_images\/Hero_image_2x_4f29c069-6109-4931-8af1-6987500ec5bb.png",
         "section_title": "Keuzestress?",
         "section_text": "<p>Elke hond en elke kat heeft eigen specifieke behoeften. Daarom maken wij met veel zorg voeding die aangepast is aan jouw pluizige vriend.<\/p><ul class=\"checked-list\">\n<li>Met zorg geformuleerde dierenvoeding<\/li>\n<li>Opgebouwd uit de meest verfijnde natuurlijke ingrediënten<\/li>\n<li>Voor een optimale gezondheid van jouw viervoeter<\/li>\n<\/ul>",
         "isProductFinder": true,
+        "isProefpakketten": false,
         "section_btn_text": "PRODUCTFINDER",
         "section_btn_url": ""
       }
