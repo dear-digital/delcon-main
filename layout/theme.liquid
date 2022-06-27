@@ -322,13 +322,14 @@
         $(this).parent().find(".variant-box").removeClass('variant-selected');
         $(this).addClass('variant-selected');
         $(this).closest(".product-info").find('.card-product-price').text(variantPrice);
-
-        $(this).parent().parent().find('.variant-features').addClass('no-disp');
-        $(this).parent().parent().find('.variant-features').each(function() {
+		$(this).closest(".card-product.bundled-product").attr("data-variant", $(this).value);
+        
+        $(this).closest(".product-info").find('.variant-features').addClass('no-disp');
+        $(this).closest(".product-info").find('.variant-features').each(function() {
           if($(this).data('index') == variantIndex) {
             $(this).removeClass('no-disp');
           }
-        });
+        });        
 
       });
       
