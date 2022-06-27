@@ -107,15 +107,11 @@
   });
   
   $( document ).ready(function() {  
-    
-    $(".variants-wrapper .variant-box:first-child").each(function() {
-      $(this).parent().parent().find(".card-product-price").text($(this).data("price"));
-    });
   
     $('.bundle-addToCart').click(function() {
       var valid = true;
       $('.product-bundle-wrapper .bundled-product').each(function() {
-        if($(this).find(".variant-box").data('available') != "yes") {
+        if($(this).find(".bundle-variant-box").data('available') != "yes") {
           valid = false
         }
       });
@@ -131,15 +127,15 @@
         'items': []
       };      
       $('.product-bundle-wrapper .bundled-product').each(function() {
-          formData.items.push({
-            'id': parseInt($(this).data('variant')),
-            'quantity': 1,
-            'properties': {
-              'bundle': 'bundle'+random,
-              'external': $(this).data('external'),
-              'discount': '{{bundleDiscount}}'
-            }
-            });   
+        formData.items.push({
+          'id': parseInt($(this).data('variant')),
+          'quantity': 1,
+          'properties': {
+            'bundle': 'bundle'+random,
+            'external': $(this).data('external'),
+            'discount': '{{bundleDiscount}}'
+          }
+        });   
       });
       console.log(formData);
       $.ajax({
