@@ -324,7 +324,7 @@
         $(this).closest(".product-info").find('.card-product-price').text(variantPrice);
         
         console.log($(this).closest(".bundled-product"));
-        console.log($(this).value());
+        console.log($(this).data("value"));
 		$(this).closest(".bundled-product").attr("data-variant", $(this).data("value"));
         
         $(this).closest(".product-info").find('.variant-features').addClass('no-disp');
