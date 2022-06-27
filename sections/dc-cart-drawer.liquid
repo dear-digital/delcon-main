@@ -64,26 +64,28 @@
         {% for item in cart.items %}
         {% assign multiplier = 1 %}
         {% assign featured_image = item.variant.image.src | default: item.product.featured_image %}
+        
         {% assign discount = blank %}
         {% assign bundleId = blank %}        
         {% for property in item.properties %}
           {% if property.first == 'discount' %}
-            {% assign discount = property.last | plus: 0 %}
+        	{% assign discount = property.last | plus: 0 %}
           {% endif %}
           {% if property.first == 'bundle' %}
-            {% assign bundleId = property.last %}
+        	{% assign bundleId = property.last %}
           {% endif %}
         {% endfor %}
         {% if discount != blank %}
-        {% assign multipliedProduct = item.final_price | times: multiplier | divided_by: 100.0 %}
+        {% assign multipliedProduct = item.final_price | times: multiplier %}
         {% assign discCut = multipliedProduct | divided_by: 100.0 %}
         {% assign discCut = discCut | times: discount %}
-        {% assign splits = discCut | append: "" %}
-        {% assign disc_price = multipliedProduct | minus: splits | times: 100.0 %}
+        {% assign splits = discCut | append: "" | split: "." %}
+        {% assign splitsFirst = splits | first | plus: "0.0" %}
+        {% assign disc_price = multipliedProduct | minus: splitsFirst | round %}
         {% assign totalDiscount = totalDiscount | plus: disc_price %}
         {% else %}
         {% assign multipliedProduct = item.final_line_price | times: multiplier %}
-        {% assign totalDiscount = totalDiscount | plus: multipliedProduct | times: 100.0 %}
+        {% assign totalDiscount = totalDiscount | plus: multipliedProduct %}
         {% endif %}
           <div class="cart-product-wrapper">
             <div class="cart-product-image">
