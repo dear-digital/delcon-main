@@ -96,7 +96,7 @@
   $( document ).ready(function() {  
     
     $(".variant-box").each(function() {
-      $(this).parent().find(".card-product-price").text($(this).data("price"));
+      $(this).parent().parent().find(".card-product-price").text($(this).data("price"));
     });
   
     $('.bundle-addToCart').click(function() {
