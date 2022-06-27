@@ -34,7 +34,8 @@
                    data-quantity="{{ variant.inventory_quantity }}"
                    value="{{ variant.id }}"
                    variant-name="{{ variant.title }}"
-                   data-compare="{{ variant.compare_at_price | money }}"
+                   data-compare="{{ variant.price }}"
+                   data-original-price="{{ variantPrice | divided_by: 100 }}"
                    data-price="{{ variantPrice | money }}">{{ variant.title }}</div>
               {% endfor %}
             </div>
@@ -45,7 +46,7 @@
       {% if forloop.last %}{% else %}<span class="product-title bundle-plus">+</span>{% endif %}
       {% endfor %}
     </div>
-    <button class="btn bundle-addToCart">{{ 'template.products.product.buy_now' | t }} <span class="original-bundle-price"></span> <span class="discounted-bundle-price"></span></button>
+    <button class="btn bundle-addToCart">{{ 'products.product.buy_now' | t }} <span class="original-bundle-price"></span> <span class="discounted-bundle-price"></span></button>
   </div>
 
 <script>
@@ -55,7 +56,7 @@
     var discountedBundlePrice = 0;
     $(".bundle-variant-box.variant-selected").each(function() {
       originalBundlePrice = originalBundlePrice + $(this).data("compare");
-      discountedBundlePrice = discountedBundlePrice + $(this).data("price");
+      discountedBundlePrice = discountedBundlePrice + $(this).data("original-price");
     });
     
     $(".original-bundle-price").text(originalBundlePrice);
