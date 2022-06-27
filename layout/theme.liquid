@@ -322,7 +322,7 @@
         $(this).parent().find(".variant-box").removeClass('variant-selected');
         $(this).addClass('variant-selected');
         $(this).closest(".product-info").find('.card-product-price').text(variantPrice);
-		$(this).closest(".card-product.bundled-product").attr("data-variant", $(this).value);
+		$(this).closest(".bundled-product").attr("data-variant", $(this).value);
         
         $(this).closest(".product-info").find('.variant-features').addClass('no-disp');
         $(this).closest(".product-info").find('.variant-features').each(function() {
