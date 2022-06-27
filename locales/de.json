@@ -105,6 +105,7 @@
   "products": {
     "product": {
       "add_to_cart": "In den Warenkorb legen",
+      "buy_now": "Buy Now",
       "description": "Beschreibung",
       "on_sale": "Sale",
       "product_variants": "Produktvarianten",
