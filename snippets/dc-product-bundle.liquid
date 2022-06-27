@@ -13,7 +13,7 @@
           <div class="card-product-text product-info rel">
             <div class="flex-box justify-between align-end">
               <div class="product-title">{{ bundle_product.title | strip_html | truncatewords: 2 | escape }}</div>
-              <p class="card-product-price product-price">{{ bundle_product.selected_or_first_available_variant.price | money }}</p>
+              <p class="card-product-price product-price no-m">{{ bundle_product.selected_or_first_available_variant.price | money }}</p>
             </div>
             <p class="product-card-desc">{{ bundle_product.metafields.my_fields.extra_info | escape  }}</p>
             <div class="variants-wrapper">
@@ -30,6 +30,7 @@
                    data-price="{{ variant.price | money }}">{{ variant.title }}</div>
               {% endfor %}
             </div>
+            <p class="card-product-price product-price no-d no-t">{{ bundle_product.selected_or_first_available_variant.price | money }}</p>
           </div>
         </div>
       </div>
