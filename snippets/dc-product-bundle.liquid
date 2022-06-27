@@ -1,6 +1,9 @@
 {% if product.metafields.my_fields.bundle_products != blank %}
   {% assign bundled_product_handles = product.metafields.my_fields.bundle_products | split: "," %}
   {% assign bundleDiscount = product.metafields.my_fields.bundle_percentage %}
+  {% assign bundleVariantPrice = bundle_product.selected_or_first_available_variant.price %}
+  {% assign bundleVariantPrice = bundleVariantPrice | times: bundleDiscount | divided_by: 100 %}
+  {% assign bundleVariantPrice = bundle_product.selected_or_first_available_variant.price | minus: bundleVariantPrice %}
   <div class="product-bundle-wrapper rel">
     <div class="flex-box justify-between align-center product-bundle-column">
       {% for handle in bundled_product_handles %}
@@ -13,7 +16,7 @@
           <div class="card-product-text product-info rel">
             <div class="flex-box justify-between align-end">
               <div class="product-title">{{ bundle_product.title | strip_html | truncatewords: 2 | escape }}</div>
-              <p class="bundled-product-price product-price no-m">{{ bundle_product.selected_or_first_available_variant.price | money }}</p>
+              <p class="bundled-product-price product-price no-m">{{ bundleVariantPrice | money }}</p>
             </div>
             <p class="product-card-desc">{{ bundle_product.metafields.my_fields.extra_info | escape  }}</p>
             <div class="variants-wrapper">
@@ -21,7 +24,7 @@
               {% assign variantPrice = variant.price | times: bundleDiscount %}
               {% assign variantPrice = variantPrice | divided_by: 100 %}
               {% assign variantPrice = variant.price | minus: variantPrice %}
-              <div class="variant-box {% if forloop.index == 1 %}variant-selected{% endif %}" 
+              <div class="bundle-variant-box {% if forloop.index == 1 %}variant-selected{% endif %}" 
                    data-index="{{ forloop.index }}"
                    data-available="{% if variant.available %}yes{% else %}no{% endif %}"
                    data-sell-out-of-stock="{{ variant.inventory_policy }}"
@@ -33,7 +36,7 @@
                    data-price="{{ variantPrice | money }}">{{ variant.title }}</div>
               {% endfor %}
             </div>
-            <p class="bundled-product-price product-price no-d no-t">{{ bundle_product.selected_or_first_available_variant.price | money }}</p>
+            <p class="bundled-product-price product-price no-d no-t">{{ bundleVariantPrice | money }}</p>
           </div>
         </div>
       </div>
