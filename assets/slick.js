@@ -71,7 +71,7 @@ $(document).ready(function(){
       {
         breakpoint: 992,
         settings: {
-          arrows: false,
+          arrows: true,
           dots: true
         }
       }
@@ -106,7 +106,7 @@ $(document).ready(function(){
       {
         breakpoint: 992,
         settings: {
-          arrows: false,
+          arrows: true,
           dots: true
         }
       }
