@@ -1,7 +1,7 @@
 {{ 'dc-hero.css' | asset_url | stylesheet_tag }}
 {{ 'dc-about-hero.css' | asset_url | stylesheet_tag }}
 
-<div class="hero-sec {% if template == "page.about-us" %}about-hero-sec{% endif %} no-t-m" style="background-image: linear-gradient(rgba(24, 23, 22, .25), rgba(24, 23, 22, .25)),url({{ section.settings.hero_img | img_url: '2000x' }})">
+<div class="hero-sec {% if template == "page.about-us" %}about-hero-sec{% endif %}" style="background-image: linear-gradient(rgba(24, 23, 22, .25), rgba(24, 23, 22, .25)),url({{ section.settings.hero_img | img_url: '2000x' }})">
   <div class="container flex-box">
     <div class="about-wrapper {% if template == "page.store-locator" %}store-hero-wrapper{% endif %} flex-box" {% if section.settings.hero_align %}style="justify-content: {{ section.settings.hero_align }}"{% endif %}>
 	  <p class="sub-title light hero-reviews"></p>
