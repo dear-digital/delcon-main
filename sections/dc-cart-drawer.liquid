@@ -16,6 +16,8 @@
   {% endif %}
 {% endfor %}
 
+{% assign totalDiscount = 0 %}
+
 {% for item in cart.items %}
 	{% assign multiplier = 1 %}
     {% assign discount = blank %}
@@ -144,7 +146,7 @@
         <div class="drawer-cart-checkout">
           <div class="checkout-subtotal justify-between">
             <div class="subtotal-title">{{ section.settings.subtotal_text }}</div>
-            <div class="subtotal">{{ cart.total_price | money_without_trailing_zeros }}</div>
+            <div class="subtotal">{{ totalDiscount | money_without_trailing_zeros }}</div>
           </div>
           <div class="checkout-shipping justify-between">
             <div class="shipping-title">{{ section.settings.shipping_text }}</div>
