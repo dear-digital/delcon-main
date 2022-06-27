@@ -238,6 +238,9 @@
     margin-top: 0;
     margin-left: 16px;
   }
+  .bundled-product .variants-wrapper {
+	margin-bottom: 8px;
+  }
   .bundle-addToCart {
   	margin-top: 16px;
   }
