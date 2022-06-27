@@ -62,3 +62,9 @@
   margin-top: 80px;
 }
 
+@media (max-width: 992px) {
+  .ingredient-title-block {
+  	width: 100%;
+    padding: 24px;
+  }
+}
