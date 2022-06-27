@@ -493,6 +493,9 @@
 	right: 1%;
 } */
 
+.features-content .slick-dots {
+  bottom: -10px;
+}
 .featured-carousel .slick-dots , .features-content .slick-dots {
   width: 100%;
 }
