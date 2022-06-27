@@ -18,6 +18,9 @@
             <p class="product-card-desc">{{ bundle_product.metafields.my_fields.extra_info | escape  }}</p>
             <div class="variants-wrapper">
               {% for variant in bundle_product.variants %}
+              {% assign variantPrice = variant.price | times: bundleDiscount %}
+              {% assign variantPrice = variantPrice | divided_by: 100 %}
+              {% assign variantPrice = variantPrice | minus: variant.price %}
               <div class="variant-box {% if forloop.index == 1 %}variant-selected{% endif %}" 
                    data-index="{{ forloop.index }}"
                    data-available="{% if variant.available %}yes{% else %}no{% endif %}"
@@ -27,7 +30,7 @@
                    value="{{ variant.id }}"
                    variant-name="{{ variant.title }}"
                    data-compare="{{ variant.compare_at_price | money }}"
-                   data-price="{{ variant.price | money }}">{{ variant.title }}</div>
+                   data-price="{{ variantPrice | money }}">{{ variant.title }}</div>
               {% endfor %}
             </div>
             <p class="card-product-price product-price no-d no-t">{{ bundle_product.selected_or_first_available_variant.price | money }}</p>
