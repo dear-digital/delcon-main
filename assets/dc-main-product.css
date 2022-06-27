@@ -209,6 +209,20 @@
 .bundle-addToCart:hover {
   background-color: #063323;
 }
+.original-bundle-price {
+  display: inline-block;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+  text-decoration: strike-through;
+  margin: 0 8px;
+}
+.discounted-bundle-price {
+  display: inline-block;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 700;
+}
 
 @media (max-width: 992px) {
   .product-flex-column {
