@@ -392,6 +392,13 @@ input:focus-visible, select:focus-visible, textarea:focus-visible {
     max-width: none;
   	padding: 0 21px;
   }
+  
+  .marg-top-xl {
+  	margin-top: 80px;
+  }
+  .marg-bottom-xl {
+  	margin-bottom: 80px;
+  }
 }
 
 @media (min-width: 561px) and (max-width: 992px) {
