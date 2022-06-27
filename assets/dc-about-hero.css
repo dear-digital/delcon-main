@@ -18,3 +18,9 @@
 .store-hero-wrapper .hero-subtitle, .about-wrapper .hero-subtitle {
   margin-bottom: 0px;
 }
+
+@media (max-width: 992px) {
+  .about-hero-sec {
+    height: 100vw !important;
+  }
+}
