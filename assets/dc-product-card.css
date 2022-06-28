@@ -163,13 +163,13 @@
 /*     justify-content: flex-start; */
     height: 95vh;
   }
-  .card-product-image {
+  .modal .card-product-image {
     width: 100%;
     max-width:100%;
     height: 50vh;
     max-height: 50vh;
   }
-  .card-product-text {
+  .modal .card-product-text {
     display: flex;
     flex-direction: column;
     justify-content: center;
