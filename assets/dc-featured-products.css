@@ -138,7 +138,7 @@
     padding: 0;
   }
   .product-card-image {
-    height : 30vw;
+    height : 40vw;
   }
   .featured-title {
   	font-size: 24px;
@@ -154,7 +154,7 @@
 
 @media(max-width: 560px){
   .product-card-image.more-w{
-    height : 55vw;
+    height : 70vw;
   }
   .product-card-title {
     font-size : 15px;
