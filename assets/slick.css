@@ -623,4 +623,7 @@
   .featured-carousel .slick-list.draggable {
     padding-right: calc(100% - 303px);
   }
+  .featured-carousel .slick-list.draggable .slick-track {
+    display : flex;
+  }
 }
