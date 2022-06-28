@@ -74,6 +74,9 @@
 }
 .numverOfVariants {
   display: block;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
   margin: 24px 0 8px;
 }
 .variants-wrapper {
@@ -219,6 +222,9 @@
 }
 
 @media (max-width: 321px) {
+  .numverOfVariants{
+    margin: 4px 0;
+  }
   .variants-wrapper {
   	margin-bottom: 12px;
   }
