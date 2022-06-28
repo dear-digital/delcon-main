@@ -4,7 +4,12 @@
   <div class="hero-wrapper container flex-box">
     <p class="sub-title light hero-reviews"></p>
     <h1 class="hero-title tk-le-monde-livre-classic-byol">{{ section.settings.hero_title }}</h1>
-    <p class="hero-subtitle">{{ section.settings.hero_subtitle }}</p>
+    <p class="hero-subtitle">
+        <div class="trustpilot-widget" data-locale="nl-NL" data-template-id="5613c9cde69ddc09340c6beb" data-businessunit-id="5fd22a12a2221c00018b1ae2" data-style-height="100%" data-style-width="100%" data-theme="light">
+          <a href="https://nl.trustpilot.com/review/delcon.be" target="_blank" rel="noopener">Trustpilot</a>
+        </div>
+    {{ section.settings.hero_subtitle }}
+    </p>
     <div class="hero-cta-wrapper">
       {% for block in section.blocks %}
       	{% if block.settings.hero_cta_text != blank %}
