@@ -20,10 +20,10 @@
         </div>
         <div class="article-image">
           {% if article.image.src != "" %}
-          {{ article.image }}
+          If  {{ article.image }}
           <img src="{{ article.image.src | image_url: width: 388 }}" alt="{{ article.title }}">
           {% else %}
-          {{ article.image }}
+          Else  {{ article.image }}
           <img src="{{ "Dog_image.png" | asset_url: '388x' }}" alt="{{ article.title }}">
           {% endif %}
         </div>
