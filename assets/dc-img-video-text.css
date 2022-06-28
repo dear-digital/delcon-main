@@ -76,12 +76,15 @@
   bottom: -2px;
   width: 0px;
   height: 2px;
-  background: rgb(var(--color-base-text));
+  background: #fff;
   transition: all 0.3s ease-out;
 }
 .about-link:hover:after {
   width: 100%;
   left: 0;
+}
+.proefpakketten-hover:after {
+  background: rgb(var(--color-base-accent-1));
 }
 .custom-logo {
   display: block;
