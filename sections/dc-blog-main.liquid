@@ -23,6 +23,7 @@
           {{ article.image }}
           <img src="{{ article.image.src | image_url: width: 388 }}" alt="{{ article.title }}">
           {% else %}
+          {{ article.image }}
           <img src="{{ "Dog_image.png" | asset_url: '388x' }}" alt="{{ article.title }}">
           {% endif %}
         </div>
