@@ -289,11 +289,14 @@
   .bundled-product .card-product-wrapper {
   	align-items: flex-start;
   }
-  .bundled-product .variants-wrapper {
-  	flex-direction: column;
-  }
   .bundle-variant-box {
   	margin-right: 0;
     margin-bottom: 8px;
+    padding: 12px;
+  }
+}
+@media (max-width: 320px) {
+  .bundled-product .variants-wrapper {
+  	flex-direction: column;
   }
 }
