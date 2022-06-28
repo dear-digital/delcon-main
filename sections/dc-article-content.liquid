@@ -39,9 +39,17 @@
       </div>
     </div>
     
-    <div class="prev-next-comments justify-between">
-      <a href="{{ blog.previous_article }}" class="shop-link {% if blog.previous_article == blank %}visibility-hidden{% endif %}"><span class="left-arrow">{% include "arrow-right-sm" %}</span>{{ section.settings.prev_article }}</a>
-      <a href="{{ blog.next_article }}" class="shop-link {% if blog.next_article == blank %}visibility-hidden{% endif %}">{{ section.settings.next_article }}<span class="right-arrow">{% include "arrow-right-sm" %}</span></a>
+    <div class="article_mobile-container">
+      <div class="share-box-label no-d">Share on</div>
+      <span class="share-box no-d">
+        <a target="_blank" class="social-icon" aria-label="facebook share icon"  href="http://www.facebook.com/sharer.php?u=https://{{ shop.domain }}{{ article.url }}">{% include "icon-facebook" %}</a>
+        <a target="_blank" class="social-icon" aria-label="twitter share icon" href="https://twitter.com/share?url=https://{{ shop.domain }}{{ article.url }}">{% include "icon-twitter" %}</a>
+        <a target="_blank" class="social-icon" aria-label="pinterest share icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https://{{ shop.domain }}{{ article.url }}">{% include "icon-pinterest" %}</a>
+      </span>
+      <div class="prev-next-comments justify-between">
+        <a href="{{ blog.previous_article }}" class="shop-link {% if blog.previous_article == blank %}visibility-hidden{% endif %}"><span class="left-arrow">{% include "arrow-right-sm" %}</span>{{ section.settings.prev_article }}</a>
+        <a href="{{ blog.next_article }}" class="shop-link {% if blog.next_article == blank %}visibility-hidden{% endif %}">{{ section.settings.next_article }}<span class="right-arrow">{% include "arrow-right-sm" %}</span></a>
+      </div>
     </div>
     
     {% if blog.comments_enabled? %}
