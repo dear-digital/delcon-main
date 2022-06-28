@@ -19,7 +19,7 @@
           <button class="btn product-btn">{{ section.settings.meerInfo }}</button>
         </div>
         <div class="article-image">
-          <img src="{{ article.image.src | default: "Dog_image.png" | image_url: width: 388 }}">
+          <img src="{{ article.image.src | image_url: width: 388 | default: "Dog_image.png" | asset_url: '388x' }}">
         </div>
         <span class="article-info">
           <span class="article-tag-date align-center">
