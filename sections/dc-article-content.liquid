@@ -38,7 +38,6 @@
         </div>
       </div>
     </div>
-    
     <div class="article_mobile-container">
       <div class="share-box-label no-d">Share on</div>
       <span class="share-box no-d">
@@ -52,8 +51,12 @@
       </div>
     </div>
     
+
     {% if blog.comments_enabled? %}
-      <div class="comment-box comment-wrapper">
+
+        
+    <div class="article_mobile-container">
+          <div class="comment-box comment-wrapper">
         <div class="flex-box comment-box">
           <div class="comment-box">
             <div class="comment-form">
@@ -78,7 +81,7 @@
 
               {% include 'form-status', form: form, form_id: formId, success_message: post_message %}
 
-              <div class="flex-box justify-between comment-box">
+              <div class="flex-box justify-between comment-box flex-column-m">
 
                 <div class="col-half">
                   <label for="{{ formId }}-author" class="no-disp">{{ 'blogs.article.name' | t }}</label>
@@ -136,6 +139,7 @@
           </div>
         </div>
       </div>
+    </div>
     
       {% if number_of_comments > 0 %}
         <div class="comment-box">
