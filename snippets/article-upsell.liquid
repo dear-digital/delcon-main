@@ -9,7 +9,7 @@
     <div class="article-upsell-infos product-info">
       <div class="flex-box justify-between align-center">
         <a href="{{ articleUpsellProd.url }}" class="product-name">{{ articleUpsellProd.title }}</a>
-        <span class="product-selling-price card-product-price">{{ articleUpsellProd.price | money }}</span>
+        <span class="product-selling-price card-product-price no-t-m">{{ articleUpsellProd.price | money }}</span>
       </div>
       <div class="article-product-desc">{{ articleUpsellProd.metafields.my_fields.extra_info }}</div>
       <div class="variants-wrapper">
@@ -26,9 +26,11 @@
              data-price="{{ variant.price | money }}">{{ variant.title }}</div>
         {% endfor %}
       </div>
-      <button class="btn addArticleUpsell">{{ 'products.product.add_to_cart' | t }}</button>
+      <span class="product-selling-price card-product-price no-d">{{ articleUpsellProd.price | money }}</span>
+      <button class="btn addArticleUpsell no-t-m">{{ 'products.product.add_to_cart' | t }}</button>
     </div>
   </div>
+  <button class="btn addArticleUpsell no-d">{{ 'products.product.buy_now' | t }}</button>
 </div>
 
 <script>
