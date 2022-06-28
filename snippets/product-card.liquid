@@ -2,6 +2,9 @@
   <div class="modal" id="card-product-{{ product.id }}">
     <div class="card-product rel no-disp">
       <div class="container" style="z-index: 4;">
+        <span class="no-d CloseModal">
+          {% render 'icon-close-new' %}
+        </span>
         <div class="card-product-wrapper flex-box justify-between align-center rel">
           <div class="card-product-image rel">
             
@@ -29,7 +32,7 @@
 
           </div>
           <div class="card-product-text product-info rel" data-type="{{ product.type }}" data-handle="{{ product.handle }}">
-            <div class="flex-box justify-between align-end">
+            <div class="product_title_price justify-between align-end">
               <h2 class="product-title">{{ product.title }}</h2>
               <p class="card-product-price product-price">{{ product.selected_or_first_available_variant.price | money }}</p>
             </div>
@@ -62,4 +65,9 @@
     $(this).parent().parent().css("pointer-events", "none");
   });
   
+  $(".CloseModal").click(function() {
+  	$(".card-product").addClass('no-disp');
+    $(".modal").css("opacity", 0);
+    $(".modal").css("pointer-events", "none");
+  });
 </script>
