@@ -305,4 +305,9 @@
     line-height: 14px;
     height: 34px;
   }
+  .bundled-product .product-title {
+    font-size: 14px;
+    line-height: 18px;
+	min-height: 36px;
+  }
 }
