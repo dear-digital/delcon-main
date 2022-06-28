@@ -101,6 +101,9 @@
 .marg-bottom-xxs {
   margin-bottom: 8px !important;
 }
+.no-marg {
+  margin: 0;
+}
 .padd-top {
   padding-top: 80px;
 }
