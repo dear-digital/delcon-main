@@ -1,14 +1,21 @@
+.article-hero-wrapper {
+  margin-top: 72px;
+}
 .article-hero {
   height: 65vh;
   background-position: center;
   background-repeat: no-repeat;
-  margin-top: 72px;
+/*   margin-top: 8px; */
   background-size: cover;
   margin-bottom: 32px;
 }
 
 @media (max-width: 992px) {
   .article-hero {
+    margin-top: 8px;
     margin-bottom: 0;
+  }
+  .article-hero-wrapper {
+    margin-top: 97px;
   }
 }
