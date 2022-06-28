@@ -33,7 +33,7 @@
           <span class="proefpakketten-text">{{ section.settings.proefpakketten_text }}</span>
         {% endif %}
         {% if section.settings.section_link != blank %}
-          <a href="{{ section.settings.section_url }}" rel="noreferrer" class="about-link{% if section.settings.isProefpakketten == true and section.settings.proefpakketten_text != blank %} center{% endif %}">{{ section.settings.section_link }}</a>
+          <a href="{{ section.settings.section_url }}" rel="noreferrer" class="about-link{% if section.settings.isProefpakketten == true and section.settings.proefpakketten_text != blank %} proefpakketten-hover center{% endif %}">{{ section.settings.section_link }}</a>
         {% endif %}
       </div>
     </div>
