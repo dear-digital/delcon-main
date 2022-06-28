@@ -144,7 +144,7 @@
 .CloseModal{
   position: absolute;
   top: 24px;
-  right: 30px;
+  right: 0px;
   z-index: 5;
 }
 
