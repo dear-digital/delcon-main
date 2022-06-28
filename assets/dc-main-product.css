@@ -163,6 +163,7 @@
 .bundled-product .product-title {
   font-size: 16px;
   line-height: 24px;
+  min-height: 48px;
 }
 .bundled-product .product-price {
   font-weight: 700;
