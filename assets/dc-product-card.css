@@ -143,9 +143,10 @@
 }
 .CloseModal{
   position: absolute;
-  top: 24px;
-  right: 0px;
+  top: 16px;
+  right: 40px;
   z-index: 5;
+  cursor: pointer;
 }
 
 @media(max-width: 992px){
@@ -194,7 +195,9 @@
   .modal, .wrap {
     display : unset;
   }
-
+  .CloseModal{
+    right: 30px;
+  }
 }
 
 
