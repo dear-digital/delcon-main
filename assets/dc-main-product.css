@@ -310,4 +310,8 @@
     line-height: 18px;
 	min-height: 36px;
   }
+  .bundle-addToCart, .discounted-bundle-price {
+  	font-size: 14px;
+    line-height: 18px;
+  }
 }
