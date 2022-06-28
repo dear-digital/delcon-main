@@ -291,3 +291,116 @@
   transform: translate(12px,1px) rotate(90deg);
   opacity: 0;
 }
+
+@media(max-width: 992px){
+  .filters-titles-wrap{
+  	margin-top : 120px;
+  }
+  .sugg-collections{
+    display : none;
+  }
+  .coll-products-n-filter-wrap{
+    flex-direction : column;
+  }
+  .coll-filters{
+    width : 100%;
+    margin-bottom: 24px;
+  }
+  .coll-filter-type{
+    margin-bottom : 0;
+    border-bottom : 1px solid;
+  }
+  .coll-filter-type-name-wrap{
+    justify-content: space-between;
+    line-height: 48px;
+  }
+  .coll-filter-option-wrap:last-child {
+    margin-bottom: 13px;
+  }
+  .coll-porducts{
+    width : 100%;
+    justify-content: space-between;
+    margin: 24px 0 80px;
+  }
+  .coll-porducts .product-card{
+    width : 30%;
+  }
+  .product-finder{
+    padding: 40px;
+    width: 62%;
+  }
+  .sort-wrap{
+    display : none;
+  }
+  .total-porducts-wrap{
+    width: 100%;
+    border: 1px solid;
+    line-height: 48px;
+  }
+  .coll-porducts .product-card .product-card-details{
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .coll-porducts .product-card .product-card-details .prooduct-title-desc {
+    width : 100%;
+  }
+  .coll-porducts .product-card .product-card-details .product-card-price{
+    width: 100%;
+    justify-content: flex-start;
+  }
+  .filter-radio {
+    height: 18px;
+    width: 18px;
+    background-color: #F2F1F0;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 8px; 
+  }
+  .coll-filter-type-name {
+    display: flex;
+    flex-direction: unset;
+    align-items: center;
+    justify-content: center;
+  }
+  .sort-option {
+  	display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    cursor: pointer;
+    width: fit-content;
+    padding: 0;
+    border: 0;
+  }
+  .coll-filter-options-wrap.panel{
+  	padding:0 0 0 28px;
+  }
+  .sugg-collection {
+    width: 100%;
+    border: 0;
+    background-color : unset;
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    cursor: pointer;
+    width: fit-content;
+    padding: 0;
+    border: 0;
+
+  }
+  .sugg-collection.checked {
+ 	 background-color: unset;
+  }
+}
+
+
+@media(max-width: 560px){
+  .coll-porducts .product-card{
+    width : 44%;
+  }
+  .product-finder{
+    width : 100%
+  }
+
+
+}
