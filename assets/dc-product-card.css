@@ -141,8 +141,12 @@
 .product_title_price{
 	display : flex;
 }
-
-
+.CloseModal{
+  position: absolute;
+  top: 24px;
+  right: 30px;
+  z-index: 5;
+}
 
 @media(max-width: 992px){
   .modal {
@@ -186,12 +190,6 @@
   }
   .card-product-text .product-title {
     line-height:22px;
-  }
-  .CloseModal{
-    position: absolute;
-    top: 24px;
-    right: 30px;
-    z-index: 5;
   }
   .modal, .wrap {
     display : unset;
