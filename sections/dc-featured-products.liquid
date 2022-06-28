@@ -10,7 +10,7 @@
           <a title="{{ product.title | escape  }}" class="product-card-hover no-t-m">
             <button class="btn product-btn">{{ section.settings.meerInfo }}</button>
           </a>
-          <div class="product-card-image rel">
+          <div class="product-card-image rel more-w">
             <img class="default-img" src="{{ product.images[0] | default: product.featured_image | img_url: '392x' }}" alt="{{ product.title | escape }}" loading="lazy" />
             <img class="hovered-img no-t-m" src="{{ product.images[1] | default: product.featured_image | img_url: '392x' }}" alt="{{ product.title | escape }}" loading="lazy" />
           </div>
