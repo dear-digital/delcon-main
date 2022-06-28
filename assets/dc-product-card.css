@@ -150,9 +150,9 @@
 }
 
 @media(max-width: 992px){
-  .modal {
+/*   .modal {
     overflow-y : scroll;
-  }
+  } */
   .card-product-wrapper {
     flex-direction: column;
     align-items: center;
@@ -219,7 +219,7 @@
 }
 
 @media (max-width: 321px) {
-  .numverOfVariants {
-    margin: 0;
+  .variants-wrapper {
+  	margin-bottom: 12px;
   }
 }
