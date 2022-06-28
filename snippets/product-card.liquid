@@ -1,10 +1,10 @@
 <div class="wrap" style="position: relative;z-index: 22;">
   <div class="modal" id="card-product-{{ product.id }}">
     <div class="card-product rel no-disp">
-      <span class="CloseModal">
-        {% render 'icon-close-new' %}
-      </span>
-      <div class="container" style="z-index: 4;">
+      <div class="container rel" style="z-index: 4;">
+        <span class="CloseModal">
+          {% render 'icon-close-new' %}
+        </span>
         <div class="card-product-wrapper flex-box justify-between align-center rel">
           <div class="card-product-image rel">
             
@@ -66,8 +66,8 @@
   });
   
   $(".CloseModal").click(function() {
-  	$(this).parent().addClass('no-disp');
-    $(this).parent().parent().css("opacity", 0);
-    $(this).parent().parent().css("pointer-events", "none");
+  	$(this).parent().parent().addClass('no-disp');
+    $(this).parent().parent().parent().css("opacity", 0);
+    $(this).parent().parent().parent().css("pointer-events", "none");
   });
 </script>
