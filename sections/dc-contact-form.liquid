@@ -1,31 +1,33 @@
 {{ 'dc-contact-form.css' | asset_url | stylesheet_tag }}
 
-<div class="marg-top-xl">
-  <div class="contact-form-wrapper" id="contact-form-wrapper">
-    <div class="form-block" style="background-color: {{section.settings.section_background  }}">
-      <div class="container rel">
-        <div class="form-wrapper">
-          <h2 class="contact-title tk-le-monde-livre-classic-byol">{{ section.settings.section_title }}</h2>
-          <div class="contact-text">{{ section.settings.section_text }}</div>
-        </div>
-        <div class="contact-form-image" style="background-image: url({{ section.settings.section_image | img_url: '900x' }})">
-          <div class="contact-form-block">
-            <h2 class="contact-title tk-le-monde-livre-classic-byol text-center" style="margin-bottom: 40px;">{{ 'templates.contact.form.title' | t }}</h2>
-            {% form 'contact' %}
-              {% if form.posted_successfully? %} 
-              <div class="success_message form-success text-center">{{ 'templates.contact.form.post_success' | t }}</div>
-              {% endif %}
-              {{ form.errors | default_errors }}
-              <input class="field" type="text" id="ContactName" name="contact[name]" placeholder="{{ 'templates.contact.form.name' | t }}" required>
-              <input class="field" type="text" id="ContactPhone" name="contact[phone]" placeholder="{{ 'templates.contact.form.phone' | t }}" required>
-              <input class="field" type="email" id="ContactEmail" name="contact[email]" placeholder="{{ 'templates.contact.form.email' | t }}" required>
-              <textarea id="ContactDescription" name="contact[description]" rows="5" cols="50" placeholder="{{ 'templates.contact.form.comment' | t }}" required></textarea>
-              <button class="btn contact-submit" type="submit">{{ 'templates.contact.form.send' | t }}</button>
-              <div class="flex-box align-center contact-terms-conditions">
-                <input class="field" type="checkbox" id="ContactTermsConditions" name="contact[terms_and_conditions]" checked="checked">
-                <label for="ContactTermsConditions" class="">{{ section.settings.agree_terms }}</label>
-              </div>
-            {% endform %}
+<div id="contact-form-wrapper">
+  <div class="marg-top-xl">
+    <div class="contact-form-wrapper">
+      <div class="form-block" style="background-color: {{section.settings.section_background  }}">
+        <div class="container rel">
+          <div class="form-wrapper">
+            <h2 class="contact-title tk-le-monde-livre-classic-byol">{{ section.settings.section_title }}</h2>
+            <div class="contact-text">{{ section.settings.section_text }}</div>
+          </div>
+          <div class="contact-form-image" style="background-image: url({{ section.settings.section_image | img_url: '900x' }})">
+            <div class="contact-form-block">
+              <h2 class="contact-title tk-le-monde-livre-classic-byol text-center" style="margin-bottom: 40px;">{{ 'templates.contact.form.title' | t }}</h2>
+              {% form 'contact' %}
+                {% if form.posted_successfully? %} 
+                <div class="success_message form-success text-center">{{ 'templates.contact.form.post_success' | t }}</div>
+                {% endif %}
+                {{ form.errors | default_errors }}
+                <input class="field" type="text" id="ContactName" name="contact[name]" placeholder="{{ 'templates.contact.form.name' | t }}" required>
+                <input class="field" type="text" id="ContactPhone" name="contact[phone]" placeholder="{{ 'templates.contact.form.phone' | t }}" required>
+                <input class="field" type="email" id="ContactEmail" name="contact[email]" placeholder="{{ 'templates.contact.form.email' | t }}" required>
+                <textarea id="ContactDescription" name="contact[description]" rows="5" cols="50" placeholder="{{ 'templates.contact.form.comment' | t }}" required></textarea>
+                <button class="btn contact-submit" type="submit">{{ 'templates.contact.form.send' | t }}</button>
+                <div class="flex-box align-center contact-terms-conditions">
+                  <input class="field" type="checkbox" id="ContactTermsConditions" name="contact[terms_and_conditions]" checked="checked">
+                  <label for="ContactTermsConditions" class="">{{ section.settings.agree_terms }}</label>
+                </div>
+              {% endform %}
+            </div>
           </div>
         </div>
       </div>
