@@ -229,6 +229,16 @@
         "email_placeholder": "Email adres",
         "subscribe_btn": "Send"
       }
+    },
+    "165642381957deb8d3": {
+      "type": "dc-review-with-text",
+      "settings": {
+        "background_color": "#fbfbfb",
+        "media_alignment": "right",
+        "section_subtitle": "",
+        "section_title": "",
+        "section_text": ""
+      }
     }
   },
   "order": [
@@ -240,6 +250,7 @@
     "1654581944e4919d6d",
     "16545819618bc11d42",
     "1654581972010cd7d6",
-    "1654581985cd9c24a7"
+    "1654581985cd9c24a7",
+    "165642381957deb8d3"
   ]
 }
