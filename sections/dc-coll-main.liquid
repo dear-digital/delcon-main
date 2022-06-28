@@ -34,7 +34,7 @@
     
     <div class="filters-titles-wrap flex-box justify-between align-center">
       <div class="filter-title">{{ section.settings.filter }}</div>
-      <div class="total-porducts-wrap">
+      <div class="total-porducts-wrap no-t-m">
         <span class="total-products">{{ collection.products_count }} </span>
         <span class="total-products-title">{{ section.settings.tot_products }}</span>
       </div>
@@ -57,12 +57,37 @@
     
     <div class="coll-products-n-filter-wrap flex-box justify-between">
       <div class="coll-filters">
+        
+<!--         sort options for age in mobile screen -->
+        
+        <div class="coll-filter-type no-d" data-filter-type="age" data-filter-name="single">
+          <div class="coll-filter-type-name-wrap coll-accordion">
+            <div class="coll-filter-type-name"><span class="filter-radio no-d"></span>Age</div>
+            <span class="coll-symbol">{% render "accordion-plus" %}</span>
+          </div>
+
+          <div class="coll-filter-options-wrap panel">
+            {% for block in section.blocks %}
+            {% if block.type == 'coll' %}
+            {% assign sugg_coll = block.settings.collection %}
+            <div class="sugg-collection" data-value="{{ sugg_coll.handle }}">
+              <div class="checkbox"><span class="check-sign">{% include 'icon-check-sign' %}</span></div>
+              <div class="coll-filter-option-txt">{{ sugg_coll.title }}</div>
+            </div>
+            {% endif %}
+            {% endfor %}
+          </div>
+        </div>
+        
+        
+        
+        
         {% for block in section.blocks %}
         {% if block.type == 'filter' %}
           <div class="coll-filter-type" data-filter-type="{{ block.settings.filter_type }}" data-filter-name="{{ block.settings.main_filter }}">
             {% if block.settings.main_filter != blank %}
             <div class="coll-filter-type-name-wrap coll-accordion">
-              <div class="coll-filter-type-name">{{ block.settings.main_filter }}</div>
+              <div class="coll-filter-type-name"><span class="filter-radio no-d"></span>{{ block.settings.main_filter }}</div>
               <span class="coll-symbol">{% render "accordion-plus" %}</span>
             </div>
             {% endif %}
@@ -131,6 +156,36 @@
           </div>
         {% endif %}
         {% endfor %}
+        
+<!--         sort options for mobile screen -->
+        
+        <div class="coll-filter-type no-d" data-filter-type="sort" data-filter-name="single">
+          <div class="coll-filter-type-name-wrap coll-accordion">
+            <div class="coll-filter-type-name"><span class="filter-radio no-d"></span>{{ section.settings.sort }}</div>
+            <span class="coll-symbol">{% render "accordion-plus" %}</span>
+          </div>
+
+          <div class="coll-filter-options-wrap panel">
+            <div class="sort-option" data-value="best-selling">
+              <div class="checkbox"><span class="check-sign">{% include 'icon-check-sign' %}</span></div>
+              <div class="coll-filter-option-txt">{{ 'products.facets.sort_by_bestsellers' | t }}</div>
+            </div>
+            <div class="sort-option" data-value="price-ascending">
+              <div class="checkbox"><span class="check-sign">{% include 'icon-check-sign' %}</span></div>
+              <div class="coll-filter-option-txt">{{ 'products.facets.sort_by_price_low_to_high' | t }}</div>
+            </div>
+            <div class="sort-option" data-value="price-descending">
+              <div class="checkbox"><span class="check-sign">{% include 'icon-check-sign' %}</span></div>
+              <div class="coll-filter-option-txt">{{ 'products.facets.sort_by_price_high_to_low' | t }}</div>
+            </div>
+          </div>
+        </div>
+        
+       
+      </div>
+      <div class="total-porducts-wrap no-d">
+        <span class="total-products">{{ collection.products_count }} </span>
+        <span class="total-products-title">{{ section.settings.tot_products }}</span>
       </div>
       <div class="coll-porducts flex-box">
       	{% for product in collection.products %}
