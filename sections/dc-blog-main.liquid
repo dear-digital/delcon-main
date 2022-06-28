@@ -19,7 +19,7 @@
           <button class="btn product-btn">{{ section.settings.meerInfo }}</button>
         </div>
         <div class="article-image">
-          {% if article.image.src %}
+          {% if article.featured_image.src %}
           If  {{ article.image }}
           <img src="{{ article.image.src | image_url: width: 388 }}" alt="{{ article.title }}">
           {% else %}
