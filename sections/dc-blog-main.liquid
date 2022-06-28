@@ -22,7 +22,7 @@
           {% if article.image != blank %}
           <img src="{{ article.image.src | image_url: width: 388 }}" alt="{{ article.title }}">
           {% else %}
-          <img src="{{ "Dog_image.png" | asset_url: '388x' }}" alt="{{ article.title }}">
+          <img src="{{ "Dog_image.png" | asset_img_url: '388x' }}" alt="{{ article.title }}">
           {% endif %}
         </div>
         <span class="article-info">
