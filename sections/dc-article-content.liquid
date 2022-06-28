@@ -141,6 +141,44 @@
       </div>
     </div>
     
+    	<div class="comment-box">
+          <div class="flex-box comment-box">
+            <div class="comment-box">
+              {% comment %}<h2 class="comment-heading">Comments on Blog</h2>{% endcomment %}
+
+              {% paginate article.comments by 5 %}
+
+              {% comment %}
+              #comments is required, it is used as an anchor link by Shopify.
+              {% endcomment %}
+              <div id="comments">
+                <ul class="comments">
+                  {% comment %}
+                  If a comment was just submitted with no blank field, show it.
+                  {% endcomment %}
+                  {% if comment.status == 'pending' %}
+                  <li id="{{ comment.id }}" class="comment">
+                    {% include 'comment', comment: comment %}
+                  </li>
+                  {% endif %}
+
+                  {% for comment in article.comments %}
+                  <li id="{{ comment.id }}" class="comment">
+                    {% include 'comment', comment: comment %}
+                  </li>
+                  {% endfor %}
+                </ul>
+
+                {%- if paginate.pages > 1 -%}
+                {% include 'pagination', paginate: paginate %}
+                {%- endif -%}
+
+              </div>
+              {% endpaginate %}
+            </div>
+          </div>
+        </div>
+    
       {% if number_of_comments > 0 %}
         <div class="comment-box">
           <div class="flex-box comment-box">
