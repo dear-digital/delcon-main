@@ -17,7 +17,7 @@
           </div>
           <div class="card-product-text product-info rel">
             <div class="flex-box justify-between align-end">
-              <div class="product-title">{{ bundle_product.title | strip_html | truncatewords: 2 | escape }}</div>
+              <div class="product-title">{{ bundle_product.title | strip_html | escape }}</div>
               <p class="bundled-product-price product-price no-m">{{ bundleVariantPrice | money }}</p>
             </div>
             <p class="product-card-desc">{{ bundle_product.metafields.my_fields.extra_info | escape  }}</p>
