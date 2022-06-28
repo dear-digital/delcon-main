@@ -44,21 +44,21 @@
         "e5612db2-2971-42fa-8315-821c32f2906e": {
           "type": "coll",
           "settings": {
-            "collection": "jonge-honden",
+            "collection": "kittens",
             "age": "0 - 9 maanden"
           }
         },
         "3308ef63-2d5c-4472-9ef1-51960b99131e": {
           "type": "coll",
           "settings": {
-            "collection": "volwassen-honden",
+            "collection": "adults",
             "age": "9 maanden - 10 jaar"
           }
         },
         "2c81aa55-55f2-41b2-9b2a-d457c7ed3590": {
           "type": "coll",
           "settings": {
-            "collection": "oudere-honden",
+            "collection": "senioren",
             "age": "10+ jaar"
           }
         },
