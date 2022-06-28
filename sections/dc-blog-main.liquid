@@ -19,7 +19,11 @@
           <button class="btn product-btn">{{ section.settings.meerInfo }}</button>
         </div>
         <div class="article-image">
-          <img src="{{ article.image.src | image_url: width: 388 | default: "Dog_image.png" | asset_url: '388x' }}">
+          {% if article.image.src != blank %}
+          <img src="{{ article.image.src | image_url: width: 388 }}" alt="{{ article.title }}">
+          {% else %}
+          <img src="{{ "Dog_image.png" | asset_url: '388x' }}" alt="{{ article.title }}">
+          {% endif %}
         </div>
         <span class="article-info">
           <span class="article-tag-date align-center">
