@@ -20,7 +20,7 @@
               {% endfor %}
             </div>
             
-            <div class="product-card-nav no-t no-m {% for media in product.media %}{% if forloop.length < 8 %} no-transform{% endif %}{% endfor %}">
+            <div class="product-card-nav {% for media in product.media %}{% if forloop.length < 8 %} no-transform{% endif %}{% endfor %}">
               {% for media in product.media %}          
               {% if media.media_type == "video" %}
               <video autoplay muted playsinline="playsinline" preload="metadata" aria-label="{{ product.title }}" poster="{{ media.preview_image | img_url: '200x' }}" loop>{% for video_source in media.sources %}<source src="{{ video_source.url }}" type="{{ video_source.mime_type }}">{% endfor %}</video>
