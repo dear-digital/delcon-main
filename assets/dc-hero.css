@@ -25,7 +25,7 @@
   margin: 0;
   text-align: center;
 }
-#tp-widget-wrapper #profile-link {
+a#profile-link {
   color: #fff !important;
 }
 .hero-title {
