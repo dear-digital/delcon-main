@@ -25,7 +25,9 @@
   margin: 0;
   text-align: center;
 }
-
+.tp-widget-wrapper .profile-link {
+  color: #fff !important;
+}
 .hero-title {
   width: 100%;
   font-size: 56px;
