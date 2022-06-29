@@ -34,7 +34,7 @@
           "type": "select",
           "settings": {
             "ingredient_name": "Rijst",
-            "ingredient_details": "<p>Rijst is een zeer goed verteerbaar koolhydraat dat de vertering optimaliseert<\/p>\n<ul>\n<li><strong>zorgt voor de nodige energie<\/strong><\/li>\n<\/ul>",
+            "ingredient_details": "<p>Rijst is een zeer goed verteerbaar koolhydraat dat de vertering optimaliseert<\/p>\n<ul>\n<li><strong>Zorgt voor de nodige energie<\/strong><\/li>\n<\/ul>",
             "ingredient_image": "shopify:\/\/shop_images\/rijst-300x300.jpg"
           }
         },
@@ -42,7 +42,7 @@
           "type": "select",
           "settings": {
             "ingredient_name": "Lijnzaad",
-            "ingredient_details": "<p>Lijnzaad zorgt voor essentiële vetzuren<\/p><ul>\n<li><strong>bevat natuurlijke antioxidanten<\/strong><\/li>\n<li>helpt het bekomen van een gezonde huid en een glanzende vacht<\/li>\n<\/ul>",
+            "ingredient_details": "<p>Lijnzaad zorgt voor essentiële vetzuren<\/p><ul>\n<li><strong>Bevat natuurlijke antioxidanten<\/strong><\/li>\n<li>Helpt het bekomen van een gezonde huid en een glanzende vacht<\/li>\n<\/ul>",
             "ingredient_image": "shopify:\/\/shop_images\/lijnzaad-300x300.jpg"
           }
         },
