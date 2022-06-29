@@ -93,6 +93,14 @@
             "ingredient_details": "<ul>\n<li><strong>bron van B-vitamines<\/strong><\/li>\n<li>bevat MOS<\/li>\n<\/ul>",
             "ingredient_image": "shopify:\/\/shop_images\/biergist-300x300.jpg"
           }
+        },
+        "1f3f70a7-02d1-4915-b7a1-b2d1446c6216": {
+          "type": "select",
+          "settings": {
+            "ingredient_name": "gistextract",
+            "ingredient_details": "<p> Gistextract is een prebioticum dat de spijsvertering positief beïnvloedt<\/p>\n<ul>\n<li><strong>Bron van B-vitamines<\/strong><\/li>\n<li>bevat MOS<\/li>\n<\/ul>",
+            "ingredient_image": "shopify:\/\/shop_images\/gistextract-300x300.jpg"
+          }
         }
       },
       "block_order": [
@@ -105,7 +113,8 @@
         "db415ba7-ce1e-4fd5-9582-9b0aad1661c4",
         "e9bbe049-11e0-4145-b680-738f2930494a",
         "d96be867-8851-4dd6-9d9d-11b4fbb20002",
-        "5f229d06-0b33-4889-8dd2-a091c5d5b175"
+        "5f229d06-0b33-4889-8dd2-a091c5d5b175",
+        "1f3f70a7-02d1-4915-b7a1-b2d1446c6216"
       ],
       "settings": {
         "ingredient_details_background": "#f2f1f0",
