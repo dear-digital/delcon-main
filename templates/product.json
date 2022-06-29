@@ -154,7 +154,7 @@
           "type": "select",
           "settings": {
             "ingredient_name": "Prebiotica",
-            "ingredient_details": "<p>Inuline (FOS) – MOS:<\/p>\n<ul>\n<li><strong>voeding voor de gezonde bacterieën in het spijsverteringsstelsel<\/strong><\/li>\n<li>\nbevordert de spijsvertering<\/li>\n<\/ul>",
+            "ingredient_details": "<p>Inuline (FOS) – MOS:<\/p>\n<ul>\n<li><strong>Voeding voor de gezonde bacterieën in het spijsverteringsstelsel<\/strong><\/li>\n<li>\nBevordert de spijsvertering<\/li>\n<\/ul>",
             "ingredient_image": "shopify:\/\/shop_images\/prebiotica-300x300.jpg"
           }
         },
@@ -162,7 +162,7 @@
           "type": "select",
           "settings": {
             "ingredient_name": "Mineralen",
-            "ingredient_details": "<p>Mineralen spelen een rol in verschillende processen in het lichaam<\/p>\n<ul>\n<li><strong>worden niet aangemaakt door het lichaam, dienen toegevoegd te worden<\/strong><\/li>\n<\/ul>",
+            "ingredient_details": "<p>Mineralen spelen een rol in verschillende processen in het lichaam<\/p>\n<ul>\n<li><strong>Worden niet aangemaakt door het lichaam, dienen toegevoegd te worden<\/strong><\/li>\n<\/ul>",
             "ingredient_image": "shopify:\/\/shop_images\/mineralen-300x300.jpg"
           }
         },
