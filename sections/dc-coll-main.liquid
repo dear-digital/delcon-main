@@ -189,7 +189,7 @@
       </div>
       <div class="coll-porducts flex-box">
       	{% for product in collection.products %}
-          <div class="product-card rel{% for tag in product.tags %} {{ tag | downcase | replace: " ","-" }}{% endfor %}" data-product-id="{{ product.id }}">
+          <div class="product-card {%if product.title == "Delcon Senior"  %}{% endif %} rel{% for tag in product.tags %} {{ tag | downcase | replace: " ","-" }}{% endfor %}" data-product-id="{{ product.id }}">
             <a title="{{ product.title | escape  }}" class="product-card-hover no-t-m">
               <button class="btn product-btn">{{ section.settings.meerInfo }}</button>
             </a>
@@ -585,7 +585,7 @@
     .done(function( data ) {
       var placeholder = document.createElement('div');
       placeholder.innerHTML = data;
-      
+
       var productFinderBlock = $(placeholder).find('.product-finder');
       $(placeholder).find('.product-finder').remove();
       var divx = $(placeholder).find('.coll-porducts');
