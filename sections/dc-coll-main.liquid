@@ -577,7 +577,6 @@
     }
     var url = 'https://'+window.location.hostname+'{%- unless routes.root_url == '/' -%}{{ routes.root_url }}{%- endunless -%}/collections/'+window.location.href.split('/').pop().split('?')[0]+sortx+filtersx;
     window.history.pushState({}, null, url);
-    var productFinderBlock;
     $.ajax({
       url: url,
       method: "GET"
@@ -586,12 +585,13 @@
       var placeholder = document.createElement('div');
       placeholder.innerHTML = data;
       
-      productFinderBlock = $(placeholder).find('.product-finder');
+      var productFinderBlock = $(placeholder).find('.product-finder');
       $(placeholder).find('.product-finder').remove();
       var divx = $(placeholder).find('.coll-porducts');
 // 	  console.log(divx);
       
       $('.coll-porducts').first().replaceWith(divx);
+      addProductFinder(productFinderBlock);
       addProductCard();
       runFilter();
       Filterradio();
@@ -599,7 +599,6 @@
     .fail(function(error) {
       console.log( error );
     });
-    addProductFinder(productFinderBlock);
   });
   
   $('.sugg-collection').click(function() {
