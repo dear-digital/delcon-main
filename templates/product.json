@@ -18,7 +18,7 @@
           "type": "select",
           "settings": {
             "ingredient_name": "Lamsvlees",
-            "ingredient_details": "<p>Lamsvlees zorgt voor een uitstekende bron van eiwitten en aminozuren<\/p><ul>\n<li><strong>zeer gemakkelijk verteerbaar<\/strong><\/li>\n<li>ondersteunt het immuunsysteem<\/li>\n<li>vitamines B2, B3, B12<\/li>\n<\/ul>",
+            "ingredient_details": "<p>Lamsvlees zorgt voor een uitstekende bron van eiwitten en aminozuren<\/p><ul>\n<li><strong>Zeer gemakkelijk verteerbaar<\/strong><\/li>\n<li>Ondersteunt het immuunsysteem<\/li>\n<li>Vitamines B2, B3, B12<\/li>\n<\/ul>",
             "ingredient_image": "shopify:\/\/shop_images\/lam-300x300.jpg"
           }
         },
