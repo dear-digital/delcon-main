@@ -330,7 +330,7 @@
     
     addProductCard();
     getSelectedFilters();
-//     runFilter();
+    runFilter();
 
   });
   
@@ -660,6 +660,7 @@
   });
   
   $(window).on('popstate', function() {
+    addProductCard();
     getSelectedFilters();
     runFilter();
     Filterradio();
