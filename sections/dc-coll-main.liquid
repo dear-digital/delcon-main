@@ -701,8 +701,8 @@
     var i = 0;
     
     if($('.product-card:not(.no-disp)').length > 0) {
-      if($('.product-card:not(.no-disp').length >= 3) {
-        $('.product-card').each(function() {
+      if($('.product-card:not(.no-disp)').length >= 3) {
+        $('.product-card:not(.no-disp)').each(function() {
           if(!$(this).hasClass("no-disp")) {
             if(i == 3) {
               $(this).after($(productFinderBlock));
@@ -712,7 +712,7 @@
         });
       }
       else {
-        $('.product-card:last-child').after($(productFinderBlock));
+        $('.product-card:not(.no-disp)').last().after($(productFinderBlock));
       }
     }
     else {
