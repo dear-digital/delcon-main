@@ -496,7 +496,7 @@
     
     var productFinderBlock = $('.coll-porducts').find('.product-finder');
     console.log(productFinderBlock);
-//     $('.coll-porducts').find('.product-finder').remove();
+    $('.coll-porducts').find('.product-finder').remove();
     addProductFinder(productFinderBlock);
     
   }
@@ -711,14 +711,7 @@
       });
     }
     else {
-      $('.product-card').each(function() {
-        if(!$(this).hasClass("no-disp")) {
-          if(i == ($('.product-card').length - 1)) {
-            $(this).after($(productFinderBlock));
-          }
-          i++;
-        }
-      });
+      $('.product-card:last-child').after($(productFinderBlock));
     }
   }
 </script>
