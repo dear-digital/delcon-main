@@ -591,18 +591,7 @@
 // 	  console.log(divx);
       
       $('.coll-porducts').first().replaceWith(divx);
-//       var i = 0;
-//       $('.product-card').each(function() {
-//         if(!$(this).hasClass("no-disp")) {
-//           console.log($(this));
-//           if(i == 3) {
-//             console.log("product finder block comes here");
-//             $(this).after($(productFinderBlock));
-//             console.log($(productFinderBlock));
-//           }
-//           i++;
-//         }
-//       });
+      addProductFinder();
       addProductCard();
       runFilter();
       Filterradio();
@@ -690,6 +679,22 @@
         }
      
       
+    });
+  }
+  
+  function addProductFinder() {
+    var i = 0;
+    $('.product-card').each(function() {
+      if(!$(this).hasClass("no-disp")) {
+        console.log($(this));
+        console.log(i);
+        if(i == 3) {
+          console.log("product finder block comes here");
+          $(this).after($(productFinderBlock));
+          console.log($(productFinderBlock));
+        }
+        i++;
+      }
     });
   }
 </script>
