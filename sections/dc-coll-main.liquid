@@ -585,12 +585,12 @@
       var placeholder = document.createElement('div');
       placeholder.innerHTML = data;
       var productFinderBlock = $(placeholder).find('.product-finder');
+      $(placeholder).find('.product-finder:last-child').remove();
       $(placeholder).find('.product-card:not(.no-disp)').each(function(index) {
         if(index == 3) {
           $(this).after($(productFinderBlock));
         }                                          
 	  });
-      $(placeholder).find('.product-finder:last-child').remove();
       var divx = $(placeholder).find('.coll-porducts');
       console.log(divx);
       $('.coll-porducts').first().replaceWith(placeholder.querySelector('.coll-porducts'));
