@@ -260,7 +260,7 @@
         "type": "dc-cart-drawer",
         "settings": {
           "cart_title": "Winkelmandje",
-          "free_shipping_text": "Gratis verzending vanaf €60",
+          "free_shipping_text": "Gratis verzending vanaf €59,90",
           "content_text": "inhoud:",
           "upsell_collection": "upsell-collection",
           "fill_text": "Vul je",
