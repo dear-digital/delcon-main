@@ -74,7 +74,7 @@
           "type": "select",
           "settings": {
             "ingredient_name": "Cichorei",
-            "ingredient_details": "<p>Cichorei ondersteunt een gezonde darmflora<\/p>\n<ul>\n<li><strong>houdt bloedsuikerspiegel stabiel<\/strong><\/li>\n<li>kalmeert en helpt het zenuwstelsel ontspannen<\/li>\n<\/ul>",
+            "ingredient_details": "<p>Cichorei ondersteunt een gezonde darmflora<\/p>\n<ul>\n<li><strong>Houdt bloedsuikerspiegel stabiel<\/strong><\/li>\n<li>Kalmeert en helpt het zenuwstelsel ontspannen<\/li>\n<\/ul>",
             "ingredient_image": "shopify:\/\/shop_images\/cichorei-300x300.jpg"
           }
         },
@@ -82,7 +82,7 @@
           "type": "select",
           "settings": {
             "ingredient_name": "Zalmolie",
-            "ingredient_details": "<p> Zalmolie zorgt voor een gezonde huid en glanzende vacht<\/p>\n<ul>\n<li><strong>bevat omega 3 en omega 6 vetzuren<\/strong><\/li>\n<li>verbetert het immuunsysteem<\/li>\n<li>vermindert slechte cholesterol<\/li>\n<\/ul>",
+            "ingredient_details": "<p> Zalmolie zorgt voor een gezonde huid en glanzende vacht<\/p>\n<ul>\n<li><strong>Bevat omega 3 en omega 6 vetzuren<\/strong><\/li>\n<li>Verbetert het immuunsysteem<\/li>\n<li>Vermindert slechte cholesterol<\/li>\n<\/ul>",
             "ingredient_image": "shopify:\/\/shop_images\/zalmolie-300x300.jpg"
           }
         },
