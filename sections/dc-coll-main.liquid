@@ -585,7 +585,7 @@
       var placeholder = document.createElement('div');
       placeholder.innerHTML = data;
       var productFinderBlock = $(placeholder).find('.product-finder');
-      $(placeholder).find('.product-finder:last-child').remove();
+      $(placeholder).find('.product-finder').remove();
       $(placeholder).find('.product-card:not(.no-disp)').each(function(index) {
         if(index == 3) {
           $(this).after($(productFinderBlock));
