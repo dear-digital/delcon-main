@@ -157,8 +157,18 @@
         "filter": "Filter",
         "tot_products": "Products",
         "sort": "Sort By",
+        "vanaf_text": "vanaf",
         "koop_online": "KOOP ONLINE",
         "koop_local": "KOOP LOKAAL"
+      }
+    },
+    "1656488828a2ffcd58": {
+      "type": "dc-coll-hero-mobile",
+      "settings": {
+        "background_color": "",
+        "media_alignment": "right",
+        "title": "",
+        "desc": ""
       }
     }
   },
@@ -166,6 +176,7 @@
     "banner",
     "product-grid",
     "165450085366a69edc",
-    "1654500934ac4d77ba"
+    "1654500934ac4d77ba",
+    "1656488828a2ffcd58"
   ]
 }
