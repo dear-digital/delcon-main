@@ -1,12 +1,12 @@
 {{ 'dc-hero-small.css' | asset_url | stylesheet_tag }}
 
 <div class="hero-small rel no-d">
-  <div class="hero-small-content container flex-box justify-between align-center{% if section.settings.media_alignment == 'left' %} rev-cols{% endif %}">
-    <div class="hero-small-text" style="background-color: {{ section.settings.background_color }}">
-      <h1 class="coll-title tk-le-monde-livre-classic-byol">{% if collection.title != blank %}{{ collection.title }}{% else %}{{ section.settings.title }}{% endif %}</h1>
-      <div class="coll-desc">{% if collection.description != blank %}{{ collection.description }}{% else %}{{ section.settings.desc }}{% endif %}</div>
+  <div class="hero-small-content container flex-box justify-between align-center{% if section.settings.media_alignment2 == 'left' %} rev-cols{% endif %}">
+    <div class="hero-small-text" style="background-color: {{ section.settings.background_color2 }}">
+      <h1 class="coll-title tk-le-monde-livre-classic-byol">{% if collection.title != blank %}{{ collection.title }}{% else %}{{ section.settings.title2 }}{% endif %}</h1>
+      <div class="coll-desc">{% if collection.description != blank %}{{ collection.description }}{% else %}{{ section.settings.desc2 }}{% endif %}</div>
     </div>
-    <div class="hero-small-img" style="background-color: {{ section.settings.background_color }}">{% if collection.image != blank %}{{ collection.image | image_url: width: 720 | image_tag }}{% else %}<img src="{{ section.settings.image | img_url: 'x720' }}">{% endif %}</div>
+    <div class="hero-small-img" style="background-color: {{ section.settings.background_color2 }}">{% if collection.image != blank %}{{ collection.image | image_url: width: 720 | image_tag }}{% else %}<img src="{{ section.settings.image2 | img_url: 'x720' }}">{% endif %}</div>
   </div>
 </div>
 
@@ -16,12 +16,12 @@
     "settings": [
 		{
 			"type": "color",
-			"id": "background_color",
+			"id": "background_color2",
 			"label": "Background Color"
 		},
 	  {
         "type": "radio",
-        "id": "media_alignment",
+        "id": "media_alignment2",
         "label": "Media alignment",
         "options": [
           {
@@ -37,17 +37,17 @@
       },
 		{
 			"type": "text",
-			"id": "title",
+			"id": "title2",
 			"label": "Title"
 		},
 		{
 			"type": "text",
-			"id": "desc",
+			"id": "desc2",
 			"label": "Description"
 		},
 		{
 			"type": "image_picker",
-			"id": "image",
+			"id": "image2",
 			"label": "Image"
 		}
 	],
