@@ -699,14 +699,9 @@
   
   function addProductFinder(productFinderBlock) {
     var i = 0;
-    console.log(1);
-    console.log('product finder found');
-    console.log(productFinderBlock);
     
     if($('.product-card:not(.no-disp)').length > 0) {
-      console.log(2);
       if($('.product-card:not(.no-disp').length >= 3) {
-        console.log(3);
         $('.product-card').each(function() {
           if(!$(this).hasClass("no-disp")) {
             if(i == 3) {
@@ -717,12 +712,10 @@
         });
       }
       else {
-        console.log(4);
         $('.product-card:last-child').after($(productFinderBlock));
       }
     }
     else {
-      console.log(5);
       $('.coll-porducts').append($(productFinderBlock));
     }
   }
