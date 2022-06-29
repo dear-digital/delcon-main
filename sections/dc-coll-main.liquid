@@ -223,8 +223,7 @@
         	{% endif %}
           {% endif %}
         {% endfor %}
-        {% if collection.products_count <= 4 %}
-        	{% if forloop.last %}
+        {% if collection.products.size <= 4 %}
         		{% for block in section.blocks %}
         			{% if block.type == 'suggestion' %}
         				<div class="product-finder" style="background-image: url({{ block.settings.bg_img | img_url: '590x' }});">
@@ -236,11 +235,10 @@
         				</div>
         			{% endif %}
         		{% endfor %}
-        	{% endif %}
           {% endif %}
         {% for product in collection.products %}
-    	{% include "product-card", total_variants: section.settings.total_variants, maten: section.settings.maten, koop_online: section.settings.koop_online, koop_local: section.settings.koop_local %}
-    {% endfor %}
+        	{% include "product-card", total_variants: section.settings.total_variants, maten: section.settings.maten, koop_online: section.settings.koop_online, koop_local: section.settings.koop_local %}
+        {% endfor %}
       </div>
     </div>
   </div>
