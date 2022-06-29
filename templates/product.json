@@ -85,6 +85,14 @@
             "ingredient_details": "<p> Zalmolie zorgt voor een gezonde huid en glanzende vacht<\/p>\n<ul>\n<li><strong>bevat omega 3 en omega 6 vetzuren<\/strong><\/li>\n<li>verbetert het immuunsysteem<\/li>\n<li>vermindert slechte cholesterol<\/li>\n<\/ul>",
             "ingredient_image": "shopify:\/\/shop_images\/zalmolie-300x300.jpg"
           }
+        },
+        "5f229d06-0b33-4889-8dd2-a091c5d5b175": {
+          "type": "select",
+          "settings": {
+            "ingredient_name": "Biergist",
+            "ingredient_details": "<ul>\n<li><strong>bron van B-vitamines<\/strong><\/li>\n<li>bevat MOS<\/li>\n<\/ul>",
+            "ingredient_image": "shopify:\/\/shop_images\/biergist-300x300.jpg"
+          }
         }
       },
       "block_order": [
@@ -96,7 +104,8 @@
         "b95f1759-74bc-4c87-b9b7-737ce1c1ee7d",
         "db415ba7-ce1e-4fd5-9582-9b0aad1661c4",
         "e9bbe049-11e0-4145-b680-738f2930494a",
-        "d96be867-8851-4dd6-9d9d-11b4fbb20002"
+        "d96be867-8851-4dd6-9d9d-11b4fbb20002",
+        "5f229d06-0b33-4889-8dd2-a091c5d5b175"
       ],
       "settings": {
         "ingredient_details_background": "#f2f1f0",
