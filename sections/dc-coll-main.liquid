@@ -369,7 +369,8 @@
         });
 
       });
-      $(".selected-sort-txt").text($('.sort-option.checked').text());
+      var sortSelectedText = $('.sort-option.checked').text()
+      $(".selected-sort-txt").text(sortSelectedText);
     }
     else {
       $('.sort-option').removeClass('checked');
