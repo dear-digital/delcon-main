@@ -69,6 +69,22 @@
             "ingredient_details": "<p>Johannesbrood ondersteunt de spijsvertering en is een krachtig antioxidant<\/p>\n<ul>\n<li><strong>bevat geen gluten<\/strong><\/li>\n<li>rijk aan vezels<\/li>\n<li>lage glycemische waarde<\/li>\n<\/ul>",
             "ingredient_image": "shopify:\/\/shop_images\/johannesbrood-300x300.jpg"
           }
+        },
+        "e9bbe049-11e0-4145-b680-738f2930494a": {
+          "type": "select",
+          "settings": {
+            "ingredient_name": "Cichorei",
+            "ingredient_details": "<p>Cichorei ondersteunt een gezonde darmflora<\/p>\n<ul>\n<li><strong>houdt bloedsuikerspiegel stabiel<\/strong><\/li>\n<li>kalmeert en helpt het zenuwstelsel ontspannen<\/li>\n<\/ul>",
+            "ingredient_image": "shopify:\/\/shop_images\/cichorei-300x300.jpg"
+          }
+        },
+        "d96be867-8851-4dd6-9d9d-11b4fbb20002": {
+          "type": "select",
+          "settings": {
+            "ingredient_name": "Zalmolie",
+            "ingredient_details": "<p> Zalmolie zorgt voor een gezonde huid en glanzende vacht<\/p>\n<ul>\n<li><strong>bevat omega 3 en omega 6 vetzuren<\/strong><\/li>\n<li>verbetert het immuunsysteem<\/li>\n<li>vermindert slechte cholesterol<\/li>\n<\/ul>",
+            "ingredient_image": "shopify:\/\/shop_images\/zalmolie-300x300.jpg"
+          }
         }
       },
       "block_order": [
@@ -78,7 +94,9 @@
         "66c7bf6e-42bc-4612-bafc-3682f4da4954",
         "bfe3f1e9-7e03-4fbd-a8a4-53ff93dfa730",
         "b95f1759-74bc-4c87-b9b7-737ce1c1ee7d",
-        "db415ba7-ce1e-4fd5-9582-9b0aad1661c4"
+        "db415ba7-ce1e-4fd5-9582-9b0aad1661c4",
+        "e9bbe049-11e0-4145-b680-738f2930494a",
+        "d96be867-8851-4dd6-9d9d-11b4fbb20002"
       ],
       "settings": {
         "ingredient_details_background": "#f2f1f0",
