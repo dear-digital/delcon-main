@@ -584,16 +584,13 @@
     .done(function( data ) {
       var placeholder = document.createElement('div');
       placeholder.innerHTML = data;
+      var productFinderBlock = $(placeholder).find('.product-finder');
       $(placeholder).find('.product-card:not(.no-disp)').each(function(index) {
         if(index == 3) {
-          $(this).after(`<div class="product-finder" style="background-image: url(https://cdn.shopify.com/s/files/1/0578/5976/8499/files/Mask_Group_1_2x_c7fd7bfd-8968-4ef6-9ad3-0a843e305cb0_590x.png?v=1653477524);">
-			<div class="product-finder-title tk-le-monde-livre-classic-byol">{% if cart.attributes.lang == 'en' %}Choice stress?{% elsif cart.attributes.lang == 'fr' %}{% else %}Keuzestress?{% endif %}</div>
-            <div class="product-finder-desc">{{ block.settings.desc }}</div>
-            <a href="" class="btn btn-productFinder blue-btn">
-            {% if cart.attributes.lang == 'en' %}PRODUCTFINDER{% elsif cart.attributes.lang == 'fr' %}RECHERCHEPRODUIT{% else %}PRODUCTVINDER{% endif %}</a></div>`);
+          $(this).after($(productFinderBlock));
         }                                          
 	  });
-      $(placeholder).find('')
+      $(placeholder).find('.product-finder:last-child').remove();
       var divx = $(placeholder).find('.coll-porducts');
       console.log(divx);
       $('.coll-porducts').first().replaceWith(placeholder.querySelector('.coll-porducts'));
