@@ -591,12 +591,16 @@
 	  console.log(divx);
       
       $('.coll-porducts').first().replaceWith(divx);
-      $('.coll-porducts').find('.product-card:not(.no-disp)').each(function(index) {
-        if(index == 3) {
-          console.log($(this));
-          console.log("product finder block comes here");
-          $(this).after($(productFinderBlock));
-          console.log($(productFinderBlock));
+      var i = 0;
+      $('.product-card').each(function() {
+        if(!$(this).hasClass("no-disp")) {
+          if(i == 3) {
+            console.log($(this));
+            console.log("product finder block comes here");
+            $(this).after($(productFinderBlock));
+            console.log($(productFinderBlock));
+          }
+          i++;
         }
       });
       addProductCard();
