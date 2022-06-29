@@ -493,6 +493,11 @@
     
     $('.fop').removeClass('fop'); 
     $('.total-products').text($('.product-card:not(.no-disp)').length);
+    
+    var productFinderBlock = $('.coll-porducts').find('.product-finder');
+    $('.coll-porducts').find('.product-finder').remove();
+    addProductFinder(productFinderBlock);
+    
   }
   runFilter();
   
@@ -589,7 +594,6 @@
       var productFinderBlock = $(placeholder).find('.product-finder');
       $(placeholder).find('.product-finder').remove();
       var divx = $(placeholder).find('.coll-porducts');
-// 	  console.log(divx);
       
       $('.coll-porducts').first().replaceWith(divx)
       addProductCard();
@@ -646,13 +650,19 @@
     .done(function( data ) {
       var placeholder = document.createElement('div');
       placeholder.innerHTML = data;
+      
+      var productFinderBlock = $(placeholder).find('.product-finder');
+      $(placeholder).find('.product-finder').remove();
       var divx = $(placeholder).find('.coll-porducts');
-      $('.coll-porducts').first().replaceWith(placeholder.querySelector('.coll-porducts'));
+      
+      $('.coll-porducts').first().replaceWith(divx);
       var collHero = $(placeholder).find('.hero-small');
       $('.hero-small').first().replaceWith(collHero);
+      
       addProductCard();
       runFilter();
       Filterradio();
+      addProductFinder(productFinderBlock);
     })
     .fail(function(error) {
       console.log( error );
