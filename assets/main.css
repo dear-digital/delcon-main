@@ -1,5 +1,5 @@
 @font-face {
-  font-family: "Avenir";
+  font-family: "Avenir Next";
   src: url('{{ "Avenir.woff2" | asset_url }}') format("woff2"),
 }
 @font-face {
@@ -111,7 +111,7 @@
   padding-bottom: 80px;
 }
 body {
-  font-family: "Avenir",sans-serif;
+  font-family: "Avenir Next",sans-serif;
   font-weight: 300;
   margin: 0;
   letter-spacing: 0;
