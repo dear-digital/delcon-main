@@ -496,7 +496,7 @@
     
     var productFinderBlock = $('.coll-porducts').find('.product-finder');
     console.log(productFinderBlock);
-//     $('.coll-porducts').find('.product-finder').remove();
+    $('.coll-porducts').find('.product-finder').remove();
     addProductFinder(productFinderBlock);
     
   }
@@ -699,18 +699,31 @@
   
   function addProductFinder(productFinderBlock) {
     var i = 0;
-    $('.product-card').each(function() {
-      if(!$(this).hasClass("no-disp")) {
-//         console.log($(this));
-//         console.log(i);
-        if(i == 3) {
-//           console.log("product finder block comes here");
-          $(this).after($(productFinderBlock));
-//           console.log($(productFinderBlock));
+    
+    if($('.product-card').length >= 3) {
+      $('.product-card').each(function() {
+        if(!$(this).hasClass("no-disp")) {
+          //         console.log($(this));
+          //         console.log(i);
+          if(i == 3) {
+            //           console.log("product finder block comes here");
+            $(this).after($(productFinderBlock));
+            //           console.log($(productFinderBlock));
+          }
+          i++;
         }
-        i++;
-      }
-    });
+      });
+    }
+    else {
+      $('.product-card').each(function() {
+        if(!$(this).hasClass("no-disp")) {
+          if(i == ($('.product-card').length - 1)) {
+            $(this).after($(productFinderBlock));
+          }
+          i++;
+        }
+      });
+    }
   }
 </script>
 
