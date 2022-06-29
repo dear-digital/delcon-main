@@ -657,8 +657,9 @@
       var divx = $(placeholder).find('.coll-porducts');
       
       $('.coll-porducts').first().replaceWith(divx);
-      var collHero = $(placeholder).find('.hero-small');
-      $('.hero-small').replaceWith(collHero);
+      var collHero = $(placeholder).find('.coll-hero');
+      $('.coll-hero').replaceWith(collHero);
+      $('.coll-hero-m').replaceWith(collHero);
       
       addProductCard();
       runFilter();
