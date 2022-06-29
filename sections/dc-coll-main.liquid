@@ -495,7 +495,7 @@
     $('.total-products').text($('.product-card:not(.no-disp)').length);
     
     var productFinderBlock = $('.coll-porducts').find('.product-finder');
-    console.log(productFinderBlock);
+//     console.log(productFinderBlock);
     $('.coll-porducts').find('.product-finder').remove();
     addProductFinder(productFinderBlock);
     
@@ -658,8 +658,9 @@
       
       $('.coll-porducts').first().replaceWith(divx);
       var collHero = $(placeholder).find('.coll-hero');
-      $('.coll-hero').replaceWith(collHero);
-      $('.coll-hero-m').replaceWith(collHero);
+      var collHeroMobile = $(placeholder).find('.coll-hero-m');
+      $('.coll-hero').first().replaceWith(collHero);
+      $('.coll-hero-m').first().replaceWith(collHeroMobile);
       
       addProductCard();
       runFilter();
