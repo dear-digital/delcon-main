@@ -224,8 +224,8 @@
         "b80bf1e5-119e-4d3d-9cfc-eec32d270bf3": {
           "type": "text",
           "settings": {
-            "question": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonum?",
-            "answer": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum."
+            "question": "Hoe lees je de Delcon voedingstabel?",
+            "answer": "Voor puppies: In de linkertabel vind je het gewicht terug die je pup zal hebben als hij volwassen is (bv. een boxer pup weegt als volwassen hond ongeveer 25kg). Verder kijk je hoe oud je pup is op dit moment, in de rij eronder zie je hoeveel maaltijden je pup mag eten per dag. Tot hun 6 maand, verdeel je de hoeveelheid over 3 maaltijden. Later mag je overschakelen naar 2 maaltijden. Bij recommended quantity zie je hoeveel gram je pup per DAG mag eten. Deze hoeveelheid verdeel je dan over het aantal maaltijden je pup mag eten. Voor volwassen honden: In de linkertabel zie je het gewicht van je hond. In de eerste rij zie je rechts de activiteitsgraad van je hond. Kijk bij het gewicht van je hond en zijn activiteitsgraad, hoeveel gram je hond per dag mag eten. Dit gewicht mag je dan verdelen over 2 maaltijden."
           }
         },
         "3054e505-bff1-427a-bf32-74c1f9ca2cbe": {
