@@ -591,11 +591,11 @@
       var divx = $(placeholder).find('.coll-porducts');
 // 	  console.log(divx);
       
-      $('.coll-porducts').first().replaceWith(divx);
-      addProductFinder(productFinderBlock);
+      $('.coll-porducts').first().replaceWith(divx)
       addProductCard();
       runFilter();
       Filterradio();
+      addProductFinder(productFinderBlock);
     })
     .fail(function(error) {
       console.log( error );
