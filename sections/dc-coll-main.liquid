@@ -587,10 +587,12 @@
       var productFinderBlock = $(placeholder).find('.product-finder');
       $(placeholder).find('.product-finder').remove();
       $(placeholder).find('.product-card:not(.no-disp)').each(function(index) {
+        console.log($(this));
         if(index == 3) {
+          console.log("product finder block comes here");
           $(this).after($(productFinderBlock));
-        }                                          
-	  });
+        }
+      });
       var divx = $(placeholder).find('.coll-porducts');
       console.log(divx);
       $('.coll-porducts').first().replaceWith(placeholder.querySelector('.coll-porducts'));
