@@ -117,6 +117,14 @@
             "ingredient_details": "<p>Chondroïtine &amp; glucosamine voorkomen gewrichtsproblemen<\/p>\n<ul>\n<li><strong>regenereren kraakbeen<\/strong><\/li>\n<\/ul>",
             "ingredient_image": "shopify:\/\/shop_images\/glucosamine-300x300.jpg"
           }
+        },
+        "d74817ef-59e9-482a-a72f-a472dba8e756": {
+          "type": "select",
+          "settings": {
+            "ingredient_name": "Gevogelte",
+            "ingredient_details": "<p>Kippenvlees is rijk aan eiwitten<\/p>\n<ul>\n<li><strong>Voorziet in alle nodige aminozuren<\/strong><\/li>\n<li>Vitamines B6, B2, B12<\/li>\n<\/ul>",
+            "ingredient_image": "shopify:\/\/shop_images\/kip-2-300x300.jpg"
+          }
         }
       },
       "block_order": [
@@ -132,7 +140,8 @@
         "5f229d06-0b33-4889-8dd2-a091c5d5b175",
         "1f3f70a7-02d1-4915-b7a1-b2d1446c6216",
         "787b95eb-dc56-43d3-bae2-72eae1bea1c6",
-        "654eede8-e987-413c-8cf3-8d45b92959ee"
+        "654eede8-e987-413c-8cf3-8d45b92959ee",
+        "d74817ef-59e9-482a-a72f-a472dba8e756"
       ],
       "settings": {
         "ingredient_details_background": "#f2f1f0",
