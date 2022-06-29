@@ -26,7 +26,7 @@
           "type": "select",
           "settings": {
             "ingredient_name": "Kippenvlees",
-            "ingredient_details": "<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam<\/p><ul>\n<li><strong>Hoog in eiwitten<\/strong><\/li>\n<li>Voorziet in alle nodige aminozuren<\/li>\n<li>Vitamines B6, B2, B12<\/li>\n<\/ul>",
+            "ingredient_details": "<p>Kippenvlees zorgt voor de perfecte balans tussen eiwitten en vetten.<\/p>\n<ul>\n<li><strong>Hoog in eiwitten<\/strong><\/li>\n<li>Voorziet in alle nodige aminozuren<\/li>\n<li>Vitamines B6, B2, B12<\/li>\n<\/ul>",
             "ingredient_image": "shopify:\/\/shop_images\/Image_2x_e91738de-bcc2-4a55-b173-43507937fd81.png"
           }
         },
