@@ -369,10 +369,10 @@
         });
 
       });
-      var sortSelectedText = $('.sort-option.checked').text();
+      var sortSelectedText = $('.sort-option.checked:first-child').text();
       console.log($('.sort-option.checked'));
       console.log(sortSelectedText);
-//       $(".selected-sort-txt").text(sortSelectedText);
+      $(".selected-sort-txt").text(sortSelectedText);
     }
     else {
       $('.sort-option').removeClass('checked');
