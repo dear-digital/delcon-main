@@ -138,7 +138,7 @@
           "type": "select",
           "settings": {
             "ingredient_name": "Aardappel",
-            "ingredient_details": "<p>Aardappel is een bron van trage koolhydraten die voor de nodige energie zorgt<\/p>\n<ul>\n<li><strong>zeer goed verteerbaar<\/strong><\/li>\n<\/ul>",
+            "ingredient_details": "<p>Aardappel is een bron van trage koolhydraten die voor de nodige energie zorgt<\/p>\n<ul>\n<li><strong>Zeer goed verteerbaar<\/strong><\/li>\n<\/ul>",
             "ingredient_image": "shopify:\/\/shop_images\/aardappel-300x300.jpg"
           }
         },
