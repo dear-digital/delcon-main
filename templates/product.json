@@ -18,7 +18,7 @@
           "type": "select",
           "settings": {
             "ingredient_name": "Lamsvlees",
-            "ingredient_details": "<p>Zorgt voor een uitstekende bron van eiwitten en aminozuren.<\/p><ul>\n<li><strong>zeer gemakkelijk verteerbaar<\/strong><\/li>\n<li>ondersteunt het immuunsysteem<\/li>\n<li>vitamines B2, B3, B12<\/li>\n<\/ul>",
+            "ingredient_details": "<p>Lamsvlees zorgt voor een uitstekende bron van eiwitten en aminozuren<\/p><ul>\n<li><strong>zeer gemakkelijk verteerbaar<\/strong><\/li>\n<li>ondersteunt het immuunsysteem<\/li>\n<li>vitamines B2, B3, B12<\/li>\n<\/ul>",
             "ingredient_image": "shopify:\/\/shop_images\/lam-300x300.jpg"
           }
         },
@@ -59,7 +59,7 @@
           "settings": {
             "ingredient_name": "Zalm",
             "ingredient_details": "<p>Zalm verbetert het immuunsysteem en\nvoorkomt hart- en vaatziekten<\/p><ul>\n<li><strong>bevat veel omega 3 en 6<\/strong><\/li>\n<li>vermindert slechte cholesterol<\/li>\n<li>rijk aan B-vitamines (B1, B2, B3, B6, B11, B12) die hersenen en zenuwstelsel gezond houden, bevat foliumzuur (B1, B11)<\/li>\n<\/ul>",
-            "ingredient_image": "shopify:\/\/shop_images\/Schermafbeelding_2022-04-26_om_15.52.49.png"
+            "ingredient_image": "shopify:\/\/shop_images\/zalm-300x300.jpg"
           }
         },
         "db415ba7-ce1e-4fd5-9582-9b0aad1661c4": {
