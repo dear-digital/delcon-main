@@ -589,14 +589,14 @@
       var divx = $(placeholder).find('.coll-porducts');
       console.log(divx);
       $('.coll-porducts').first().replaceWith(placeholder.querySelector('.coll-porducts'));
-//       $('.product-card:not(.no-disp)').each(function(index) {
-//         if(index == 3) {
-//           console.log($(this));
-//           console.log("product finder block comes here");
-//           $(this).after($(productFinderBlock));
-//           console.log($(productFinderBlock));
-//         }
-//       });
+      $('.product-card:not(.no-disp)').each(function(index) {
+        if(index == 3) {
+          console.log($(this));
+          console.log("product finder block comes here");
+          $(this).after($(productFinderBlock));
+          console.log($(productFinderBlock));
+        }
+      });
       addProductCard();
       runFilter();
       Filterradio();
