@@ -23,7 +23,7 @@
   object-fit: contain
 }
 .feature-title {
-  font-family: "Avenir",sans-serif;
+  font-family: "Avenir Next",sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 25px;
@@ -31,7 +31,7 @@
   text-transform: uppercase;
 }
 .feature-desc {
-  font-family: "Avenir",sans-serif;
+  font-family: "Avenir Next",sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
