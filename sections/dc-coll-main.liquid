@@ -703,9 +703,9 @@
     console.log('product finder found');
     console.log(productFinderBlock);
     
-    if($('.product-card').length > 0) {
+    if($('.product-card:not(.no-disp)').length > 0) {
       console.log(2);
-      if($('.product-card').length >= 3) {
+      if($('.product-card:not(.no-disp').length >= 3) {
         console.log(3);
         $('.product-card').each(function() {
           if(!$(this).hasClass("no-disp")) {
