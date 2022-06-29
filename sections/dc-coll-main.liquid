@@ -710,8 +710,11 @@
         }
       });
     }
-    else {
+    else if($('.product-card').length > 0) {
       $('.product-card:last-child').after($(productFinderBlock));
+    }
+    else {
+      $('.coll-porducts').after($(productFinderBlock));
     }
   }
 </script>
