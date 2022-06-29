@@ -61,6 +61,13 @@
             "ingredient_details": "<p>Zalm verbetert het immuunsysteem en\nvoorkomt hart- en vaatziekten<\/p><ul>\n<li><strong>bevat veel omega 3 en 6<\/strong><\/li>\n<li>vermindert slechte cholesterol<\/li>\n<li>rijk aan B-vitamines (B1, B2, B3, B6, B11, B12) die hersenen en zenuwstelsel gezond houden, bevat foliumzuur (B1, B11)<\/li>\n<\/ul>",
             "ingredient_image": "shopify:\/\/shop_images\/Schermafbeelding_2022-04-26_om_15.52.49.png"
           }
+        },
+        "db415ba7-ce1e-4fd5-9582-9b0aad1661c4": {
+          "type": "select",
+          "settings": {
+            "ingredient_name": "Johannesbrood",
+            "ingredient_details": "<p>Johannesbrood ondersteunt de spijsvertering en is een krachtig antioxidant<\/p>\n<ul>\n<li><strong>bevat geen gluten<\/strong><\/li>\n<li>rijk aan vezels<\/li>\n<li>lage glycemische waarde<\/li>\n<\/ul>"
+          }
         }
       },
       "block_order": [
@@ -69,7 +76,8 @@
         "04711b9d-7fd5-4c47-94a6-a11c8d3e76b7",
         "66c7bf6e-42bc-4612-bafc-3682f4da4954",
         "bfe3f1e9-7e03-4fbd-a8a4-53ff93dfa730",
-        "b95f1759-74bc-4c87-b9b7-737ce1c1ee7d"
+        "b95f1759-74bc-4c87-b9b7-737ce1c1ee7d",
+        "db415ba7-ce1e-4fd5-9582-9b0aad1661c4"
       ],
       "settings": {
         "ingredient_details_background": "#f2f1f0",
