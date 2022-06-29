@@ -133,6 +133,13 @@
             "ingredient_details": "<p>Vis verbetert het immuunsysteem en \nvoorkomt hart- en vaatziekten<\/p>\n<ul>\n<li><strong>bevat omega 3 en omega 6 vetzuren<\/strong><\/li>\n<li>vermindert slechte cholesterol<\/li>\n<li>rijk aan B-vitamines (B1, B2, B3, B6, B11, B12) die hersenen en zenuwstelsel gezond houden<\/li>\n<li>bevat foliumzuur (B1, B11)<\/li>\n<\/ul>",
             "ingredient_image": "shopify:\/\/shop_images\/zalm-300x300.jpg"
           }
+        },
+        "4f2679e7-60f7-438f-afc2-0a4eda83bb56": {
+          "type": "select",
+          "settings": {
+            "ingredient_name": "Aardappel",
+            "ingredient_details": "<p>Aardappel is een bron van trage koolhydraten die voor de nodige energie zorgt<\/p>\n<ul>\n<li><strong>zeer goed verteerbaar<\/strong><\/li>\n<\/ul>"
+          }
         }
       },
       "block_order": [
@@ -150,7 +157,8 @@
         "787b95eb-dc56-43d3-bae2-72eae1bea1c6",
         "654eede8-e987-413c-8cf3-8d45b92959ee",
         "d74817ef-59e9-482a-a72f-a472dba8e756",
-        "f290169d-0bfa-442b-8e68-3121c18cd3ee"
+        "f290169d-0bfa-442b-8e68-3121c18cd3ee",
+        "4f2679e7-60f7-438f-afc2-0a4eda83bb56"
       ],
       "settings": {
         "ingredient_details_background": "#f2f1f0",
