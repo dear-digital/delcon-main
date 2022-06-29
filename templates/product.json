@@ -130,7 +130,7 @@
           "type": "select",
           "settings": {
             "ingredient_name": "Vis",
-            "ingredient_details": "<p>Vis verbetert het immuunsysteem en \nvoorkomt hart- en vaatziekten<\/p>\n<ul>\n<li><strong>bevat omega 3 en omega 6 vetzuren<\/strong><\/li>\n<li>vermindert slechte cholesterol<\/li>\n<li>rijk aan B-vitamines (B1, B2, B3, B6, B11, B12) die hersenen en zenuwstelsel gezond houden<\/li>\n<li>bevat foliumzuur (B1, B11)<\/li>\n<\/ul>",
+            "ingredient_details": "<p>Vis verbetert het immuunsysteem en \nvoorkomt hart- en vaatziekten<\/p>\n<ul>\n<li><strong>Bevat omega 3 en omega 6 vetzuren<\/strong><\/li>\n<li>Vermindert slechte cholesterol<\/li>\n<li>Rijk aan B-vitamines (B1, B2, B3, B6, B11, B12) die hersenen en zenuwstelsel gezond houden<\/li>\n<li>Bevat foliumzuur (B1, B11)<\/li>\n<\/ul>",
             "ingredient_image": "shopify:\/\/shop_images\/zalm-300x300.jpg"
           }
         },

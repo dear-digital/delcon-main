@@ -584,10 +584,12 @@
     .done(function( data ) {
       var placeholder = document.createElement('div');
       placeholder.innerHTML = data;
+      
       var productFinderBlock = $(placeholder).find('.product-finder');
       $(placeholder).find('.product-finder').remove();
       var divx = $(placeholder).find('.coll-porducts');
-      console.log(divx);
+	  console.log(divx);
+      
       $('.coll-porducts').first().replaceWith(placeholder.querySelector('.coll-porducts'));
       $('.coll-porducts').find('.product-card:not(.no-disp)').each(function(index) {
         if(index == 3) {
