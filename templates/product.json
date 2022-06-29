@@ -113,8 +113,8 @@
         "654eede8-e987-413c-8cf3-8d45b92959ee": {
           "type": "select",
           "settings": {
-            "ingredient_name": "Chondroïtine & glucosamine",
-            "ingredient_details": "<p>Chondroïtine &amp; glucosamine voorkomen gewrichtsproblemen<\/p>\n<ul>\n<li><strong>regenereren kraakbeen<\/strong><\/li>\n<\/ul>",
+            "ingredient_name": "Chondroïtine en glucosamine",
+            "ingredient_details": "<p>Chondroïtine en glucosamine voorkomen gewrichtsproblemen<\/p>\n<ul>\n<li><strong>Regenereren kraakbeen<\/strong><\/li>\n<\/ul>",
             "ingredient_image": "shopify:\/\/shop_images\/glucosamine-300x300.jpg"
           }
         },
