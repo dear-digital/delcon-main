@@ -170,7 +170,7 @@
           "type": "select",
           "settings": {
             "ingredient_name": "Taurine",
-            "ingredient_details": "<p>Taurine is een essentieel aminozuur voor een kat<\/p>\n<ul>\n<li><strong>Helpt bij de aanmaak van spieren en centrale zenuwstelsel<\/strong><\/li>\n<li>kat maakt dit zelf niet aan, dus belangrijk dat dit via de voeding wordt toegevoegd<\/li>\n<\/ul>",
+            "ingredient_details": "<p>Taurine is een essentieel aminozuur voor een kat<\/p>\n<ul>\n<li><strong>Helpt bij de aanmaak van spieren en centrale zenuwstelsel<\/strong><\/li>\n<li>Kat maakt dit zelf niet aan, dus belangrijk dat dit via de voeding wordt toegevoegd<\/li>\n<\/ul>",
             "ingredient_image": "shopify:\/\/shop_images\/taurine-300x300.jpg"
           }
         }
