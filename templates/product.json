@@ -165,6 +165,14 @@
             "ingredient_details": "<p>Mineralen spelen een rol in verschillende processen in het lichaam<\/p>\n<ul>\n<li><strong>worden niet aangemaakt door het lichaam, dienen toegevoegd te worden<\/strong><\/li>\n<\/ul>",
             "ingredient_image": "shopify:\/\/shop_images\/mineralen-300x300.jpg"
           }
+        },
+        "82575a55-cbfa-44b7-9aa3-3f682a3aba1d": {
+          "type": "select",
+          "settings": {
+            "ingredient_name": "Taurine",
+            "ingredient_details": "<p>Taurine is een essentieel aminozuur voor een kat<\/p>\n<ul>\n<li><strong>Helpt bij de aanmaak van spieren en centrale zenuwstelsel<\/strong><\/li>\n<li>kat maakt dit zelf niet aan, dus belangrijk dat dit via de voeding wordt toegevoegd<\/li>\n<\/ul>",
+            "ingredient_image": "shopify:\/\/shop_images\/taurine-300x300.jpg"
+          }
         }
       },
       "block_order": [
@@ -186,7 +194,8 @@
         "4f2679e7-60f7-438f-afc2-0a4eda83bb56",
         "e94dc94e-33ba-4016-965d-3b0ff686380a",
         "89c0c927-fab8-44b0-b38b-01bd94677f13",
-        "4ca9d5fe-0039-44c8-b75b-4081bc00d4af"
+        "4ca9d5fe-0039-44c8-b75b-4081bc00d4af",
+        "82575a55-cbfa-44b7-9aa3-3f682a3aba1d"
       ],
       "settings": {
         "ingredient_details_background": "#f2f1f0",
