@@ -495,7 +495,7 @@
     $('.total-products').text($('.product-card:not(.no-disp)').length);
     
     var productFinderBlock = $('.coll-porducts').find('.product-finder');
-    console.log(productFinderBlock);
+//     console.log(productFinderBlock);
     $('.coll-porducts').find('.product-finder').remove();
     addProductFinder(productFinderBlock);
     
@@ -703,12 +703,8 @@
     if($('.product-card').length >= 3) {
       $('.product-card').each(function() {
         if(!$(this).hasClass("no-disp")) {
-          //         console.log($(this));
-          //         console.log(i);
           if(i == 3) {
-            //           console.log("product finder block comes here");
             $(this).after($(productFinderBlock));
-            //           console.log($(productFinderBlock));
           }
           i++;
         }
