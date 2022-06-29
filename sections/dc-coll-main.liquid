@@ -586,7 +586,11 @@
       placeholder.innerHTML = data;
       $(placeholder).find('.product-card:not(.no-disp)').each(function(index) {
         if(index == 3) {
-          $(this).after('<div class="product-finder" style="background-image: url('{{ block.settings.bg_img | img_url: '590x' }}');"><div class="product-finder-title tk-le-monde-livre-classic-byol">'{{ block.settings.title }}'</div><div class="product-finder-desc">'{{ block.settings.desc }}'</div>'{% if block.settings.section_btn_text != blank %}'<a href="'{{ block.settings.section_btn_url }}'" class="btn '{% if block.settings.isProductFinder == true %}'btn-productFinder blue-btn'{% endif %}'">'{{ block.settings.section_btn_text }}'</a>'{% endif %}'</div>');
+          $(this).after(`<div class="product-finder" style="background-image: url({{ block.settings.bg_img | img_url: '590x' }});">
+			<div class="product-finder-title tk-le-monde-livre-classic-byol">{{ block.settings.title }}</div>
+            <div class="product-finder-desc">{{ block.settings.desc }}</div>{% if block.settings.section_btn_text != blank %}
+            <a href="{{ block.settings.section_btn_url }}" class="btn {% if block.settings.isProductFinder == true %}btn-productFinder blue-btn{% endif %}">
+            {{ block.settings.section_btn_text }}</a>{% endif %}</div>`);
         }                                          
 	  });
       $(placeholder).find('')
