@@ -588,21 +588,21 @@
       var productFinderBlock = $(placeholder).find('.product-finder');
       $(placeholder).find('.product-finder').remove();
       var divx = $(placeholder).find('.coll-porducts');
-	  console.log(divx);
+// 	  console.log(divx);
       
       $('.coll-porducts').first().replaceWith(divx);
-      var i = 0;
-      $('.product-card').each(function() {
-        if(!$(this).hasClass("no-disp")) {
-          console.log($(this));
-          if(i == 3) {
-            console.log("product finder block comes here");
-            $(this).after($(productFinderBlock));
-            console.log($(productFinderBlock));
-          }
-          i++;
-        }
-      });
+//       var i = 0;
+//       $('.product-card').each(function() {
+//         if(!$(this).hasClass("no-disp")) {
+//           console.log($(this));
+//           if(i == 3) {
+//             console.log("product finder block comes here");
+//             $(this).after($(productFinderBlock));
+//             console.log($(productFinderBlock));
+//           }
+//           i++;
+//         }
+//       });
       addProductCard();
       runFilter();
       Filterradio();
