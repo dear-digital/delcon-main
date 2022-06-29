@@ -590,7 +590,7 @@
       var divx = $(placeholder).find('.coll-porducts');
 	  console.log(divx);
       
-      $('.coll-porducts').first().replaceWith(placeholder.querySelector('.coll-porducts'));
+      $('.coll-porducts').first().replaceWith(divx);
       $('.coll-porducts').find('.product-card:not(.no-disp)').each(function(index) {
         if(index == 3) {
           console.log($(this));
