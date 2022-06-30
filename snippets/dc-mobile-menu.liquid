@@ -31,9 +31,9 @@
     {%- endif -%}
     
     <div class="mobile_menu-lang">
-      <a href="/" class="round active">nl</a>
-      <a href="/en" class="round">en</a>
-      <a href="/fr" class="round">fr</a>
+      <a href="/" class="round {% if page.url contains "en" or page.url contains "fr" %}{% else %}active{% endif %}">nl</a>
+      <a href="/en" class="round {% if page.url contains "en" %}active{% endif %}">en</a>
+      <a href="/fr" class="round {% if page.url contains "fr" %}active{% endif %}">fr</a>
     </div>
   </div>
 </div>
