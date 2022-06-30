@@ -1,0 +1,284 @@
+{
+  "sections": {
+    "1652787202269c9bde": {
+      "type": "dc-main-product",
+      "settings": {
+        "terug_btn": "terug naar katten",
+        "terug_link": "shopify:\/\/collections\/kattenvoer",
+        "variant_type": "Hoeveelheid:",
+        "shipping_details": "<ul class=\"checked-list\"><li>Gratis verzending vanaf €59,90<\/li><\/ul>",
+        "out_of_stock": "Uitverkocht",
+        "add_to_cart": "AAN WINKELWAGEN TOEVOEGEN"
+      }
+    },
+    "1653741255c1c06018": {
+      "type": "dc-product-ingredients",
+      "blocks": {
+        "c2f8e62d-d461-46d2-b67b-fd9d335716ab": {
+          "type": "select",
+          "settings": {
+            "ingredient_name": "Lamsvlees",
+            "ingredient_details": "<p>Lamsvlees zorgt voor een uitstekende bron van eiwitten en aminozuren<\/p><ul>\n<li><strong>Zeer gemakkelijk verteerbaar<\/strong><\/li>\n<li>Ondersteunt het immuunsysteem<\/li>\n<li>Vitamines B2, B3, B12<\/li>\n<\/ul>",
+            "ingredient_image": "shopify:\/\/shop_images\/lam-300x300.jpg"
+          }
+        },
+        "791dc80e-02fd-4a29-9958-a51051ce3e5e": {
+          "type": "select",
+          "settings": {
+            "ingredient_name": "Kippenvlees",
+            "ingredient_details": "<p>Kippenvlees zorgt voor de perfecte balans tussen eiwitten en vetten<\/p>\n<ul>\n<li><strong>Hoog in eiwitten<\/strong><\/li>\n<li>Voorziet in alle nodige aminozuren<\/li>\n<li>Vitamines B6, B2, B12<\/li>\n<\/ul>",
+            "ingredient_image": "shopify:\/\/shop_images\/kip-2-300x300.jpg"
+          }
+        },
+        "04711b9d-7fd5-4c47-94a6-a11c8d3e76b7": {
+          "type": "select",
+          "settings": {
+            "ingredient_name": "Rijst",
+            "ingredient_details": "<p>Rijst is een zeer goed verteerbaar koolhydraat dat de vertering optimaliseert<\/p>\n<ul>\n<li><strong>Zorgt voor de nodige energie<\/strong><\/li>\n<\/ul>",
+            "ingredient_image": "shopify:\/\/shop_images\/rijst-300x300.jpg"
+          }
+        },
+        "66c7bf6e-42bc-4612-bafc-3682f4da4954": {
+          "type": "select",
+          "settings": {
+            "ingredient_name": "Lijnzaad",
+            "ingredient_details": "<p>Lijnzaad zorgt voor essentiële vetzuren<\/p><ul>\n<li><strong>Bevat natuurlijke antioxidanten<\/strong><\/li>\n<li>Helpt het bekomen van een gezonde huid en een glanzende vacht<\/li>\n<\/ul>",
+            "ingredient_image": "shopify:\/\/shop_images\/lijnzaad-300x300.jpg"
+          }
+        },
+        "bfe3f1e9-7e03-4fbd-a8a4-53ff93dfa730": {
+          "type": "select",
+          "settings": {
+            "ingredient_name": "Bietenpulp",
+            "ingredient_details": "<p>Bietenpulp is een “super”vezel met een hoge verteerbaarheid <\/p><ul>\n<li><strong>Bevordert darmtransit<\/strong><\/li>\n<li>Is koolhydraatarm<\/li>\n<\/ul>",
+            "ingredient_image": "shopify:\/\/shop_images\/bietenpulp-300x300.jpg"
+          }
+        },
+        "b95f1759-74bc-4c87-b9b7-737ce1c1ee7d": {
+          "type": "select",
+          "settings": {
+            "ingredient_name": "Zalm",
+            "ingredient_details": "<p>Zalm verbetert het immuunsysteem en\nvoorkomt hart- en vaatziekten<\/p><ul>\n<li><strong>Bevat veel omega 3 en 6<\/strong><\/li>\n<li>Vermindert slechte cholesterol<\/li>\n<li>Rijk aan B-vitamines (B1, B2, B3, B6, B11, B12) die hersenen en zenuwstelsel gezond houden, bevat foliumzuur (B1, B11)<\/li>\n<\/ul>",
+            "ingredient_image": "shopify:\/\/shop_images\/zalm-300x300.jpg"
+          }
+        },
+        "db415ba7-ce1e-4fd5-9582-9b0aad1661c4": {
+          "type": "select",
+          "settings": {
+            "ingredient_name": "Johannesbrood",
+            "ingredient_details": "<p>Johannesbrood ondersteunt de spijsvertering en is een krachtig antioxidant<\/p>\n<ul>\n<li><strong>Bevat geen gluten<\/strong><\/li>\n<li>Rijk aan vezels<\/li>\n<li>Lage glycemische waarde<\/li>\n<\/ul>",
+            "ingredient_image": "shopify:\/\/shop_images\/johannesbrood-300x300.jpg"
+          }
+        },
+        "e9bbe049-11e0-4145-b680-738f2930494a": {
+          "type": "select",
+          "settings": {
+            "ingredient_name": "Cichorei",
+            "ingredient_details": "<p>Cichorei ondersteunt een gezonde darmflora<\/p>\n<ul>\n<li><strong>Houdt bloedsuikerspiegel stabiel<\/strong><\/li>\n<li>Kalmeert en helpt het zenuwstelsel ontspannen<\/li>\n<\/ul>",
+            "ingredient_image": "shopify:\/\/shop_images\/cichorei-300x300.jpg"
+          }
+        },
+        "d96be867-8851-4dd6-9d9d-11b4fbb20002": {
+          "type": "select",
+          "settings": {
+            "ingredient_name": "Zalmolie",
+            "ingredient_details": "<p> Zalmolie zorgt voor een gezonde huid en glanzende vacht<\/p>\n<ul>\n<li><strong>Bevat omega 3 en omega 6 vetzuren<\/strong><\/li>\n<li>Verbetert het immuunsysteem<\/li>\n<li>Vermindert slechte cholesterol<\/li>\n<\/ul>",
+            "ingredient_image": "shopify:\/\/shop_images\/zalmolie-300x300.jpg"
+          }
+        },
+        "5f229d06-0b33-4889-8dd2-a091c5d5b175": {
+          "type": "select",
+          "settings": {
+            "ingredient_name": "Biergist",
+            "ingredient_details": "<ul>\n<li><strong>Bron van B-vitamines<\/strong><\/li>\n<li>Bevat MOS<\/li>\n<\/ul>",
+            "ingredient_image": "shopify:\/\/shop_images\/biergist-300x300.jpg"
+          }
+        },
+        "1f3f70a7-02d1-4915-b7a1-b2d1446c6216": {
+          "type": "select",
+          "settings": {
+            "ingredient_name": "gistextract",
+            "ingredient_details": "<p>Gistextract is een prebioticum dat de spijsvertering positief beïnvloedt<\/p>\n<ul>\n<li><strong>Bron van B-vitamines<\/strong><\/li>\n<li>Bevat MOS<\/li>\n<\/ul>",
+            "ingredient_image": "shopify:\/\/shop_images\/gistextract-300x300.jpg"
+          }
+        },
+        "787b95eb-dc56-43d3-bae2-72eae1bea1c6": {
+          "type": "select",
+          "settings": {
+            "ingredient_name": "kruiden",
+            "ingredient_details": "<ul>\n<li><strong>Yucca Schidigera<\/strong><\/li>\n<li>Macleaya Cordata<\/li>\n<\/ul>",
+            "ingredient_image": "shopify:\/\/shop_images\/kruiden-300x300.jpg"
+          }
+        },
+        "654eede8-e987-413c-8cf3-8d45b92959ee": {
+          "type": "select",
+          "settings": {
+            "ingredient_name": "Chondroïtine en glucosamine",
+            "ingredient_details": "<p>Chondroïtine en glucosamine voorkomen gewrichtsproblemen<\/p>\n<ul>\n<li><strong>Regenereren kraakbeen<\/strong><\/li>\n<\/ul>",
+            "ingredient_image": "shopify:\/\/shop_images\/glucosamine-300x300.jpg"
+          }
+        },
+        "d74817ef-59e9-482a-a72f-a472dba8e756": {
+          "type": "select",
+          "settings": {
+            "ingredient_name": "Gevogelte",
+            "ingredient_details": "<p>Kippenvlees is rijk aan eiwitten<\/p>\n<ul>\n<li><strong>Voorziet in alle nodige aminozuren<\/strong><\/li>\n<li>Vitamines B6, B2, B12<\/li>\n<\/ul>",
+            "ingredient_image": "shopify:\/\/shop_images\/kip-2-300x300.jpg"
+          }
+        },
+        "f290169d-0bfa-442b-8e68-3121c18cd3ee": {
+          "type": "select",
+          "settings": {
+            "ingredient_name": "Vis",
+            "ingredient_details": "<p>Vis verbetert het immuunsysteem en \nvoorkomt hart- en vaatziekten<\/p>\n<ul>\n<li><strong>Bevat omega 3 en omega 6 vetzuren<\/strong><\/li>\n<li>Vermindert slechte cholesterol<\/li>\n<li>Rijk aan B-vitamines (B1, B2, B3, B6, B11, B12) die hersenen en zenuwstelsel gezond houden<\/li>\n<li>Bevat foliumzuur (B1, B11)<\/li>\n<\/ul>",
+            "ingredient_image": "shopify:\/\/shop_images\/zalm-300x300.jpg"
+          }
+        },
+        "4f2679e7-60f7-438f-afc2-0a4eda83bb56": {
+          "type": "select",
+          "settings": {
+            "ingredient_name": "Aardappel",
+            "ingredient_details": "<p>Aardappel is een bron van trage koolhydraten die voor de nodige energie zorgt<\/p>\n<ul>\n<li><strong>Zeer goed verteerbaar<\/strong><\/li>\n<\/ul>",
+            "ingredient_image": "shopify:\/\/shop_images\/aardappel-300x300.jpg"
+          }
+        },
+        "e94dc94e-33ba-4016-965d-3b0ff686380a": {
+          "type": "select",
+          "settings": {
+            "ingredient_name": "Appel",
+            "ingredient_details": "<p>Een appel bevat vetten en vezels<\/p>\n<ul>\n<li><strong>Rijk aan vitamines B1,B2, B6, E<\/strong><\/li>\n<li>\nVerschillende mineralen: magnesium, calcium, fosfor, ijzer, zink<\/li>\n<\/ul>",
+            "ingredient_image": "shopify:\/\/shop_images\/appel-300x300.jpg"
+          }
+        },
+        "89c0c927-fab8-44b0-b38b-01bd94677f13": {
+          "type": "select",
+          "settings": {
+            "ingredient_name": "Prebiotica",
+            "ingredient_details": "<p>Inuline (FOS) – MOS:<\/p>\n<ul>\n<li><strong>Voeding voor de gezonde bacterieën in het spijsverteringsstelsel<\/strong><\/li>\n<li>\nBevordert de spijsvertering<\/li>\n<\/ul>",
+            "ingredient_image": "shopify:\/\/shop_images\/prebiotica-300x300.jpg"
+          }
+        },
+        "4ca9d5fe-0039-44c8-b75b-4081bc00d4af": {
+          "type": "select",
+          "settings": {
+            "ingredient_name": "Mineralen",
+            "ingredient_details": "<p>Mineralen spelen een rol in verschillende processen in het lichaam<\/p>\n<ul>\n<li><strong>Worden niet aangemaakt door het lichaam, dienen toegevoegd te worden<\/strong><\/li>\n<\/ul>",
+            "ingredient_image": "shopify:\/\/shop_images\/mineralen-300x300.jpg"
+          }
+        },
+        "82575a55-cbfa-44b7-9aa3-3f682a3aba1d": {
+          "type": "select",
+          "settings": {
+            "ingredient_name": "Taurine",
+            "ingredient_details": "<p>Taurine is een essentieel aminozuur voor een kat<\/p>\n<ul>\n<li><strong>Helpt bij de aanmaak van spieren en centrale zenuwstelsel<\/strong><\/li>\n<li>Kat maakt dit zelf niet aan, dus belangrijk dat dit via de voeding wordt toegevoegd<\/li>\n<\/ul>",
+            "ingredient_image": "shopify:\/\/shop_images\/taurine-300x300.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "c2f8e62d-d461-46d2-b67b-fd9d335716ab",
+        "791dc80e-02fd-4a29-9958-a51051ce3e5e",
+        "04711b9d-7fd5-4c47-94a6-a11c8d3e76b7",
+        "66c7bf6e-42bc-4612-bafc-3682f4da4954",
+        "bfe3f1e9-7e03-4fbd-a8a4-53ff93dfa730",
+        "b95f1759-74bc-4c87-b9b7-737ce1c1ee7d",
+        "db415ba7-ce1e-4fd5-9582-9b0aad1661c4",
+        "e9bbe049-11e0-4145-b680-738f2930494a",
+        "d96be867-8851-4dd6-9d9d-11b4fbb20002",
+        "5f229d06-0b33-4889-8dd2-a091c5d5b175",
+        "1f3f70a7-02d1-4915-b7a1-b2d1446c6216",
+        "787b95eb-dc56-43d3-bae2-72eae1bea1c6",
+        "654eede8-e987-413c-8cf3-8d45b92959ee",
+        "d74817ef-59e9-482a-a72f-a472dba8e756",
+        "f290169d-0bfa-442b-8e68-3121c18cd3ee",
+        "4f2679e7-60f7-438f-afc2-0a4eda83bb56",
+        "e94dc94e-33ba-4016-965d-3b0ff686380a",
+        "89c0c927-fab8-44b0-b38b-01bd94677f13",
+        "4ca9d5fe-0039-44c8-b75b-4081bc00d4af",
+        "82575a55-cbfa-44b7-9aa3-3f682a3aba1d"
+      ],
+      "settings": {
+        "ingredient_details_background": "#f2f1f0",
+        "ingredient_title_background": "#bdb4ac",
+        "media_alignment": "right",
+        "section_subtitle": "INGREDIENTEN",
+        "section_title": "Natuurlijke ingrediënten"
+      }
+    },
+    "16535555201d757e1f": {
+      "type": "dc-full-banner-image",
+      "settings": {
+        "section_image": "shopify:\/\/shop_images\/Hero_image_2x_c4b6d25f-59ea-45f1-a5a8-fb73e3262e9f.png",
+        "section_image_mobile": "shopify:\/\/shop_images\/Hero_image_2x_33f4eb40-9caa-4a7f-a5f3-542cc93a1e35.png",
+        "section_title": "Keuzestress?",
+        "section_text": "<p>Elke hond en elke kat heeft eigen specifieke behoeften. Daarom maken wij met veel zorg voeding die aangepast is aan jouw pluizige vriend.<\/p><ul class=\"checked-list\">\n<li>Met zorg geformuleerde dierenvoeding<\/li>\n<li>Opgebouwd uit de meest verfijnde natuurlijke ingrediënten<\/li>\n<li>Voor een optimale gezondheid van jouw viervoeter<\/li>\n<\/ul>",
+        "isProductFinder": true,
+        "isProefpakketten": false,
+        "section_btn_text": "PRODUCTFINDER",
+        "section_btn_url": ""
+      }
+    },
+    "1653555221b641428f": {
+      "type": "dc-product-faq",
+      "blocks": {
+        "b80bf1e5-119e-4d3d-9cfc-eec32d270bf3": {
+          "type": "text",
+          "settings": {
+            "question": "Hoe lees je de Delcon voedingstabel?",
+            "answer": "Voor puppies: In de linkertabel vind je het gewicht terug die je pup zal hebben als hij volwassen is (bv. een boxer pup weegt als volwassen hond ongeveer 25kg). Verder kijk je hoe oud je pup is op dit moment, in de rij eronder zie je hoeveel maaltijden je pup mag eten per dag. Tot hun 6 maand, verdeel je de hoeveelheid over 3 maaltijden. Later mag je overschakelen naar 2 maaltijden. Bij recommended quantity zie je hoeveel gram je pup per DAG mag eten. Deze hoeveelheid verdeel je dan over het aantal maaltijden je pup mag eten. Voor volwassen honden: In de linkertabel zie je het gewicht van je hond. In de eerste rij zie je rechts de activiteitsgraad van je hond. Kijk bij het gewicht van je hond en zijn activiteitsgraad, hoeveel gram je hond per dag mag eten. Dit gewicht mag je dan verdelen over 2 maaltijden."
+          }
+        },
+        "3054e505-bff1-427a-bf32-74c1f9ca2cbe": {
+          "type": "text",
+          "settings": {
+            "question": "Wat zijn de leveringstermijnen en kosten?",
+            "answer": "Bij een bestelling gaat het pakket de volgende werkdag op de post. De leveringskosten gaan als volgt:  bestellingen onder €59,90 hebben verzendkosten van € 3,95 te betalen.  Bestellingen boven €59,90 worden gratis verzonden."
+          }
+        }
+      },
+      "block_order": [
+        "b80bf1e5-119e-4d3d-9cfc-eec32d270bf3",
+        "3054e505-bff1-427a-bf32-74c1f9ca2cbe"
+      ],
+      "settings": {
+        "faq_background": "#f2f1f0",
+        "faq_title": "Veelgestelde vragen",
+        "faq_link_text": "MEER VRAGEN",
+        "faq_link": ""
+      }
+    },
+    "165355552830ca05e0": {
+      "type": "dc-featured-products",
+      "settings": {
+        "featured_title": "Anderen kochten ook",
+        "featured_subtitle": "",
+        "featured_collection": "hondenvoer",
+        "vanaf_text": "vanaf",
+        "meerInfo": "QUICK VIEW",
+        "featured_btn_text": "ALLE PRODUCTEN",
+        "featured_btn_url": "",
+        "total_variants": "Verkrijgbaar in",
+        "maten": "maten:",
+        "koop_online": "KOOP ONLINE",
+        "koop_local": "KOOP LOKAAL"
+      }
+    },
+    "1653555651f941047b": {
+      "type": "dc-newsletter",
+      "settings": {
+        "title": "Krijg nu 20% korting",
+        "desc": "Schrijf je in op onze nieuwsbrief en blijf op de hoogte van acties en promoties. 20% korting die je kan gebruiken bij je volgende aankoop in onze shop",
+        "email_placeholder": "Email adres",
+        "subscribe_btn": "Send"
+      }
+    }
+  },
+  "order": [
+    "1652787202269c9bde",
+    "1653741255c1c06018",
+    "16535555201d757e1f",
+    "1653555221b641428f",
+    "165355552830ca05e0",
+    "1653555651f941047b"
+  ]
+}
