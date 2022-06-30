@@ -80,8 +80,9 @@
   display: block !important;
   text-align: center !important;
   cursor: pointer;
+  background-color: rgb(var(--color-base-text));
   border: 1px solid rgb(var(--color-base-accent-1));
-  border-radius: 12px;
+  border-radius: 16px;
   z-index: 3;
   transition: all .3s ease-out;
 }
