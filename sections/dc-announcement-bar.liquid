@@ -25,6 +25,10 @@
   	$(this).toggleClass('clicked');
   });
   
+  $('.sub-lang').click(function() {
+    window.location.replace($(this).attr('href'));
+  });
+  
 </script>
 
 {% schema %}
