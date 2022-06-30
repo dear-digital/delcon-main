@@ -77,8 +77,8 @@
 
 /* Language Selector CSS */
 .lang-wrapper {
-  display: block;
-  text-align: center;
+  display: block !important;
+  text-align: center !important;
   cursor: pointer;
   padding: 2px 0;
   border: 1px solid rgb(var(--color-base-accent-1));
