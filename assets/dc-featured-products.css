@@ -159,6 +159,9 @@
   .featured-btn {
     margin: 60px auto 0;
 }
+  #featured-collection{
+	margin-top: 80px;
+}
 }
 
 @media(max-width: 560px){
