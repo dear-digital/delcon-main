@@ -127,6 +127,9 @@
   .custom-logo {
     left: 24px;
 }
+  .custom-logo svg{
+  	width: 60px;
+  }
 }
 
 @media(max-width: 560px){
