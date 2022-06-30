@@ -112,7 +112,7 @@
                   <div class="qty-manipulation-symbol plus-symbol cart-plus" data-variant="{{ item.variant.id }}" data-value="{{item.quantity}}">{% render "icon-plus" %}</div>
                 </div>
                 {% endif %}
-                <div class="delete-cart-product {% if discount != blank %}bundle-delete bundle-{{ bundleId }}{% endif %}" data-variant="{{ item.variant.id }}" data-bundle="{{ bundleId }}" data-qty="{{item.quantity}}">
+                <div class="delete-cart-product {% if discount != blank %}bundle-delete bundle-{{ bundleId }}{% endif %}" data-line="{{ forloop.index }}" data-variant="{{ item.variant.id }}" data-bundle="{{ bundleId }}" data-qty="{{item.quantity}}">
                   <div class="delete-text">{{ section.settings.delete_text }}</div>
                 </div>
               </div>
@@ -287,7 +287,7 @@
     $('.cart-body').append(`<div class="load-container"><div class="load"></div></div>`);
     
     var formData = {
-      'line': parseInt($(this).data('variant')),
+      'line': parseInt($(this).data('line')),
       'quantity': 0
     };
     var urlHit = "/cart/change.js";
