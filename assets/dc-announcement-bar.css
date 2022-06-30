@@ -103,7 +103,12 @@
   width: 100%;
 }
 
-.langs.clicked .header-sub-lang-list{
-  max-height:999px;
+.langs.clicked a {
+  height: 96px;
+  opacity: 1;
+}
+
+.langs.clicked .header-sub-lang-list {
+  max-height: 999px;
   opacity: 1;
 }
