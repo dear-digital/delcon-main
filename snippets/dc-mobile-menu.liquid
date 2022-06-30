@@ -32,9 +32,9 @@
     
     <div class="mobile_menu-lang">
       {{ page.url }}
-      <a href="/" class="round {% if page.url contains "en" or page.url contains "fr" %}{% else %}active{% endif %}">nl</a>
-      <a href="/en" class="round {% if page.url contains "en" %}active{% endif %}">en</a>
-      <a href="/fr" class="round {% if page.url contains "fr" %}active{% endif %}">fr</a>
+      <a href="/" class="round {% if request.locale.iso_code == "en" or request.locale.iso_code == "fr" %}{% else %}active{% endif %}">nl</a>
+      <a href="/en" class="round {% if request.locale.iso_code == "en" %}active{% endif %}">en</a>
+      <a href="/fr" class="round {% if request.locale.iso_code == "fr" %}active{% endif %}">fr</a>
     </div>
   </div>
 </div>
