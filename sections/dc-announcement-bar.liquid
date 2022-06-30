@@ -4,12 +4,14 @@
   <div class="container rel">
     <span class="header-announcement">{{ section.settings.announcement_msg }}</span>
     <ul class="announcement-bar-list">
-      <li class="round langs no-t-m"><a href="#"><span id="main-lang">{{ cart.attributes.lang | downcase }}</span></a>
-        <ul class="header-sub-lang-list">
-          <li id="lang-nl"><span href="/" class="sub-lang">nl</span></li>
-          <li id="lang-fr"><span href="/fr" class="sub-lang">fr</span></li>
-          <li id="lang-en"><span href="/en" class="sub-lang">en</span></li>
-        </ul>
+      <li class="round langs no-t-m">
+        <a href="#"><span id="main-lang">{{ cart.attributes.lang | downcase }}</span>
+          <ul class="header-sub-lang-list">
+            <li id="lang-nl"><span href="/" class="sub-lang">nl</span></li>
+            <li id="lang-fr"><span href="/fr" class="sub-lang">fr</span></li>
+            <li id="lang-en"><span href="/en" class="sub-lang">en</span></li>
+          </ul>
+        </a>
       </li>
       <li class="round no-t-m"><a href="{{ routes.account_url }}">{% include "account-icon" %}</a></li>
       <li class="round no-t-m"><a href="#" aria-label="cart-link" class="icon-item cart-toggler cart-items-total rel" onClick="return false;">{{ cart.item_count }}</a></li>
