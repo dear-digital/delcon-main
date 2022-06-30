@@ -295,7 +295,7 @@
         
         var full = window.location.href;
         var parts = full.split('.');
-        var subDomain = parts[2];
+        var subDomain = parts[1];
         if(subDomain.includes('en')) {
           $('#main-lang').text('en');
           $('#lang-en').remove();
