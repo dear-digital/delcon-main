@@ -287,7 +287,7 @@
     $('.cart-body').append(`<div class="load-container"><div class="load"></div></div>`);
     
     var formData = {
-      'id': parseInt($(this).data('variant')),
+      'line': parseInt($(this).data('variant')),
       'quantity': 0
     };
     var urlHit = "/cart/change.js";
