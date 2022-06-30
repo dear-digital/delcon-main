@@ -130,7 +130,7 @@ $(document).ready(function(){
     ]
   });
   
-  mobileOnlySlider(".features-content", true , true , 992);
+  mobileOnlySlider(".features-content", true , true , 560);
 
   function mobileOnlySlider($slidername, $dots, $arrows, $breakpoint) {
     var slider = $($slidername);
