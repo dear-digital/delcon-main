@@ -131,7 +131,7 @@
   line-height: 22px;
   font-weight: 700;
 }
-.header-sub-lang-list li:hover, .lang-wrapper:hover {
+.header-sub-lang-list li:hover, .lang-wrapper span:hover {
   color: rgb(var(--color-base-text));
   background-color: rgb(var(--color-base-accent-1));
 }
