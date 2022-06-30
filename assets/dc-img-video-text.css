@@ -131,6 +131,10 @@
   	width: 60px;
     height: 80px;
   }
+  
+  .about-link {
+    border-bottom: 2px solid #fff;
+}
 }
 
 @media(max-width: 560px){
