@@ -121,7 +121,9 @@
   	font-size : 24px;
     line-height : 42px;
   }
-  
+  .img-txt-heading.heading-text{
+  	line-height: 33px;
+  }
 }
 
 @media(max-width: 560px){
