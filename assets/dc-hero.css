@@ -78,6 +78,10 @@ a#profile-link {
     fill: #fff;
 }
 
+.hero-sec path.tp-logo__star {
+    fill: #fff;
+}
+
 @media(max-width: 992px){
   .hero-sec {
     height: 85vh;
