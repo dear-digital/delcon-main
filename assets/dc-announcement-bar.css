@@ -39,10 +39,8 @@
   transition: all .3s ease-out;
 }
 .round:hover {
-  border: 1px solid #B499BF;
-}
-.round:hover a {
   color: #B499BF;
+  border: 1px solid #B499BF;
 }
 .round:hover svg path {
   fill: #B499BF;
@@ -78,6 +76,12 @@
 }
 
 /* Language Selector CSS */
+.lang-wrapper {
+  cursor: pointer;
+  border: 1px solid rgb(var(--color-base-accent-1));
+  border-radius: 24px;
+  transition: all .3s ease-out;
+}
 .header-sub-lang-list {
   list-style: none;
   display: block;
@@ -102,12 +106,10 @@
   display: inline-block;
   width: 100%;
 }
-
-.langs.clicked a {
+.langs.clicked .lang-wrapper {
   height: 96px;
   opacity: 1;
 }
-
 .langs.clicked .header-sub-lang-list {
   max-height: 999px;
   opacity: 1;
