@@ -151,6 +151,9 @@
   .product-card-image img {
     min-height : auto;
   }
+  .featured-btn {
+    margin: 60px auto 0;
+}
 }
 
 @media(max-width: 560px){
