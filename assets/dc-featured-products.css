@@ -99,7 +99,7 @@
   max-width: -moz-fit-content;
 }
 .featured-btn {
-  margin: 80px auto 0;
+  margin: 40px auto 0;
 }
 
 .featured-carousel:not(.slick-initialized) {
