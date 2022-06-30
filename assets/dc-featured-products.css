@@ -162,6 +162,9 @@
   #featured-collection{
 	margin-top: 80px;
 }
+  .product-card-title{
+  	min-height: unset;
+  }
 }
 
 @media(max-width: 560px){
