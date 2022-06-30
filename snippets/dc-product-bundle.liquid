@@ -82,31 +82,21 @@
     var indexNo;
     $.each( data.member_bundles, function( index, value ){
       var found = true;
-      console.log("index : "+index);
-      console.log("value : "+JSON.stringify(value));
       $.each( value.products, function( index2, value2 ){
-        console.log("found : "+found);
         var foundInside = false;
-        console.log("index2 : "+index2);
-        console.log("value2 : "+JSON.stringify(value2));
         $('.bundled-product').each(function() {
-          console.log("product : "+$(this).data('product'));
           if($(this).data('product') == value2.fulfillments[0].product_id) {
             foundInside = true;
-            console.log("product found : "+$(this).data('product'));
           }
         });
         if(!foundInside) {
           found = false;
-          console.log("foundInside: "+foundInside);
         }
       });
       if(found) {
         indexNo = index;
-        console.log("found: "+found);
       }
     });
-    console.log(indexNo);
     
     $.each( data.member_bundles[indexNo].products, function( index, value ){
       $('.bundled-product').each(function() {
