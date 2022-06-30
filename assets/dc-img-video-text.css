@@ -124,6 +124,9 @@
   .img-txt-heading.heading-text{
   	line-height: 33px;
   }
+  .custom-logo {
+    left: 24px;
+}
 }
 
 @media(max-width: 560px){
