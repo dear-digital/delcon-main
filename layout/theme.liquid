@@ -275,12 +275,6 @@
 
     <script>
       
-      function getSectionInnerHTML(html, selector) {
-        return new DOMParser()
-        .parseFromString(html, "text/html")
-        .querySelector(selector).innerHTML;
-      }
-      
       var url = window.location.href;
       $(window).scroll(function() {     
         var scroll = $(window).scrollTop();
@@ -296,6 +290,32 @@
       if ($(window).scrollTop() > 0) {
         $(".for-header").addClass("shadow");
       }
+      
+      $(document).ready(function() {
+        
+        var full = window.location.href;
+        var parts = full.split('.');
+        var subDomain = parts[2];
+        if(subDomain.includes('en')) {
+          $('#main-lang').text('en');
+          $('#lang-en').remove();
+          console.log('Lang en');
+          window.lang = "en";
+        }
+        else if(subDomain.includes('fr')) {
+          $('#main-lang').text('fr');
+          $('#lang-fr').remove();
+          console.log('Lang fr');
+          window.lang = "fr";
+        }
+        else {
+          $('#main-lang').text('nl');
+          $('#lang-nl').remove();
+          console.log('Lang nl');
+          window.lang = "nl";
+        }
+        
+      });
     </script>
     
     <script>
