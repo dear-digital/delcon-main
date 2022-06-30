@@ -91,24 +91,38 @@
   width: min-content;
   min-width: 32px;
   text-align: left;
-  top: 24px;
+  top: 32px;
   max-height: 0;
-  -webkit-transition: all .2s ease;
+  -webkit-transition: all .3s ease-out;
   transition: .2s ease;
   transition-delay: 0s;
   overflow: hidden;
   padding: 0;
-  background-color: rgb(var(--color-base-text));
   margin: 0;
-  left: -14px;
+  left: 0;
+  background-color: rgb(var(--color-base-text));
 }
-.header-sub-lang-list li, .header-sub-lang-list li a {
+.header-sub-lang-list li {
   display: inline-block;
+  width: 30px;
+  height: 30px;
+  margin: 6px 0;
+}
+.header-sub-lang-list li:first-child {
+  margin-top: 0;
+}
+.header-sub-lang-list li:last-child {
+  margin-bottom: 0;
+}
+.header-sub-lang-list li .sub-lang {
+  display: block;
   width: 100%;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 700;
 }
 .langs.clicked .lang-wrapper {
   height: 96px;
-  opacity: 1;
 }
 .langs.clicked .header-sub-lang-list {
   max-height: 999px;
