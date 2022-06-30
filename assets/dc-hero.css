@@ -66,6 +66,18 @@ a#profile-link {
   margin-right: 0;
 }
 
+#trust-score {
+    color: #fff;
+}
+
+#tp-widget-rating {
+    color: #fff;
+}
+
+.hero-sec path.tp-logo__text {
+    fill: #fff;
+}
+
 @media(max-width: 992px){
   .hero-sec {
     height: 85vh;
