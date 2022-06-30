@@ -1,5 +1,6 @@
 .features-content {
     margin: 0 -8px;
+  margin-top: 80px;
 }
 
 .features-content-wrap {
@@ -45,6 +46,12 @@
   .feature-title {
   	min-height: 50px;
   }
+}
+
+@media(max-width: 992px){
+	.features-content {
+  margin-top: 80px;
+}
 }
 
 @media(max-width: 560px){
