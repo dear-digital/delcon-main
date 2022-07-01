@@ -4,7 +4,7 @@
 <div class="hero-sec {% if template == "page.about-us" %}about-hero-sec{% endif %}" style="background-image: linear-gradient(rgba(24, 23, 22, .25), rgba(24, 23, 22, .25)),url({{ section.settings.hero_img | img_url: '2000x' }})">
   <div class="container flex-box">
     <div class="about-wrapper {% if template == "page.store-locator" %}store-hero-wrapper{% endif %} flex-box" {% if section.settings.hero_align %}style="justify-content: {{ section.settings.hero_align }}"{% endif %}>
-	  <p class="sub-title light hero-reviews"></p>
+	  <div class="sub-title light hero-reviews"><a href="https://nl.trustpilot.com/review/delcon.be">{{ section.settings.hero_reviews }} {% include "review-star" %} Trustpilot</a></div>
       <h1 class="hero-title tk-le-monde-livre-classic-byol">{{ section.settings.hero_title }}</h1>
       <div class="hero-subtitle">{{ section.settings.hero_subtitle }}</div>
       <div class="hero-cta-wrapper">
@@ -47,6 +47,12 @@
           ],
           "default": "center"
         },
+		{
+			"type": "text",
+			"id": "hero_reviews",
+			"label": "Hero Reviews Text",
+			"default": "4.8 OUT OF 5"
+		},
 		{
 			"type": "text",
 			"id": "hero_title",
