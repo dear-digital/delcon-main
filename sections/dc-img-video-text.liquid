@@ -1,6 +1,6 @@
 {{ 'dc-img-video-text.css' | asset_url | stylesheet_tag }}
 
-<div class="image-video-text-block marg-top-xl marg-bottom-xl">
+<div class="image-video-text-block marg-top-xl marg-bottom-xl no-disp">
   <div class="container">
     <div class="flex-box justify-between align-center rel image-text-wrapper {% if section.settings.media_alignment == 'right' %}rev-cols{% endif %}" style="background-color: {{ section.settings.background_color }}">
       <span class="custom-logo">{{ section.settings.custom_logo }}</span>
