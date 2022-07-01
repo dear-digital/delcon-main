@@ -130,37 +130,54 @@ $(document).ready(function(){
     ]
   });
   
-  mobileOnlySlider(".features-content", true , true , 560);
-
-  function mobileOnlySlider($slidername, $dots, $arrows, $breakpoint) {
-    var slider = $($slidername);
-    var settings = {
-      infinite: false,
-      mobileFirst: true,
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      dots: $dots,
-      arrows: $arrows,
-      responsive: [
-        {
-          breakpoint: $breakpoint,
-          centerMode: false,
-          settings: "unslick"
+  $('.features-content-m').slick({
+    infinite: false,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: true,
+    dots: true,
+    responsive: [
+      {
+        breakpoint: 560,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
         }
-      ]
-    };
-
-    slider.slick(settings);
-
-    $(window).on("resize", function () {
-      if ($(window).width() > $breakpoint) {
-        return;
       }
-      if (!slider.hasClass("slick-initialized")) {
-        return slider.slick(settings);
-      }
-    });
-  }
+  ]
+  });
+  
+//   mobileOnlySlider(".features-content", true , true , 560);
+
+//   function mobileOnlySlider($slidername, $dots, $arrows, $breakpoint) {
+//     var slider = $($slidername);
+//     var settings = {
+//       infinite: false,
+//       mobileFirst: true,
+//       slidesToShow: 1,
+//       slidesToScroll: 1,
+//       dots: $dots,
+//       arrows: $arrows,
+//       responsive: [
+//         {
+//           breakpoint: $breakpoint,
+//           centerMode: false,
+//           settings: "unslick"
+//         }
+//       ]
+//     };
+
+//     slider.slick(settings);
+
+//     $(window).on("resize", function () {
+//       if ($(window).width() > $breakpoint) {
+//         return;
+//       }
+//       if (!slider.hasClass("slick-initialized")) {
+//         return slider.slick(settings);
+//       }
+//     });
+//   }
   
   //remove added items from upsell 
 //   staticupsell.forEach(function(data,index){
