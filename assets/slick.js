@@ -131,17 +131,15 @@ $(document).ready(function(){
   });
   
   $('.features-content-m').slick({
-    infinite: false,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    arrows: true,
-    dots: true,
     responsive: [
       {
         breakpoint: 560,
         settings: {
+          infinite: false,
           slidesToShow: 1.5,
           slidesToScroll: 1,
+          arrows: true,
+          dots: true,
         }
       }
   ]
