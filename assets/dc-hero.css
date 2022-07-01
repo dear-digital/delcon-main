@@ -37,6 +37,9 @@
   width: 24px;
   height: 24px;
 }
+.hero-reviews svg path {
+  transform: scale(3) translate(10px, -10px);
+}
 a#profile-link {
   color: #fff !important;
 }
