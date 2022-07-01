@@ -3,8 +3,8 @@
 <div class="announcement-bar">
   <div class="container rel">
     <span class="header-announcement">{{ section.settings.announcement_msg }}</span>
-    <ul class="announcement-bar-list">
-      <li class="langs rel no-t-m">
+    <ul class="announcement-bar-list no-t-m">
+      <li class="langs rel">
         <a href="#" class="lang-wrapper"><span id="main-lang">{{ request.locale.iso_code }}</span>
           <ul class="header-sub-lang-list">
             <li id="lang-nl"><span href="/" class="sub-lang">nl</span></li>
@@ -13,8 +13,8 @@
           </ul>
         </a>
       </li>
-      <li class="rel no-t-m"><a href="{{ routes.account_url }}" class="round">{% include "account-icon" %}</a></li>
-      <li class="rel no-t-m"><a href="#" aria-label="cart-link" class="round icon-item cart-toggler cart-items-total rel" onClick="return false;">{{ cart.item_count }}</a></li>
+      <li class="rel"><a href="{{ routes.account_url }}" class="round">{% include "account-icon" %}</a></li>
+      <li class="rel"><a href="#" aria-label="cart-link" class="round icon-item cart-toggler cart-items-total rel" onClick="return false;">{{ cart.item_count }}</a></li>
     </ul>
   </div>
 </div>
