@@ -144,6 +144,7 @@ $(document).ready(function(){
       responsive: [
         {
           breakpoint: $breakpoint,
+          centerMode: false,
           settings: "unslick"
         }
       ]
