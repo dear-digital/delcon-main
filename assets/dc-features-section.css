@@ -63,8 +63,8 @@
     height : 100%;
     margin : 0 8px;
   }
-  .features-content .slick-list.draggable {
+/*   .features-content .slick-list.draggable {
     padding-right: calc(100% - 271px);
-  }
+  } */
 
 }
