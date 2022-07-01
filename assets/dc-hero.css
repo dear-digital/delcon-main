@@ -17,8 +17,13 @@
   padding-bottom: 160px;
 }
 
+.hero-reviews {
+  width: 100%;
+}
 .hero-reviews a {
   display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   font-size: 16px;
   line-height: 24px;
@@ -27,6 +32,10 @@
   margin: 0;
   text-align: center;
   text-transform: uppercase;
+}
+.hero-reviews svg {
+  width: 24px;
+  height; 24px;
 }
 a#profile-link {
   color: #fff !important;
