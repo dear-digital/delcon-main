@@ -134,7 +134,10 @@
   
   .about-link {
     border-bottom: 2px solid #fff;
-}
+  }
+  .proefpakketten-hover.about-link {
+    border-bottom: 2px solid rgb(var(--color-base-accent-1));
+  }
 }
 
 @media(max-width: 560px){
