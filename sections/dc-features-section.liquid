@@ -2,7 +2,20 @@
 
 <div class="marg-bottom">
   <div class="container">
-    <div class="features-content text-center flex-box justify-between">
+    <div class="features-content text-center flex-box justify-between no-m">
+      {% for block in section.blocks %}
+        {% if block.type == 'features' %}
+        <div class="features-content-wrap">
+          <div class="feature-logo-wrap" style="background-color: {{ section.settings.feature_background }}">
+            <img src="{{ block.settings.logo_img | img_url: "x50" }}" alt="{{ block.settings.logo_title }}">
+          </div>
+          <div class="feature-title">{{ block.settings.logo_title }}</div>
+          <div class="feature-desc">{{ block.settings.logo_desc }}</div>
+        </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+    <div class="features-content features-content-m text-center flex-box justify-between no-d no-t">
       {% for block in section.blocks %}
         {% if block.type == 'features' %}
         <div class="features-content-wrap">
