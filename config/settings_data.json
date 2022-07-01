@@ -251,7 +251,7 @@
           "partners_text": "Gerealiseerd met steun van",
           "partners_img": "shopify:\/\/shop_images\/Image_12_2x_fefdf4bc-483f-4994-8535-2510711eb1da.png",
           "footer_copyright_text": "© Copyright 2020. All Rights Reserved.",
-          "footer_made_by_text": "<a href=\"dear-digital-bv.odoo.com\" target=\"_blank\" class=\"policies-link\">dear digital<\/a>",
+          "footer_made_by_text": "<a href=\"https:\/\/dear-digital-bv.odoo.com\" target=\"_blank\" class=\"policies-link\">dear digital<\/a>",
           "privacy_link": "<a href=\"\/pages\/privacy-policy\" class=\"policies-link\">Privacy &amp; Cookies<\/a>",
           "copy_to_clipboard": "Copied to Clipboard"
         }
