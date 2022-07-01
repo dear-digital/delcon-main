@@ -56,8 +56,8 @@
 }
 
 @media(max-width: 560px){
-  .features-content:not(.slick-initialized) {
-    visibility: hidden;
+  .features-content-m:not(.slick-initialized) {
+    display: none;
   }
   .features-content-wrap {
     height : 100%;
