@@ -18,6 +18,23 @@
 
     <link rel="stylesheet" href="https://use.typekit.net/naa6iuo.css" crossorigin>
     
+    {% if template == "cart" %}
+    <script>
+    	window.location.replace('https://{{ shop.domain }}{{ routes.root_url }}?cartopen=true');
+    </script>
+    {% endif %}
+    
+    <script>
+      if (/collections$/.test(window.location.href)){
+        var url = `${window.location.href}/all` 
+        window.location.href = url;
+      }
+      else if(/products$/.test(window.location.href)){
+		var purl = '/collections/all' 
+        window.location.href = purl;
+      }
+    </script>
+    
     <title>
       {{ page_title }}
       {%- if current_tags %} &ndash; tagged "{{ current_tags | join: ', ' }}"{% endif -%}
