@@ -8,7 +8,7 @@
   max-width: 534px;
   margin: 0 0 0 auto;
 }
-.product-details.product-info .product-title {
+.product-details.product-info .product-title:first-child {
   margin-bottom: 8px;
 }
 .terug-btn {
