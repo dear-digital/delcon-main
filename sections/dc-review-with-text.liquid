@@ -1,16 +1,32 @@
 {{ 'dc-img-video-text.css' | asset_url | stylesheet_tag }}
 {{ 'dc-review-with-text.css' | asset_url | stylesheet_tag }}
 
-<div class="image-video-text-block marg-top-xl marg-bottom-xl">
+<div class="image-video-text-block marg-top-xl marg-bottom-xl review-with-text">
   <div class="container">
     <div class="flex-box justify-between align-center rel image-text-wrapper {% if section.settings.media_alignment == 'right' %}rev-cols{% endif %}" style="background-color: {{ section.settings.background_color }}">
       <span class="custom-logo">{{ section.settings.custom_logo }}</span>
       <div class="image-video-block rel">
-        <!-- TrustBox widget - Starter -->
         <div class="trustpilot-widget" data-locale="nl-NL" data-template-id="5613c9cde69ddc09340c6beb" data-businessunit-id="5fd22a12a2221c00018b1ae2" data-style-height="100%" data-style-width="100%" data-theme="light">
           <a href="https://nl.trustpilot.com/review/delcon.be" target="_blank" rel="noopener">Trustpilot</a>
         </div>
-        <!-- End TrustBox widget -->
+        
+        <!--         review slider -->
+
+        <div class="slider-wrapper review-slider">
+          {%- for block in section.blocks -%}
+          <div class="review_slider">
+            <img src="{{ block.settings.image | image_url: width: 550 }}" 
+                 alt="{{ block.settings.image.alt }}"
+                 height="{{ block.settings.image.height }}"
+                 width="{{ block.settings.image.width }}"
+                 loading="lazy"
+                 class="review-img">
+            <p class="review-name">{{ block.settings.review_name }}</p>
+            <p class="review-text">{{ block.settings.review_text }}</p>
+          </div>
+          {%- endfor -%}
+        </div>
+        <!--         review slider -->
       </div>
       <div class="text-block rel">
         <span class="subheading-text">{{ section.settings.section_subtitle }}</span>
@@ -61,6 +77,29 @@
           "id": "section_text",
           "type": "html"
       }
+	],
+	"blocks": [
+	 {
+	  "type": "review_slide",
+	  "name": "Review",
+	  "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Text"
+        },
+        {
+          "type": "text",
+          "id": "review_name",
+          "label": "Text"
+        },
+        {
+          "type": "html",
+          "id": "review_text",
+          "label": "Text"
+        }
+	  ]
+	 }
 	],
 	"presets": [
     {
