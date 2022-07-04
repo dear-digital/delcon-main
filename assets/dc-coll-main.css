@@ -39,7 +39,7 @@
 }
 
 .sugg-coll-txt {
-  width: calc(100% - 170px);
+  width: calc(100% - 135px);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -91,7 +91,7 @@
 }
 
 .sort-title {
-  line-height: 24px;
+  line-height: 22px;
   font-weight: 700;
   text-transform: uppercase;
   margin-right: 17px;
@@ -147,7 +147,7 @@
   visibility: visible;
   height: auto;
   background-color: #fff;
-  z-index: 1;
+  z-index: 4;
 }
 
 .coll-porducts {
@@ -164,12 +164,12 @@
 
 .product-finder {
   background-color: #f2f1f0;
-  padding: 65px;
+  padding: 65px 48px 64px 65px;
   width: 64%;
-  margin: 0 8px;
-  margin-bottom: 24px;
+  margin: 0 8px 26px;
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -261,7 +261,7 @@
 .coll-filter-option-wrap {
   display: flex;
   align-items: center;
-  margin-bottom: 15px;
+  margin-bottom: 12px;
   cursor: pointer;
   width: fit-content;
   width: -moz-fit-content;
@@ -330,7 +330,7 @@
     width : 30%;
   }
   .product-finder{
-    padding: 40px;
+    padding: 40px 24px;
     width: 62%;
   }
   .sort-wrap{
@@ -394,6 +394,9 @@
   }
   .sugg-collection.checked {
  	 background-color: unset;
+  }
+  .product-finder-desc{
+   	margin-bottom : 16px; 
   }
 }
 
