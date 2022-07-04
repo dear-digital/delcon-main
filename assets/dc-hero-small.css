@@ -24,6 +24,9 @@
 }
 
 .hero-small-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   padding-right: 110px;
   width: 50%;
   height : 100%;
