@@ -4,7 +4,9 @@
   height: 100%;
   padding: 40px 0;
 }
-
+.review_slider {
+  margin: 0 25px;
+}
 img.review-img {
   width: 146px;
   height: 146px;
