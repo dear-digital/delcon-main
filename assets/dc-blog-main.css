@@ -47,12 +47,13 @@
 
 .article-tag-date {
   display: flex;
-  margin-bottom: 12px;
+  margin-bottom: 8px;
   line-height: 19px;
 }
 
 .article-date {
   text-transform: uppercase;
+  font-size : 14px;
 }
 
 .article-title {
