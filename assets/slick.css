@@ -499,26 +499,26 @@
 .featured-carousel .slick-dots , .features-content .slick-dots {
   width: 100%;
 }
-.featured-carousel .slick-dots li , .features-content .slick-dots li {
+.featured-carousel .slick-dots li , .features-content .slick-dots li, .review-slider .slick-dots li {
   width: 8px;
   height: 8px;
   margin: 0 5px;
 }
-.featured-carousel .slick-dots li.slick-active , .features-content .slick-dots li.slick-active{
+.featured-carousel .slick-dots li.slick-active , .features-content .slick-dots li.slick-active, .review-slider .slick-dots li.slick-active {
   width: 8px !important;
 }
-.featured-carousel .slick-dots li button , .features-content .slick-dots li button{
+.featured-carousel .slick-dots li button , .features-content .slick-dots li button, .review-slider .slick-dots li button {
   width: 8px;
   height: 8px;
 }
-.featured-carousel .slick-dots li.slick-active button , .features-content .slick-dots li.slick-active button{
+.featured-carousel .slick-dots li.slick-active button , .features-content .slick-dots li.slick-active button, .review-slider .slick-dots li.slick-active button {
   width: 8px !important;
 }
-.featured-carousel .slick-dots li.slick-active button:before , .features-content .slick-dots li.slick-active button:before{
+.featured-carousel .slick-dots li.slick-active button:before , .features-content .slick-dots li.slick-active button:before, .review-slider .slick-dots li.slick-active button:before {
   opacity: 1;
   width: 8px !important;
 }
-.featured-carousel .slick-dots li button:before , .features-content .slick-dots li button:before{
+.featured-carousel .slick-dots li button:before , .features-content .slick-dots li button:before, .review-slider .slick-dots li button:before {
   width: 8px;
   height: 8px;
   font-size: 8px;
