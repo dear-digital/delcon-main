@@ -1,10 +1,14 @@
-.hero-small{
+.hero-small {
   height: 400px;
   margin-top: 72px;
   margin-bottom: 40px;
 }
-
-.hero-small-img{
+.hero-small.hero-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.hero-small-img {
   height: 100%;
   position: absolute;
   right: 0;
