@@ -133,12 +133,12 @@
   text-transform: uppercase;
   margin-bottom: 8px;
 }
-.my-pet-1 [type=radio]:checked+label:before, .my-pet-1 [type=radio]:not(:checked)+label:before {
+/* .my-pet-1 [type=radio]:checked+label:before, .my-pet-1 [type=radio]:not(:checked)+label:before {
   top: 4px;
 }
 .my-pet-1 [type=radio]:checked+label:after, .my-pet-1 [type=radio]:not(:checked)+label:after {
   top: 8px;
-}
+} */
 .pet-type, .pet-gender-info, .pet-activity, .pet-neutered, .pet-complaint {
   margin-bottom: 8px;
 }
@@ -190,17 +190,28 @@
   }
   .edit-pet-details {
   	margin: 24px 0 0 auto;
+    color: #B499BF;
+  }
+  .edit-pet-details:after {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    width: 100%;
+    left: 0;
+    height: 2px;
+    background: #B499BF;
+    transition: all .3s ease-out;
   }
   .my-pet-1 {
     height: 80vh;
-    padding: 24px;
+    padding: 24px 12px;
   }
   .my-pet-1 form {
     height: 100%;
   }
   .my-pet-1 .my-pet-form {
   	height: calc(100% - 170px);
-    padding-bottom: 20px;
+    padding: 0 12px 20px;
     overflow: auto;
   }
 /*   .pet-flex-column {
@@ -209,6 +220,10 @@
     height: auto;
     flex-direction: column-reverse;
   } */
+  .pet-name{
+    width: 100%;
+    justify-content: space-between;
+  }
   .my-pet-1 h2 {
     font-size: 24px;
     line-height: 33px;
