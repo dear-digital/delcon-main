@@ -147,7 +147,7 @@
   }
   .product-card-image {
     height : 40vw;
-    padding: 0;
+/*     padding: 0; */
   }
   .featured-title {
   	font-size: 24px;
