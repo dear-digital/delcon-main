@@ -16,7 +16,7 @@
             <img src="{{ bundle_product.featured_image | img_url: '200x' }}" alt="{{ bundle_product.title }}">
           </div>
           <div class="card-product-text product-info rel">
-            <div class="flex-box justify-between align-end">
+            <div class="flex-box justify-between align-start">
               <div class="product-title">{{ bundle_product.title | strip_html | escape }}</div>
               <p class="bundled-product-price product-price no-m">{{ bundleVariantPrice | money }}</p>
             </div>
