@@ -1,0 +1,78 @@
+.slider-wrapper {
+  border: 1px solid #181716;
+  width: 100%;
+  height: 100%;
+  padding: 40px 23px 85px 25px;
+}
+
+img.review-img {
+  width: 146px;
+  height: 146px;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+.review-name {
+  text-align: center;
+  font: normal normal bold 32px/48px "Le Monde Livre Cla Std";
+  letter-spacing: 0px;
+  color: #181716;
+  margin: 16px auto;
+}
+
+.review-text {
+  text-align: center;
+  font: normal normal 300 16px/24px "Avenir Next",sans-serif;
+  letter-spacing: 0px;
+  color: #181716;
+  margin: 0 auto;
+}
+
+.review-slider .slick-dots{
+  bottom: 40px;
+  left: 0;
+  height: auto;
+}
+.review-slider .slick-prev, .review-slider .slick-next{
+  border: none;
+  top: unset;
+  bottom: 0;
+  width: auto;
+  background-color: transparent;
+}
+.review-slider .slick-prev{
+  left: 25px;
+}
+
+.review-slider .slick-next{
+  right: 23px;
+}
+.review-slider .slick-next:hover, .review-slider .slick-prev:hover{
+  background-color: transparent;
+}
+.review-slider .slick-next:hover:before, .review-slider .slick-prev:hover:before{
+  content: url("https://cdn.shopify.com/s/files/1/0578/5976/8499/files/right-arrow-hover.svg?v=1652199980") !important;
+}
+.review-slider .slick-prev:before{
+  content: url("https://cdn.shopify.com/s/files/1/0578/5976/8499/files/right-arrow.svg?v=1652199965");
+  transform: rotate(180deg);
+}
+.review-slider .slick-next:before{
+  content: url("https://cdn.shopify.com/s/files/1/0578/5976/8499/files/right-arrow.svg?v=1652199965");
+}
+
+@media (max-width: 992px){
+  .review-with-text .image-video-block{
+    height: auto;
+  }
+
+  .review-with-text .flex-box.image-text-wrapper {
+    flex-direction: column-reverse;
+  }
+}
+
+@media (max-width: 560px){
+  .review-slider .slick-dots {
+    bottom: 25px;
+  }
+}
