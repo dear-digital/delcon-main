@@ -540,7 +540,7 @@
   .cancel-edit {
     margin: 16px auto 0;
   }
-  .edit-address:hover, .delete-address:hover, .cancel-edit:hover, .forgot-pass-link:hover {
+  .edit-address, .delete-address, .cancel-edit, .forgot-pass-link {
     color: #b499bf;
   }
   .edit-address:after, .delete-address:after, .cancel-edit:after, .forgot-pass-link:after {
