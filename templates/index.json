@@ -26,6 +26,7 @@
       ],
       "settings": {
         "hero_img": "shopify:\/\/shop_images\/Hero_image_2x_c4b6d25f-59ea-45f1-a5a8-fb73e3262e9f.png",
+        "hero_reviews": "4.8 OUT OF 5",
         "hero_title": "Met zorg geformuleerde dierenvoeding",
         "hero_subtitle": "Elke hond en elke kat heeft eigen specifieke behoeften. Daarom maken wij met veel zorg voeding die aangepast is aan jouw pluizige vriend."
       }
@@ -211,6 +212,28 @@
     },
     "16564071227cad1005": {
       "type": "dc-review-with-text",
+      "blocks": {
+        "0e0c423b-8a82-4479-9e07-33564fad11be": {
+          "type": "review_slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Image_2x_39e61b2e-7305-4cd7-8686-8ddaa5d55b19.png",
+            "review_name": "Naam",
+            "review_text": "<p>“Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy”<\/p><div class=\"trustpilot-widget\" data-locale=\"nl-NL\" data-template-id=\"5613c9cde69ddc09340c6beb\" data-businessunit-id=\"5fd22a12a2221c00018b1ae2\" data-style-height=\"100%\" data-style-width=\"100%\" data-theme=\"light\">\n          <a href=\"https:\/\/nl.trustpilot.com\/review\/delcon.be\" target=\"_blank\" rel=\"noopener\">Trustpilot<\/a>\n        <\/div>"
+          }
+        },
+        "9da84e7f-b3fa-4b5b-bbe1-cfcf2fe4ddf8": {
+          "type": "review_slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Hero_image_2x_c4b6d25f-59ea-45f1-a5a8-fb73e3262e9f.png",
+            "review_name": "Naam",
+            "review_text": "<p>“Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy”<\/p><div class=\"trustpilot-widget\" data-locale=\"nl-NL\" data-template-id=\"5613c9cde69ddc09340c6beb\" data-businessunit-id=\"5fd22a12a2221c00018b1ae2\" data-style-height=\"100%\" data-style-width=\"100%\" data-theme=\"light\">\n          <a href=\"https:\/\/nl.trustpilot.com\/review\/delcon.be\" target=\"_blank\" rel=\"noopener\">Trustpilot<\/a>\n        <\/div>"
+          }
+        }
+      },
+      "block_order": [
+        "0e0c423b-8a82-4479-9e07-33564fad11be",
+        "9da84e7f-b3fa-4b5b-bbe1-cfcf2fe4ddf8"
+      ],
       "settings": {
         "background_color": "#fbfbfb",
         "media_alignment": "right",
