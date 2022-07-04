@@ -279,7 +279,7 @@
   	margin-bottom: 0;
   }
   .bundle-plus {
-    top: 42%;
+    top: 40%;
     left: 48%;
   }
   .bundled-product .card-product-wrapper {
@@ -299,7 +299,6 @@
   }
   .bundle-variant-box {
     padding: 8px;
-    margin-right: 12px;
   }
   .bundle-addToCart {
   	margin-top: 16px;
