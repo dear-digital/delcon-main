@@ -157,7 +157,7 @@
                 <span class="close-address no-m" data-form="AddAddress">{% include 'icon-close-new' %}</span>
                 <h2 id="AddressNewHeading" class="tk-le-monde-livre-classic-byol text-center">{{ 'customer.addresses.add_new' | t }}</h2>
                 {%- form 'customer_address', customer.new_address, aria-labelledBy: 'AddressNewHeading' -%}
-                <div class="form-address-wrapper">
+                <div class="form-address-wrapper style-scrollbar">
                   <div class="row">
                     <div class="field column">
                       <input type="text" id="AddressFirstNameNew" name="address[first_name]" value="{{ form.first_name }}" autocomplete="given-name" placeholder="{{ 'customer.addresses.first_name' | t }}">
