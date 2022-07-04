@@ -272,7 +272,10 @@
 .coll-filter-option-wrap:last-child {
   margin-bottom: 0;
 }
-
+.coll-filter-option-txt {
+  font-size: 16px;
+  line-height; 24px;
+}
 .coll-accordion {
   position: relative;
   color: rgb(var(--color-base-accent-1));
