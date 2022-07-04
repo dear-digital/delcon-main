@@ -26,6 +26,11 @@
 .hero-small-text {
   padding-right: 110px;
   width: 50%;
+  height : 100%;
+  overflow : scroll;
+}
+.hero-small-text::-webkit-scrollbar {
+  display : none;
 }
 
 .rev-cols .hero-small-text {
