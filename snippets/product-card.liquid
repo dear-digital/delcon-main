@@ -41,7 +41,11 @@
                 {{ variant.metafields.my_fields.variant_desc }}
               </div>
             {% endfor %}
+            
+            {% if product.has_only_default_variants == false %}
             <span class="numverOfVariants">{{ total_variants }} <span class="total-variants">{{ product.variants.size }}</span> {{ maten }}</span>
+            {% endif %}
+            
             <div class="variants-wrapper">
               {% for variant in product.variants %}
               	<div class="variant-box {% if forloop.index == 1 %}variant-selected{% endif %}" data-index="{{ forloop.index }}" data-price="{{ variant.price | money }}">{{ variant.title }}</div>
