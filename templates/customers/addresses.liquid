@@ -36,7 +36,7 @@
                       <span class="close-address no-m" data-form="EditAddress_{{ address.id }}">{% include 'icon-close-new' %}</span>
                       <h2 class="tk-le-monde-livre-classic-byol text-center">{{ 'customer.addresses.edit_address' | t }}</h2>
                       {%- form 'customer_address', address -%}
-                      <div class="form-address-wrapper">
+                      <div class="form-address-wrapper style-scrollbar">
                         <div class="row">
                           <div class="field column">
                             <input type="text" id="AddressFirstName_{{ form.id }}" name="address[first_name]" value="{{ form.first_name }}" autocomplete="given-name" placeholder="{{ 'customer.addresses.first_name' | t }}">
