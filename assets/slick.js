@@ -145,6 +145,16 @@ $(document).ready(function(){
   ]
   });
   
+  $('.review-slider').slick({
+    infinite: false,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: true,
+    dots: true,
+    responsive: [
+    ]
+  });
+  
 //   mobileOnlySlider(".features-content", true , true , 560);
 
 //   function mobileOnlySlider($slidername, $dots, $arrows, $breakpoint) {
