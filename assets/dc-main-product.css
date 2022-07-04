@@ -273,6 +273,11 @@
   }
   .product-bundle-column .bundled-product {
   	width: 100%;
+    margin-bottom: 16px;
+  }
+  .bundle-plus {
+    top: 40%;
+    left: 48%;
   }
   .bundled-product .card-product-wrapper {
   	flex-direction: row;
