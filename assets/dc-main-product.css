@@ -289,6 +289,9 @@
   .bundled-product .variants-wrapper {
 	margin-bottom: 8px;
   }
+  .bundle-variant-box {
+    padding: 12px;
+  }
   .bundle-addToCart {
   	margin-top: 16px;
   }
