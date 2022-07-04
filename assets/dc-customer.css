@@ -541,7 +541,7 @@
     margin: 16px auto 0;
   }
   .edit-address:hover, .delete-address:hover, .cancel-edit:hover, .forgot-pass-link:hover {
-    color: #181716;
+    color: #b499bf;
   }
   .edit-address:after, .delete-address:after, .cancel-edit:after, .forgot-pass-link:after {
     content: "";
@@ -550,7 +550,7 @@
     width: 100%;
     left: 0%;
     height: 2px;
-    background: #181716;
+    background: #b499bf;
     transition: all .3s ease-out;
   }
   .close-address {
