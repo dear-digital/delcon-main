@@ -49,8 +49,9 @@
 }
 .product-card-image .hovered-img {
   position: absolute;
-  top: 0;
-  left: 0;
+  width: calc(100% - 32px);
+  top: 16px;
+  left: 16px;
   opacity: 0;
   object-fit: cover;
 }
