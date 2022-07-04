@@ -3,11 +3,7 @@
   margin-top: 72px;
   margin-bottom: 40px;
 }
-.hero-small.hero-center {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
+
 .hero-small-img {
   height: 100%;
   position: absolute;
@@ -32,6 +28,11 @@
   width: 50%;
   height : 100%;
   overflow : scroll;
+}
+.hero-small.hero-center .hero-small-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .hero-small-text::-webkit-scrollbar {
   display : none;
