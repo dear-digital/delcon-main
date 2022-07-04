@@ -1,6 +1,6 @@
 {{ 'dc-hero-small.css' | asset_url | stylesheet_tag }}
 
-<div class="hero-small no-t-m rel" style="background-color: {{ section.settings.background_color }}">
+<div class="hero-small hero-center no-t-m rel" style="background-color: {{ section.settings.background_color }}">
   <div class="hero-small-content container flex-box justify-between align-center{% if section.settings.media_alignment == 'left' %} rev-cols{% endif %}">
     <div class="hero-small-text">
       <h1 class="coll-title tk-le-monde-livre-classic-byol">{{ section.settings.title }}</h1>
