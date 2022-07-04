@@ -227,6 +227,11 @@
   line-height: 22px;
   font-weight: 700;
 }
+.bundle-plus {
+  position: absolute;
+  top: 30%;
+  left: 48%;
+}
 
 @media (max-width: 992px) {
   .product-flex-column {
