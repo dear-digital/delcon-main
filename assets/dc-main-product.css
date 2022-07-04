@@ -273,10 +273,13 @@
   }
   .product-bundle-column .bundled-product {
   	width: 100%;
-    margin-bottom: 16px;
+    margin-bottom: 24px;
+  }
+  .product-bundle-column .bundled-product:last-child {
+  	margin-bottom: 0;
   }
   .bundle-plus {
-    top: 40%;
+    top: 41%;
     left: 48%;
   }
   .bundled-product .card-product-wrapper {
