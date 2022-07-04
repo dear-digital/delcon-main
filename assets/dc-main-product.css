@@ -231,6 +231,7 @@
   position: absolute;
   top: 30%;
   left: 48%;
+  margin: 0;
 }
 
 @media (max-width: 992px) {
