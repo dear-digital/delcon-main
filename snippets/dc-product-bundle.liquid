@@ -21,7 +21,7 @@
               <p class="bundled-product-price product-price no-m">{{ bundleVariantPrice | money }}</p>
             </div>
             <p class="product-card-desc">{{ bundle_product.metafields.my_fields.extra_info | escape  }}</p>
-            <div class="variants-wrapper">
+            <div class="variants-wrapper {% if bundle_product.has_only_default_variant %}no-disp{% endif %}">
               {% for variant in bundle_product.variants %}
               {% assign variantPrice = variant.price | times: bundleDiscount %}
               {% assign variantPrice = variantPrice | divided_by: 100 %}
