@@ -279,18 +279,18 @@
   	margin-bottom: 0;
   }
   .bundle-plus {
-    top: 44%;
+    top: 42%;
     left: 48%;
   }
   .bundled-product .card-product-wrapper {
   	flex-direction: row;
   }
   .bundled-product .card-product-image {
-    width: 120px;
-    height: 120px;
+    width: 142px;
+    height: 142px;
   }
   .bundled-product .card-product-text {
-    width: calc(100% - 138px);
+    width: calc(100% - 158px);
     margin-top: 0;
     margin-left: 16px;
   }
