@@ -121,7 +121,7 @@
         "1f3f70a7-02d1-4915-b7a1-b2d1446c6216": {
           "type": "select",
           "settings": {
-            "ingredient_name": "gistextract",
+            "ingredient_name": "Gistextract",
             "ingredient_details": "<p>Gistextract is een prebioticum dat de spijsvertering positief beïnvloedt<\/p>\n<ul>\n<li><strong>Bron van B-vitamines<\/strong><\/li>\n<li>Bevat MOS<\/li>\n<\/ul>",
             "ingredient_image": "shopify:\/\/shop_images\/gistextract-300x300.jpg"
           }
@@ -263,38 +263,6 @@
         "koop_local": "KOOP LOKAAL"
       }
     },
-    "16570153793417b946": {
-      "type": "dc-review-with-text",
-      "blocks": {
-        "0e0c423b-8a82-4479-9e07-33564fad11be": {
-          "type": "review_slide",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Image_2x_39e61b2e-7305-4cd7-8686-8ddaa5d55b19.png",
-            "review_name": "Naam",
-            "review_text": "<p>“Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est”<\/p><div class=\"trustpilot-widget\" data-locale=\"en-GB\" data-template-id=\"5419b6ffb0d04a076446a9af\" data-businessunit-id=\"5fd22a12a2221c00018b1ae2\" data-style-height=\"20px\" data-style-width=\"100%\" data-theme=\"light\">\n  <a href=\"https:\/\/uk.trustpilot.com\/review\/delcon.be\" target=\"_blank\" rel=\"noopener\">Trustpilot<\/a>\n<\/div>"
-          }
-        },
-        "9da84e7f-b3fa-4b5b-bbe1-cfcf2fe4ddf8": {
-          "type": "review_slide",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Hero_image_2x_c4b6d25f-59ea-45f1-a5a8-fb73e3262e9f.png",
-            "review_name": "Naam",
-            "review_text": "<p>“Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est”<\/p><div class=\"trustpilot-widget\" data-locale=\"en-GB\" data-template-id=\"5419b6ffb0d04a076446a9af\" data-businessunit-id=\"5fd22a12a2221c00018b1ae2\" data-style-height=\"20px\" data-style-width=\"100%\" data-theme=\"light\">\n  <a href=\"https:\/\/uk.trustpilot.com\/review\/delcon.be\" target=\"_blank\" rel=\"noopener\">Trustpilot<\/a>\n<\/div>"
-          }
-        }
-      },
-      "block_order": [
-        "0e0c423b-8a82-4479-9e07-33564fad11be",
-        "9da84e7f-b3fa-4b5b-bbe1-cfcf2fe4ddf8"
-      ],
-      "settings": {
-        "background_color": "#fbfbfb",
-        "media_alignment": "right",
-        "section_subtitle": "REVIEWS",
-        "section_title": "Dit vinden de baasjes",
-        "section_text": "<p>Ontvang eenmalig een proefpakket met overheerlijke Delcon producten en laat je huisdier smullen. Gegarandeerd een leef kommetje!<\/p><ul class=\"checked-list\">\n<li>De kwaliteit is super!<\/li>\n<li>Contact met customer support verloopt vlot<\/li>\n<li>Snelle levering<\/li>\n<\/ul>"
-      }
-    },
     "1653555651f941047b": {
       "type": "dc-newsletter",
       "settings": {
@@ -311,7 +279,6 @@
     "16535555201d757e1f",
     "1653555221b641428f",
     "165355552830ca05e0",
-    "16570153793417b946",
     "1653555651f941047b"
   ]
 }
