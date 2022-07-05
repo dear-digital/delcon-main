@@ -246,7 +246,7 @@
       "type": "dc-instagram-feed",
       "settings": {
         "insta_title": "Volg ons op <a href=\"https:\/\/www.instagram.com\/delcon_petfood\/\">@delcon_petfood<\/a>",
-        "insta_script": ""
+        "insta_script": "<div id=\"insta-feed\"><\/div>"
       }
     },
     "1652278273eeaa610d": {
