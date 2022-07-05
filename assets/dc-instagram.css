@@ -20,6 +20,9 @@
     width: 33.333333%!important;
     padding-top: 33.333333%!important;
   }
+  #insta-feed .instafeed-container {
+    display: none!important;
+  }
 }
 
 @media (max-width: 321px) {
