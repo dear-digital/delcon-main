@@ -12,6 +12,9 @@
     line-height: 33px;
     margin-bottom: 16px;
   }
+  #insta-feed, .instafeed-shopify {
+    margin-top: 0;
+  }
 }
 
 @media (max-width: 321px) {
