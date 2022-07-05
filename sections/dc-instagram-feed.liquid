@@ -1,11 +1,21 @@
-<div class="">
-  {{ section.settings.insta_script }}
+<div class="marg-top-xl marg-bottom-xl">
+  <div class="ddc-insta-section">
+    <div class="conntainer">
+      <h2 class="insta-heading">{{ section.settings.insta_title }}</h2>
+    </div>
+    <div class="insta-feed">{{ section.settings.insta_script }}</div>
+  </div>
 </div>
 
 {% schema %}
   {
     "name": "Delcon Instagram Feed",
     "settings": [
+		{
+            "type": "html",
+            "id": "insta_title",
+            "label": "Instagram Title"
+        },
 		{
             "type": "html",
             "id": "insta_script",
