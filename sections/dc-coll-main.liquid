@@ -610,6 +610,9 @@
       runFilter();
       Filterradio();
       addProductFinder(productFinderBlock);
+      $(productFinderBlock).click(function() {
+        $('#productFinderQuiz').click();
+      });
     })
     .fail(function(error) {
       console.log( error );
@@ -675,6 +678,9 @@
       runFilter();
       Filterradio();
       addProductFinder(productFinderBlock);
+      $(productFinderBlock).click(function() {
+        $('#productFinderQuiz').click();
+      });
     })
     .fail(function(error) {
       console.log( error );
@@ -727,10 +733,6 @@
     else {
       $('.coll-porducts').append($(productFinderBlock));
     }
-    
-    $(productFinderBlock).click(function() {
-      $('#productFinderQuiz').click();
-    });
   }
 </script>
 
