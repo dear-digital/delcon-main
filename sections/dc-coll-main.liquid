@@ -215,7 +215,7 @@
                           <div class="product-finder-title tk-le-monde-livre-classic-byol">{{ block.settings.title }}</div>
                           <div class="product-finder-desc">{{ block.settings.desc }}</div>
                           {% if block.settings.section_btn_text != blank %}
-                          <a href="{{ block.settings.section_btn_url }}" class="btn {% if block.settings.isProductFinder == true %}btn-productFinder blue-btn{% endif %}">{{ block.settings.section_btn_text }}</a>
+                          <span class="btn {% if block.settings.isProductFinder == true %}btn-productFinder blue-btn{% endif %}">{{ block.settings.section_btn_text }}</span>
                           {% endif %}
         				</div>
         			{% endif %}
@@ -230,7 +230,7 @@
                       <div class="product-finder-title tk-le-monde-livre-classic-byol">{{ block.settings.title }}</div>
                       <div class="product-finder-desc">{{ block.settings.desc }}</div>
                       {% if block.settings.section_btn_text != blank %}
-                      <a href="{{ block.settings.section_btn_url }}" class="btn {% if block.settings.isProductFinder == true %}btn-productFinder blue-btn{% endif %}">{{ block.settings.section_btn_text }}</a>
+                      <span class="btn {% if block.settings.isProductFinder == true %}btn-productFinder blue-btn{% endif %}">{{ block.settings.section_btn_text }}</span>
                       {% endif %}
                     </div>
                 {% endif %}
