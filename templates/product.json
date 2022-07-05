@@ -263,6 +263,16 @@
         "koop_local": "KOOP LOKAAL"
       }
     },
+    "16570153793417b946": {
+      "type": "dc-review-with-text",
+      "settings": {
+        "background_color": "",
+        "media_alignment": "right",
+        "section_subtitle": "",
+        "section_title": "",
+        "section_text": ""
+      }
+    },
     "1653555651f941047b": {
       "type": "dc-newsletter",
       "settings": {
@@ -279,6 +289,7 @@
     "16535555201d757e1f",
     "1653555221b641428f",
     "165355552830ca05e0",
+    "16570153793417b946",
     "1653555651f941047b"
   ]
 }
