@@ -507,9 +507,6 @@
     console.log(productFinderBlock);
     $('.coll-porducts').find('.product-finder').remove();
     addProductFinder(productFinderBlock);
-    $(productFinderBlock).click(function() {
-      $('#productFinderQuiz').click();
-    });
   }
 //   runFilter();
   
@@ -729,6 +726,10 @@
     else {
       $('.coll-porducts').append($(productFinderBlock));
     }
+    
+    $(productFinderBlock).click(function() {
+      $('#productFinderQuiz').click();
+    });
   }
 </script>
 
