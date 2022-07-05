@@ -79,15 +79,25 @@
             "filter_type": "multiple",
             "main_filter": "Type of food",
             "sub_filter_1": "Type of food: Dry",
+            "sub_filter_val_1": "type-of-food:-dry",
             "sub_filter_2": "Type of food: Snacks",
+            "sub_filter_val_2": "type-of-food:-snacks",
             "sub_filter_3": "Type of food: Chews",
+            "sub_filter_val_3": "type-of-food:-chews",
             "sub_filter_4": "",
+            "sub_filter_val_4": "",
             "sub_filter_5": "",
+            "sub_filter_val_5": "",
             "sub_filter_6": "",
+            "sub_filter_val_6": "",
             "sub_filter_7": "",
+            "sub_filter_val_7": "",
             "sub_filter_8": "",
+            "sub_filter_val_8": "",
             "sub_filter_9": "",
-            "sub_filter_10": ""
+            "sub_filter_val_9": "",
+            "sub_filter_10": "",
+            "sub_filter_val_10": ""
           }
         },
         "4edda507-870a-455a-9d88-3f4882f0186e": {
@@ -96,15 +106,25 @@
             "filter_type": "single",
             "main_filter": "How big is your dog",
             "sub_filter_1": "How big is your dog: Mini",
+            "sub_filter_val_1": "",
             "sub_filter_2": "How big is your dog: Medium",
+            "sub_filter_val_2": "",
             "sub_filter_3": "How big is your dog: Maxi",
+            "sub_filter_val_3": "",
             "sub_filter_4": "",
+            "sub_filter_val_4": "",
             "sub_filter_5": "",
+            "sub_filter_val_5": "",
             "sub_filter_6": "",
+            "sub_filter_val_6": "",
             "sub_filter_7": "",
+            "sub_filter_val_7": "",
             "sub_filter_8": "",
+            "sub_filter_val_8": "",
             "sub_filter_9": "",
-            "sub_filter_10": ""
+            "sub_filter_val_9": "",
+            "sub_filter_10": "",
+            "sub_filter_val_10": ""
           }
         },
         "2e922ddd-970e-45b4-b528-6a28f607caab": {
@@ -113,15 +133,25 @@
             "filter_type": "single",
             "main_filter": "How active is your dog",
             "sub_filter_1": "How active is your dog: Calm",
+            "sub_filter_val_1": "",
             "sub_filter_2": "How active is your dog: Regular",
+            "sub_filter_val_2": "",
             "sub_filter_3": "How active is your dog: Very",
+            "sub_filter_val_3": "",
             "sub_filter_4": "",
+            "sub_filter_val_4": "",
             "sub_filter_5": "",
+            "sub_filter_val_5": "",
             "sub_filter_6": "",
+            "sub_filter_val_6": "",
             "sub_filter_7": "",
+            "sub_filter_val_7": "",
             "sub_filter_8": "",
+            "sub_filter_val_8": "",
             "sub_filter_9": "",
-            "sub_filter_10": ""
+            "sub_filter_val_9": "",
+            "sub_filter_10": "",
+            "sub_filter_val_10": ""
           }
         },
         "0bb8b744-7179-4c7f-a43d-dd66f357f310": {
@@ -130,15 +160,25 @@
             "filter_type": "multiple",
             "main_filter": "Extra points",
             "sub_filter_1": "Extra points: Joint support",
+            "sub_filter_val_1": "",
             "sub_filter_2": "Extra points: Needs to gain weight",
+            "sub_filter_val_2": "",
             "sub_filter_3": "Extra points: Nice fur",
+            "sub_filter_val_3": "",
             "sub_filter_4": "Extra points: Bad digestion",
+            "sub_filter_val_4": "",
             "sub_filter_5": "Extra points: allergic",
+            "sub_filter_val_5": "",
             "sub_filter_6": "",
+            "sub_filter_val_6": "",
             "sub_filter_7": "",
+            "sub_filter_val_7": "",
             "sub_filter_8": "",
+            "sub_filter_val_8": "",
             "sub_filter_9": "",
-            "sub_filter_10": ""
+            "sub_filter_val_9": "",
+            "sub_filter_10": "",
+            "sub_filter_val_10": ""
           }
         }
       },
@@ -158,6 +198,8 @@
         "tot_products": "Products",
         "sort": "Sort By",
         "vanaf_text": "vanaf",
+        "total_variants": "Verkrijgbaar in",
+        "maten": "maten:",
         "koop_online": "KOOP ONLINE",
         "koop_local": "KOOP LOKAAL"
       }
