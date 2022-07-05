@@ -25,6 +25,7 @@
       ],
       "settings": {
         "hero_img": "shopify:\/\/shop_images\/IMG_7146.jpg",
+        "hero_reviews": "4.8 OUT OF 5",
         "hero_title": "Laat je viervoeter eerst eens proeven",
         "hero_subtitle": "Elke hond en elke kat heeft eigen specifieke behoeften. Daarom maken wij met veel zorg voeding die aangepast is aan jouw pluizige vriend."
       }
@@ -221,15 +222,6 @@
         "section_btn_url": ""
       }
     },
-    "1654581985cd9c24a7": {
-      "type": "dc-newsletter",
-      "settings": {
-        "title": "Krijg nu 20% korting",
-        "desc": "Schrijf je in op onze nieuwsbrief en blijf op de hoogte van acties en promoties. 20% korting die je kan gebruiken bij je volgende aankoop in onze shop",
-        "email_placeholder": "Email adres",
-        "subscribe_btn": "Send"
-      }
-    },
     "165642381957deb8d3": {
       "type": "dc-review-with-text",
       "settings": {
@@ -238,6 +230,22 @@
         "section_subtitle": "REVIEWS",
         "section_title": "Dit vinden de baasjes",
         "section_text": "<p>Ontvang eenmalig een proefpakket met overheerlijke Delcon producten en laat je huisdier smullen. Gegarandeerd een leef kommetje!<\/p><ul class=\"checked-list\">\n<li>De kwaliteit is super!<\/li>\n<li>Contact met customer support verloopt vlot<\/li>\n<li>Snelle levering<\/li>\n<\/ul>"
+      }
+    },
+    "1657015467d065a0a7": {
+      "type": "dc-instagram-feed",
+      "settings": {
+        "insta_title": "",
+        "insta_script": ""
+      }
+    },
+    "1654581985cd9c24a7": {
+      "type": "dc-newsletter",
+      "settings": {
+        "title": "Krijg nu 20% korting",
+        "desc": "Schrijf je in op onze nieuwsbrief en blijf op de hoogte van acties en promoties. 20% korting die je kan gebruiken bij je volgende aankoop in onze shop",
+        "email_placeholder": "Email adres",
+        "subscribe_btn": "Send"
       }
     }
   },
@@ -250,7 +258,8 @@
     "1654581944e4919d6d",
     "16545819618bc11d42",
     "1654581972010cd7d6",
-    "1654581985cd9c24a7",
-    "165642381957deb8d3"
+    "165642381957deb8d3",
+    "1657015467d065a0a7",
+    "1654581985cd9c24a7"
   ]
 }
