@@ -508,6 +508,11 @@
     $('.coll-porducts').find('.product-finder').remove();
     addProductFinder(productFinderBlock);
     
+    if(getUrlParameter('filters') != "" || getUrlParameter('sort_by') != "") {
+      $(productFinderBlock).click(function() {
+        $('#productFinderQuiz').click();
+      });
+    }
   }
 //   runFilter();
   
@@ -610,9 +615,6 @@
       runFilter();
       Filterradio();
       addProductFinder(productFinderBlock);
-      $(productFinderBlock).click(function() {
-        $('#productFinderQuiz').click();
-      });
     })
     .fail(function(error) {
       console.log( error );
@@ -678,9 +680,6 @@
       runFilter();
       Filterradio();
       addProductFinder(productFinderBlock);
-      $(productFinderBlock).click(function() {
-        $('#productFinderQuiz').click();
-      });
     })
     .fail(function(error) {
       console.log( error );
