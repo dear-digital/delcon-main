@@ -15,6 +15,11 @@
   #insta-feed, .instafeed-shopify {
     margin-top: 0;
   }
+  #insta-feed a:nth-child(1) .instafeed-container, #insta-feed a:nth-child(3) .instafeed-container, #insta-feed a:nth-child(5) .instafeed-container {
+    display: inline-block!important;
+    width: 33.333333%!important;
+    padding-top: 33.333333%!important;
+  }
 }
 
 @media (max-width: 321px) {
