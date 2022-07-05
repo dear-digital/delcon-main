@@ -30,6 +30,30 @@
             "ingredient_image": "shopify:\/\/shop_images\/kip-2-300x300.jpg"
           }
         },
+        "d74817ef-59e9-482a-a72f-a472dba8e756": {
+          "type": "select",
+          "settings": {
+            "ingredient_name": "Gevogelte",
+            "ingredient_details": "<p>Kippenvlees is rijk aan eiwitten<\/p>\n<ul>\n<li><strong>Voorziet in alle nodige aminozuren<\/strong><\/li>\n<li>Vitamines B6, B2, B12<\/li>\n<\/ul>",
+            "ingredient_image": "shopify:\/\/shop_images\/kip-2-300x300.jpg"
+          }
+        },
+        "f290169d-0bfa-442b-8e68-3121c18cd3ee": {
+          "type": "select",
+          "settings": {
+            "ingredient_name": "Vis",
+            "ingredient_details": "<p>Vis verbetert het immuunsysteem en \nvoorkomt hart- en vaatziekten<\/p>\n<ul>\n<li><strong>Bevat omega 3 en omega 6 vetzuren<\/strong><\/li>\n<li>Vermindert slechte cholesterol<\/li>\n<li>Rijk aan B-vitamines (B1, B2, B3, B6, B11, B12) die hersenen en zenuwstelsel gezond houden<\/li>\n<li>Bevat foliumzuur (B1, B11)<\/li>\n<\/ul>",
+            "ingredient_image": "shopify:\/\/shop_images\/zalm-300x300.jpg"
+          }
+        },
+        "b95f1759-74bc-4c87-b9b7-737ce1c1ee7d": {
+          "type": "select",
+          "settings": {
+            "ingredient_name": "Zalm",
+            "ingredient_details": "<p>Zalm verbetert het immuunsysteem en\nvoorkomt hart- en vaatziekten<\/p><ul>\n<li><strong>Bevat veel omega 3 en 6<\/strong><\/li>\n<li>Vermindert slechte cholesterol<\/li>\n<li>Rijk aan B-vitamines (B1, B2, B3, B6, B11, B12) die hersenen en zenuwstelsel gezond houden, bevat foliumzuur (B1, B11)<\/li>\n<\/ul>",
+            "ingredient_image": "shopify:\/\/shop_images\/zalm-300x300.jpg"
+          }
+        },
         "04711b9d-7fd5-4c47-94a6-a11c8d3e76b7": {
           "type": "select",
           "settings": {
@@ -54,30 +78,6 @@
             "ingredient_image": "shopify:\/\/shop_images\/bietenpulp-300x300.jpg"
           }
         },
-        "b95f1759-74bc-4c87-b9b7-737ce1c1ee7d": {
-          "type": "select",
-          "settings": {
-            "ingredient_name": "Zalm",
-            "ingredient_details": "<p>Zalm verbetert het immuunsysteem en\nvoorkomt hart- en vaatziekten<\/p><ul>\n<li><strong>Bevat veel omega 3 en 6<\/strong><\/li>\n<li>Vermindert slechte cholesterol<\/li>\n<li>Rijk aan B-vitamines (B1, B2, B3, B6, B11, B12) die hersenen en zenuwstelsel gezond houden, bevat foliumzuur (B1, B11)<\/li>\n<\/ul>",
-            "ingredient_image": "shopify:\/\/shop_images\/zalm-300x300.jpg"
-          }
-        },
-        "db415ba7-ce1e-4fd5-9582-9b0aad1661c4": {
-          "type": "select",
-          "settings": {
-            "ingredient_name": "Johannesbrood",
-            "ingredient_details": "<p>Johannesbrood ondersteunt de spijsvertering en is een krachtig antioxidant<\/p>\n<ul>\n<li><strong>Bevat geen gluten<\/strong><\/li>\n<li>Rijk aan vezels<\/li>\n<li>Lage glycemische waarde<\/li>\n<\/ul>",
-            "ingredient_image": "shopify:\/\/shop_images\/johannesbrood-300x300.jpg"
-          }
-        },
-        "e9bbe049-11e0-4145-b680-738f2930494a": {
-          "type": "select",
-          "settings": {
-            "ingredient_name": "Cichorei",
-            "ingredient_details": "<p>Cichorei ondersteunt een gezonde darmflora<\/p>\n<ul>\n<li><strong>Houdt bloedsuikerspiegel stabiel<\/strong><\/li>\n<li>Kalmeert en helpt het zenuwstelsel ontspannen<\/li>\n<\/ul>",
-            "ingredient_image": "shopify:\/\/shop_images\/cichorei-300x300.jpg"
-          }
-        },
         "d96be867-8851-4dd6-9d9d-11b4fbb20002": {
           "type": "select",
           "settings": {
@@ -94,6 +94,14 @@
             "ingredient_image": "shopify:\/\/shop_images\/biergist-300x300.jpg"
           }
         },
+        "db415ba7-ce1e-4fd5-9582-9b0aad1661c4": {
+          "type": "select",
+          "settings": {
+            "ingredient_name": "Johannesbrood",
+            "ingredient_details": "<p>Johannesbrood ondersteunt de spijsvertering en is een krachtig antioxidant<\/p>\n<ul>\n<li><strong>Bevat geen gluten<\/strong><\/li>\n<li>Rijk aan vezels<\/li>\n<li>Lage glycemische waarde<\/li>\n<\/ul>",
+            "ingredient_image": "shopify:\/\/shop_images\/johannesbrood-300x300.jpg"
+          }
+        },
         "1f3f70a7-02d1-4915-b7a1-b2d1446c6216": {
           "type": "select",
           "settings": {
@@ -102,36 +110,12 @@
             "ingredient_image": "shopify:\/\/shop_images\/gistextract-300x300.jpg"
           }
         },
-        "787b95eb-dc56-43d3-bae2-72eae1bea1c6": {
+        "e9bbe049-11e0-4145-b680-738f2930494a": {
           "type": "select",
           "settings": {
-            "ingredient_name": "kruiden",
-            "ingredient_details": "<ul>\n<li><strong>Yucca Schidigera<\/strong><\/li>\n<li>Macleaya Cordata<\/li>\n<\/ul>",
-            "ingredient_image": "shopify:\/\/shop_images\/kruiden-300x300.jpg"
-          }
-        },
-        "654eede8-e987-413c-8cf3-8d45b92959ee": {
-          "type": "select",
-          "settings": {
-            "ingredient_name": "Chondroïtine en glucosamine",
-            "ingredient_details": "<p>Chondroïtine en glucosamine voorkomen gewrichtsproblemen<\/p>\n<ul>\n<li><strong>Regenereren kraakbeen<\/strong><\/li>\n<\/ul>",
-            "ingredient_image": "shopify:\/\/shop_images\/glucosamine-300x300.jpg"
-          }
-        },
-        "d74817ef-59e9-482a-a72f-a472dba8e756": {
-          "type": "select",
-          "settings": {
-            "ingredient_name": "Gevogelte",
-            "ingredient_details": "<p>Kippenvlees is rijk aan eiwitten<\/p>\n<ul>\n<li><strong>Voorziet in alle nodige aminozuren<\/strong><\/li>\n<li>Vitamines B6, B2, B12<\/li>\n<\/ul>",
-            "ingredient_image": "shopify:\/\/shop_images\/kip-2-300x300.jpg"
-          }
-        },
-        "f290169d-0bfa-442b-8e68-3121c18cd3ee": {
-          "type": "select",
-          "settings": {
-            "ingredient_name": "Vis",
-            "ingredient_details": "<p>Vis verbetert het immuunsysteem en \nvoorkomt hart- en vaatziekten<\/p>\n<ul>\n<li><strong>Bevat omega 3 en omega 6 vetzuren<\/strong><\/li>\n<li>Vermindert slechte cholesterol<\/li>\n<li>Rijk aan B-vitamines (B1, B2, B3, B6, B11, B12) die hersenen en zenuwstelsel gezond houden<\/li>\n<li>Bevat foliumzuur (B1, B11)<\/li>\n<\/ul>",
-            "ingredient_image": "shopify:\/\/shop_images\/zalm-300x300.jpg"
+            "ingredient_name": "Cichorei",
+            "ingredient_details": "<p>Cichorei ondersteunt een gezonde darmflora<\/p>\n<ul>\n<li><strong>Houdt bloedsuikerspiegel stabiel<\/strong><\/li>\n<li>Kalmeert en helpt het zenuwstelsel ontspannen<\/li>\n<\/ul>",
+            "ingredient_image": "shopify:\/\/shop_images\/cichorei-300x300.jpg"
           }
         },
         "4f2679e7-60f7-438f-afc2-0a4eda83bb56": {
@@ -148,6 +132,22 @@
             "ingredient_name": "Appel",
             "ingredient_details": "<p>Een appel bevat vetten en vezels<\/p>\n<ul>\n<li><strong>Rijk aan vitamines B1,B2, B6, E<\/strong><\/li>\n<li>\nVerschillende mineralen: magnesium, calcium, fosfor, ijzer, zink<\/li>\n<\/ul>",
             "ingredient_image": "shopify:\/\/shop_images\/appel-300x300.jpg"
+          }
+        },
+        "654eede8-e987-413c-8cf3-8d45b92959ee": {
+          "type": "select",
+          "settings": {
+            "ingredient_name": "Chondroïtine en glucosamine",
+            "ingredient_details": "<p>Chondroïtine en glucosamine voorkomen gewrichtsproblemen<\/p>\n<ul>\n<li><strong>Regenereren kraakbeen<\/strong><\/li>\n<\/ul>",
+            "ingredient_image": "shopify:\/\/shop_images\/glucosamine-300x300.jpg"
+          }
+        },
+        "787b95eb-dc56-43d3-bae2-72eae1bea1c6": {
+          "type": "select",
+          "settings": {
+            "ingredient_name": "kruiden",
+            "ingredient_details": "<ul>\n<li><strong>Yucca Schidigera<\/strong><\/li>\n<li>Macleaya Cordata<\/li>\n<\/ul>",
+            "ingredient_image": "shopify:\/\/shop_images\/kruiden-300x300.jpg"
           }
         },
         "89c0c927-fab8-44b0-b38b-01bd94677f13": {
@@ -178,21 +178,21 @@
       "block_order": [
         "c2f8e62d-d461-46d2-b67b-fd9d335716ab",
         "791dc80e-02fd-4a29-9958-a51051ce3e5e",
+        "d74817ef-59e9-482a-a72f-a472dba8e756",
+        "f290169d-0bfa-442b-8e68-3121c18cd3ee",
+        "b95f1759-74bc-4c87-b9b7-737ce1c1ee7d",
         "04711b9d-7fd5-4c47-94a6-a11c8d3e76b7",
         "66c7bf6e-42bc-4612-bafc-3682f4da4954",
         "bfe3f1e9-7e03-4fbd-a8a4-53ff93dfa730",
-        "b95f1759-74bc-4c87-b9b7-737ce1c1ee7d",
-        "db415ba7-ce1e-4fd5-9582-9b0aad1661c4",
-        "e9bbe049-11e0-4145-b680-738f2930494a",
         "d96be867-8851-4dd6-9d9d-11b4fbb20002",
         "5f229d06-0b33-4889-8dd2-a091c5d5b175",
+        "db415ba7-ce1e-4fd5-9582-9b0aad1661c4",
         "1f3f70a7-02d1-4915-b7a1-b2d1446c6216",
-        "787b95eb-dc56-43d3-bae2-72eae1bea1c6",
-        "654eede8-e987-413c-8cf3-8d45b92959ee",
-        "d74817ef-59e9-482a-a72f-a472dba8e756",
-        "f290169d-0bfa-442b-8e68-3121c18cd3ee",
+        "e9bbe049-11e0-4145-b680-738f2930494a",
         "4f2679e7-60f7-438f-afc2-0a4eda83bb56",
         "e94dc94e-33ba-4016-965d-3b0ff686380a",
+        "654eede8-e987-413c-8cf3-8d45b92959ee",
+        "787b95eb-dc56-43d3-bae2-72eae1bea1c6",
         "89c0c927-fab8-44b0-b38b-01bd94677f13",
         "4ca9d5fe-0039-44c8-b75b-4081bc00d4af",
         "82575a55-cbfa-44b7-9aa3-3f682a3aba1d"
