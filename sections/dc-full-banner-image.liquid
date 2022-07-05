@@ -9,11 +9,9 @@
         {% if section.settings.section_btn_text != blank %}
           {% if section.settings.isProefpakketten == true %}
             <span class="btn btn-proefpakketten grey-btn">{{ section.settings.section_btn_text }}</span>
-          {% endif %}
-          {% if section.settings.isProductFinder == true %}
+          {% elsif section.settings.isProductFinder == true %}
             <span class="btn btn-productFinder grey-btn">{{ section.settings.section_btn_text }}</span>
-          {% endif %}
-          {% if section.settings.isProefpakketten == false and section.settings.isProductFinder == false %}
+          {% else %}
             <a href="{{ section.settings.section_btn_url }}" class="btn">{{ section.settings.section_btn_text }}</a>
           {% endif %}
         {% endif %}
@@ -33,11 +31,9 @@
         {% if section.settings.section_btn_text != blank %}
           {% if section.settings.isProefpakketten == true %}
             <span class="btn btn-proefpakketten grey-btn">{{ section.settings.section_btn_text }}</span>
-          {% endif %}
-          {% if section.settings.isProductFinder == true %}
+          {% elsif section.settings.isProductFinder == true %}
             <span class="btn btn-productFinder grey-btn">{{ section.settings.section_btn_text }}</span>
-          {% endif %}
-          {% if section.settings.isProefpakketten == false and section.settings.isProductFinder == false %}
+          {% else %}
             <a href="{{ section.settings.section_btn_url }}" class="btn">{{ section.settings.section_btn_text }}</a>
           {% endif %}
         {% endif %}
