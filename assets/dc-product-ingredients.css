@@ -64,6 +64,9 @@
   margin: 0;
   margin-top: 80px;
 }
+.ingredient-details-text ul {
+  padding-inline-start: 20px;
+}
 
 @media (max-width: 992px) {
   .ingredient-title-block {
