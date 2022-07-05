@@ -1,7 +1,22 @@
+<div class="">
+  {{ section.settings.insta_script }}
+</div>
+
 {% schema %}
   {
-    "name": "Section name",
-    "settings": []
+    "name": "Delcon Instagram Feed",
+    "settings": [
+		{
+            "type": "html",
+            "id": "insta_script",
+            "label": "Instagram Script"
+        }
+	],
+	"presets":[
+      {
+         "name":"Delcon Instagram Feed"
+      }
+   ]
   }
 {% endschema %}
 
