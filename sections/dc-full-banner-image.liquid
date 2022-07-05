@@ -21,6 +21,7 @@
       <div class="full-banner-wrapper">
         <h2 class="full-banner-title tk-le-monde-livre-classic-byol">{{ section.settings.section_title }}</h2>
         <div class="banner-text">{{ section.settings.section_text }}</div>
+        {{ section.settings.isProefpakketten }} - {{ section.settings.isProductFinder }}
         {% if section.settings.section_btn_text != blank %}
           {% if section.settings.isProefpakketten == true %}
             <span class="btn btn-proefpakketten grey-btn">{{ section.settings.section_btn_text }}</span>
