@@ -27,7 +27,13 @@
         <h2 class="heading-text img-txt-heading tk-le-monde-livre-classic-byol">{{ section.settings.section_title }}</h2>
         <div class="about-text">{{ section.settings.section_text }}</div>
         {% if section.settings.section_btn_text != blank %}
-          <a href="{{ section.settings.section_btn_url }}" class="btn {% if section.settings.isProefpakketten == true %}btn-proefpakketten grey-btn{% endif %} {% if section.settings.isProductFinder == true %}btn-productFinder grey-btn{% endif %}">{{ section.settings.section_btn_text }}</a>
+          {% if section.settings.isProefpakketten == true %}
+            <span class="btn btn-proefpakketten grey-btn">{{ section.settings.section_btn_text }}</span>
+          {% elsif section.settings.isProductFinder == true %}
+            <span class="btn btn-productFinder grey-btn">{{ section.settings.section_btn_text }}</span>
+          {% else %}
+        	<a href="{{ section.settings.section_btn_url }}" class="btn">{{ section.settings.section_btn_text }}</a>
+          {% endif %}
         {% endif %}
         {% if section.settings.isProefpakketten == true and section.settings.proefpakketten_text != blank %}
           <span class="proefpakketten-text">{{ section.settings.proefpakketten_text }}</span>
