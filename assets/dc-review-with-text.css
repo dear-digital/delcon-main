@@ -1,3 +1,6 @@
+.review-with-text .image-video-block {
+  background-color: rgb(var(--color-base-text));
+}
 .slider-wrapper {
   border: 1px solid #181716;
   width: 100%;
