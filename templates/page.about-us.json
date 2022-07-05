@@ -13,6 +13,7 @@
       "settings": {
         "hero_img": "shopify:\/\/shop_images\/Image_2x_39e61b2e-7305-4cd7-8686-8ddaa5d55b19.png",
         "hero_align": "center",
+        "hero_reviews": "4.8 OUT OF 5",
         "hero_title": "About delcon",
         "hero_subtitle": "Elke hond en elke kat heeft eigen specifieke behoeften. Daarom maken wij met veel zorg voeding die aangepast is aan jouw pluizige vriend."
       }
@@ -206,6 +207,13 @@
         "section_text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est."
       }
     },
+    "1657015208aa62af07": {
+      "type": "dc-instagram-feed",
+      "settings": {
+        "insta_title": "",
+        "insta_script": ""
+      }
+    },
     "1654081225eb27023c": {
       "type": "dc-newsletter",
       "settings": {
@@ -225,6 +233,7 @@
     "165408120865a70365",
     "165375100706003da3",
     "16540856797d06a4d2",
+    "1657015208aa62af07",
     "1654081225eb27023c"
   ]
 }
