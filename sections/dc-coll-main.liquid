@@ -215,7 +215,7 @@
                           <div class="product-finder-title tk-le-monde-livre-classic-byol">{{ block.settings.title }}</div>
                           <div class="product-finder-desc">{{ block.settings.desc }}</div>
                           {% if block.settings.section_btn_text != blank %}
-                          <span class="btn {% if block.settings.isProductFinder == true %}btn-productFinder blue-btn{% endif %}">{{ block.settings.section_btn_text }}</span>
+                          <span class="btn {% if block.settings.isProductFinder == true %}filter-btn-productFinder blue-btn{% endif %}">{{ block.settings.section_btn_text }}</span>
                           {% endif %}
         				</div>
         			{% endif %}
@@ -230,7 +230,7 @@
                       <div class="product-finder-title tk-le-monde-livre-classic-byol">{{ block.settings.title }}</div>
                       <div class="product-finder-desc">{{ block.settings.desc }}</div>
                       {% if block.settings.section_btn_text != blank %}
-                      <span class="btn {% if block.settings.isProductFinder == true %}btn-productFinder blue-btn{% endif %}">{{ block.settings.section_btn_text }}</span>
+                      <span class="btn {% if block.settings.isProductFinder == true %}filter-btn-productFinder blue-btn{% endif %}">{{ block.settings.section_btn_text }}</span>
                       {% endif %}
                     </div>
                 {% endif %}
@@ -507,12 +507,9 @@
     console.log(productFinderBlock);
     $('.coll-porducts').find('.product-finder').remove();
     addProductFinder(productFinderBlock);
-    
-    if(getUrlParameter('filters') != "" || getUrlParameter('sort_by') != "") {
-      $(productFinderBlock).click(function() {
-        $('#productFinderQuiz').click();
-      });
-    }
+    $(productFinderBlock).click(function() {
+      $('#productFinderQuiz').click();
+    });
   }
 //   runFilter();
   
