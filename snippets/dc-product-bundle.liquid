@@ -13,7 +13,7 @@
       <div class="card-product bundled-product rel" data-external="{{ bundleProductsExternalId[forloop.index0] }}" data-variant="{{ bundle_product.first_available_variant.id }}" data-product="{{ bundle_product.id }}" data-handle="{{ handle }}">
         <div class="card-product-wrapper flex-box justify-between align-center rel">
           <div class="card-product-image rel">
-            <img src="{{ bundle_product.featured_image | img_url: '200x' }}" alt="{{ bundle_product.title }}">
+            <img src="{{ bundle_product.featured_image | img_url: '200x' }}" srcset="{{ bundle_product.featured_image | img_url: '100x' }} 1x,{{ bundle_product.featured_image | img_url: '200x' }} 2x" alt="{{ bundle_product.title }}" loading="lazy">
           </div>
           <div class="card-product-text product-info rel">
             <div class="flex-box justify-between align-start">
