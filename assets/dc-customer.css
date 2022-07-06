@@ -437,6 +437,28 @@
   background: rgb(var(--color-base-accent-1));
 }
 
+.checkbox {
+    width: 16px;
+    height: 16px;
+    border: 1px solid #181716;
+    margin-right: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .4s ease;
+}
+.checked .checkbox {
+    background-color: #f2f2f2;
+}
+.checkbox .check-sign {
+    display: none;
+}
+.checked .checkbox .check-sign {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 @media (max-width: 992px) {
   .login-wrapper {
   	flex-direction: column;
