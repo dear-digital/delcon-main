@@ -145,8 +145,8 @@
           "type": "select",
           "settings": {
             "ingredient_name": "Bietenpulp",
-            "ingredient_details": "<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam<\/p><ul>\n<li><strong>Hoog in eiwitten<\/strong><\/li>\n<li>Voorziet in alle nodige aminozuren<\/li>\n<li>Vitamines B6, B2, B12<\/li>\n<\/ul>",
-            "ingredient_image": "shopify:\/\/shop_images\/Ontwerp_zonder_titel_31.png"
+            "ingredient_details": "<p>Bietenpulp is een “super”vezel met een hoge verteerbaarheid <\/p><ul>\n<li><strong>Bevordert darmtransit<\/strong><\/li>\n<li>Is koolhydraatarm<\/li>\n<\/ul>",
+            "ingredient_image": "shopify:\/\/shop_images\/bietenpulp-300x300.jpg"
           }
         }
       },
