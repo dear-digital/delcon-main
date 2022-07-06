@@ -32,14 +32,14 @@
           {% elsif section.settings.isProductFinder == true %}
             <span class="btn btn-productFinder grey-btn">{{ section.settings.section_btn_text }}</span>
           {% else %}
-        	<a href="{{ section.settings.section_btn_url }}" class="btn">{{ section.settings.section_btn_text }}</a>
+        	<a href="{{ section.settings.section_btn_url }}" class="btn" aria-label="{{ section.settings.section_btn_text }} button">{{ section.settings.section_btn_text }}</a>
           {% endif %}
         {% endif %}
         {% if section.settings.isProefpakketten == true and section.settings.proefpakketten_text != blank %}
           <span class="proefpakketten-text">{{ section.settings.proefpakketten_text }}</span>
         {% endif %}
         {% if section.settings.section_link != blank %}
-          <a href="{{ section.settings.section_url }}" rel="noreferrer" class="about-link{% if section.settings.isProefpakketten == true and section.settings.proefpakketten_text != blank %} proefpakketten-hover center{% endif %}">{{ section.settings.section_link }}</a>
+          <a href="{{ section.settings.section_url }}" rel="noreferrer" class="about-link{% if section.settings.isProefpakketten == true and section.settings.proefpakketten_text != blank %} proefpakketten-hover center{% endif %}" aria-label="{{ section.settings.section_link }} link">{{ section.settings.section_link }}</a>
         {% endif %}
       </div>
     </div>
