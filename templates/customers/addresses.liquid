@@ -240,7 +240,7 @@
         <div class="newsletter-block">
           <p class="address-heading">{{ 'newsletter.title' | t }}</p>
           <div class="flex-box align-center{% if customer.accepts_marketing == true %} checked{% endif %}">
-            <input type="checkbox" value="" id="accountNewsletter" {% if customer.accepts_marketing == true %}checked="true"{% endif %}>
+            <input class="no-disp" type="checkbox" value="" id="accountNewsletter" {% if customer.accepts_marketing == true %}checked="true"{% endif %}>
             <div class="checkbox"><span class="check-sign">{% include 'icon-check-sign' %}</span></div>
             <label for="accountNewsletter">{{ 'newsletter.subscribe_text' | t }}</label>
             <div class="no-disp">
