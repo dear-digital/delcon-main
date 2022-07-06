@@ -3,7 +3,9 @@
     min-height: calc(100vh - 514px);
     margin-top: 72px;
   }
-  
+  .page-not-found-wrapper .title {
+    margin-top: 0;
+  }
   .template-404 .title + * {
     margin-top: 1rem;
   }
@@ -11,6 +13,11 @@
   @media screen and (min-width: 750px) {
     .template-404 .title + * {
       margin-top: 2rem;
+    }
+  }
+  @media (max-width: 992px) {
+    .page-not-found-wrapper {
+      margin-top: 80px;
     }
   }
 </style>
