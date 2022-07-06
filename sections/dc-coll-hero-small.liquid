@@ -6,7 +6,7 @@
       <h1 class="coll-title tk-le-monde-livre-classic-byol">{% if collection.title != blank %}{{ collection.title }}{% else %}{{ section.settings.title }}{% endif %}</h1>
       <div class="coll-desc">{% if collection.description != blank %}{{ collection.description }}{% else %}{{ section.settings.desc }}{% endif %}</div>
     </div>
-    <div class="hero-small-img">{% if collection.image != blank %}{{ collection.image | image_url: width: 720 | image_tag }}{% else %}<img src="{{ section.settings.image | img_url: 'x720' }}">{% endif %}</div>
+    <div class="hero-small-img">{% if collection.image != blank %}{{ collection.image | image_url: width: 720 | image_tag }}{% else %}<img src="{{ section.settings.image | img_url: 'x720' }}" alt="collection image">{% endif %}</div>
   </div>
 </div>
 
