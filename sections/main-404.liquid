@@ -1,7 +1,6 @@
 <style type="text/css">
   .page-not-found-wrapper {
-    min-height: calc(100% - 514px);
-    padding: 60px 0;
+    min-height: calc(100vh - 514px);
   }
   
   .template-404 .title + * {
@@ -15,14 +14,12 @@
   }
 </style>
 
-<div class="">
-  <div class="page-not-found-wrapper flex-box justify-center align-center">
-    <div class="container rel">
-      <div class="template-404 page-width page-margin text-center">
-        <p>{{ 'templates.404.subtext' | t }}</p>
-        <h1 class="title">{{ 'templates.404.title' | t }}</h1>
-        <a href="{{ routes.all_products_collection_url }}" class="button">{{ 'general.continue_shopping' | t }}</a>
-      </div>
+<div class="page-not-found-wrapper flex-box justify-center align-center">
+  <div class="container rel">
+    <div class="template-404 page-width page-margin text-center">
+      <p>{{ 'templates.404.subtext' | t }}</p>
+      <h1 class="title">{{ 'templates.404.title' | t }}</h1>
+      <a href="{{ routes.all_products_collection_url }}" class="button">{{ 'general.continue_shopping' | t }}</a>
     </div>
   </div>
 </div>
