@@ -259,7 +259,13 @@
   $('.newsletter-block .checkbox').click(function() {
     console.log('clicked');
   	$(this).parent().toggleClass('checked');
-    $("#accountNewsletter").change();
+    if ($("#accountNewsletter").prop("checked")){
+    	 console.log("newsletter subscription called");
+      $("#email_signup_newsletter #k_id_email").val("{{ customer.email }}");
+      $("#email_signup_newsletter").submit();
+    }else {
+      return;
+    }
   })
   
   $("#accountNewsletter").change(function() {
