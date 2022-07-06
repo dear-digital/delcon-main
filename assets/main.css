@@ -1,10 +1,12 @@
 @font-face {
   font-family: "Avenir Next";
-  src: url('{{ "Avenir.woff2" | asset_url }}') format("woff2"),
+  src: url('{{ "Avenir.woff2" | asset_url }}') format("woff2");
+  font-display: swap;
 }
 @font-face {
   font-family: "LeMonde Livre Classic Normal";
-  src: url('{{ "LeMonde_Livre_Classic_Normal.woff2" | asset_url }}') format("woff2"),
+  src: url('{{ "LeMonde_Livre_Classic_Normal.woff2" | asset_url }}') format("woff2");
+  font-display: swap;
 }
 
 .container {
