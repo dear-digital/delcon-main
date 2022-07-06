@@ -89,7 +89,7 @@
         {% endif %}
           <div class="cart-product-wrapper">
             <div class="cart-product-image">
-              <a href="{{ item.url }}"><img src="{{ featured_image | product_img_url: '120x' }}" alt="{{ item.product.title }}"></a>
+              <a href="{{ item.url }}"><img src="{{ featured_image | product_img_url: '120x' }}" alt="{{ item.product.title }}" loading="lazy"></a>
             </div>
             <div class="cart-product-infos justify-between align-end">
               <div class="cart-product-info">
@@ -128,7 +128,7 @@
           <div class="upsell-product-wrap {{ upsellProd.id }}">
             <div class="upsell-product-image">
               <a href="{{ upsellProd.url }}">
-                <img src="{{ upsellProd.featured_image | product_img_url: '120x' }}" alt="{{ upsellProd.title }}">
+                <img src="{{ upsellProd.featured_image | product_img_url: '120x' }}" alt="{{ upsellProd.title }}" loading="lazy">
               </a>
             </div>
             <div class="upsell-product-infos rel">
