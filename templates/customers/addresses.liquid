@@ -261,8 +261,12 @@
   	$(this).parent().toggleClass('checked');
     if($(this).parent().hasClass('checked')){
     	$("#accountNewsletter").attr("checked", true);
+      	console.log("newsletter subscription called");
+      $("#email_signup_newsletter #k_id_email").val("{{ customer.email }}");
+      $("#email_signup_newsletter").submit();
     } else {
     	$("#accountNewsletter").attr("checked", false);
+      return;
     }
   })
   
