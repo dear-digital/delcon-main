@@ -256,6 +256,11 @@
 
 <script>
   
+  $('.newslatter-block .checkbox').click(function() {
+  	$(this).parent().toggleClass('checked');
+    $("#accountNewsletter").change();
+  })
+  
   $("#accountNewsletter").change(function() {
     if($(this).prop("checked")) {
       console.log("newsletter subscription called");
