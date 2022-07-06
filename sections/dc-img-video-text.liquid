@@ -6,7 +6,7 @@
       <span class="custom-logo">{{ section.settings.custom_logo }}</span>
       <div class="image-video-block rel {% if section.settings.section_type == 'video' %}img-w-txt-video-wrap {% if section.settings.video_link != '' %}custom-video{% endif %}{% endif %}">
         {% if section.settings.section_type == 'video' %}
-          <img  class="video-cover" src="{{ section.settings.cover_img | image_url: height: 600 }}" loading="lazy" alt="Video title">
+          <img class="video-cover" src="{{ section.settings.cover_img | image_url: height: 600 }}" loading="lazy" alt="Video title">
           {% if section.settings.video_link != '' %}
             <video class="cust-video" width="100%" height="100%" controls>
               <source src="{{ section.settings.video_link }}" type="video/mp4">
