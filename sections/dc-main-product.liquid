@@ -16,7 +16,7 @@
             <video autoplay muted playsinline="playsinline" preload="metadata" aria-label="{{ product.title }}" poster="{{ media.preview_image | img_url: 'x590' }}" loop>{% for video_source in media.sources %}<source src="{{ video_source.url }}" type="{{ video_source.mime_type }}">{% endfor %}</video>
           </div>  
           {% else %}
-          <img src="{{ media | img_url: 'x590' }}" alt="{{ product.title | escape }}">
+          <img src="{{ media | img_url: 'x590' }}" srcset="{{ media | img_url: '350x' }} 350w, {{ media | img_url: '600x' }} 600w" sizes="(max-width: 400px) 350px, 100vw" alt="{{ product.title | escape }}" loading="lazy">
           {% endif %}
           {% endfor %}
         </div>
@@ -26,7 +26,7 @@
           {% if media.media_type == "video" %}
           <video autoplay muted playsinline="playsinline" preload="metadata" aria-label="{{ product.title }}" poster="{{ media.preview_image | img_url: '200x' }}" loop>{% for video_source in media.sources %}<source src="{{ video_source.url }}" type="{{ video_source.mime_type }}">{% endfor %}</video>
           {% else %}
-          <img src="{{ media | img_url: '100x' }}" alt="{{ product.title | escape }}">
+          <img src="{{ media | img_url: '100x' }}" srcset="{{ media | img_url: '100x' }} 1x,{{ media | img_url: '200x' }} 2x" alt="{{ product.title | escape }}" loading="lazy">
           {% endif %}
           {% endfor %}
         </div>
