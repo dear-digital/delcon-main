@@ -446,6 +446,7 @@
     justify-content: center;
     align-items: center;
     transition: .4s ease;
+  cursor: pointer;
 }
 .checked .checkbox {
     background-color: #f2f2f2;
