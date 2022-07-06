@@ -45,7 +45,7 @@
               
               {% for block in section.blocks %}
                 {% if block.type == 'social-media' %}
-              	  <span class="social-icon" onclick="copyToClipBoard(this.id)" id="social_{{ block.settings.social_media_title | downcase | replace: " ","_" }}_icon" data-media="{{ block.settings.media_text_to_copy }}" aria-label="{{ block.settings.social_media_title }} icon">
+              	  <span class="social-icon" onclick="copyToClipBoard(this.id)" id="social_{{ block.settings.social_media_title | downcase | replace: " ","_" }}_icon" data-media="{{ block.settings.media_text_to_copy }}">
                     <span class="tooltiptext" id="social_{{ block.settings.social_media_title | downcase | replace: " ","_" }}_tooltip">{{ section.settings.copy_to_clipboard }}</span>
                     {{ block.settings.social_media_icon }}
               	  </span>
@@ -91,7 +91,7 @@
 
             {% for block in section.blocks %}
             {% if block.type == 'social-media' %}
-            <span class="social-icon" onclick="copyToClipBoard(this.id)" id="social_{{ block.settings.social_media_title | downcase | replace: " ","_" }}2_icon" data-media="{{ block.settings.media_text_to_copy }}" aria-label="{{ block.settings.social_media_title }} icon">
+            <span class="social-icon" onclick="copyToClipBoard(this.id)" id="social_{{ block.settings.social_media_title | downcase | replace: " ","_" }}2_icon" data-media="{{ block.settings.media_text_to_copy }}">
               <span class="tooltiptext" id="social_{{ block.settings.social_media_title | downcase | replace: " ","_" }}2_tooltip">{{ section.settings.copy_to_clipboard }}</span>
               {{ block.settings.social_media_icon }}
             </span>
