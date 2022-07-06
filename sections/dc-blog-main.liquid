@@ -20,9 +20,9 @@
         </div>
         <div class="article-image">
           {% if article.image != blank %}
-          <img src="{{ article.image.src | image_url: width: 388 }}" alt="{{ article.title }}">
+          <img src="{{ article.image.src | image_url: width: 388 }}" alt="{{ article.title }}" loading="lazy">
           {% else %}
-          <img src="{{ "Dog_image.png" | asset_img_url: '388x' }}" alt="{{ article.title }}">
+          <img src="{{ "Dog_image.png" | asset_img_url: '388x' }}" alt="{{ article.title }}" loading="lazy">
           {% endif %}
         </div>
         <span class="article-info">
