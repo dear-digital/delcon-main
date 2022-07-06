@@ -260,9 +260,9 @@
     console.log('clicked');
   	$(this).parent().toggleClass('checked');
     if($(this).parent().hasClass('checked')){
-    	$("#accountNewsletter").prop("checked", "true");
+    	$("#accountNewsletter").attr("checked", true);
     } else {
-    	$("#accountNewsletter").prop("checked", "false");
+    	$("#accountNewsletter").attr("checked", false);
     }
   })
   
