@@ -7,7 +7,7 @@
         {% if block.type == 'features' %}
         <div class="features-content-wrap">
           <div class="feature-logo-wrap" style="background-color: {{ section.settings.feature_background }}">
-            <img src="{{ block.settings.logo_img | img_url: "x50" }}" alt="{{ block.settings.logo_title }}">
+            <img src="{{ block.settings.logo_img | img_url: "x50" }}" alt="{{ block.settings.logo_title }}" loading="lazy">
           </div>
           <div class="feature-title">{{ block.settings.logo_title }}</div>
           <div class="feature-desc">{{ block.settings.logo_desc }}</div>
@@ -20,7 +20,7 @@
         {% if block.type == 'features' %}
         <div class="features-content-wrap">
           <div class="feature-logo-wrap" style="background-color: {{ section.settings.feature_background }}">
-            <img src="{{ block.settings.logo_img | img_url: "x50" }}" alt="{{ block.settings.logo_title }}">
+            <img src="{{ block.settings.logo_img | img_url: "x50" }}" alt="{{ block.settings.logo_title }}" loading="lazy">
           </div>
           <div class="feature-title">{{ block.settings.logo_title }}</div>
           <div class="feature-desc">{{ block.settings.logo_desc }}</div>
