@@ -7,7 +7,7 @@
     <div class="featured-carousel rel">
       {% for product in section.settings.featured_collection.products %}
       	<div class="product-card rel" data-product-id="{{ product.id }}">
-          <a title="{{ product.title | escape  }}" class="product-card-hover no-t-m">
+          <a href="#" title="{{ product.title | escape  }}" class="product-card-hover no-t-m">
             <button class="btn product-btn">{{ section.settings.meerInfo }}</button>
           </a>
           <div class="product-card-image rel more-w">
