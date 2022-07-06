@@ -240,7 +240,7 @@
         <div class="newsletter-block">
           <p class="address-heading">{{ 'newsletter.title' | t }}</p>
           <div class="flex-box align-center{% if customer.accepts_marketing == true %} checked{% endif %}">
-            <input type="checkbox" value="" id="accountNewsletter" {% if customer.accepts_marketing == true %}checked="true"{% endif %}>
+            <input class="no-disp" type="checkbox" value="" id="accountNewsletter" {% if customer.accepts_marketing == true %}checked="true"{% endif %}>
             <div class="checkbox"><span class="check-sign">{% include 'icon-check-sign' %}</span></div>
             <label for="accountNewsletter">{{ 'newsletter.subscribe_text' | t }}</label>
             <div class="no-disp">
@@ -270,16 +270,16 @@
     }
   })
   
-  $("#accountNewsletter").change(function() {
-    if($(this).prop("checked")) {
-      console.log("newsletter subscription called");
-      $("#email_signup_newsletter #k_id_email").val("{{ customer.email }}");
-      $("#email_signup_newsletter").submit();
-    }
-    else {
-      return;
-    }
-  });
+//   $("#accountNewsletter").change(function() {
+//     if($(this).prop("checked")) {
+//       console.log("newsletter subscription called");
+//       $("#email_signup_newsletter #k_id_email").val("{{ customer.email }}");
+//       $("#email_signup_newsletter").submit();
+//     }
+//     else {
+//       return;
+//     }
+//   });
   
   $(".edit-address").click(function() {
   	var addressForm = $(this).data('form');
