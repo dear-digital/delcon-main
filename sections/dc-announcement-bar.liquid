@@ -5,7 +5,7 @@
     <span class="header-announcement">{{ section.settings.announcement_msg }}</span>
     <ul class="announcement-bar-list no-t-m">
       <li class="langs rel">
-        <a href="#" class="lang-wrapper"><span id="main-lang">{{ request.locale.iso_code }}</span>
+        <a href="#" class="lang-wrapper" aria-label="language selector"><span id="main-lang">{{ request.locale.iso_code }}</span>
           <ul class="header-sub-lang-list">
             <li id="lang-nl"><span href="/" class="sub-lang">nl</span></li>
             <li id="lang-fr"><span href="/fr" class="sub-lang">fr</span></li>
@@ -13,8 +13,8 @@
           </ul>
         </a>
       </li>
-      <li class="rel"><a href="{{ routes.account_url }}" class="round">{% include "account-icon" %}</a></li>
-      <li class="rel"><a href="#" aria-label="cart-link" class="round icon-item cart-toggler cart-items-total rel" onClick="return false;">{{ cart.item_count }}</a></li>
+      <li class="rel"><a href="{{ routes.account_url }}" class="round" aria-label="account icon">{% include "account-icon" %}</a></li>
+      <li class="rel"><a href="#" aria-label="cart-link" class="round icon-item cart-toggler cart-items-total rel" onClick="return false;" aria-label="cart icon">{{ cart.item_count }}</a></li>
     </ul>
   </div>
 </div>
