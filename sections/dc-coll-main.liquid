@@ -190,9 +190,9 @@
       <div class="coll-porducts flex-box">
       	{% for product in collection.products %}
           <div class="product-card rel{% for tag in product.tags %} {{ tag | downcase | replace: " ","-" }}{% endfor %}" data-product-id="{{ product.id }}">
-            <a title="{{ product.title | escape  }}" class="product-card-hover no-t-m">
+            <span title="{{ product.title | escape  }}" class="product-card-hover no-t-m">
               <button class="btn product-btn">{{ section.settings.meerInfo }}</button>
-            </a>
+            </span>
             <div class="product-card-image rel">
               <img class="default-img" src="{{ product.images[0] | default: product.featured_image | img_url: '392x' }}" alt="{{ product.title | escape }}" loading="lazy" />
               <img class="hovered-img no-t-m" src="{{ product.images[1] | default: product.featured_image | img_url: '392x' }}" alt="{{ product.title | escape }}" loading="lazy" />
