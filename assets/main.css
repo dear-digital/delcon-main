@@ -327,8 +327,8 @@ input:focus-visible, select:focus-visible, textarea:focus-visible {
 
 /* Challenge Page CSS */
 .shopify-challenge__container {
-  margin: 120px auto 80px;
-  padding: 50px 0;
+  min-height: calc(100vh - 514px);
+  margin-top: 72px;
 }
 .shopify-challenge__container .shopify-challenge__button {
   margin-top: 16px;
@@ -410,6 +410,9 @@ input:focus-visible, select:focus-visible, textarea:focus-visible {
   }
   .marg-bottom-xl {
   	margin-bottom: 80px !important;
+  }
+  .shopify-challenge__container {
+    margin-top: 80px;
   }
 }
 
