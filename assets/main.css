@@ -325,6 +325,15 @@ input:focus-visible, select:focus-visible, textarea:focus-visible {
   text-align: center;
 }
 
+/* Challenge Page CSS */
+.shopify-challenge__container {
+  margin: 120px auto;
+  padding: 35px 0;
+}
+.shopify-challenge__container .shopify-challenge__button {
+  margin-top: 16px;
+}
+
 /* Custom Radio Button */
 [type="radio"]:checked,
 [type="radio"]:not(:checked) {
