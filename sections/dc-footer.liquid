@@ -5,16 +5,16 @@
     <div class="footer-upper">
       <div class="footer-logo no-t-m">
         {% if section.settings.footer_logo_img != blank %}
-          <a href="/" class="footer-logo-img" aria-label="4gold"><img src="{{ section.settings.footer_logo_img | img_url: '200x' }}" alt="{{ section.settings.footer_logo_img.alt }}"></a>
+          <a href="/" class="footer-logo-img" aria-label="delcon logo"><img src="{{ section.settings.footer_logo_img | img_url: '200x' }}" alt="{{ section.settings.footer_logo_img.alt }}"></a>
         {% else %}
-          <a href="/" class="footer-logo" aria-label="4gold">{{ section.settings.footer_logo }}</a>
+          <a href="/" class="footer-logo" aria-label="delcon logo">{{ section.settings.footer_logo }}</a>
         {% endif %}
       </div>
       <div class="footer-upper-part no-d">
         {% if section.settings.footer_logo_img != blank %}
-        <a href="/" class="footer-logo-img" aria-label="4gold"><img src="{{ section.settings.footer_logo_img | img_url: '200x' }}" alt="{{ section.settings.footer_logo_img.alt }}"></a>
+        <a href="/" class="footer-logo-img" aria-label="delcon logo"><img src="{{ section.settings.footer_logo_img | img_url: '200x' }}" alt="{{ section.settings.footer_logo_img.alt }}"></a>
         {% else %}
-        <a href="/" class="footer-logo" aria-label="4gold">{{ section.settings.footer_logo }}</a>
+        <a href="/" class="footer-logo" aria-label="delcon logo">{{ section.settings.footer_logo }}</a>
         {% endif %}
       </div>
       <div class="footer-nav-wrapper justify-between">
@@ -103,7 +103,7 @@
         <div class="footer-nav-right">
           <div class="footer-upper-part">
             <p class="partners-text">{{ section.settings.partners_text }}</p>
-            <img src="{{ section.settings.partners_img | img_url: '300x' }}" class="partners-logo">
+            <img src="{{ section.settings.partners_img | img_url: '300x' }}" class="partners-logo" alt="partners logo">
           </div>
         </div>
       </div>
