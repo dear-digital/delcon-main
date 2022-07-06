@@ -8,7 +8,10 @@
         "variant_type": "Hoeveelheid:",
         "shipping_details": "<ul class=\"checked-list\"><li>Gratis verzending vanaf €59,90<\/li><\/ul>",
         "out_of_stock": "Uitverkocht",
-        "add_to_cart": "AAN WINKELWAGEN TOEVOEGEN"
+        "add_to_cart": "AAN WINKELWAGEN TOEVOEGEN",
+        "prod_desc": "Omschrijving",
+        "prod_ingredient": "Ingrediënten en toevoegingen",
+        "prod_amount": "Hoeveel moet mijn hond eten?"
       }
     },
     "1653741255c1c06018": {
@@ -252,11 +255,11 @@
       "settings": {
         "featured_title": "Anderen kochten ook",
         "featured_subtitle": "",
-        "featured_collection": "hondenvoer",
+        "featured_collection": "kattenvoer",
         "vanaf_text": "vanaf",
         "meerInfo": "QUICK VIEW",
         "featured_btn_text": "ALLE PRODUCTEN",
-        "featured_btn_url": "",
+        "featured_btn_url": "shopify:\/\/collections\/kattenvoer",
         "total_variants": "Verkrijgbaar in",
         "maten": "maten:",
         "koop_online": "KOOP ONLINE",
