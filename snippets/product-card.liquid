@@ -36,11 +36,16 @@
               <h2 class="product-title">{{ product.title }}</h2>
               <p class="card-product-price product-price">{{ product.selected_or_first_available_variant.price | money }}</p>
             </div>
-            {% for variant in product.variants %}
-              <div class="variant-features {% if forloop.index != 1 %}no-disp{% endif %}" data-index="{{ forloop.index }}">
-                {{ variant.metafields.my_fields.variant_desc }}
-              </div>
-            {% endfor %}
+            
+            {% if product.has_only_default_variant %}
+              <div class="variant-features">{{ product.metafields.my_fields.product_description }}</div>
+            {% else %}
+              {% for variant in product.variants %}
+                <div class="variant-features {% if forloop.index != 1 %}no-disp{% endif %}" data-index="{{ forloop.index }}">
+                  {{ variant.metafields.my_fields.variant_desc }}
+                </div>
+              {% endfor %}
+            {% endif %}
             
             <span class="numverOfVariants">{{ total_variants }} <span class="total-variants">{{ product.variants.size }}</span> {{ maten }}</span>
             
