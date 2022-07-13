@@ -176,6 +176,13 @@
             "ingredient_details": "<p>Taurine is een essentieel aminozuur voor een kat<\/p>\n<ul>\n<li><strong>Helpt bij de aanmaak van spieren en centrale zenuwstelsel<\/strong><\/li>\n<li>Kat maakt dit zelf niet aan, dus belangrijk dat dit via de voeding wordt toegevoegd<\/li>\n<\/ul>",
             "ingredient_image": "shopify:\/\/shop_images\/taurine-300x300.jpg"
           }
+        },
+        "48bcb085-b3c0-429f-a2f4-803809d08643": {
+          "type": "select",
+          "settings": {
+            "ingredient_name": "Paardenhuid",
+            "ingredient_details": "<p>Helpt de vorming van tandplak te voorkomen en de afbraak van tandsteen te ondersteunen<\/p>\n<ul>\n<li><strong>Zorgt voor een heerlijke en functionele dental stick<\/strong><\/li>\n<li>100% Natuurlijk product<\/li>\n<\/ul>"
+          }
         }
       },
       "block_order": [
@@ -198,7 +205,8 @@
         "787b95eb-dc56-43d3-bae2-72eae1bea1c6",
         "89c0c927-fab8-44b0-b38b-01bd94677f13",
         "4ca9d5fe-0039-44c8-b75b-4081bc00d4af",
-        "82575a55-cbfa-44b7-9aa3-3f682a3aba1d"
+        "82575a55-cbfa-44b7-9aa3-3f682a3aba1d",
+        "48bcb085-b3c0-429f-a2f4-803809d08643"
       ],
       "settings": {
         "ingredient_details_background": "#f2f1f0",
