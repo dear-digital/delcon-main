@@ -182,7 +182,7 @@
           "settings": {
             "ingredient_name": "Paardenhuid",
             "ingredient_details": "<p>Helpt de vorming van tandplak te voorkomen en de afbraak van tandsteen te ondersteunen<\/p>\n<ul>\n<li><strong>Zorgt voor een heerlijke en functionele dental stick<\/strong><\/li>\n<li>100% Natuurlijk product<\/li>\n<\/ul>",
-            "ingredient_image": "shopify:\/\/shop_images\/lam-300x300.jpg"
+            "ingredient_image": "shopify:\/\/shop_images\/IMG_5122.jpg"
           }
         },
         "0ff9a515-9932-4213-a2f6-c06e09761c5b": {
@@ -190,7 +190,14 @@
           "settings": {
             "ingredient_name": "Hertenhuid",
             "ingredient_details": "<p>Helpt de vorming van tandplak te voorkomen en de afbraak van tandsteen te ondersteunen<\/p>\n<ul>\n<li><strong>Zorgt voor een heerlijke en functionele dental stick<\/strong><\/li>\n<li>100% Natuurlijk product<\/li>\n<\/ul>",
-            "ingredient_image": "shopify:\/\/shop_images\/lam-300x300.jpg"
+            "ingredient_image": "shopify:\/\/shop_images\/IMG_5122.jpg"
+          }
+        },
+        "105b7205-c1cc-4034-bcc8-0bd0e03a0df5": {
+          "type": "select",
+          "settings": {
+            "ingredient_name": "Kabeljauwhuid",
+            "ingredient_details": "<p>Helpt de vorming van tandplak te voorkomen en de afbraak van tandsteen te ondersteunen<\/p>\n<ul>\n<li><strong>Zorgt voor een heerlijke en functionele dental stick<\/strong><\/li>\n<li>100% Natuurlijk product<\/li>\n<\/ul>"
           }
         }
       },
@@ -216,7 +223,8 @@
         "4ca9d5fe-0039-44c8-b75b-4081bc00d4af",
         "82575a55-cbfa-44b7-9aa3-3f682a3aba1d",
         "48bcb085-b3c0-429f-a2f4-803809d08643",
-        "0ff9a515-9932-4213-a2f6-c06e09761c5b"
+        "0ff9a515-9932-4213-a2f6-c06e09761c5b",
+        "105b7205-c1cc-4034-bcc8-0bd0e03a0df5"
       ],
       "settings": {
         "ingredient_details_background": "#f2f1f0",
