@@ -193,7 +193,7 @@
   }
 
   .mobile_nav-link {
-    font-weight: 700;
+    font-weight: var(--font-heading-weight);
     font-size: 16px;
     line-height: 22px;
     font-family: 'Avenir Next',sans-serif;
