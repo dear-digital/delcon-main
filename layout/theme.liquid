@@ -372,7 +372,7 @@
         $(this).addClass('variant-selected');
         
         if($(this).hasClass('modal-variant')) {
-          var newUrl = $(this).parent().parent().find('.product-card-btn').attr('href');
+          var newUrl = $(this).attr('product-url');
           newUrl = newUrl + '?variant=' + $(this).attr('value');
           console.log(newUrl);
           $(this).parent().parent().find('.product-card-btn').attr('href',newUrl);
