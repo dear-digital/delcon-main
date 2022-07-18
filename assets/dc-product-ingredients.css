@@ -7,7 +7,21 @@
 }
 .ingredient-title-block {
   width: 50%;
-  padding: 0 64px;
+  height: 590px;
+  padding: 20px 64px;
+  overflow-y: scroll;
+}
+.ingredient-title-block::-webkit-scrollbar {
+  width: 4px;
+}
+.ingredient-title-block::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+.ingredient-title-block::-webkit-scrollbar-thumb {
+  background: rgb(var(--color-base-accent-1)); 
+}
+.ingredient-title-block::-webkit-scrollbar-thumb:hover {
+  background: rgb(var(--color-base-accent-1));
 }
 .ingredient-label {
   display: flex;
