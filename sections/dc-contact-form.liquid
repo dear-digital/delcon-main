@@ -24,7 +24,7 @@
                 <button class="btn contact-submit" type="submit">{{ 'templates.contact.form.send' | t }}</button>
                 <div class="flex-box align-center contact-terms-conditions">
                   <input class="field" type="checkbox" id="ContactTermsConditions" name="contact[terms_and_conditions]" checked="checked">
-                  <label for="ContactTermsConditions" class="">{{ section.settings.agree_terms }}</label>
+                  <label for="ContactTermsConditions" class="contactTermsConditions">{{ section.settings.agree_terms }}</label>
                 </div>
               {% endform %}
             </div>
@@ -34,6 +34,19 @@
     </div>
   </div>
 </div>
+
+<script>
+  $(document).ready(function(){
+    $('.contactTermsConditions').change(function() {
+      if($(this).prop("checked")) {
+        $('.contact-submit').attr('disabled','false');  
+      }
+      else {
+        $('.contact-submit').attr('disabled','disabled');
+      }
+    });
+  });
+</script>
 
 {% schema %}
   {
