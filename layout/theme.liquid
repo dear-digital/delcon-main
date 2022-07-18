@@ -372,10 +372,10 @@
         $(this).addClass('variant-selected');
         
         if($(this).hasClass('modal-variant')) {
-          var newUrl = $(this).parent().closest('.product-card-btn').attr('href');
+          var newUrl = $(this).parent().parent().find('.product-card-btn').attr('href');
           newUrl = newUrl + '?variant=' + $(this).attr('value');
           console.log(newUrl);
-          $(this).parent().closest('.product-card-btn').attr('href',newUrl);
+          $(this).parent().parent().find('.product-card-btn').attr('href',newUrl);
         }
         
         $(this).parent().parent().find('.card-product-price').text(variantPrice);
