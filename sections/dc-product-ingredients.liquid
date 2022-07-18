@@ -10,6 +10,7 @@
 
   function showIngredients() {
     for(var i = 0; i < ingredientsArray.length; i++) {
+      console.log(ingredientsArray[i]);
       $("."+ingredientsArray[i]).removeClass("no-disp");
       $("."+ingredientsArray[i]+"-details").removeClass("no-disp");
       if(i == 0) {
