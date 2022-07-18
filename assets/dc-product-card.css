@@ -36,6 +36,9 @@
   height: 100%;
   background-color: rgb(var(--color-base-text));
 }
+.card-product-image .product-card-for, .card-product-image .product-card-for .slick-list, .card-product-image .product-card-for .slick-track {
+  height: 100%;
+}
 .card-product-image .product-slider-for, .card-product-image .product-slider-for .slick-list, .card-product-image .product-slider-for .slick-track {
   height: 100%;
 }
@@ -149,7 +152,7 @@
 }
 .CloseModal{
   position: absolute;
-  top: 16px;
+  top: 8px;
   right: 40px;
   z-index: 5;
   cursor: pointer;
