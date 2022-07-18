@@ -53,6 +53,10 @@
   max-width: none;
   margin-bottom: 8px;
 }
+.contact-submit:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
 .contact-terms-conditions input[type="checkbox"] {
   display: inline-block;
   width: 16px;
