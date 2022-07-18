@@ -51,10 +51,10 @@
             
             <div class="variants-wrapper {% if product.has_only_default_variant %}no-disp{% endif %}">
               {% for variant in product.variants %}
-              	<div class="variant-box modal-variant {% if forloop.index == 1 %}variant-selected{% endif %}" data-index="{{ forloop.index }}" data-price="{{ variant.price | money }}">{{ variant.title }}</div>
+              	<div class="variant-box modal-variant {% if forloop.index == 1 %}variant-selected{% endif %}" data-index="{{ forloop.index }}" value="{{ variant.id }}" data-price="{{ variant.price | money }}">{{ variant.title }}</div>
               {% endfor %}
             </div>
-            <a href="{{ product.url }}" class="btn product-card-btn">{{ koop_online }}</a>
+            <a href="{{ product.url }}?variant={{ product.variants[0] }}" class="btn product-card-btn">{{ koop_online }}</a>
             <a href="{% unless routes.root_url == "/" %}{{ routes.root_url }}{% endunless %}/pages/verdeelpunten-belgie" class="btn product-local-btn">{{ koop_local }}</a>
           </div>
         </div>
