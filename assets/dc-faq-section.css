@@ -152,7 +152,7 @@
   visibility: hidden;
   margin-bottom: 100px;
   font-size: 16px;
-  line-height: 16px;
+  line-height: 20px;
 }
 
 @media (max-width: 992px) {
