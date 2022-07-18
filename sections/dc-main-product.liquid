@@ -12,7 +12,6 @@
     $('.product-details.product-info .variant-box').removeClass('variant-selected');
     $('.product-details.product-info .variant-box').each(function() {
       if($(this).attr('value') == variantId) {
-        console.log(1);
         $(this).addClass('variant-selected');
       }
     });
@@ -66,7 +65,7 @@
 
         <div class="variants-wrapper {% if product.has_only_default_variant %}no-disp{% endif %}">
           {% for variant in product.variants %}
-          <div class="variant-box {% if forloop.index == 1 %}variant-selected{% endif %}" 
+          <div class="variant-box" 
                data-index="{{ forloop.index }}" 
                data-available="{% if variant.available %}yes{% else %}no{% endif %}"
                data-sell-out-of-stock="{{ variant.inventory_policy }}"
