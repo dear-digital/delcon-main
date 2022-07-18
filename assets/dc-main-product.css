@@ -70,6 +70,7 @@
   max-width: none;
   background-color: #0d553f;
   color: #fff;
+  font-weight: 500;
   transition: all .3s ease-out;
 }
 .addToCart:disabled {
@@ -216,6 +217,7 @@
   max-width: none;
   background-color: #0d553f;
   color: #fff;
+  font-weight: 500;
   transition: all .3s ease-out;
 }
 .bundle-addToCart:disabled {
@@ -229,7 +231,7 @@
   display: inline-block;
   font-size: 12px;
   line-height: 16px;
-  font-weight: 400;
+  font-weight: 300;
   text-decoration: line-through;
   margin: 0 8px;
 }
@@ -237,7 +239,7 @@
   display: inline-block;
   font-size: 16px;
   line-height: 22px;
-  font-weight: 700;
+  font-weight: 500;
 }
 .bundle-plus {
   position: absolute;
