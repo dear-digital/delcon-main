@@ -18,7 +18,7 @@
                 {% endif %}
                 {{ form.errors | default_errors }}
                 <input class="field" type="text" id="ContactName" name="contact[name]" placeholder="{{ 'templates.contact.form.name' | t }}" required>
-                <input class="field" type="tel" id="ContactPhone" name="contact[phone]" placeholder="{{ 'templates.contact.form.phone' | t }}" required>
+                <input class="field" type="tel" id="ContactPhone" name="contact[phone]" placeholder="{{ 'templates.contact.form.phone' | t }}" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
                 <input class="field" type="email" id="ContactEmail" name="contact[email]" placeholder="{{ 'templates.contact.form.email' | t }}" required>
                 <textarea id="ContactDescription" name="contact[description]" rows="5" cols="50" placeholder="{{ 'templates.contact.form.comment' | t }}" required></textarea>
                 <button class="btn contact-submit" type="submit">{{ 'templates.contact.form.send' | t }}</button>
