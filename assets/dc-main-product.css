@@ -147,6 +147,15 @@
   padding: 24px;
   border: 1px solid rgb(var(--color-base-accent-1));
 }
+.bundle-section-title {
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: var(--font-heading-weight);
+  letter-spacing: 0;
+  color: rgb(var(--color-base-accent-1));
+  text-transform: uppercase;
+  margin: 0 0 16px;
+}
 .bundled-product {
   width: 45%;
 }
