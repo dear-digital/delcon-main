@@ -39,9 +39,11 @@
   $(document).ready(function(){
     $('#ContactTermsConditions, .contactTermsConditions').click(function() {
       if($('#ContactTermsConditions').prop("checked") == true) {
+        console.log(1);
         $('.contact-submit').attr('disabled','false');  
       }
       else {
+        console.log(2);
         $('.contact-submit').attr('disabled','disabled');
       }
     });
