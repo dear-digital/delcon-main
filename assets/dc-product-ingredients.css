@@ -46,7 +46,7 @@
 .ingredient-details-title {
   font-size: 16px;
   line-height: 22px;
-  font-weight: 700;
+  font-weight: var(--font-heading-weight);
   text-transform: uppercase;
   margin: 0;
   margin-bottom: 8px;
