@@ -2,6 +2,7 @@
   {% assign bundled_product_handles = product.metafields.my_fields.bundle_products | replace: " ", "" | split: "," %}
   {% assign bundleDiscount = product.metafields.my_fields.bundle_percentage %}
   <div class="product-bundle-wrapper rel">
+    <h2 class="bundle-section-title">{{ section.settings.bundle_title }}</h2>
     <div class="flex-box justify-between align-start product-bundle-column">
       {% for handle in bundled_product_handles %}
       {% assign bundle_product = all_products[handle] %}
