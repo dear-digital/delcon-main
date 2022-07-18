@@ -92,7 +92,7 @@
   height: 30px;
   font-size: 16px;
   line-height: 22px;
-  font-weight: 700;
+  font-weight: var(--font-heading-weight);
   padding: 3px 0 0;
   border-radius: 50%;
 }
@@ -145,7 +145,7 @@
   height: 100%;
   font-size: 16px;
   line-height: 22px;
-  font-weight: 700;
+  font-weight: var(--font-heading-weight);
 }
 .header-sub-lang-list li:hover {
   color: rgb(var(--color-base-text));
