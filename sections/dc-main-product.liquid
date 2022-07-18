@@ -9,9 +9,10 @@
     var variantUrl = productUrl.split('=');
     var variantId = variantUrl[1];
 
-    $('.variant-box').removeClass('selected');
-    $('.variant-box').each(function() {
+    $('.product-details.product-info .variant-box').removeClass('selected');
+    $('.product-details.product-info .variant-box').each(function() {
       if($(this).attr('value') == variantId) {
+        console.log(1);
         $(this).addClass('selected');
       }
     });
