@@ -32,7 +32,7 @@
 .ingredient-details-wrapper {
   display: block;
   width: 100%;
-  max-width: 470px;
+  max-width: calc(100% - 128px);
   height: auto;
   position: absolute;
   overflow: hidden;
