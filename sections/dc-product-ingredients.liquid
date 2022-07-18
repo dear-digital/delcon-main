@@ -1,7 +1,7 @@
 {{ 'dc-img-video-text.css' | asset_url | stylesheet_tag }}
 {{ 'dc-product-ingredients.css' | asset_url | stylesheet_tag }}
 
-{% if template == "product" %}
+{% if template == "product" or template == "product.katten" %}
 <script>
   var productIngredients = "{{ product.metafields.my_fields.all_ingredients | replace: " ", "" }}"
 //   console.log("productIngredients : "+productIngredients);
