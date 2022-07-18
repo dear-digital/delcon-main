@@ -305,6 +305,26 @@
     },
     "165814114854917ca9": {
       "type": "dc-review-with-text",
+      "blocks": {
+        "c72b5263-cc52-4f37-afcb-8c6f479221d6": {
+          "type": "review_slide",
+          "settings": {
+            "review_name": "",
+            "review_text": ""
+          }
+        },
+        "f61d2f69-91db-4136-9838-60eafa436004": {
+          "type": "review_slide",
+          "settings": {
+            "review_name": "",
+            "review_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "c72b5263-cc52-4f37-afcb-8c6f479221d6",
+        "f61d2f69-91db-4136-9838-60eafa436004"
+      ],
       "settings": {
         "background_color": "#fbfbfb",
         "media_alignment": "right",
