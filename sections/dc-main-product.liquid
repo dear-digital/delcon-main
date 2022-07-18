@@ -6,7 +6,7 @@
 <script>
   function preSelectVariant() {
     var productUrl = window.location.search;
-    var variantUrl = productUrl.split('?');
+    var variantUrl = productUrl.split('=');
     var variantId = variantUrl[1];
 
     $('.variant-box').removeClass('selected');
