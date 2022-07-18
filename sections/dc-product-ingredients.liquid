@@ -3,7 +3,7 @@
 
 {% if template == "product" or template == "product.katten" %}
 <script>
-  var productIngredients = "{{ product.metafields.my_fields.all_ingredients | replace: " ", "-" }}"
+  var productIngredients = "{{ product.metafields.my_fields.all_ingredients | replace: " ", "" }}"
   console.log("productIngredients : "+productIngredients);
   
   var ingredientsArray = productIngredients.split(",");
