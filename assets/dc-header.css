@@ -80,8 +80,8 @@
 }
 .header-btn {
   padding: 7px 24px 6px;
-  max-width: fit-content;
-  max-width: -moz-fit-content;
+  max-width: none;
+/*   max-width: -moz-fit-content; */
   background-color: transparent !important;
   border: 1px solid #fff !important;
   color: #fff !important;
