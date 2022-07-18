@@ -37,17 +37,8 @@
 
 <script>
   $(document).ready(function(){
-    $('.contactTermsConditions').click(function() {
+    $('#ContactTermsConditions, .contactTermsConditions').click(function() {
       if($('#ContactTermsConditions').prop("checked")) {
-        $('.contact-submit').attr('disabled','false');  
-      }
-      else {
-        $('.contact-submit').attr('disabled','disabled');
-      }
-    });
-
-    $('#ContactTermsConditions').change(function() {
-      if($(this).prop("checked")) {
         $('.contact-submit').attr('disabled','false');  
       }
       else {
