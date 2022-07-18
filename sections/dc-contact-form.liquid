@@ -37,7 +37,7 @@
 
 <script>
   $(document).ready(function(){
-    $('#ContactTermsConditions, .contactTermsConditions').click(function() {
+    $('#ContactTermsConditions').change(function() {
       if($('#ContactTermsConditions').prop("checked") == true) {
         console.log(1);
         $('.contact-submit').attr('disabled','false');  
