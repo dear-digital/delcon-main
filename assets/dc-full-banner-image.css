@@ -16,7 +16,7 @@
 .full-banner-title {
   font-size: 56px;
   line-height: 109px;
-  font-weight: 700;
+  font-weight: var(--font-heading-weight);
   margin: 0 0 16px;
   color: rgb(var(--color-base-accent-1)) !important;
 }
