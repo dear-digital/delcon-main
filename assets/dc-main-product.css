@@ -70,7 +70,6 @@
   max-width: none;
   background-color: #0d553f;
   color: #fff;
-  font-weight: 500;
   transition: all .3s ease-out;
 }
 .addToCart:disabled {
@@ -217,7 +216,6 @@
   max-width: none;
   background-color: #0d553f;
   color: #fff;
-  font-weight: 500;
   transition: all .3s ease-out;
 }
 .bundle-addToCart:disabled {
@@ -239,7 +237,7 @@
   display: inline-block;
   font-size: 16px;
   line-height: 22px;
-  font-weight: 500;
+  font-weight: var(--font-heading-weight);
 }
 .bundle-plus {
   position: absolute;
