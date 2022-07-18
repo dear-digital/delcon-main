@@ -16,7 +16,7 @@
         	{% for block in section.blocks %}
           		{% if block.type == 'faqs' %}
                     <div class="faq-type">
-                      <span class="hidden-marg" id="{{ block.settings.faq_id }}"></span>
+                      <div class="hidden-marg" id="{{ block.settings.faq_id }}"></div>
                       <div class="faq-type-title tk-le-monde-livre-classic-byol text-center">{{ block.settings.faq_title }}</div>
                       <div class="faq-wrap">
                         {% if block.settings.question1 != blank %}
