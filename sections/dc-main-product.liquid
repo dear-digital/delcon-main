@@ -3,6 +3,21 @@
 {% assign current_variant = product.selected_or_first_available_variant %}
 {% assign featured_image = current_variant.featured_image | default: product.featured_image %}
 
+<script>
+  function preSelectVariant() {
+    var productUrl = window.location.search;
+    var variantUrl = productUrl.split('?');
+    var variantId = variantUrl[1];
+
+    $('.variant-box').removeClass('selected');
+    $('.variant-box').each(function() {
+      if($(this).attr('value') == variantId) {
+        $(this).addClass('selected');
+      }
+    });
+  }
+</script>
+
 <div class="product marg-bottom-xl rel">
   <div class="container">
     <a href="{{ section.settings.terug_link }}" class="terug-btn"><span class="arrow-left">{% include "icon-arrow-sm" %}</span> {{ section.settings.terug_btn }}</a>
@@ -117,7 +132,8 @@
 <script>
   
   $(document).ready(function() {
-	checkAvailability();
+	preSelectVariant();
+    checkAvailability();
   });
   
   function scrollProductImage() {
