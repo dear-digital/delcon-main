@@ -24,9 +24,11 @@
   justify-content: center;
 }
 .card-product-wrapper {
-  height: 90vh;
   background-color: #FBFBFB;
   z-index: 4;
+}
+.modal .card-product-wrapper {
+  height: 90vh;
 }
 .card-product-image {
   width: 50%;
