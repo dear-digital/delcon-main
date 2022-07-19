@@ -288,6 +288,29 @@
       $('#card-product-'+productId+' .product-card-for').slick('resize');
       $('#card-product-'+productId+' .product-card-nav').slick('resize');
     });
+
+    $(".variant-box").click(function() {
+      var variantIndex = $(this).data('index');
+      var variantPrice = $(this).data('price');
+
+      $(this).parent().find(".variant-box").removeClass('variant-selected');
+      $(this).addClass('variant-selected');
+      
+      if($(this).hasClass('modal-variant')) {
+        var newUrl = $(this).attr('variant-url');
+        $(this).parent().parent().find('.product-card-btn').attr('href',newUrl);
+      }
+      
+      $(this).parent().parent().find('.card-product-price').text(variantPrice);
+      
+      $(this).parent().parent().find('.variant-features').addClass('no-disp');
+      $(this).parent().parent().find('.variant-features').each(function() {
+        if($(this).data('index') == variantIndex) {
+          $(this).removeClass('no-disp');
+        }
+      });        
+  
+    });
   }
 </script>
 
