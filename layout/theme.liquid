@@ -318,7 +318,7 @@
       $(document).ready(function() {
         
         var full = window.location.href;
-        var parts = full.split('.');
+        var parts = full.split('/');
         var subDomain = parts[1];
         if(subDomain.includes('en')) {
           $('#main-lang').text('en');
