@@ -320,13 +320,13 @@
         var full = window.location.href;
         var parts = full.split('.');
         var subDomain = parts[1];
-        if(subDomain.includes('en')) {
+        if(subDomain.includes('/en')) {
           $('#main-lang').text('en');
           $('#lang-en').remove();
           console.log('Lang en');
           window.lang = "en";
         }
-        else if(subDomain.includes('fr')) {
+        else if(subDomain.includes('/fr')) {
           $('#main-lang').text('fr');
           $('#lang-fr').remove();
           console.log('Lang fr');
